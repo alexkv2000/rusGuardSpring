@@ -1,0 +1,131 @@
+
+package com.rusguard.client;
+
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for anonymous complex type</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * 
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="deviceServerId" type="{http://schemas.microsoft.com/2003/10/Serialization/}guid" minOccurs="0"/>
+ *         <element name="keyKeepedBoxDriverId" type="{http://schemas.microsoft.com/2003/10/Serialization/}guid" minOccurs="0"/>
+ *         <element name="cellAddress" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "deviceServerId",
+    "keyKeepedBoxDriverId",
+    "cellAddress"
+})
+@XmlRootElement(name = "OpenCellCommand", namespace = "http://www.rusguardsecurity.ru")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+public class OpenCellCommand {
+
+    @XmlElement(namespace = "http://www.rusguardsecurity.ru")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    protected String deviceServerId;
+    @XmlElement(namespace = "http://www.rusguardsecurity.ru")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    protected String keyKeepedBoxDriverId;
+    @XmlElement(namespace = "http://www.rusguardsecurity.ru")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    protected Integer cellAddress;
+
+    /**
+     * Gets the value of the deviceServerId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public String getDeviceServerId() {
+        return deviceServerId;
+    }
+
+    /**
+     * Sets the value of the deviceServerId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public void setDeviceServerId(String value) {
+        this.deviceServerId = value;
+    }
+
+    /**
+     * Gets the value of the keyKeepedBoxDriverId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public String getKeyKeepedBoxDriverId() {
+        return keyKeepedBoxDriverId;
+    }
+
+    /**
+     * Sets the value of the keyKeepedBoxDriverId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public void setKeyKeepedBoxDriverId(String value) {
+        this.keyKeepedBoxDriverId = value;
+    }
+
+    /**
+     * Gets the value of the cellAddress property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public Integer getCellAddress() {
+        return cellAddress;
+    }
+
+    /**
+     * Sets the value of the cellAddress property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public void setCellAddress(Integer value) {
+        this.cellAddress = value;
+    }
+
+}

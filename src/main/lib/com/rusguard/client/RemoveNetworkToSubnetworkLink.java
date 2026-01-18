@@ -1,0 +1,100 @@
+
+package com.rusguard.client;
+
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for anonymous complex type</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * 
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="parentId" type="{http://schemas.microsoft.com/2003/10/Serialization/}guid" minOccurs="0"/>
+ *         <element name="childId" type="{http://schemas.microsoft.com/2003/10/Serialization/}guid" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "parentId",
+    "childId"
+})
+@XmlRootElement(name = "RemoveNetworkToSubnetworkLink", namespace = "http://www.rusguardsecurity.ru")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+public class RemoveNetworkToSubnetworkLink {
+
+    @XmlElement(namespace = "http://www.rusguardsecurity.ru")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    protected String parentId;
+    @XmlElement(namespace = "http://www.rusguardsecurity.ru")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    protected String childId;
+
+    /**
+     * Gets the value of the parentId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public String getParentId() {
+        return parentId;
+    }
+
+    /**
+     * Sets the value of the parentId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public void setParentId(String value) {
+        this.parentId = value;
+    }
+
+    /**
+     * Gets the value of the childId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public String getChildId() {
+        return childId;
+    }
+
+    /**
+     * Sets the value of the childId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-01-18T16:49:01+03:00")
+    public void setChildId(String value) {
+        this.childId = value;
+    }
+
+}
