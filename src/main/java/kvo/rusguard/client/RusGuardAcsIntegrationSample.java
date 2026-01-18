@@ -10,6 +10,12 @@ import com.rusguard.client.ILNetworkService;
 import com.sun.xml.txw2.output.CharacterEscapeHandler;
 import jakarta.xml.bind.JAXBElement;
 
+import jakarta.xml.soap.*;
+import jakarta.xml.ws.handler.MessageContext;
+import jakarta.xml.ws.handler.soap.SOAPHandler;
+import jakarta.xml.ws.handler.soap.SOAPMessageContext;
+import org.apache.wss4j.dom.WSConstants;
+import org.apache.wss4j.dom.handler.WSHandlerConstants;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.LDriverFullInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.LNetInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.LServerInfo;
@@ -24,24 +30,22 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ar
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.ArrayOfLDriverFullInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.LogMsgType;
 
+import javax.net.ssl.*;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.GregorianCalendar;
 import javax.xml.datatype.DatatypeConfigurationException;
 
-import jakarta.xml.bind.annotation.XmlSeeAlso;
-
 import javax.xml.namespace.QName;
 
 import jakarta.xml.ws.BindingProvider;
-import jakarta.xml.ws.Service;
 
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.callback.UnsupportedCallbackException;
 
 import org.apache.wss4j.common.ext.WSPasswordCallback;
-import org.apache.cxf.ws.security.trust.STSClient;
+import org.tempuri.LNetworkService;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -49,31 +53,82 @@ import java.util.HashMap;
 import java.util.Map;
 
 import java.net.URL;
-
-import java.security.cert.X509Certificate;
-
 import java.util.*;
 
-// Отключаем проверку SSL-сертификата (только для теста!)
-
-//import javax.net.ssl.*;
-
-import java.security.KeyManagementException;
-
-import java.security.NoSuchAlgorithmException;
-
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
 
+import org.apache.cxf.configuration.jsse.TLSClientParameters;
+import org.apache.cxf.transport.http.HTTPConduit;
 
 public class RusGuardAcsIntegrationSample {
 
+    private static SSLContext createTrustAllSslContext() {
+        try {
+            TrustManager[] trustAllCerts = new TrustManager[] {
+                    new X509TrustManager() {
+                        public X509Certificate[] getAcceptedIssuers() {
+                            return new X509Certificate[0];
+                        }
 
-    private static final String SERVICE_URL = "http://scud-1.gaz.ru/LNetworkServer/LNetworkService.svc";
-//
-//    private static final String USERNAME = "KvochkinAY";
-//
-//    private static final String PASSWORD = "%*5I1OO4rpE%";
+                        public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                        }
 
+                        public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                        }
+                    }
+            };
+
+            SSLContext sc = SSLContext.getInstance("TLS");
+            sc.init(null, trustAllCerts, new SecureRandom());
+            return sc;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void disableSSLVerification() {
+        try {
+            SSLContext sc = createTrustAllSslContext();
+            HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+            // Create all-trusting host name verifier
+            HostnameVerifier allHostsValid = (hostname, session) -> true;
+
+            // Install the all-trusting host verifier
+            HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void configureCxfTls(Object port) {
+        org.apache.cxf.endpoint.Client client = org.apache.cxf.frontend.ClientProxy.getClient(port);
+        if (!(client.getConduit() instanceof HTTPConduit)) {
+            return;
+        }
+
+        HTTPConduit conduit = (HTTPConduit) client.getConduit();
+
+        TLSClientParameters tlsParams = new TLSClientParameters();
+        tlsParams.setDisableCNCheck(true);
+
+        SSLContext sc = createTrustAllSslContext();
+        tlsParams.setSSLSocketFactory(sc.getSocketFactory());
+
+        conduit.setTlsClientParameters(tlsParams);
+    }
+
+    private static final String SERVICE_URL = "https://scud-1.gaz.ru/LNetworkServer/LNetworkService.svc";
+//
+    private static final String USERNAME = "KvochkinAY";
+
+    private static final String PASSWORD = "%*5I1OO4rpE%";
 
 // Статические прокси-объекты
 
@@ -90,10 +145,138 @@ public class RusGuardAcsIntegrationSample {
         }
     }
 
+    private static void configureWSSecurity(BindingProvider port) {
+        // Set WS-Security properties
+        Map<String, Object> requestContext = port.getRequestContext();
 
+        // Username token profile
+        Map<String, Object> props = new HashMap<>();
+        props.put(WSHandlerConstants.ACTION, WSHandlerConstants.USERNAME_TOKEN);
+        props.put(WSHandlerConstants.USER, USERNAME);
+        props.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
+        props.put(WSHandlerConstants.PW_CALLBACK_REF, new CallbackHandler() {
+            @Override
+            public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
+                WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
+                pc.setPassword(PASSWORD);
+            }
+        });
+
+        // Set the properties in the request context
+        requestContext.put(WSHandlerConstants.USERNAME_TOKEN, USERNAME);
+        requestContext.put(WSHandlerConstants.PASSWORD_TYPE, PASSWORD);
+        requestContext.put(WSHandlerConstants.ADD_USERNAMETOKEN_NONCE, "true");
+        requestContext.put(WSHandlerConstants.ADD_USERNAMETOKEN_CREATED, "true");
+
+        // Set the security properties
+        requestContext.put(org.apache.cxf.ws.security.SecurityConstants.USERNAME, USERNAME);
+        requestContext.put(org.apache.cxf.ws.security.SecurityConstants.PASSWORD, PASSWORD);
+        requestContext.put(org.apache.cxf.ws.security.SecurityConstants.CALLBACK_HANDLER, new CallbackHandler() {
+            @Override
+            public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
+                WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
+                pc.setPassword(PASSWORD);
+            }
+        });
+
+        // Add the security interceptor
+        org.apache.cxf.endpoint.Client client = org.apache.cxf.frontend.ClientProxy.getClient(port);
+        org.apache.cxf.endpoint.Endpoint cxfEndpoint = client.getEndpoint();
+
+        Map<String, Object> outProps = new HashMap<>();
+        outProps.put(WSHandlerConstants.ACTION, WSHandlerConstants.USERNAME_TOKEN);
+        outProps.put(WSHandlerConstants.USER, USERNAME);
+        outProps.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
+        outProps.put(WSHandlerConstants.PW_CALLBACK_REF, new CallbackHandler() {
+            @Override
+            public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
+                WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
+                pc.setPassword(PASSWORD);
+            }
+        });
+
+        org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor wssOut =
+                new org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor(outProps);
+        cxfEndpoint.getOutInterceptors().add(wssOut);
+    }
+
+    private static SOAPHandler<SOAPMessageContext> createSecurityHeader() {
+        return new SOAPHandler<SOAPMessageContext>() {
+            @Override
+            public Set<QName> getHeaders() {
+                return Collections.singleton(new QName(
+                        "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd",
+                        "Security", "wsse"));
+            }
+
+            @Override
+            public boolean handleMessage(SOAPMessageContext context) {
+                try {
+                    SOAPMessage msg = context.getMessage();
+                    SOAPPart sp = msg.getSOAPPart();
+                    SOAPEnvelope se = sp.getEnvelope();
+
+                    // Create security header
+                    SOAPHeader header = se.getHeader();
+                    if (header == null) {
+                        header = se.addHeader();
+                    }
+
+                    // Add security header with username token
+                    SOAPElement security = header.addChildElement("Security", "wsse",
+                            "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd");
+                    SOAPElement usernameToken = security.addChildElement("UsernameToken", "wsse");
+                    SOAPElement username = usernameToken.addChildElement("Username", "wsse");
+                    username.addTextNode(USERNAME);
+                    SOAPElement password = usernameToken.addChildElement("Password", "wsse");
+                    password.setAttribute("Type", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText");
+                    password.addTextNode(PASSWORD);
+
+                    msg.saveChanges();
+                } catch (Exception e) {
+                    throw new RuntimeException("Error adding security header", e);
+                }
+                return true;
+            }
+
+            @Override
+            public boolean handleFault(SOAPMessageContext context) {
+                return true;
+            }
+
+            @Override
+            public void close(MessageContext context) {
+            }
+        };
+    }
+
+    private static void initServices() {
+        try {
+            // Disable SSL verification (for development only)
+            disableSSLVerification();
+
+            System.out.println("Инициализация сервисов...");
+            System.out.println("Подключаемся к WSDL: " + SERVICE_URL + "?wsdl");
+
+            // Create service
+            LNetworkService service = new LNetworkService(new URL(SERVICE_URL + "?wsdl"));
+            networkService = service.getBasicHttpBindingILNetworkService();
+
+            configureCxfTls(networkService);
+
+            // Configure WS-Security
+            BindingProvider bp = (BindingProvider) networkService;
+            configureWSSecurity(bp);
+
+            System.out.println("Сервис успешно инициализирован");
+        } catch (Exception e) {
+            throw new RuntimeException("Не удалось инициализировать сервисы", e);
+        }
+    }
 //    private static void disableSslVerification() throws NoSuchAlgorithmException, KeyManagementException {
 //
-//// Создаем доверяющий всем сертификатам TrustManager
+
+    /// / Создаем доверяющий всем сертификатам TrustManager
 //
 //        TrustManager[] trustAllCerts = new TrustManager[]{
 //
@@ -123,62 +306,60 @@ public class RusGuardAcsIntegrationSample {
 //        HttpsURLConnection.setDefaultHostnameVerifier((hostname, session) -> true);
 //
 //    }
-
-
-    private static void initServices() {
-        try {
-            // 1. Отключаем проверку SSL (должно быть первым!)
-//            SSLUtils.disableSSLVerification();
-
-            // 2. Настройки для отладки
-            System.setProperty("com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump", "true");
-            System.setProperty("com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.dump", "true");
-            System.setProperty("com.sun.xml.ws.transport.http.HttpAdapter.dump", "true");
-            System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dump", "true");
-            System.setProperty("javax.net.debug", "ssl,handshake");
-
-            // Отключаем проверку политики
-            System.setProperty("org.apache.cxf.stax.allowInsecureParser", "true");
-            System.setProperty("org.apache.cxf.stax.allowInsecureParser", "1");
-
-            System.out.println("Инициализация сервисов...");
-
-            // 3. Создаем URL к WSDL
-            String wsdlUrl = SERVICE_URL + "?wsdl";
-            System.out.println("Подключаемся к WSDL: " + wsdlUrl);
-
-            URL wsdlURL = new URL(wsdlUrl);
-            QName serviceName = new QName("http://tempuri.org/", "LNetworkService");
-
-            // 4. Создаем экземпляр сервиса
-            System.out.println("Создаем сервис...");
-            Service service = Service.create(wsdlURL, serviceName);
-            System.out.println("Сервис создан: " + (service != null));
-
-            // 5. Инициализируем сервис сети
-            System.out.println("Получаем порт ILNetworkService...");
-            networkService = service.getPort(ILNetworkService.class);
-            System.out.println("Порт ILNetworkService получен: " + (networkService != null));
-
-            // 6. Настраиваем конечную точку
-            configureEndpoint((BindingProvider) networkService);
-            System.out.println("Конечная точка сконфигурирована");
-
-            // 7. Инициализируем сервис конфигурации сети
-            System.out.println("Получаем порт ILNetworkConfigurationService...");
-            networkCnfgService = service.getPort(ILNetworkConfigurationService.class);
-            System.out.println("Порт ILNetworkConfigurationService получен: " + (networkCnfgService != null));
-
-            configureEndpoint((BindingProvider) networkCnfgService);
-
-            System.out.println("Сервисы успешно инициализированы");
-
-        } catch (Exception e) {
-            System.err.println("ОШИБКА при инициализации сервисов:");
-            e.printStackTrace();
-            throw new RuntimeException("Не удалось инициализировать сервисы", e);
-        }
-    }
+//    private static void initServices() {
+//        try {
+//            // 1. Отключаем проверку SSL (должно быть первым!)
+//            disableSSLVerification();
+//
+//            // 2. Настройки для отладки
+//            System.setProperty("com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump", "true");
+//            System.setProperty("com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.dump", "true");
+//            System.setProperty("com.sun.xml.ws.transport.http.HttpAdapter.dump", "true");
+//            System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dump", "true");
+//            System.setProperty("javax.net.debug", "ssl,handshake");
+//
+//            // Отключаем проверку политики
+//            System.setProperty("org.apache.cxf.stax.allowInsecureParser", "true");
+//            System.setProperty("org.apache.cxf.stax.allowInsecureParser", "1");
+//
+//            System.out.println("Инициализация сервисов...");
+//
+//            // 3. Создаем URL к WSDL
+//            String wsdlUrl = SERVICE_URL + "?wsdl";
+//            System.out.println("Подключаемся к WSDL: " + wsdlUrl);
+//
+//            URL wsdlURL = new URL(wsdlUrl);
+//            QName serviceName = new QName("http://tempuri.org/", "LNetworkService");
+//
+//            // 4. Создаем экземпляр сервиса
+//            System.out.println("Создаем сервис...");
+//            Service service = Service.create(wsdlURL, serviceName);
+//            System.out.println("Сервис создан: " + (service != null));
+//
+//            // 5. Инициализируем сервис сети
+//            System.out.println("Получаем порт ILNetworkService...");
+//            networkService = service.getPort(ILNetworkService.class);
+//            System.out.println("Порт ILNetworkService получен: " + (networkService != null));
+//
+//            // 6. Настраиваем конечную точку
+//            configureEndpoint((BindingProvider) networkService);
+//            System.out.println("Конечная точка сконфигурирована");
+//
+//            // 7. Инициализируем сервис конфигурации сети
+//            System.out.println("Получаем порт ILNetworkConfigurationService...");
+//            networkCnfgService = service.getPort(ILNetworkConfigurationService.class);
+//            System.out.println("Порт ILNetworkConfigurationService получен: " + (networkCnfgService != null));
+//
+//            configureEndpoint((BindingProvider) networkCnfgService);
+//
+//            System.out.println("Сервисы успешно инициализированы");
+//
+//        } catch (Exception e) {
+//            System.err.println("ОШИБКА при инициализации сервисов:");
+//            e.printStackTrace();
+//            throw new RuntimeException("Не удалось инициализировать сервисы", e);
+//        }
+//    }
 
     private static void configureEndpoint(BindingProvider port) {
         try {
@@ -793,51 +974,57 @@ public class RusGuardAcsIntegrationSample {
 // ================================
 
     public static void main(String[] args) {
-        // Добавляем системные свойства для отключения проверки политики
-        System.setProperty("org.apache.cxf.stax.allowInsecureParser", "true");
-        System.setProperty("org.apache.cxf.stax.allowInsecureParser", "1");
-        System.setProperty("ws-security.disable.wsm4j", "true");
-        System.setProperty("ws-security.validate.token", "false");
+        try {
+            // Добавляем системные свойства для отключения проверки политики
+            System.setProperty("org.apache.cxf.stax.allowInsecureParser", "true");
+            System.setProperty("ws-security.disable.wsm4j", "true");
+            System.setProperty("ws-security.validate.token", "false");
 
-        System.out.println("=== RusGuard ACS Java Integration Sample ===");
-        System.out.println("Classpath: " + System.getProperty("java.class.path"));
+            System.out.println("=== RusGuard ACS Java Integration Sample ===");
+            System.out.println("Classpath: " + System.getProperty("java.class.path"));
 
-// Получить группы
-        AcsEmployeeGroup[] groups = getAcsEmployeeGroups();
-        System.out.println("Количество групп: " + groups.length);
+            // Инициализация сервисов
+            initServices();
 
-// Получить посетителей
-        AcsEmployeeGroup guestGroup = getGuestEmployeeGroup();
-        if (guestGroup != null) {
-            System.out.println("Группа посетителей: " + guestGroup.getName() + " (ID: " + guestGroup.getID() + ")");
-        }
+            // Создаем условие поиска
+            SearchCondition searchCondition = new SearchCondition();
 
-// Получить сотрудников в группе
-        if (guestGroup != null) {
-            AcsEmployeeSlim[] employees = getAcsEmployeesInGroup(guestGroup.getID());
-            System.out.println("Сотрудников в группе: " + employees.length);
-        }
+            // Устанавливаем фамилию для поиска
+            JAXBElement<String> lastNameElement = new JAXBElement<>(
+                    new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", "LastName"),
+                    String.class,
+                    "Квочкин"
+            );
+            searchCondition.setLastName(lastNameElement);
 
-// Получить уровни доступа
-        AcsAccessLevelSlimInfo[] levels = getAcsAccessLevels();
-        System.out.println("Уровней доступа: " + levels.length);
+            // Создаем элемент условия поиска
+            QName searchConditionQName = new QName("http://tempuri.org/", "SearchCondition");
+            JAXBElement<SearchCondition> searchConditionElement = new JAXBElement<>(
+                    searchConditionQName,
+                    SearchCondition.class,
+                    searchCondition
+            );
 
-// Получить точки доступа
-        AcsAccessPointDriverInfo[] accessPoints = getAccessPoints();
-        System.out.println("Точек доступа: " + accessPoints.length);
+            // Создаем запрос на поиск
+            FindEmployees findEmployees = new FindEmployees();
+            findEmployees.setSearchCondition(searchConditionElement);
+            // Выполняем поиск
+            System.out.println("Выполнение поиска сотрудников...");
+            ArrayOfAcsEmployee result = networkService.findEmployees(searchCondition);
 
-// Пример мониторинга событий (запуск в отдельном потоке)
-        new Thread(() -> {
-            try {
-                System.out.println("Запуск мониторинга событий...");
-                trackEvents(null); // Все точки доступа
-            } catch (DatatypeConfigurationException e) {
-                System.err.println("Ошибка конфигурации даты/времени при мониторинге событий: " + e.getMessage());
-                e.printStackTrace();
+            // Обрабатываем результаты
+            if (result != null && result.getAcsEmployee() != null) {
+                System.out.println("Найдено сотрудников: " + result.getAcsEmployee().size());
+                for (AcsEmployee employee : result.getAcsEmployee()) {
+                    System.out.println("ID: " + employee.getEmployeeID());
+                }
+            } else {
+                System.out.println("Сотрудники не найдены");
             }
-        }).start();
 
-// Пример отправки команды (если есть драйвер и соединение)
-// sendCommand("connection-id-here", "driver-id-here", "Open");
+        } catch (Exception e) {
+            System.err.println("Ошибка при выполнении поиска: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }

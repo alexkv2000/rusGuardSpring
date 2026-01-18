@@ -55,7 +55,7 @@ public class RusGuardClient {
             JAXBElement<String> lastNameElem = new JAXBElement<>(
                     new QName(namespace, "LastName"),
                     String.class,
-                    "Алексей" // или другая фамилия
+                    "Kvochkin" // или другая фамилия
             );
             searchParams.setLastName(lastNameElem);
 
