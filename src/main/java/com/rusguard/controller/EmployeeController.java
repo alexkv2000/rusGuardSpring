@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,23 +36,22 @@ public class EmployeeController {
 
     @GetMapping("/getById")
     public ResponseEntity<Map<String, Object>> getById(
-            @RequestParam(required = false) String IDEmployee) {
-        // Вызов метода getEmployee с переданными параметрами
-        Map<String, Object> result = employeeService.getEmployeeById(IDEmployee);
+            @RequestParam(required = false) String idEmployee) {
+        Map<String, Object> result = employeeService.getEmployeeById(idEmployee);
         return ResponseEntity.ok(result);
     }
 
     @GetMapping("/getByGroupID")
-    public ResponseEntity<Map<String, Object>> getByGroupID(@RequestParam Map<String, String> params) {
-        // Вызов метода getEmployeesByGroupID с переданными параметрами
-        Map<String, Object> result = employeeService.getEmployeesByGroupID(params);
+    public ResponseEntity<Map<String, Object>> getByGroupID(@RequestParam(required = false) String idGroup) {
+        Map<String, Object> result = employeeService.getEmployeesByGroupID(idGroup);
         return ResponseEntity.ok(result);
     }
 
     @GetMapping("/getPassagesByDate")
-    public ResponseEntity<Map<String, Object>> getPassagesByDate(@RequestParam Map<String, String> params) {
-        // Вызов метода getEmployeePassagesByDate с переданными параметрами
-        Map<String, Object> result = employeeService.getEmployeePassagesByDate(params);
+    public ResponseEntity<Map<String, Object>> getPassagesByDate(
+            @RequestParam(required = false) String idEmployee,
+            @RequestParam(required = false) String dataPassages) {
+        Map<String, Object> result = employeeService.getEmployeePassagesByDate(idEmployee, dataPassages);
         return ResponseEntity.ok(result);
     }
 //    @PostMapping("/setLocked")

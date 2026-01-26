@@ -1,5 +1,6 @@
 package com.rusguard.service.impl;
 
+import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.rusguard.service.EmployeeService;
 
 
@@ -16,6 +17,10 @@ import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
 import org.apache.wss4j.common.ext.WSPasswordCallback;
 import org.apache.wss4j.dom.WSConstants;
 import org.apache.wss4j.dom.handler.WSHandlerConstants;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.SortOrder;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.LogMessage;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.LogMessageSortedColumn;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.LogSubjectType;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployee;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeFull;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.ArrayOfAcsEmployee;
@@ -30,6 +35,8 @@ import javax.net.ssl.*;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.callback.UnsupportedCallbackException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 import java.io.File;
 import java.io.IOException;
@@ -38,10 +45,17 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
+
+import static java.util.Comparator.nullsFirst;
 
 // Импортируем сгенерированный интерфейс
 
@@ -298,9 +312,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Map<String, Object> setEmployeeLocked(Map<String, Object> params) {
-        // Здесь должна быть реализация вызова реального метода setEmployeeLocked
-        // Используем классы из библиотеки для выполнения операции
-
         // Извлечение параметров
         String employeeId = (String) params.get("employeeId");
         Boolean locked = (Boolean) params.get("locked");
@@ -317,42 +328,107 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Map<String, Object> getEmployeesByGroupID(Map<String, String> params) {
-        String groupId = params.get("groupId");
-
+    public Map<String, Object> getEmployeesByGroupID(String idGroup) {
+        // Initialize response map
+        Map<String, Object> response = new HashMap<>();
         try {
-            // Создаем клиент
-            ILNetworkService client = createClient();
+            initServices();
 
-            if (client == null) {
-                Map<String, Object> response = new HashMap<>();
-                response.put("status", "error");
-                response.put("message", "Failed to create client connection");
-                response.put("groupId", groupId);
-                return response;
+            ArrayOfguid employeesGuids = networkService.getAcsEmployeesGuidsByGroups(
+                    toUuidArray(new String[]{idGroup}),
+                    false
+            );
+            if (employeesGuids != null && employeesGuids.getGuid() != null) {
+                List<AcsEmployeeFull> employees = new ArrayList<>();
+                for (String employeeId : employeesGuids.getGuid()) {
+                    AcsEmployeeFull employee = getAcsEmployee(employeeId);
+                    if (employee != null) {
+                        employees.add(employee);
+                    }
+                }
+                employees.sort(
+                        Comparator
+                                .comparing((AcsEmployeeFull e) -> !isEmployeeLocked(e))
+                                .thenComparing(EmployeeServiceImpl::getEmployeeLastName, String.CASE_INSENSITIVE_ORDER)
+                );
+                List<Map<String, Object>> employeesList = new ArrayList<>();
+
+                for (AcsEmployeeFull employee : employees) {
+                    Map<String, Object> empData = new LinkedHashMap<>();
+                    empData.put("ID", employee.getID());
+                    empData.put("GroupID", employee.getEmployeeGroupID() != null ? employee.getEmployeeGroupID() : "");
+                    empData.put("LastName", employee.getLastName() != null ? employee.getLastName().getValue() : "");
+                    empData.put("FirstName", employee.getFirstName() != null ? employee.getFirstName().getValue() : "");
+                    empData.put("SecondName", employee.getSecondName() != null ? employee.getSecondName().getValue() : "");
+                    if (employee.getPosition() != null) {
+                        try {
+                            Object position = employee.getPosition();
+                            // Try to call getValue() method
+                            Method getValueMethod = position.getClass().getMethod("getValue");
+                            Object positionValue = getValueMethod.invoke(position);
+
+                            if (positionValue != null) {
+                                // Now try to get the name from the position value
+                                Method getNameMethod = positionValue.getClass().getMethod("getName");
+                                Object nameValue = getNameMethod.invoke(positionValue);
+
+                                if (nameValue != null) {
+                                    // If name is a JAXBElement, get its value
+                                    if (nameValue instanceof JAXBElement) {
+                                        empData.put("Position", ((JAXBElement<?>) nameValue).getValue().toString());
+                                    } else {
+                                        empData.put("Position", nameValue.toString());
+                                    }
+                                } else {
+                                    empData.put("Position", "");
+                                }
+                            } else {
+                                empData.put("Position", "");
+                            }
+                        } catch (Exception e) {
+                            // Log the error for debugging
+                            System.err.println("Error getting position: " + e.getMessage());
+                            empData.put("Position", "");
+                        }
+                    } else {
+                        empData.put("Position", "");
+                    }
+                    empData.put("PassportIssue", employee.getPassportIssue() != null ? employee.getPassportIssue().getValue() : "");
+                    empData.put("PassportNumber", employee.getPassportNumber() != null ? employee.getPassportNumber().getValue() : "");
+                    empData.put("IsLocked", employee.isIsLocked() != null ? employee.isIsLocked() : false);
+//                    response.put("status", "success");
+//                    response.put("message", "Employee retrieved by ID successfully");
+//                    response.put("groupId", employee.getEmployeeGroupID());
+                    employeesList.add(empData);
+                }
+
+                //сортируем список
+                sortEmployeesByFIO(employeesList);
+
+                response.put("status", "success");
+                response.put("message", "Employee retrieved by ID successfully");
+                response.put("groupId", idGroup);
+                response.put("data", employeesList);
             }
-
-            // Создаем параметры поиска
-            SearchCondition searchParams = new SearchCondition();
-            // Устанавливаем параметры поиска по группе
-
-            // Выполняем вызов
-            ArrayOfAcsEmployee result = client.findEmployees(searchParams);
-
-            Map<String, Object> response = new HashMap<>();
-            response.put("status", "success");
-            response.put("message", "Employees retrieved by group ID successfully");
-            response.put("groupId", groupId);
-            response.put("data", result);
-            return response;
-
-        } catch (Exception e) {
-            Map<String, Object> response = new HashMap<>();
+        } catch (ILNetworkServiceGetAcsEmployeesGuidsByGroupsDataNotFoundExceptionFaultFaultMessage e) {
             response.put("status", "error");
             response.put("message", "Error retrieving employees: " + e.getMessage());
-            response.put("groupId", groupId);
+            response.put("groupId", idGroup);
             return response;
         }
+        return response;
+    }
+
+    // Вспомогательный метод: преобразование String[] в UUID[]
+    private static ArrayOfguid toUuidArray(String[] ids) {
+        if (ids == null) return null;
+        ArrayOfguid result = new ArrayOfguid();
+        for (String id : ids) {
+            if (id != null) {
+                result.getGuid().add(UUID.fromString(id).toString());
+            }
+        }
+        return result;
     }
 
     @Override
@@ -468,17 +544,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                         }
                     }
 
-                    // Sort the list
-                    employeesList.sort((e1, e2) -> {
-                        // First by IsLocked (false first)
-                        boolean locked1 = (Boolean) e1.get("IsLocked");
-                        boolean locked2 = (Boolean) e2.get("IsLocked");
-                        if (locked1 != locked2) {
-                            return Boolean.compare(locked1, locked2);
-                        }
-                        // Then by LastName
-                        return ((String) e1.get("LastName")).compareToIgnoreCase((String) e2.get("LastName"));
-                    });
+                    // сортировка list
+                    sortEmployeesByFIO(employeesList);
                     response.put("status", "success");
                     response.put("data", employeesList);
                     response.put("count", employeesList.size());
@@ -543,17 +610,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                         }
                     }
 
-                    // Sort the list
-                    employeesList.sort((e1, e2) -> {
-                        // First by IsLocked (false first)
-                        boolean locked1 = (Boolean) e1.get("IsLocked");
-                        boolean locked2 = (Boolean) e2.get("IsLocked");
-                        if (locked1 != locked2) {
-                            return Boolean.compare(locked1, locked2);
-                        }
-                        // Then by LastName
-                        return ((String) e1.get("LastName")).compareToIgnoreCase((String) e2.get("LastName"));
-                    });
+                    //Сортировка list
+                    sortEmployeesByFIO(employeesList);
 
                     response.put("status", "success");
                     response.put("data", employeesList);
@@ -571,6 +629,29 @@ public class EmployeeServiceImpl implements EmployeeService {
             e.printStackTrace();
         }
         return response;
+    }
+
+    private static void sortEmployeesByFIO(List<Map<String, Object>> employeesList) {
+        employeesList.sort(
+                Comparator
+                        // IsLocked (false first, null трактуем как false)
+                        .comparing(
+                                (Map<String, Object> e) -> {
+                                    Boolean locked = (Boolean) e.get("IsLocked");
+                                    return locked != null ? locked : false;
+                                }
+                        )
+                        .thenComparing(
+                                e -> (String) e.get("LastName").toString().toUpperCase(),
+                                Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER)
+                        )
+                        .thenComparing(
+                                e -> (String) e.get("FirstName"),
+                                Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER)
+                        ).thenComparing(
+                                e -> (String) e.get("SecondName"),
+                                Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER)
+                        ));
     }
 
     private String getLastName(Map<String, String> lastName) {
@@ -708,7 +789,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
                 Map<String, Object> empData = new LinkedHashMap<>();
                 empData.put("ID", employee.getID());
-                empData.put("GroupID", employee.getEmployeeGroupID() != null ? employee.getEmployeeGroupID(): "");
+                empData.put("GroupID", employee.getEmployeeGroupID() != null ? employee.getEmployeeGroupID() : "");
                 empData.put("LastName", employee.getLastName() != null ? employee.getLastName().getValue() : "");
                 empData.put("FirstName", employee.getFirstName() != null ? employee.getFirstName().getValue() : "");
                 empData.put("SecondName", employee.getSecondName() != null ? employee.getSecondName().getValue() : "");
@@ -770,16 +851,81 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Map<String, Object> getEmployeePassagesByDate(Map<String, String> params) {
-        String employeeId = params.get("employeeId");
-        String date = params.get("date");
+    public Map<String, Object> getEmployeePassagesByDate(String IDEmployees, String dataPassages) {     //формат -"MM-dd-yyyy"
+        initServices();
+        DateTimeFormatter formatterUS = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDate localDate = LocalDate.parse(dataPassages, formatterUS);
 
-        Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        response.put("message", "Employee passages retrieved by date successfully (stub implementation)");
-        response.put("employeeId", employeeId);
-        response.put("date", date);
-        response.put("data", new Object[]{});
-        return response;
+        if (IDEmployees == null || IDEmployees.isBlank()) {
+            throw new IllegalArgumentException("employeeId is blank");
+        }
+        if (dataPassages == null) {
+            throw new IllegalArgumentException("date is null");
+        }
+
+        System.out.println("Поиск проходов/событий сотрудника за дату: " + localDate.toString() + ", employeeId=" + IDEmployees);
+
+        try {
+            com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid subjectIDs = new com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid();
+            subjectIDs.getGuid().add(String.valueOf(UUID.fromString(IDEmployees)));
+
+            ZoneId zoneId = ZoneId.systemDefault();
+            LocalDateTime startLdt = localDate.atStartOfDay();
+            LocalDateTime endExclusiveLdt = localDate.plusDays(1).atStartOfDay();
+
+            XMLGregorianCalendar fromDateTime = toXmlGregorianCalendar(ZonedDateTime.of(startLdt, zoneId));
+            XMLGregorianCalendar toDateTime = toXmlGregorianCalendar(ZonedDateTime.of(endExclusiveLdt, zoneId));
+
+            org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.LogData logData = networkService.getEvents(
+                    0L,
+                    fromDateTime,
+                    toDateTime,
+                    null,
+                    null,
+                    subjectIDs,
+                    LogSubjectType.EMPLOYEE,
+                    0,
+                    1000,
+                    LogMessageSortedColumn.DATE_TIME,
+                    SortOrder.ASCENDING
+            );
+
+            if (logData == null || logData.getMessages() == null || logData.getMessages().getValue() == null
+                    || logData.getMessages().getValue().getLogMessage() == null
+                    || logData.getMessages().getValue().getLogMessage().isEmpty()) {
+                System.out.println("Проходы/события не найдены");
+                return null; //TODO
+            }
+
+            java.util.List<LogMessage> messages = logData.getMessages().getValue().getLogMessage();
+            System.out.println("Найдено событий: " + messages.size());
+
+            for (LogMessage msg : messages) {
+                if (msg == null) {
+                    continue;
+                }
+
+                System.out.println(
+                        "DateTime: " + msg.getDateTime() +
+                                ", Type: " + msg.getLogMessageType() +
+                                ", SubType: " + msg.getLogMessageSubType() +
+                                ", Message: " + (msg.getMessage() != null ? msg.getMessage().getValue() : "")
+                );
+            }
+
+        } catch (Exception e) {
+            System.err.println("Ошибка получения проходов/событий: " + e.getMessage());
+            e.printStackTrace();
+        }
+        return null; //TODO
+    };
+
+    private static XMLGregorianCalendar toXmlGregorianCalendar(ZonedDateTime zdt) {
+        try {
+            GregorianCalendar gc = GregorianCalendar.from(zdt);
+            return DatatypeFactory.newInstance().newXMLGregorianCalendar(gc);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }

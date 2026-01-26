@@ -1,5 +1,6 @@
 package com.rusguard.service;
 
+import java.time.LocalDate;
 import java.util.Map;
 
 public interface EmployeeService {
@@ -12,7 +13,7 @@ public interface EmployeeService {
     /**
      * Получение списка сотрудников по ID группы
      */
-    Map<String, Object> getEmployeesByGroupID(Map<String, String> params);
+    Map<String, Object> getEmployeesByGroupID(String params);
     
     /**
      * Получение информации о сотруднике по ФИО
@@ -27,5 +28,5 @@ public interface EmployeeService {
     /**
      * Получение проходов сотрудника по дате
      */
-    Map<String, Object> getEmployeePassagesByDate(Map<String, String> params);
+    Map<String, Object> getEmployeePassagesByDate(String IDEmployee, String dataPassages);
 }
