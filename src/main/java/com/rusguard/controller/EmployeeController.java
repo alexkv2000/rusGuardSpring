@@ -17,15 +17,16 @@ public class EmployeeController {
 
     @GetMapping("/getByFIO")
     public ResponseEntity<Map<String, Object>> getByFIO(
-            @RequestParam(required = false) String firstName,
             @RequestParam(required = false) String lastName,
-            @RequestParam(required = false) String secondName) {
+            @RequestParam(required = false) String firstName,
+            @RequestParam(required = false) String secondName,
+            @RequestParam(required = false, defaultValue = "false") boolean isLock) {
 
-        // Create a params map from the method parameters
         Map<String, String> params = new HashMap<>();
         if (firstName != null) params.put("firstName", firstName);
         if (lastName != null) params.put("lastName", lastName);
         if (secondName != null) params.put("secondName", secondName);
+        params.put("isLock", String.valueOf(isLock));
 
         // Call the service method with the parameters
         Map<String, Object> result = employeeService.getEmployeeByFIO(params);
@@ -33,7 +34,8 @@ public class EmployeeController {
     }
 
     @GetMapping("/getById")
-    public ResponseEntity<Map<String, Object>> getById(@RequestParam Map<String, String> IDEmployee) {
+    public ResponseEntity<Map<String, Object>> getById(
+            @RequestParam(required = false) String IDEmployee) {
         // Вызов метода getEmployee с переданными параметрами
         Map<String, Object> result = employeeService.getEmployeeById(IDEmployee);
         return ResponseEntity.ok(result);

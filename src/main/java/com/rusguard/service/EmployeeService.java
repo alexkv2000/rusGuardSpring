@@ -22,7 +22,7 @@ public interface EmployeeService {
     /**
      * Получение информации о сотруднике по ID
      */
-    Map<String, Object> getEmployeeById(Map<String, String> params);
+    Map<String, Object> getEmployeeById(String params);
     
     /**
      * Получение проходов сотрудника по дате

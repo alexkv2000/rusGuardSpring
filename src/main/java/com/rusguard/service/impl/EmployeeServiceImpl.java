@@ -5,8 +5,14 @@ import com.rusguard.service.EmployeeService;
 
 import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.ws.BindingProvider;
+//import jdk.dynalink.TypeConverterFactory;
 import org.apache.cxf.configuration.jsse.TLSClientParameters;
+import org.apache.cxf.endpoint.Client;
+import org.apache.cxf.endpoint.Endpoint;
+import org.apache.cxf.frontend.ClientProxy;
 import org.apache.cxf.transport.http.HTTPConduit;
+import org.apache.cxf.ws.security.SecurityConstants;
+import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
 import org.apache.wss4j.common.ext.WSPasswordCallback;
 import org.apache.wss4j.dom.WSConstants;
 import org.apache.wss4j.dom.handler.WSHandlerConstants;
@@ -24,20 +30,18 @@ import javax.net.ssl.*;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.callback.UnsupportedCallbackException;
-import javax.xml.datatype.DatatypeFactory;
-import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 import java.io.File;
 import java.io.IOException;
 import java.lang.Exception;
+import java.lang.reflect.Method;
 import java.net.URL;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import static jakarta.xml.bind.JAXBIntrospector.getValue;
+import java.util.stream.Collectors;
 
 // Импортируем сгенерированный интерфейс
 
@@ -57,7 +61,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private static Object getValue(Object obj, String methodName) {
         try {
-            java.lang.reflect.Method m = obj.getClass().getMethod(methodName);
+            Method m = obj.getClass().getMethod(methodName);
             Object v = m.invoke(obj);
             if (v == null) {
                 return "";
@@ -103,9 +107,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         requestContext.put(WSHandlerConstants.ADD_USERNAMETOKEN_CREATED, "true");
 
         // Set the security properties
-        requestContext.put(org.apache.cxf.ws.security.SecurityConstants.USERNAME, USERNAME);
-        requestContext.put(org.apache.cxf.ws.security.SecurityConstants.PASSWORD, PASSWORD);
-        requestContext.put(org.apache.cxf.ws.security.SecurityConstants.CALLBACK_HANDLER, new CallbackHandler() {
+        requestContext.put(SecurityConstants.USERNAME, USERNAME);
+        requestContext.put(SecurityConstants.PASSWORD, PASSWORD);
+        requestContext.put(SecurityConstants.CALLBACK_HANDLER, new CallbackHandler() {
             @Override
             public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
                 WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
@@ -114,8 +118,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         });
 
         // Add the security interceptor
-        org.apache.cxf.endpoint.Client client = org.apache.cxf.frontend.ClientProxy.getClient(port);
-        org.apache.cxf.endpoint.Endpoint cxfEndpoint = client.getEndpoint();
+        Client client = ClientProxy.getClient(port);
+        Endpoint cxfEndpoint = client.getEndpoint();
 
         Map<String, Object> outProps = new HashMap<>();
         outProps.put(WSHandlerConstants.ACTION, WSHandlerConstants.USERNAME_TOKEN);
@@ -129,13 +133,13 @@ public class EmployeeServiceImpl implements EmployeeService {
             }
         });
 
-        org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor wssOut =
-                new org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor(outProps);
+        WSS4JOutInterceptor wssOut =
+                new WSS4JOutInterceptor(outProps);
         cxfEndpoint.getOutInterceptors().add(wssOut);
     }
 
     private static void configureCxfTls(Object port) {
-        org.apache.cxf.endpoint.Client client = org.apache.cxf.frontend.ClientProxy.getClient(port);
+        Client client = ClientProxy.getClient(port);
         if (!(client.getConduit() instanceof HTTPConduit)) {
             return;
         }
@@ -353,9 +357,28 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Map<String, Object> getEmployeeByFIO(Map<String, String> params) {
-        String firstName = params.get("firstName");
-        String lastName = params.get("lastName");
-        String middleName = params.get("secondName");
+        // Если нет параметра lastName - выдаем пустой JSON
+        if (!params.containsKey("lastName") || getLastName(params).isBlank()) {
+            Map<String, Object> response = new HashMap<>();
+            response.put("status", "success");
+            response.put("data", new ArrayList<>());
+            response.put("count", 0);
+            return response;
+        }
+
+        String lastName = ""; //фамилия
+        lastName = params.get("lastName");
+
+        String firstName = ""; //имя
+        if (!getFirstName(params).isBlank()) {
+            firstName = params.get("firstName");
+        }
+        String middleName = ""; //отчество
+        if (!getSecondName(params).isBlank()) {
+            middleName = params.get("secondName");
+        }
+        boolean isLock = Boolean.parseBoolean(params.get("isLock"));
+
 
         System.setProperty("org.apache.cxf.stax.allowInsecureParser", "true");
         System.setProperty("ws-security.disable.wsm4j", "true");
@@ -365,120 +388,213 @@ public class EmployeeServiceImpl implements EmployeeService {
         Map<String, Object> response = new HashMap<>();
 
         try {
-            // Create client and search condition
-//            ILNetworkService client = createClient();
-//            if (client == null) {
-//                response.put("status", "error");
-//                response.put("message", "Failed to create client connection");
-//                return response;
-//            }
-
-            // Set up search condition
             SearchCondition searchCondition = new SearchCondition();
             searchCondition.setIsGlobalSearch(true);
             searchCondition.setIncludeRemoved(true);
 
             initServices();
-            // Set up search parameters
+            // Параметры поиска
             JAXBElement<String> lastNameElement = new JAXBElement<>(
                     new QName(NS_EMPLOYEES, "LastName"), String.class, lastName);
-            searchCondition.setLastName(lastNameElement);
+            if (!lastName.isEmpty()) searchCondition.setLastName(lastNameElement);
 
             JAXBElement<String> firstNameElement = new JAXBElement<>(
                     new QName(NS_EMPLOYEES, "FirstName"), String.class, firstName);
-            searchCondition.setFirstName(firstNameElement);
+            if (!firstName.isEmpty()) searchCondition.setFirstName(firstNameElement);
 
             JAXBElement<String> secondNameElement = new JAXBElement<>(
                     new QName(NS_EMPLOYEES, "SecondName"), String.class, middleName);
-            searchCondition.setSecondName(secondNameElement);
+            if (!middleName.isEmpty()) searchCondition.setSecondName(secondNameElement);
 
-            // Execute search
-            System.out.println("Выполнение поиска сотрудников...");
-            ArrayOfAcsEmployee result = networkService.findEmployees(searchCondition);
+            ArrayOfAcsEmployee result;
+            System.out.println("Выполнение поиска сотрудников по фамилии...");
+            if (!lastName.isEmpty() && (firstName.isEmpty() || middleName.isEmpty())) { //поиск по Фамилия
+                SearchCondition searchConditionSecond = new SearchCondition();
+                searchConditionSecond.setIsGlobalSearch(true);
+                searchConditionSecond.setIncludeRemoved(true);
+                searchConditionSecond.setLastName(lastNameElement);
+                // Execute search
+                result = networkService.findEmployees(searchConditionSecond);
+                // Process results
+                if (result != null && result.getAcsEmployee() != null && !result.getAcsEmployee().isEmpty()) {
+                    List<Map<String, Object>> employeesList = new ArrayList<>();
 
-            // Process results
-            if (result != null && result.getAcsEmployee() != null && !result.getAcsEmployee().isEmpty()) {
-                List<Map<String, Object>> employeesList = new ArrayList<>();
+                    // First collect all employees with their full data
+                    for (AcsEmployee employee : result.getAcsEmployee()) {
+                        AcsEmployeeFull fullEmployee = getAcsEmployee(employee.getEmployeeID());
+                        if (fullEmployee != null && (!isLock || !fullEmployee.isIsLocked())) {
+                            Map<String, Object> empData = new LinkedHashMap<>();
+                            empData.put("ID", fullEmployee.getID());
+                            empData.put("LastName", fullEmployee.getLastName() != null ? fullEmployee.getLastName().getValue() : "");
+                            empData.put("FirstName", fullEmployee.getFirstName() != null ? fullEmployee.getFirstName().getValue() : "");
+                            empData.put("SecondName", fullEmployee.getSecondName() != null ? fullEmployee.getSecondName().getValue() : "");
+                            if (fullEmployee.getPosition() != null) {
+                                try {
+                                    Object position = fullEmployee.getPosition();
+                                    // Попытка вызвать getValue() метод
+                                    Method getValueMethod = position.getClass().getMethod("getValue");
+                                    Object positionValue = getValueMethod.invoke(position);
 
-                // First collect all employees with their full data
-                for (AcsEmployee employee : result.getAcsEmployee()) {
-                    AcsEmployeeFull fullEmployee = getAcsEmployee(employee.getEmployeeID());
-                    if (fullEmployee != null) {
-                        Map<String, Object> empData = new LinkedHashMap<>();
-                        empData.put("ID", fullEmployee.getID());
-                        empData.put("LastName", fullEmployee.getLastName() != null ? fullEmployee.getLastName().getValue() : "");
-                        empData.put("FirstName", fullEmployee.getFirstName() != null ? fullEmployee.getFirstName().getValue() : "");
-                        empData.put("SecondName", fullEmployee.getSecondName() != null ? fullEmployee.getSecondName().getValue() : "");
-                        if (fullEmployee.getPosition() != null) {
-                            try {
-                                Object position = fullEmployee.getPosition();
-                                // Try to call getValue() method
-                                java.lang.reflect.Method getValueMethod = position.getClass().getMethod("getValue");
-                                Object positionValue = getValueMethod.invoke(position);
+                                    if (positionValue != null) {
+                                        // Now try to get the name from the position value
+                                        Method getNameMethod = positionValue.getClass().getMethod("getName");
+                                        Object nameValue = getNameMethod.invoke(positionValue);
 
-                                if (positionValue != null) {
-                                    // Now try to get the name from the position value
-                                    java.lang.reflect.Method getNameMethod = positionValue.getClass().getMethod("getName");
-                                    Object nameValue = getNameMethod.invoke(positionValue);
-
-                                    if (nameValue != null) {
-                                        // If name is a JAXBElement, get its value
-                                        if (nameValue instanceof JAXBElement) {
-                                            empData.put("Position", ((JAXBElement<?>) nameValue).getValue().toString());
+                                        if (nameValue != null) {
+                                            // если есть должность в JAXBElement, берем значение Position
+                                            if (nameValue instanceof JAXBElement) {
+                                                empData.put("Position", ((JAXBElement<?>) nameValue).getValue().toString());
+                                            } else {
+                                                empData.put("Position", nameValue.toString());
+                                            }
                                         } else {
-                                            empData.put("Position", nameValue.toString());
+                                            empData.put("Position", "");
                                         }
                                     } else {
                                         empData.put("Position", "");
                                     }
-                                } else {
+                                } catch (Exception e) {
+                                    System.err.println("Error getting position: " + e.getMessage());
                                     empData.put("Position", "");
                                 }
-                            } catch (Exception e) {
-                                // Log the error for debugging
-                                System.err.println("Error getting position: " + e.getMessage());
+                            } else {
                                 empData.put("Position", "");
                             }
-                        } else {
-                            empData.put("Position", "");
+                            empData.put("PassportIssue", fullEmployee.getPassportIssue() != null ? fullEmployee.getPassportIssue().getValue() : "");
+                            empData.put("PassportNumber", fullEmployee.getPassportNumber() != null ? fullEmployee.getPassportNumber().getValue() : "");
+                            empData.put("IsLocked", fullEmployee.isIsLocked() != null ? fullEmployee.isIsLocked() : false);
+
+                            employeesList.add(empData);
                         }
-                        empData.put("PassportIssue", fullEmployee.getPassportIssue() != null ? fullEmployee.getPassportIssue().getValue() : "");
-                        empData.put("PassportNumber", fullEmployee.getPassportNumber() != null ? fullEmployee.getPassportNumber().getValue() : "");
-                        empData.put("IsLocked", fullEmployee.isIsLocked() != null ? fullEmployee.isIsLocked() : false);
-
-                        employeesList.add(empData);
                     }
+
+                    // Sort the list
+                    employeesList.sort((e1, e2) -> {
+                        // First by IsLocked (false first)
+                        boolean locked1 = (Boolean) e1.get("IsLocked");
+                        boolean locked2 = (Boolean) e2.get("IsLocked");
+                        if (locked1 != locked2) {
+                            return Boolean.compare(locked1, locked2);
+                        }
+                        // Then by LastName
+                        return ((String) e1.get("LastName")).compareToIgnoreCase((String) e2.get("LastName"));
+                    });
+                    response.put("status", "success");
+                    response.put("data", employeesList);
+                    response.put("count", employeesList.size());
                 }
+            } else if (!lastName.isEmpty() && !firstName.isEmpty() && !middleName.isEmpty()) {
+                // Execute search
 
-                // Sort the list
-                employeesList.sort((e1, e2) -> {
-                    // First by IsLocked (false first)
-                    boolean locked1 = (Boolean) e1.get("IsLocked");
-                    boolean locked2 = (Boolean) e2.get("IsLocked");
-                    if (locked1 != locked2) {
-                        return Boolean.compare(locked1, locked2);
+                System.out.println("Выполнение поиска сотрудников по ФИО...");
+                result = networkService.findEmployees(searchCondition);
+
+                // Process results
+                if (result != null && result.getAcsEmployee() != null && !result.getAcsEmployee().isEmpty()) {
+                    List<Map<String, Object>> employeesList = new ArrayList<>();
+
+                    // First collect all employees with their full data
+                    for (AcsEmployee employee : result.getAcsEmployee()) {
+                        AcsEmployeeFull fullEmployee = getAcsEmployee(employee.getEmployeeID());
+                        if (fullEmployee != null && (!isLock || !fullEmployee.isIsLocked())) {
+                            Map<String, Object> empData = new LinkedHashMap<>();
+                            empData.put("ID", fullEmployee.getID());
+                            empData.put("LastName", fullEmployee.getLastName() != null ? fullEmployee.getLastName().getValue() : "");
+                            empData.put("FirstName", fullEmployee.getFirstName() != null ? fullEmployee.getFirstName().getValue() : "");
+                            empData.put("SecondName", fullEmployee.getSecondName() != null ? fullEmployee.getSecondName().getValue() : "");
+                            if (fullEmployee.getPosition() != null) {
+                                try {
+                                    Object position = fullEmployee.getPosition();
+                                    // Try to call getValue() method
+                                    Method getValueMethod = position.getClass().getMethod("getValue");
+                                    Object positionValue = getValueMethod.invoke(position);
+
+                                    if (positionValue != null) {
+                                        // Now try to get the name from the position value
+                                        Method getNameMethod = positionValue.getClass().getMethod("getName");
+                                        Object nameValue = getNameMethod.invoke(positionValue);
+
+                                        if (nameValue != null) {
+                                            // If name is a JAXBElement, get its value
+                                            if (nameValue instanceof JAXBElement) {
+                                                empData.put("Position", ((JAXBElement<?>) nameValue).getValue().toString());
+                                            } else {
+                                                empData.put("Position", nameValue.toString());
+                                            }
+                                        } else {
+                                            empData.put("Position", "");
+                                        }
+                                    } else {
+                                        empData.put("Position", "");
+                                    }
+                                } catch (Exception e) {
+                                    // Log the error for debugging
+                                    System.err.println("Error getting position: " + e.getMessage());
+                                    empData.put("Position", "");
+                                }
+                            } else {
+                                empData.put("Position", "");
+                            }
+                            empData.put("PassportIssue", fullEmployee.getPassportIssue() != null ? fullEmployee.getPassportIssue().getValue() : "");
+                            empData.put("PassportNumber", fullEmployee.getPassportNumber() != null ? fullEmployee.getPassportNumber().getValue() : "");
+                            empData.put("IsLocked", fullEmployee.isIsLocked() != null ? fullEmployee.isIsLocked() : false);
+
+                            employeesList.add(empData);
+                        }
                     }
-                    // Then by LastName
-                    return ((String) e1.get("LastName")).compareToIgnoreCase((String) e2.get("LastName"));
-                });
 
-                response.put("status", "success");
-                response.put("data", employeesList);
-                response.put("count", employeesList.size());
-            } else {
-                response.put("status", "not_found");
-                response.put("message", "No employees found");
-                response.put("data", Collections.emptyList());
-                response.put("count", 0);
+                    // Sort the list
+                    employeesList.sort((e1, e2) -> {
+                        // First by IsLocked (false first)
+                        boolean locked1 = (Boolean) e1.get("IsLocked");
+                        boolean locked2 = (Boolean) e2.get("IsLocked");
+                        if (locked1 != locked2) {
+                            return Boolean.compare(locked1, locked2);
+                        }
+                        // Then by LastName
+                        return ((String) e1.get("LastName")).compareToIgnoreCase((String) e2.get("LastName"));
+                    });
+
+                    response.put("status", "success");
+                    response.put("data", employeesList);
+                    response.put("count", employeesList.size());
+                } else {
+                    response.put("status", "not_found");
+                    response.put("message", "No employees found");
+                    response.put("data", Collections.emptyList());
+                    response.put("count", 0);
+                }
             }
-
         } catch (Exception e) {
             response.put("status", "error");
             response.put("message", "Error searching employees: " + e.getMessage());
             e.printStackTrace();
         }
-
         return response;
+    }
+
+    private String getLastName(Map<String, String> lastName) {
+        boolean exists = lastName.containsKey("lastName");
+        if (exists) {
+            return lastName.get("lastName");
+        }
+        return "";
+    }
+
+    private String getFirstName(Map<String, String> firstName) {
+        boolean exists = firstName.containsKey("firstName");
+        if (exists) {
+            return firstName.get("firstName");
+        }
+        return "";
+    }
+
+    private String getSecondName(Map<String, String> secondName) {
+        boolean exists = secondName.containsKey("secondName");
+        if (exists) {
+            return secondName.get("secondName");
+        }
+        return "";
     }
 
     private static boolean isEmployeeLocked(AcsEmployeeFull employee) {
@@ -504,7 +620,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @SuppressWarnings("unchecked")
     private static <T> T getValue(Object obj, String methodName, Class<T> returnType) {
         try {
-            java.lang.reflect.Method m = obj.getClass().getMethod(methodName);
+            Method m = obj.getClass().getMethod(methodName);
             Object result = m.invoke(obj);
 
             if (result == null) {
@@ -540,8 +656,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                     } else {
                         // Если getName не сработал, пробуем другие возможные методы
                         try {
-                            java.lang.reflect.Method[] methods = positionValue.getClass().getMethods();
-                            for (java.lang.reflect.Method method : methods) {
+                            Method[] methods = positionValue.getClass().getMethods();
+                            for (Method method : methods) {
                                 if (method.getName().toLowerCase().contains("name") && method.getParameterCount() == 0) {
                                     Object result = method.invoke(positionValue);
                                     if (result != null) {
@@ -567,49 +683,90 @@ public class EmployeeServiceImpl implements EmployeeService {
         try {
             return networkService.getAcsEmployee(String.valueOf(UUID.fromString(id)));
         } catch (Exception e) {
-            System.err.println("Ошибка получения полных данных сотрудника: " + e.getMessage());
+//            System.err.println("Ошибка получения полных данных сотрудника: " + e.getMessage());
             return null;
         }
     }
 
-
-    @Override
-    public Map<String, Object> getEmployeeById(Map<String, String> params) {
-        String id = params.get("id");
-
+    public Map<String, Object> getEmployeeById(String id) {
+        // Initialize response map
+        Map<String, Object> response = new HashMap<>();
         try {
-            // Создаем клиент
-            ILNetworkService client = createClient();
+            initServices();
+            AcsEmployeeFull employee = getAcsEmployee(id);
+            if (employee == null) {
+                System.out.println("Сотрудник не найден");
+                return new HashMap<>();
+            }
+            StringBuilder positionName = new StringBuilder();
+            if (!employee.getPosition().isNil()) {
+                positionName.append(employee.getPosition().getValue().getName().getValue()); //Должность
+            }
+// Process results
+            if (employee != null && !employee.getLastName().isNil()) {
+                List<Map<String, Object>> employeesList = new ArrayList<>();
 
-            if (client == null) {
-                Map<String, Object> response = new HashMap<>();
-                response.put("status", "error");
-                response.put("message", "Failed to create client connection");
+                Map<String, Object> empData = new LinkedHashMap<>();
+                empData.put("ID", employee.getID());
+                empData.put("GroupID", employee.getEmployeeGroupID() != null ? employee.getEmployeeGroupID(): "");
+                empData.put("LastName", employee.getLastName() != null ? employee.getLastName().getValue() : "");
+                empData.put("FirstName", employee.getFirstName() != null ? employee.getFirstName().getValue() : "");
+                empData.put("SecondName", employee.getSecondName() != null ? employee.getSecondName().getValue() : "");
+
+                if (employee.getPosition() != null) {
+                    try {
+                        Object position = employee.getPosition();
+                        // Try to call getValue() method
+                        Method getValueMethod = position.getClass().getMethod("getValue");
+                        Object positionValue = getValueMethod.invoke(position);
+
+                        if (positionValue != null) {
+                            // Now try to get the name from the position value
+                            Method getNameMethod = positionValue.getClass().getMethod("getName");
+                            Object nameValue = getNameMethod.invoke(positionValue);
+
+                            if (nameValue != null) {
+                                // If name is a JAXBElement, get its value
+                                if (nameValue instanceof JAXBElement) {
+                                    empData.put("Position", ((JAXBElement<?>) nameValue).getValue().toString());
+                                } else {
+                                    empData.put("Position", nameValue.toString());
+                                }
+                            } else {
+                                empData.put("Position", "");
+                            }
+                        } else {
+                            empData.put("Position", "");
+                        }
+                    } catch (Exception e) {
+                        // Log the error for debugging
+                        System.err.println("Error getting position: " + e.getMessage());
+                        empData.put("Position", "");
+                    }
+                } else {
+                    empData.put("Position", "");
+                }
+                empData.put("PassportIssue", employee.getPassportIssue() != null ? employee.getPassportIssue().getValue() : "");
+                empData.put("PassportNumber", employee.getPassportNumber() != null ? employee.getPassportNumber().getValue() : "");
+                empData.put("IsLocked", employee.isIsLocked() != null ? employee.isIsLocked() : false);
+
+                employeesList.add(empData);
+
+                response.put("status", "success");
+                response.put("message", "Employee retrieved by ID successfully");
                 response.put("id", id);
+                response.put("data", employeesList);
                 return response;
             }
-
-            // Создаем параметры поиска
-            SearchCondition searchParams = new SearchCondition();
-            // Устанавливаем параметры поиска по ID
-
-            // Выполняем вызов
-            ArrayOfAcsEmployee result = client.findEmployees(searchParams);
-
-            Map<String, Object> response = new HashMap<>();
-            response.put("status", "success");
-            response.put("message", "Employee retrieved by ID successfully");
-            response.put("id", id);
-            response.put("data", result);
-            return response;
-
         } catch (Exception e) {
-            Map<String, Object> response = new HashMap<>();
             response.put("status", "error");
             response.put("message", "Error retrieving employee: " + e.getMessage());
             response.put("id", id);
             return response;
         }
+
+
+        return response;
     }
 
     @Override
