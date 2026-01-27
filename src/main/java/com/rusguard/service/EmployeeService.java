@@ -1,19 +1,32 @@
 package com.rusguard.service;
 
+import com.rusguard.client.ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
+
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Map;
 
 public interface EmployeeService {
-    
     /**
      * Установка блокировки сотрудника
      */
     Map<String, Object> setEmployeeLocked(String IDEmployee, boolean flag);
-    
+
+
+    /**
+     * Получение списка всех уровней точек доступа
+    */
+    List<AcsAccessLevelSlimInfo> getAccessLevelsSlim();
     /**
      * Получение списка сотрудников по ID группы
      */
     Map<String, Object> getEmployeesByGroupID(String params);
+
+    /**
+     * Получение списка сотрудников по Табельному номеру
+     */
+    Map<String, Object> GetEmployeesByTabelNumber(String params);
     
     /**
      * Получение информации о сотруднике по ФИО
@@ -29,4 +42,8 @@ public interface EmployeeService {
      * Получение проходов сотрудника по дате
      */
     Map<String, Object> getEmployeePassagesByDate(String IDEmployee, String dataPassages);
+
+    Map<String, Object> addEmailEmployee(String idEmployee, String email, String description) throws ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
+
+    Map<String, Object>  addEmployee(String firstname, String lastname, String secondname, Integer tabelNumber, String position, String positionGroup, String comment, String adressReg, String passportIISUE, String passportNumber, String email, String emailDescription) throws ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
 }
