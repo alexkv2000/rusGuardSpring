@@ -1,10 +1,19 @@
 package com.rusguard.controller;
 
+import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
+import com.rusguard.client.ILNetworkConfigurationService;
+import com.rusguard.client.ILNetworkConfigurationServiceLockAcsEmployeeArgumentExceptionFaultFaultMessage;
+import com.rusguard.client.ILNetworkConfigurationServiceLockAcsEmployeeDataNotFoundExceptionFaultFaultMessage;
+import com.rusguard.client.LockAcsEmployee;
 import com.rusguard.service.EmployeeService;
+import com.rusguard.service.impl.EmployeeServiceImpl;
+import jakarta.xml.bind.JAXBElement;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.namespace.QName;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,6 +24,8 @@ public class EmployeeController {
 
     @Autowired
     private EmployeeService employeeService;
+
+    private ILNetworkConfigurationService networkCnfgService;
 
     @GetMapping("/getByFIO")
     public ResponseEntity<Map<String, Object>> getByFIO(
@@ -37,13 +48,13 @@ public class EmployeeController {
     @GetMapping("/getById")
     public ResponseEntity<Map<String, Object>> getById(
             @RequestParam(required = false) String idEmployee) {
-        Map<String, Object> result = employeeService.getEmployeeById(idEmployee);
+        Map<String, Object> result = employeeService.getEmployeeById(idEmployee.toUpperCase());
         return ResponseEntity.ok(result);
     }
 
     @GetMapping("/getByGroupID")
     public ResponseEntity<Map<String, Object>> getByGroupID(@RequestParam(required = false) String idGroup) {
-        Map<String, Object> result = employeeService.getEmployeesByGroupID(idGroup);
+        Map<String, Object> result = employeeService.getEmployeesByGroupID(idGroup.toUpperCase());
         return ResponseEntity.ok(result);
     }
 
@@ -51,13 +62,18 @@ public class EmployeeController {
     public ResponseEntity<Map<String, Object>> getPassagesByDate(
             @RequestParam(required = false) String idEmployee,
             @RequestParam(required = false) String dataPassages) {
-        Map<String, Object> result = employeeService.getEmployeePassagesByDate(idEmployee, dataPassages);
+        Map<String, Object> result = employeeService.getEmployeePassagesByDate(idEmployee.toUpperCase(), dataPassages);
         return ResponseEntity.ok(result);
     }
-//    @PostMapping("/setLocked")
-//    public ResponseEntity<Map<String, Object>> setLocked(@RequestBody Map<String, Object> requestData) {
-//        // Вызов метода setEmployeeLocked с переданными параметрами
-//        Map<String, Object> result = employeeService.setEmployeeLocked(requestData);
-//        return ResponseEntity.ok(result);
-//    }
+
+    @PostMapping("/setLocked")
+    public ResponseEntity<Map<String, Object>> setLocked(@RequestParam String idEmployee, @RequestParam boolean flag) {
+        try {
+            employeeService.setEmployeeLocked(idEmployee, flag);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+//            System.out.println("setLocked() ошибка: " + e.getMessage());
+            return ResponseEntity.badRequest().build();
+        }
+    }
 }

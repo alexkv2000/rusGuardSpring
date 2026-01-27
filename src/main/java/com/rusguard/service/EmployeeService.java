@@ -8,7 +8,7 @@ public interface EmployeeService {
     /**
      * Установка блокировки сотрудника
      */
-    Map<String, Object> setEmployeeLocked(Map<String, Object> params);
+    Map<String, Object> setEmployeeLocked(String IDEmployee, boolean flag);
     
     /**
      * Получение списка сотрудников по ID группы

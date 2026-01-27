@@ -45,10 +45,7 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.logging.Level;
@@ -249,20 +246,20 @@ public class EmployeeServiceImpl implements EmployeeService {
             bpTimeout.getRequestContext().put("jakarta.xml.ws.client.connectionTimeout", "10000");
             bpTimeout.getRequestContext().put("jakarta.xml.ws.client.receiveTimeout", "30000");
 
-//            BindingProvider bpTimeoutCfg = (BindingProvider) networkCnfgService;
-//            bpTimeoutCfg.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, CONFIG_SERVICE_URL);
-//            bpTimeoutCfg.getRequestContext().put("force.urlconnection.http.conduit", Boolean.TRUE);
-//            bpTimeoutCfg.getRequestContext().put("javax.xml.ws.client.connectionTimeout", "10000");
-//            bpTimeoutCfg.getRequestContext().put("javax.xml.ws.client.receiveTimeout", "30000");
-//            bpTimeoutCfg.getRequestContext().put("jakarta.xml.ws.client.connectionTimeout", "10000");
-//            bpTimeoutCfg.getRequestContext().put("jakarta.xml.ws.client.receiveTimeout", "30000");
+            BindingProvider bpTimeoutCfg = (BindingProvider) networkCnfgService;
+            bpTimeoutCfg.getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, CONFIG_SERVICE_URL);
+            bpTimeoutCfg.getRequestContext().put("force.urlconnection.http.conduit", Boolean.TRUE);
+            bpTimeoutCfg.getRequestContext().put("javax.xml.ws.client.connectionTimeout", "10000");
+            bpTimeoutCfg.getRequestContext().put("javax.xml.ws.client.receiveTimeout", "30000");
+            bpTimeoutCfg.getRequestContext().put("jakarta.xml.ws.client.connectionTimeout", "10000");
+            bpTimeoutCfg.getRequestContext().put("jakarta.xml.ws.client.receiveTimeout", "30000");
 
             configureCxfTls(networkService);
-//            configureCxfTls(networkCnfgService);
+            configureCxfTls(networkCnfgService);
 
             // Configure WS-Security
             configureWSSecurity((BindingProvider) networkService);
-//            configureWSSecurity((BindingProvider) networkCnfgService);
+            configureWSSecurity((BindingProvider) networkCnfgService);
 
             System.out.println("Сервис успешно инициализирован");
         } catch (Exception e) {
@@ -274,19 +271,14 @@ public class EmployeeServiceImpl implements EmployeeService {
     private ILNetworkService createClient() {
         try {
             // Загружаем WSDL из classpath
-//            ClassLoader classLoader = getClass().getClassLoader();
-//            URL wsdlUrl = classLoader.getResource("\\wsdl\\LNetworkServer\\LNetworkService.wsdl");
-
             File wsdlUrl = new File("C:\\Users\\alexe\\IdeaProjects\\SOAP\\src\\main\\resources\\wsdl\\LNetworkServer\\LNetworkService.wsdl");
             System.out.println("WSDL URL: " + wsdlUrl);
             if (wsdlUrl == null) {
                 throw new IllegalStateException("WSDL file not found in classpath. Expected at: wsdl/LNetworkServer/LNetworkService.wsdl");
             }
-
             // Определяем QName для сервиса и порта
             QName serviceName = new QName("http://tempuri.org/", "LNetworkService");
             QName portName = new QName("http://tempuri.org/", "BasicHttpBinding_ILNetworkService");
-
             // URL конечной точки сервиса
             String endpoint = "http://scud-1.gaz.ru/LNetworkServer/LNetworkService.svc";
 
@@ -311,26 +303,49 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Map<String, Object> setEmployeeLocked(Map<String, Object> params) {
-        // Извлечение параметров
-        String employeeId = (String) params.get("employeeId");
-        Boolean locked = (Boolean) params.get("locked");
+    public Map<String, Object> setEmployeeLocked(String IDEmployee, boolean lock) {
+        Map<String, Object> response = new LinkedHashMap<>();
+        if (IDEmployee == null) {
+            throw new IllegalArgumentException("id is null");
+        }
+        lockAcsEmployee(IDEmployee, lock);
 
-        // В реальной реализации здесь будет вызов соответствующего метода API
-        // Пока что возвращаем заглушку с информацией о вызове
-
-        Map<String, Object> response = new HashMap<>();
         response.put("status", "success");
         response.put("message", "Employee lock status updated successfully (stub implementation)");
-        response.put("employeeId", employeeId);
-        response.put("locked", locked);
+        response.put("employeeId", IDEmployee);
+        response.put("locked", lock);
         return response;
     }
+    public static void lockAcsEmployee(String idEmployee, boolean isLocked) { // Заблокировать или разблокировать сотрудников.
+        try {
+            initServices();
+            if (networkCnfgService == null) {
+                throw new IllegalStateException("networkCnfgService is not initialized. Call initServices() first.");
+            }
+            ArrayOfguid arrayOfGuid = new ArrayOfguid();
+            arrayOfGuid.getGuid().add(idEmployee);
 
+            QName NS_ARRAY_OFGUID = new QName(
+                    "http://schemas.microsoft.com/2003/10/Serialization/Arrays",
+                    "ids"
+            );
+            JAXBElement<ArrayOfguid> idsElement = new JAXBElement<>(
+                    NS_ARRAY_OFGUID,
+                    ArrayOfguid.class,
+                    arrayOfGuid
+            );
+            // Теперь вызов метода с JAXBElement
+            networkCnfgService.lockAcsEmployee(idsElement.getValue(), isLocked);
+
+        } catch (Exception e) {
+            System.err.println("Ошибка блокировки сотрудников: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
     @Override
     public Map<String, Object> getEmployeesByGroupID(String idGroup) {
         // Initialize response map
-        Map<String, Object> response = new HashMap<>();
+        Map<String, Object> response = new LinkedHashMap<>();
         try {
             initServices();
 
@@ -435,7 +450,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Map<String, Object> getEmployeeByFIO(Map<String, String> params) {
         // Если нет параметра lastName - выдаем пустой JSON
         if (!params.containsKey("lastName") || getLastName(params).isBlank()) {
-            Map<String, Object> response = new HashMap<>();
+            Map<String, Object> response = new LinkedHashMap<>();
             response.put("status", "success");
             response.put("data", new ArrayList<>());
             response.put("count", 0);
@@ -461,7 +476,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         System.setProperty("ws-security.validate.token", "false");
 
         // Initialize response map
-        Map<String, Object> response = new HashMap<>();
+        Map<String, Object> response = new LinkedHashMap<>();
 
         try {
             SearchCondition searchCondition = new SearchCondition();
@@ -771,7 +786,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     public Map<String, Object> getEmployeeById(String id) {
         // Initialize response map
-        Map<String, Object> response = new HashMap<>();
+        Map<String, Object> response = new LinkedHashMap<>();
         try {
             initServices();
             AcsEmployeeFull employee = getAcsEmployee(id);
@@ -853,6 +868,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public Map<String, Object> getEmployeePassagesByDate(String IDEmployees, String dataPassages) {     //формат -"MM-dd-yyyy"
         initServices();
+        Map<String, Object> response = new LinkedHashMap<>();
         DateTimeFormatter formatterUS = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         LocalDate localDate = LocalDate.parse(dataPassages, formatterUS);
 
@@ -900,25 +916,36 @@ public class EmployeeServiceImpl implements EmployeeService {
             java.util.List<LogMessage> messages = logData.getMessages().getValue().getLogMessage();
             System.out.println("Найдено событий: " + messages.size());
 
+
+            List<Map<String, Object>> employeesList = new ArrayList<>();
+            //!!!
             for (LogMessage msg : messages) {
                 if (msg == null) {
                     continue;
                 }
+                Map<String, Object> empData = new LinkedHashMap<>();
+                empData.put("ID", msg.getEmployeeID().getValue());
 
-                System.out.println(
-                        "DateTime: " + msg.getDateTime() +
-                                ", Type: " + msg.getLogMessageType() +
-                                ", SubType: " + msg.getLogMessageSubType() +
-                                ", Message: " + (msg.getMessage() != null ? msg.getMessage().getValue() : "")
-                );
+                empData.put("DataTime", msg.getDateTime().getDay() + "-" + msg.getDateTime().getMonth() + "-" + msg.getDateTime().getYear() + " " + msg.getDateTime().getHour() + ":" + msg.getDateTime().getMinute() + ":" + msg.getDateTime().getSecond());
+                empData.put("TYPE", msg.getLogMessageType());
+                empData.put("SUBTYPE", msg.getLogMessageSubType());
+                empData.put("MESSAGE", (msg.getMessage() != null ? msg.getMessage().getValue() : ""));
+                employeesList.add(empData);
+
+
+                response.put("status", "success");
+                response.put("message", "Employee retrieved by ID successfully");
+                response.put("id", IDEmployees);
+                response.put("fio", msg.getEmployeeLastName().getValue() + " " + msg.getEmployeeFirstName().getValue() + " " + msg.getEmployeeLastName().getValue());
+                response.put("department", msg.getEmployeeGroupName().getValue());
+                response.put("data", employeesList);
+
             }
-
         } catch (Exception e) {
-            System.err.println("Ошибка получения проходов/событий: " + e.getMessage());
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return null; //TODO
-    };
+        return response;
+    }
 
     private static XMLGregorianCalendar toXmlGregorianCalendar(ZonedDateTime zdt) {
         try {
