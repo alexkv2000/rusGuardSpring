@@ -1,0 +1,42 @@
+POST http://localhost:8080/api/rusguard/Employee/setLocked?
+idEmployee=8f3d00e6-a595-43fa-9d85-6252b426c8e1
+&flag=true
+
+POST http://localhost:8080/api/rusguard/Employee/saveAcsEmployee?
+idEmployee=a38abfd9-d277-43fb-b719-618c7c91e7a1
+{
+    "position":"2129e300-520e-4ec3-a95a-8b5c7dfb34a7",
+    "isChangeLocked":false,
+    "isChangePin":false,
+    "firstName":"Иван3",
+    "lastName":"Иванов3",
+    "secondName":"Иванович3",
+    "tabelNumber": 222111,
+    "Comment":"коментарий1",
+    "RegistrationAddress":"Адрес регистрации1",
+    "ResidentialAddress":"Адрес проживания1",
+    "PassportIISUE":"1010",
+    "PassportNumber":"101010",
+    "email":"rrr12@rrr.com",
+    "emailDescription":"Комментарий к почте4",
+    "emailOrder":0
+}
+
+POST http://localhost:8080/api/rusguard/Employee/addEmployee?
+lastname=Фамилев
+&firstname=Имен
+&secondname=Отчествович
+&tabelNumber=555555
+&position=2129e300-520e-4ec3-a95a-8b5c7dfb34a7
+&positionGroup=901cb40e-fce2-47bb-9b0e-d3ca2087a22d
+&Comment=Комментарий к Пользователю
+&AdressReg=Адрес регистрации
+&PassportIISUE=1111
+&PassportNumber=234234
+&Email=FIO@itsnn.ru
+&EmailDescription=Почта выдуманная
+
+POST http://localhost:8080/api/rusguard/Employee/addEmail?
+idEmployee=77ec9c4f-3ee6-4ad3-a10d-527f8aff6359
+&email=ttt@mail.ru
+&description=%27Комметрарий%20Для%20теста%27

@@ -5,10 +5,14 @@ import com.rusguard.client.ILNetworkConfigurationService;
 import com.rusguard.client.ILNetworkConfigurationServiceLockAcsEmployeeArgumentExceptionFaultFaultMessage;
 import com.rusguard.client.ILNetworkConfigurationServiceLockAcsEmployeeDataNotFoundExceptionFaultFaultMessage;
 import com.rusguard.client.LockAcsEmployee;
+import com.rusguard.schema.SaveAcsEmployeeRequest;
 import com.rusguard.service.EmployeeService;
 import com.rusguard.service.impl.EmployeeServiceImpl;
 import jakarta.xml.bind.JAXBElement;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeGroup;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeSaveData;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.ArrayOfAcsEmployeeGroup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.xml.namespace.QName;
 import java.time.LocalDate;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/rusguard/Employee")
@@ -133,6 +138,63 @@ public class EmployeeController {
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }
+    }
+
+
+    @PostMapping("/saveAcsEmployee")
+    public ResponseEntity<Map<String, Object>> saveAcsEmployee(
+            @RequestParam(required = false) String idEmployee,
+            @RequestBody SaveAcsEmployeeRequest request) {
+        try {
+            // Вызов сервиса с передачей DTO
+            Map<String, Object> result = employeeService.saveAcsEmployee(idEmployee, request);
+
+            // Проверяем статус операции
+            if ("success".equals(result.get("status"))) {
+                return ResponseEntity.ok(result);
+            } else {
+                return ResponseEntity.badRequest().body(result);
+            }
+        } catch (Exception e) {
+            Map<String, Object> errorResponse = new HashMap<>();
+            errorResponse.put("status", "error");
+            errorResponse.put("message", e.getMessage());
+            return ResponseEntity.badRequest().body(errorResponse);
+        }
+    }
+
+    //--------------------------
+    //справочники
+    //--------------------------
+    @GetMapping("/getEmployeeGroups")
+    public ResponseEntity<Map<String, Object>> getEmployeeGroups() {
+        Map<String, Object> result = new HashMap<>();
+        try {
+            ArrayOfAcsEmployeeGroup arrayOfAcsEmployeeGroup = EmployeeServiceImpl.getEmployeeGroups();
+
+            if (arrayOfAcsEmployeeGroup == null) {
+                result.put("groups", new ArrayOfAcsEmployeeGroup());
+                return ResponseEntity.ok(result);
+            }
+
+            // Создаем новый объект ArrayOfAcsEmployeeGroup с отфильтрованными данными
+            ArrayOfAcsEmployeeGroup filteredArray = new ArrayOfAcsEmployeeGroup();
+
+            List<AcsEmployeeGroup> filteredList = arrayOfAcsEmployeeGroup.getAcsEmployeeGroup().stream()
+                    .filter(r -> r.isIsRemoved() == null || !r.isIsRemoved())
+                    .collect(Collectors.toList());
+
+            filteredArray.getAcsEmployeeGroup().addAll(filteredList);
+
+//TODO Добавить рекурсию            result = filteredList.stream().collect(Collectors.toMap(AcsEmployeeGroup::getID, el -> el.getName().getValue(), (a, b) -> b));
+
+
+        } catch (Exception e) {
+            result.put("error", e.getMessage());
+            return ResponseEntity.status(500).body(result);
+        }
+
+        return ResponseEntity.ok(result);
     }
 
 }

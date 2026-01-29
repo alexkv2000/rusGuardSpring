@@ -1,6 +1,7 @@
 package com.rusguard.service;
 
 import com.rusguard.client.ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
+import com.rusguard.schema.SaveAcsEmployeeRequest;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
 
 import java.time.LocalDate;
@@ -46,4 +47,5 @@ public interface EmployeeService {
     Map<String, Object> addEmailEmployee(String idEmployee, String email, String description) throws ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
 
     Map<String, Object>  addEmployee(String firstname, String lastname, String secondname, Integer tabelNumber, String position, String positionGroup, String comment, String adressReg, String passportIISUE, String passportNumber, String email, String emailDescription) throws ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
+    Map<String, Object> saveAcsEmployee(String idEmployee, SaveAcsEmployeeRequest request);
 }

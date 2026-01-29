@@ -2,12 +2,13 @@ package com.rusguard.service.impl;
 
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfint;
+import com.rusguard.schema.SaveAcsEmployeeRequest;
 import com.rusguard.service.EmployeeService;
 
 
 import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.ws.BindingProvider;
-//import jdk.dynalink.TypeConverterFactory;
+
 import org.apache.cxf.configuration.jsse.TLSClientParameters;
 import org.apache.cxf.endpoint.Client;
 import org.apache.cxf.endpoint.Endpoint;
@@ -34,6 +35,7 @@ import javax.security.auth.callback.UnsupportedCallbackException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.Exception;
@@ -47,8 +49,6 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-
-import static java.util.Comparator.nullsFirst;
 
 // Импортируем сгенерированный интерфейс
 
@@ -798,6 +798,19 @@ public class EmployeeServiceImpl implements EmployeeService {
             return null;
         }
     }
+    public static ArrayOfAcsEmployeeGroup getEmployeeGroups() {
+        initServices();
+        ArrayOfAcsEmployeeGroup temp_EmployeeGroups = networkService.getAcsEmployeeGroups();
+//        temp_EmployeeGroups.getAcsEmployeeGroup().forEach(acsEmployeeGroup -> System.out.println(acsEmployeeGroup.getID() + " - " + acsEmployeeGroup.getName().getValue()));
+        return temp_EmployeeGroups;
+    }
+
+    private static String getGroupName(String IDGroup) {
+        AcsEmployeeGroup temp_EmployeeGroup = networkService.getAcsEmployeeGroup(IDGroup);
+
+        String nameOrEmpty = temp_EmployeeGroup != null && !temp_EmployeeGroup.isIsRemoved() && temp_EmployeeGroup.getName() != null ? temp_EmployeeGroup.getName().getValue() : "Удалена: ";
+        return nameOrEmpty;
+    }
 
     public Map<String, Object> getEmployeeById(String id) {
         // Initialize response map
@@ -809,17 +822,14 @@ public class EmployeeServiceImpl implements EmployeeService {
                 System.out.println("Сотрудник не найден");
                 return new HashMap<>();
             }
-            StringBuilder positionName = new StringBuilder();
-            if (!employee.getPosition().isNil()) {
-                positionName.append(employee.getPosition().getValue().getName().getValue()); //Должность
-            }
-// Process results
+
             if (employee != null && !employee.getLastName().isNil()) {
                 List<Map<String, Object>> employeesList = new ArrayList<>();
 
                 Map<String, Object> empData = new LinkedHashMap<>();
                 empData.put("ID", employee.getID());
                 empData.put("GroupID", employee.getEmployeeGroupID() != null ? employee.getEmployeeGroupID() : "");
+                empData.put("Group", !getGroupName(employee.getEmployeeGroupID()).isEmpty() ? getGroupName(employee.getEmployeeGroupID()) : "Группы отсутствует");
                 empData.put("LastName", employee.getLastName() != null ? employee.getLastName().getValue() : "");
                 empData.put("FirstName", employee.getFirstName() != null ? employee.getFirstName().getValue() : "");
                 empData.put("SecondName", employee.getSecondName() != null ? employee.getSecondName().getValue() : "");
@@ -828,34 +838,17 @@ public class EmployeeServiceImpl implements EmployeeService {
                     try {
                         Object position = employee.getPosition();
                         // Try to call getValue() method
-                        Method getValueMethod = position.getClass().getMethod("getValue");
-                        Object positionValue = getValueMethod.invoke(position);
+//                        Method getValueMethod = position.getClass().getMethod("getValue");
+//                        Object positionValue = getValueMethod.invoke(position);
 
-                        if (positionValue != null) {
-                            // Now try to get the name from the position value
-                            Method getNameMethod = positionValue.getClass().getMethod("getName");
-                            Object nameValue = getNameMethod.invoke(positionValue);
-
-                            if (nameValue != null) {
-                                // If name is a JAXBElement, get its value
-                                if (nameValue instanceof JAXBElement) {
-                                    empData.put("Position", ((JAXBElement<?>) nameValue).getValue().toString());
-                                } else {
-                                    empData.put("Position", nameValue.toString());
-                                }
-                            } else {
-                                empData.put("Position", "");
-                            }
-                        } else {
-                            empData.put("Position", "");
+                        if (!employee.getPosition().isNil()) {
+                            empData.put("PositionID", employee.getPosition().getValue().getID());
+                            empData.put("Position", employee.getPosition().getValue().getName().getValue());
                         }
                     } catch (Exception e) {
                         // Log the error for debugging
-                        System.err.println("Error getting position: " + e.getMessage());
-                        empData.put("Position", "");
+                        empData.put("PositionError", "Error getting position: " + e.getMessage());
                     }
-                } else {
-                    empData.put("Position", "");
                 }
                 empData.put("PassportIssue", employee.getPassportIssue() != null ? employee.getPassportIssue().getValue() : "");
                 empData.put("PassportNumber", employee.getPassportNumber() != null ? employee.getPassportNumber().getValue() : "");
@@ -897,7 +890,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         System.out.println("Поиск проходов/событий сотрудника за дату: " + localDate.toString() + ", employeeId=" + IDEmployees);
 
         try {
-            com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid subjectIDs = new com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid();
+            ArrayOfguid subjectIDs = new ArrayOfguid();
             subjectIDs.getGuid().add(String.valueOf(UUID.fromString(IDEmployees)));
 
             ZoneId zoneId = ZoneId.systemDefault();
@@ -907,7 +900,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             XMLGregorianCalendar fromDateTime = toXmlGregorianCalendar(ZonedDateTime.of(startLdt, zoneId));
             XMLGregorianCalendar toDateTime = toXmlGregorianCalendar(ZonedDateTime.of(endExclusiveLdt, zoneId));
 
-            org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.LogData logData = networkService.getEvents(
+            LogData logData = networkService.getEvents(
                     0L,
                     fromDateTime,
                     toDateTime,
@@ -928,7 +921,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 return null; //TODO
             }
 
-            java.util.List<LogMessage> messages = logData.getMessages().getValue().getLogMessage();
+            List<LogMessage> messages = logData.getMessages().getValue().getLogMessage();
             System.out.println("Найдено событий: " + messages.size());
 
 
@@ -996,7 +989,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             empData.put("LastName", AcsEmployee.getLastName().getValue());
             empData.put("FirstName", AcsEmployee.getFirstName().getValue());
             empData.put("SecondName", AcsEmployee.getSecondName().getValue());
-            empData.put("Position", AcsEmployee.getSecondName().getValue());
+            empData.put("Position", AcsEmployee.getPosition().getValue().getName().getValue());
             empData.put("TabNumber", AcsEmployee.getNumber().getValue());
             empData.put("PassportIssue", AcsEmployee.getPassportIssue().getValue());
             empData.put("PassportNumber", AcsEmployee.getPassportNumber().getValue());
@@ -1208,8 +1201,485 @@ public class EmployeeServiceImpl implements EmployeeService {
         } catch (Exception e) {
             System.err.println("Неожиданная ошибка: " + e.getMessage());
         }
+        return response;
+    }
 
+    public Map<String, Object> saveAcsEmployee(String idEmployee, SaveAcsEmployeeRequest request) {
+        initServices();
+        AcsEmployeeFull currentEmployee = networkService.getAcsEmployee(idEmployee);
+        Map<String, Object> response = new LinkedHashMap<>();
+        try {
+            // Валидация обязательного поля
+            if (idEmployee == null || idEmployee.trim().isEmpty()) {
+                throw new IllegalArgumentException("idEmployee is required");
+            }
+
+            // Создание объекта данных
+            AcsEmployeeSaveData data = new AcsEmployeeSaveData();
+
+            // Установка имени (обязательно для RusGuard)
+            // Если передано в запросе - используем, иначе используем текущие данные
+            if (request.getFirstName() != null && !request.getFirstName().trim().isEmpty()) {
+                QName firstNameQName = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "FirstName"
+                );
+                JAXBElement<String> firstNameElement =
+                        new JAXBElement<>(firstNameQName, String.class, request.getFirstName().trim());
+                data.setFirstName(firstNameElement);
+            }
+            // Если не передано, проверяем, есть ли текущие данные сотрудника
+            else {
+                try {
+                    // Пытаемся получить текущие данные
+
+                    if (currentEmployee != null && currentEmployee.getFirstName() != null) {
+                        data.setFirstName(currentEmployee.getFirstName());
+                    } else {
+                        // Задаем значение по умолчанию
+                        QName firstNameQName = new QName(
+                                "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                                "FirstName"
+                        );
+                        JAXBElement<String> firstNameElement =
+                                new JAXBElement<>(firstNameQName, String.class, "Имя");
+                        data.setFirstName(firstNameElement);
+                    }
+                } catch (Exception e) {
+                    // Если не удалось получить данные, задаем значение по умолчанию
+                    QName firstNameQName = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "FirstName"
+                    );
+                    JAXBElement<String> firstNameElement =
+                            new JAXBElement<>(firstNameQName, String.class, "Имя");
+                    data.setFirstName(firstNameElement);
+                }
+            }
+
+            // Установка фамилии (аналогично)
+            // Если передано в запросе - используем, иначе используем текущие данные
+            if (request.getLastName() != null && !request.getLastName().trim().isEmpty()) {
+                QName lastNameQName = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "LastName"
+                );
+                JAXBElement<String> lastNameElement =
+                        new JAXBElement<>(lastNameQName, String.class, request.getLastName().trim());
+                data.setLastName(lastNameElement);
+            } else {
+                // Пытаемся получить текущие данные или задаем по умолчанию
+                try {
+
+                    if (currentEmployee != null && currentEmployee.getLastName() != null) {
+                        data.setLastName(currentEmployee.getLastName());
+                    } else {
+                        QName lastNameQName = new QName(
+                                "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                                "LastName"
+                        );
+                        JAXBElement<String> lastNameElement =
+                                new JAXBElement<>(lastNameQName, String.class, "Фамилия");
+                        data.setLastName(lastNameElement);
+                    }
+                } catch (Exception e) {
+                    QName lastNameQName = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "LastName"
+                    );
+                    JAXBElement<String> lastNameElement =
+                            new JAXBElement<>(lastNameQName, String.class, "Фамилия");
+                    data.setLastName(lastNameElement);
+                }
+            }
+
+            // SecondName (необязательное)
+            if (request.getSecondName() != null && !request.getSecondName().trim().isEmpty()) {
+                QName secondNameQName = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "SecondName"
+                );
+                JAXBElement<String> secondNameElement =
+                        new JAXBElement<>(secondNameQName, String.class, request.getSecondName().trim());
+                data.setSecondName(secondNameElement);
+            } else {
+                // Пытаемся получить текущие данные или задаем по умолчанию
+                try {
+                    if (currentEmployee != null && currentEmployee.getSecondName() != null) {
+                        data.setSecondName(currentEmployee.getSecondName());
+                    } else {
+                        QName secondNameQName = new QName(
+                                "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                                "SecondName"
+                        );
+                        JAXBElement<String> secondNameElement =
+                                new JAXBElement<>(secondNameQName, String.class, "Отчество");
+                        data.setLastName(secondNameElement);
+                    }
+                } catch (Exception e) {
+                    QName secondNameQName = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "SecondName"
+                    );
+                    JAXBElement<String> secondNameElement =
+                            new JAXBElement<>(secondNameQName, String.class, "Отчество");
+                    data.setLastName(secondNameElement);
+                }
+            }
+
+            // табельный номер (может быть null)
+            if (request.getTabelNumber() != null) {
+
+                QName numberQName = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "Number"
+                );
+                JAXBElement<Integer> numberElement =
+                        new JAXBElement<>(numberQName, Integer.class, request.getTabelNumber());
+                data.setNumber(numberElement);
+            } else {
+                assert currentEmployee != null;
+//TODO проверить если в текушем объекте пусто!
+                data.setNumber(currentEmployee.getNumber());
+            }
+            AcsEmployeeSaveData fullEmployee = new AcsEmployeeSaveData(); // Создаём объект данных сотрудника
+            String positionName = "";
+            // EmployeePositionID (если передан)
+            if (request.getPosition() != null && !request.getPosition().trim().isEmpty()) {
+                Object positionObj = getValue(fullEmployee, "getPosition");
+                if (positionObj != null && !(positionObj instanceof String && positionObj.equals(""))) {
+                    if (positionObj instanceof JAXBElement) {
+                        Object positionValue = ((JAXBElement<?>) positionObj).getValue();
+                        if (positionValue != null) {
+                            // Попробуем получить имя должности через getValue метод
+                            Object nameValue = getValue(positionValue, "getName");
+                            if (nameValue != null && !nameValue.toString().isEmpty() && !(nameValue instanceof String && nameValue.equals(""))) {
+                                positionName = nameValue.toString();
+                            } else {
+                                // Если getName не сработал, пробуем другие возможные методы
+                                try {
+                                    Method[] methods = positionValue.getClass().getMethods();
+                                    for (Method method : methods) {
+                                        if (method.getName().toLowerCase().contains("name") && method.getParameterCount() == 0) {
+                                            Object result = method.invoke(positionValue);
+                                            if (result != null) {
+                                                positionName = result.toString();
+                                                break;
+                                            }
+                                        }
+                                    }
+                                } catch (Exception e) {
+                                    // Если не удалось получить название, возвращаем toString() объекта
+                                    positionName = positionValue.toString();
+                                }
+                            }
+                        }
+                    } else {
+                        positionName = positionObj != null ? positionObj.toString() : "";
+                    }
+                } else {
+                    // Создаем объект LEmployeePositionInfo для передачи в качестве JAXBElement
+                    QName EMPLOYEE_POSITION_ID_QNAME = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "EmployeePositionID"
+                    );
+                    JAXBElement<String> employeePositionID = new JAXBElement<>(
+                            EMPLOYEE_POSITION_ID_QNAME,   // Имя и пространство имён элемента
+                            String.class,                 // Тип значения
+                            request.getPosition()                       // Значение — ID должности из вашей системы
+                    );
+                    assert currentEmployee != null;
+                    data.setEmployeePositionID(employeePositionID);
+                }
+            }
+            // Boolean поля (только если переданы)
+            if (request.getIsChangeLocked() != null) {
+                data.setIsChangeLocked(request.getIsChangeLocked());
+            }
+            if (request.getIsChangePin() != null) {
+                data.setIsChangePin(request.getIsChangePin());
+            }
+
+            // Комментарий: Если передано в запросе - используем, иначе используем текущие данные
+            QName EMPLOYEE_COMMENT_ID_QNAME;
+            JAXBElement<String> employeeComment;
+            if (request.getComment() != null && !request.getComment().trim().isEmpty()) {
+                EMPLOYEE_COMMENT_ID_QNAME = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "Comment"
+                );
+                employeeComment = new JAXBElement<>(
+                        EMPLOYEE_COMMENT_ID_QNAME,
+                        String.class,
+                        request.getComment()
+                );
+                data.setComment(employeeComment);
+            } else {
+                try {
+                    if (currentEmployee != null && currentEmployee.getComment() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+                        data.setComment(currentEmployee.getComment());
+                    }
+                } catch (Exception e) {
+                    EMPLOYEE_COMMENT_ID_QNAME = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "Comment"
+                    );
+                    employeeComment = new JAXBElement<>(
+                            EMPLOYEE_COMMENT_ID_QNAME,
+                            String.class,
+                            "-"
+                    );
+                    data.setComment(employeeComment);
+                }
+            }
+
+            // Адрес Регистрации: Если передано в запросе - используем, иначе используем текущие данные
+            QName EMPLOYEE_ADRESSREG_ID_QNAME;
+            JAXBElement<String> employeeAdressReg;
+            if (request.getComment() != null && !request.getComment().trim().isEmpty()) {
+                EMPLOYEE_ADRESSREG_ID_QNAME = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "RegistrationAddress"
+                );
+                employeeAdressReg = new JAXBElement<>(
+                        EMPLOYEE_ADRESSREG_ID_QNAME,
+                        String.class,
+                        request.getRegistrationAddress()
+                );
+                data.setRegistrationAddress(employeeAdressReg);
+            } else {
+                try {
+                    if (currentEmployee != null && currentEmployee.getRegistrationAddress() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+                        data.setRegistrationAddress(currentEmployee.getRegistrationAddress());
+                    }
+                } catch (Exception e) {
+                    EMPLOYEE_ADRESSREG_ID_QNAME = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "RegistrationAddress"
+                    );
+                    employeeAdressReg = new JAXBElement<>(
+                            EMPLOYEE_ADRESSREG_ID_QNAME,
+                            String.class,
+                            request.getRegistrationAddress()
+                    );
+                    data.setRegistrationAddress(employeeAdressReg);
+                }
+            }
+
+            // Адрес проживания: Если передано в запросе - используем, иначе используем текущие данные
+            QName EMPLOYEE_ADRESSRSDL_ID_QNAME;
+            JAXBElement<String> employeeAdressRsdl;
+            if (request.getResidentialAddress() != null && !request.getResidentialAddress().trim().isEmpty()) {
+                EMPLOYEE_ADRESSRSDL_ID_QNAME = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "ResidentialAddress"
+                );
+                employeeAdressRsdl = new JAXBElement<>(
+                        EMPLOYEE_ADRESSRSDL_ID_QNAME,
+                        String.class,
+                        request.getResidentialAddress()
+                );
+                data.setResidentialAddress(employeeAdressRsdl);
+            } else {
+                try {
+                    if (currentEmployee != null && currentEmployee.getResidentialAddress() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+                        data.setResidentialAddress(currentEmployee.getResidentialAddress());
+                    }
+                } catch (Exception e) {
+                    EMPLOYEE_ADRESSRSDL_ID_QNAME = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "ResidentialAddress"
+                    );
+                    employeeAdressRsdl = new JAXBElement<>(
+                            EMPLOYEE_ADRESSRSDL_ID_QNAME,
+                            String.class,
+                            request.getResidentialAddress()
+                    );
+                    data.setResidentialAddress(employeeAdressRsdl);
+                }
+            }
+            // Паспорт серия: Если передано в запросе - используем, иначе используем текущие данные
+            QName EMPLOYEE_PASPORTIISUE_ID_QNAME;
+            JAXBElement<String> employeePassportIISUE;
+            if (request.getPassportIISUE() != null && !request.getPassportIISUE().trim().isEmpty()) {
+                EMPLOYEE_PASPORTIISUE_ID_QNAME = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "PassportIssue"
+                );
+                employeePassportIISUE = new JAXBElement<>(
+                        EMPLOYEE_PASPORTIISUE_ID_QNAME,
+                        String.class,
+                        request.getPassportIISUE()
+                );
+                data.setPassportIssue(employeePassportIISUE);
+            } else {
+                try {
+                    if (currentEmployee != null && currentEmployee.getPassportIssue() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+                        data.setPassportIssue(currentEmployee.getPassportIssue());
+                    }
+                } catch (Exception e) {
+                    EMPLOYEE_PASPORTIISUE_ID_QNAME = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "PassportIssue"
+                    );
+                    employeePassportIISUE = new JAXBElement<>(
+                            EMPLOYEE_PASPORTIISUE_ID_QNAME,
+                            String.class,
+                            request.getPassportIISUE()
+                    );
+                    data.setPassportIssue(employeePassportIISUE);
+                }
+            }
+
+            // Паспорт номер: Если передано в запросе - используем, иначе используем текущие данные
+            QName EMPLOYEE_PASPORTNOMBER_ID_QNAME;
+            JAXBElement<String> employeePassportNumber;
+            if (request.getPassportNumber() != null && !request.getPassportNumber().trim().isEmpty()) {
+                EMPLOYEE_PASPORTNOMBER_ID_QNAME = new QName(
+                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                        "PassportNumber"
+                );
+                employeePassportNumber = new JAXBElement<>(
+                        EMPLOYEE_PASPORTNOMBER_ID_QNAME,
+                        String.class,
+                        request.getPassportNumber()
+                );
+                data.setPassportNumber(employeePassportNumber);
+            } else {
+                try {
+                    if (currentEmployee != null && currentEmployee.getPassportNumber() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+                        data.setPassportNumber(currentEmployee.getPassportNumber());
+                    }
+                } catch (Exception e) {
+                    EMPLOYEE_PASPORTNOMBER_ID_QNAME = new QName(
+                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                            "PassportNumber"
+                    );
+                    employeePassportNumber = new JAXBElement<>(
+                            EMPLOYEE_PASPORTNOMBER_ID_QNAME,
+                            String.class,
+                            request.getPassportNumber()
+                    );
+                    data.setPassportNumber(employeePassportNumber);
+                }
+            }
+            networkCnfgService.saveAcsEmployee(idEmployee, data);
+            response.put("status", "success");
+            response.put("message", "Employee data updated successfully");
+            // Добавляем в ответ только те поля, которые были обновлены
+            if (request.getPosition() != null) {
+                response.put("idPosition", request.getPosition());
+            }
+            if (request.getIsChangeLocked() != null) {
+                response.put("isChangeLocked", request.getIsChangeLocked());
+            }
+            if (request.getIsChangePin() != null) {
+                response.put("isChangePin", request.getIsChangePin());
+            }
+            if (request.getFirstName() != null) {
+                response.put("firstName", request.getFirstName());
+            }
+            if (request.getLastName() != null) {
+                response.put("lastName", request.getLastName());
+            }
+            if (request.getSecondName() != null) {
+                response.put("secondName", request.getSecondName());
+            }
+            if (request.getTabelNumber() != null) {
+                response.put("tabelNumber", request.getTabelNumber());
+            }
+            if (request.getComment() != null) {
+                response.put("Comment", request.getComment());
+            }
+            if (request.getRegistrationAddress() != null) {
+                response.put("RegistrationAddress", request.getRegistrationAddress());
+            }
+            if (request.getResidentialAddress() != null) {
+                response.put("ResidentialAddress", request.getResidentialAddress());
+            }
+            if (request.getRegistrationAddress() != null) {
+                response.put("PassportIISUE", request.getPassportIISUE());
+            }
+            if (request.getRegistrationAddress() != null) {
+                response.put("PassportNumber", request.getPassportNumber());
+            }
+
+            // Почта: Если передано в запросе - используем, иначе используем текущие данные
+            QName EMPLOYEE_MAIL_ID_QNAME = new QName(
+                    "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation",
+                    "Email"
+            );
+            JAXBElement<String> employeeMail = new JAXBElement<>(
+                    EMPLOYEE_MAIL_ID_QNAME,
+                    String.class,
+                    request.getEmail()
+            );
+
+            if (request.getEmail() != null && !request.getEmail().trim().isEmpty()) {
+                String email = request.getEmail().trim();
+                String emailDescription = request.getEmailDescription() != null ?
+                        request.getEmailDescription().trim() : "";
+
+                System.out.println("DEBUG: Adding email for employee " + idEmployee);
+                System.out.println("DEBUG: Email = " + email);
+                System.out.println("DEBUG: Email Description = " + emailDescription);
+
+                try {
+                    // Создаем объект EmailAddressSaveData
+                    org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.EmailAddressSaveData dataEmail =
+                            new org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.EmailAddressSaveData();
+
+                    // Email - ОБЯЗАТЕЛЬНОЕ поле
+                    String emailNamespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation";
+                    QName emailQName = new QName(emailNamespace, "Email");
+                    JAXBElement<String> emailElement = new JAXBElement<>(emailQName, String.class, email);
+                    dataEmail.setEmail(emailElement);
+
+                    // Description - необязательное поле
+                    if (emailDescription != null && !emailDescription.isEmpty()) {
+                        QName descQName = new QName(emailNamespace, "Description");
+                        JAXBElement<String> descElement = new JAXBElement<>(descQName, String.class, emailDescription);
+                        dataEmail.setDescription(descElement);
+                    }
+
+                    // EmailOrder - установите нужное значение (обычно 1 для первого email)
+                    dataEmail.setEmailOrder(request.getEmailOrder());
+
+                    // Проверка перед вызовом
+                    if (dataEmail.getEmail() == null || dataEmail.getEmail().getValue() == null) {
+                        throw new IllegalArgumentException("Email must not be null");
+                    }
+
+                    System.out.println("DEBUG: Calling saveEmailAddress...");
+                    System.out.println(UUID.fromString(idEmployee));
+
+//                    networkCnfgService.saveEmailAddress(idEmployee, dataEmail, true);
+                    networkCnfgService.addEmailAddress(EmailAddressOwner.EMPLOYEE, idEmployee, dataEmail, true); //добавляет, но не обновляет данные!!! (нужно - TRUE)
+                    if (request.getEmail() != null) {
+                        response.put("Email", request.getEmail());
+                    }
+                    if (request.getEmailDescription() != null) {
+                        response.put("emailDescription", request.getEmailDescription());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    response.put("emailError", "Failed to add email " + email + " for employee " + idEmployee + ": " + e.getMessage());
+                    response.put("emailDescription", "An error occurred while adding the email. The specified email may already exist");
+//                    throw new RuntimeException("Failed to add email: " + e.getMessage(), e);
+                }
+            }
+        } catch (Exception e) {
+            response.put("status", "failed");
+            response.put("message", "Error updating employee");
+            response.put("error", e.getMessage());
+
+            // Детальная обработка ошибок
+            if (e.getMessage().contains("Должно быть задано имя, фамилия или отчество сотрудника")) {
+                response.put("diagnostic", "Employee must have at least one of: firstName, lastName, middleName");
+            }
+        }
 
         return response;
     }
+
 }
