@@ -1,10 +1,11 @@
 package com.rusguard.service;
 
+import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.rusguard.client.ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
 import com.rusguard.schema.SaveAcsEmployeeRequest;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
+import org.springframework.http.ResponseEntity;
 
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -48,4 +49,10 @@ public interface EmployeeService {
 
     Map<String, Object>  addEmployee(String firstname, String lastname, String secondname, Integer tabelNumber, String position, String positionGroup, String comment, String adressReg, String passportIISUE, String passportNumber, String email, String emailDescription) throws ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
     Map<String, Object> saveAcsEmployee(String idEmployee, SaveAcsEmployeeRequest request);
+
+    ResponseEntity<Map<String, Object>> GetEmployeeGroup();
+
+    Map<String, Object> lockAcsEmployee(String idEmployee, boolean isLocked);
+
+    Map<String, Object> setUseEmployeeParentAccessLevel(String employeeID, ArrayOfguid accessLevelIDs, boolean isUseParentAccessLevel);
 }

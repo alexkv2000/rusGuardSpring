@@ -2,26 +2,15 @@ package com.rusguard.controller;
 
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.rusguard.client.ILNetworkConfigurationService;
-import com.rusguard.client.ILNetworkConfigurationServiceLockAcsEmployeeArgumentExceptionFaultFaultMessage;
-import com.rusguard.client.ILNetworkConfigurationServiceLockAcsEmployeeDataNotFoundExceptionFaultFaultMessage;
-import com.rusguard.client.LockAcsEmployee;
+import com.rusguard.schema.AccessLevelIdsRequest;
 import com.rusguard.schema.SaveAcsEmployeeRequest;
 import com.rusguard.service.EmployeeService;
-import com.rusguard.service.impl.EmployeeServiceImpl;
-import jakarta.xml.bind.JAXBElement;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeGroup;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeSaveData;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.ArrayOfAcsEmployeeGroup;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.xml.namespace.QName;
-import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Collectors;
+
 
 @RestController
 @RequestMapping("/api/rusguard/Employee")
@@ -49,6 +38,49 @@ public class EmployeeController {
                             mapresult.add(itemMap);
                         });
         return ResponseEntity.ok(mapresult);
+    }
+
+    @PostMapping("/lockEmployee")
+    public ResponseEntity<Map<String, Object>> lockEmployee(@RequestParam(required = false) String idEmployee,
+                                                            @RequestParam(required = false) boolean flagLock) {
+        Map<String, Object> result;
+        result = employeeService.lockAcsEmployee(idEmployee, flagLock);
+
+        return ResponseEntity.ok(result);
+    }
+
+    @PostMapping("/setAccessLevelEmployee")
+    public ResponseEntity<Map<String, Object>> setAccessLevelEmployee(
+            @RequestParam String employeeID,
+            @RequestBody AccessLevelIdsRequest request,
+            @RequestParam boolean isUseParentAccessLevel) {
+
+        try {
+            // Преобразуем DTO в ArrayOfguid
+            ArrayOfguid accessLevelIDs = new ArrayOfguid();
+            if (request.getGuid() != null) {
+                request.getGuid().forEach(accessLevelIDs.getGuid()::add);
+            }
+
+            Map<String, Object> result = employeeService.setUseEmployeeParentAccessLevel(
+                    employeeID, accessLevelIDs, isUseParentAccessLevel);
+
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            Map<String, Object> errorResponse = new HashMap<>();
+            errorResponse.put("error", e.getMessage());
+            return ResponseEntity.badRequest().body(errorResponse);
+        }
+    }
+
+    @PostMapping("/setLocked")
+    public ResponseEntity<Map<String, Object>> setAccessLevelEmployee(@RequestParam String idEmployee, @RequestParam boolean flag) {
+        try {
+            employeeService.setEmployeeLocked(idEmployee, flag);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().build();
+        }
     }
 
     @GetMapping("/getByFIO")
@@ -94,16 +126,6 @@ public class EmployeeController {
             @RequestParam(required = false) String dataPassages) {
         Map<String, Object> result = employeeService.getEmployeePassagesByDate(idEmployee.toUpperCase(), dataPassages);
         return ResponseEntity.ok(result);
-    }
-
-    @PostMapping("/setLocked")
-    public ResponseEntity<Map<String, Object>> setLocked(@RequestParam String idEmployee, @RequestParam boolean flag) {
-        try {
-            employeeService.setEmployeeLocked(idEmployee, flag);
-            return ResponseEntity.ok().build();
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
-        }
     }
 
     @PostMapping("/addEmail")
@@ -166,35 +188,9 @@ public class EmployeeController {
     //--------------------------
     //справочники
     //--------------------------
-    @GetMapping("/getEmployeeGroups")
+    @GetMapping("/getEmployeesGroups")
     public ResponseEntity<Map<String, Object>> getEmployeeGroups() {
-        Map<String, Object> result = new HashMap<>();
-        try {
-            ArrayOfAcsEmployeeGroup arrayOfAcsEmployeeGroup = EmployeeServiceImpl.getEmployeeGroups();
-
-            if (arrayOfAcsEmployeeGroup == null) {
-                result.put("groups", new ArrayOfAcsEmployeeGroup());
-                return ResponseEntity.ok(result);
-            }
-
-            // Создаем новый объект ArrayOfAcsEmployeeGroup с отфильтрованными данными
-            ArrayOfAcsEmployeeGroup filteredArray = new ArrayOfAcsEmployeeGroup();
-
-            List<AcsEmployeeGroup> filteredList = arrayOfAcsEmployeeGroup.getAcsEmployeeGroup().stream()
-                    .filter(r -> r.isIsRemoved() == null || !r.isIsRemoved())
-                    .collect(Collectors.toList());
-
-            filteredArray.getAcsEmployeeGroup().addAll(filteredList);
-
-//TODO Добавить рекурсию            result = filteredList.stream().collect(Collectors.toMap(AcsEmployeeGroup::getID, el -> el.getName().getValue(), (a, b) -> b));
-
-
-        } catch (Exception e) {
-            result.put("error", e.getMessage());
-            return ResponseEntity.status(500).body(result);
-        }
-
+        Map<String, Object> result = employeeService.GetEmployeeGroup().getBody();
         return ResponseEntity.ok(result);
     }
-
 }

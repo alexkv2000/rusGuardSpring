@@ -2,7 +2,9 @@ package com.rusguard.service.impl;
 
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfint;
+import com.rusguard.schema.EmployeeGroupTreeDto;
 import com.rusguard.schema.SaveAcsEmployeeRequest;
+import com.rusguard.service.EmployeeGroupTree;
 import com.rusguard.service.EmployeeService;
 
 
@@ -19,9 +21,13 @@ import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
 import org.apache.wss4j.common.ext.WSPasswordCallback;
 import org.apache.wss4j.dom.WSConstants;
 import org.apache.wss4j.dom.handler.WSHandlerConstants;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.SortOrder;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.*;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.*;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.*;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs_accesslevels.AcsAccessPointDriverInfo;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs_accesslevels.ArrayOfAcsAccessPointDriverInfo;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_net_services.DeviceCallMethodOperation;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import org.apache.cxf.ws.addressing.WSAddressingFeature;
@@ -32,6 +38,7 @@ import javax.net.ssl.*;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.callback.UnsupportedCallbackException;
+import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
@@ -46,6 +53,7 @@ import java.security.cert.X509Certificate;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -99,13 +107,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         props.put(WSHandlerConstants.ACTION, WSHandlerConstants.USERNAME_TOKEN);
         props.put(WSHandlerConstants.USER, USERNAME);
         props.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
-        props.put(WSHandlerConstants.PW_CALLBACK_REF, new CallbackHandler() {
-            @Override
-            public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
-                WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
-                pc.setPassword(PASSWORD);
-            }
-        });
+        props.put(WSHandlerConstants.PW_CALLBACK_REF, (CallbackHandler) EmployeeServiceImpl::handle);
 
         // properties in the request context
         requestContext.put(WSHandlerConstants.USERNAME_TOKEN, USERNAME);
@@ -116,13 +118,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         // security properties
         requestContext.put(SecurityConstants.USERNAME, USERNAME);
         requestContext.put(SecurityConstants.PASSWORD, PASSWORD);
-        requestContext.put(SecurityConstants.CALLBACK_HANDLER, new CallbackHandler() {
-            @Override
-            public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
-                WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
-                pc.setPassword(PASSWORD);
-            }
-        });
+        requestContext.put(SecurityConstants.CALLBACK_HANDLER, (CallbackHandler) callbacks -> handle(callbacks));
 
         // security interceptor
         Client client = ClientProxy.getClient(port);
@@ -132,13 +128,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         outProps.put(WSHandlerConstants.ACTION, WSHandlerConstants.USERNAME_TOKEN);
         outProps.put(WSHandlerConstants.USER, USERNAME);
         outProps.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
-        outProps.put(WSHandlerConstants.PW_CALLBACK_REF, new CallbackHandler() {
-            @Override
-            public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
-                WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
-                pc.setPassword(PASSWORD);
-            }
-        });
+        outProps.put(WSHandlerConstants.PW_CALLBACK_REF, (CallbackHandler) callbacks -> handle(callbacks));
 
         WSS4JOutInterceptor wssOut =
                 new WSS4JOutInterceptor(outProps);
@@ -203,7 +193,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    private static void initServices() {
+    public static void initServices() {
         try {
             if (networkService != null && networkCnfgService != null) {
                 return;
@@ -263,40 +253,45 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    // Метод для создания SOAP-клиента
-    private ILNetworkService createClient() {
-        try {
-            // Загружаем WSDL из classpath
-            File wsdlUrl = new File("C:\\Users\\alexe\\IdeaProjects\\SOAP\\src\\main\\resources\\wsdl\\LNetworkServer\\LNetworkService.wsdl");
-            System.out.println("WSDL URL: " + wsdlUrl);
-            if (wsdlUrl == null) {
-                throw new IllegalStateException("WSDL file not found in classpath. Expected at: wsdl/LNetworkServer/LNetworkService.wsdl");
-            }
-            // Определяем QName для сервиса и порта
-            QName serviceName = new QName("http://tempuri.org/", "LNetworkService");
-            QName portName = new QName("http://tempuri.org/", "BasicHttpBinding_ILNetworkService");
-            // URL конечной точки сервиса
-            String endpoint = "http://scud-1.gaz.ru/LNetworkServer/LNetworkService.svc";
-
-            // Настраиваем JAX-WS клиент
-            JaxWsProxyFactoryBean factory = new JaxWsProxyFactoryBean();
-            factory.setWsdlURL(wsdlUrl.toString());
-            factory.setServiceClass(ILNetworkService.class);
-            factory.setServiceName(serviceName);
-            factory.setEndpointName(portName);
-            factory.setAddress(endpoint);
-
-            // Добавляем поддержку WS-Addressing (важно для WCF)
-            factory.getFeatures().add(new WSAddressingFeature());
-
-            // Создаем и возвращаем клиент
-            return (ILNetworkService) factory.create();
-        } catch (Exception e) {
-            System.err.println("Ошибка при создании SOAP-клиента: " + e.getMessage());
-            e.printStackTrace();
-            throw new RuntimeException("Не удалось инициализировать SOAP-клиент", e);
-        }
+    private static void handle(Callback[] callbacks) {
+        WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
+        pc.setPassword(PASSWORD);
     }
+
+    // Метод для создания SOAP-клиента
+//    private ILNetworkService createClient() {
+//        try {
+//            // Загружаем WSDL из classpath
+//            File wsdlUrl = new File("C:\\Users\\alexe\\IdeaProjects\\SOAP\\src\\main\\resources\\wsdl\\LNetworkServer\\LNetworkService.wsdl");
+//            System.out.println("WSDL URL: " + wsdlUrl);
+//            if (wsdlUrl == null) {
+//                throw new IllegalStateException("WSDL file not found in classpath. Expected at: wsdl/LNetworkServer/LNetworkService.wsdl");
+//            }
+//            // Определяем QName для сервиса и порта
+//            QName serviceName = new QName("http://tempuri.org/", "LNetworkService");
+//            QName portName = new QName("http://tempuri.org/", "BasicHttpBinding_ILNetworkService");
+//            // URL конечной точки сервиса
+//            String endpoint = "http://scud-1.gaz.ru/LNetworkServer/LNetworkService.svc";
+//
+//            // Настраиваем JAX-WS клиент
+//            JaxWsProxyFactoryBean factory = new JaxWsProxyFactoryBean();
+//            factory.setWsdlURL(wsdlUrl.toString());
+//            factory.setServiceClass(ILNetworkService.class);
+//            factory.setServiceName(serviceName);
+//            factory.setEndpointName(portName);
+//            factory.setAddress(endpoint);
+//
+//            // Добавляем поддержку WS-Addressing (важно для WCF)
+//            factory.getFeatures().add(new WSAddressingFeature());
+//
+//            // Создаем и возвращаем клиент
+//            return (ILNetworkService) factory.create();
+//        } catch (Exception e) {
+//            System.err.println("Ошибка при создании SOAP-клиента: " + e.getMessage());
+//            e.printStackTrace();
+//            throw new RuntimeException("Не удалось инициализировать SOAP-клиент", e);
+//        }
+//    }
 
     @Override
     public List<AcsAccessLevelSlimInfo> getAccessLevelsSlim() { //Получение всех уровней доступа
@@ -330,7 +325,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         return response;
     }
 
-    public static void lockAcsEmployee(String idEmployee, boolean isLocked) { // Заблокировать или разблокировать сотрудников.
+    public Map<String, Object> lockAcsEmployee(String idEmployee, boolean isLocked) { // Заблокировать или разблокировать сотрудников.
+        Map<String, Object> result = new HashMap<>();
         try {
             initServices();
             if (networkCnfgService == null) {
@@ -349,12 +345,45 @@ public class EmployeeServiceImpl implements EmployeeService {
                     arrayOfGuid
             );
             // Теперь вызов метода с JAXBElement
-            networkCnfgService.lockAcsEmployee(idsElement.getValue(), isLocked);
 
+            networkCnfgService.lockAcsEmployee(idsElement.getValue(), isLocked);
+            result.put("Status", "Success");
+            result.put(idEmployee, isLocked);
         } catch (Exception e) {
             System.err.println("Ошибка блокировки сотрудников: " + e.getMessage());
             throw new RuntimeException(e);
         }
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> setUseEmployeeParentAccessLevel(String employeeID, ArrayOfguid accessLevelIDs, boolean isUseParentAccessLevel) {
+        Map<String, Object> response = new HashMap<>();
+        initServices();
+        try {
+
+            if (accessLevelIDs.getGuid().isEmpty()) { //если уровень не задан, ставим признак = из родительской группы
+                isUseParentAccessLevel=true;
+            }
+            networkCnfgService.setUseEmployeeParentAccessLevel(employeeID, isUseParentAccessLevel, true); // запретить - true,true
+            //Если НЕ используем родительские уровни, то добавляем указанные уровни доступа
+            if (!isUseParentAccessLevel && !accessLevelIDs.getGuid().isEmpty()) {
+                networkCnfgService.addAccessLevelsToEmployee(employeeID, accessLevelIDs);
+            }
+            response.put("status", "success");
+            response.put("message", "Access levels updated successfully");
+            response.put("employeeID", employeeID);
+            response.put("isUseParentAccessLevel", isUseParentAccessLevel);
+            response.put("accessLevelsCount",
+                    accessLevelIDs.getGuid().size());
+
+        } catch (Exception e) {
+            response.put("status", "failed");
+            response.put("message", "Error setting access levels");
+            response.put("error", e.getMessage());
+            System.err.println("Ошибка установки флага IsAccessLevelsInherited: " + e.getMessage());
+        }
+        return response;
     }
 
     @Override
@@ -447,18 +476,6 @@ public class EmployeeServiceImpl implements EmployeeService {
             return response;
         }
         return response;
-    }
-
-    // Вспомогательный метод: преобразование String[] в UUID[]
-    private static ArrayOfguid toUuidArray(String[] ids) {
-        if (ids == null) return null;
-        ArrayOfguid result = new ArrayOfguid();
-        for (String id : ids) {
-            if (id != null) {
-                result.getGuid().add(UUID.fromString(id).toString());
-            }
-        }
-        return result;
     }
 
     @Override
@@ -672,7 +689,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                                 }
                         )
                         .thenComparing(
-                                e -> (String) e.get("LastName").toString().toUpperCase(),
+                                e -> e.get("LastName").toString().toUpperCase(),
                                 Comparator.nullsLast(String.CASE_INSENSITIVE_ORDER)
                         )
                         .thenComparing(
@@ -715,18 +732,18 @@ public class EmployeeServiceImpl implements EmployeeService {
         return Boolean.FALSE.equals(employee.isIsLocked());
     }
 
-    private static String getEmployeePositionName(AcsEmployeeFull employee) {
-        if (employee == null || employee.getPosition() == null || employee.getPosition().getValue() == null) {
-            return "";
-        }
-        if (employee.getPosition().getValue().getName() == null) {
-            return "";
-        }
-        if (employee.getPosition().getValue().getName().getValue() == null) {
-            return "";
-        }
-        return employee.getPosition().getValue().getName().getValue();
-    }
+//    private static String getEmployeePositionName(AcsEmployeeFull employee) {
+//        if (employee == null || employee.getPosition() == null || employee.getPosition().getValue() == null) {
+//            return "";
+//        }
+//        if (employee.getPosition().getValue().getName() == null) {
+//            return "";
+//        }
+//        if (employee.getPosition().getValue().getName().getValue() == null) {
+//            return "";
+//        }
+//        return employee.getPosition().getValue().getName().getValue();
+//    }
 
     @SuppressWarnings("unchecked")
     private static <T> T getValue(Object obj, String methodName, Class<T> returnType) {
@@ -753,42 +770,42 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    private static String getPositionName(Object fullEmployee) {
-        String positionName = "";
-        Object positionObj = getValue(fullEmployee, "getPosition", String.class);
-        if (positionObj != null && !(positionObj instanceof String && positionObj.equals(""))) {
-            if (positionObj instanceof JAXBElement) {
-                Object positionValue = ((JAXBElement<?>) positionObj).getValue();
-                if (positionValue != null) {
-                    // Попробуем получить имя должности через getValue метод
-                    Object nameValue = getValue(positionValue, "getName", String.class);
-                    if (nameValue != null && !nameValue.toString().isEmpty() && !(nameValue instanceof String && nameValue.equals(""))) {
-                        positionName = nameValue.toString();
-                    } else {
-                        // Если getName не сработал, пробуем другие возможные методы
-                        try {
-                            Method[] methods = positionValue.getClass().getMethods();
-                            for (Method method : methods) {
-                                if (method.getName().toLowerCase().contains("name") && method.getParameterCount() == 0) {
-                                    Object result = method.invoke(positionValue);
-                                    if (result != null) {
-                                        positionName = result.toString();
-                                        break;
-                                    }
-                                }
-                            }
-                        } catch (Exception e) {
-                            // Если не удалось получить название, возвращаем toString() объекта
-                            positionName = positionValue.toString();
-                        }
-                    }
-                }
-            } else {
-                positionName = positionObj != null ? positionObj.toString() : "";
-            }
-        }
-        return positionName;
-    }
+//    private static String getPositionName(Object fullEmployee) {
+//        String positionName = "";
+//        Object positionObj = getValue(fullEmployee, "getPosition", String.class);
+//        if (positionObj != null && !(positionObj instanceof String && positionObj.equals(""))) {
+//            if (positionObj instanceof JAXBElement) {
+//                Object positionValue = ((JAXBElement<?>) positionObj).getValue();
+//                if (positionValue != null) {
+//                    // Попробуем получить имя должности через getValue метод
+//                    Object nameValue = getValue(positionValue, "getName", String.class);
+//                    if (nameValue != null && !nameValue.toString().isEmpty() && !(nameValue instanceof String && nameValue.equals(""))) {
+//                        positionName = nameValue.toString();
+//                    } else {
+//                        // Если getName не сработал, пробуем другие возможные методы
+//                        try {
+//                            Method[] methods = positionValue.getClass().getMethods();
+//                            for (Method method : methods) {
+//                                if (method.getName().toLowerCase().contains("name") && method.getParameterCount() == 0) {
+//                                    Object result = method.invoke(positionValue);
+//                                    if (result != null) {
+//                                        positionName = result.toString();
+//                                        break;
+//                                    }
+//                                }
+//                            }
+//                        } catch (Exception e) {
+//                            // Если не удалось получить название, возвращаем toString() объекта
+//                            positionName = positionValue.toString();
+//                        }
+//                    }
+//                }
+//            } else {
+//                positionName = positionObj != null ? positionObj.toString() : "";
+//            }
+//        }
+//        return positionName;
+//    }
 
     public static AcsEmployeeFull getAcsEmployee(String id) {
         try {
@@ -798,6 +815,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             return null;
         }
     }
+
     public static ArrayOfAcsEmployeeGroup getEmployeeGroups() {
         initServices();
         ArrayOfAcsEmployeeGroup temp_EmployeeGroups = networkService.getAcsEmployeeGroups();
@@ -817,7 +835,10 @@ public class EmployeeServiceImpl implements EmployeeService {
         Map<String, Object> response = new LinkedHashMap<>();
         try {
             initServices();
+            AccessLevelTagsData accessLevelTagsData = new AccessLevelTagsData();
+            String tt = accessLevelTagsData.getAccessLevelID();
             AcsEmployeeFull employee = getAcsEmployee(id);
+
             if (employee == null) {
                 System.out.println("Сотрудник не найден");
                 return new HashMap<>();
@@ -973,7 +994,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         ArrayOfint arrayTabelNumber = new ArrayOfint();
         arrayTabelNumber.getInt().add(intTabelNumber);
         ArrayOfAcsEmployeeFull arrayOfAcsEmployeeFull = networkService.getAcsEmployeesByTableNumbers(arrayTabelNumber);
-        if (arrayOfAcsEmployeeFull.getAcsEmployeeFull().size() == 0) {
+        if (arrayOfAcsEmployeeFull.getAcsEmployeeFull().isEmpty()) {
             return response;
         }
 
@@ -1680,6 +1701,368 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
 
         return response;
+    }
+
+    @Override
+    public ResponseEntity<Map<String, Object>> GetEmployeeGroup() {
+        Map<String, Object> result = new HashMap<>();
+        try {
+            ArrayOfAcsEmployeeGroup arrayOfAcsEmployeeGroup = EmployeeServiceImpl.getEmployeeGroups();
+            result.put("Total root groups in RusGuard: ", arrayOfAcsEmployeeGroup.getAcsEmployeeGroup().size());
+
+            if (arrayOfAcsEmployeeGroup == null) {
+                result.put("groups", new ArrayList<>());
+                return ResponseEntity.ok(result);
+            }
+
+            // Фильтруем удаленные группы
+            List<AcsEmployeeGroup> filteredList = arrayOfAcsEmployeeGroup.getAcsEmployeeGroup().stream()
+                    .filter(r -> r.isIsRemoved() == null || !r.isIsRemoved())
+                    .toList();
+
+            // Собираем все группы в Map для быстрого доступа
+            Map<String, AcsEmployeeGroup> groupsMap = filteredList.stream()
+                    .collect(Collectors.toMap(
+                            AcsEmployeeGroup::getID,
+                            Function.identity(),
+                            (a, b) -> a
+                    ));
+
+            // Находим корневые группы (те, которые не являются чьими-то детьми и не удален)
+            Set<String> childIds = new LinkedHashSet<>();
+            filteredList.forEach(group -> {
+                if (group.getEmployeeGroups() != null &&
+                        group.getEmployeeGroups().getValue() != null &&
+                        group.getEmployeeGroups().getValue().getAcsEmployeeGroup() != null &&
+                        group.isIsRemoved() == false) {
+
+                    group.getEmployeeGroups().getValue().getAcsEmployeeGroup().forEach(child -> {
+                        if (child != null && child.getID() != null && child.isIsRemoved() == false) {
+                            childIds.add(child.getID());
+                        }
+                    });
+                }
+            });
+
+            // Строим дерево, начиная с корневых групп
+            List<EmployeeGroupTreeDto> tree = new ArrayList<>();
+            for (AcsEmployeeGroup group : filteredList) {
+                if (!childIds.contains(group.getID()) && group.isIsRemoved() == false) {
+                    EmployeeGroupTreeDto rootNode = EmployeeGroupTree.buildGroupTree(group, groupsMap, new LinkedHashSet<>());
+                    tree.add(rootNode);
+                }
+            }
+
+            result.put("groups", tree);
+            result.put("totalGroups", filteredList.size());
+            result.put("rootGroups", tree.size());
+
+        } catch (Exception e) {
+            result.put("error", e.getMessage());
+            return ResponseEntity.status(500).body(result);
+        }
+
+        return ResponseEntity.ok(result);
+    }
+
+    public static void addAccessLevelsToEmployee(String employeeID, String[] accessLevelIDs) { // Назначить уровни доступа сотруднику
+        try {
+            // Convert String[] to ArrayOfguid
+            ArrayOfguid arrayOfGuid = new ArrayOfguid();
+            arrayOfGuid.getGuid().addAll(Arrays.asList(accessLevelIDs));
+
+            // Call with correct parameter types
+            networkCnfgService.addAccessLevelsToEmployee(employeeID, arrayOfGuid);
+        } catch (Exception e) {
+            System.err.println("Ошибка назначения уровней доступа: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    public static void removeAccessLevelFromEmployee(String employeeID, String[] accessLevelIDs) { // Удалить уровни доступа у сотрудника
+        try {
+            // Create ArrayOfguid object
+            ArrayOfguid arrayOfGuid = new ArrayOfguid();
+            arrayOfGuid.getGuid().addAll(Arrays.asList(accessLevelIDs));
+            // Call the service with correct parameter types
+            networkCnfgService.removeAccessLevelFromEmployee(employeeID, arrayOfGuid);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+// ================================
+// #region Блокировка сотрудников
+// ================================
+    public static void lockAcsEmployee(String[] ids, boolean isLocked) { // Заблокировать или разблокировать сотрудников.
+        try {
+            if (networkCnfgService == null) {
+                throw new IllegalStateException("networkCnfgService is not initialized. Call initServices() first.");
+            }
+            // Create ArrayOfguid and add all UUIDs to it
+            ArrayOfguid arrayOfGuid = new ArrayOfguid();
+            for (String id : ids) {
+                arrayOfGuid.getGuid().add(String.valueOf(UUID.fromString(id)));
+            }
+            // Call the service with correct parameter types
+            networkCnfgService.lockAcsEmployee(arrayOfGuid, isLocked);
+        } catch (Exception e) {
+            System.err.println("Ошибка блокировки сотрудников: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+// ================================
+// #region Работа с ключами
+// ================================
+    /* ВАЖНАЯ информация по работе с ключами
+     * 1. У сотрудника может быть назначено только два ключа с порядковыми номерами 1 и 2
+     *
+     * 2. Если дата начала и окончания действия ключа не указана(StartDate и EndDate соответственно) то считается, что ключ выдается
+     * на все время(действует бесконечно). Если указана только дата начала, то ключ действует с этой даты и до бесконечности.
+     * Если указана только дата окончания действия, то ключ действует с текущего момента до момента наступления даты окончания действия ключа.
+     *
+     * 3. При попытке назначить ключ сотруднику может возникнуть ситтуация, когда ключ уже назначен другому сотруднику.
+     * В этом случае допустимо воспользоваться методом ForceAssignAcsKeyForEmployee и переназначить ключ. Сценарий назначения ключа сотруднику в общем случает такой:
+     * Попытка назначить ключ посредством метода AssignAcsKeyForEmployee, если возникает исключение AssignmentAcsKeyException с типом ошибки AssignmentAcsKeyErrorType.AcsKeyAlreadyAssignedToAnotherEmployee,
+     * то принимается решение об продолжении операции назначения ключа посредством метода ForceAssignAcsKeyForEmployee, или отказе от операции
+     */
+
+    public static void removeKeyFromEmployee(String employeeId, int indexNumber) { // Забрать ключ у сотрудника
+        try {
+            networkCnfgService.assignAcsKeyForEmployee(employeeId, indexNumber, null, false);
+        } catch (Exception e) {
+            System.err.println("Ошибка снятия ключа: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static AcsKeyInfo assignAcsKeyForEmployee(String employeeId, int indexNumber, AcsKeySaveData keyData) { // Привязать ключ к сотруднику с трактовкой операции как недопустимой, если ключ уже присвоен другому сотруднику.
+        try {
+            return networkCnfgService.assignAcsKeyForEmployee(employeeId, indexNumber, keyData, false);
+        } catch (Exception e) {
+            System.err.println("Ошибка назначения ключа: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static AcsKeyInfo forceAssignAcsKeyForEmployee(String employeeId, int indexNumber, AcsKeySaveData keyData) { // Привязать ключ к сотруднику. Если ключ уже присвоен другому сотруднику, то он у него будет сброшен.
+        try {
+            return networkCnfgService.forceAssignAcsKeyForEmployee(employeeId, indexNumber, keyData, false);
+        } catch (Exception e) {
+            System.err.println("Ошибка принудительного назначения ключа: " + e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+    // ================================
+// #region Работа с событиями
+// ================================
+    /*  ВАЖНАЯ информация по работе с событиями
+     *  1. Для постоянного мониторинга событий, происходящих на сервере, фильтр по дате/времени использовать нельзя (время сервера и клиента могут различаться)
+     *  Каждое событие имеет номер, являющийся идентификатор записи(строки) в БД.
+     *  Идентификаторы инкриментируются, поэтому у позднего события идентификатор всегда больше, чем у раннего. В связи с чем сценарий мониторинга событий
+     *  сводится к цикличному вызову метода GetLastEvent, чтобы получить идентификатор последнего события, удовлетворяющего фильтру,
+     *  принятие его в качестве максимального значения идентификатора и затем цикличный вызов GetEvents,
+     *  поиск нового максимального идентификатора записи среди списка полученных событий, чтобы на последующей итерации вызвать метод,
+     *  указав в качестве параметра "с какой записи следует вычитка события" это идентификатор.
+     *  Следует устанавливать задержку между итерациями опроса. Величина задержки должна быть адекватна задаче, решаемой с помощью мониторинга событий.
+     *  Безостановочно вызывать серверный метод не стоит.
+     *
+     *  2. Если же требуется просто снять данные за определенный период времени, то следует вызвать GetEvents, указав в параметрах нужные даты.
+     *
+     *  3. ВАЖНО. Очень нежелательно (особенно это касается постоянного мониторинга) получать события, используя в качестве одного из фильтров идентификаторы точек доступа,
+     *  т.к. на реальном объекте их может быть не одна тысяча, что существенно замедляет выборку. Следует получить список точек доступа, после чего
+     *  сопоставлять идентификаторы устройств в событиях с идентификаторами полученных точек доступа. Следует учитывать, что список точек доступа хоть и достаточно редко
+     *  (часто на этапе пуско-наладки), но меняется, т.к. точки прохода периодически монтируются/демонтируются.
+     */
+
+//    public static void trackEvents(String[] accessPointsIds) throws DatatypeConfigurationException { // Пример постоянного мониторинга событий для всех или определенных точек доступа по фильтру событий входа и выхода
+//        // Use LogMsgType instead of LogMsgSubType
+//        LogMsgType[] filter = {
+//                LogMsgType.ALARM,
+//                LogMsgType.WARNING,
+//                LogMsgType.INFORMATION
+//        };
+//
+//        long counter = -1;
+//
+//        while (counter == -1) {
+//            // Pass null for subTypes parameter since we can't use LogMsgSubType
+//            LogData lastEvent = networkService.getLastEvent(null, null, com.rusguard.service.impl.EmployeeServiceImpl.toUuidArray(accessPointsIds), LogSubjectType.NONE);
+//
+//            if (lastEvent != null && lastEvent.getMessages() != null && !lastEvent.getMessages().isNil()) {
+//                ArrayOfLogMessage messages = lastEvent.getMessages().getValue();
+//                counter = messages.getLogMessage().stream()
+//                        .mapToLong(LogMessage::getId)
+//                        .max()
+//                        .orElse(-1);
+//            }
+//
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                Thread.currentThread().interrupt();
+//                return;
+//            }
+//        }
+//
+//        while (true) {
+//            // First, convert the filter array to ArrayOfLogMsgSubType
+//            ArrayOfLogMsgSubType msgSubTypes = new ArrayOfLogMsgSubType();
+//            for (LogMsgType subType : filter) {
+//                msgSubTypes.getLogMsgSubType().add(String.valueOf(subType));
+//            }
+//
+//// Convert Date to XMLGregorianCalendar
+//            XMLGregorianCalendar startDate = DatatypeFactory.newInstance()
+//                    .newXMLGregorianCalendar(new GregorianCalendar(1970, 0, 1)); // Equivalent to new Date(0)
+//            XMLGregorianCalendar endDate = DatatypeFactory.newInstance()
+//                    .newXMLGregorianCalendar(new GregorianCalendar(292278994, 7, 17)); // Far future date
+//
+//            LogData events = networkService.getEvents(
+//                    counter, // fromMessageId
+//                    startDate, // fromDateTime
+//                    endDate, // toDateTime
+//                    null, // msgTypes (ArrayOfLogMsgType)
+//                    msgSubTypes, // msgSubTypes (ArrayOfLogMsgSubType)
+//                    toUuidArray(accessPointsIds), // subjectIDs (ArrayOfguid)
+//                    LogSubjectType.NONE, // subjectType
+//                    0, // pageNumber
+//                    1000, // pageSize
+//                    LogMessageSortedColumn.DATE_TIME, // sortedColumn
+//                    SortOrder.ASCENDING // sortOrder
+//            );
+//            if (events != null && events.getMessages() != null) {
+//                for (LogMessage msg : events.getMessages().getValue().getLogMessage()) {
+//                    System.out.println("Event: " + msg.getMessage() +
+//                            " at " + msg.getDateTime() +
+//                            " type: " + msg.getLogMessageType());
+//                }
+//
+//                ArrayOfLogMessage messages = events.getMessages().getValue();
+//                if (messages != null && messages.getLogMessage() != null && !messages.getLogMessage().isEmpty()) {
+//                    List<LogMessage> messageList = messages.getLogMessage();
+//                    counter = messageList.get(messageList.size() - 1).getId() + 1;
+//                }
+//            }
+//
+//            try {
+//                Thread.sleep(2000);
+//            } catch (InterruptedException e) {
+//                Thread.currentThread().interrupt();
+//                return;
+//            }
+//        }
+//    }
+
+
+    public static LogData getEvents(String[] accessPointsIds) throws DatatypeConfigurationException { // Пример получения событий для всех или определенных точек доступа по фильтру событий входа и выхода за январь
+        // Convert dates to XMLGregorianCalendar
+        DatatypeFactory df = DatatypeFactory.newInstance();
+        XMLGregorianCalendar beginDate = df.newXMLGregorianCalendar(new GregorianCalendar(2012, Calendar.JANUARY, 1));
+        XMLGregorianCalendar endDate = df.newXMLGregorianCalendar(new GregorianCalendar(2012, Calendar.JANUARY, 31, 23, 59, 59));
+
+        // Create ArrayOfLogMsgType for message types
+//        ArrayOfLogMsgType msgTypes = new ArrayOfLogMsgType();
+        // Create ArrayOfLogMsgSubType for message sub-types
+        ArrayOfLogMsgSubType msgSubTypes = new ArrayOfLogMsgSubType();
+
+        // Convert access point IDs to ArrayOfguid
+        ArrayOfguid deviceIDs = new ArrayOfguid();
+        if (accessPointsIds != null) {
+            for (String id : accessPointsIds) {
+                deviceIDs.getGuid().add(id);
+            }
+        }
+
+        return networkService.getEventsByDeviceIDs(
+                0L,                              // fromMessageId
+                beginDate,                       // fromDateTime
+                endDate,                         // toDateTime
+                null,                            // msgTypes (ArrayOfLogMsgType)
+                msgSubTypes,                     // msgSubTypes (ArrayOfLogMsgSubType)
+                deviceIDs,                       // deviceIDs (ArrayOfguid)
+                null,                            // subjectIDs (ArrayOfguid)
+                LogSubjectType.NONE,             // subjectType
+                0,                               // pageNumber
+                1000,                            // pageSize
+                LogMessageSortedColumn.DATE_TIME, // sortedColumn
+                SortOrder.ASCENDING              // sortOrder
+        );
+    }
+
+    public static AcsAccessPointDriverInfo[] getAccessPoints() {
+        try {
+            ArrayOfAcsAccessPointDriverInfo result = networkService.getAcsAccessPointDrivers();
+            return result.getAcsAccessPointDriverInfo().toArray(new AcsAccessPointDriverInfo[0]);
+        } catch (Exception e) {
+            System.err.println("Ошибка получения точек доступа: " + e.getMessage());
+            return new AcsAccessPointDriverInfo[0];
+        }
+    }
+
+    // ================================
+// #region Получение драйверов и отправка команд
+// ================================
+//    public static List<LDriverFullInfo> getAllDrivers() { // Получить коллекцию всех драйверов устройств
+//        try {
+//            List<LDriverFullInfo> result = new ArrayList<>();
+//            ArrayOfLNetInfo networks = networkService.getAllNets();
+//
+//            for (LNetInfo net : networks.getLNetInfo()) {
+//                ArrayOfLServerInfo servers = networkService.getNetServers(net.getId().toString());
+//
+//                for (LServerInfo server : servers.getLServerInfo()) {
+//                    ArrayOfLDriverFullInfo drivers = networkService.getServerDriversFullInfo(
+//                            server.getId().toString(),
+//                            null  // workplaceModuleId может быть null, если не требуется
+//                    );
+//                    result.addAll(drivers.getLDriverFullInfo());
+//                }
+//            }
+//            return result;
+//        } catch (Exception e) {
+//            System.err.println("Ошибка получения всех драйверов: " + e.getMessage());
+//            e.printStackTrace();  // Добавим вывод стека для отладки
+//            return new ArrayList<>();
+//        }
+//    }
+
+//    public static AcsAccessPointDriverInfo[] getAccessPointsDrivers2() { // Получение драйверов точек доступа, предварительно получив все дрйвера устройств. Лучше использовать GetAccessPointsDrivers2, т.к. набор типов точек доступа может расширяться.
+//        return getAccessPoints();
+//    }
+
+    // отправляет команду (вызов метода) на устройство через SOAP-сервис networkService, используя операцию типа DeviceCallMethodOperation.
+//    public static void sendCommand(String connectionId, String commandName) { // Послать команду точке доступа
+//        try {
+//            DeviceCallMethodOperation operation = new DeviceCallMethodOperation();
+//
+//            // Set the method name (command)
+//            operation.setMethodName(new JAXBElement<>(
+//                    new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", "MethodName"),
+//                    String.class,
+//                    commandName
+//            ));
+//
+//            // Process the operation
+//            networkService.process(operation, connectionId);
+//        } catch (Exception e) {
+//            System.err.println("Ошибка отправки команды: " + e.getMessage());
+//            throw new RuntimeException(e);
+//        }
+//    }
+
+    // Вспомогательный метод: преобразование String[] в UUID[]
+    private static ArrayOfguid toUuidArray(String[] ids) {
+        if (ids == null) return null;
+        ArrayOfguid result = new ArrayOfguid();
+        for (String id : ids) {
+            if (id != null) {
+                result.getGuid().add(UUID.fromString(id).toString());
+            }
+        }
+        return result;
     }
 
 }
