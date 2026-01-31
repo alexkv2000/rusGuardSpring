@@ -1,4 +1,10 @@
 **********************************************************
+* Swagger (RusGuard) * http://localhost:8007/swagger-ui/index.html#
+* Terminology        * http://localhost:8007/api/terms
+* License            * http://localhost:8007/api/license
+**********************************************************
+
+**********************************************************
 * POST запросы  (RusGuard)
 **********************************************************
 POST http://localhost:8080/api/rusguard/Employee/setLocked?
