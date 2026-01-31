@@ -11,22 +11,23 @@ import io.swagger.v3.oas.models.security.SecurityRequirement;
 import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Description;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "RusGuard Employee Management API",
+                title = "RusGuard Employee Management API, version:",
                 version = "1.0.0",
                 description = "API для интеграции с системой контроля доступа RusGuard",
                 contact = @Contact(
                         name = "Отдел разработки документооборота",
                         email = "KvochkinAY@itsnn.ru",
-                        url = "http://localhost"
+                        url = "http://doc-app8:8888/xwiki/bin/view/DV стартовая/"
                 ),
                 license = @License(
                         name = "Лицензия компании",
-                        url = "http://localhost/license"
+                        url = "/api/license"
                 ),
-                termsOfService = "http://localhost/terms"
+                termsOfService = "http://localhost:8007/api/terms"
         ),
         servers = {
                 @Server(
@@ -46,13 +47,13 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .components(new Components()
-                        .addSecuritySchemes("bearerAuth",
-                                new SecurityScheme()
-                                        .type(SecurityScheme.Type.HTTP)
-                                        .scheme("bearer")
-                                        .bearerFormat("JWT")
-                                        .description("Токен аутентификации в формате JWT")
-                        )
+//                        .addSecuritySchemes("bearerAuth",
+//                                new SecurityScheme()
+//                                        .type(SecurityScheme.Type.HTTP)
+//                                        .scheme("bearer")
+//                                        .bearerFormat("JWT")
+//                                        .description("Токен аутентификации в формате JWT")
+//                        )
                         .addSecuritySchemes("basicAuth",
                                 new SecurityScheme()
                                         .type(SecurityScheme.Type.HTTP)

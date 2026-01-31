@@ -188,7 +188,7 @@ public class EmployeeController {
      *
      * @param employeeID             ID сотрудника
      * @param request                Список ID уровней доступа
-     * @param isUseParentAccessLevel Использовать уровни доступа родительской группы
+     * @param isUseParentAccessLevel Использовать уровни доступа родительской группы (true = установить доступ родительской группы, игнорировав RequestBody)
      * @return Результат операции
      */
     @Operation(

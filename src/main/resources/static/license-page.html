@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Лицензия компании</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.9.0/swagger-ui.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .swagger-ui {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .license-header {
+            background: linear-gradient(135deg, #1b1b1b 0%, #2d2d2d 100%);
+            color: white;
+            padding: 40px 30px;
+            border-bottom: 3px solid #49cc90;
+        }
+
+        .license-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .license-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            color: #49cc90;
+            font-weight: 500;
+        }
+
+        .license-badge {
+            display: inline-block;
+            background: #49cc90;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .license-container {
+            padding: 30px;
+        }
+
+        .info-section {
+            background: #f8f9fa;
+            border-left: 4px solid #49cc90;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .section-title {
+            color: #1b1b1b;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title svg {
+            fill: #49cc90;
+        }
+
+        .license-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .detail-card {
+            background: white;
+            border: 1px solid #e4e4e4;
+            border-radius: 6px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .detail-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .detail-card h3 {
+            color: #49cc90;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            background: #e8f5e9;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #4caf50;
+        }
+
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .term-item {
+            background: white;
+            border: 1px solid #e4e4e4;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .term-item h4 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #e4e4e4;
+        }
+
+        .btn-primary {
+            background: #49cc90;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: #3caa7a;
+        }
+
+        .swagger-ui .btn {
+            font-size: 14px;
+        }
+
+        .license-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #49cc90;
+        }
+
+        .info-item strong {
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .license-container {
+                padding: 20px;
+            }
+
+            .license-header {
+                padding: 30px 20px;
+            }
+
+            .license-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="swagger-ui">
+    <div class="license-header">
+        <h1>Лицензионное соглашение - ${companyName}</h1>
+        <div class="subtitle">ООО ЦИТРБ</div>
+        <div class="license-badge">Номер: ${licenseNumber}</div>
+    </div>
+
+    <div class="license-container">
+        <div class="license-info">
+            <div class="info-item">
+                <strong>Дата выдачи:</strong>
+                <span>${issueDate}</span>
+            </div>
+            <div class="info-item">
+                <strong>Поддержка до:</strong>
+                <span>${expiryDate}</span>
+            </div>
+            <div class="info-item">
+                <strong>Максимум пользователей:</strong>
+                <span>${maxUsers}</span>
+            </div>
+            <div class="info-item">
+                <strong>Версия ПО:</strong>
+                <span>${version}</span>
+            </div>
+            <div class="info-item">
+                <strong>Контактный email:</strong>
+                <span>${contactEmail}</span>
+            </div>
+            <div class="info-item">
+                <strong>Дата генерации:</strong>
+                <span>${currentDate}</span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2 class="section-title">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                Условия использования
+            </h2>
+
+            <div class="terms-grid">
+                <div class="term-item">
+                    <h4>Разрешенное использование</h4>
+                    <ul style="padding-left: 20px; margin-top: 8px;">
+                        <li>Внутренняя эксплуатация</li>
+                        <li>Разработка и тестирование</li>
+                        <li>Обучение сотрудников</li>
+                        <li>Резервное копирование</li>
+                    </ul>
+                </div>
+
+                <div class="term-item">
+                    <h4>Ограничения</h4>
+                    <ul style="padding-left: 20px; margin-top: 8px;">
+                        <li>Запрещена передача третьим лицам</li>
+                        <li>Запрещена реверсинг-инженерия</li>
+                        <li>Ограничение по количеству пользователей: 5</li>
+                    </ul>
+                </div>
+
+                <div class="term-item">
+                    <h4>Технические требования</h4>
+                    <ul style="padding-left: 20px; margin-top: 8px;">
+                        <li>Java 17 или выше</li>
+                        <li>4GB RAM минимум</li>
+                        <li>Доступ к интернету для обновлений</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2 class="section-title">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M19 2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 3.3c1.49 0 2.7 1.21 2.7 2.7 0 1.49-1.21 2.7-2.7 2.7-1.49 0-2.7-1.21-2.7-2.7 0-1.49 1.21-2.7 2.7-2.7zM18 16H6v-.9c0-2 4-3.1 6-3.1s6 1.1 6 3.1v.9z"/>
+                </svg>
+                Техническая информация
+            </h2>
+
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 6px;">
+                <pre style="background: #1b1b1b; color: #fff; padding: 20px; border-radius: 4px; overflow-x: auto; font-family: 'Courier New', monospace;">
+# Конфигурация системы
+app.version=${version}
+app.license.type=CORPORATE
+app.license.users=${maxUsers}
+app.support.until=${expiryDate}
+
+# Контакты поддержки
+support.email=${contactEmail}
+Skype=${contactEmail}
+
+# API Endpoints
+api.base.url=/api/rusguard/Employee
+api.docs.url=/swagger-ui
+api.license.url=http://localhost:8007/api/license</pre>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h2 class="section-title" style="color: #333;">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                Контактная информация
+            </h2>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <strong>Техническая поддержка</strong>
+                    <p>DVStorage@itsnn.ru</p>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Телефон</strong>
+                    <p>+7 (831) 4ХХ-ХХ-ХХ</p>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Сайт</strong>
+                    <p>www.itsnn.ru</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <a href="mailto:Kvochkin@itsnn.ru" class="btn-primary">Связаться с отделом разработки</a>
+                <a href="/swagger-ui.html" class="btn-primary" style="background: #6b7280; margin-left: 10px;">API Документация</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 ООО "ЦИТРБ". Все права защищены.</p>
+        <p style="margin-top: 5px; font-size: 0.8rem;">Версия документа: ${version} | Последнее обновление: ${currentDate}</p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lastUpdate = document.querySelector('.footer p:last-child');
+        const now = new Date();
+        const formattedDate = now.toLocaleDateString('ru-RU', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+        });
+        lastUpdate.innerHTML = `Версия документа: ${document.querySelector('[data-version]')?.dataset.version || '1.0'} | Последнее обновление: ${formattedDate}`;
+
+        const cards = document.querySelectorAll('.detail-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.5s, transform 0.5s';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+    });
+</script>
+</body>
+</html>
