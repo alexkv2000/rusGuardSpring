@@ -13,42 +13,91 @@
     <!-- DataTables для таблиц -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
     <style>
-        body {
+        :root {
+            --header-height: 80px;
+            --footer-height: 40px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
             background-color: #f8f9fa;
+        }
+
+        #top-section {
+            flex-shrink: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 15px;
+        }
+
+        .main-row {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .section-column {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .section-header {
             background-color: #2c3e50;
             color: white;
             padding: 10px 15px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             border-radius: 5px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-shrink: 0;
         }
 
         .section-content {
+            flex: 1;
             background-color: white;
             border: 1px solid #dee2e6;
             border-radius: 5px;
             padding: 15px;
-            height: calc(100% - 60px);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .scrollable-content {
+            flex: 1;
             overflow-y: auto;
+            overflow-x: hidden;
+            min-height: 0;
         }
 
-        #top-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        #bottom-section {
+        .section-footer {
             background-color: #34495e;
             color: white;
             padding: 15px;
-            margin-top: 10px;
+            border-radius: 5px;
+            margin-top: auto;
+            flex-shrink: 0;
         }
 
         .employee-avatar {
@@ -62,6 +111,7 @@
             justify-content: center;
             font-weight: bold;
             margin-right: 10px;
+            flex-shrink: 0;
         }
 
         .access-level-badge {
@@ -74,15 +124,12 @@
             margin: 3px;
             border-radius: 3px;
             font-size: 0.9em;
+            flex-shrink: 0;
         }
 
         .entrance { background-color: #d4edda; color: #155724; }
         .exit { background-color: #f8d7da; color: #721c24; }
         .denied { background-color: #fff3cd; color: #856404; }
-
-        #center-section, #right-section {
-            min-height: 500px;
-        }
 
         .refresh-btn {
             background-color: #3498db;
@@ -92,6 +139,7 @@
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s;
+            flex-shrink: 0;
         }
 
         .refresh-btn:hover {
@@ -102,6 +150,7 @@
             margin: 2px;
             padding: 4px 8px;
             font-size: 0.85em;
+            flex-shrink: 0;
         }
 
         .jstree-default .jstree-clicked {
@@ -116,6 +165,86 @@
             background-color: #2c3e50;
             color: white;
             border-color: #2c3e50;
+        }
+
+        /* Стили для фиксированной таблицы */
+        .table-container {
+            overflow-x: auto;
+            overflow-y: auto;
+            flex: 1;
+            min-height: 0;
+        }
+
+        .table-fixed {
+            min-width: 600px;
+        }
+
+        .table-fixed thead th {
+            position: sticky;
+            top: 0;
+            background-color: #f8f9fa;
+            z-index: 10;
+            box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1);
+        }
+
+        /* Стили для дерева */
+        .tree-container {
+            flex: 1;
+            overflow: auto;
+            min-height: 0;
+        }
+
+        /* Стили для уровней доступа */
+        .access-levels-container {
+            flex: 1;
+            overflow-y: auto;
+            min-height: 0;
+        }
+
+        /* Стили для проходов */
+        .passages-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            overflow-y: auto;
+            max-height: 300px;
+            padding: 5px;
+        }
+
+        /* Кастомный скроллбар */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .main-row {
+                flex-direction: column;
+            }
+
+            .section-column {
+                margin-bottom: 15px;
+                height: 400px;
+            }
+
+            .section-content {
+                min-height: 300px;
+            }
         }
     </style>
 </head>
@@ -146,10 +275,10 @@
     </div>
 </div>
 
-<div class="container-fluid mt-3">
-    <div class="row g-3">
+<div class="main-content">
+    <div class="main-row row g-3">
         <!-- LEFT SECTION - Дерево групп -->
-        <div class="col-md-3">
+        <div class="col-md-3 section-column">
             <div class="section-header">
                 <h5 class="mb-0"><i class="bi bi-diagram-3 me-2"></i>Группы сотрудников</h5>
                 <button class="refresh-btn" onclick="refreshLeftSection()">
@@ -157,12 +286,12 @@
                 </button>
             </div>
             <div class="section-content">
-                <div id="employeeGroupsTree"></div>
+                <div class="tree-container" id="employeeGroupsTree"></div>
             </div>
         </div>
 
         <!-- CENTER SECTION - Список сотрудников -->
-        <div class="col-md-5">
+        <div class="col-md-5 section-column">
             <div class="section-header">
                 <h5 class="mb-0"><i class="bi bi-person-lines-fill me-2"></i>Сотрудники группы</h5>
                 <div>
@@ -175,24 +304,26 @@
                 </div>
             </div>
             <div class="section-content">
-                <table id="employeesTable" class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>ФИО</th>
-                        <th>Табельный</th>
-                        <th>Статус</th>
-                        <th>Действия</th>
-                    </tr>
-                    </thead>
-                    <tbody id="employeesList">
-                    <!-- Данные будут загружены через JS -->
-                    </tbody>
-                </table>
+                <div class="table-container">
+                    <table id="employeesTable" class="table table-hover table-fixed">
+                        <thead>
+                        <tr>
+                            <th style="width: 40%">ФИО</th>
+                            <th style="width: 20%">Табельный</th>
+                            <th style="width: 20%">Статус</th>
+                            <th style="width: 20%">Действия</th>
+                        </tr>
+                        </thead>
+                        <tbody id="employeesList">
+                        <!-- Данные будут загружены через JS -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
         <!-- RIGHT SECTION - Уровни доступа -->
-        <div class="col-md-4">
+        <div class="col-md-4 section-column">
             <div class="section-header">
                 <h5 class="mb-0"><i class="bi bi-shield-check me-2"></i>Уровни доступа</h5>
                 <div>
@@ -205,7 +336,7 @@
                 </div>
             </div>
             <div class="section-content">
-                <div id="accessLevelsList">
+                <div class="access-levels-container" id="accessLevelsList">
                     <!-- Данные будут загружены через JS -->
                 </div>
             </div>
@@ -213,7 +344,7 @@
     </div>
 
     <!-- BOTTOM SECTION - Проходы -->
-    <div id="bottom-section" class="mt-4 rounded">
+    <div class="section-footer">
         <div class="section-header" style="background-color: transparent; padding: 0;">
             <h5 class="mb-0"><i class="bi bi-clock-history me-2"></i>Время проходов</h5>
             <div class="d-flex align-items-center">
@@ -224,7 +355,7 @@
                 </button>
             </div>
         </div>
-        <div class="row mt-3" id="passagesContainer">
+        <div class="passages-container" id="passagesContainer">
             <!-- Данные о проходах будут загружены здесь -->
         </div>
     </div>
@@ -348,12 +479,16 @@
     const API_BASE_URL = '/api/rusguard/Employee';
     let selectedGroupId = null;
     let selectedEmployeeId = null;
+    let employeesDataTable = null;
 
     // Инициализация при загрузке страницы
     $(document).ready(function() {
         // Установка текущей даты в поле выбора даты
         const today = new Date().toISOString().split('T')[0];
         $('#passageDate').val(today);
+
+        // Инициализация DataTable для сотрудников
+        initEmployeesTable();
 
         loadEmployeeGroups();
         setupEventListeners();
@@ -364,7 +499,45 @@
                 loadReports();
             }
         });
+
+        // Автоматический размер при изменении окна
+        $(window).on('resize', function() {
+            adjustLayout();
+        });
+
+        adjustLayout();
     });
+
+    function adjustLayout() {
+        // Подгоняем высоту контейнеров под доступное пространство
+        const windowHeight = $(window).height();
+        const topSectionHeight = $('#top-section').outerHeight();
+        const mainContentHeight = windowHeight - topSectionHeight;
+
+        $('.main-content').css('height', mainContentHeight + 'px');
+    }
+    function initEmployeesTable() {
+        if (employeesDataTable) {
+            employeesDataTable.destroy();
+        }
+
+        employeesDataTable = $('#employeesTable').DataTable({
+            "paging": true,
+            "pageLength": 10,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.13.6/i18n/ru.json"
+            },
+            "dom": '<"top"f>rt<"bottom"lip><"clear">',
+            "scrollY": "300px",
+            "scrollCollapse": false
+        });
+    }
 
     function setupEventListeners() {
         // Обработка выбора даты для проходов
@@ -382,7 +555,6 @@
         fetch(`${API_BASE_URL}/getEmployeesGroups`)
             .then(response => response.json())
             .then(data => {
-                console.log('Данные групп:', data); // Для отладки
                 renderEmployeeGroupsTree(data);
             })
             .catch(error => {
@@ -392,35 +564,46 @@
     }
 
     function renderEmployeeGroupsTree(data) {
-        console.log('Рендерим дерево с данными:', data);
+        const $tree = $('#employeeGroupsTree');
 
-        // Уничтожаем предыдущее дерево, если оно существует
-        if ($.jstree.reference('#employeeGroupsTree')) {
-            $('#employeeGroupsTree').jstree('destroy');
+        // Уничтожаем предыдущее дерево
+        const existingTree = $.jstree.reference($tree);
+        if (existingTree) {
+            existingTree.destroy(true);
         }
 
-        // Инициализируем дерево
-        $('#employeeGroupsTree').jstree({
+        $tree.empty();
+
+        // Инициализируем новое дерево
+        $tree.jstree({
             'core': {
                 'data': transformGroupsToTree(data),
                 'themes': {
-                    'responsive': true
+                    'responsive': true,
+                    'dots': true,
+                    'icons': true
                 },
                 'check_callback': true
             },
-            'plugins': ['wholerow']
+            'plugins': ['wholerow'],
+            'types': {
+                'default': {
+                    'icon': 'bi bi-folder'
+                }
+            }
         });
 
-        // Подписываемся на событие выбора узла
-        $('#employeeGroupsTree').on('select_node.jstree', handleTreeSelect);
+        // Подписываемся на события
+        $tree.on('select_node.jstree', handleTreeSelect);
+
+        // Разворачиваем все узлы после загрузки
+        setTimeout(() => {
+            $tree.jstree('open_all');
+        }, 100);
     }
 
     function transformGroupsToTree(data) {
-        console.log('Преобразуем данные для дерева:', data);
-
-        if (!data) {
-            return [];
-        }
+        if (!data) return [];
 
         // Если данные приходят в формате { "groups": [...] }
         if (data.groups && Array.isArray(data.groups)) {
@@ -432,9 +615,10 @@
             return transformGroupsArray(data);
         }
 
-        console.warn('Неизвестный формат данных:', data);
+        console.warn('Неизвестный формат данных групп:', data);
         return [];
     }
+
     function transformGroupsArray(groups) {
         if (!groups || !Array.isArray(groups)) {
             return [];
@@ -451,7 +635,7 @@
             if (group.children && Array.isArray(group.children) && group.children.length > 0) {
                 node.children = transformGroupsArray(group.children);
             } else {
-                node.children = false; // Лист, не имеет детей
+                node.children = false;
             }
 
             return node;
@@ -465,132 +649,120 @@
             loadEmployeesByGroup(selectedGroupId);
         }
     }
+
     // CENTER SECTION - Сотрудники группы
     function loadEmployeesByGroup(groupId) {
-        console.log('Загружаем сотрудников для группы:', groupId);
         showLoading('#employeesList');
 
         fetch(`${API_BASE_URL}/getByGroupID?idGroup=${groupId}`)
-            .then(response => {
-                console.log('Ответ от API сотрудников (статус):', response.status);
+            .then(response => response.text())
+            .then(text => {
+                console.log('Сырой ответ от API:', text.substring(0, 500));
 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                try {
+                    const data = JSON.parse(text);
+                    console.log('Парсинг успешен, данные:', data);
+                    renderEmployeesList(data);
+                } catch (e) {
+                    console.error('Ошибка парсинга JSON:', e);
+                    showError('#employeesList', 'Ошибка формата данных от сервера');
                 }
-
-                // Проверяем тип контента
-                const contentType = response.headers.get('content-type');
-                console.log('Content-Type:', contentType);
-
-                return response.text().then(text => {
-                    console.log('Сырой ответ (первые 1000 символов):', text.substring(0, 1000));
-
-                    // Пытаемся распарсить как JSON
-                    try {
-                        return JSON.parse(text);
-                    } catch (e) {
-                        console.error('Ошибка парсинга JSON:', e);
-                        console.error('Текст ответа:', text);
-                        throw new Error('Невалидный JSON в ответе');
-                    }
-                });
-            })
-            .then(data => {
-                console.log('Парсинг JSON успешен:', data);
-                renderEmployeesList(data);
             })
             .catch(error => {
                 console.error('Ошибка загрузки сотрудников:', error);
-                showError('#employeesList', `Не удалось загрузить сотрудников: ${error.message}`);
+                showError('#employeesList', 'Не удалось загрузить сотрудников');
             });
     }
 
     function renderEmployeesList(data) {
-        const employeesList = $('#employeesList');
-        employeesList.empty();
+        // Очищаем таблицу
+        employeesDataTable.clear();
 
-        console.log('Рендерим список сотрудников. Тип данных:', typeof data, 'Данные:', data);
-
-        // Проверяем, что данные вообще пришли
         if (!data) {
-            employeesList.html('<tr><td colspan="4" class="text-center text-danger">Нет данных от сервера</td></tr>');
+            showNoDataMessage();
             return;
         }
 
-        // Функция для извлечения массива сотрудников из данных
-        const extractEmployeesArray = (data) => {
-            // Вариант 1: данные уже являются массивом
-            if (Array.isArray(data)) {
-                console.log('Данные являются массивом, количество:', data.length);
-                return data;
-            }
+        // Извлекаем массив сотрудников из данных
+        let employeesArray = [];
 
-            // Вариант 2: данные в поле "employees"
-            if (data.employees && Array.isArray(data.employees)) {
-                console.log('Данные в поле "employees", количество:', data.employees.length);
-                return data.employees;
-            }
-
-            // Вариант 3: данные в поле "data"
-            if (data.data && Array.isArray(data.data)) {
-                console.log('Данные в поле "data", количество:', data.data.length);
-                return data.data;
-            }
-
-            // Вариант 4: данные в поле "result"
-            if (data.result && Array.isArray(data.result)) {
-                console.log('Данные в поле "result", количество:', data.result.length);
-                return data.result;
-            }
-
-            // Вариант 5: данные в поле "items"
-            if (data.items && Array.isArray(data.items)) {
-                console.log('Данные в поле "items", количество:', data.items.length);
-                return data.items;
-            }
-
-            // Вариант 6: данные в поле "value" (типично для OData)
-            if (data.value && Array.isArray(data.value)) {
-                console.log('Данные в поле "value", количество:', data.value.length);
-                return data.value;
-            }
-
-            // Вариант 7: данные в поле "list"
-            if (data.list && Array.isArray(data.list)) {
-                console.log('Данные в поле "list", количество:', data.list.length);
-                return data.list;
-            }
-
-            // Вариант 8: попробуем найти любое поле, которое является массивом
-            for (const key in data) {
-                if (Array.isArray(data[key])) {
-                    console.log(`Нашли массив в поле "${key}", количество:`, data[key].length);
-                    return data[key];
-                }
-            }
-
-            console.warn('Не удалось найти массив сотрудников в данных');
-            return null;
-        };
-
-        const employeesArray = extractEmployeesArray(data);
-
-        if (employeesArray && employeesArray.length > 0) {
-            console.log('Найдены сотрудники:', employeesArray.length);
-
-            // Проверяем структуру первого элемента для отладки
-            if (employeesArray[0]) {
-                console.log('Структура первого сотрудника:', Object.keys(employeesArray[0]));
-            }
-
-            employeesArray.forEach((employee, index) => {
-                console.log(`Сотрудник ${index}:`, employee);
-                renderEmployeeRow(employee);
-            });
+        if (Array.isArray(data)) {
+            employeesArray = data;
+        } else if (data.employees && Array.isArray(data.employees)) {
+            employeesArray = data.employees;
+        } else if (data.data && Array.isArray(data.data)) {
+            employeesArray = data.data;
+        } else if (data.result && Array.isArray(data.result)) {
+            employeesArray = data.result;
         } else {
-            console.log('Массив сотрудников пуст или не найден');
-            employeesList.html('<tr><td colspan="4" class="text-center">Нет сотрудников в выбранной группе</td></tr>');
+            console.warn('Неизвестный формат данных сотрудников:', data);
+            showNoDataMessage();
+            return;
         }
+
+        if (employeesArray.length === 0) {
+            showNoDataMessage();
+            return;
+        }
+
+        // Добавляем данные в таблицу
+        employeesArray.forEach(employee => {
+            const row = createEmployeeRow(employee);
+            employeesDataTable.row.add($(row));
+        });
+
+        employeesDataTable.draw();
+    }
+
+    function showNoDataMessage() {
+        employeesDataTable.clear();
+        employeesDataTable.row.add([
+            '<div class="text-center py-3" colspan="4">Нет сотрудников в выбранной группе</div>'
+        ]).draw();
+    }
+
+
+    function createEmployeeRow(employee) {
+        const employeeId = employee.ID || employee.id || employee.Id || `emp_${Date.now()}`;
+        const lastName = employee.LastName || employee.lastName || '';
+        const firstName = employee.FirstName || employee.firstName || '';
+        const secondName = employee.SecondName || employee.secondName || '';
+        const tabelNumber = employee.TabelNumber || employee.tabelNumber || '';
+        const isLocked = employee.IsLocked || employee.isLocked || false;
+
+        const statusClass = isLocked ? 'status-locked' : 'status-active';
+        const statusText = isLocked ? 'Заблокирован' : 'Активен';
+        const lockIcon = isLocked ? 'bi-lock-fill' : 'bi-unlock-fill';
+        const lockButtonClass = isLocked ? 'btn-success' : 'btn-danger';
+        const lockButtonIcon = isLocked ? 'bi-unlock' : 'bi-lock';
+
+        return `
+            <tr data-employee-id="${employeeId}" onclick="selectEmployee('${employeeId}')"
+                class="${employeeId === selectedEmployeeId ? 'table-primary' : ''}">
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="employee-avatar">
+                            ${getInitials(lastName, firstName)}
+                        </div>
+                        <div>
+                            <strong>${escapeHtml(lastName)} ${escapeHtml(firstName)}</strong>
+                            ${secondName ? `<br><small>${escapeHtml(secondName)}</small>` : ''}
+                        </div>
+                    </div>
+                </td>
+                <td>${escapeHtml(tabelNumber) || 'Не указан'}</td>
+                <td><span class="${statusClass}"><i class="bi ${lockIcon}"></i> ${statusText}</span></td>
+                <td>
+                    <button class="btn btn-warning btn-sm action-btn" onclick="editEmployee('${employeeId}', event)">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button class="btn ${lockButtonClass} btn-sm action-btn"
+                            onclick="toggleEmployeeLock('${employeeId}', ${!isLocked}, event)">
+                        <i class="bi ${lockButtonIcon}"></i>
+                    </button>
+                </td>
+            </tr>
+        `;
     }
 
     function renderEmployeeRow(employee) {
@@ -678,10 +850,11 @@
 
     function selectEmployee(employeeId) {
         selectedEmployeeId = employeeId;
-        console.log('Выбран сотрудник:', employeeId);
 
-        // Подсветка выбранного сотрудника
-        $('#employeesList tr').removeClass('table-primary');
+        // Убираем подсветку со всех строк
+        $('#employeesTable tbody tr').removeClass('table-primary');
+
+        // Подсвечиваем выбранную строку
         $(`tr[data-employee-id="${employeeId}"]`).addClass('table-primary');
 
         // Загрузка уровней доступа для выбранного сотрудника
@@ -690,16 +863,16 @@
         loadPassages();
     }
 
-    // Обновленная функция getInitials с проверкой
-    function getInitials(lastName, firstName) {
-        if (!lastName && !firstName) return '??';
-
-        const first = (lastName && lastName.charAt(0)) || '';
-        const second = (firstName && firstName.charAt(0)) || '';
-
-        const initials = (first + second).toUpperCase();
-        return initials || '??';
-    }
+    // // Обновленная функция getInitials с проверкой
+    // function getInitials(lastName, firstName) {
+    //     if (!lastName && !firstName) return '??';
+    //
+    //     const first = (lastName && lastName.charAt(0)) || '';
+    //     const second = (firstName && firstName.charAt(0)) || '';
+    //
+    //     const initials = (first + second).toUpperCase();
+    //     return initials || '??';
+    // }
 
     // RIGHT SECTION - Уровни доступа
     function loadAccessLevels(employeeId) {
@@ -718,28 +891,35 @@
 
     function renderAccessLevels(levels) {
         const container = $('#accessLevelsList');
-        container.empty();
 
-        if (levels && levels.length > 0) {
+        if (!levels || !Array.isArray(levels)) {
+            container.html('<div class="alert alert-info">Нет доступных уровней доступа</div>');
+            return;
+        }
+
+        let html = '';
+
+        if (levels.length === 0) {
+            html = '<div class="alert alert-info">Нет доступных уровней доступа</div>';
+        } else {
             levels.forEach(level => {
                 const endDate = level.EndDate ? new Date(level.EndDate).toLocaleDateString() : 'Не ограничен';
-                const card = `
-                        <div class="card mb-2">
-                            <div class="card-body p-3">
-                                <h6 class="card-title mb-1">${level.Name}</h6>
-                                ${level.Description ? `<p class="card-text small text-muted mb-1">${level.Description}</p>` : ''}
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="badge bg-secondary">Точек доступа: ${level.NumberOfAccessPoints}</span>
-                                    <span class="small">До: ${endDate}</span>
-                                </div>
+                html += `
+                    <div class="card mb-2">
+                        <div class="card-body p-3">
+                            <h6 class="card-title mb-1">${escapeHtml(level.Name || 'Без названия')}</h6>
+                            ${level.Description ? `<p class="card-text small text-muted mb-1">${escapeHtml(level.Description)}</p>` : ''}
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-secondary">Точек доступа: ${level.NumberOfAccessPoints || 0}</span>
+                                <span class="small">До: ${endDate}</span>
                             </div>
                         </div>
-                    `;
-                container.append(card);
+                    </div>
+                `;
             });
-        } else {
-            container.html('<div class="alert alert-info">Нет доступных уровней доступа</div>');
         }
+
+        container.html(html);
     }
 
     // BOTTOM SECTION - Проходы
@@ -767,39 +947,46 @@
 
     function renderPassages(data) {
         const container = $('#passagesContainer');
-        container.empty();
 
-        if (data && data.passages && data.passages.length > 0) {
-            data.passages.forEach(passage => {
-                const time = new Date(passage.Time).toLocaleTimeString();
-                const eventClass = getEventClass(passage.EventType);
-                const eventText = getEventText(passage.EventType);
-
-                const col = `
-                        <div class="col-md-3 col-sm-6 mb-2">
-                            <div class="passage-event ${eventClass}">
-                                <div class="fw-bold">${time}</div>
-                                <div>${eventText}</div>
-                                ${passage.Location ? `<div class="small">${passage.Location}</div>` : ''}
-                            </div>
-                        </div>
-                    `;
-                container.append(col);
-            });
-        } else {
+        if (!data || !Array.isArray(data)) {
             container.html('<div class="col-12 text-center">Нет данных о проходах за выбранную дату</div>');
+            return;
         }
+
+        if (data.length === 0) {
+            container.html('<div class="col-12 text-center">Нет данных о проходах за выбранную дату</div>');
+            return;
+        }
+
+        let html = '';
+        data.forEach(passage => {
+            const time = passage.Time ? new Date(passage.Time).toLocaleTimeString() : '--:--';
+            const eventClass = getEventClass(passage.EventType);
+            const eventText = getEventText(passage.EventType);
+
+            html += `
+                <div class="passage-event ${eventClass}">
+                    <div class="fw-bold">${time}</div>
+                    <div>${eventText}</div>
+                    ${passage.Location ? `<div class="small mt-1">${escapeHtml(passage.Location)}</div>` : ''}
+                </div>
+            `;
+        });
+
+        container.html(html);
     }
 
     // Функции управления
     function refreshLeftSection() {
         loadEmployeeGroups();
-        // Сброс выбранных данных
         selectedGroupId = null;
         selectedEmployeeId = null;
         $('#employeesList').empty();
         $('#accessLevelsList').empty();
         $('#passagesContainer').empty();
+        if (employeesDataTable) {
+            employeesDataTable.clear().draw();
+        }
     }
 
     function refreshCenterSection() {
@@ -950,7 +1137,10 @@
 
     // Вспомогательные функции
     function getInitials(lastName, firstName) {
-        return (lastName.charAt(0) + firstName.charAt(0)).toUpperCase();
+        if (!lastName && !firstName) return '??';
+        const first = (lastName && lastName.charAt(0)) || '';
+        const second = (firstName && firstName.charAt(0)) || '';
+        return (first + second).toUpperCase();
     }
 
     function getEventClass(eventType) {
@@ -981,39 +1171,38 @@
 
     function showLoading(selector) {
         $(selector).html(`
-                <div class="text-center py-5">
-                    <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Загрузка...</span>
-                    </div>
-                    <p class="mt-2">Загрузка данных...</p>
+            <div class="text-center py-5">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Загрузка...</span>
                 </div>
-            `);
+                <p class="mt-2">Загрузка данных...</p>
+            </div>
+        `);
     }
 
     function showError(selector, message) {
         $(selector).html(`
-                <div class="alert alert-danger" role="alert">
-                    <i class="bi bi-exclamation-triangle me-2"></i>
-                    ${message}
-                </div>
-            `);
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle me-2"></i>
+                ${escapeHtml(message)}
+            </div>
+        `);
     }
 
     function showToast(message, type = 'info') {
-        // Создаем временное уведомление
         const toastId = 'toast-' + Date.now();
         const toast = `
-                <div id="${toastId}" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050">
-                    <div class="toast align-items-center text-white bg-${type} border-0" role="alert">
-                        <div class="d-flex">
-                            <div class="toast-body">
-                                ${message}
-                            </div>
-                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            <div id="${toastId}" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050">
+                <div class="toast align-items-center text-white bg-${type} border-0" role="alert">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            ${escapeHtml(message)}
                         </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
                     </div>
                 </div>
-            `;
+            </div>
+        `;
 
         $('body').append(toast);
         const toastElement = $(`#${toastId} .toast`);
