@@ -159,8 +159,7 @@ public class EmployeeController {
             )
     })
     @PostMapping(value = "/lockEmployee",
-            produces = MediaType.APPLICATION_JSON_VALUE,
-            consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> lockEmployee(@Parameter(
                                                                     description = "Уникальный идентификатор сотрудника",
                                                                     required = true,
@@ -578,7 +577,7 @@ public class EmployeeController {
                                                                                        name = "Пример запроса",
                                                                                        value = """
                                                                                                {
-                                                                                                 "idPosition": "2129e300-520e-4ec3-a95a-8b5c7dfb34a7",
+                                                                                                 "position": "2129e300-520e-4ec3-a95a-8b5c7dfb34a7",
                                                                                                  "isChangeLocked":false,
                                                                                                  "isChangePin":false,
                                                                                                  "firstName":"Иван-3",
