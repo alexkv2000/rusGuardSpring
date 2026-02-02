@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Терминология проекта RusGuard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .term {
+            background-color: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .term-name {
+            font-weight: bold;
+            color: #2980b9;
+            font-size: 1.2em;
+        }
+        .term-description {
+            margin-top: 8px;
+        }
+        .term-example {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        .category {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Терминология проекта RusGuard</h1>
+        
+        <p>Данный документ содержит описание ключевых терминов и понятий, используемых в проекте RusGuard - системе контроля и управления доступом.</p>
+        
+        <h2>Основные термины</h2>
+        
+        <div class="term">
+            <div class="term-name">Сотрудник (Employee)</div>
+            <div class="term-description">Пользователь системы контроля доступа, имеющий уникальный идентификатор и набор прав доступа. Сотрудник может быть связан с группами, иметь уровни доступа и проходить через точки контроля.</div>
+            <div class="term-example">Пример: Иванов Иван Иванович, табельный номер 12345</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Уровень доступа (Access Level)</div>
+            <div class="term-description">Набор прав, определяющих возможности сотрудника в системе. Каждый уровень доступа имеет уникальный идентификатор и может быть назначен конкретным сотрудникам или группам.</div>
+            <div class="term-example">Пример: "Архив", "Доступ в архивный отдел"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Группа сотрудников (Employee Group)</div>
+            <div class="term-description">Иерархическая структура, объединяющая сотрудников по подразделениям или функциональным областям. Группы могут наследовать уровни доступа от родительских групп.</div>
+            <div class="term-example">Пример: "Отдел продаж", "IT-отдел"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Табельный номер (Tabel Number)</div>
+            <div class="term-description">Уникальный числовой идентификатор сотрудника, используемый для идентификации в системе.</div>
+            <div class="term-example">Пример: 12345</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Должность (Position)</div>
+            <div class="term-description">Функциональная роль сотрудника в организации, определяющая его обязанности и права доступа.</div>
+            <div class="term-example">Пример: "Главный инженер", "Специалист по безопасности"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Проход (Passage)</div>
+            <div class="term-description">Событие, фиксирующее попытку доступа сотрудника к какой-либо точке контроля. Включает информацию о времени, месте и результате попытки.</div>
+            <div class="term-example">Пример: "Проход сотрудника Иванова И.И. через дверь №100 в 10:30:15"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Точка доступа (Access Point)</div>
+            <div class="term-description">Физическое устройство или логический элемент системы контроля доступа, обеспечивающий контроль прохождения сотрудников.</div>
+            <div class="term-example">Пример: "Дверь входа в офис", "Контрольный пункт"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">UUID (Universally Unique Identifier)</div>
+            <div class="term-description">Уникальный идентификатор, используемый для однозначной идентификации объектов в системе. Используется для идентификации сотрудников, уровней доступа и других сущностей.</div>
+            <div class="term-example">Пример: "a38abfd9-d277-43fb-b719-618c7c91e7a1"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Блокировка (Lock)</div>
+            <div class="term-description">Состояние, при котором сотрудник временно либо постоянно лишается прав доступа к системе или определенным точкам.</div>
+            <div class="term-example">Пример: "Сотрудник заблокирован", "Сотрудник разблокирован"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Электронная почта (Email)</div>
+            <div class="term-description">Контактный адрес сотрудника, используемый для уведомлений и коммуникации внутри системы.</div>
+            <div class="term-example">Пример: "ivanov@example.com"</div>
+        </div>
+        
+        <h2>Технические термины</h2>
+        
+        <div class="term">
+            <div class="term-name">DTO (Data Transfer Object)</div>
+            <div class="term-description">Объект передачи данных, используемый для передачи информации между слоями приложения. В проекте используются DTO для передачи данных сотрудников и уровней доступа.</div>
+            <div class="term-example">Пример: SaveAcsEmployeeRequest, AccessLevelIdsRequest</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">REST API</div>
+            <div class="term-description">Архитектурный стиль взаимодействия между компонентами программного обеспечения, используемый в проекте для предоставления интерфейсов для работы с данными сотрудников и уровнями доступа.</div>
+            <div class="term-example">Пример: /api/rusguard/Employee/getById, /api/rusguard/Employee/saveAcsEmployee</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Spring Boot</div>
+            <div class="term-description">Фреймворк для создания веб-приложений на Java, используемый в проекте для реализации REST API и бизнес-логики.</div>
+            <div class="term-example">Пример: @RestController, @RequestMapping</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Swagger/OpenAPI</div>
+            <div class="term-description">Стандарт описания REST API, используемый в проекте для автоматической генерации документации API.</div>
+            <div class="term-example">Пример: @Operation, @ApiResponses, @Schema</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Лицензия (License)</div>
+            <div class="term-description">Информация о лицензионном соглашении, ограничивающем использование системы. Содержит информацию о компании, номере лицензии, дате выдачи и окончания действия.</div>
+            <div class="term-example">Пример: ITSNN-RUSGUARD-CORP-20260130-100</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Система контроля и управления доступом (ACS)</div>
+            <div class="term-description">Интегрированная система, обеспечивающая контроль доступа к объектам и ресурсам организации.</div>
+            <div class="term-example">Пример: RusGuard - название системы</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Паспортные данные (Passport Data)</div>
+            <div class="term-description">Информация о паспорте сотрудника, включая серию и номер.</div>
+            <div class="term-example">Пример: Серия 7710, номер 1010</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Адрес регистрации (Registration Address)</div>
+            <div class="term-description">Юридический адрес регистрации сотрудника.</div>
+            <div class="term-example">Пример: "г. Москва, ул. Проспект Мира, д.1, кв.8"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Адрес проживания (Residential Address)</div>
+            <div class="term-description">Адрес постоянного проживания сотрудника.</div>
+            <div class="term-example">Пример: "г. Москва, ул. Проспект Мира, д.1, кв.8"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Комментарий (Comment)</div>
+            <div class="term-description">Дополнительная информация о сотруднике, которая может быть полезна для административных целей.</div>
+            <div class="term-example">Пример: "Сотрудник работает удаленно"</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Сервис (Service)</div>
+            <div class="term-description">Компонент приложения, реализующий бизнес-логику и взаимодействующий с базой данных и другими компонентами.</div>
+            <div class="term-example">Пример: EmployeeService, LicenseService</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Контроллер (Controller)</div>
+            <div class="term-description">Компонент приложения, обрабатывающий HTTP-запросы и возвращающий ответы клиенту.</div>
+            <div class="term-example">Пример: EmployeeController, LicenseControllerSwagger</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Метод (Method)</div>
+            <div class="term-description">Функция или процедура, реализующая определенную функциональность в системе.</div>
+            <div class="term-example">Пример: getEmployeeById, setAccessLevelEmployee</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Параметр (Parameter)</div>
+            <div class="term-description">Значение, передаваемое в метод или функцию для выполнения определенной операции.</div>
+            <div class="term-example">Пример: idEmployee, flagLock</div>
+        </div>
+        
+        <div class="term">
+            <div class="term-name">Ответ (Response)</div>
+            <div class="term-description">Результат выполнения операции, возвращаемый клиенту после обработки запроса.</div>
+            <div class="term-example">Пример: JSON-объект с результатом операции</div>
+        </div>
+        
+        <div class="footer">
+            <p>Документация терминологии проекта RusGuard | Версия 1.0</p>
+            <p>Создано: ${date}</p>
+        </div>
+    </div>
+</body>
+</html>
