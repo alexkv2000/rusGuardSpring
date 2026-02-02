@@ -53,12 +53,14 @@
             display: flex;
             overflow: hidden;
             margin-bottom: 15px;
+            min-height: 0; /* Важно для flex-контейнеров */
         }
 
         .section-column {
             display: flex;
             flex-direction: column;
             height: 100%;
+            min-height: 0; /* Важно для flex-контейнеров */
         }
 
         .section-header {
@@ -78,28 +80,76 @@
             background-color: white;
             border: 1px solid #dee2e6;
             border-radius: 5px;
-            padding: 15px;
+            padding: 0;
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            min-height: 0; /* Критически важно для flexbox */
         }
 
-        .scrollable-content {
+        /* СТИЛИ ДЛЯ ЛЕВОЙ СЕКЦИИ (ДЕРЕВО) */
+        .tree-container {
             flex: 1;
             overflow-y: auto;
             overflow-x: hidden;
             min-height: 0;
-        }
-
-        .section-footer {
-            background-color: #34495e;
-            color: white;
             padding: 15px;
-            border-radius: 5px;
-            margin-top: auto;
-            flex-shrink: 0;
         }
 
+        /* СТИЛИ ДЛЯ ЦЕНТРАЛЬНОЙ СЕКЦИИ (ТАБЛИЦА) */
+        .table-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            padding: 0;
+        }
+
+        /* Стили для DataTables wrapper */
+        .dataTables_wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            padding: 15px;
+        }
+
+        /* Убедимся, что все внутренние контейнеры DataTables растягиваются */
+        #employeesTable_wrapper {
+            flex: 1;
+            display: flex !important;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        #employeesTable_wrapper .dataTables_scroll {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        #employeesTable_wrapper .dataTables_scrollBody {
+            flex: 1;
+            min-height: 0;
+        }
+
+        /* Фиксируем высоту для скролла DataTables */
+        #employeesTable_wrapper .dataTables_scrollBody {
+            max-height: none !important;
+            height: auto !important;
+        }
+
+        /* СТИЛИ ДЛЯ ПРАВОЙ СЕКЦИИ (УРОВНИ ДОСТУПА) */
+        .access-levels-container {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            min-height: 0;
+            padding: 15px;
+        }
+
+        /* ОБЩИЕ СТИЛИ */
         .employee-avatar {
             width: 40px;
             height: 40px;
@@ -167,41 +217,16 @@
             border-color: #2c3e50;
         }
 
-        /* Стили для фиксированной таблицы */
-        .table-container {
-            overflow-x: auto;
-            overflow-y: auto;
-            flex: 1;
-            min-height: 0;
+        .section-footer {
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: auto;
+            flex-shrink: 0;
         }
 
-        .table-fixed {
-            min-width: 600px;
-        }
-
-        .table-fixed thead th {
-            position: sticky;
-            top: 0;
-            background-color: #f8f9fa;
-            z-index: 10;
-            box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1);
-        }
-
-        /* Стили для дерева */
-        .tree-container {
-            flex: 1;
-            overflow: auto;
-            min-height: 0;
-        }
-
-        /* Стили для уровней доступа */
-        .access-levels-container {
-            flex: 1;
-            overflow-y: auto;
-            min-height: 0;
-        }
-
-        /* Стили для проходов */
+        /* СТИЛИ ДЛЯ ПРОХОДОВ */
         .passages-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -235,16 +260,33 @@
         @media (max-width: 768px) {
             .main-row {
                 flex-direction: column;
+                height: auto;
             }
 
             .section-column {
-                margin-bottom: 15px;
                 height: 400px;
+                margin-bottom: 15px;
             }
+        }
 
-            .section-content {
-                min-height: 300px;
-            }
+        /* Стили для сообщений о загрузке и ошибках */
+        .loading-container, .error-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Дополнительные стили для правильного отображения DataTables */
+        .dataTables_scrollHead {
+            flex-shrink: 0;
+        }
+
+        .dataTables_scrollBody {
+            flex: 1;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
         }
     </style>
 </head>
@@ -305,19 +347,21 @@
             </div>
             <div class="section-content">
                 <div class="table-container">
-                    <table id="employeesTable" class="table table-hover table-fixed">
-                        <thead>
-                        <tr>
-                            <th style="width: 40%">ФИО</th>
-                            <th style="width: 20%">Табельный</th>
-                            <th style="width: 20%">Статус</th>
-                            <th style="width: 20%">Действия</th>
-                        </tr>
-                        </thead>
-                        <tbody id="employeesList">
-                        <!-- Данные будут загружены через JS -->
-                        </tbody>
-                    </table>
+                    <div class="dataTables_wrapper">
+                        <table id="employeesTable" class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th style="min-width: 200px;">ФИО</th>
+                                <th style="min-width: 100px;">Табельный</th>
+                                <th style="min-width: 100px;">Статус</th>
+                                <th style="min-width: 120px;">Действия</th>
+                            </tr>
+                            </thead>
+                            <tbody id="employeesList">
+                            <!-- Данные будут загружены через JS -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,7 +405,7 @@
     </div>
 </div>
 
-<!-- Модальное окно добавления сотрудника -->
+<!-- Модальные окна (остаются без изменений) -->
 <div class="modal fade" id="addEmployeeModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -436,7 +480,6 @@
     </div>
 </div>
 
-<!-- Модальное окно управления доступом -->
 <div class="modal fade" id="accessModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -487,11 +530,9 @@
         const today = new Date().toISOString().split('T')[0];
         $('#passageDate').val(today);
 
-        // Инициализация DataTable для сотрудников
-        initEmployeesTable();
-
         loadEmployeeGroups();
         setupEventListeners();
+        adjustLayout();
 
         // Инициализация вкладок
         $('#topMenu a').on('shown.bs.tab', function(e) {
@@ -503,19 +544,30 @@
         // Автоматический размер при изменении окна
         $(window).on('resize', function() {
             adjustLayout();
+            // Пересчитываем размеры DataTable
+            if (employeesDataTable) {
+                setTimeout(() => {
+                    employeesDataTable.columns.adjust();
+                    if (employeesDataTable.fixedHeader) {
+                        employeesDataTable.fixedHeader.adjust();
+                    }
+                }, 100);
+            }
         });
 
-        adjustLayout();
+        // Инициализируем DataTable после небольшой задержки для правильного расчета высоты
+        setTimeout(initEmployeesTable, 100);
     });
 
     function adjustLayout() {
         // Подгоняем высоту контейнеров под доступное пространство
         const windowHeight = $(window).height();
         const topSectionHeight = $('#top-section').outerHeight();
-        const mainContentHeight = windowHeight - topSectionHeight;
+        const mainContentHeight = windowHeight - topSectionHeight - 30; // 30px для padding
 
         $('.main-content').css('height', mainContentHeight + 'px');
     }
+
     function initEmployeesTable() {
         if (employeesDataTable) {
             employeesDataTable.destroy();
@@ -523,20 +575,52 @@
 
         employeesDataTable = $('#employeesTable').DataTable({
             "paging": true,
-            "pageLength": 10,
+            "pageLength": 25,
             "lengthChange": false,
             "searching": true,
             "ordering": true,
             "info": true,
             "autoWidth": false,
-            "responsive": true,
+            "responsive": false,
+            "scrollY": "100%", // Используем 100% высоты контейнера
+            "scrollCollapse": true,
+            "scrollX": false,
+            "deferRender": true,
+            "scroller": true,
             "language": {
                 "url": "//cdn.datatables.net/plug-ins/1.13.6/i18n/ru.json"
             },
-            "dom": '<"top"f>rt<"bottom"lip><"clear">',
-            "scrollY": "300px",
-            "scrollCollapse": false
+            "dom": '<"top"f>rt<"bottom"ilp><"clear">',
+            "columnDefs": [
+                { "orderable": true, "targets": [0, 1, 2] },
+                { "orderable": false, "targets": [3] }
+            ],
+            "initComplete": function() {
+                // После инициализации корректируем размеры
+                this.api().columns.adjust();
+            }
         });
+
+        // Настраиваем высоту контейнера для скролла
+        setTimeout(() => {
+            const $wrapper = $('#employeesTable_wrapper');
+            const $scrollBody = $wrapper.find('.dataTables_scrollBody');
+
+            if ($scrollBody.length) {
+                // Устанавливаем высоту для скролл-контейнера
+                const wrapperHeight = $wrapper.height();
+                const scrollHeadHeight = $wrapper.find('.dataTables_scrollHead').height() || 0;
+                const topHeight = $wrapper.find('.top').height() || 0;
+                const bottomHeight = $wrapper.find('.bottom').height() || 0;
+
+                // Вычисляем доступную высоту для тела таблицы
+                const availableHeight = wrapperHeight - scrollHeadHeight - topHeight - bottomHeight - 10;
+
+                if (availableHeight > 100) {
+                    $scrollBody.css('height', availableHeight + 'px');
+                }
+            }
+        }, 200);
     }
 
     function setupEventListeners() {
@@ -675,6 +759,12 @@
     }
 
     function renderEmployeesList(data) {
+        if (!employeesDataTable) {
+            initEmployeesTable();
+            setTimeout(() => renderEmployeesList(data), 100);
+            return;
+        }
+
         // Очищаем таблицу
         employeesDataTable.clear();
 
@@ -712,15 +802,29 @@
         });
 
         employeesDataTable.draw();
-    }
 
-    function showNoDataMessage() {
-        employeesDataTable.clear();
-        employeesDataTable.row.add([
-            '<div class="text-center py-3" colspan="4">Нет сотрудников в выбранной группе</div>'
-        ]).draw();
-    }
+        // Корректируем размеры после отрисовки
+        setTimeout(() => {
+            employeesDataTable.columns.adjust();
 
+            // Пересчитываем высоту скролл-контейнера
+            const $wrapper = $('#employeesTable_wrapper');
+            const $scrollBody = $wrapper.find('.dataTables_scrollBody');
+
+            if ($scrollBody.length) {
+                const wrapperHeight = $wrapper.height();
+                const scrollHeadHeight = $wrapper.find('.dataTables_scrollHead').height() || 0;
+                const topHeight = $wrapper.find('.top').height() || 0;
+                const bottomHeight = $wrapper.find('.bottom').height() || 0;
+
+                const availableHeight = wrapperHeight - scrollHeadHeight - topHeight - bottomHeight - 10;
+
+                if (availableHeight > 100) {
+                    $scrollBody.css('height', availableHeight + 'px');
+                }
+            }
+        }, 50);
+    }
 
     function createEmployeeRow(employee) {
         const employeeId = employee.ID || employee.id || employee.Id || `emp_${Date.now()}`;
@@ -765,87 +869,18 @@
         `;
     }
 
-    function renderEmployeeRow(employee) {
-        const employeesList = $('#employeesList');
-
-        // Безопасное извлечение данных
-        const employeeId = employee.ID || employee.id || employee.Id ||
-            employee.GUID || employee.guid ||
-            `employee_${Date.now()}_${Math.random()}`;
-
-        const lastName = employee.LastName || employee.lastName ||
-            employee.lastname || employee.surname || '';
-
-        const firstName = employee.FirstName || employee.firstName ||
-            employee.firstname || employee.name || '';
-
-        const secondName = employee.SecondName || employee.secondName ||
-            employee.secondname || employee.middlename ||
-            employee.patronymic || '';
-
-        const tabelNumber = employee.TabelNumber || employee.tabelNumber ||
-            employee.tabel || employee.tabNumber ||
-            employee.employeeNumber || '';
-
-        // Определяем статус блокировки
-        let isLocked = false;
-        if (typeof employee.IsLocked !== 'undefined') {
-            isLocked = Boolean(employee.IsLocked);
-        } else if (typeof employee.isLocked !== 'undefined') {
-            isLocked = Boolean(employee.isLocked);
-        } else if (typeof employee.locked !== 'undefined') {
-            isLocked = Boolean(employee.locked);
-        } else if (typeof employee.Status !== 'undefined') {
-            // Может быть текстовый статус
-            const status = String(employee.Status).toLowerCase();
-            isLocked = status.includes('lock') || status.includes('block') ||
-                status.includes('заблок') || status.includes('блок');
+    function showNoDataMessage() {
+        if (!employeesDataTable) {
+            initEmployeesTable();
         }
 
-        const statusClass = isLocked ? 'status-locked' : 'status-active';
-        const statusText = isLocked ? 'Заблокирован' : 'Активен';
-        const lockIcon = isLocked ? 'bi-lock-fill' : 'bi-unlock-fill';
-        const lockButtonClass = isLocked ? 'btn-success' : 'btn-danger';
-        const lockButtonIcon = isLocked ? 'bi-unlock' : 'bi-lock';
-
-        // Безопасное создание строки HTML
-        const row = `
-        <tr data-employee-id="${employeeId.replace(/"/g, '&quot;')}"
-            onclick="selectEmployee('${employeeId.replace(/'/g, "\\'")}')"
-            class="${employeeId === selectedEmployeeId ? 'table-primary' : ''}">
-            <td>
-                <div class="d-flex align-items-center">
-                    <div class="employee-avatar">
-                        ${getInitials(lastName, firstName)}
-                    </div>
-                    <div>
-                        <strong>${escapeHtml(lastName)} ${escapeHtml(firstName)}</strong>
-                        ${secondName ? `<br><small>${escapeHtml(secondName)}</small>` : ''}
-                    </div>
-                </div>
-            </td>
-            <td>${escapeHtml(tabelNumber) || 'Не указан'}</td>
-            <td><span class="${statusClass}"><i class="bi ${lockIcon}"></i> ${statusText}</span></td>
-            <td>
-                <button class="btn btn-warning btn-sm action-btn" onclick="editEmployee('${employeeId.replace(/'/g, "\\'")}', event)">
-                    <i class="bi bi-pencil"></i>
-                </button>
-                <button class="btn ${lockButtonClass} btn-sm action-btn"
-                        onclick="toggleEmployeeLock('${employeeId.replace(/'/g, "\\'")}', ${!isLocked}, event)">
-                    <i class="bi ${lockButtonIcon}"></i>
-                </button>
-            </td>
-        </tr>
-    `;
-        employeesList.append(row);
-    }
-
-    // Вспомогательная функция для экранирования HTML
-    function escapeHtml(text) {
-        if (!text) return '';
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
+        employeesDataTable.clear();
+        employeesDataTable.row.add([
+            '<div class="text-center py-3" colspan="4">Нет сотрудников в выбранной группе</div>',
+            '',
+            '',
+            ''
+        ]).draw();
     }
 
     function selectEmployee(employeeId) {
@@ -862,17 +897,6 @@
         // Загрузка проходов для выбранного сотрудника
         loadPassages();
     }
-
-    // // Обновленная функция getInitials с проверкой
-    // function getInitials(lastName, firstName) {
-    //     if (!lastName && !firstName) return '??';
-    //
-    //     const first = (lastName && lastName.charAt(0)) || '';
-    //     const second = (firstName && firstName.charAt(0)) || '';
-    //
-    //     const initials = (first + second).toUpperCase();
-    //     return initials || '??';
-    // }
 
     // RIGHT SECTION - Уровни доступа
     function loadAccessLevels(employeeId) {
@@ -1136,6 +1160,13 @@
     }
 
     // Вспомогательные функции
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
     function getInitials(lastName, firstName) {
         if (!lastName && !firstName) return '??';
         const first = (lastName && lastName.charAt(0)) || '';
@@ -1145,9 +1176,9 @@
 
     function getEventClass(eventType) {
         switch(eventType) {
-            case 1: return 'entrance'; // Вход
-            case 2: return 'exit';     // Выход
-            case 3: return 'denied';   // Отказ
+            case 1: return 'entrance';
+            case 2: return 'exit';
+            case 3: return 'denied';
             default: return '';
         }
     }
@@ -1171,20 +1202,24 @@
 
     function showLoading(selector) {
         $(selector).html(`
-            <div class="text-center py-5">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Загрузка...</span>
+            <div class="loading-container">
+                <div class="text-center py-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Загрузка...</span>
+                    </div>
+                    <p class="mt-2">Загрузка данных...</p>
                 </div>
-                <p class="mt-2">Загрузка данных...</p>
             </div>
         `);
     }
 
     function showError(selector, message) {
         $(selector).html(`
-            <div class="alert alert-danger" role="alert">
-                <i class="bi bi-exclamation-triangle me-2"></i>
-                ${escapeHtml(message)}
+            <div class="error-container">
+                <div class="alert alert-danger" role="alert">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    ${escapeHtml(message)}
+                </div>
             </div>
         `);
     }
@@ -1216,15 +1251,7 @@
 
     // Функции для вкладки "Отчеты"
     function loadReports() {
-        // Здесь можно реализовать загрузку отчетов
         console.log('Загрузка отчетов...');
-    }
-
-    // Экспорт данных в Excel
-    function exportToExcel(data, filename) {
-        // Реализация экспорта в Excel
-        // Для реального использования можно использовать библиотеку SheetJS
-        console.log('Экспорт в Excel:', filename);
     }
 </script>
 </body>
