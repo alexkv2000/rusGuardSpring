@@ -2298,17 +2298,31 @@
         }
     }
 
+    // Обновленная функция показа модального окна управления доступом
     function showAccessModal() {
         if (!selectedEmployeeId) {
             alert('Выберите сотрудника для управления доступом');
             return;
         }
 
-        // Загрузка доступных уровней доступа
-        fetch(`${API_BASE_URL}/getAccessLevels`)
-            .then(response => response.json())
-            .then(data => {
-                renderAvailableAccessLevels(data);
+        // Сбрасываем состояние чекбокса "Использовать уровни доступа родительской группы"
+        $('#useParentAccess').prop('checked', false);
+
+        // Загрузка доступных уровней доступа и текущих уровней сотрудника
+        Promise.all([
+            // Загрузка всех доступных уровней доступа
+            fetch(`${API_BASE_URL}/getAccessLevels`).then(r => r.json()),
+            // Загрузка текущих уровней доступа сотрудника
+            fetch(`${API_BASE_URL}/getAccessLevelsEmployee?idEmployee=${selectedEmployeeId}`).then(r => r.json())
+        ])
+            .then(([allLevels, employeeLevels]) => {
+                console.log('Все уровни доступа:', allLevels);
+                console.log('Текущие уровни доступа сотрудника:', employeeLevels);
+
+                // Рендерим уровни доступа с отметкой текущих уровней сотрудника
+                renderAvailableAccessLevels(allLevels, employeeLevels);
+
+                // Показываем модальное окно
                 $('#accessModal').modal('show');
             })
             .catch(error => {
@@ -2317,57 +2331,165 @@
             });
     }
 
-    function renderAvailableAccessLevels(levels) {
+    // Функция для отображения доступных уровней доступа
+    function renderAvailableAccessLevels(levels, currentEmployeeLevels = []) {
         const container = $('#availableAccessLevels');
         container.empty();
 
+        if (!levels || !Array.isArray(levels) || levels.length === 0) {
+            container.html('<div class="text-muted">Нет доступных уровней доступа</div>');
+            return;
+        }
+
+        // Создаем Set из ID текущих уровней доступа сотрудника для быстрой проверки
+        const currentLevelIds = new Set();
+        if (currentEmployeeLevels && Array.isArray(currentEmployeeLevels)) {
+            currentEmployeeLevels.forEach(level => {
+                if (level.ID) {
+                    currentLevelIds.add(level.ID);
+                }
+            });
+        }
+
+        let html = '';
         levels.forEach(level => {
-            const checkbox = `
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="${level.ID}" id="level_${level.ID}">
-                        <label class="form-check-label" for="level_${level.ID}">
-                            ${level.Name}
-                            ${level.Description ? `<br><small class="text-muted">${level.Description}</small>` : ''}
-                        </label>
-                    </div>
-                    <hr class="my-2">
-                `;
-            container.append(checkbox);
+            const isChecked = currentLevelIds.has(level.ID);
+            html += `
+            <div class="form-check">
+                <input class="form-check-input level-checkbox" type="checkbox"
+                       value="${level.ID}"
+                       id="level_${level.ID}"
+                       ${isChecked ? 'checked' : ''}>
+                <label class="form-check-label" for="level_${level.ID}">
+                    ${level.Name || 'Без названия'}
+                    ${level.Description ? `<br><small class="text-muted">${level.Description}</small>` : ''}
+                </label>
+            </div>
+            <hr class="my-2">
+        `;
         });
+
+        container.html(html);
+
+        // Применяем состояние блокировки при рендеринге
+        updateLevelCheckboxesState();
+    }
+    // Функция обновления состояния чекбоксов уровней доступа
+    function updateLevelCheckboxesState() {
+        const useParentAccess = $('#useParentAccess').is(':checked');
+        $('.level-checkbox').prop('disabled', useParentAccess);
+
+        // Если выбрано использование родительских доступов, снимаем все галочки
+        if (useParentAccess) {
+            $('.level-checkbox').prop('checked', false);
+        }
     }
 
+    // Обработчик изменения состояния чекбокса "Использовать уровни доступа родительской группы"
+    $(document).on('change', '#useParentAccess', function() {
+        updateLevelCheckboxesState();
+    });
+
+    // Функция сохранения уровней доступа
     function saveAccessLevels() {
         const useParentAccess = $('#useParentAccess').is(':checked');
+
+        // Собираем выбранные уровни доступа
         const selectedLevels = [];
 
-        $('#availableAccessLevels input:checked').each(function () {
-            selectedLevels.push($(this).val());
-        });
+        if (!useParentAccess) {
+            // Собираем только если не используем родительские доступы
+            $('.level-checkbox:checked').each(function() {
+                selectedLevels.push($(this).val());
+            });
 
+            // Проверяем, что выбран хотя бы один уровень доступа
+            if (selectedLevels.length === 0) {
+                showToast('Выберите хотя бы один уровень доступа', 'warning');
+                return;
+            }
+        } else {
+            // Если используем родительские доступы, отправляем фиктивное значение
+            // чтобы пройти валидацию @NotEmpty
+            selectedLevels.push("00000000-0000-0000-0000-000000000000"); //2489efd2-fea2-43aa-a713-54ea97fbab6c
+        }
+
+        // Создаем объект в правильном формате
         const requestData = {
             guid: selectedLevels
         };
 
+        console.log('Отправляемые данные уровней доступа:', requestData);
+        console.log('employeeID:', selectedEmployeeId);
+        console.log('isUseParentAccessLevel:', useParentAccess);
+
+        // Показываем индикатор загрузки
+        const saveButton = $('#accessModal .btn-primary');
+        const originalText = saveButton.html();
+        saveButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Сохранение...');
+        saveButton.prop('disabled', true);
+
+        // Отправляем данные на сервер
         fetch(`${API_BASE_URL}/setAccessLevelEmployee?employeeID=${selectedEmployeeId}&isUseParentAccessLevel=${useParentAccess}`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
             body: JSON.stringify(requestData)
         })
-            .then(response => response.json())
+            .then(async response => {
+                console.log('Статус ответа (уровни доступа):', response.status, response.statusText);
+
+                const responseText = await response.text();
+                console.log('Текст ответа (уровни доступа):', responseText);
+
+                if (!response.ok) {
+                    // Пытаемся извлечь сообщение об ошибке из JSON
+                    try {
+                        const errorData = responseText ? JSON.parse(responseText) : {};
+                        throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+                    } catch (e) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                }
+
+                // Пытаемся распарсить JSON
+                try {
+                    return responseText ? JSON.parse(responseText) : {};
+                } catch (e) {
+                    console.error('Ошибка парсинга JSON (уровни доступа):', e);
+                    // Если ответ пустой или невалидный JSON, но статус 200
+                    if (response.ok) {
+                        return { status: 'success' };
+                    }
+                    throw e;
+                }
+            })
             .then(data => {
+                console.log('Данные ответа (уровни доступа):', data);
+
+                // Проверяем успешность операции
                 if (data.status === 'success') {
-                    $('#accessModal').modal('hide');
-                    refreshRightSection();
                     showToast('Уровни доступа успешно обновлены', 'success');
+                    $('#accessModal').modal('hide');
+
+                    // Обновляем список уровней доступа в правой секции
+                    if (selectedEmployeeId) {
+                        loadAccessLevels(selectedEmployeeId);
+                    }
                 } else {
-                    throw new Error(data.message || 'Ошибка обновления уровней доступа');
+                    throw new Error(data.message || data.error || 'Неизвестная ошибка при обновлении уровней доступа');
                 }
             })
             .catch(error => {
-                console.error('Ошибка:', error);
-                showToast('Ошибка обновления уровней доступа', 'danger');
+                console.error('Ошибка сохранения уровней доступа:', error);
+                showToast(`Ошибка сохранения уровней доступа: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                saveButton.html(originalText);
+                saveButton.prop('disabled', false);
             });
     }
 

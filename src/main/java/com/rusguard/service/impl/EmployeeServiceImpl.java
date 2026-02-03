@@ -362,7 +362,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             if (accessLevelIDs.getGuid().isEmpty()) { //если уровень не задан, ставим признак = из родительской группы
                 isUseParentAccessLevel = true;
             }
-            networkCnfgService.setUseEmployeeParentAccessLevel(employeeID, isUseParentAccessLevel, true); // запретить - true,true
+            networkCnfgService.setUseEmployeeParentAccessLevel(employeeID, isUseParentAccessLevel, false); // запретить - true,true
             //Если НЕ используем родительские уровни, то добавляем указанные уровни доступа
             if (!isUseParentAccessLevel && !accessLevelIDs.getGuid().isEmpty()) {
                 networkCnfgService.addAccessLevelsToEmployee(employeeID, accessLevelIDs);

@@ -314,7 +314,7 @@ public class EmployeeController {
         try {
             // Преобразуем DTO в ArrayOfguid
             ArrayOfguid accessLevelIDs = new ArrayOfguid();
-            if (request.getGuid() != null) {
+            if (request.getGuid() != null || !request.getGuid().isEmpty()) {
                 request.getGuid().forEach(accessLevelIDs.getGuid()::add);
             }
 
