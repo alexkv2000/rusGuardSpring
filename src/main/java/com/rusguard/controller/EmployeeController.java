@@ -44,14 +44,12 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    private ILNetworkConfigurationService networkCnfgService;
-
     /**
      * Получение списка уровней доступа
      *
      * @return Список доступных уровней доступа
      */
-    @Operation(summary = "Получить список уровней доступа", description = "Возвращает список всех доступных уровней доступа в системе", tags = {"Уровни доступа"})
+    @Operation(summary = "Получить список уровней доступа", description = "Возвращает список всех доступных уровней доступа в системе", tags = {"Уровни доступа", "Справочники"})
     @ApiResponses(value = {
             @ApiResponse(
                     responseCode = "200",
@@ -94,7 +92,7 @@ public class EmployeeController {
             )
     })
     @GetMapping("/getAccessLevels")
-    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsSlim() throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage {
+    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsSlim() {
         List<Map<String, Object>> mapresult = new ArrayList<>();
         employeeService.getAccessLevelsSlim()
                 .forEach(
@@ -114,6 +112,7 @@ public class EmployeeController {
 
     /**
      * Получение списка уровней доступа сотрудника
+     *
      * @param idEmployee ID сотрудника
      * @return Список доступных уровней доступа сотрудника
      */
@@ -158,9 +157,14 @@ public class EmployeeController {
             )
     })
     @GetMapping("/getAccessLevelsEmployee")
-    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee) throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage {
+    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(@Parameter(
+                                                                                            description = "ID сотрудника",
+                                                                                            required = true,
+                                                                                            example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
+                                                                                )
+                                                                                 String idEmployee) throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage {
         List<Map<String, Object>> mapresult = new ArrayList<>();
-        ResponseEntity <List<Map<String, Object>>> map = employeeService.getAccessLevelsByEmployeeID(idEmployee);
+        ResponseEntity<List<Map<String, Object>>> map = employeeService.getAccessLevelsByEmployeeID(idEmployee);
         for (int i = 0; i < Objects.requireNonNull(map.getBody()).size(); i++) {
             mapresult.add(map.getBody().get(i));
         }

@@ -452,7 +452,7 @@
     </div>
 </div>
 
-<!-- Модальные окна (остаются без изменений) -->
+<!-- Модальное окно добавления сотрудника -->
 <div class="modal fade" id="addEmployeeModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -462,6 +462,15 @@
             </div>
             <div class="modal-body">
                 <form id="addEmployeeForm">
+                    <!-- Скрытое поле для хранения ID выбранной группы -->
+                    <input type="hidden" name="positionGroup" id="addEmployeeGroupId">
+
+                    <!-- Информация о выбранной группе -->
+                    <div class="alert alert-info mb-3" id="selectedGroupInfo">
+                        <i class="bi bi-info-circle me-2"></i>
+                        <span id="groupNameDisplay">Группа не выбрана</span>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-4">
                             <div class="mb-3">
@@ -528,108 +537,162 @@
 </div>
 <!-- Модальное окно редактирования сотрудника -->
 <div class="modal fade" id="editEmployeeModal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl"> <!-- Изменено на modal-xl для большего пространства -->
         <div class="modal-content">
             <div class="modal-header bg-warning text-white">
                 <h5 class="modal-title">Редактировать сотрудника</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <form id="editEmployeeForm">
-                    <input type="hidden" id="editEmployeeId">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label class="form-label">Фамилия *</label>
-                                <input type="text" class="form-control" id="editLastName" required>
+                <!-- Вкладки -->
+                <ul class="nav nav-tabs mb-3" id="editEmployeeTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="basic-info-tab" data-bs-toggle="tab"
+                                data-bs-target="#basic-info" type="button" role="tab">
+                            Основная информация
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="access-levels-tab" data-bs-toggle="tab"
+                                data-bs-target="#access-levels" type="button" role="tab">
+                            Уровни доступа
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Содержимое вкладок -->
+                <div class="tab-content" id="editEmployeeTabContent">
+                    <!-- Вкладка: Основная информация -->
+                    <div class="tab-pane fade show active" id="basic-info" role="tabpanel">
+                        <form id="editEmployeeForm">
+                            <input type="hidden" id="editEmployeeId">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Фамилия *</label>
+                                        <input type="text" class="form-control" id="editLastName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Имя *</label>
+                                        <input type="text" class="form-control" id="editFirstName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Отчество</label>
+                                        <input type="text" class="form-control" id="editSecondName">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label class="form-label">Имя *</label>
-                                <input type="text" class="form-control" id="editFirstName" required>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Табельный номер *</label>
+                                        <input type="number" class="form-control" id="editTabelNumber" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Должность</label>
+                                        <select class="form-control" id="editPositionSelect">
+                                            <option value="">Загрузка должностей...</option>
+                                        </select>
+                                        <small class="text-muted">Или введите GUID вручную:</small>
+                                        <input type="text" class="form-control mt-1" id="editPosition" placeholder="GUID должности">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label class="form-label">Отчество</label>
-                                <input type="text" class="form-control" id="editSecondName">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Комментарий</label>
+                                        <textarea class="form-control" id="editComment" rows="2"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Адрес регистрации</label>
+                                        <input type="text" class="form-control" id="editRegistrationAddress">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Адрес проживания</label>
+                                        <input type="text" class="form-control" id="editResidentialAddress">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Серия паспорта</label>
+                                        <input type="text" class="form-control" id="editPassportIISUE">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Номер паспорта</label>
+                                        <input type="text" class="form-control" id="editPassportNumber">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="editIsChangeLocked">
+                                <label class="form-check-label" for="editIsChangeLocked">
+                                    Изменить статус блокировки
+                                </label>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="editIsChangePin">
+                                <label class="form-check-label" for="editIsChangePin">
+                                    Изменить PIN-код
+                                </label>
+                            </div>
+                        </form>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label">Табельный номер *</label>
-                                <input type="number" class="form-control" id="editTabelNumber" required>
-                            </div>
+                    <!-- Вкладка: Уровни доступа -->
+                    <div class="tab-pane fade" id="access-levels" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h6>Таблица уровней доступа сотрудника</h6>
+                            <button class="btn btn-primary btn-sm" onclick="loadEmployeeAccessLevels()">
+                                <i class="bi bi-arrow-clockwise"></i> Обновить
+                            </button>
                         </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label">Должность</label>
-                                <select class="form-control" id="editPositionSelect">
-                                    <option value="">Загрузка должностей...</option>
-                                </select>
-                                <small class="text-muted">Или введите GUID вручную:</small>
-                                <input type="text" class="form-control mt-1" id="editPosition" placeholder="GUID должности">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label class="form-label">Комментарий</label>
-                                <textarea class="form-control" id="editComment" rows="2"></textarea>
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-sm" id="employeeAccessLevelsTable">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Название</th>
+                                    <th>Количество точек доступа</th>
+                                    <th>Описание</th>
+                                    <th>Дата окончания</th>
+                                </tr>
+                                </thead>
+                                <tbody id="employeeAccessLevelsBody">
+                                <!-- Данные будут загружены через JavaScript -->
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label">Адрес регистрации</label>
-                                <input type="text" class="form-control" id="editRegistrationAddress">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label">Адрес проживания</label>
-                                <input type="text" class="form-control" id="editResidentialAddress">
-                            </div>
+                        <div class="alert alert-info mt-3">
+                            <i class="bi bi-info-circle me-2"></i>
+                            Всего уровней доступа: <span id="accessLevelsCount">0</span>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label">Серия паспорта</label>
-                                <input type="text" class="form-control" id="editPassportIISUE">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label">Номер паспорта</label>
-                                <input type="text" class="form-control" id="editPassportNumber">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" id="editIsChangeLocked">
-                        <label class="form-check-label" for="editIsChangeLocked">
-                            Изменить статус блокировки
-                        </label>
-                    </div>
-
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" id="editIsChangePin">
-                        <label class="form-check-label" for="editIsChangePin">
-                            Изменить PIN-код
-                        </label>
-                    </div>
-                </form>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" onclick="deleteEmployee()">
@@ -756,8 +819,104 @@
         setTimeout(initEmployeesTable, 100);
     });
 
+    // Функция для загрузки уровней доступа сотрудника в модальное окно
+    function loadEmployeeAccessLevels() {
+        const employeeId = $('#editEmployeeId').val();
 
-    // Функция для редактирования сотрудника
+        if (!employeeId) {
+            showToast('ID сотрудника не найден', 'warning');
+            return;
+        }
+
+        // Показываем загрузку
+        $('#employeeAccessLevelsBody').html(`
+        <tr>
+            <td colspan="5" class="text-center py-3">
+                <div class="spinner-border spinner-border-sm" role="status">
+                    <span class="visually-hidden">Загрузка...</span>
+                </div>
+                Загрузка уровней доступа...
+            </td>
+        </tr>
+    `);
+
+        // Загружаем уровни доступа через API
+        fetch(`${API_BASE_URL}/getAccessLevelsEmployee?idEmployee=${employeeId}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ошибка загрузки уровней доступа');
+                }
+                return response.json();
+            })
+            .then(data => {
+                renderEmployeeAccessLevelsTable(data);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки уровней доступа:', error);
+                $('#employeeAccessLevelsBody').html(`
+                <tr>
+                    <td colspan="5" class="text-center py-3 text-danger">
+                        <i class="bi bi-exclamation-triangle me-2"></i>
+                        Не удалось загрузить уровни доступа
+                    </td>
+                </tr>
+            `);
+            });
+    }
+
+    // Функция для отображения таблицы уровней доступа
+    function renderEmployeeAccessLevelsTable(levels) {
+        const tbody = $('#employeeAccessLevelsBody');
+        const countSpan = $('#accessLevelsCount');
+
+        if (!levels || !Array.isArray(levels) || levels.length === 0) {
+            tbody.html(`
+            <tr>
+                <td colspan="5" class="text-center py-3 text-muted">
+                    Нет доступных уровней доступа
+                </td>
+            </tr>
+        `);
+            countSpan.text('0');
+            return;
+        }
+
+        let html = '';
+        levels.forEach(level => {
+            // Форматируем дату окончания
+            let endDate = 'Не ограничен';
+            if (level.EndDate && level.EndDate !== 'null') {
+                try {
+                    const date = new Date(level.EndDate);
+                    if (!isNaN(date.getTime())) {
+                        endDate = date.toLocaleDateString('ru-RU');
+                    }
+                } catch (e) {
+                    // Если ошибка форматирования, оставляем как есть
+                    endDate = level.EndDate;
+                }
+            }
+
+            html += `
+            <tr>
+                <td class="small text-muted">${escapeHtml(level.ID || '').substring(0, 8)}...</td>
+                <td><strong>${escapeHtml(level.Name || 'Без названия')}</strong></td>
+                <td>
+                    <span class="badge bg-primary">
+                        ${level.NumberOfAccessPoints || 0}
+                    </span>
+                </td>
+                <td>${escapeHtml(level.Description || '')}</td>
+                <td>${endDate}</td>
+            </tr>
+        `;
+        });
+
+        tbody.html(html);
+        countSpan.text(levels.length);
+    }
+
+    // Обновите функцию editEmployee для загрузки данных при открытии модального окна
     function editEmployee(employeeId, event) {
         event.stopPropagation();
         console.log('Редактирование сотрудника:', employeeId);
@@ -775,6 +934,10 @@
         </div>
     `);
 
+        // Сбрасываем таблицу уровней доступа
+        $('#employeeAccessLevelsBody').empty();
+        $('#accessLevelsCount').text('0');
+
         // Показываем модальное окно
         $('#editEmployeeModal').modal('show');
 
@@ -782,39 +945,273 @@
         loadEmployeeDataForEdit(employeeId);
     }
 
-    // Функция загрузки данных сотрудника для редактирования
+    // Обновите функцию loadEmployeeDataForEdit для загрузки уровней доступа
     function loadEmployeeDataForEdit(employeeId) {
-        fetch(`${API_BASE_URL}/getEmployeeByID?id=${employeeId}`)
-            .then(response => response.json())
+        console.log('Загрузка данных сотрудника для редактирования, ID:', employeeId);
+
+        // Показываем спиннер загрузки
+        $('#editEmployeeForm').html(`
+        <div class="text-center py-5">
+            <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Загрузка...</span>
+            </div>
+            <p class="mt-2">Загрузка данных сотрудника...</p>
+        </div>
+    `);
+
+        fetch(`${API_BASE_URL}/getById?idEmployee=${employeeId}`)
+            .then(response => {
+                console.log('Статус ответа:', response.status, response.statusText);
+                if (!response.ok) {
+                    throw new Error(`Ошибка HTTP: ${response.status} ${response.statusText}`);
+                }
+                return response.json();
+            })
             .then(data => {
-                console.log('Данные сотрудника для редактирования:', data);
+                console.log('Полученные данные:', JSON.stringify(data, null, 2));
+
+                // Восстанавливаем форму
+                restoreEditForm();
+
+                // Заполняем форму данными
                 populateEditForm(data);
+
+                // Загружаем уровни доступа сотрудника
+                loadEmployeeAccessLevels();
             })
             .catch(error => {
                 console.error('Ошибка загрузки данных сотрудника:', error);
-                showToast('Не удалось загрузить данные сотрудника', 'danger');
-                $('#editEmployeeModal').modal('hide');
+
+                // Восстанавливаем форму даже при ошибке
+                restoreEditForm();
+
+                showToast('Не удалось загрузить данные сотрудника: ' + error.message, 'danger');
+
+                // Если данные не загрузились, можно попробовать заполнить частично из таблицы
+                setTimeout(() => {
+                    if (!$('#editFirstName').val()) {
+                        quickEditEmployee(employeeId, new Event('click'));
+                    }
+                }, 500);
             });
     }
+    // Функция для восстановления HTML формы
+    function restoreEditForm() {
+        // Восстанавливаем оригинальный HTML формы
+        $('#editEmployeeForm').html(`
+        <input type="hidden" id="editEmployeeId">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label class="form-label">Фамилия *</label>
+                    <input type="text" class="form-control" id="editLastName" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label class="form-label">Имя *</label>
+                    <input type="text" class="form-control" id="editFirstName" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label class="form-label">Отчество</label>
+                    <input type="text" class="form-control" id="editSecondName">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Табельный номер *</label>
+                    <input type="number" class="form-control" id="editTabelNumber" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Должность</label>
+                    <select class="form-control" id="editPositionSelect">
+                        <option value="">Загрузка должностей...</option>
+                    </select>
+                    <small class="text-muted">Или введите GUID вручную:</small>
+                    <input type="text" class="form-control mt-1" id="editPosition" placeholder="GUID должности">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label class="form-label">Комментарий</label>
+                    <textarea class="form-control" id="editComment" rows="2"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Адрес регистрации</label>
+                    <input type="text" class="form-control" id="editRegistrationAddress">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Адрес проживания</label>
+                    <input type="text" class="form-control" id="editResidentialAddress">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Серия паспорта</label>
+                    <input type="text" class="form-control" id="editPassportIISUE">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Номер паспорта</label>
+                    <input type="text" class="form-control" id="editPassportNumber">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="editIsChangeLocked">
+            <label class="form-check-label" for="editIsChangeLocked">
+                Изменить статус блокировки
+            </label>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="editIsChangePin">
+            <label class="form-check-label" for="editIsChangePin">
+                Изменить PIN-код
+            </label>
+        </div>
+    `);
+    }
+
+    // Функция для отладки структуры данных
+    function debugDataStructure(data) {
+        console.log('=== ДЕБАГ СТРУКТУРЫ ДАННЫХ ===');
+        console.log('Тип данных:', typeof data);
+
+        if (Array.isArray(data)) {
+            console.log('Это массив, длина:', data.length);
+            if (data.length > 0) {
+                console.log('Первый элемент:', data[0]);
+                console.log('Ключи первого элемента:', Object.keys(data[0]));
+            }
+        } else if (typeof data === 'object') {
+            console.log('Это объект, ключи:', Object.keys(data));
+            // Показываем первые 2 уровня вложенности
+            for (const key in data) {
+                console.log(`${key}:`, data[key]);
+                if (typeof data[key] === 'object' && data[key] !== null) {
+                    if (Array.isArray(data[key])) {
+                        console.log(`  ${key} - массив, длина: ${data[key].length}`);
+                        if (data[key].length > 0) {
+                            console.log(`  Первый элемент ${key}:`, data[key][0]);
+                        }
+                    } else {
+                        console.log(`  ${key} - объект, ключи:`, Object.keys(data[key]));
+                    }
+                }
+            }
+        }
+        console.log('=== КОНЕЦ ДЕБАГА ===');
+    }
+
+
+    // Добавьте обработчик для переключения вкладок, чтобы обновлять данные при переключении
+    $(document).on('shown.bs.tab', '#editEmployeeTabs button[data-bs-toggle="tab"]', function (e) {
+        const target = $(e.target).data('bs-target');
+
+        // Если переключились на вкладку "Уровни доступа", загружаем данные
+        if (target === '#access-levels') {
+            const employeeId = $('#editEmployeeId').val();
+            if (employeeId) {
+                loadEmployeeAccessLevels();
+            }
+        }
+    });
+
+
+    // // Функция загрузки данных сотрудника для редактирования
+    // function loadEmployeeDataForEdit(employeeId) {
+    //     fetch(`${API_BASE_URL}/getEmployeeByID?id=${employeeId}`)
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log('Данные сотрудника для редактирования:', data);
+    //             populateEditForm(data);
+    //         })
+    //         .catch(error => {
+    //             console.error('Ошибка загрузки данных сотрудника:', error);
+    //             showToast('Не удалось загрузить данные сотрудника', 'danger');
+    //             $('#editEmployeeModal').modal('hide');
+    //         });
+    // }
 
     // Функция заполнения формы редактирования
     function populateEditForm(data) {
-        // Заполняем основные поля
-        $('#editEmployeeId').val(window.currentEditEmployeeId);
-        $('#editLastName').val(data.LastName || data.lastName || '');
-        $('#editFirstName').val(data.FirstName || data.firstName || '');
-        $('#editSecondName').val(data.SecondName || data.secondName || '');
-        $('#editTabelNumber').val(data.TabelNumber || data.tabelNumber || '');
-        $('#editPosition').val(data.Position || data.position || '');
-        $('#editComment').val(data.Comment || data.comment || '');
-        $('#editRegistrationAddress').val(data.RegistrationAddress || data.registrationAddress || '');
-        $('#editResidentialAddress').val(data.ResidentialAddress || data.residentialAddress || '');
-        $('#editPassportIISUE').val(data.PassportIISUE || data.passportIISUE || '');
-        $('#editPassportNumber').val(data.PassportNumber || data.passportNumber || '');
+        console.log('Данные для заполнения формы:', data);
 
-        // Устанавливаем чекбоксы
-        $('#editIsChangeLocked').prop('checked', false);
+        // Проверяем структуру данных
+        if (!data) {
+            console.error('Данные не получены');
+            showToast('Данные сотрудника не получены', 'warning');
+            return;
+        }
+
+        // Извлекаем данные сотрудника из массива data.data
+        let employeeData = null;
+
+        if (data.data && Array.isArray(data.data) && data.data.length > 0) {
+            employeeData = data.data[0];
+            console.log('Извлечены данные сотрудника:', employeeData);
+        } else if (data.status === 'success' && data.id) {
+            // Если структура другая, но есть ID
+            console.log('Используем альтернативную структуру данных');
+            employeeData = data;
+        } else {
+            console.error('Неправильная структура данных:', data);
+            showToast('Неправильная структура данных сотрудника', 'warning');
+            return;
+        }
+
+        // Заполняем форму данными
+        $('#editEmployeeId').val(window.currentEditEmployeeId);
+        $('#editLastName').val(employeeData.LastName || '');
+        $('#editFirstName').val(employeeData.FirstName || '');
+        $('#editSecondName').val(employeeData.SecondName || '');
+
+        // Табельный номер - нет в данных, оставляем пустым
+        $('#editTabelNumber').val('');
+
+        // Должность - используем поле Position
+        $('#editPosition').val(employeeData.Position || '');
+
+        // Паспортные данные
+        $('#editPassportIISUE').val(employeeData.PassportIssue || '');
+        $('#editPassportNumber').val(employeeData.PassportNumber || '');
+
+        // Статус блокировки
+        $('#editIsChangeLocked').prop('checked', employeeData.IsLocked || false);
         $('#editIsChangePin').prop('checked', false);
+
+        // Остальные поля оставляем пустыми (их нет в данных)
+        $('#editComment').val('');
+        $('#editRegistrationAddress').val('');
+        $('#editResidentialAddress').val('');
+
+        console.log('Форма заполнена. Значения:');
+        console.log('LastName:', $('#editLastName').val());
+        console.log('FirstName:', $('#editFirstName').val());
+        console.log('Position:', $('#editPosition').val());
     }
 
     function adjustLayout() {
@@ -1175,10 +1572,20 @@
         });
     }
 
+    // Обновляем функцию для отображения информации о группе при выборе в дереве
     function handleTreeSelect(e, data) {
         if (data && data.node) {
             selectedGroupId = data.node.id;
-            console.log('Выбрана группа:', data.node.text, 'ID:', selectedGroupId);
+            const groupName = data.node.text;
+            console.log('Выбрана группа:', groupName, 'ID:', selectedGroupId);
+
+            // Обновляем информацию о группе в модальном окне (если оно открыто)
+            if ($('#addEmployeeModal').is(':visible')) {
+                $('#addEmployeeGroupId').val(selectedGroupId);
+                $('#groupNameDisplay').text(`Сотрудник будет добавлен в группу: ${groupName}`);
+            }
+
+            // Загружаем сотрудников выбранной группы
             loadEmployeesByGroup(selectedGroupId);
         }
     }
@@ -1387,34 +1794,34 @@
             });
     }
 
-    // Функция для редактирования сотрудника
-    function editEmployee(employeeId, event) {
-        event.stopPropagation();
-        console.log('Редактирование сотрудника:', employeeId);
-
-        // Найти сотрудника в текущих данных
-        const employeeRow = $(`tr[data-employee-id="${employeeId}"]`);
-        if (employeeRow.length === 0) {
-            showToast('Сотрудник не найден', 'warning');
-            return;
-        }
-
-        // Получить данные из таблицы
-        const lastName = employeeRow.find('td:eq(0) strong').text().split(' ')[0] || '';
-        const firstName = employeeRow.find('td:eq(0) strong').text().split(' ')[1] || '';
-        const secondName = employeeRow.find('td:eq(0) small').text() || '';
-        const tabelNumber = employeeRow.find('td:eq(1)').text() || '';
-
-        // Заполнить форму редактирования
-        $('#editEmployeeId').val(employeeId);
-        $('#editLastName').val(lastName);
-        $('#editFirstName').val(firstName);
-        $('#editSecondName').val(secondName);
-        $('#editTabelNumber').val(tabelNumber === 'Не указан' ? '' : tabelNumber);
-
-        // Показать модальное окно
-        $('#editEmployeeModal').modal('show');
-    }
+    // // Функция для редактирования сотрудника
+    // function editEmployee(employeeId, event) {
+    //     event.stopPropagation();
+    //     console.log('Редактирование сотрудника:', employeeId);
+    //
+    //     // Найти сотрудника в текущих данных
+    //     const employeeRow = $(`tr[data-employee-id="${employeeId}"]`);
+    //     if (employeeRow.length === 0) {
+    //         showToast('Сотрудник не найден', 'warning');
+    //         return;
+    //     }
+    //
+    //     // Получить данные из таблицы
+    //     const lastName = employeeRow.find('td:eq(0) strong').text().split(' ')[0] || '';
+    //     const firstName = employeeRow.find('td:eq(0) strong').text().split(' ')[1] || '';
+    //     const secondName = employeeRow.find('td:eq(0) small').text() || '';
+    //     const tabelNumber = employeeRow.find('td:eq(1)').text() || '';
+    //
+    //     // Заполнить форму редактирования
+    //     $('#editEmployeeId').val(employeeId);
+    //     $('#editLastName').val(lastName);
+    //     $('#editFirstName').val(firstName);
+    //     $('#editSecondName').val(secondName);
+    //     $('#editTabelNumber').val(tabelNumber === 'Не указан' ? '' : tabelNumber);
+    //
+    //     // Показать модальное окно
+    //     $('#editEmployeeModal').modal('show');
+    // }
 
     // Функция для сохранения изменений сотрудника
     function saveEditedEmployee() {
@@ -1441,7 +1848,7 @@
         console.log('Сохраняем изменения сотрудника:', employeeData);
 
         // Отправляем данные на сервер
-        fetch(`${API_BASE_URL}/updateEmployee`, {
+        fetch(`${API_BASE_URL}/saveAcsEmployee?idEmployee=${employeeId}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -1636,10 +2043,11 @@
         // Показываем информацию о сотруднике
         let headerHtml = '';
         if (data.fio) {
-            headerHtml += `<div class="passage-info mb-3 p-2 bg-light rounded">
-            <div class="fw-bold">${escapeHtml(data.fio)}</div>
-            ${data.department ? `<div class="small">${escapeHtml(data.department)}</div>` : ''}
-        </div>`;
+            headerHtml += `
+            <div class="passage-info mb-3 p-2 bg-light rounded">
+                ${escapeHtml(data.fio)? `<div class="fw-bold">${escapeHtml(data.fio)}:   <small>${escapeHtml(data.department)}</small></div>` : ''}
+            </div>
+            `;
         }
 
         // Рендерим проходы
@@ -1709,17 +2117,15 @@
             }
 
             html += `
-            <div class="passage-event ${eventClass}">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <div class="fw-bold">${time}</div>
-                        ${dateStr ? `<div class="small text-muted">${dateStr}</div>` : ''}
-                    </div>
-                    <div class="badge ${eventClass === 'entrance' ? 'bg-success' : eventClass === 'exit' ? 'bg-danger' : 'bg-warning'}">${eventText}</div>
+                <div class="passage-event ${eventClass} d-flex align-items-center flex-nowrap gap-2">
+                <div class="flex-shrink-0 d-flex align-items-baseline gap-1">
+                    <span class="fw-bold">${time}</span>
+                    ${dateStr ? `<span class="text-muted small">${dateStr}</span>`: ''}
                 </div>
-                ${passage.MESSAGE ? `<div class="mt-2">${escapeHtml(passage.MESSAGE)}</div>` : ''}
-                ${details.length > 0 ? `<div class="small mt-1 text-muted">${details.join(' • ')}</div>` : ''}
-            </div>
+                <div class="badge flex-shrink-0 ${eventClass === 'entrance' ? 'bg-success' : eventClass === 'exit' ? 'bg-danger' : 'bg-warning'}"></div>
+                    ${passage.MESSAGE ? `<div class="text-truncate flex-grow-1" style="min-width: 0;">${escapeHtml(passage.MESSAGE)}</div>` : '<div class="flex-grow-1"></div>'}
+                    ${details.length > 0 ? `<div class="small text-muted flex-shrink-0">${details.join(' • ')}</div>` : ''}
+                </div>
         `;
         });
 
@@ -1759,37 +2165,114 @@
 
     function showAddEmployeeModal() {
         if (!selectedGroupId) {
-            alert('Выберите группу для добавления сотрудника');
+            alert('Пожалуйста, выберите группу для добавления сотрудника');
             return;
         }
+
+        // Получаем название выбранной группы из дерева
+        const $tree = $('#employeeGroupsTree');
+        const tree = $tree.jstree(true);
+        const node = tree.get_node(selectedGroupId);
+        const groupName = node ? node.text : 'Неизвестная группа';
+
+        // Заполняем информацию о группе
+        $('#addEmployeeGroupId').val(selectedGroupId);
+        $('#groupNameDisplay').text(`Сотрудник будет добавлен в группу: ${groupName}`);
+
+        // Сбрасываем форму
         $('#addEmployeeForm')[0].reset();
         $('#addEmployeeModal').modal('show');
     }
 
+    // Обновленная функция добавления сотрудника
     function addEmployee() {
-        const formData = new FormData();
-        const form = $('#addEmployeeForm').serializeArray();
+        // Проверяем, что группа выбрана
+        if (!selectedGroupId) {
+            showToast('Пожалуйста, выберите группу для добавления сотрудника', 'warning');
+            return;
+        }
 
-        form.forEach(item => {
-            formData.append(item.name, item.value);
-        });
+        const form = $('#addEmployeeForm')[0];
 
+        // Проверка обязательных полей
+        const lastName = form.lastname.value.trim();
+        const firstName = form.firstname.value.trim();
+        const tabelNumber = form.tabelNumber.value.trim();
+
+        if (!lastName || !firstName || !tabelNumber) {
+            showToast('Фамилия, имя и табельный номер обязательны для заполнения', 'warning');
+            return;
+        }
+
+        // Собираем все параметры в URLSearchParams
+        const params = new URLSearchParams();
+
+        // Обязательные параметры
+        params.append('lastname', lastName);
+        params.append('firstname', firstName);
+        params.append('tabelNumber', tabelNumber);
+        params.append('positionGroup', selectedGroupId);
+
+        // Опциональные параметры из формы
+        params.append('secondname', form.secondname.value.trim());
+        params.append('position', form.position.value.trim());
+        params.append('Email', form.Email.value.trim());
+        params.append('EmailDescription', form.EmailDescription.value.trim());
+        params.append('Comment', form.Comment.value.trim());
+
+        // Параметры, которых нет в форме (передаем пустые строки)
+        params.append('AdressReg', '');
+        params.append('PassportIISUE', '');
+        params.append('PassportNumber', '');
+
+        console.log('Отправляемые параметры:', Object.fromEntries(params));
+
+        // Показываем индикатор загрузки
+        const saveButton = $('#addEmployeeModal .btn-primary');
+        const originalText = saveButton.html();
+        saveButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Добавление...');
+        saveButton.prop('disabled', true);
+
+        // Отправляем данные на сервер
         fetch(`${API_BASE_URL}/addEmployee`, {
             method: 'POST',
-            body: formData
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: params.toString()
         })
             .then(response => {
+                console.log('Статус ответа:', response.status, response.statusText);
+
                 if (response.ok) {
-                    $('#addEmployeeModal').modal('hide');
-                    refreshCenterSection();
-                    showToast('Сотрудник успешно добавлен', 'success');
+                    // Если ответ успешный (200 OK) без тела
+                    return null; // ResponseEntity.ok().build() возвращает только статус
+                } else if (response.status === 400) {
+                    // Если ошибка валидации
+                    throw new Error('Ошибка валидации данных');
                 } else {
-                    throw new Error('Ошибка при добавлении сотрудника');
+                    throw new Error(`Ошибка сервера: ${response.status}`);
+                }
+            })
+            .then(() => {
+                showToast('Сотрудник успешно добавлен', 'success');
+                $('#addEmployeeModal').modal('hide');
+
+                // Обновляем список сотрудников
+                if (selectedGroupId) {
+                    setTimeout(() => {
+                        loadEmployeesByGroup(selectedGroupId);
+                    }, 500);
                 }
             })
             .catch(error => {
-                console.error('Ошибка:', error);
-                showToast('Ошибка при добавлении сотрудника', 'danger');
+                console.error('Ошибка добавления сотрудника:', error);
+                showToast(`Ошибка добавления: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                saveButton.html(originalText);
+                saveButton.prop('disabled', false);
             });
     }
 

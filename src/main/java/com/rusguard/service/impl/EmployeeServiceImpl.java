@@ -51,6 +51,8 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 // Импортируем сгенерированный интерфейс
@@ -1190,8 +1192,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                 tabelNumber
         );
         // ✅ Устанавливаем другие поля (опционально)
-        employeeData.setEmployeePositionID(employeePositionID);
-        employeeData.setIsChangeLocked(true);   // true — запретить изменение
+//        employeeData.setEmployeePositionID(employeePositionID);
+        employeeData.setIsChangeLocked(false);   // true — запретить изменение
         employeeData.setIsChangePin(false);     // false — не требовать смены PIN
         employeeData.setFirstName(employeeFirstName);
         employeeData.setLastName(employeeLastName);
@@ -1207,7 +1209,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         AcsEmployeeSlim result = new AcsEmployeeSlim();
         try {
             result = networkCnfgService.addAcsEmployee(positionGroup, employeeData); //создаем пользователя
-            addEmailEmployee(result.getID(), email, emailDescription); // добавляем почту
+            if (isValidEmail(email) && !email.trim().isEmpty()) {
+                addEmailEmployee(result.getID(), email, emailDescription);
+            } // добавляем почту
         } catch (ILNetworkConfigurationServiceAddAcsEmployeeArgumentNullExceptionFaultFaultMessage e) {
             System.err.println("Ошибка: обязательное поле не передано — " + e.getFaultInfo().toString());
         } catch (ILNetworkConfigurationServiceAddAcsEmployeeDataAlreadyExistsExceptionFaultFaultMessage e) {
@@ -1218,6 +1222,14 @@ public class EmployeeServiceImpl implements EmployeeService {
             System.err.println("Неожиданная ошибка: " + e.getMessage());
         }
         return response;
+    }
+
+    public static boolean isValidEmail(String email) {
+        final String EMAIL_PATTERN =
+                "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
     }
 
     public Map<String, Object> saveAcsEmployee(String idEmployee, SaveAcsEmployeeRequest request) {
@@ -2060,7 +2072,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         return result;
     }
 
-    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee){
+    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee) {
         initServices();
         List<Map<String, Object>> result = new ArrayList<>();
 
@@ -2113,49 +2125,50 @@ public class EmployeeServiceImpl implements EmployeeService {
 
                 // Пример с предполагаемой структурой:
 //                if (result.getItems() != null) {
-                    for (Object accessLevel : accessLevelsData.getAccessLevelsSlimInfo().getValue().getAcsAccessLevelSlimInfo()) {
-                        Map<String, Object> levelMap = new LinkedHashMap<>();
+                for (Object accessLevel : accessLevelsData.getAccessLevelsSlimInfo().getValue().getAcsAccessLevelSlimInfo()) {
+                    Map<String, Object> levelMap = new LinkedHashMap<>();
 
-                        // Получаем ID - предположим, что метод называется getId()
-                        java.lang.reflect.Method getIdMethod = accessLevel.getClass().getMethod("getId");
-                        Object id = getIdMethod.invoke(accessLevel);
-                        levelMap.put("ID", id != null ? id.toString() : "");
+                    // Получаем ID - предположим, что метод называется getId()
+                    java.lang.reflect.Method getIdMethod = accessLevel.getClass().getMethod("getId");
+                    Object id = getIdMethod.invoke(accessLevel);
+                    levelMap.put("ID", id != null ? id.toString() : "");
 
-                        // Получаем Name - предположим, что метод называется getName()
-                        java.lang.reflect.Method getNameMethod = accessLevel.getClass().getMethod("getName");
-                        Object nameObj = getNameMethod.invoke(accessLevel);
-                        String name = "";
+                    // Получаем Name - предположим, что метод называется getName()
+                    java.lang.reflect.Method getNameMethod = accessLevel.getClass().getMethod("getName");
+                    Object nameObj = getNameMethod.invoke(accessLevel);
+                    String name = "";
 
-                        if (nameObj != null) {
-                            // Проверяем, есть ли метод isNil()
-                            try {
-                                java.lang.reflect.Method isNilMethod = nameObj.getClass().getMethod("isNil");
-                                Boolean isNil = (Boolean) isNilMethod.invoke(nameObj);
-                                if (!isNil) {
-                                    java.lang.reflect.Method getValueMethod = nameObj.getClass().getMethod("getValue");
-                                    Object value = getValueMethod.invoke(nameObj);
-                                    name = value != null ? value.toString() : "";
-                                }
-                            } catch (NoSuchMethodException e) {
-                                // Если нет метода isNil(), просто используем toString()
-                                name = nameObj.toString();
+                    if (nameObj != null) {
+                        // Проверяем, есть ли метод isNil()
+                        try {
+                            java.lang.reflect.Method isNilMethod = nameObj.getClass().getMethod("isNil");
+                            Boolean isNil = (Boolean) isNilMethod.invoke(nameObj);
+                            if (!isNil) {
+                                java.lang.reflect.Method getValueMethod = nameObj.getClass().getMethod("getValue");
+                                Object value = getValueMethod.invoke(nameObj);
+                                name = value != null ? value.toString() : "";
                             }
+                        } catch (NoSuchMethodException e) {
+                            // Если нет метода isNil(), просто используем toString()
+                            name = nameObj.toString();
                         }
-                        levelMap.put("Name", name);
-
-                        // Получаем NumberOfAccessPoints - предположим, что метод называется getNumberOfAccessPoints()
-                        java.lang.reflect.Method getNumberOfAccessPointsMethod = accessLevel.getClass().getMethod("getNumberOfAccessPoints");
-                        Object numberObj = getNumberOfAccessPointsMethod.invoke(accessLevel);
-                        levelMap.put("NumberOfAccessPoints", numberObj != null ? numberObj.toString() : "0");
-
-                        mapResult.add(levelMap);
                     }
+                    levelMap.put("Name", name);
+
+                    // Получаем NumberOfAccessPoints - предположим, что метод называется getNumberOfAccessPoints()
+                    java.lang.reflect.Method getNumberOfAccessPointsMethod = accessLevel.getClass().getMethod("getNumberOfAccessPoints");
+                    Object numberObj = getNumberOfAccessPointsMethod.invoke(accessLevel);
+                    levelMap.put("NumberOfAccessPoints", numberObj != null ? numberObj.toString() : "0");
+
+                    mapResult.add(levelMap);
                 }
+            }
 //            }
 
             return ResponseEntity.ok(mapResult);
 
-        } catch (ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage e) {
+        } catch (
+                ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage e) {
             // Обработка исключения "данные не найдены"
             // Возвращаем пустой список вместо ошибки
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Collections.emptyList());
