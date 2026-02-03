@@ -26,25 +26,20 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.*;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs_accesslevels.AcsAccessPointDriverInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs_accesslevels.ArrayOfAcsAccessPointDriverInfo;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_net_services.DeviceCallMethodOperation;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
-import org.apache.cxf.ws.addressing.WSAddressingFeature;
 import com.rusguard.client.*;
 import org.tempuri.LNetworkService;
 
 import javax.net.ssl.*;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.UnsupportedCallbackException;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 
-import java.io.File;
-import java.io.IOException;
 import java.lang.Exception;
 import java.lang.reflect.Method;
 import java.net.URL;
@@ -363,7 +358,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         try {
 
             if (accessLevelIDs.getGuid().isEmpty()) { //если уровень не задан, ставим признак = из родительской группы
-                isUseParentAccessLevel=true;
+                isUseParentAccessLevel = true;
             }
             networkCnfgService.setUseEmployeeParentAccessLevel(employeeID, isUseParentAccessLevel, true); // запретить - true,true
             //Если НЕ используем родительские уровни, то добавляем указанные уровни доступа
@@ -1791,7 +1786,8 @@ public class EmployeeServiceImpl implements EmployeeService {
             e.printStackTrace();
         }
     }
-// ================================
+
+    // ================================
 // #region Блокировка сотрудников
 // ================================
     public static void lockAcsEmployee(String[] ids, boolean isLocked) { // Заблокировать или разблокировать сотрудников.
@@ -1914,7 +1910,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 //                msgSubTypes.getLogMsgSubType().add(String.valueOf(subType));
 //            }
 //
-//// Convert Date to XMLGregorianCalendar
+
+    /// / Convert Date to XMLGregorianCalendar
 //            XMLGregorianCalendar startDate = DatatypeFactory.newInstance()
 //                    .newXMLGregorianCalendar(new GregorianCalendar(1970, 0, 1)); // Equivalent to new Date(0)
 //            XMLGregorianCalendar endDate = DatatypeFactory.newInstance()
@@ -1955,8 +1952,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 //            }
 //        }
 //    }
-
-
     public static LogData getEvents(String[] accessPointsIds) throws DatatypeConfigurationException { // Пример получения событий для всех или определенных точек доступа по фильтру событий входа и выхода за январь
         // Convert dates to XMLGregorianCalendar
         DatatypeFactory df = DatatypeFactory.newInstance();
@@ -2065,4 +2060,110 @@ public class EmployeeServiceImpl implements EmployeeService {
         return result;
     }
 
+    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee){
+        initServices();
+        List<Map<String, Object>> result = new ArrayList<>();
+
+        try {
+            // Параметры для вызова метода
+            AccessLevelSortedColumn sortedColumn = AccessLevelSortedColumn.NAME;
+            SortOrder sortOrder = SortOrder.ASCENDING;
+            AccessLevelsOwner levelsOwner = AccessLevelsOwner.SELF;
+            Boolean includeRemovedEmployees = false;
+            Boolean ignoreRights = false;
+
+            // Вызов метода сервиса для получения уровней доступа сотрудника
+            LAccessLevelsData accessLevelsData = networkCnfgService.getAccessLevelsByEmployeeIDIncludeRemovedEmployees(
+                    idEmployee,
+                    0,  // pageNumber
+                    100, // pageSize
+                    sortedColumn,
+                    sortOrder,
+                    levelsOwner,
+                    includeRemovedEmployees,
+                    ignoreRights
+            );
+
+            // Преобразование результата в требуемый формат JSON
+            List<Map<String, Object>> mapResult = new ArrayList<>();
+
+            // Проверяем, что результат не null
+            if (result != null) {
+                // ВАЖНО: Замените getAccessLevels() на фактический метод, который существует в классе LAccessLevelsData
+                // Для отладки можно вывести доступные методы:
+                // System.out.println("Available methods in LAccessLevelsData:");
+                // for (Method method : result.getClass().getMethods()) {
+                //     if (method.getName().startsWith("get")) {
+                //         System.out.println("  " + method.getName());
+                //     }
+                // }
+
+                // Предположим, что метод называется getAccessLevels() или getItems()
+                // Если не работает, проверьте фактическое имя метода
+
+                // Попробуйте один из вариантов:
+                // 1. Если метод называется getItems():
+                // List<AccessLevelInfo> accessLevels = result.getItems();
+
+                // 2. Если метод называется getAccessLevels():
+                // List<AccessLevelInfo> accessLevels = result.getAccessLevels();
+
+                // 3. Если метод называется getValue():
+                // List<AccessLevelInfo> accessLevels = result.getValue();
+
+                // Пример с предполагаемой структурой:
+//                if (result.getItems() != null) {
+                    for (Object accessLevel : accessLevelsData.getAccessLevelsSlimInfo().getValue().getAcsAccessLevelSlimInfo()) {
+                        Map<String, Object> levelMap = new LinkedHashMap<>();
+
+                        // Получаем ID - предположим, что метод называется getId()
+                        java.lang.reflect.Method getIdMethod = accessLevel.getClass().getMethod("getId");
+                        Object id = getIdMethod.invoke(accessLevel);
+                        levelMap.put("ID", id != null ? id.toString() : "");
+
+                        // Получаем Name - предположим, что метод называется getName()
+                        java.lang.reflect.Method getNameMethod = accessLevel.getClass().getMethod("getName");
+                        Object nameObj = getNameMethod.invoke(accessLevel);
+                        String name = "";
+
+                        if (nameObj != null) {
+                            // Проверяем, есть ли метод isNil()
+                            try {
+                                java.lang.reflect.Method isNilMethod = nameObj.getClass().getMethod("isNil");
+                                Boolean isNil = (Boolean) isNilMethod.invoke(nameObj);
+                                if (!isNil) {
+                                    java.lang.reflect.Method getValueMethod = nameObj.getClass().getMethod("getValue");
+                                    Object value = getValueMethod.invoke(nameObj);
+                                    name = value != null ? value.toString() : "";
+                                }
+                            } catch (NoSuchMethodException e) {
+                                // Если нет метода isNil(), просто используем toString()
+                                name = nameObj.toString();
+                            }
+                        }
+                        levelMap.put("Name", name);
+
+                        // Получаем NumberOfAccessPoints - предположим, что метод называется getNumberOfAccessPoints()
+                        java.lang.reflect.Method getNumberOfAccessPointsMethod = accessLevel.getClass().getMethod("getNumberOfAccessPoints");
+                        Object numberObj = getNumberOfAccessPointsMethod.invoke(accessLevel);
+                        levelMap.put("NumberOfAccessPoints", numberObj != null ? numberObj.toString() : "0");
+
+                        mapResult.add(levelMap);
+                    }
+                }
+//            }
+
+            return ResponseEntity.ok(mapResult);
+
+        } catch (ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage e) {
+            // Обработка исключения "данные не найдены"
+            // Возвращаем пустой список вместо ошибки
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Collections.emptyList());
+
+        } catch (Exception e) {
+            // Обработка других исключений
+            // Возвращаем пустой список с ошибкой 500
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Collections.emptyList());
+        }
+    }
 }

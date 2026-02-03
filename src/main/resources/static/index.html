@@ -1538,7 +1538,7 @@
     function loadAccessLevels(employeeId) {
         showLoading('#accessLevelsList');
 
-        fetch(`${API_BASE_URL}/getAccessLevels`)
+        fetch(`${API_BASE_URL}/getAccessLevelsEmployee?idEmployee=${employeeId}`)
             .then(response => response.json())
             .then(data => {
                 renderAccessLevels(data);

@@ -2,6 +2,7 @@ package com.rusguard.controller;
 
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.rusguard.client.ILNetworkConfigurationService;
+import com.rusguard.client.ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage;
 import com.rusguard.schema.AccessLevelIdsRequest;
 import com.rusguard.schema.SaveAcsEmployeeRequest;
 import com.rusguard.service.EmployeeService;
@@ -17,6 +18,11 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.SortOrder;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AccessLevelSortedColumn;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AccessLevelsOwner;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.LAccessLevelsData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -88,7 +94,7 @@ public class EmployeeController {
             )
     })
     @GetMapping("/getAccessLevels")
-    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsSlim() {
+    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsSlim() throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage {
         List<Map<String, Object>> mapresult = new ArrayList<>();
         employeeService.getAccessLevelsSlim()
                 .forEach(
@@ -103,6 +109,61 @@ public class EmployeeController {
                             itemMap.put("NumberOfAccessPoints", tt.getNumberOfAccessPoints().toString());
                             mapresult.add(itemMap);
                         });
+        return ResponseEntity.ok(mapresult);
+    }
+
+    /**
+     * Получение списка уровней доступа сотрудника
+     * @param idEmployee ID сотрудника
+     * @return Список доступных уровней доступа сотрудника
+     */
+    @Operation(summary = "Получить список уровней доступа сотрудника", description = "Возвращает список всех доступных уровней доступа в системе сотрудника", tags = {"Уровни доступа"})
+    @ApiResponses(value = {
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "Успешное получение списка уровней доступа сотрудника",
+                    content = @Content(
+                            mediaType = "application/json",
+                            schema = @Schema(implementation = Map.class),
+                            examples = @ExampleObject(
+                                    name = "Пример ответа",
+                                    value = """
+                                            [
+                                              {
+                                                "ID": "4e2fb631-c9ba-4c8e-9a51-2eb016d05203",
+                                                "Name": "КИС",
+                                                "NumberOfAccessPoints": "3"
+                                              }
+                                            ]
+                                            """
+                            )
+                    )
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "Внутренняя ошибка сервера",
+                    content = @Content(
+                            mediaType = "application/json",
+                            schema = @Schema(implementation = Map.class),
+                            examples = @ExampleObject(
+                                    name = "Пример ошибки",
+                                    value = """
+                                            {
+                                              "error": "Внутренняя ошибка сервера",
+                                              "timestamp": "2026-01-30T10:30:00Z"
+                                            }
+                                            """
+                            )
+                    )
+            )
+    })
+    @GetMapping("/getAccessLevelsEmployee")
+    public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee) throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage {
+        List<Map<String, Object>> mapresult = new ArrayList<>();
+        ResponseEntity <List<Map<String, Object>>> map = employeeService.getAccessLevelsByEmployeeID(idEmployee);
+        for (int i = 0; i < Objects.requireNonNull(map.getBody()).size(); i++) {
+            mapresult.add(map.getBody().get(i));
+        }
         return ResponseEntity.ok(mapresult);
     }
 

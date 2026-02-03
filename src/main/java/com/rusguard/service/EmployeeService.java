@@ -2,6 +2,7 @@ package com.rusguard.service;
 
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.rusguard.client.ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage;
+import com.rusguard.client.ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage;
 import com.rusguard.schema.SaveAcsEmployeeRequest;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
 import org.springframework.http.ResponseEntity;
@@ -55,4 +56,7 @@ public interface EmployeeService {
     Map<String, Object> lockAcsEmployee(String idEmployee, boolean isLocked);
 
     Map<String, Object> setUseEmployeeParentAccessLevel(String employeeID, ArrayOfguid accessLevelIDs, boolean isUseParentAccessLevel);
+
+    ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee) throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage;
+
 }
