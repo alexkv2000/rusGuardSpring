@@ -70,6 +70,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     // Статические прокси-объекты
     private static ILNetworkService networkService;
     private static ILNetworkConfigurationService networkCnfgService;
+    
+    // Статический блок инициализации для однократной инициализации сервисов
+    static {
+        initServices();
+    }
 
     private static Object getValue(Object obj, String methodName) {
         try {
@@ -292,7 +297,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<AcsAccessLevelSlimInfo> getAccessLevelsSlim() { //Получение всех уровней доступа
-        initServices();
         List<AcsAccessLevelSlimInfo> accessLevels = networkService.getAcsAccessLevelsSlimInfo().getAcsAccessLevelSlimInfo();
         //Уровень доступа (вывод только PIONT ACCESS)
         return accessLevels.stream()
@@ -325,7 +329,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Map<String, Object> lockAcsEmployee(String idEmployee, boolean isLocked) { // Заблокировать или разблокировать сотрудников.
         Map<String, Object> result = new HashMap<>();
         try {
-            initServices();
             if (networkCnfgService == null) {
                 throw new IllegalStateException("networkCnfgService is not initialized. Call initServices() first.");
             }
@@ -356,7 +359,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public Map<String, Object> setUseEmployeeParentAccessLevel(String employeeID, ArrayOfguid accessLevelIDs, boolean isUseParentAccessLevel) {
         Map<String, Object> response = new HashMap<>();
-        initServices();
         try {
 
             if (accessLevelIDs.getGuid().isEmpty()) { //если уровень не задан, ставим признак = из родительской группы
@@ -388,7 +390,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         // Initialize response map
         Map<String, Object> response = new LinkedHashMap<>();
         try {
-            initServices();
 
             ArrayOfguid employeesGuids = networkService.getAcsEmployeesGuidsByGroups(
                     toUuidArray(new String[]{idGroup}),
@@ -512,7 +513,6 @@ public class EmployeeServiceImpl implements EmployeeService {
             searchCondition.setIsGlobalSearch(true);
             searchCondition.setIncludeRemoved(true);
 
-            initServices();
             // Параметры поиска
             JAXBElement<String> lastNameElement = new JAXBElement<>(
                     new QName(NS_EMPLOYEES, "LastName"), String.class, lastName);
@@ -814,7 +814,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public static ArrayOfAcsEmployeeGroup getEmployeeGroups() {
-        initServices();
         ArrayOfAcsEmployeeGroup temp_EmployeeGroups = networkService.getAcsEmployeeGroups();
 //        temp_EmployeeGroups.getAcsEmployeeGroup().forEach(acsEmployeeGroup -> System.out.println(acsEmployeeGroup.getID() + " - " + acsEmployeeGroup.getName().getValue()));
         return temp_EmployeeGroups;
@@ -831,7 +830,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         // Initialize response map
         Map<String, Object> response = new LinkedHashMap<>();
         try {
-            initServices();
             AccessLevelTagsData accessLevelTagsData = new AccessLevelTagsData();
             String tt = accessLevelTagsData.getAccessLevelID();
             AcsEmployeeFull employee = getAcsEmployee(id);
@@ -893,7 +891,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Map<String, Object> getEmployeePassagesByDate(String IDEmployees, String dataPassages) {     //Проходы пользователя на дату формат -"MM-dd-yyyy"
-        initServices();
         Map<String, Object> response = new LinkedHashMap<>();
         DateTimeFormatter formatterUS = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         LocalDate localDate = LocalDate.parse(dataPassages, formatterUS);
@@ -983,7 +980,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public Map<String, Object> GetEmployeesByTabelNumber(String tabelNumber) {
-        initServices();
         Map<String, Object> response = new LinkedHashMap<>();
 
         Integer intTabelNumber = Integer.valueOf(tabelNumber);
@@ -1029,7 +1025,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public Map<String, Object> addEmailEmployee(String IDEmployee, String email, String description) throws ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage {
-        initServices();
         Map<String, Object> response = new LinkedHashMap<>();
         response.put("ID", IDEmployee);
         response.put("E_mail", email);
@@ -1092,7 +1087,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public Map<String, Object> addEmployee(String firstname, String lastname, String secondname, Integer tabelNumber, String position, String positionGroup, String Comment, String AdressReg, String PassportIISUE, String PassportNumber, String email, String emailDescription) throws ILNetworkConfigurationServiceAddEmailAddressDataAlreadyExistsExceptionFaultFaultMessage {
-        initServices();
         Map<String, Object> response = new LinkedHashMap<>();
 
         response.put("FirstName", firstname);
@@ -1233,7 +1227,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public Map<String, Object> saveAcsEmployee(String idEmployee, SaveAcsEmployeeRequest request) {
-        initServices();
         AcsEmployeeFull currentEmployee = networkService.getAcsEmployee(idEmployee);
         Map<String, Object> response = new LinkedHashMap<>();
         try {
@@ -2073,7 +2066,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee) {
-        initServices();
         List<Map<String, Object>> result = new ArrayList<>();
 
         try {
@@ -2178,5 +2170,10 @@ public class EmployeeServiceImpl implements EmployeeService {
             // Возвращаем пустой список с ошибкой 500
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Collections.emptyList());
         }
+    }
+    
+    // Статический блок инициализации для однократной инициализации сервисов
+    static {
+        initServices();
     }
 }
