@@ -9,9 +9,9 @@
         <relativePath/>
     </parent>
     <groupId>com.rusguard</groupId>
-    <artifactId>rusguard-web-service</artifactId>
+    <artifactId>rusguardSpring</artifactId>
     <version>1.0.0</version>
-    <name>rusguard-web-service</name>
+    <name>rusguardSpring</name>
     <description>Web service for RusGuard API</description>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -266,6 +266,18 @@
             </plugins>
         </pluginManagement>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${project.parent.version}</version> <!-- Убедитесь, что версия совпадает с вашим spring-boot-starter-parent -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
