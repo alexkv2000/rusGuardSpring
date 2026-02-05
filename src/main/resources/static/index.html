@@ -338,7 +338,7 @@
     </style>
 </head>
 <body>
-<!-- TOP SECTION - Меню -->
+<!-- TOP SECTION - Меню + Поиск -->
 <div id="top-section" class="container-fluid py-3">
     <div class="row align-items-center">
         <div class="col-md-6">
@@ -348,18 +348,43 @@
             </h2>
         </div>
         <div class="col-md-6">
-            <ul class="nav nav-tabs justify-content-end" id="topMenu">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#work" data-bs-toggle="tab">
-                        <i class="bi bi-people-fill me-1"></i>Работа с RusGuard
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#reports" data-bs-toggle="tab">
-                        <i class="bi bi-file-earmark-bar-graph me-1"></i>Отчеты
-                    </a>
-                </li>
-            </ul>
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-end">
+                <!-- Поиск по ФИО -->
+                <div class="input-group input-group-sm" style="width: 250px;">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="searchFIO" placeholder="ФИО (Фамилия Имя Отчество)" aria-label="Поиск по ФИО">
+                </div>
+
+                <!-- Поиск по табельному номеру -->
+                <div class="input-group input-group-sm" style="width: 180px;">
+                    <span class="input-group-text"><i class="bi bi-card-text"></i></span>
+                    <input type="number" class="form-control" id="searchTabel" placeholder="Таб. номер" aria-label="Поиск по табельному">
+                </div>
+
+                <!-- Кнопка поиска -->
+                <button class="btn btn-primary btn-sm" onclick="performSearch()">
+                    <i class="bi bi-search"></i> Поиск
+                </button>
+
+                <!-- Кнопка сброса -->
+                <button class="btn btn-secondary btn-sm" onclick="resetSearch()">
+                    <i class="bi bi-x-circle"></i> Сброс
+                </button>
+
+                <!-- Вкладки -->
+                <ul class="nav nav-tabs ms-3" id="topMenu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#work" data-bs-toggle="tab">
+                            <i class="bi bi-people-fill me-1"></i>Работа с RusGuard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reports" data-bs-toggle="tab">
+                            <i class="bi bi-file-earmark-bar-graph me-1"></i>Отчеты
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -2609,6 +2634,154 @@
     function loadReports() {
         console.log('Загрузка отчетов...');
     }
+
+    // Глобальные переменные для поиска
+    let searchMode = null; // 'fio' или 'tabel' или null
+
+    // Выполняет поиск по введенным данным
+    function performSearch() {
+        const fio = $('#searchFIO').val().trim();
+        const tabel = $('#searchTabel').val().trim();
+
+        // Проверка: хотя бы одно поле заполнено
+        if (!fio && !tabel) {
+            showToast('Введите ФИО или табельный номер для поиска', 'warning');
+            return;
+        }
+
+        // Если введён табельный номер — ищем по нему
+        if (tabel) {
+            if (!/^\d+$/.test(tabel)) {
+                showToast('Табельный номер должен содержать только цифры', 'warning');
+                return;
+            }
+
+            searchMode = 'tabel';
+            showLoading('#employeesList');
+            searchByTabelNumber(tabel);
+            return;
+        }
+
+        // Если введено ФИО — ищем по ФИО
+        if (fio) {
+            searchMode = 'fio';
+            showLoading('#employeesList');
+            searchByFIO(fio);
+            return;
+        }
+    }
+
+    // Поиск по табельному номеру
+    function searchByTabelNumber(tabelNumber) {
+        fetch(`${API_BASE_URL}/getByTabelNumber?tabelNumber=${encodeURIComponent(tabelNumber)}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success' && data.data && Array.isArray(data.data) && data.data.length > 0) {
+                    // Убираем выделение группы
+                    selectedGroupId = null;
+                    $('#employeeGroupsTree').jstree('deselect_all');
+
+                    // Очищаем таблицу и добавляем найденного сотрудника
+                    if (!employeesDataTable) initEmployeesTable();
+                    employeesDataTable.clear();
+
+                    data.data.forEach(emp => {
+                        const row = createEmployeeRow(emp);
+                        employeesDataTable.row.add($(row));
+                    });
+
+                    employeesDataTable.draw();
+                    showToast(`Найден ${data.data.length} сотрудник(а) по табельному номеру`, 'success');
+                } else {
+                    showNoDataMessage();
+                    showToast('Сотрудник с таким табельным номером не найден', 'info');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка поиска по табельному:', error);
+                showError('#employeesList', 'Ошибка поиска по табельному номеру');
+            });
+    }
+
+    // Поиск по ФИО
+    function searchByFIO(fio) {
+        // Разбиваем ФИО на части (если нужно)
+        const parts = fio.trim().split(/\s+/);
+        const lastName = parts[0] || '';
+        const firstName = parts.length > 1 ? parts[1] : '';
+        const secondName = parts.length > 2 ? parts[2] : '';
+
+        showLoading('#employeesList');
+
+        // Формируем параметры запроса
+        const params = new URLSearchParams();
+        if (lastName) params.append('lastName', lastName);
+        if (firstName) params.append('firstName', firstName);
+        if (secondName) params.append('secondName', secondName);
+        params.append('isLock', 'false'); // Ищем только активных (можно сделать опционально)
+
+        fetch(`${API_BASE_URL}/getByFIO?${params.toString()}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success' && data.data && Array.isArray(data.data) && data.data.length > 0) {
+                    // Сбрасываем группу
+                    selectedGroupId = null;
+                    $('#employeeGroupsTree').jstree('deselect_all');
+
+                    // Очищаем таблицу и добавляем найденных
+                    if (!employeesDataTable) initEmployeesTable();
+                    employeesDataTable.clear();
+
+                    data.data.forEach(emp => {
+                        const row = createEmployeeRow(emp);
+                        employeesDataTable.row.add($(row));
+                    });
+
+                    employeesDataTable.draw();
+                    showToast(`Найдено ${data.data.length} сотрудников по ФИО`, 'success');
+                } else {
+                    showNoDataMessage();
+                    showToast('Сотрудники с таким ФИО не найдены', 'info');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка поиска по ФИО:', error);
+                showError('#employeesList', 'Ошибка поиска по ФИО');
+            });
+    }
+
+    // Сбрасывает поиск и возвращает к текущей группе
+    function resetSearch() {
+        $('#searchFIO').val('');
+        $('#searchTabel').val('');
+        searchMode = null;
+
+        // Если есть выбранная группа — загружаем её
+        if (selectedGroupId) {
+            loadEmployeesByGroup(selectedGroupId);
+        } else {
+            // Иначе очищаем таблицу
+            if (employeesDataTable) {
+                employeesDataTable.clear().draw();
+                showNoDataMessage();
+            }
+        }
+
+        showToast('Поиск сброшен, возвращено к текущей группе', 'info');
+    }
+
+    // Добавим обработчик нажатия Enter в полях поиска
+    $(document).ready(function () {
+        // ... свой существующий код - если нужно ...
+
+        // Обработка Enter в полях поиска
+        $('#searchFIO, #searchTabel').on('keypress', function(e) {
+            if (e.which === 13) { // Enter
+                e.preventDefault();
+                performSearch();
+            }
+        });
+    });
 </script>
 </body>
 </html>

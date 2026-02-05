@@ -27,7 +27,7 @@ import org.springframework.context.annotation.Description;
                         name = "Лицензия компании",
                         url = "/api/license" // "/api/license"
                 ),
-                termsOfService = "http://W17-007926:8007/api/terms"
+                termsOfService = "/api/terms"
         ),
         servers = {
                 @Server(
