@@ -417,6 +417,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                     empData.put("LastName", employee.getLastName() != null ? employee.getLastName().getValue() : "");
                     empData.put("FirstName", employee.getFirstName() != null ? employee.getFirstName().getValue() : "");
                     empData.put("SecondName", employee.getSecondName() != null ? employee.getSecondName().getValue() : "");
+                    empData.put("Number", employee.getNumber() != null ? employee.getNumber().getValue().toString() : "");
+
                     if (employee.getPosition() != null) {
                         try {
                             Object position = employee.getPosition();
@@ -849,6 +851,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 empData.put("LastName", employee.getLastName() != null ? employee.getLastName().getValue() : "");
                 empData.put("FirstName", employee.getFirstName() != null ? employee.getFirstName().getValue() : "");
                 empData.put("SecondName", employee.getSecondName() != null ? employee.getSecondName().getValue() : "");
+                empData.put("Number", employee.getNumber() != null ? employee.getNumber() : "");
 
                 if (employee.getPosition() != null) {
                     try {
@@ -1365,6 +1368,17 @@ public class EmployeeServiceImpl implements EmployeeService {
             }
             AcsEmployeeSaveData fullEmployee = new AcsEmployeeSaveData(); // Создаём объект данных сотрудника
             String positionName = "";
+            QName EMPLOYEE_POSITION_ID_QNAME = new QName(
+                    "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+                    "EmployeePositionID"
+            );
+            JAXBElement<String> employeePositionID = new JAXBElement<>(
+                    EMPLOYEE_POSITION_ID_QNAME,   // Имя и пространство имён элемента
+                    String.class,                 // Тип значения
+                    request.getPosition()                       // Значение — ID должности из вашей системы
+            );
+            assert currentEmployee != null;
+            data.setEmployeePositionID(employeePositionID);
             // EmployeePositionID (если передан)
             if (request.getPosition() != null && !request.getPosition().trim().isEmpty()) {
                 Object positionObj = getValue(fullEmployee, "getPosition");
@@ -1400,17 +1414,17 @@ public class EmployeeServiceImpl implements EmployeeService {
                     }
                 } else {
                     // Создаем объект LEmployeePositionInfo для передачи в качестве JAXBElement
-                    QName EMPLOYEE_POSITION_ID_QNAME = new QName(
-                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
-                            "EmployeePositionID"
-                    );
-                    JAXBElement<String> employeePositionID = new JAXBElement<>(
-                            EMPLOYEE_POSITION_ID_QNAME,   // Имя и пространство имён элемента
-                            String.class,                 // Тип значения
-                            request.getPosition()                       // Значение — ID должности из вашей системы
-                    );
-                    assert currentEmployee != null;
-                    data.setEmployeePositionID(employeePositionID);
+//                    QName EMPLOYEE_POSITION_ID_QNAME = new QName(
+//                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+//                            "EmployeePositionID"
+//                    );
+//                    JAXBElement<String> employeePositionID = new JAXBElement<>(
+//                            EMPLOYEE_POSITION_ID_QNAME,   // Имя и пространство имён элемента
+//                            String.class,                 // Тип значения
+//                            request.getPosition()                       // Значение — ID должности из вашей системы
+//                    );
+//                    assert currentEmployee != null;
+//                    data.setEmployeePositionID(employeePositionID);
                 }
             }
             // Boolean поля (только если переданы)
@@ -1607,7 +1621,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 response.put("secondName", request.getSecondName());
             }
             if (request.getTabelNumber() != null) {
-                response.put("tabelNumber", request.getTabelNumber());
+                response.put("tabelNumber", request.getTabelNumber().toString());
             }
             if (request.getComment() != null) {
                 response.put("Comment", request.getComment());
@@ -1762,6 +1776,41 @@ public class EmployeeServiceImpl implements EmployeeService {
             return ResponseEntity.status(500).body(result);
         }
 
+        return ResponseEntity.ok(result);
+    }
+
+    public ResponseEntity<Map<String, Object>> GetPositionCodes(){
+        Map<String, Object> result = new HashMap<>();
+        try {
+            LEmployeePositionsData employeePositionsData = networkService.getEmployeePositions(0,20000,EmployeePositionSortedColumn.NAME,SortOrder.ASCENDING);
+            result.put("Total root groups in RusGuard: ", employeePositionsData.getCount());
+
+            if (employeePositionsData.getCount()<=0) {
+                result.put("count", new ArrayList<>());
+                return ResponseEntity.ok(result);
+            }
+
+            // Фильтруем удаленные группы
+            List<LEmployeePositionInfo> filteredList = employeePositionsData.getUserPositions().getValue().getLEmployeePositionInfo().stream()
+                    .filter(r -> r.isIsRemoved() == null || !r.isIsRemoved())
+                    .toList();
+
+            // Собираем все группы в Map для быстрого доступа
+            Map<String, String> groupsMap = new HashMap<>();
+            for (LEmployeePositionInfo lEmployeePositionInfo : filteredList) {
+                if (groupsMap.put(lEmployeePositionInfo.getID(), lEmployeePositionInfo.getName().getValue()) != null) {
+                    throw new IllegalStateException("Duplicate key");
+                }
+            }
+
+
+            result.put("groups", groupsMap);
+            result.put("count", groupsMap.size());
+
+        } catch (Exception e) {
+            result.put("error", e.getMessage());
+            return ResponseEntity.status(500).body(result);
+        }
         return ResponseEntity.ok(result);
     }
 

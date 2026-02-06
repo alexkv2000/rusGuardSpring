@@ -434,6 +434,7 @@ public class EmployeeController {
     )
                                                        @RequestParam(required = false) String idEmployee) {
         Map<String, Object> result = employeeService.getEmployeeById(idEmployee.toUpperCase());
+        System.out.println("Табельный номер " + result.get("Number").toString());
         return ResponseEntity.ok(result);
     }
 
@@ -706,4 +707,28 @@ public class EmployeeController {
         Map<String, Object> result = employeeService.GetEmployeeGroup().getBody();
         return ResponseEntity.ok(result);
     }
+
+    /**
+     * Получение дерева групп сотрудников
+     *
+     * @return Иерархическая структура групп сотрудников
+     */
+    @Operation(
+            summary = "Получение справочника должностей",
+            description = "Возвращает справочник всех должностей сотрудников",
+            tags = {"Справочники"}
+    )
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Успешное получение справочника должностей")
+    })
+    @GetMapping(
+            value = "/getPositions",
+            produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public ResponseEntity<Map<String, Object>> getPositionCodes() {
+        Map<String, Object> result = employeeService.GetPositionCodes().getBody();
+        return ResponseEntity.ok(result);
+    }
+
+
 }

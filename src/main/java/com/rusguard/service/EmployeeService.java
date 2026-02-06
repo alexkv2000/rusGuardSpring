@@ -58,5 +58,6 @@ public interface EmployeeService {
     Map<String, Object> setUseEmployeeParentAccessLevel(String employeeID, ArrayOfguid accessLevelIDs, boolean isUseParentAccessLevel);
 
     ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee) throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage;
+    ResponseEntity<Map<String, Object>> GetPositionCodes();
 
 }

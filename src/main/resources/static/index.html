@@ -521,7 +521,7 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label class="form-label">Табельный номер *</label>
-                                <input type="number" class="form-control" name="tabelNumber" required>
+                                <input type="text" class="form-control" name="tabelNumber" required>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -616,7 +616,7 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Табельный номер *</label>
-                                        <input type="number" class="form-control" id="editTabelNumber" required>
+                                        <input type="text" class="form-control" id="editTabelNumber" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -745,6 +745,10 @@
                 <div class="mb-3">
                     <label class="form-label fw-bold">Отдел:</label>
                     <p id="detailEmployeeDepartment" class="form-control-static"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Отдел:</label>
+                    <p id="detailEmployeeNumber" class="form-control-static"></p>
                 </div>
                 <div class="mb-3">
                     <label class="form-label fw-bold">Должность:</label>
@@ -1050,7 +1054,7 @@
             <div class="col-md-6">
                 <div class="mb-3">
                     <label class="form-label">Табельный номер *</label>
-                    <input type="number" class="form-control" id="editTabelNumber" required>
+                    <input type="text" class="form-control" id="editTabelNumber" required>
                 </div>
             </div>
             <div class="col-md-6">
@@ -1197,7 +1201,7 @@
 
         if (data.data && Array.isArray(data.data) && data.data.length > 0) {
             employeeData = data.data[0];
-            console.log('Извлечены данные сотрудника:', employeeData);
+            console.log('Извлечены данные сотрудника:', employeeData.valueOf().valueOf().tabelNumber);
         } else if (data.status === 'success' && data.id) {
             // Если структура другая, но есть ID
             console.log('Используем альтернативную структуру данных');
@@ -1215,10 +1219,11 @@
         $('#editSecondName').val(employeeData.SecondName || '');
 
         // Табельный номер - нет в данных, оставляем пустым
-        $('#editTabelNumber').val('');
+        $('#editTabelNumber').val(employeeData.Number.toString() || '');
 
         // Должность - используем поле Position
         $('#editPosition').val(employeeData.Position || '');
+        console.log('Табель сотрудника: ' + employeeData.Position.toString());
 
         // Паспортные данные
         $('#editPassportIISUE').val(employeeData.PassportIssue || '');
@@ -1237,6 +1242,7 @@
         console.log('LastName:', $('#editLastName').val());
         console.log('FirstName:', $('#editFirstName').val());
         console.log('Position:', $('#editPosition').val());
+        console.log('Number:', $('#editTabelNumber').val().toString());
     }
 
     function adjustLayout() {
@@ -1272,13 +1278,13 @@
             PassportIISUE: $('#editPassportIISUE').val().trim(),
             PassportNumber: $('#editPassportNumber').val().trim()
         };
-
+        console.info('!!Фамилия и имя:', employeeData.firstName + " " + employeeData.lastName);
         // Валидация обязательных полей
         if (!employeeData.firstName || !employeeData.lastName) {
             showToast('Фамилия и имя обязательны для заполнения', 'warning');
             return;
         }
-
+        console.info('!!Фамилия и имя:', employeeData.firstName);
         if (!employeeData.tabelNumber || employeeData.tabelNumber <= 0) {
             showToast('Табельный номер обязателен и должен быть положительным числом', 'warning');
             return;
@@ -1730,7 +1736,7 @@
         const lastName = employee.LastName || employee.lastName || '';
         const firstName = employee.FirstName || employee.firstName || '';
         const secondName = employee.SecondName || employee.secondName || '';
-        const tabelNumber = employee.TabelNumber || employee.tabelNumber || '';
+        const tabelNumber = employee.Number || employee.Number || '';
         const isLocked = employee.IsLocked || employee.isLocked || false;
 
         const statusClass = isLocked ? 'status-locked' : 'status-active';
@@ -1799,6 +1805,9 @@
                 }
                 if (data.department) {
                     $('#detailEmployeeDepartment').text(data.department);
+                }
+                if (data.number) {
+                    $('#detailEmployeeNumber').text(data.number);
                 }
                 if (data.position) {
                     $('#detailEmployeePosition').text(data.position);
