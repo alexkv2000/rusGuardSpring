@@ -70,7 +70,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     // Статические прокси-объекты
     private static ILNetworkService networkService;
     private static ILNetworkConfigurationService networkCnfgService;
-    
+
     // Статический блок инициализации для однократной инициализации сервисов
     static {
         initServices();
@@ -851,23 +851,11 @@ public class EmployeeServiceImpl implements EmployeeService {
                 empData.put("LastName", employee.getLastName() != null ? employee.getLastName().getValue() : "");
                 empData.put("FirstName", employee.getFirstName() != null ? employee.getFirstName().getValue() : "");
                 empData.put("SecondName", employee.getSecondName() != null ? employee.getSecondName().getValue() : "");
-                empData.put("Number", employee.getNumber() != null ? employee.getNumber() : "");
+                empData.put("Number", employee.getNumber() != null ? employee.getNumber().getValue().toString() : "");
 
-                if (employee.getPosition() != null) {
-                    try {
-                        Object position = employee.getPosition();
-                        // Try to call getValue() method
-//                        Method getValueMethod = position.getClass().getMethod("getValue");
-//                        Object positionValue = getValueMethod.invoke(position);
-
-                        if (!employee.getPosition().isNil()) {
-                            empData.put("PositionID", employee.getPosition().getValue().getID());
-                            empData.put("Position", employee.getPosition().getValue().getName().getValue());
-                        }
-                    } catch (Exception e) {
-                        // Log the error for debugging
-                        empData.put("PositionError", "Error getting position: " + e.getMessage());
-                    }
+                if (employee.getPosition().getValue() != null && !employee.getPosition().isNil()) {
+                    empData.put("PositionID", employee.getPosition().getValue().getID());
+                    empData.put("Position", employee.getPosition().getValue().getName().getValue());
                 }
                 empData.put("PassportIssue", employee.getPassportIssue() != null ? employee.getPassportIssue().getValue() : "");
                 empData.put("PassportNumber", employee.getPassportNumber() != null ? employee.getPassportNumber().getValue() : "");
@@ -1779,14 +1767,14 @@ public class EmployeeServiceImpl implements EmployeeService {
         return ResponseEntity.ok(result);
     }
 
-    public ResponseEntity<Map<String, Object>> GetPositionCodes(){
+    public ResponseEntity<Map<String, Object>> GetPositionCodes() {
         Map<String, Object> result = new HashMap<>();
         try {
-            LEmployeePositionsData employeePositionsData = networkService.getEmployeePositions(0,20000,EmployeePositionSortedColumn.NAME,SortOrder.ASCENDING);
-            result.put("Total root groups in RusGuard: ", employeePositionsData.getCount());
+            LEmployeePositionsData employeePositionsData = networkService.getEmployeePositions(0, 20000, EmployeePositionSortedColumn.NAME, SortOrder.ASCENDING);
+//            result.put("Total root groups in RusGuard: ", employeePositionsData.getCount());
 
-            if (employeePositionsData.getCount()<=0) {
-                result.put("count", new ArrayList<>());
+            if (employeePositionsData.getCount() <= 0) {
+//                result.put("count", new ArrayList<>());
                 return ResponseEntity.ok(result);
             }
 
@@ -1796,19 +1784,20 @@ public class EmployeeServiceImpl implements EmployeeService {
                     .toList();
 
             // Собираем все группы в Map для быстрого доступа
-            Map<String, String> groupsMap = new HashMap<>();
+//            Map<String, String> groupsMap = new HashMap<>();
             for (LEmployeePositionInfo lEmployeePositionInfo : filteredList) {
-                if (groupsMap.put(lEmployeePositionInfo.getID(), lEmployeePositionInfo.getName().getValue()) != null) {
-                    throw new IllegalStateException("Duplicate key");
-                }
+//                if (groupsMap.put(lEmployeePositionInfo.getID(), lEmployeePositionInfo.getName().getValue()) != null) {
+                    result.put(lEmployeePositionInfo.getID(),lEmployeePositionInfo.getName().getValue());
+//                    throw new IllegalStateException("Duplicate key");
+//                }
             }
 
 
-            result.put("groups", groupsMap);
-            result.put("count", groupsMap.size());
+//            result.put("groups", groupsMap);
+//            result.put("count", groupsMap.size());
 
         } catch (Exception e) {
-            result.put("error", e.getMessage());
+//            result.put("error", e.getMessage());
             return ResponseEntity.status(500).body(result);
         }
         return ResponseEntity.ok(result);
@@ -2220,9 +2209,9 @@ public class EmployeeServiceImpl implements EmployeeService {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Collections.emptyList());
         }
     }
-    
+
     // Статический блок инициализации для однократной инициализации сервисов
-    static {
-        initServices();
-    }
+//    static {
+//        initServices();
+//    }
 }

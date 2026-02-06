@@ -29,6 +29,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.management.openmbean.TabularData;
 import java.util.*;
 
 @RestController
@@ -158,10 +159,10 @@ public class EmployeeController {
     })
     @GetMapping("/getAccessLevelsEmployee")
     public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(@Parameter(
-                                                                                            description = "ID сотрудника",
-                                                                                            required = true,
-                                                                                            example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
-                                                                                )
+            description = "ID сотрудника",
+            required = true,
+            example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
+    )
                                                                                  String idEmployee) throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage {
         List<Map<String, Object>> mapresult = new ArrayList<>();
         ResponseEntity<List<Map<String, Object>>> map = employeeService.getAccessLevelsByEmployeeID(idEmployee);
@@ -434,7 +435,8 @@ public class EmployeeController {
     )
                                                        @RequestParam(required = false) String idEmployee) {
         Map<String, Object> result = employeeService.getEmployeeById(idEmployee.toUpperCase());
-        System.out.println("Табельный номер " + result.get("Number").toString());
+
+
         return ResponseEntity.ok(result);
     }
 

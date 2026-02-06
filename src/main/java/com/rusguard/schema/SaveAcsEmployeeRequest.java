@@ -49,7 +49,7 @@ public class SaveAcsEmployeeRequest {
     @Pattern(regexp = "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
             message = "Неверный формат UUID")
     private String position;
-//    private String idPposition;
+    private String idPosition;
     private String positionGroup;
 
     private String RegistrationAddress;
@@ -155,6 +155,14 @@ public class SaveAcsEmployeeRequest {
 
     public String getPosition() {
         return position;
+    }
+
+    public String getIdPosition() {
+        return idPosition;
+    }
+
+    public void setIdPosition(String idPosition) {
+        this.idPosition = idPosition;
     }
 
     public void setPosition(String position) {

@@ -807,6 +807,29 @@
 <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
 
 <script>
+    console.log = (function(originalConsoleLog) {
+        return function(...args) {
+            // Фильтруем слишком большие объекты
+            const filteredArgs = args.map(arg => {
+                if (typeof arg === 'object' && arg !== null) {
+                    try {
+                        // Ограничиваем вывод больших объектов
+                        const str = JSON.stringify(arg);
+                        if (str.length > 1000) {
+                            return str.substring(0, 1000) + '... [объект обрезан]';
+                        }
+                        return arg;
+                    } catch (e) {
+                        return '[Невозможно вывести объект]';
+                    }
+                }
+                return arg;
+            });
+
+            originalConsoleLog.apply(console, filteredArgs);
+        };
+    })(console.log);
+
     // Конфигурация API
     const API_BASE_URL = '/api/rusguard/Employee';
     let selectedGroupId = null;
@@ -847,6 +870,15 @@
         // Инициализируем DataTable после небольшой задержки для правильного расчета высоты
         setTimeout(initEmployeesTable, 100);
     });
+
+    function checkSelectState() {
+        const $select = $('#editPositionSelect');
+        console.log('Состояние select:', {
+            length: $select.length,
+            optionsCount: $select.find('option').length,
+            html: $select.html()
+        });
+    }
 
     // Функция для загрузки уровней доступа сотрудника в модальное окно
     function loadEmployeeAccessLevels() {
@@ -969,6 +1001,9 @@
 
         // Показываем модальное окно
         $('#editEmployeeModal').modal('show');
+
+        // Загружаем список должностей перед загрузкой данных сотрудника
+        loadPositionsForSelect();
 
         // Загружаем данные сотрудника с сервера
         loadEmployeeDataForEdit(employeeId);
@@ -1189,22 +1224,20 @@
     function populateEditForm(data) {
         console.log('Данные для заполнения формы:', data);
 
-        // Проверяем структуру данных
         if (!data) {
             console.error('Данные не получены');
             showToast('Данные сотрудника не получены', 'warning');
             return;
         }
 
-        // Извлекаем данные сотрудника из массива data.data
+        // Извлекаем данные сотрудника
         let employeeData = null;
 
         if (data.data && Array.isArray(data.data) && data.data.length > 0) {
             employeeData = data.data[0];
-            console.log('Извлечены данные сотрудника:', employeeData.valueOf().valueOf().tabelNumber);
-        } else if (data.status === 'success' && data.id) {
-            // Если структура другая, но есть ID
-            console.log('Используем альтернативную структуру данных');
+        } else if (Array.isArray(data) && data.length > 0) {
+            employeeData = data[0];
+        } else if (typeof data === 'object') {
             employeeData = data;
         } else {
             console.error('Неправильная структура данных:', data);
@@ -1213,36 +1246,89 @@
         }
 
         // Заполняем форму данными
-        $('#editEmployeeId').val(window.currentEditEmployeeId);
-        $('#editLastName').val(employeeData.LastName || '');
-        $('#editFirstName').val(employeeData.FirstName || '');
-        $('#editSecondName').val(employeeData.SecondName || '');
+        $('#editEmployeeId').val(window.currentEditEmployeeId || employeeData.ID || employeeData.Id || employeeData.id);
+        $('#editLastName').val(employeeData.LastName || employeeData.lastName || '');
+        $('#editFirstName').val(employeeData.FirstName || employeeData.firstName || '');
+        $('#editSecondName').val(employeeData.SecondName || employeeData.secondName || '');
 
-        // Табельный номер - нет в данных, оставляем пустым
-        $('#editTabelNumber').val(employeeData.Number.toString() || '');
+        // Табельный номер
+        $('#editTabelNumber').val(employeeData.Number || employeeData.TabelNumber || employeeData.tabelNumber || '');
 
-        // Должность - используем поле Position
-        $('#editPosition').val(employeeData.Position || '');
-        console.log('Табель сотрудника: ' + employeeData.Position.toString());
+        // Должность - получаем GUID и название
+        const positionID = employeeData.PositionID || employeeData.positionId || '';
+        const positionName = employeeData.Position || employeeData.position || '';
+
+        console.log('Должность сотрудника:', {
+            ID: positionID,
+            Name: positionName
+        });
+
+        // Заполняем текстовое поле GUID
+        $('#editPosition').val(positionID);
+
+        // Ожидаем загрузки выпадающего списка и устанавливаем значение
+        setTimeout(() => {
+            const $select = $('#editPositionSelect');
+
+            if (positionID) {
+                // Пытаемся установить по GUID
+                const optionExists = $select.find('option[value="' + positionID + '"]').length > 0;
+
+                if (optionExists) {
+                    $select.val(positionID);
+                    console.log('Должность установлена в select по GUID:', positionID);
+                } else {
+                    console.warn('Должность с GUID', positionID, 'не найдена в списке');
+
+                    // Если опции нет, проверяем кэш и добавляем опцию динамически
+                    if (window.positionsCache) {
+                        const positionInCache = window.positionsCache.find(p => p.ID === positionID);
+                        if (positionInCache) {
+                            // Опция должна была быть в списке, если нет - добавляем
+                            $select.append(`<option value="${positionID}">${positionInCache.Name} (текущая)</option>`);
+                            $select.val(positionID);
+                            console.log('Должность добавлена в select:', positionInCache.Name);
+                        } else if (positionName) {
+                            // Добавляем текущую должность как опцию
+                            $select.append(`<option value="${positionID}">${positionName} (текущая)</option>`);
+                            $select.val(positionID);
+                            console.log('Должность добавлена в select:', positionName);
+                        }
+                    }
+                }
+            } else if (positionName && window.positionsCache) {
+                // Если нет GUID, но есть название, ищем в кэше
+                const foundPosition = window.positionsCache.find(p =>
+                    p.Name && positionName &&
+                    p.Name.toLowerCase() === positionName.toLowerCase()
+                );
+
+                if (foundPosition) {
+                    $select.val(foundPosition.ID);
+                    console.log('Должность найдена по названию:', foundPosition.Name);
+                }
+            }
+        }, 500); // Увеличиваем задержку для гарантии загрузки select
+
+        // Комментарий
+        $('#editComment').val(employeeData.Comment || employeeData.comment || '');
+
+        // Адреса
+        $('#editRegistrationAddress').val(employeeData.RegistrationAddress || employeeData.registrationAddress || '');
+        $('#editResidentialAddress').val(employeeData.ResidentialAddress || employeeData.residentialAddress || '');
 
         // Паспортные данные
-        $('#editPassportIISUE').val(employeeData.PassportIssue || '');
-        $('#editPassportNumber').val(employeeData.PassportNumber || '');
+        $('#editPassportIISUE').val(employeeData.PassportIssue || employeeData.PassportIISUE || employeeData.passportIISUE || '');
+        $('#editPassportNumber').val(employeeData.PassportNumber || employeeData.passportNumber || '');
 
         // Статус блокировки
-        $('#editIsChangeLocked').prop('checked', employeeData.IsLocked || false);
+        const isLocked = employeeData.IsLocked || employeeData.isLocked || false;
+        $('#editIsChangeLocked').prop('checked', isLocked);
+
+        // PIN-код - сбрасываем флажок
         $('#editIsChangePin').prop('checked', false);
 
-        // Остальные поля оставляем пустыми (их нет в данных)
-        $('#editComment').val('');
-        $('#editRegistrationAddress').val('');
-        $('#editResidentialAddress').val('');
-
-        console.log('Форма заполнена. Значения:');
-        console.log('LastName:', $('#editLastName').val());
-        console.log('FirstName:', $('#editFirstName').val());
-        console.log('Position:', $('#editPosition').val());
-        console.log('Number:', $('#editTabelNumber').val().toString());
+        console.log('Форма заполнена. Должность (GUID):', positionID, 'Название:', positionName);
     }
 
     function adjustLayout() {
@@ -1264,8 +1350,20 @@
         }
 
         // Собираем данные из формы
+        const positionSelect = $('#editPositionSelect').val();
+        const positionManual = $('#editPosition').val().trim();
+
+        // Приоритет: выбранная должность из списка, затем ручной ввод
+        const position = positionSelect || positionManual;
+
+        // Убедимся, что position не пустой, иначе передаем пустую строку
+        const positionToSend = position || '';
+
+        console.log('Сохраняем данные сотрудника. Position:', positionToSend);
+
         const employeeData = {
-            position: $('#editPosition').val() || '',
+            // Используем поля, которые точно соответствуют структуре SaveAcsEmployeeRequest
+            position: positionToSend,
             isChangeLocked: $('#editIsChangeLocked').is(':checked'),
             isChangePin: $('#editIsChangePin').is(':checked'),
             firstName: $('#editFirstName').val().trim(),
@@ -1276,15 +1374,20 @@
             RegistrationAddress: $('#editRegistrationAddress').val().trim(),
             ResidentialAddress: $('#editResidentialAddress').val().trim(),
             PassportIISUE: $('#editPassportIISUE').val().trim(),
-            PassportNumber: $('#editPassportNumber').val().trim()
+            PassportNumber: $('#editPassportNumber').val().trim(),
+            // Добавляем ID сотрудника для корректной передачи
+            id: employeeId,
+            // Убедимся, что передаем должность в нужном формате
+            positionId: positionManual
+            // email и emailDescription можно добавить позже, если нужны
         };
-        console.info('!!Фамилия и имя:', employeeData.firstName + " " + employeeData.lastName);
+
         // Валидация обязательных полей
         if (!employeeData.firstName || !employeeData.lastName) {
             showToast('Фамилия и имя обязательны для заполнения', 'warning');
             return;
         }
-        console.info('!!Фамилия и имя:', employeeData.firstName);
+
         if (!employeeData.tabelNumber || employeeData.tabelNumber <= 0) {
             showToast('Табельный номер обязателен и должен быть положительным числом', 'warning');
             return;
@@ -1307,16 +1410,26 @@
             },
             body: JSON.stringify(employeeData)
         })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+            .then(async response => {
+                console.log('Статус сохранения:', response.status);
+
+                const responseText = await response.text();
+                console.log('Текст ответа при сохранении:', responseText);
+
+                if (response.ok) {
+                    try {
+                        return responseText ? JSON.parse(responseText) : { status: 'success' };
+                    } catch (e) {
+                        return { status: 'success' };
+                    }
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}. ${responseText}`);
                 }
-                return response.json();
             })
             .then(data => {
                 console.log('Ответ от сервера при сохранении:', data);
 
-                if (data.status === 'success' || response.ok) {
+                if (data.status === 'success') {
                     showToast('Данные сотрудника успешно обновлены', 'success');
                     $('#editEmployeeModal').modal('hide');
 
@@ -1325,7 +1438,7 @@
                         loadEmployeesByGroup(selectedGroupId);
                     }
                 } else {
-                    throw new Error(data.message || 'Ошибка при обновлении сотрудника');
+                    throw new Error(data.message || data.error || 'Ошибка при обновлении сотрудника');
                 }
             })
             .catch(error => {
@@ -1352,21 +1465,44 @@
             return;
         }
 
-        console.log('Удаление сотрудника:', employeeId);
+        console.log('Удаление сотрудника, ID:', employeeId);
 
+        // Показываем индикатор загрузки
+        const deleteButton = $('#editEmployeeModal .btn-danger');
+        const originalText = deleteButton.html();
+        deleteButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Удаление...');
+        deleteButton.prop('disabled', true);
+
+        // Правильный endpoint для удаления (согласно контроллеру)
         fetch(`${API_BASE_URL}/deleteEmployee?id=${employeeId}`, {
-            method: 'DELETE'
+            method: 'DELETE',
+            headers: {
+                'accept': 'application/json'
+            }
         })
             .then(response => {
+                console.log('Статус удаления:', response.status);
+
                 if (response.ok) {
-                    return response.json();
+                    return response.text().then(text => {
+                        try {
+                            return text ? JSON.parse(text) : { status: 'success' };
+                        } catch (e) {
+                            return { status: 'success' };
+                        }
+                    });
+                } else if (response.status === 400) {
+                    return response.text().then(text => {
+                        throw new Error(text || 'Ошибка 400 при удалении');
+                    });
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                throw new Error('Ошибка при удалении сотрудника');
             })
             .then(data => {
                 console.log('Ответ от сервера при удалении:', data);
 
-                if (data.status === 'success' || response.ok) {
+                if (data.status === 'success' || data === '') {
                     showToast('Сотрудник успешно удален', 'success');
                     $('#editEmployeeModal').modal('hide');
 
@@ -1380,12 +1516,17 @@
                     $('#accessLevelsList').empty();
                     $('#passagesContainer').empty();
                 } else {
-                    throw new Error(data.message || 'Ошибка при удалении сотрудника');
+                    throw new Error(data.message || data.error || 'Неизвестная ошибка при удалении');
                 }
             })
             .catch(error => {
                 console.error('Ошибка удаления сотрудника:', error);
                 showToast(`Ошибка удаления: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                deleteButton.html(originalText);
+                deleteButton.prop('disabled', false);
             });
     }
 
@@ -1505,6 +1646,13 @@
         $('#passageDate').on('change', function () {
             if (selectedEmployeeId) {
                 loadPassages();
+            }
+        });
+        // При выборе должности из списка, заполняем поле GUID
+        $(document).on('change', '#editPositionSelect', function() {
+            const selectedValue = $(this).val();
+            if (selectedValue) {
+                $('#editPosition').val(selectedValue);
             }
         });
     }
@@ -1715,20 +1863,72 @@
 
     // Функция загрузки списка должностей для выпадающего списка
     function loadPositionsForSelect() {
-        fetch(`${API_BASE_URL}/getPositions`) // Предполагаемый endpoint
+        console.log('Загрузка должностей...');
+
+        fetch(`${API_BASE_URL}/getPositions`)
             .then(response => response.json())
-            .then(positions => {
+            .then(data => {
+                console.log('Получены должности (объект):', data);
+
                 const select = $('#editPositionSelect');
                 select.empty();
                 select.append('<option value="">Выберите должность</option>');
 
-                positions.forEach(position => {
-                    select.append(`<option value="${position.ID}">${position.Name}</option>`);
+                // Проверяем тип данных - это объект, а не массив!
+                if (typeof data !== 'object' || data === null) {
+                    console.warn('Неверный формат данных должностей:', data);
+                    select.append('<option value="">Ошибка загрузки должностей</option>');
+                    return;
+                }
+
+                // Преобразуем объект в массив для удобства
+                const positionsArray = Object.entries(data).map(([id, name]) => ({
+                    ID: id,
+                    Name: name
+                }));
+
+                console.log('Преобразованный массив должностей:', positionsArray);
+
+                if (positionsArray.length === 0) {
+                    select.append('<option value="">Нет доступных должностей</option>');
+                    return;
+                }
+
+                // Сортируем по названию для удобства
+                positionsArray.sort((a, b) => a.Name.localeCompare(b.Name));
+
+                // Заполняем список
+                positionsArray.forEach(position => {
+                    const id = position.ID || '';
+                    const name = position.Name || 'Без названия';
+                    if (id && name) {
+                        select.append(`<option value="${escapeHtml(id)}">${escapeHtml(name)}</option>`);
+                    }
                 });
+
+                console.log('Должности загружены, количество:', positionsArray.length);
+
+                // Сохраняем список должностей для быстрого доступа
+                window.positionsCache = positionsArray;
             })
             .catch(error => {
                 console.error('Ошибка загрузки должностей:', error);
+                $('#editPositionSelect').html(`
+                <option value="">Ошибка загрузки должностей</option>
+                <option value="">Проверьте подключение к API</option>
+            `);
             });
+    }
+    //функция для поиска должности по названию
+    function findPositionByName(name) {
+        if (!window.positionsCache || !name) return null;
+
+        const found = window.positionsCache.find(pos => {
+            const posName = pos.Name || pos.name || pos.Title || '';
+            return posName.toLowerCase() === name.toLowerCase().trim();
+        });
+
+        return found ? found.ID || found.id || found.GUID : null;
     }
 
     function createEmployeeRow(employee) {
@@ -2782,6 +2982,20 @@
     // Добавим обработчик нажатия Enter в полях поиска
     $(document).ready(function () {
         // ... свой существующий код - если нужно ...
+
+        // Установка текущей даты в поле выбора даты
+        // const today = new Date().toISOString().split('T')[0];
+        // $('#passageDate').val(today);
+
+        // loadEmployeeGroups();
+        // setupEventListeners();
+        // adjustLayout();
+
+        // Загрузка должностей
+        // loadPositionsForSelect();
+
+        // Проверка состояния select через 1 секунду после загрузки
+        setTimeout(checkSelectState, 1000);
 
         // Обработка Enter в полях поиска
         $('#searchFIO, #searchTabel').on('keypress', function(e) {
