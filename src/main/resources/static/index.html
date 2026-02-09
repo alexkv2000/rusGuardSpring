@@ -2301,53 +2301,112 @@
     // Функция для сохранения изменений сотрудника
     function saveEditedEmployee() {
         const employeeId = $('#editEmployeeId').val();
-        const lastName = $('#editLastName').val().trim();
-        const firstName = $('#editFirstName').val().trim();
-        const secondName = $('#editSecondName').val().trim();
-        const tabelNumber = $('#editTabelNumber').val().trim();
 
-        if (!lastName || !firstName) {
+        if (!employeeId) {
+            showToast('ID сотрудника не найден', 'danger');
+            return;
+        }
+
+        // Собираем данные из формы
+        const positionSelect = $('#editPositionSelect').val();
+        const positionManual = $('#editPosition').val().trim();
+
+        // Приоритет: ручной ввод GUID, затем выбранная должность из списка
+        // Если пользователь ввел GUID вручную - используем его
+        // Если нет - используем выбранный из списка
+        const position = positionManual || positionSelect;
+
+        // Убедимся, что position не пустой, иначе передаем пустую строку
+        const positionToSend = position || '';
+
+        console.log('Сохраняем данные сотрудника. Position:', positionToSend);
+        console.log('Ручной ввод:', positionManual, 'Выбранное из списка:', positionSelect);
+
+        const employeeData = {
+            // Используем поле position с GUID должности
+            position: positionToSend,
+            isChangeLocked: $('#editIsChangeLocked').is(':checked'),
+            isChangePin: $('#editIsChangePin').is(':checked'),
+            firstName: $('#editFirstName').val().trim(),
+            lastName: $('#editLastName').val().trim(),
+            secondName: $('#editSecondName').val().trim(),
+            tabelNumber: parseInt($('#editTabelNumber').val()) || 0,
+            Comment: $('#editComment').val().trim(),
+            RegistrationAddress: $('#editRegistrationAddress').val().trim(),
+            ResidentialAddress: $('#editResidentialAddress').val().trim(),
+            PassportIISUE: $('#editPassportIISUE').val().trim(),
+            PassportNumber: $('#editPassportNumber').val().trim(),
+            // Добавляем ID сотрудника для корректной передачи
+            id: employeeId
+        };
+
+        // Валидация обязательных полей
+        if (!employeeData.firstName || !employeeData.lastName) {
             showToast('Фамилия и имя обязательны для заполнения', 'warning');
             return;
         }
 
-        // Создаем объект с данными
-        const employeeData = {
-            id: employeeId,
-            lastName: lastName,
-            firstName: firstName,
-            secondName: secondName,
-            tabelNumber: tabelNumber
-        };
+        if (!employeeData.tabelNumber || employeeData.tabelNumber <= 0) {
+            showToast('Табельный номер обязателен и должен быть положительным числом', 'warning');
+            return;
+        }
 
-        console.log('Сохраняем изменения сотрудника:', employeeData);
+        console.log('Сохранение сотрудника:', employeeData);
+
+        // Показываем индикатор загрузки
+        const saveButton = $('#editEmployeeModal .btn-warning');
+        const originalText = saveButton.html();
+        saveButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Сохранение...');
+        saveButton.prop('disabled', true);
 
         // Отправляем данные на сервер
         fetch(`${API_BASE_URL}/saveAcsEmployee?idEmployee=${employeeId}`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'accept': 'application/json',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(employeeData)
         })
-            .then(response => {
+            .then(async response => {
+                console.log('Статус сохранения:', response.status);
+
+                const responseText = await response.text();
+                console.log('Текст ответа при сохранении:', responseText);
+
                 if (response.ok) {
-                    return response.json();
+                    try {
+                        return responseText ? JSON.parse(responseText) : { status: 'success' };
+                    } catch (e) {
+                        return { status: 'success' };
+                    }
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}. ${responseText}`);
                 }
-                throw new Error('Ошибка при обновлении сотрудника');
             })
             .then(data => {
-                $('#editEmployeeModal').modal('hide');
-                showToast('Данные сотрудника успешно обновлены', 'success');
+                console.log('Ответ от сервера при сохранении:', data);
 
-                // Обновляем таблицу сотрудников
-                if (selectedGroupId) {
-                    loadEmployeesByGroup(selectedGroupId);
+                if (data.status === 'success') {
+                    showToast('Данные сотрудника успешно обновлены', 'success');
+                    $('#editEmployeeModal').modal('hide');
+
+                    // Обновляем список сотрудников
+                    if (selectedGroupId) {
+                        loadEmployeesByGroup(selectedGroupId);
+                    }
+                } else {
+                    throw new Error(data.message || data.error || 'Ошибка при обновлении сотрудника');
                 }
             })
             .catch(error => {
-                console.error('Ошибка:', error);
-                showToast('Ошибка при обновлении данных сотрудника', 'danger');
+                console.error('Ошибка сохранения сотрудника:', error);
+                showToast(`Ошибка сохранения: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                saveButton.html(originalText);
+                saveButton.prop('disabled', false);
             });
     }
 
