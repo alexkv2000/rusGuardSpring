@@ -1719,8 +1719,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
             // Фильтруем удаленные группы
             List<AcsEmployeeGroup> filteredList = arrayOfAcsEmployeeGroup.getAcsEmployeeGroup().stream()
-//                    .filter(r -> r.isIsRemoved() == null || !r.isIsRemoved())
-                    .filter(r -> r.getID().equals("75c0f525-0851-4730-9edc-f16e955a32ca"))
+                    .filter(r -> r.isIsRemoved() == null || !r.isIsRemoved())
+//                    .filter(r -> r.getID().equals("75c0f525-0851-4730-9edc-f16e955a32ca"))
                     .toList();
 
             // Собираем все группы в Map для быстрого доступа

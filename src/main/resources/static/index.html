@@ -392,17 +392,25 @@
 <div class="main-content">
     <div class="main-row row g-3">
         <!-- LEFT SECTION - Дерево групп -->
-        <div class="col-md-3 section-column">
-            <div class="section-header">
-                <h5 class="mb-0"><i class="bi bi-diagram-3 me-2"></i>Группы сотрудников</h5>
-                <button class="refresh-btn" onclick="refreshLeftSection()">
-                    <i class="bi bi-arrow-clockwise"></i>
-                </button>
-            </div>
-            <div class="section-content">
-                <div class="tree-container" id="employeeGroupsTree"></div>
-            </div>
-        </div>
+                <div class="col-md-3 section-column">
+                    <div class="section-header">
+                        <h5 class="mb-0"><i class="bi bi-diagram-3 me-2"></i>Группы сотрудников</h5>
+                        <button class="refresh-btn" onclick="refreshLeftSection()">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </button>
+                    </div>
+                    <div class="section-content">
+                        <div class="p-3">
+                            <div class="mb-3">
+                                <label for="groupSelector" class="form-label">Выберите группу верхнего уровня:</label>
+                                <select class="form-select" id="groupSelector" onchange="onGroupSelected()">
+                                    <option value="">Загрузка групп...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="tree-container" id="employeeGroupsTree"></div>
+                    </div>
+                </div>
 
         <!-- CENTER SECTION - Список сотрудников -->
         <div class="col-md-5 section-column">
@@ -870,6 +878,13 @@
 
         // Инициализируем DataTable после небольшой задержки для правильного расчета высоты
         setTimeout(initEmployeesTable, 100);
+        
+        // Устанавливаем группу по умолчанию после загрузки страницы
+        // setTimeout(() => {
+        //     const defaultGroupId = "75c0f525-0851-4730-9edc-f16e955a32ca";
+        //     $('#groupSelector').val(defaultGroupId);
+        //     onGroupSelected(defaultGroupId);
+        // }, 500);
     });
 
     function checkSelectState() {
@@ -1661,17 +1676,192 @@
 
     // LEFT SECTION - Дерево групп сотрудников
     function loadEmployeeGroups() {
+        // showLoading('#employeeGroupsTree');
+        
+        // Сначала загружаем список корневых групп для выпадающего списка
+        // loadTopLevelGroups();
+        
+        // Затем загружаем дерево групп для выбранной группы (или по умолчанию)
+        // const selectedGroupId = $('#groupSelector').val() || "75c0f525-0851-4730-9edc-f16e955a32ca";
+        // if (selectedGroupId) {
+        //     fetch(`${API_BASE_URL}/getEmployeesGroups`)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             renderEmployeeGroupsTree(data);
+        //         })
+        //         .catch(error => {
+        //             console.error('Ошибка загрузки групп:', error);
+        //             showError('#employeeGroupsTree', 'Не удалось загрузить группы');
+        //         });
+        // } else {
+        //     // Если группа не выбрана, загружаем дерево для группы по умолчанию
+        //     fetch(`${API_BASE_URL}/getEmployeesGroups`)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             renderEmployeeGroupsTree(data);
+        //         })
+        //         .catch(error => {
+        //             console.error('Ошибка загрузки групп:', error);
+        //             showError('#employeeGroupsTree', 'Не удалось загрузить группы');
+        //         });
+        // }
         showLoading('#employeeGroupsTree');
-
+        // Сначала загружаем список всех групп для выпадающего списка
         fetch(`${API_BASE_URL}/getEmployeesGroups`)
             .then(response => response.json())
             .then(data => {
-                renderEmployeeGroupsTree(data);
+                // Сохраняем все группы для использования при фильтрации
+                window.allGroupsData = data;
+
+                // Заполняем выпадающий список
+                renderTopLevelGroups(data);
+
+                // Устанавливаем группу по умолчанию
+                const defaultGroupId = "75c0f525-0851-4730-9edc-f16e955a32ca";
+
+                // Находим группу по умолчанию в данных
+                const defaultGroup = findGroupById(data, defaultGroupId);
+
+                if (defaultGroup) {
+                    // Устанавливаем в селекторе
+                    $('#groupSelector').val(defaultGroupId);
+
+                    // Отображаем дерево для группы по умолчанию
+                    filterAndDisplayGroupTree(defaultGroupId);
+
+                    // Загружаем сотрудников для группы по умолчанию
+                    selectedGroupId = defaultGroupId;
+                    loadEmployeesByGroup(defaultGroupId);
+                } else {
+                    // Если группа по умолчанию не найдена, показываем все группы
+                    renderEmployeeGroupsTree(data);
+                }
             })
             .catch(error => {
                 console.error('Ошибка загрузки групп:', error);
                 showError('#employeeGroupsTree', 'Не удалось загрузить группы');
             });
+    }
+    // Вспомогательная функция для поиска группы по ID
+    function findGroupById(groups, id) {
+        if (!groups || !id) return null;
+
+        // Если группы - массив
+        if (Array.isArray(groups)) {
+            for (const group of groups) {
+                if (group.id === id || group.ID === id) return group;
+                if (group.children) {
+                    const found = findGroupById(group.children, id);
+                    if (found) return found;
+                }
+            }
+        }
+        // Если группы - объект с полем groups
+        else if (groups.groups && Array.isArray(groups.groups)) {
+            return findGroupById(groups.groups, id);
+        }
+
+        return null;
+    }
+    // Функция для фильтрации и отображения дерева выбранной группы
+    function filterAndDisplayGroupTree(groupId) {
+        if (!window.allGroupsData) return;
+
+        // Находим выбранную группу
+        const selectedGroup = findGroupById(window.allGroupsData, groupId);
+
+        if (selectedGroup) {
+            // Отображаем только выбранную группу и её подгруппы
+            renderEmployeeGroupsTree([selectedGroup]);
+
+            // Выделяем выбранную группу в дереве
+            setTimeout(() => {
+                const $tree = $('#employeeGroupsTree');
+                const tree = $tree.jstree(true);
+                if (tree) {
+                    tree.select_node(groupId);
+                }
+            }, 300);
+        } else {
+            // Если группа не найдена, показываем все группы
+            renderEmployeeGroupsTree(window.allGroupsData);
+        }
+    }
+
+    // Загрузка корневых групп для выпадающего списка
+    function loadTopLevelGroups() {
+        fetch(`${API_BASE_URL}/getEmployeesGroups`)
+            .then(response => response.json())
+            .then(data => {
+                renderTopLevelGroups(data);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки корневых групп:', error);
+                // В случае ошибки оставляем заглушку
+                const select = $('#groupSelector');
+                select.empty();
+                select.append('<option value="">Ошибка загрузки групп</option>');
+            });
+    }
+    
+    // Отображение корневых групп в выпадающем списке
+    function renderTopLevelGroups(data) {
+        const select = $('#groupSelector');
+        select.empty();
+
+        // Если данные пришли в формате { "groups": [...] }
+        const groups = data.groups || data || [];
+
+        if (!Array.isArray(groups) || groups.length === 0) {
+            select.append('<option value="">Нет доступных групп</option>');
+            return;
+        }
+
+        // Добавляем опцию по умолчанию
+        select.append('<option value="">Выберите группу</option>');
+
+        // Сортируем группы по имени
+        const sortedGroups = [...groups].sort((a, b) => {
+            const nameA = (a.name || a.Name || '').toLowerCase();
+            const nameB = (b.name || b.Name || '').toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        // Добавляем группы в выпадающий список
+        sortedGroups.forEach(group => {
+            if (group.id) {
+                const text = group.name || group.Name || group.id;
+                select.append(`<option value="${group.id}">${text}</option>`);
+            }
+        });
+    }
+    
+    // Обработчик выбора группы из выпадающего списка
+    function onGroupSelected(selectedGroupId) {
+        const groupId = selectedGroupId || $('#groupSelector').val();
+        
+        if (!groupId) {
+            return;
+        }
+        // Очищаем выбранного сотрудника
+        selectedEmployeeId = null;
+        $('#accessLevelsList').empty();
+        $('#passagesContainer').empty();
+
+        // Если есть DataTable, сбрасываем её
+        if (employeesDataTable) {
+            employeesDataTable.clear().draw();
+        } else {
+            $('#employeesList').empty();
+        }
+
+        // Отображаем дерево для выбранной группы
+        filterAndDisplayGroupTree(groupId);
+
+        // Загружаем сотрудников выбранной группы
+        selectedGroupId = groupId;
+        // Загружаем дерево для выбранной группы
+        loadEmployeesByGroup(groupId);
     }
 
     function renderEmployeeGroupsTree(data) {
@@ -1816,6 +2006,11 @@
 
     // CENTER SECTION - Сотрудники группы
     function loadEmployeesByGroup(groupId) {
+        if (!groupId) {
+            console.warn('ID группы не указан');
+            return;
+        }
+        
         showLoading('#employeesList');
 
         fetch(`${API_BASE_URL}/getByGroupID?idGroup=${groupId}`)
