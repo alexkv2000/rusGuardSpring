@@ -60,7 +60,8 @@ public class EmployeeGroupTree {
                     // Процесс дочерней группы
                     Set<String> newVisited = new LinkedHashSet<>(visitedIds);
                     EmployeeGroupTreeDto childDto = buildGroupTree(fullChildGroup, groupsMap, newVisited);
-                    if (childDto != null) {
+                    if (childDto != null
+                            && childDto.getName() != null && !childDto.getName().trim().toLowerCase().startsWith("закрыт")) { //Убрать "Закрыт'ые" группы
                         dto.addChild(childDto);
                         System.out.println("  Successfully added child: " + childDto.getId() +
                                 " to group: " + group.getID());
