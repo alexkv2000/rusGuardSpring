@@ -1218,6 +1218,15 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public Map<String, Object> saveAcsEmployee(String idEmployee, SaveAcsEmployeeRequest request) {
+        System.out.println("Сохраняем сотрудника ID: " + idEmployee);
+        System.out.println("Полученные данные: " + request);
+        System.out.println("Comment: " + request.getComment());
+        System.out.println("RegistrationAddress: " + request.getRegistrationAddress());
+        System.out.println("ResidentialAddress: " + request.getResidentialAddress());
+        System.out.println("PassportIISUE: " + request.getPassportIISUE());
+        System.out.println("PassportNumber: " + request.getPassportNumber());
+        System.out.println("isChangeLocked: " + request.getIsChangeLocked());
+        System.out.println("isChangePin: " + request.getIsChangePin());
         AcsEmployeeFull currentEmployee = networkService.getAcsEmployee(idEmployee);
         Map<String, Object> response = new LinkedHashMap<>();
         try {
@@ -1424,103 +1433,103 @@ public class EmployeeServiceImpl implements EmployeeService {
             }
 
             // Комментарий: Если передано в запросе - используем, иначе используем текущие данные
-            QName EMPLOYEE_COMMENT_ID_QNAME;
-            JAXBElement<String> employeeComment;
-            if (request.getComment() != null && !request.getComment().trim().isEmpty()) {
-                EMPLOYEE_COMMENT_ID_QNAME = new QName(
-                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
-                        "Comment"
-                );
-                employeeComment = new JAXBElement<>(
-                        EMPLOYEE_COMMENT_ID_QNAME,
-                        String.class,
-                        request.getComment()
-                );
-                data.setComment(employeeComment);
-            } else {
-                try {
-                    if (currentEmployee != null && currentEmployee.getComment() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
-                        data.setComment(currentEmployee.getComment());
-                    }
-                } catch (Exception e) {
-                    EMPLOYEE_COMMENT_ID_QNAME = new QName(
-                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
-                            "Comment"
-                    );
-                    employeeComment = new JAXBElement<>(
-                            EMPLOYEE_COMMENT_ID_QNAME,
-                            String.class,
-                            "-"
-                    );
-                    data.setComment(employeeComment);
-                }
-            }
+//            QName EMPLOYEE_COMMENT_ID_QNAME;
+//            JAXBElement<String> employeeComment;
+//            if (request.getComment() != null && !request.getComment().trim().isEmpty()) {
+//                EMPLOYEE_COMMENT_ID_QNAME = new QName(
+//                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+//                        "Comment"
+//                );
+//                employeeComment = new JAXBElement<>(
+//                        EMPLOYEE_COMMENT_ID_QNAME,
+//                        String.class,
+//                        request.getComment()
+//                );
+//                data.setComment(employeeComment);
+//            } else {
+//                try {
+//                    if (currentEmployee.getComment() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+//                        data.setComment(currentEmployee.getComment());
+//                    }
+//                } catch (Exception e) {
+//                    EMPLOYEE_COMMENT_ID_QNAME = new QName(
+//                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+//                            "comment"
+//                    );
+//                    employeeComment = new JAXBElement<>(
+//                            EMPLOYEE_COMMENT_ID_QNAME,
+//                            String.class,
+//                            "-"
+//                    );
+//                    data.setComment(employeeComment);
+//                }
+//            }
 
             // Адрес Регистрации: Если передано в запросе - используем, иначе используем текущие данные
-            QName EMPLOYEE_ADRESSREG_ID_QNAME;
-            JAXBElement<String> employeeAdressReg;
-            if (request.getComment() != null && !request.getComment().trim().isEmpty()) {
-                EMPLOYEE_ADRESSREG_ID_QNAME = new QName(
-                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
-                        "RegistrationAddress"
-                );
-                employeeAdressReg = new JAXBElement<>(
-                        EMPLOYEE_ADRESSREG_ID_QNAME,
-                        String.class,
-                        request.getRegistrationAddress()
-                );
-                data.setRegistrationAddress(employeeAdressReg);
-            } else {
-                try {
-                    if (currentEmployee != null && currentEmployee.getRegistrationAddress() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
-                        data.setRegistrationAddress(currentEmployee.getRegistrationAddress());
-                    }
-                } catch (Exception e) {
-                    EMPLOYEE_ADRESSREG_ID_QNAME = new QName(
-                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
-                            "RegistrationAddress"
-                    );
-                    employeeAdressReg = new JAXBElement<>(
-                            EMPLOYEE_ADRESSREG_ID_QNAME,
-                            String.class,
-                            request.getRegistrationAddress()
-                    );
-                    data.setRegistrationAddress(employeeAdressReg);
-                }
-            }
-
-            // Адрес проживания: Если передано в запросе - используем, иначе используем текущие данные
-            QName EMPLOYEE_ADRESSRSDL_ID_QNAME;
-            JAXBElement<String> employeeAdressRsdl;
-            if (request.getResidentialAddress() != null && !request.getResidentialAddress().trim().isEmpty()) {
-                EMPLOYEE_ADRESSRSDL_ID_QNAME = new QName(
-                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
-                        "ResidentialAddress"
-                );
-                employeeAdressRsdl = new JAXBElement<>(
-                        EMPLOYEE_ADRESSRSDL_ID_QNAME,
-                        String.class,
-                        request.getResidentialAddress()
-                );
-                data.setResidentialAddress(employeeAdressRsdl);
-            } else {
-                try {
-                    if (currentEmployee != null && currentEmployee.getResidentialAddress() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
-                        data.setResidentialAddress(currentEmployee.getResidentialAddress());
-                    }
-                } catch (Exception e) {
-                    EMPLOYEE_ADRESSRSDL_ID_QNAME = new QName(
-                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
-                            "ResidentialAddress"
-                    );
-                    employeeAdressRsdl = new JAXBElement<>(
-                            EMPLOYEE_ADRESSRSDL_ID_QNAME,
-                            String.class,
-                            request.getResidentialAddress()
-                    );
-                    data.setResidentialAddress(employeeAdressRsdl);
-                }
-            }
+//            QName EMPLOYEE_ADRESSREG_ID_QNAME;
+//            JAXBElement<String> employeeAdressReg;
+//            if (request.getComment() != null && !request.getComment().trim().isEmpty()) {
+//                EMPLOYEE_ADRESSREG_ID_QNAME = new QName(
+//                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+//                        "RegistrationAddress"
+//                );
+//                employeeAdressReg = new JAXBElement<>(
+//                        EMPLOYEE_ADRESSREG_ID_QNAME,
+//                        String.class,
+//                        request.getRegistrationAddress()
+//                );
+//                data.setRegistrationAddress(employeeAdressReg);
+//            } else {
+//                try {
+//                    if (currentEmployee != null && currentEmployee.getRegistrationAddress() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+//                        data.setRegistrationAddress(currentEmployee.getRegistrationAddress());
+//                    }
+//                } catch (Exception e) {
+//                    EMPLOYEE_ADRESSREG_ID_QNAME = new QName(
+//                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+//                            "RegistrationAddress"
+//                    );
+//                    employeeAdressReg = new JAXBElement<>(
+//                            EMPLOYEE_ADRESSREG_ID_QNAME,
+//                            String.class,
+//                            request.getRegistrationAddress()
+//                    );
+//                    data.setRegistrationAddress(employeeAdressReg);
+//                }
+//            }
+//
+//            // Адрес проживания: Если передано в запросе - используем, иначе используем текущие данные
+//            QName EMPLOYEE_ADRESSRSDL_ID_QNAME;
+//            JAXBElement<String> employeeAdressRsdl;
+//            if (request.getResidentialAddress() != null && !request.getResidentialAddress().trim().isEmpty()) {
+//                EMPLOYEE_ADRESSRSDL_ID_QNAME = new QName(
+//                        "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+//                        "ResidentialAddress"
+//                );
+//                employeeAdressRsdl = new JAXBElement<>(
+//                        EMPLOYEE_ADRESSRSDL_ID_QNAME,
+//                        String.class,
+//                        request.getResidentialAddress()
+//                );
+//                data.setResidentialAddress(employeeAdressRsdl);
+//            } else {
+//                try {
+//                    if (currentEmployee != null && currentEmployee.getResidentialAddress() != null) {// Пытаемся получить текущие данные или задаем по умолчанию
+//                        data.setResidentialAddress(currentEmployee.getResidentialAddress());
+//                    }
+//                } catch (Exception e) {
+//                    EMPLOYEE_ADRESSRSDL_ID_QNAME = new QName(
+//                            "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees",
+//                            "ResidentialAddress"
+//                    );
+//                    employeeAdressRsdl = new JAXBElement<>(
+//                            EMPLOYEE_ADRESSRSDL_ID_QNAME,
+//                            String.class,
+//                            request.getResidentialAddress()
+//                    );
+//                    data.setResidentialAddress(employeeAdressRsdl);
+//                }
+//            }
             // Паспорт серия: Если передано в запросе - используем, иначе используем текущие данные
             QName EMPLOYEE_PASPORTIISUE_ID_QNAME;
             JAXBElement<String> employeePassportIISUE;
@@ -1611,19 +1620,19 @@ public class EmployeeServiceImpl implements EmployeeService {
             if (request.getTabelNumber() != null) {
                 response.put("tabelNumber", request.getTabelNumber().toString());
             }
-            if (request.getComment() != null) {
-                response.put("Comment", request.getComment());
-            }
-            if (request.getRegistrationAddress() != null) {
-                response.put("RegistrationAddress", request.getRegistrationAddress());
-            }
-            if (request.getResidentialAddress() != null) {
-                response.put("ResidentialAddress", request.getResidentialAddress());
-            }
-            if (request.getRegistrationAddress() != null) {
+//            if (request.getComment() != null) {
+//                response.put("comment", request.getComment());
+//            }
+//            if (!request.getRegistrationAddress().isEmpty() || !request.getRegistrationAddress().isBlank()) {
+//                response.put("RegistrationAddress", request.getRegistrationAddress());
+//            }
+//            if (!request.getResidentialAddress().isEmpty() || !request.getResidentialAddress().isBlank()) {
+//                response.put("ResidentialAddress", request.getResidentialAddress());
+//            }
+            if (request.getPassportIISUE() != null) {
                 response.put("PassportIISUE", request.getPassportIISUE());
             }
-            if (request.getRegistrationAddress() != null) {
+            if (request.getPassportNumber() != null) {
                 response.put("PassportNumber", request.getPassportNumber());
             }
 

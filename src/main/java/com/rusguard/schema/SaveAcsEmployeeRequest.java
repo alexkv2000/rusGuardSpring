@@ -182,7 +182,7 @@ public class SaveAcsEmployeeRequest {
     }
 
     public void setRegistrationAddress(String registrationAddress) {
-        RegistrationAddress = registrationAddress;
+        this.RegistrationAddress = registrationAddress;
     }
 
     public String getResidentialAddress() {
@@ -190,7 +190,7 @@ public class SaveAcsEmployeeRequest {
     }
 
     public void setResidentialAddress(String residentialAddress) {
-        ResidentialAddress = residentialAddress;
+        this.ResidentialAddress = residentialAddress;
     }
 
     public String getPassportIISUE() {
@@ -198,7 +198,7 @@ public class SaveAcsEmployeeRequest {
     }
 
     public void setPassportIISUE(String passportIISUE) {
-        PassportIISUE = passportIISUE;
+        this.PassportIISUE = passportIISUE;
     }
 
     public String getPassportNumber() {
@@ -206,7 +206,7 @@ public class SaveAcsEmployeeRequest {
     }
 
     public void setPassportNumber(String passportNumber) {
-        PassportNumber = passportNumber;
+        this.PassportNumber = passportNumber;
     }
 
     public String getEmail() {
@@ -230,7 +230,7 @@ public class SaveAcsEmployeeRequest {
     }
 
     public void setComment(String comment) {
-        Comment = comment;
+        this.Comment = comment;
     }
 
     public Boolean getIsChangeLocked() {
@@ -238,7 +238,7 @@ public class SaveAcsEmployeeRequest {
     }
 
     public void setIsChangeLocked(Boolean changeLocked) {
-        isChangeLocked = changeLocked;
+        this.isChangeLocked = changeLocked;
     }
 
     public Boolean getIsChangePin() {
@@ -246,6 +246,6 @@ public class SaveAcsEmployeeRequest {
     }
 
     public void setIsChangePin(Boolean changePin) {
-        isChangePin = changePin;
+        this.isChangePin = changePin;
     }
 }

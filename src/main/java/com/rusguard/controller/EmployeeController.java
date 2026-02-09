@@ -29,7 +29,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.management.openmbean.TabularData;
 import java.util.*;
 
 @RestController
@@ -652,7 +651,7 @@ public class EmployeeController {
                                                                                                  "lastName":"Иванов",
                                                                                                  "secondName":"Иванович",
                                                                                                  "tabelNumber": 7000003,
-                                                                                                 "Comment":"Коментарий к сотруднику",
+                                                                                                 "Comment":"Комментарий к сотруднику",
                                                                                                  "RegistrationAddress":"Адрес регистрации: Проспект Мира, д.1, кв.8",
                                                                                                  "ResidentialAddress":"Адрес проживания: Проспект Мира, д.1, кв.8",
                                                                                                  "PassportIISUE":"7710",
@@ -668,6 +667,7 @@ public class EmployeeController {
                                                                @RequestBody SaveAcsEmployeeRequest request) {
         try {
             // Вызов сервиса с передачей DTO
+//            Map<String, Object> result = employeeService.saveAcsEmployee(idEmployee, request);
             Map<String, Object> result = employeeService.saveAcsEmployee(idEmployee, request);
 
             // Проверяем статус операции
