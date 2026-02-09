@@ -835,7 +835,8 @@
     let selectedGroupId = null;
     let selectedEmployeeId = null;
     let employeesDataTable = null;
-
+    // Глобальные переменные для поиска
+    let searchMode = null; // 'fio' или 'tabel' или null
     // Инициализация при загрузке страницы
     $(document).ready(function () {
         // Установка текущей даты в поле выбора даты
@@ -1609,6 +1610,7 @@
                 "url": "//cdn.datatables.net/plug-ins/1.13.6/i18n/ru.json"
             },
             "dom": '<"top"f>rt<"bottom"ilp><"clear">',
+            "order": [], // Пустой массив = нет сортировки при инициализации
             "columnDefs": [
                 {"orderable": true, "targets": [0, 1, 2]},
                 {"orderable": false, "targets": [3]}
@@ -1683,44 +1685,78 @@
 
         $tree.empty();
 
-        // Инициализируем новое дерево
+        console.log('Строим дерево из данных:', data);
+
+        // Проверяем, есть ли данные для дерева
+        const treeData = transformGroupsToTree(data);
+        console.log('Данные для jsTree:', treeData);
+
+        // Инициализируем новое дерево с оптимизацией
         $tree.jstree({
             'core': {
-                'data': transformGroupsToTree(data),
+                'data': treeData,
                 'themes': {
                     'responsive': true,
                     'dots': true,
                     'icons': true
                 },
-                'check_callback': true
+                'check_callback': true,
+                'multiple': false,
+                'animation': 0,
+                'expand_selected_onload': false // Не разворачиваем автоматически
             },
-            'plugins': ['wholerow'],
+            'plugins': ['wholerow', 'types'],
             'types': {
                 'default': {
                     'icon': 'bi bi-folder'
                 }
             }
+        }).on('ready.jstree', function() {
+            // После загрузки дерева показываем сообщение о завершении
+            console.log('Дерево групп загружено успешно');
         });
 
         // Подписываемся на события
-        $tree.on('select_node.jstree', handleTreeSelect);
+        $tree.off('select_node.jstree'); // Убираем старые обработчики
+        $tree.on('select_node.jstree', function(e, data) {
+            console.log('Выбран узел дерева:', data.node);
+            if (data && data.node) {
+                selectedGroupId = data.node.id;
+                const groupName = data.node.text;
+                console.log('Выбрана группа:', groupName, 'ID:', selectedGroupId);
 
-        // Разворачиваем все узлы после загрузки
-        setTimeout(() => {
-            $tree.jstree('open_all');
-        }, 100);
+                // Обновляем информацию о группе в модальном окне (если оно открыто)
+                if ($('#addEmployeeModal').is(':visible')) {
+                    $('#addEmployeeGroupId').val(selectedGroupId);
+                    $('#groupNameDisplay').text(`Сотрудник будет добавлен в группу: ${groupName}`);
+                }
+
+                // Загружаем сотрудников выбранной группы
+                loadEmployeesByGroup(selectedGroupId);
+            }
+        });
+
+        // Не разворачиваем узлы автоматически - оставляем свернутыми для лучшей производительности
+        console.log('Дерево готово, узлы не разворачиваются автоматически');
     }
 
     function transformGroupsToTree(data) {
-        if (!data) return [];
+        console.log('Преобразование данных для дерева:', data);
+
+        if (!data) {
+            console.warn('Нет данных для дерева');
+            return [];
+        }
 
         // Если данные приходят в формате { "groups": [...] }
         if (data.groups && Array.isArray(data.groups)) {
+            console.log('Используем data.groups, количество:', data.groups.length);
             return transformGroupsArray(data.groups);
         }
 
         // Если данные приходят сразу как массив
         if (Array.isArray(data)) {
+            console.log('Используем data как массив, количество:', data.length);
             return transformGroupsArray(data);
         }
 
@@ -1730,19 +1766,28 @@
 
     function transformGroupsArray(groups) {
         if (!groups || !Array.isArray(groups)) {
+            console.warn('Нет групп или не массив:', groups);
             return [];
         }
 
+        console.log('Преобразование массива групп, количество:', groups.length);
+
         return groups.map(group => {
+            console.log('Обработка группы:', group);
+
             const node = {
-                id: group.id,
-                text: group.name || 'Без названия',
-                icon: "bi bi-folder"
+                id: group.id || group.ID || '',
+                text: group.text || group.name || group.Name || 'Без названия',
+                icon: group.icon || "bi bi-folder",
+                children: []
             };
 
             // Если есть подгруппы
             if (group.children && Array.isArray(group.children) && group.children.length > 0) {
+                console.log('У группы есть дети:', group.children.length);
                 node.children = transformGroupsArray(group.children);
+            } else if (group.children === false) {
+                node.children = false;
             } else {
                 node.children = false;
             }
@@ -1835,8 +1880,9 @@
             const row = createEmployeeRow(employee);
             employeesDataTable.row.add($(row));
         });
-
-        employeesDataTable.draw();
+// ВАЖНО: Сбрасываем сортировку перед отрисовкой
+        employeesDataTable.order([]).draw();
+        // employeesDataTable.draw();
 
         // Корректируем размеры после отрисовки
         setTimeout(() => {
@@ -2844,8 +2890,6 @@
         console.log('Загрузка отчетов...');
     }
 
-    // Глобальные переменные для поиска
-    let searchMode = null; // 'fio' или 'tabel' или null
 
     // Выполняет поиск по введенным данным
     function performSearch() {
