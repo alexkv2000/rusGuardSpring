@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход в систему (Active Directory)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #5a67d8;
+        }
+        .test-links {
+            margin-top: 25px;
+            text-align: center;
+        }
+        .test-links a {
+            display: block;
+            margin: 10px 0;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .test-links a:hover {
+            text-decoration: underline;
+        }
+        .message {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .error {
+            background: #fee;
+            color: #c33;
+            border: 1px solid #fcc;
+        }
+        .success {
+            background: #efe;
+            color: #3a3;
+            border: 1px solid #cfc;
+        }
+        .info {
+            background: #eef;
+            color: #36a;
+            border: 1px solid #ccf;
+        }
+        .api-result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h1>Вход через Active Directory</h1>
+
+    <!-- Сообщения об ошибках/успехе -->
+    <div id="message" class="message" style="display: none;"></div>
+
+    <!-- Форма логина -->
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username"
+                   placeholder="DVStorage или DOMAIN\\DVStorage"
+                   value="DVStorage" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Введите пароль"
+                   value="#Dvstrg2026#Doc@" required>
+        </div>
+        <button type="button" onclick="handleLogin()">Войти</button>
+    </form>
+
+    <!-- Тестовые ссылки -->
+    <div class="test-links">
+<!--        <a href="javascript:void(0)" onclick="testADConfig()">Проверить конфигурацию AD</a>-->
+        <a href="javascript:void(0)" onclick="testPublicAPI()">Тестировать публичные API</a>
+        <a href="javascript:void(0)" onclick="checkSession()">Проверить текущую сессию</a>
+<!--        <a href="/test.html" target="_blank">Открыть полную тестовую страницу</a>-->
+    </div>
+
+    <!-- Результаты API -->
+    <div id="apiResult" class="api-result" style="display: none;"></div>
+</div>
+
+<script>
+    // Показываем сообщения из URL параметров
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('error')) {
+        showMessage('Ошибка аутентификации. Проверьте имя пользователя и пароль.', 'error');
+    }
+    if (urlParams.has('logout')) {
+        showMessage('Вы успешно вышли из системы.', 'success');
+    }
+
+    function showMessage(text, type) {
+        const messageDiv = document.getElementById('message');
+        messageDiv.textContent = text;
+        messageDiv.className = `message ${type}`;
+        messageDiv.style.display = 'block';
+    }
+
+    function showApiResult(data) {
+        const resultDiv = document.getElementById('apiResult');
+        resultDiv.textContent = JSON.stringify(data, null, 2);
+        resultDiv.style.display = 'block';
+    }
+
+    // Обработка логина через форму (стандартный Spring Security)
+    function handleLogin() {
+        const form = document.getElementById('loginForm');
+        form.action = '/api/auth/login';  // URL обработки логина из SecurityConfig
+        form.method = 'POST';
+        form.submit();
+    }
+
+    // Тестирование конфигурации AD через API
+    async function testADConfig() {
+        try {
+            showMessage('Проверяем конфигурацию AD...', 'info');
+            const response = await fetch('/api/ad/config');
+            const data = await response.json();
+
+            if (data.configured) {
+                showMessage(`AD настроен: ${data.adDomain}`, 'success');
+            } else {
+                showMessage('AD не настроен. Проверьте application.properties', 'error');
+            }
+            showApiResult(data);
+        } catch (error) {
+            showMessage('Ошибка при проверке конфигурации', 'error');
+            showApiResult({ error: error.toString() });
+        }
+    }
+
+    // Тестирование публичных API
+    async function testPublicAPI() {
+        try {
+            showMessage('Тестируем публичные API...', 'info');
+
+            const endpoints = [
+                '/api/ad/session-info',
+                "/api/ad/config",
+                '/api/ad/ping'
+            ];
+
+            let results = [];
+            for (const endpoint of endpoints) {
+                try {
+                    const response = await fetch(endpoint);
+                    const data = await response.json();
+                    results.push({ endpoint, status: 'OK', data });
+                } catch (e) {
+                    results.push({ endpoint, status: 'ERROR', error: e.message });
+                }
+            }
+
+            showMessage(`Проверено ${endpoints.length} эндпоинтов`, 'success');
+            showApiResult(results);
+        } catch (error) {
+            showMessage('Ошибка при тестировании API', 'error');
+            showApiResult({ error: error.toString() });
+        }
+    }
+
+    // Проверка текущей сессии
+    async function checkSession() {
+        try {
+            showMessage('Проверяем сессию...', 'info');
+            const response = await fetch('/api/ad/session-info');
+            const data = await response.json();
+
+            if (data.authenticated) {
+                showMessage(`Аутентифицирован как: ${data.username}`, 'success');
+            } else {
+                showMessage('Не аутентифицирован', 'info');
+            }
+            showApiResult(data);
+        } catch (error) {
+            showMessage('Ошибка при проверке сессии', 'error');
+            showApiResult({ error: error.toString() });
+        }
+    }
+
+    // Автоматически проверяем конфигурацию при загрузке страницы
+    window.onload = function() {
+        setTimeout(testADConfig, 500);
+    };
+</script>
+</body>
+</html>
