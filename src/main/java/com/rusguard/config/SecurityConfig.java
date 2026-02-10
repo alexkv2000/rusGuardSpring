@@ -14,6 +14,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
 
 import javax.naming.Context;
 import javax.naming.directory.InitialDirContext;
@@ -28,7 +31,19 @@ public class SecurityConfig {
 
     @Value("${ad.url}")
     private String url;
+    @Bean
+    public CorsFilter corsFilter() {
+        CorsConfiguration config = new CorsConfiguration();
+        config.setAllowCredentials(true);
+        config.addAllowedOriginPattern("*");
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
 
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", config);
+
+        return new CorsFilter(source);
+    }
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -39,7 +54,27 @@ public class SecurityConfig {
                                 "/api/ad/**",       // Все эндпоинты для тестирования AD
                                 "/css/**",               // CSS файлы
                                 "/js/**",               // JavaScript файлы
-                                "/images/**"             // Изображения
+                                "/images/**",             // Изображения
+                                // Все пути Swagger UI и OpenAPI
+                                "/swagger-ui/**",
+                                "/swagger-ui.html",
+                                "/v3/api-docs/**",
+                                "/swagger-resources/**",
+                                "/swagger-resources",
+                                "/webjars/**",
+                                "/configuration/ui",
+                                "/configuration/security",
+
+                                // Пути для Springdoc OpenAPI (если используется)
+                                "/api-docs/**",
+                                "/api-docs",
+                                "/api/terms",
+                                "/api/license",
+                                "/api/health",
+                                "/api/actuator/**",
+
+                                // Пути для Swagger UI index
+                                "/swagger-ui/index.html"
                         ).permitAll()
                         .anyRequest().authenticated() // Все остальное требует аутентификации
                 )
