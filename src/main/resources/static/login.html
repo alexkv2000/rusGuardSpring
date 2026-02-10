@@ -131,7 +131,7 @@
                    placeholder="Введите пароль"
                    value="#Dvstrg2026#Doc@" required>
         </div>
-        <button type="button" onclick="handleLogin()">Войти</button>
+        <button type="button" onclick="handleLoginWithRedirect()">Войти</button>
     </form>
 
     <!-- Тестовые ссылки -->
@@ -169,12 +169,40 @@
         resultDiv.style.display = 'block';
     }
 
-    // Обработка логина через форму (стандартный Spring Security)
-    function handleLogin() {
-        const form = document.getElementById('loginForm');
-        form.action = '/api/auth/login';  // URL обработки логина из SecurityConfig
-        form.method = 'POST';
-        form.submit();
+    
+    // Альтернативный способ обработки логина с проверкой на клиенте
+    async function handleLoginWithRedirect() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        try {
+            // Проверяем группу пользователя
+            const response = await fetch('/api/ad/check-admin-group', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.authenticated) {
+                // Перенаправляем на стандартную страницу, сервер сам решит, куда перенаправить
+                // В реальной реализации сервер должен проверить группу и установить соответствующую сессию
+                const form = document.getElementById('loginForm');
+                form.action = '/api/auth/login';
+                form.method = 'POST';
+                form.submit();
+            } else {
+                showMessage('Ошибка аутентификации: ' + (data.error || 'Неверные учетные данные'), 'error');
+            }
+        } catch (error) {
+            showMessage('Ошибка проверки прав доступа: ' + error.message, 'error');
+        }
     }
 
     // Тестирование конфигурации AD через API
