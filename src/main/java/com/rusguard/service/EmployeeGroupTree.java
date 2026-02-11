@@ -11,8 +11,8 @@ public class EmployeeGroupTree {
     public Set<String> visitedIds;
 
     public static <E> EmployeeGroupTreeDto buildGroupTree(AcsEmployeeGroup group,
-                                                Map<String, AcsEmployeeGroup> groupsMap,
-                                                Set<String> visitedIds) {
+                                                          Map<String, AcsEmployeeGroup> groupsMap,
+                                                          Set<String> visitedIds) {
 
         if (group == null || group.getID() == null) {
             System.out.println("Skipping null group or group with null ID");

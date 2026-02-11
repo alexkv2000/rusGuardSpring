@@ -1,0 +1,97 @@
+
+package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities;
+
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlType;
+
+
+/**
+ * 
+ * 
+ * <p>Java class for AcsAccessPointType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="AcsAccessPointType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="Unknown"/>
+ *     <enumeration value="Door"/>
+ *     <enumeration value="OneSidedDoor"/>
+ *     <enumeration value="Tourniquet"/>
+ *     <enumeration value="Gate"/>
+ *     <enumeration value="Locker"/>
+ *     <enumeration value="KeyCabinet"/>
+ *     <enumeration value="RoomKey"/>
+ *     <enumeration value="FaceController"/>
+ *     <enumeration value="Gateway"/>
+ *     <enumeration value="PostOfficeBoxCell"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
+ * 
+ */
+@XmlType(name = "AcsAccessPointType", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver")
+@XmlEnum
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+public enum AcsAccessPointType {
+
+    @XmlEnumValue("Unknown")
+    UNKNOWN("Unknown"),
+    @XmlEnumValue("Door")
+    DOOR("Door"),
+    @XmlEnumValue("OneSidedDoor")
+    ONE_SIDED_DOOR("OneSidedDoor"),
+    @XmlEnumValue("Tourniquet")
+    TOURNIQUET("Tourniquet"),
+    @XmlEnumValue("Gate")
+    GATE("Gate"),
+    @XmlEnumValue("Locker")
+    LOCKER("Locker"),
+    @XmlEnumValue("KeyCabinet")
+    KEY_CABINET("KeyCabinet"),
+    @XmlEnumValue("RoomKey")
+    ROOM_KEY("RoomKey"),
+    @XmlEnumValue("FaceController")
+    FACE_CONTROLLER("FaceController"),
+    @XmlEnumValue("Gateway")
+    GATEWAY("Gateway"),
+    @XmlEnumValue("PostOfficeBoxCell")
+    POST_OFFICE_BOX_CELL("PostOfficeBoxCell");
+    private final String value;
+
+    AcsAccessPointType(String v) {
+        value = v;
+    }
+
+    /**
+     * Gets the value associated to the enum constant.
+     * 
+     * @return
+     *     The value linked to the enum.
+     */
+    public String value() {
+        return value;
+    }
+
+    /**
+     * Gets the enum associated to the value passed as parameter.
+     * 
+     * @param v
+     *     The value to get the enum from.
+     * @return
+     *     The enum which corresponds to the value, if it exists.
+     * @throws IllegalArgumentException
+     *     If no value matches in the enum declaration.
+     */
+    public static AcsAccessPointType fromValue(String v) {
+        for (AcsAccessPointType c: AcsAccessPointType.values()) {
+            if (c.value.equals(v)) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException(v);
+    }
+
+}

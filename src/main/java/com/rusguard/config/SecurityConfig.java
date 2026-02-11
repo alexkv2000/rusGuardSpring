@@ -17,12 +17,16 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
+import java.util.stream.Collectors;
 
 import javax.naming.Context;
 import javax.naming.directory.InitialDirContext;
 import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Objects;
 
 @Configuration
 public class SecurityConfig {
@@ -31,6 +35,7 @@ public class SecurityConfig {
 
     @Value("${ad.url}")
     private String url;
+
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
@@ -44,6 +49,7 @@ public class SecurityConfig {
 
         return new CorsFilter(source);
     }
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -115,7 +121,8 @@ public class SecurityConfig {
     public static class CustomLdapAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
         private final String domain;
         private final String url;
-
+        @Value("${app.security.allowed-users:}")
+        private String allowedUsersConfig;
         public CustomLdapAuthenticationProvider(String domain, String url) {
             this.domain = domain;
             this.url = url;
@@ -125,10 +132,44 @@ public class SecurityConfig {
         protected void additionalAuthenticationChecks(UserDetails userDetails,
                                                       UsernamePasswordAuthenticationToken authentication)
                 throws AuthenticationException {
-            // Здесь мы пробуем bind с разными форматами principal, как в тестовом коде
-            String username = authentication.getName();
+
+            // 1. Извлекаем креды
             String password = (String) authentication.getCredentials();
 
+            // 2. ЯВНАЯ ПРОВЕРКА: Пароль не должен быть null или пустым
+            if (password == null || password.trim().isEmpty()) {
+                // Логируем попытку входа с пустым паролем (желательно через нормальный логгер, а не System.out)
+                // System.out.println("Попытка входа с пустым паролем для пользователя: " + authentication.getName());
+
+                // Выбрасываем исключение. Spring Security перехватит его и отправит на failureUrl
+                throw new org.springframework.security.authentication.BadCredentialsException(
+                        "Пароль не может быть пустым (additionalAuthenticationChecks)");
+            }
+
+
+            // Здесь мы пробуем bind с разными форматами principal, как в тестовом коде
+            String username = authentication.getName();
+            password = (String) authentication.getCredentials();
+
+            // Если список разрешенных пользователей сконфигурирован (не пустой)
+            if (allowedUsersConfig != null && !allowedUsersConfig.trim().isEmpty()) {
+
+                // 1. Разбиваем строку по запятой
+                // 2. Обрезаем пробелы (.trim()) у каждого имени, чтобы "User , Admin" работало
+                // 3. Приводим к верхнему регистру для регистронезависимого сравнения
+                // 4. Собираем в Set для быстрого поиска (O(1))
+                boolean isAllowed = Arrays.stream(allowedUsersConfig.split(","))
+                        .map(String::trim)
+                        .map(String::toUpperCase)
+                        .collect(Collectors.toSet())
+                        .contains(username.toUpperCase());
+
+                if (!isAllowed) {
+                    System.out.println("❌ Пользователь " + username + " не находится в списке разрешенных (Whitelist).");
+                    throw new org.springframework.security.authentication.BadCredentialsException(
+                            "У пользователя " + username + " нет доступа к этой системе.");
+                }
+            }
             // Пробуем разные форматы имени пользователя (как в тестовом)
             String[] principalFormats = {
 //                    username + "@" + domain.toLowerCase(),
@@ -158,7 +199,7 @@ public class SecurityConfig {
                 } catch (Exception e) {
                     lastException = e;
                     // Логируем ошибки, как в тестовом коде
-                    System.out.println("❌ Ошибка для principal '" + principal + "': " + e.getClass().getSimpleName());
+                    System.out.println("❌ Ошибка для principal (additionalAuthenticationChecks) '" + principal + "': " + e.getClass().getSimpleName());
                     System.out.println("   Сообщение: " + e.getMessage());
                     Throwable cause = e.getCause();
                     while (cause != null) {
@@ -179,9 +220,9 @@ public class SecurityConfig {
         protected UserDetails retrieveUser(String username, UsernamePasswordAuthenticationToken authentication)
                 throws AuthenticationException {
             // Возвращаем минимальный UserDetails (поскольку bind уже прошёл)
-            String pass = (String) authentication.getCredentials();
+//            String pass = (String) authentication.getCredentials();
             return new org.springframework.security.core.userdetails.User(
-                    username, pass, List.of(new SimpleGrantedAuthority("ROLE_USER")));
+                    username, "", List.of(new SimpleGrantedAuthority("ROLE_USER")));
         }
     }
 }

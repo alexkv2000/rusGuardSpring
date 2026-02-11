@@ -1,0 +1,166 @@
+
+package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities;
+
+import javax.xml.datatype.XMLGregorianCalendar;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElementRef;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for LResourceProperty complex type</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * 
+ * <pre>{@code
+ * <complexType name="LResourceProperty">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="LastUpdated" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *         <element name="PropertyName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="ResourceId" type="{http://schemas.microsoft.com/2003/10/Serialization/}guid" minOccurs="0"/>
+ *         <element name="ResourceType" type="{http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity}ResourceType" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "LResourceProperty", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity", propOrder = {
+    "lastUpdated",
+    "propertyName",
+    "resourceId",
+    "resourceType"
+})
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+public class LResourceProperty {
+
+    @XmlElement(name = "LastUpdated", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity")
+    @XmlSchemaType(name = "dateTime")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    protected XMLGregorianCalendar lastUpdated;
+    @XmlElementRef(name = "PropertyName", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity", type = JAXBElement.class, required = false)
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    protected JAXBElement<String> propertyName;
+    @XmlElement(name = "ResourceId", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    protected String resourceId;
+    @XmlElement(name = "ResourceType", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity")
+    @XmlSchemaType(name = "string")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    protected ResourceType resourceType;
+
+    /**
+     * Gets the value of the lastUpdated property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public XMLGregorianCalendar getLastUpdated() {
+        return lastUpdated;
+    }
+
+    /**
+     * Sets the value of the lastUpdated property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public void setLastUpdated(XMLGregorianCalendar value) {
+        this.lastUpdated = value;
+    }
+
+    /**
+     * Gets the value of the propertyName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public JAXBElement<String> getPropertyName() {
+        return propertyName;
+    }
+
+    /**
+     * Sets the value of the propertyName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public void setPropertyName(JAXBElement<String> value) {
+        this.propertyName = value;
+    }
+
+    /**
+     * Gets the value of the resourceId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public String getResourceId() {
+        return resourceId;
+    }
+
+    /**
+     * Sets the value of the resourceId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public void setResourceId(String value) {
+        this.resourceId = value;
+    }
+
+    /**
+     * Gets the value of the resourceType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ResourceType }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public ResourceType getResourceType() {
+        return resourceType;
+    }
+
+    /**
+     * Sets the value of the resourceType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ResourceType }
+     *     
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+    public void setResourceType(ResourceType value) {
+        this.resourceType = value;
+    }
+
+}

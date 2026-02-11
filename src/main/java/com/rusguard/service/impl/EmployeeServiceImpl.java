@@ -1799,7 +1799,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 //            Map<String, String> groupsMap = new HashMap<>();
             for (LEmployeePositionInfo lEmployeePositionInfo : filteredList) {
 //                if (groupsMap.put(lEmployeePositionInfo.getID(), lEmployeePositionInfo.getName().getValue()) != null) {
-                    result.put(lEmployeePositionInfo.getID(),lEmployeePositionInfo.getName().getValue());
+                result.put(lEmployeePositionInfo.getID(),lEmployeePositionInfo.getName().getValue());
 //                    throw new IllegalStateException("Duplicate key");
 //                }
             }

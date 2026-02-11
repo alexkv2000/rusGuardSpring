@@ -1,0 +1,51 @@
+
+package org.datacontract.schemas._2004._07.system;
+
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlSeeAlso;
+import jakarta.xml.bind.annotation.XmlType;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.AssignmentAcsKeyException;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.DataAlreadyExistsException;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.DataConsistencyException;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.DataNotFoundException;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.DriverNotFoundException;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.DriverVisualStyleNotFoundException;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.RemoveCardTypeException;
+
+
+/**
+ * <p>Java class for ApplicationException complex type</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * 
+ * <pre>{@code
+ * <complexType name="ApplicationException">
+ *   <complexContent>
+ *     <extension base="{http://schemas.datacontract.org/2004/07/System}Exception">
+ *     </extension>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "ApplicationException", namespace = "http://schemas.datacontract.org/2004/07/System")
+@XmlSeeAlso({
+    DataNotFoundException.class,
+    DataAlreadyExistsException.class,
+    DataConsistencyException.class,
+    DriverNotFoundException.class,
+    DriverVisualStyleNotFoundException.class,
+    RemoveCardTypeException.class,
+    AssignmentAcsKeyException.class
+})
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+public class ApplicationException
+    extends Exception
+{
+
+
+}
