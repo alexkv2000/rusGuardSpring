@@ -1,12 +1,12 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_report;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.ArrayOfBranchInfo;
 
 
@@ -14,7 +14,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_report package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -25,7 +25,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _ArrayOfIncidentTypeInfo_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", "ArrayOfIncidentTypeInfo");
@@ -51,8 +51,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfIncidentTypeInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfIncidentTypeInfo }
      */
     public ArrayOfIncidentTypeInfo createArrayOfIncidentTypeInfo() {
         return new ArrayOfIncidentTypeInfo();
@@ -61,8 +59,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentStatisticData }
      * 
-     * @return
-     *     the new instance of {@link IncidentStatisticData }
      */
     public IncidentStatisticData createIncidentStatisticData() {
         return new IncidentStatisticData();
@@ -71,8 +67,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentTypeInfo }
      * 
-     * @return
-     *     the new instance of {@link IncidentTypeInfo }
      */
     public IncidentTypeInfo createIncidentTypeInfo() {
         return new IncidentTypeInfo();
@@ -88,7 +82,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "ArrayOfIncidentTypeInfo")
     public JAXBElement<ArrayOfIncidentTypeInfo> createArrayOfIncidentTypeInfo(ArrayOfIncidentTypeInfo value) {
-        return new JAXBElement<>(_ArrayOfIncidentTypeInfo_QNAME, ArrayOfIncidentTypeInfo.class, null, value);
+        return new JAXBElement<ArrayOfIncidentTypeInfo>(_ArrayOfIncidentTypeInfo_QNAME, ArrayOfIncidentTypeInfo.class, null, value);
     }
 
     /**
@@ -101,7 +95,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "IncidentTypeInfo")
     public JAXBElement<IncidentTypeInfo> createIncidentTypeInfo(IncidentTypeInfo value) {
-        return new JAXBElement<>(_IncidentTypeInfo_QNAME, IncidentTypeInfo.class, null, value);
+        return new JAXBElement<IncidentTypeInfo>(_IncidentTypeInfo_QNAME, IncidentTypeInfo.class, null, value);
     }
 
     /**
@@ -114,7 +108,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "IncidentStatisticData")
     public JAXBElement<IncidentStatisticData> createIncidentStatisticData(IncidentStatisticData value) {
-        return new JAXBElement<>(_IncidentStatisticData_QNAME, IncidentStatisticData.class, null, value);
+        return new JAXBElement<IncidentStatisticData>(_IncidentStatisticData_QNAME, IncidentStatisticData.class, null, value);
     }
 
     /**
@@ -127,7 +121,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "Extension")
     public JAXBElement<Extension> createExtension(Extension value) {
-        return new JAXBElement<>(_Extension_QNAME, Extension.class, null, value);
+        return new JAXBElement<Extension>(_Extension_QNAME, Extension.class, null, value);
     }
 
     /**
@@ -140,7 +134,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "Branches", scope = IncidentStatisticData.class)
     public JAXBElement<ArrayOfBranchInfo> createIncidentStatisticDataBranches(ArrayOfBranchInfo value) {
-        return new JAXBElement<>(_IncidentStatisticDataBranches_QNAME, ArrayOfBranchInfo.class, IncidentStatisticData.class, value);
+        return new JAXBElement<ArrayOfBranchInfo>(_IncidentStatisticDataBranches_QNAME, ArrayOfBranchInfo.class, IncidentStatisticData.class, value);
     }
 
     /**
@@ -153,7 +147,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "ImportantIncidentTypeIds", scope = IncidentStatisticData.class)
     public JAXBElement<ArrayOfguid> createIncidentStatisticDataImportantIncidentTypeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_IncidentStatisticDataImportantIncidentTypeIds_QNAME, ArrayOfguid.class, IncidentStatisticData.class, value);
+        return new JAXBElement<ArrayOfguid>(_IncidentStatisticDataImportantIncidentTypeIds_QNAME, ArrayOfguid.class, IncidentStatisticData.class, value);
     }
 
     /**
@@ -166,7 +160,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "IncidentReportName", scope = IncidentStatisticData.class)
     public JAXBElement<String> createIncidentStatisticDataIncidentReportName(String value) {
-        return new JAXBElement<>(_IncidentStatisticDataIncidentReportName_QNAME, String.class, IncidentStatisticData.class, value);
+        return new JAXBElement<String>(_IncidentStatisticDataIncidentReportName_QNAME, String.class, IncidentStatisticData.class, value);
     }
 
     /**
@@ -179,7 +173,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "IncidentsDescription", scope = IncidentStatisticData.class)
     public JAXBElement<String> createIncidentStatisticDataIncidentsDescription(String value) {
-        return new JAXBElement<>(_IncidentStatisticDataIncidentsDescription_QNAME, String.class, IncidentStatisticData.class, value);
+        return new JAXBElement<String>(_IncidentStatisticDataIncidentsDescription_QNAME, String.class, IncidentStatisticData.class, value);
     }
 
     /**
@@ -192,7 +186,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "Organizaion", scope = IncidentStatisticData.class)
     public JAXBElement<String> createIncidentStatisticDataOrganizaion(String value) {
-        return new JAXBElement<>(_IncidentStatisticDataOrganizaion_QNAME, String.class, IncidentStatisticData.class, value);
+        return new JAXBElement<String>(_IncidentStatisticDataOrganizaion_QNAME, String.class, IncidentStatisticData.class, value);
     }
 
     /**
@@ -205,7 +199,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "OtherIncidentTypeIds", scope = IncidentStatisticData.class)
     public JAXBElement<ArrayOfguid> createIncidentStatisticDataOtherIncidentTypeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_IncidentStatisticDataOtherIncidentTypeIds_QNAME, ArrayOfguid.class, IncidentStatisticData.class, value);
+        return new JAXBElement<ArrayOfguid>(_IncidentStatisticDataOtherIncidentTypeIds_QNAME, ArrayOfguid.class, IncidentStatisticData.class, value);
     }
 
     /**
@@ -218,7 +212,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "OtherIncidents", scope = IncidentStatisticData.class)
     public JAXBElement<String> createIncidentStatisticDataOtherIncidents(String value) {
-        return new JAXBElement<>(_IncidentStatisticDataOtherIncidents_QNAME, String.class, IncidentStatisticData.class, value);
+        return new JAXBElement<String>(_IncidentStatisticDataOtherIncidents_QNAME, String.class, IncidentStatisticData.class, value);
     }
 
     /**
@@ -231,7 +225,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report.Incidents", name = "Place", scope = IncidentStatisticData.class)
     public JAXBElement<String> createIncidentStatisticDataPlace(String value) {
-        return new JAXBElement<>(_IncidentStatisticDataPlace_QNAME, String.class, IncidentStatisticData.class, value);
+        return new JAXBElement<String>(_IncidentStatisticDataPlace_QNAME, String.class, IncidentStatisticData.class, value);
     }
 
 }

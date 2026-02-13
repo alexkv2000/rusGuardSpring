@@ -1,12 +1,12 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_workplace;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.ArrayOfWorkZoneSlimInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.PhotoOrder;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_screenlayout_cellcontent.ArrayOfPhotoidentificationPersonalData;
@@ -16,7 +16,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_workplace package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -27,7 +27,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _RemoteTerminalInfo_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", "RemoteTerminalInfo");
@@ -77,8 +77,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoteTerminalInfo }
      * 
-     * @return
-     *     the new instance of {@link RemoteTerminalInfo }
      */
     public RemoteTerminalInfo createRemoteTerminalInfo() {
         return new RemoteTerminalInfo();
@@ -87,8 +85,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfMapInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfMapInfo }
      */
     public ArrayOfMapInfo createArrayOfMapInfo() {
         return new ArrayOfMapInfo();
@@ -97,8 +93,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MapInfo }
      * 
-     * @return
-     *     the new instance of {@link MapInfo }
      */
     public MapInfo createMapInfo() {
         return new MapInfo();
@@ -107,8 +101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link VisitorsScoreboardWorkplaceModuleInfo }
      * 
-     * @return
-     *     the new instance of {@link VisitorsScoreboardWorkplaceModuleInfo }
      */
     public VisitorsScoreboardWorkplaceModuleInfo createVisitorsScoreboardWorkplaceModuleInfo() {
         return new VisitorsScoreboardWorkplaceModuleInfo();
@@ -117,8 +109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link VisitorsScoreboardWorkplaceModuleSaveData }
      * 
-     * @return
-     *     the new instance of {@link VisitorsScoreboardWorkplaceModuleSaveData }
      */
     public VisitorsScoreboardWorkplaceModuleSaveData createVisitorsScoreboardWorkplaceModuleSaveData() {
         return new VisitorsScoreboardWorkplaceModuleSaveData();
@@ -127,8 +117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkZoneVisitorsCountDTO }
      * 
-     * @return
-     *     the new instance of {@link WorkZoneVisitorsCountDTO }
      */
     public WorkZoneVisitorsCountDTO createWorkZoneVisitorsCountDTO() {
         return new WorkZoneVisitorsCountDTO();
@@ -137,8 +125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoteTerminalSaveData }
      * 
-     * @return
-     *     the new instance of {@link RemoteTerminalSaveData }
      */
     public RemoteTerminalSaveData createRemoteTerminalSaveData() {
         return new RemoteTerminalSaveData();
@@ -147,8 +133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MapSaveData }
      * 
-     * @return
-     *     the new instance of {@link MapSaveData }
      */
     public MapSaveData createMapSaveData() {
         return new MapSaveData();
@@ -157,8 +141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DriverFigureSaveData }
      * 
-     * @return
-     *     the new instance of {@link DriverFigureSaveData }
      */
     public DriverFigureSaveData createDriverFigureSaveData() {
         return new DriverFigureSaveData();
@@ -167,8 +149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DriverFigureInfo }
      * 
-     * @return
-     *     the new instance of {@link DriverFigureInfo }
      */
     public DriverFigureInfo createDriverFigureInfo() {
         return new DriverFigureInfo();
@@ -177,8 +157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDriverFigureInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDriverFigureInfo }
      */
     public ArrayOfDriverFigureInfo createArrayOfDriverFigureInfo() {
         return new ArrayOfDriverFigureInfo();
@@ -194,7 +172,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "RemoteTerminalInfo")
     public JAXBElement<RemoteTerminalInfo> createRemoteTerminalInfo(RemoteTerminalInfo value) {
-        return new JAXBElement<>(_RemoteTerminalInfo_QNAME, RemoteTerminalInfo.class, null, value);
+        return new JAXBElement<RemoteTerminalInfo>(_RemoteTerminalInfo_QNAME, RemoteTerminalInfo.class, null, value);
     }
 
     /**
@@ -207,7 +185,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "RemoteTerminalSaveData")
     public JAXBElement<RemoteTerminalSaveData> createRemoteTerminalSaveData(RemoteTerminalSaveData value) {
-        return new JAXBElement<>(_RemoteTerminalSaveData_QNAME, RemoteTerminalSaveData.class, null, value);
+        return new JAXBElement<RemoteTerminalSaveData>(_RemoteTerminalSaveData_QNAME, RemoteTerminalSaveData.class, null, value);
     }
 
     /**
@@ -220,7 +198,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "ArrayOfMapInfo")
     public JAXBElement<ArrayOfMapInfo> createArrayOfMapInfo(ArrayOfMapInfo value) {
-        return new JAXBElement<>(_ArrayOfMapInfo_QNAME, ArrayOfMapInfo.class, null, value);
+        return new JAXBElement<ArrayOfMapInfo>(_ArrayOfMapInfo_QNAME, ArrayOfMapInfo.class, null, value);
     }
 
     /**
@@ -233,7 +211,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "MapInfo")
     public JAXBElement<MapInfo> createMapInfo(MapInfo value) {
-        return new JAXBElement<>(_MapInfo_QNAME, MapInfo.class, null, value);
+        return new JAXBElement<MapInfo>(_MapInfo_QNAME, MapInfo.class, null, value);
     }
 
     /**
@@ -246,7 +224,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "MapSaveData")
     public JAXBElement<MapSaveData> createMapSaveData(MapSaveData value) {
-        return new JAXBElement<>(_MapSaveData_QNAME, MapSaveData.class, null, value);
+        return new JAXBElement<MapSaveData>(_MapSaveData_QNAME, MapSaveData.class, null, value);
     }
 
     /**
@@ -259,7 +237,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "ArrayOfDriverFigureInfo")
     public JAXBElement<ArrayOfDriverFigureInfo> createArrayOfDriverFigureInfo(ArrayOfDriverFigureInfo value) {
-        return new JAXBElement<>(_ArrayOfDriverFigureInfo_QNAME, ArrayOfDriverFigureInfo.class, null, value);
+        return new JAXBElement<ArrayOfDriverFigureInfo>(_ArrayOfDriverFigureInfo_QNAME, ArrayOfDriverFigureInfo.class, null, value);
     }
 
     /**
@@ -272,7 +250,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "DriverFigureInfo")
     public JAXBElement<DriverFigureInfo> createDriverFigureInfo(DriverFigureInfo value) {
-        return new JAXBElement<>(_DriverFigureInfo_QNAME, DriverFigureInfo.class, null, value);
+        return new JAXBElement<DriverFigureInfo>(_DriverFigureInfo_QNAME, DriverFigureInfo.class, null, value);
     }
 
     /**
@@ -285,7 +263,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "DriverFigureSaveData")
     public JAXBElement<DriverFigureSaveData> createDriverFigureSaveData(DriverFigureSaveData value) {
-        return new JAXBElement<>(_DriverFigureSaveData_QNAME, DriverFigureSaveData.class, null, value);
+        return new JAXBElement<DriverFigureSaveData>(_DriverFigureSaveData_QNAME, DriverFigureSaveData.class, null, value);
     }
 
     /**
@@ -298,7 +276,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "VisitorsScoreboardWorkplaceModuleInfo")
     public JAXBElement<VisitorsScoreboardWorkplaceModuleInfo> createVisitorsScoreboardWorkplaceModuleInfo(VisitorsScoreboardWorkplaceModuleInfo value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleInfo_QNAME, VisitorsScoreboardWorkplaceModuleInfo.class, null, value);
+        return new JAXBElement<VisitorsScoreboardWorkplaceModuleInfo>(_VisitorsScoreboardWorkplaceModuleInfo_QNAME, VisitorsScoreboardWorkplaceModuleInfo.class, null, value);
     }
 
     /**
@@ -311,7 +289,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "VisitorsScoreboardWorkplaceModuleSaveData")
     public JAXBElement<VisitorsScoreboardWorkplaceModuleSaveData> createVisitorsScoreboardWorkplaceModuleSaveData(VisitorsScoreboardWorkplaceModuleSaveData value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveData_QNAME, VisitorsScoreboardWorkplaceModuleSaveData.class, null, value);
+        return new JAXBElement<VisitorsScoreboardWorkplaceModuleSaveData>(_VisitorsScoreboardWorkplaceModuleSaveData_QNAME, VisitorsScoreboardWorkplaceModuleSaveData.class, null, value);
     }
 
     /**
@@ -324,7 +302,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "WorkZoneVisitorsCountDTO")
     public JAXBElement<WorkZoneVisitorsCountDTO> createWorkZoneVisitorsCountDTO(WorkZoneVisitorsCountDTO value) {
-        return new JAXBElement<>(_WorkZoneVisitorsCountDTO_QNAME, WorkZoneVisitorsCountDTO.class, null, value);
+        return new JAXBElement<WorkZoneVisitorsCountDTO>(_WorkZoneVisitorsCountDTO_QNAME, WorkZoneVisitorsCountDTO.class, null, value);
     }
 
     /**
@@ -337,7 +315,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "DriverAlias", scope = DriverFigureInfo.class)
     public JAXBElement<String> createDriverFigureInfoDriverAlias(String value) {
-        return new JAXBElement<>(_DriverFigureInfoDriverAlias_QNAME, String.class, DriverFigureInfo.class, value);
+        return new JAXBElement<String>(_DriverFigureInfoDriverAlias_QNAME, String.class, DriverFigureInfo.class, value);
     }
 
     /**
@@ -350,7 +328,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "DriverAssemblyQualifiedName", scope = DriverFigureInfo.class)
     public JAXBElement<String> createDriverFigureInfoDriverAssemblyQualifiedName(String value) {
-        return new JAXBElement<>(_DriverFigureInfoDriverAssemblyQualifiedName_QNAME, String.class, DriverFigureInfo.class, value);
+        return new JAXBElement<String>(_DriverFigureInfoDriverAssemblyQualifiedName_QNAME, String.class, DriverFigureInfo.class, value);
     }
 
     /**
@@ -363,7 +341,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "DriverName", scope = DriverFigureInfo.class)
     public JAXBElement<String> createDriverFigureInfoDriverName(String value) {
-        return new JAXBElement<>(_DriverFigureInfoDriverName_QNAME, String.class, DriverFigureInfo.class, value);
+        return new JAXBElement<String>(_DriverFigureInfoDriverName_QNAME, String.class, DriverFigureInfo.class, value);
     }
 
     /**
@@ -376,7 +354,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "Comment", scope = MapSaveData.class)
     public JAXBElement<String> createMapSaveDataComment(String value) {
-        return new JAXBElement<>(_MapSaveDataComment_QNAME, String.class, MapSaveData.class, value);
+        return new JAXBElement<String>(_MapSaveDataComment_QNAME, String.class, MapSaveData.class, value);
     }
 
     /**
@@ -389,7 +367,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "Name", scope = MapSaveData.class)
     public JAXBElement<String> createMapSaveDataName(String value) {
-        return new JAXBElement<>(_MapSaveDataName_QNAME, String.class, MapSaveData.class, value);
+        return new JAXBElement<String>(_MapSaveDataName_QNAME, String.class, MapSaveData.class, value);
     }
 
     /**
@@ -402,7 +380,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "TextWrappingLength", scope = MapSaveData.class)
     public JAXBElement<Integer> createMapSaveDataTextWrappingLength(Integer value) {
-        return new JAXBElement<>(_MapSaveDataTextWrappingLength_QNAME, Integer.class, MapSaveData.class, value);
+        return new JAXBElement<Integer>(_MapSaveDataTextWrappingLength_QNAME, Integer.class, MapSaveData.class, value);
     }
 
     /**
@@ -415,7 +393,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "PersonalData", scope = RemoteTerminalSaveData.class)
     public JAXBElement<ArrayOfPhotoidentificationPersonalData> createRemoteTerminalSaveDataPersonalData(ArrayOfPhotoidentificationPersonalData value) {
-        return new JAXBElement<>(_RemoteTerminalSaveDataPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, RemoteTerminalSaveData.class, value);
+        return new JAXBElement<ArrayOfPhotoidentificationPersonalData>(_RemoteTerminalSaveDataPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, RemoteTerminalSaveData.class, value);
     }
 
     /**
@@ -428,7 +406,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "PhotoContentId", scope = RemoteTerminalSaveData.class)
     public JAXBElement<String> createRemoteTerminalSaveDataPhotoContentId(String value) {
-        return new JAXBElement<>(_RemoteTerminalSaveDataPhotoContentId_QNAME, String.class, RemoteTerminalSaveData.class, value);
+        return new JAXBElement<String>(_RemoteTerminalSaveDataPhotoContentId_QNAME, String.class, RemoteTerminalSaveData.class, value);
     }
 
     /**
@@ -441,7 +419,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "WorkZonesIDS", scope = RemoteTerminalSaveData.class)
     public JAXBElement<ArrayOfguid> createRemoteTerminalSaveDataWorkZonesIDS(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoteTerminalSaveDataWorkZonesIDS_QNAME, ArrayOfguid.class, RemoteTerminalSaveData.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoteTerminalSaveDataWorkZonesIDS_QNAME, ArrayOfguid.class, RemoteTerminalSaveData.class, value);
     }
 
     /**
@@ -454,7 +432,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "BackgroundColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataBackgroundColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataBackgroundColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataBackgroundColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -467,7 +445,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "Caption", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<String> createVisitorsScoreboardWorkplaceModuleSaveDataCaption(String value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataCaption_QNAME, String.class, VisitorsScoreboardWorkplaceModuleSaveData.class, value);
+        return new JAXBElement<String>(_VisitorsScoreboardWorkplaceModuleSaveDataCaption_QNAME, String.class, VisitorsScoreboardWorkplaceModuleSaveData.class, value);
     }
 
     /**
@@ -480,7 +458,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "CaptionColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataCaptionColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataCaptionColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataCaptionColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -493,7 +471,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "EmployeesCountColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataEmployeesCountColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataEmployeesCountColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataEmployeesCountColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -506,7 +484,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "EmployeesCountLabelColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataEmployeesCountLabelColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataEmployeesCountLabelColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataEmployeesCountLabelColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -519,7 +497,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "GuestsCountColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataGuestsCountColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataGuestsCountColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataGuestsCountColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -532,7 +510,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "GuestsCountLabelColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataGuestsCountLabelColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataGuestsCountLabelColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataGuestsCountLabelColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -545,7 +523,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "TotalVisitorsColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataTotalVisitorsColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataTotalVisitorsColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataTotalVisitorsColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -558,7 +536,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "TotalVisitorsLabelColor", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<byte[]> createVisitorsScoreboardWorkplaceModuleSaveDataTotalVisitorsLabelColor(byte[] value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataTotalVisitorsLabelColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_VisitorsScoreboardWorkplaceModuleSaveDataTotalVisitorsLabelColor_QNAME, byte[].class, VisitorsScoreboardWorkplaceModuleSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -571,7 +549,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "WorkZoneID", scope = VisitorsScoreboardWorkplaceModuleSaveData.class)
     public JAXBElement<String> createVisitorsScoreboardWorkplaceModuleSaveDataWorkZoneID(String value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleSaveDataWorkZoneID_QNAME, String.class, VisitorsScoreboardWorkplaceModuleSaveData.class, value);
+        return new JAXBElement<String>(_VisitorsScoreboardWorkplaceModuleSaveDataWorkZoneID_QNAME, String.class, VisitorsScoreboardWorkplaceModuleSaveData.class, value);
     }
 
     /**
@@ -584,7 +562,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.VisitorsScoreboars", name = "WorkZoneName", scope = VisitorsScoreboardWorkplaceModuleInfo.class)
     public JAXBElement<String> createVisitorsScoreboardWorkplaceModuleInfoWorkZoneName(String value) {
-        return new JAXBElement<>(_VisitorsScoreboardWorkplaceModuleInfoWorkZoneName_QNAME, String.class, VisitorsScoreboardWorkplaceModuleInfo.class, value);
+        return new JAXBElement<String>(_VisitorsScoreboardWorkplaceModuleInfoWorkZoneName_QNAME, String.class, VisitorsScoreboardWorkplaceModuleInfo.class, value);
     }
 
     /**
@@ -597,7 +575,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "DriverFigures", scope = MapInfo.class)
     public JAXBElement<ArrayOfDriverFigureInfo> createMapInfoDriverFigures(ArrayOfDriverFigureInfo value) {
-        return new JAXBElement<>(_MapInfoDriverFigures_QNAME, ArrayOfDriverFigureInfo.class, MapInfo.class, value);
+        return new JAXBElement<ArrayOfDriverFigureInfo>(_MapInfoDriverFigures_QNAME, ArrayOfDriverFigureInfo.class, MapInfo.class, value);
     }
 
     /**
@@ -610,7 +588,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "Maps", scope = MapInfo.class)
     public JAXBElement<ArrayOfMapInfo> createMapInfoMaps(ArrayOfMapInfo value) {
-        return new JAXBElement<>(_MapInfoMaps_QNAME, ArrayOfMapInfo.class, MapInfo.class, value);
+        return new JAXBElement<ArrayOfMapInfo>(_MapInfoMaps_QNAME, ArrayOfMapInfo.class, MapInfo.class, value);
     }
 
     /**
@@ -623,7 +601,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.MapsWorkplace", name = "ParentId", scope = MapInfo.class)
     public JAXBElement<String> createMapInfoParentId(String value) {
-        return new JAXBElement<>(_MapInfoParentId_QNAME, String.class, MapInfo.class, value);
+        return new JAXBElement<String>(_MapInfoParentId_QNAME, String.class, MapInfo.class, value);
     }
 
     /**
@@ -636,7 +614,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "PersonalData", scope = RemoteTerminalInfo.class)
     public JAXBElement<ArrayOfPhotoidentificationPersonalData> createRemoteTerminalInfoPersonalData(ArrayOfPhotoidentificationPersonalData value) {
-        return new JAXBElement<>(_RemoteTerminalSaveDataPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, RemoteTerminalInfo.class, value);
+        return new JAXBElement<ArrayOfPhotoidentificationPersonalData>(_RemoteTerminalSaveDataPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, RemoteTerminalInfo.class, value);
     }
 
     /**
@@ -649,7 +627,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "PhotoContent", scope = RemoteTerminalInfo.class)
     public JAXBElement<PhotoOrder> createRemoteTerminalInfoPhotoContent(PhotoOrder value) {
-        return new JAXBElement<>(_RemoteTerminalInfoPhotoContent_QNAME, PhotoOrder.class, RemoteTerminalInfo.class, value);
+        return new JAXBElement<PhotoOrder>(_RemoteTerminalInfoPhotoContent_QNAME, PhotoOrder.class, RemoteTerminalInfo.class, value);
     }
 
     /**
@@ -662,7 +640,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", name = "WorkZones", scope = RemoteTerminalInfo.class)
     public JAXBElement<ArrayOfWorkZoneSlimInfo> createRemoteTerminalInfoWorkZones(ArrayOfWorkZoneSlimInfo value) {
-        return new JAXBElement<>(_RemoteTerminalInfoWorkZones_QNAME, ArrayOfWorkZoneSlimInfo.class, RemoteTerminalInfo.class, value);
+        return new JAXBElement<ArrayOfWorkZoneSlimInfo>(_RemoteTerminalInfoWorkZones_QNAME, ArrayOfWorkZoneSlimInfo.class, RemoteTerminalInfo.class, value);
     }
 
 }

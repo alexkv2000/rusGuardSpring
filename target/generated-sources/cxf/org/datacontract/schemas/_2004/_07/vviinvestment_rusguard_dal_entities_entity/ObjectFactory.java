@@ -2,16 +2,16 @@
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity;
 
 import java.util.List;
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.datatype.Duration;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfint;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsDaySchedule;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeDocumentsData;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeFull;
@@ -29,7 +29,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -40,7 +40,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _ArrayOfLogMsgSubType_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", "ArrayOfLogMsgSubType");
@@ -742,8 +742,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserPassEditorSaveData }
      * 
-     * @return
-     *     the new instance of {@link UserPassEditorSaveData }
      */
     public UserPassEditorSaveData createUserPassEditorSaveData() {
         return new UserPassEditorSaveData();
@@ -752,8 +750,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentTemplateSaveData }
      * 
-     * @return
-     *     the new instance of {@link IncidentTemplateSaveData }
      */
     public IncidentTemplateSaveData createIncidentTemplateSaveData() {
         return new IncidentTemplateSaveData();
@@ -762,8 +758,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLogMsgSubType }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLogMsgSubType }
      */
     public ArrayOfLogMsgSubType createArrayOfLogMsgSubType() {
         return new ArrayOfLogMsgSubType();
@@ -772,8 +766,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfBranchInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfBranchInfo }
      */
     public ArrayOfBranchInfo createArrayOfBranchInfo() {
         return new ArrayOfBranchInfo();
@@ -782,8 +774,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfReportSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfReportSlimInfo }
      */
     public ArrayOfReportSlimInfo createArrayOfReportSlimInfo() {
         return new ArrayOfReportSlimInfo();
@@ -792,8 +782,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionEventsFromDevicesSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionEventsFromDevicesSlimInfo }
      */
     public ReactionEventsFromDevicesSlimInfo createReactionEventsFromDevicesSlimInfo() {
         return new ReactionEventsFromDevicesSlimInfo();
@@ -802,8 +790,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPhotoBankShort }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfPhotoBankShort }
      */
     public ArrayOfPhotoBankShort createArrayOfPhotoBankShort() {
         return new ArrayOfPhotoBankShort();
@@ -812,8 +798,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfWorkTimetableSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfWorkTimetableSlimInfo }
      */
     public ArrayOfWorkTimetableSlimInfo createArrayOfWorkTimetableSlimInfo() {
         return new ArrayOfWorkTimetableSlimInfo();
@@ -822,8 +806,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDayTypeSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDayTypeSlimInfo }
      */
     public ArrayOfDayTypeSlimInfo createArrayOfDayTypeSlimInfo() {
         return new ArrayOfDayTypeSlimInfo();
@@ -832,8 +814,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfWorkScheduleSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfWorkScheduleSlimInfo }
      */
     public ArrayOfWorkScheduleSlimInfo createArrayOfWorkScheduleSlimInfo() {
         return new ArrayOfWorkScheduleSlimInfo();
@@ -842,8 +822,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfWorkZoneSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfWorkZoneSlimInfo }
      */
     public ArrayOfWorkZoneSlimInfo createArrayOfWorkZoneSlimInfo() {
         return new ArrayOfWorkZoneSlimInfo();
@@ -852,8 +830,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfWorkZonesAccessPointSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfWorkZonesAccessPointSlimInfo }
      */
     public ArrayOfWorkZonesAccessPointSlimInfo createArrayOfWorkZonesAccessPointSlimInfo() {
         return new ArrayOfWorkZonesAccessPointSlimInfo();
@@ -862,8 +838,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeePositionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeePositionSlimInfo }
      */
     public ArrayOfEmployeePositionSlimInfo createArrayOfEmployeePositionSlimInfo() {
         return new ArrayOfEmployeePositionSlimInfo();
@@ -872,8 +846,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkZonesData }
      * 
-     * @return
-     *     the new instance of {@link WorkZonesData }
      */
     public WorkZonesData createWorkZonesData() {
         return new WorkZonesData();
@@ -882,8 +854,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkSchedulesData }
      * 
-     * @return
-     *     the new instance of {@link WorkSchedulesData }
      */
     public WorkSchedulesData createWorkSchedulesData() {
         return new WorkSchedulesData();
@@ -892,8 +862,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfWorkplaceInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfWorkplaceInfo }
      */
     public ArrayOfWorkplaceInfo createArrayOfWorkplaceInfo() {
         return new ArrayOfWorkplaceInfo();
@@ -902,8 +870,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSIIDKSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSIIDKSlimInfo }
      */
     public ArrayOfISSIIDKSlimInfo createArrayOfISSIIDKSlimInfo() {
         return new ArrayOfISSIIDKSlimInfo();
@@ -912,8 +878,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSRecognitionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSRecognitionSlimInfo }
      */
     public ArrayOfISSRecognitionSlimInfo createArrayOfISSRecognitionSlimInfo() {
         return new ArrayOfISSRecognitionSlimInfo();
@@ -922,8 +886,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSDriverSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSDriverSlimInfo }
      */
     public ArrayOfISSDriverSlimInfo createArrayOfISSDriverSlimInfo() {
         return new ArrayOfISSDriverSlimInfo();
@@ -932,8 +894,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSSlaveSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSSlaveSlimInfo }
      */
     public ArrayOfISSSlaveSlimInfo createArrayOfISSSlaveSlimInfo() {
         return new ArrayOfISSSlaveSlimInfo();
@@ -942,8 +902,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSDriverEventPlaybackSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSDriverEventPlaybackSlimInfo }
      */
     public ArrayOfISSDriverEventPlaybackSlimInfo createArrayOfISSDriverEventPlaybackSlimInfo() {
         return new ArrayOfISSDriverEventPlaybackSlimInfo();
@@ -952,8 +910,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsConfiguratorInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsConfiguratorInfo }
      */
     public AcsConfiguratorInfo createAcsConfiguratorInfo() {
         return new AcsConfiguratorInfo();
@@ -962,8 +918,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfUidKeyInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfUidKeyInfo }
      */
     public ArrayOfUidKeyInfo createArrayOfUidKeyInfo() {
         return new ArrayOfUidKeyInfo();
@@ -972,8 +926,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UidKeyInfo }
      * 
-     * @return
-     *     the new instance of {@link UidKeyInfo }
      */
     public UidKeyInfo createUidKeyInfo() {
         return new UidKeyInfo();
@@ -982,8 +934,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfMifareProfileInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfMifareProfileInfo }
      */
     public ArrayOfMifareProfileInfo createArrayOfMifareProfileInfo() {
         return new ArrayOfMifareProfileInfo();
@@ -992,8 +942,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MifareProfileFullInfo }
      * 
-     * @return
-     *     the new instance of {@link MifareProfileFullInfo }
      */
     public MifareProfileFullInfo createMifareProfileFullInfo() {
         return new MifareProfileFullInfo();
@@ -1002,8 +950,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ScreenLayoutInfo }
      * 
-     * @return
-     *     the new instance of {@link ScreenLayoutInfo }
      */
     public ScreenLayoutInfo createScreenLayoutInfo() {
         return new ScreenLayoutInfo();
@@ -1012,8 +958,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfIvideonCameraDriverInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfIvideonCameraDriverInfo }
      */
     public ArrayOfIvideonCameraDriverInfo createArrayOfIvideonCameraDriverInfo() {
         return new ArrayOfIvideonCameraDriverInfo();
@@ -1022,8 +966,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmailAddressInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmailAddressInfo }
      */
     public ArrayOfEmailAddressInfo createArrayOfEmailAddressInfo() {
         return new ArrayOfEmailAddressInfo();
@@ -1032,8 +974,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPhoneNumberInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfPhoneNumberInfo }
      */
     public ArrayOfPhoneNumberInfo createArrayOfPhoneNumberInfo() {
         return new ArrayOfPhoneNumberInfo();
@@ -1042,8 +982,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmailDistributionAddressInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmailDistributionAddressInfo }
      */
     public ArrayOfEmailDistributionAddressInfo createArrayOfEmailDistributionAddressInfo() {
         return new ArrayOfEmailDistributionAddressInfo();
@@ -1052,8 +990,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAdditionalFieldBase }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAdditionalFieldBase }
      */
     public ArrayOfAdditionalFieldBase createArrayOfAdditionalFieldBase() {
         return new ArrayOfAdditionalFieldBase();
@@ -1062,8 +998,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAdditionalFieldValue }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAdditionalFieldValue }
      */
     public ArrayOfAdditionalFieldValue createArrayOfAdditionalFieldValue() {
         return new ArrayOfAdditionalFieldValue();
@@ -1072,8 +1006,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfOwnerAdditionalFieldsValue }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfOwnerAdditionalFieldsValue }
      */
     public ArrayOfOwnerAdditionalFieldsValue createArrayOfOwnerAdditionalFieldsValue() {
         return new ArrayOfOwnerAdditionalFieldsValue();
@@ -1082,8 +1014,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPhotoOrder }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfPhotoOrder }
      */
     public ArrayOfPhotoOrder createArrayOfPhotoOrder() {
         return new ArrayOfPhotoOrder();
@@ -1092,8 +1022,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfMifareProfileTagsData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfMifareProfileTagsData }
      */
     public ArrayOfMifareProfileTagsData createArrayOfMifareProfileTagsData() {
         return new ArrayOfMifareProfileTagsData();
@@ -1102,8 +1030,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfReportTagsData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfReportTagsData }
      */
     public ArrayOfReportTagsData createArrayOfReportTagsData() {
         return new ArrayOfReportTagsData();
@@ -1112,8 +1038,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeeGroupTagsData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeeGroupTagsData }
      */
     public ArrayOfEmployeeGroupTagsData createArrayOfEmployeeGroupTagsData() {
         return new ArrayOfEmployeeGroupTagsData();
@@ -1122,8 +1046,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAccessLevelTagsData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAccessLevelTagsData }
      */
     public ArrayOfAccessLevelTagsData createArrayOfAccessLevelTagsData() {
         return new ArrayOfAccessLevelTagsData();
@@ -1132,8 +1054,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfBoxAccessLevelTagsData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfBoxAccessLevelTagsData }
      */
     public ArrayOfBoxAccessLevelTagsData createArrayOfBoxAccessLevelTagsData() {
         return new ArrayOfBoxAccessLevelTagsData();
@@ -1142,8 +1062,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfResourceTagsData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfResourceTagsData }
      */
     public ArrayOfResourceTagsData createArrayOfResourceTagsData() {
         return new ArrayOfResourceTagsData();
@@ -1152,8 +1070,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfResourceFilterTagsData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfResourceFilterTagsData }
      */
     public ArrayOfResourceFilterTagsData createArrayOfResourceFilterTagsData() {
         return new ArrayOfResourceFilterTagsData();
@@ -1162,8 +1078,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfTagFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfTagFullInfo }
      */
     public ArrayOfTagFullInfo createArrayOfTagFullInfo() {
         return new ArrayOfTagFullInfo();
@@ -1172,8 +1086,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfFilterTagFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfFilterTagFullInfo }
      */
     public ArrayOfFilterTagFullInfo createArrayOfFilterTagFullInfo() {
         return new ArrayOfFilterTagFullInfo();
@@ -1182,8 +1094,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfFolderInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfFolderInfo }
      */
     public ArrayOfFolderInfo createArrayOfFolderInfo() {
         return new ArrayOfFolderInfo();
@@ -1192,8 +1102,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfFolderInfoWithAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfFolderInfoWithAccessLevel }
      */
     public ArrayOfFolderInfoWithAccessLevel createArrayOfFolderInfoWithAccessLevel() {
         return new ArrayOfFolderInfoWithAccessLevel();
@@ -1202,8 +1110,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FolderInfo }
      * 
-     * @return
-     *     the new instance of {@link FolderInfo }
      */
     public FolderInfo createFolderInfo() {
         return new FolderInfo();
@@ -1212,8 +1118,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfFavoriteFolderInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfFavoriteFolderInfo }
      */
     public ArrayOfFavoriteFolderInfo createArrayOfFavoriteFolderInfo() {
         return new ArrayOfFavoriteFolderInfo();
@@ -1222,8 +1126,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfFavoriteFolderInfoWithEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfFavoriteFolderInfoWithEmployeeGroup }
      */
     public ArrayOfFavoriteFolderInfoWithEmployeeGroup createArrayOfFavoriteFolderInfoWithEmployeeGroup() {
         return new ArrayOfFavoriteFolderInfoWithEmployeeGroup();
@@ -1232,8 +1134,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FavoriteFolderInfo }
      * 
-     * @return
-     *     the new instance of {@link FavoriteFolderInfo }
      */
     public FavoriteFolderInfo createFavoriteFolderInfo() {
         return new FavoriteFolderInfo();
@@ -1242,8 +1142,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfUserPassSlimData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfUserPassSlimData }
      */
     public ArrayOfUserPassSlimData createArrayOfUserPassSlimData() {
         return new ArrayOfUserPassSlimData();
@@ -1252,8 +1150,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserPassFullData }
      * 
-     * @return
-     *     the new instance of {@link UserPassFullData }
      */
     public UserPassFullData createUserPassFullData() {
         return new UserPassFullData();
@@ -1262,8 +1158,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfReactionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfReactionSlimInfo }
      */
     public ArrayOfReactionSlimInfo createArrayOfReactionSlimInfo() {
         return new ArrayOfReactionSlimInfo();
@@ -1272,8 +1166,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionFullInfo }
      */
     public ReactionFullInfo createReactionFullInfo() {
         return new ReactionFullInfo();
@@ -1282,8 +1174,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionSendSMSActionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionSendSMSActionSlimInfo }
      */
     public ReactionSendSMSActionSlimInfo createReactionSendSMSActionSlimInfo() {
         return new ReactionSendSMSActionSlimInfo();
@@ -1292,8 +1182,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionSendEmailActionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionSendEmailActionSlimInfo }
      */
     public ReactionSendEmailActionSlimInfo createReactionSendEmailActionSlimInfo() {
         return new ReactionSendEmailActionSlimInfo();
@@ -1302,8 +1190,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionExecuteProgramActionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionExecuteProgramActionSlimInfo }
      */
     public ReactionExecuteProgramActionSlimInfo createReactionExecuteProgramActionSlimInfo() {
         return new ReactionExecuteProgramActionSlimInfo();
@@ -1312,8 +1198,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionRecordVideoActionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionRecordVideoActionSlimInfo }
      */
     public ReactionRecordVideoActionSlimInfo createReactionRecordVideoActionSlimInfo() {
         return new ReactionRecordVideoActionSlimInfo();
@@ -1322,8 +1206,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NotificationState }
      * 
-     * @return
-     *     the new instance of {@link NotificationState }
      */
     public NotificationState createNotificationState() {
         return new NotificationState();
@@ -1332,8 +1214,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLogMessageTypeSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLogMessageTypeSlimInfo }
      */
     public ArrayOfLogMessageTypeSlimInfo createArrayOfLogMessageTypeSlimInfo() {
         return new ArrayOfLogMessageTypeSlimInfo();
@@ -1342,8 +1222,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLogMessageSubtypeSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLogMessageSubtypeSlimInfo }
      */
     public ArrayOfLogMessageSubtypeSlimInfo createArrayOfLogMessageSubtypeSlimInfo() {
         return new ArrayOfLogMessageSubtypeSlimInfo();
@@ -1352,8 +1230,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLogMsgType }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLogMsgType }
      */
     public ArrayOfLogMsgType createArrayOfLogMsgType() {
         return new ArrayOfLogMsgType();
@@ -1362,8 +1238,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LogData }
      * 
-     * @return
-     *     the new instance of {@link LogData }
      */
     public LogData createLogData() {
         return new LogData();
@@ -1372,8 +1246,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPOBRelation }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfPOBRelation }
      */
     public ArrayOfPOBRelation createArrayOfPOBRelation() {
         return new ArrayOfPOBRelation();
@@ -1382,8 +1254,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LUser }
      * 
-     * @return
-     *     the new instance of {@link LUser }
      */
     public LUser createLUser() {
         return new LUser();
@@ -1392,8 +1262,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LUsersData }
      * 
-     * @return
-     *     the new instance of {@link LUsersData }
      */
     public LUsersData createLUsersData() {
         return new LUsersData();
@@ -1402,8 +1270,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LUserGroup }
      * 
-     * @return
-     *     the new instance of {@link LUserGroup }
      */
     public LUserGroup createLUserGroup() {
         return new LUserGroup();
@@ -1412,8 +1278,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LUserGroupsData }
      * 
-     * @return
-     *     the new instance of {@link LUserGroupsData }
      */
     public LUserGroupsData createLUserGroupsData() {
         return new LUserGroupsData();
@@ -1422,8 +1286,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClaimInfo }
      * 
-     * @return
-     *     the new instance of {@link ClaimInfo }
      */
     public ClaimInfo createClaimInfo() {
         return new ClaimInfo();
@@ -1432,8 +1294,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfClaimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfClaimInfo }
      */
     public ArrayOfClaimInfo createArrayOfClaimInfo() {
         return new ArrayOfClaimInfo();
@@ -1442,8 +1302,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DictionaryElementInfo }
      * 
-     * @return
-     *     the new instance of {@link DictionaryElementInfo }
      */
     public DictionaryElementInfo createDictionaryElementInfo() {
         return new DictionaryElementInfo();
@@ -1452,8 +1310,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DictionaryElementsInfoData }
      * 
-     * @return
-     *     the new instance of {@link DictionaryElementsInfoData }
      */
     public DictionaryElementsInfoData createDictionaryElementsInfoData() {
         return new DictionaryElementsInfoData();
@@ -1462,8 +1318,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DictionaryElementsFilter }
      * 
-     * @return
-     *     the new instance of {@link DictionaryElementsFilter }
      */
     public DictionaryElementsFilter createDictionaryElementsFilter() {
         return new DictionaryElementsFilter();
@@ -1472,8 +1326,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CardTypeInfo }
      * 
-     * @return
-     *     the new instance of {@link CardTypeInfo }
      */
     public CardTypeInfo createCardTypeInfo() {
         return new CardTypeInfo();
@@ -1482,8 +1334,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BranchData }
      * 
-     * @return
-     *     the new instance of {@link BranchData }
      */
     public BranchData createBranchData() {
         return new BranchData();
@@ -1492,8 +1342,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BranchInfo }
      * 
-     * @return
-     *     the new instance of {@link BranchInfo }
      */
     public BranchInfo createBranchInfo() {
         return new BranchInfo();
@@ -1502,8 +1350,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentsFilter }
      * 
-     * @return
-     *     the new instance of {@link IncidentsFilter }
      */
     public IncidentsFilter createIncidentsFilter() {
         return new IncidentsFilter();
@@ -1512,8 +1358,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentsInfoData }
      * 
-     * @return
-     *     the new instance of {@link IncidentsInfoData }
      */
     public IncidentsInfoData createIncidentsInfoData() {
         return new IncidentsInfoData();
@@ -1522,8 +1366,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentElementFullInfo }
      * 
-     * @return
-     *     the new instance of {@link IncidentElementFullInfo }
      */
     public IncidentElementFullInfo createIncidentElementFullInfo() {
         return new IncidentElementFullInfo();
@@ -1532,8 +1374,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ViolatorFilter }
      * 
-     * @return
-     *     the new instance of {@link ViolatorFilter }
      */
     public ViolatorFilter createViolatorFilter() {
         return new ViolatorFilter();
@@ -1542,8 +1382,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfFirebirdIncidentEventsResult }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfFirebirdIncidentEventsResult }
      */
     public ArrayOfFirebirdIncidentEventsResult createArrayOfFirebirdIncidentEventsResult() {
         return new ArrayOfFirebirdIncidentEventsResult();
@@ -1552,8 +1390,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfViolation }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfViolation }
      */
     public ArrayOfViolation createArrayOfViolation() {
         return new ArrayOfViolation();
@@ -1562,8 +1398,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfIncidentTemplateInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfIncidentTemplateInfo }
      */
     public ArrayOfIncidentTemplateInfo createArrayOfIncidentTemplateInfo() {
         return new ArrayOfIncidentTemplateInfo();
@@ -1572,8 +1406,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDictionaryElementInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDictionaryElementInfo }
      */
     public ArrayOfDictionaryElementInfo createArrayOfDictionaryElementInfo() {
         return new ArrayOfDictionaryElementInfo();
@@ -1582,8 +1414,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployee2OrganizationAssignmentFull }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployee2OrganizationAssignmentFull }
      */
     public ArrayOfEmployee2OrganizationAssignmentFull createArrayOfEmployee2OrganizationAssignmentFull() {
         return new ArrayOfEmployee2OrganizationAssignmentFull();
@@ -1592,8 +1422,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CardTypesInfoData }
      * 
-     * @return
-     *     the new instance of {@link CardTypesInfoData }
      */
     public CardTypesInfoData createCardTypesInfoData() {
         return new CardTypesInfoData();
@@ -1602,8 +1430,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LEmployeePositionInfo }
      * 
-     * @return
-     *     the new instance of {@link LEmployeePositionInfo }
      */
     public LEmployeePositionInfo createLEmployeePositionInfo() {
         return new LEmployeePositionInfo();
@@ -1612,8 +1438,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LEmployeePositionsData }
      * 
-     * @return
-     *     the new instance of {@link LEmployeePositionsData }
      */
     public LEmployeePositionsData createLEmployeePositionsData() {
         return new LEmployeePositionsData();
@@ -1622,8 +1446,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionEventSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionEventSaveData }
      */
     public ReactionEventSaveData createReactionEventSaveData() {
         return new ReactionEventSaveData();
@@ -1632,8 +1454,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionEventsFromDevicesSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionEventsFromDevicesSaveData }
      */
     public ReactionEventsFromDevicesSaveData createReactionEventsFromDevicesSaveData() {
         return new ReactionEventsFromDevicesSaveData();
@@ -1642,8 +1462,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkZoneSlimSaveData }
      * 
-     * @return
-     *     the new instance of {@link WorkZoneSlimSaveData }
      */
     public WorkZoneSlimSaveData createWorkZoneSlimSaveData() {
         return new WorkZoneSlimSaveData();
@@ -1652,8 +1470,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkZoneSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link WorkZoneSlimInfo }
      */
     public WorkZoneSlimInfo createWorkZoneSlimInfo() {
         return new WorkZoneSlimInfo();
@@ -1662,8 +1478,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkZonesAccessPointSaveData }
      * 
-     * @return
-     *     the new instance of {@link WorkZonesAccessPointSaveData }
      */
     public WorkZonesAccessPointSaveData createWorkZonesAccessPointSaveData() {
         return new WorkZonesAccessPointSaveData();
@@ -1672,8 +1486,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkZonesAccessPointSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link WorkZonesAccessPointSlimInfo }
      */
     public WorkZonesAccessPointSlimInfo createWorkZonesAccessPointSlimInfo() {
         return new WorkZonesAccessPointSlimInfo();
@@ -1682,8 +1494,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSIIDKSaveData }
      * 
-     * @return
-     *     the new instance of {@link ISSIIDKSaveData }
      */
     public ISSIIDKSaveData createISSIIDKSaveData() {
         return new ISSIIDKSaveData();
@@ -1692,8 +1502,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSRecognitionSaveData }
      * 
-     * @return
-     *     the new instance of {@link ISSRecognitionSaveData }
      */
     public ISSRecognitionSaveData createISSRecognitionSaveData() {
         return new ISSRecognitionSaveData();
@@ -1702,8 +1510,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSDriverSaveData }
      * 
-     * @return
-     *     the new instance of {@link ISSDriverSaveData }
      */
     public ISSDriverSaveData createISSDriverSaveData() {
         return new ISSDriverSaveData();
@@ -1712,8 +1518,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSIIDKSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSIIDKSlimInfo }
      */
     public ISSIIDKSlimInfo createISSIIDKSlimInfo() {
         return new ISSIIDKSlimInfo();
@@ -1722,8 +1526,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSRecognitionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSRecognitionSlimInfo }
      */
     public ISSRecognitionSlimInfo createISSRecognitionSlimInfo() {
         return new ISSRecognitionSlimInfo();
@@ -1732,8 +1534,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSDriverSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSDriverSlimInfo }
      */
     public ISSDriverSlimInfo createISSDriverSlimInfo() {
         return new ISSDriverSlimInfo();
@@ -1742,8 +1542,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSDriverEventPlaybackSaveData }
      * 
-     * @return
-     *     the new instance of {@link ISSDriverEventPlaybackSaveData }
      */
     public ISSDriverEventPlaybackSaveData createISSDriverEventPlaybackSaveData() {
         return new ISSDriverEventPlaybackSaveData();
@@ -1752,8 +1550,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSDriverEventPlaybackSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSDriverEventPlaybackSlimInfo }
      */
     public ISSDriverEventPlaybackSlimInfo createISSDriverEventPlaybackSlimInfo() {
         return new ISSDriverEventPlaybackSlimInfo();
@@ -1762,8 +1558,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfScreenCellSaveData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfScreenCellSaveData }
      */
     public ArrayOfScreenCellSaveData createArrayOfScreenCellSaveData() {
         return new ArrayOfScreenCellSaveData();
@@ -1772,8 +1566,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfScreenCellInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfScreenCellInfo }
      */
     public ArrayOfScreenCellInfo createArrayOfScreenCellInfo() {
         return new ArrayOfScreenCellInfo();
@@ -1782,8 +1574,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ScreenLayoutSaveData }
      * 
-     * @return
-     *     the new instance of {@link ScreenLayoutSaveData }
      */
     public ScreenLayoutSaveData createScreenLayoutSaveData() {
         return new ScreenLayoutSaveData();
@@ -1792,8 +1582,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmailAddressSaveData }
      * 
-     * @return
-     *     the new instance of {@link EmailAddressSaveData }
      */
     public EmailAddressSaveData createEmailAddressSaveData() {
         return new EmailAddressSaveData();
@@ -1802,8 +1590,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PhoneNumberSaveData }
      * 
-     * @return
-     *     the new instance of {@link PhoneNumberSaveData }
      */
     public PhoneNumberSaveData createPhoneNumberSaveData() {
         return new PhoneNumberSaveData();
@@ -1812,8 +1598,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmailDistributionAddressSaveData }
      * 
-     * @return
-     *     the new instance of {@link EmailDistributionAddressSaveData }
      */
     public EmailDistributionAddressSaveData createEmailDistributionAddressSaveData() {
         return new EmailDistributionAddressSaveData();
@@ -1822,8 +1606,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link POBRelation }
      * 
-     * @return
-     *     the new instance of {@link POBRelation }
      */
     public POBRelation createPOBRelation() {
         return new POBRelation();
@@ -1832,8 +1614,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FolderSaveData }
      * 
-     * @return
-     *     the new instance of {@link FolderSaveData }
      */
     public FolderSaveData createFolderSaveData() {
         return new FolderSaveData();
@@ -1842,8 +1622,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FavoriteFolderSaveData }
      * 
-     * @return
-     *     the new instance of {@link FavoriteFolderSaveData }
      */
     public FavoriteFolderSaveData createFavoriteFolderSaveData() {
         return new FavoriteFolderSaveData();
@@ -1852,8 +1630,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TagSaveData }
      * 
-     * @return
-     *     the new instance of {@link TagSaveData }
      */
     public TagSaveData createTagSaveData() {
         return new TagSaveData();
@@ -1862,8 +1638,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FilterTagSaveData }
      * 
-     * @return
-     *     the new instance of {@link FilterTagSaveData }
      */
     public FilterTagSaveData createFilterTagSaveData() {
         return new FilterTagSaveData();
@@ -1872,8 +1646,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserPassSlimSaveData }
      * 
-     * @return
-     *     the new instance of {@link UserPassSlimSaveData }
      */
     public UserPassSlimSaveData createUserPassSlimSaveData() {
         return new UserPassSlimSaveData();
@@ -1882,8 +1654,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserPassFullSaveData }
      * 
-     * @return
-     *     the new instance of {@link UserPassFullSaveData }
      */
     public UserPassFullSaveData createUserPassFullSaveData() {
         return new UserPassFullSaveData();
@@ -1892,8 +1662,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserPassEditorData }
      * 
-     * @return
-     *     the new instance of {@link UserPassEditorData }
      */
     public UserPassEditorData createUserPassEditorData() {
         return new UserPassEditorData();
@@ -1902,8 +1670,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionSaveData }
      */
     public ReactionSaveData createReactionSaveData() {
         return new ReactionSaveData();
@@ -1912,8 +1678,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionActionSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionActionSaveData }
      */
     public ReactionActionSaveData createReactionActionSaveData() {
         return new ReactionActionSaveData();
@@ -1922,8 +1686,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionSendSMSActionSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionSendSMSActionSaveData }
      */
     public ReactionSendSMSActionSaveData createReactionSendSMSActionSaveData() {
         return new ReactionSendSMSActionSaveData();
@@ -1932,8 +1694,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionSendEmailActionSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionSendEmailActionSaveData }
      */
     public ReactionSendEmailActionSaveData createReactionSendEmailActionSaveData() {
         return new ReactionSendEmailActionSaveData();
@@ -1942,8 +1702,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionExecuteProgramActionSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionExecuteProgramActionSaveData }
      */
     public ReactionExecuteProgramActionSaveData createReactionExecuteProgramActionSaveData() {
         return new ReactionExecuteProgramActionSaveData();
@@ -1952,8 +1710,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionRecordVideoActionSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReactionRecordVideoActionSaveData }
      */
     public ReactionRecordVideoActionSaveData createReactionRecordVideoActionSaveData() {
         return new ReactionRecordVideoActionSaveData();
@@ -1962,8 +1718,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReportSaveData }
      * 
-     * @return
-     *     the new instance of {@link ReportSaveData }
      */
     public ReportSaveData createReportSaveData() {
         return new ReportSaveData();
@@ -1972,8 +1726,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PhotoOrder }
      * 
-     * @return
-     *     the new instance of {@link PhotoOrder }
      */
     public PhotoOrder createPhotoOrder() {
         return new PhotoOrder();
@@ -1982,8 +1734,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfCardTypeBiometricPermission }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfCardTypeBiometricPermission }
      */
     public ArrayOfCardTypeBiometricPermission createArrayOfCardTypeBiometricPermission() {
         return new ArrayOfCardTypeBiometricPermission();
@@ -1992,8 +1742,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RezervedHotKeys }
      * 
-     * @return
-     *     the new instance of {@link RezervedHotKeys }
      */
     public RezervedHotKeys createRezervedHotKeys() {
         return new RezervedHotKeys();
@@ -2002,8 +1750,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LChangedKeys }
      * 
-     * @return
-     *     the new instance of {@link LChangedKeys }
      */
     public LChangedKeys createLChangedKeys() {
         return new LChangedKeys();
@@ -2012,8 +1758,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LChangedCustomizableDays }
      * 
-     * @return
-     *     the new instance of {@link LChangedCustomizableDays }
      */
     public LChangedCustomizableDays createLChangedCustomizableDays() {
         return new LChangedCustomizableDays();
@@ -2022,8 +1766,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkplaceSaveData }
      * 
-     * @return
-     *     the new instance of {@link WorkplaceSaveData }
      */
     public WorkplaceSaveData createWorkplaceSaveData() {
         return new WorkplaceSaveData();
@@ -2032,8 +1774,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkplaceInfo }
      * 
-     * @return
-     *     the new instance of {@link WorkplaceInfo }
      */
     public WorkplaceInfo createWorkplaceInfo() {
         return new WorkplaceInfo();
@@ -2042,8 +1782,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkplaceModuleSaveData }
      * 
-     * @return
-     *     the new instance of {@link WorkplaceModuleSaveData }
      */
     public WorkplaceModuleSaveData createWorkplaceModuleSaveData() {
         return new WorkplaceModuleSaveData();
@@ -2052,8 +1790,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkplaceModuleInfo }
      * 
-     * @return
-     *     the new instance of {@link WorkplaceModuleInfo }
      */
     public WorkplaceModuleInfo createWorkplaceModuleInfo() {
         return new WorkplaceModuleInfo();
@@ -2062,8 +1798,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsConfiguratorSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsConfiguratorSaveData }
      */
     public AcsConfiguratorSaveData createAcsConfiguratorSaveData() {
         return new AcsConfiguratorSaveData();
@@ -2072,8 +1806,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DayTypeSaveData }
      * 
-     * @return
-     *     the new instance of {@link DayTypeSaveData }
      */
     public DayTypeSaveData createDayTypeSaveData() {
         return new DayTypeSaveData();
@@ -2082,8 +1814,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DayTypeSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link DayTypeSlimInfo }
      */
     public DayTypeSlimInfo createDayTypeSlimInfo() {
         return new DayTypeSlimInfo();
@@ -2092,8 +1822,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkScheduleSlimSaveData }
      * 
-     * @return
-     *     the new instance of {@link WorkScheduleSlimSaveData }
      */
     public WorkScheduleSlimSaveData createWorkScheduleSlimSaveData() {
         return new WorkScheduleSlimSaveData();
@@ -2102,8 +1830,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkScheduleSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link WorkScheduleSlimInfo }
      */
     public WorkScheduleSlimInfo createWorkScheduleSlimInfo() {
         return new WorkScheduleSlimInfo();
@@ -2112,8 +1838,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClaimSaveData }
      * 
-     * @return
-     *     the new instance of {@link ClaimSaveData }
      */
     public ClaimSaveData createClaimSaveData() {
         return new ClaimSaveData();
@@ -2122,8 +1846,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentTemplateInfo }
      * 
-     * @return
-     *     the new instance of {@link IncidentTemplateInfo }
      */
     public IncidentTemplateInfo createIncidentTemplateInfo() {
         return new IncidentTemplateInfo();
@@ -2132,8 +1854,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link IncidentSaveInfo }
      */
     public IncidentSaveInfo createIncidentSaveInfo() {
         return new IncidentSaveInfo();
@@ -2142,8 +1862,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DictionaryElementSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link DictionaryElementSaveInfo }
      */
     public DictionaryElementSaveInfo createDictionaryElementSaveInfo() {
         return new DictionaryElementSaveInfo();
@@ -2152,8 +1870,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployee2OrganizationAssignment }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployee2OrganizationAssignment }
      */
     public ArrayOfEmployee2OrganizationAssignment createArrayOfEmployee2OrganizationAssignment() {
         return new ArrayOfEmployee2OrganizationAssignment();
@@ -2162,8 +1878,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MifareProfileSaveData }
      * 
-     * @return
-     *     the new instance of {@link MifareProfileSaveData }
      */
     public MifareProfileSaveData createMifareProfileSaveData() {
         return new MifareProfileSaveData();
@@ -2172,8 +1886,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MifareProfileInfo }
      * 
-     * @return
-     *     the new instance of {@link MifareProfileInfo }
      */
     public MifareProfileInfo createMifareProfileInfo() {
         return new MifareProfileInfo();
@@ -2182,8 +1894,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MifareProfileFullSaveData }
      * 
-     * @return
-     *     the new instance of {@link MifareProfileFullSaveData }
      */
     public MifareProfileFullSaveData createMifareProfileFullSaveData() {
         return new MifareProfileFullSaveData();
@@ -2192,8 +1902,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ListItem }
      * 
-     * @return
-     *     the new instance of {@link ListItem }
      */
     public ListItem createListItem() {
         return new ListItem();
@@ -2202,8 +1910,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAddDateTimeInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAddDateTimeInfo }
      */
     public ArrayOfAddDateTimeInfo createArrayOfAddDateTimeInfo() {
         return new ArrayOfAddDateTimeInfo();
@@ -2212,8 +1918,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAddDoubleInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAddDoubleInfo }
      */
     public ArrayOfAddDoubleInfo createArrayOfAddDoubleInfo() {
         return new ArrayOfAddDoubleInfo();
@@ -2222,8 +1926,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAddIntInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAddIntInfo }
      */
     public ArrayOfAddIntInfo createArrayOfAddIntInfo() {
         return new ArrayOfAddIntInfo();
@@ -2232,8 +1934,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAddStringInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAddStringInfo }
      */
     public ArrayOfAddStringInfo createArrayOfAddStringInfo() {
         return new ArrayOfAddStringInfo();
@@ -2242,8 +1942,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAddColorInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAddColorInfo }
      */
     public ArrayOfAddColorInfo createArrayOfAddColorInfo() {
         return new ArrayOfAddColorInfo();
@@ -2252,8 +1950,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAddListInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAddListInfo }
      */
     public ArrayOfAddListInfo createArrayOfAddListInfo() {
         return new ArrayOfAddListInfo();
@@ -2262,8 +1958,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AdditionalFieldBase }
      * 
-     * @return
-     *     the new instance of {@link AdditionalFieldBase }
      */
     public AdditionalFieldBase createAdditionalFieldBase() {
         return new AdditionalFieldBase();
@@ -2272,8 +1966,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LogMessageTypeSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link LogMessageTypeSlimInfo }
      */
     public LogMessageTypeSlimInfo createLogMessageTypeSlimInfo() {
         return new LogMessageTypeSlimInfo();
@@ -2282,8 +1974,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LogMessageSubtypeSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link LogMessageSubtypeSlimInfo }
      */
     public LogMessageSubtypeSlimInfo createLogMessageSubtypeSlimInfo() {
         return new LogMessageSubtypeSlimInfo();
@@ -2292,8 +1982,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLogMessage }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLogMessage }
      */
     public ArrayOfLogMessage createArrayOfLogMessage() {
         return new ArrayOfLogMessage();
@@ -2302,8 +1990,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LogMessage }
      * 
-     * @return
-     *     the new instance of {@link LogMessage }
      */
     public LogMessage createLogMessage() {
         return new LogMessage();
@@ -2312,8 +1998,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SecurityGroupDictionaryElementSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link SecurityGroupDictionaryElementSaveInfo }
      */
     public SecurityGroupDictionaryElementSaveInfo createSecurityGroupDictionaryElementSaveInfo() {
         return new SecurityGroupDictionaryElementSaveInfo();
@@ -2322,8 +2006,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrganizationElementSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link OrganizationElementSaveInfo }
      */
     public OrganizationElementSaveInfo createOrganizationElementSaveInfo() {
         return new OrganizationElementSaveInfo();
@@ -2332,8 +2014,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SecurityGroupDictionaryElementInfo }
      * 
-     * @return
-     *     the new instance of {@link SecurityGroupDictionaryElementInfo }
      */
     public SecurityGroupDictionaryElementInfo createSecurityGroupDictionaryElementInfo() {
         return new SecurityGroupDictionaryElementInfo();
@@ -2342,8 +2022,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OrganizationDictionaryElementInfo }
      * 
-     * @return
-     *     the new instance of {@link OrganizationDictionaryElementInfo }
      */
     public OrganizationDictionaryElementInfo createOrganizationDictionaryElementInfo() {
         return new OrganizationDictionaryElementInfo();
@@ -2352,8 +2030,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentsMegaFilter }
      * 
-     * @return
-     *     the new instance of {@link IncidentsMegaFilter }
      */
     public IncidentsMegaFilter createIncidentsMegaFilter() {
         return new IncidentsMegaFilter();
@@ -2362,8 +2038,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfIncidentElementFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfIncidentElementFullInfo }
      */
     public ArrayOfIncidentElementFullInfo createArrayOfIncidentElementFullInfo() {
         return new ArrayOfIncidentElementFullInfo();
@@ -2372,8 +2046,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfViolatorSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfViolatorSaveInfo }
      */
     public ArrayOfViolatorSaveInfo createArrayOfViolatorSaveInfo() {
         return new ArrayOfViolatorSaveInfo();
@@ -2382,8 +2054,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ViolatorSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ViolatorSaveInfo }
      */
     public ViolatorSaveInfo createViolatorSaveInfo() {
         return new ViolatorSaveInfo();
@@ -2392,8 +2062,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDocumentForActionSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDocumentForActionSaveInfo }
      */
     public ArrayOfDocumentForActionSaveInfo createArrayOfDocumentForActionSaveInfo() {
         return new ArrayOfDocumentForActionSaveInfo();
@@ -2402,8 +2070,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DocumentForActionSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link DocumentForActionSaveInfo }
      */
     public DocumentForActionSaveInfo createDocumentForActionSaveInfo() {
         return new DocumentForActionSaveInfo();
@@ -2412,8 +2078,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDocumentSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDocumentSaveInfo }
      */
     public ArrayOfDocumentSaveInfo createArrayOfDocumentSaveInfo() {
         return new ArrayOfDocumentSaveInfo();
@@ -2422,8 +2086,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DocumentSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link DocumentSaveInfo }
      */
     public DocumentSaveInfo createDocumentSaveInfo() {
         return new DocumentSaveInfo();
@@ -2432,8 +2094,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfViolationSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfViolationSaveInfo }
      */
     public ArrayOfViolationSaveInfo createArrayOfViolationSaveInfo() {
         return new ArrayOfViolationSaveInfo();
@@ -2442,8 +2102,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ViolationSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ViolationSaveInfo }
      */
     public ViolationSaveInfo createViolationSaveInfo() {
         return new ViolationSaveInfo();
@@ -2452,8 +2110,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ViolationFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ViolationFullInfo }
      */
     public ViolationFullInfo createViolationFullInfo() {
         return new ViolationFullInfo();
@@ -2462,8 +2118,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfTangiblesSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfTangiblesSaveInfo }
      */
     public ArrayOfTangiblesSaveInfo createArrayOfTangiblesSaveInfo() {
         return new ArrayOfTangiblesSaveInfo();
@@ -2472,8 +2126,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TangiblesSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link TangiblesSaveInfo }
      */
     public TangiblesSaveInfo createTangiblesSaveInfo() {
         return new TangiblesSaveInfo();
@@ -2482,8 +2134,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfViolatorFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfViolatorFullInfo }
      */
     public ArrayOfViolatorFullInfo createArrayOfViolatorFullInfo() {
         return new ArrayOfViolatorFullInfo();
@@ -2492,8 +2142,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ViolatorFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ViolatorFullInfo }
      */
     public ViolatorFullInfo createViolatorFullInfo() {
         return new ViolatorFullInfo();
@@ -2502,8 +2150,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDocumentFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDocumentFullInfo }
      */
     public ArrayOfDocumentFullInfo createArrayOfDocumentFullInfo() {
         return new ArrayOfDocumentFullInfo();
@@ -2512,8 +2158,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DocumentFullInfo }
      * 
-     * @return
-     *     the new instance of {@link DocumentFullInfo }
      */
     public DocumentFullInfo createDocumentFullInfo() {
         return new DocumentFullInfo();
@@ -2522,8 +2166,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDocumentFullForActionInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDocumentFullForActionInfo }
      */
     public ArrayOfDocumentFullForActionInfo createArrayOfDocumentFullForActionInfo() {
         return new ArrayOfDocumentFullForActionInfo();
@@ -2532,8 +2174,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DocumentFullForActionInfo }
      * 
-     * @return
-     *     the new instance of {@link DocumentFullForActionInfo }
      */
     public DocumentFullForActionInfo createDocumentFullForActionInfo() {
         return new DocumentFullForActionInfo();
@@ -2542,8 +2182,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfViolationFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfViolationFullInfo }
      */
     public ArrayOfViolationFullInfo createArrayOfViolationFullInfo() {
         return new ArrayOfViolationFullInfo();
@@ -2552,8 +2190,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfTangiblesFullInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfTangiblesFullInfo }
      */
     public ArrayOfTangiblesFullInfo createArrayOfTangiblesFullInfo() {
         return new ArrayOfTangiblesFullInfo();
@@ -2562,8 +2198,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TangiblesFullInfo }
      * 
-     * @return
-     *     the new instance of {@link TangiblesFullInfo }
      */
     public TangiblesFullInfo createTangiblesFullInfo() {
         return new TangiblesFullInfo();
@@ -2572,8 +2206,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FirebirdIncidentEventsResult }
      * 
-     * @return
-     *     the new instance of {@link FirebirdIncidentEventsResult }
      */
     public FirebirdIncidentEventsResult createFirebirdIncidentEventsResult() {
         return new FirebirdIncidentEventsResult();
@@ -2582,8 +2214,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Violation }
      * 
-     * @return
-     *     the new instance of {@link Violation }
      */
     public Violation createViolation() {
         return new Violation();
@@ -2592,8 +2222,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Employee2OrganizationAssignmentFull }
      * 
-     * @return
-     *     the new instance of {@link Employee2OrganizationAssignmentFull }
      */
     public Employee2OrganizationAssignmentFull createEmployee2OrganizationAssignmentFull() {
         return new Employee2OrganizationAssignmentFull();
@@ -2602,8 +2230,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Employee2OrganizationAssignment }
      * 
-     * @return
-     *     the new instance of {@link Employee2OrganizationAssignment }
      */
     public Employee2OrganizationAssignment createEmployee2OrganizationAssignment() {
         return new Employee2OrganizationAssignment();
@@ -2612,8 +2238,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FolderInfoWithAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link FolderInfoWithAccessLevel }
      */
     public FolderInfoWithAccessLevel createFolderInfoWithAccessLevel() {
         return new FolderInfoWithAccessLevel();
@@ -2622,8 +2246,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeePositionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link EmployeePositionSlimInfo }
      */
     public EmployeePositionSlimInfo createEmployeePositionSlimInfo() {
         return new EmployeePositionSlimInfo();
@@ -2632,8 +2254,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLEmployeePositionInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLEmployeePositionInfo }
      */
     public ArrayOfLEmployeePositionInfo createArrayOfLEmployeePositionInfo() {
         return new ArrayOfLEmployeePositionInfo();
@@ -2642,8 +2262,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkTimetableSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link WorkTimetableSlimInfo }
      */
     public WorkTimetableSlimInfo createWorkTimetableSlimInfo() {
         return new WorkTimetableSlimInfo();
@@ -2652,8 +2270,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WorkZonesAccessPointBase }
      * 
-     * @return
-     *     the new instance of {@link WorkZonesAccessPointBase }
      */
     public WorkZonesAccessPointBase createWorkZonesAccessPointBase() {
         return new WorkZonesAccessPointBase();
@@ -2662,8 +2278,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReportSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReportSlimInfo }
      */
     public ReportSlimInfo createReportSlimInfo() {
         return new ReportSlimInfo();
@@ -2672,8 +2286,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DateTimeField }
      * 
-     * @return
-     *     the new instance of {@link DateTimeField }
      */
     public DateTimeField createDateTimeField() {
         return new DateTimeField();
@@ -2682,8 +2294,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IntegerField }
      * 
-     * @return
-     *     the new instance of {@link IntegerField }
      */
     public IntegerField createIntegerField() {
         return new IntegerField();
@@ -2692,8 +2302,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DoubleField }
      * 
-     * @return
-     *     the new instance of {@link DoubleField }
      */
     public DoubleField createDoubleField() {
         return new DoubleField();
@@ -2702,8 +2310,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link StringField }
      * 
-     * @return
-     *     the new instance of {@link StringField }
      */
     public StringField createStringField() {
         return new StringField();
@@ -2712,8 +2318,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ColorField }
      * 
-     * @return
-     *     the new instance of {@link ColorField }
      */
     public ColorField createColorField() {
         return new ColorField();
@@ -2722,8 +2326,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ListField }
      * 
-     * @return
-     *     the new instance of {@link ListField }
      */
     public ListField createListField() {
         return new ListField();
@@ -2732,8 +2334,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfListItem }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfListItem }
      */
     public ArrayOfListItem createArrayOfListItem() {
         return new ArrayOfListItem();
@@ -2742,8 +2342,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AdditionalFieldValue }
      * 
-     * @return
-     *     the new instance of {@link AdditionalFieldValue }
      */
     public AdditionalFieldValue createAdditionalFieldValue() {
         return new AdditionalFieldValue();
@@ -2752,8 +2350,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerValueBase }
      * 
-     * @return
-     *     the new instance of {@link OwnerValueBase }
      */
     public OwnerValueBase createOwnerValueBase() {
         return new OwnerValueBase();
@@ -2762,8 +2358,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerDateTimeValue }
      * 
-     * @return
-     *     the new instance of {@link OwnerDateTimeValue }
      */
     public OwnerDateTimeValue createOwnerDateTimeValue() {
         return new OwnerDateTimeValue();
@@ -2772,8 +2366,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerDoubleValue }
      * 
-     * @return
-     *     the new instance of {@link OwnerDoubleValue }
      */
     public OwnerDoubleValue createOwnerDoubleValue() {
         return new OwnerDoubleValue();
@@ -2782,8 +2374,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerIntValue }
      * 
-     * @return
-     *     the new instance of {@link OwnerIntValue }
      */
     public OwnerIntValue createOwnerIntValue() {
         return new OwnerIntValue();
@@ -2792,8 +2382,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerStringValue }
      * 
-     * @return
-     *     the new instance of {@link OwnerStringValue }
      */
     public OwnerStringValue createOwnerStringValue() {
         return new OwnerStringValue();
@@ -2802,8 +2390,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerColorValue }
      * 
-     * @return
-     *     the new instance of {@link OwnerColorValue }
      */
     public OwnerColorValue createOwnerColorValue() {
         return new OwnerColorValue();
@@ -2812,8 +2398,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerListValue }
      * 
-     * @return
-     *     the new instance of {@link OwnerListValue }
      */
     public OwnerListValue createOwnerListValue() {
         return new OwnerListValue();
@@ -2822,8 +2406,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OwnerAdditionalFieldsValue }
      * 
-     * @return
-     *     the new instance of {@link OwnerAdditionalFieldsValue }
      */
     public OwnerAdditionalFieldsValue createOwnerAdditionalFieldsValue() {
         return new OwnerAdditionalFieldsValue();
@@ -2832,8 +2414,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDateTimeInfo }
      * 
-     * @return
-     *     the new instance of {@link AddDateTimeInfo }
      */
     public AddDateTimeInfo createAddDateTimeInfo() {
         return new AddDateTimeInfo();
@@ -2842,8 +2422,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFieldInfo }
      * 
-     * @return
-     *     the new instance of {@link AddFieldInfo }
      */
     public AddFieldInfo createAddFieldInfo() {
         return new AddFieldInfo();
@@ -2852,8 +2430,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDoubleInfo }
      * 
-     * @return
-     *     the new instance of {@link AddDoubleInfo }
      */
     public AddDoubleInfo createAddDoubleInfo() {
         return new AddDoubleInfo();
@@ -2862,8 +2438,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddIntInfo }
      * 
-     * @return
-     *     the new instance of {@link AddIntInfo }
      */
     public AddIntInfo createAddIntInfo() {
         return new AddIntInfo();
@@ -2872,8 +2446,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddStringInfo }
      * 
-     * @return
-     *     the new instance of {@link AddStringInfo }
      */
     public AddStringInfo createAddStringInfo() {
         return new AddStringInfo();
@@ -2882,8 +2454,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddColorInfo }
      * 
-     * @return
-     *     the new instance of {@link AddColorInfo }
      */
     public AddColorInfo createAddColorInfo() {
         return new AddColorInfo();
@@ -2892,8 +2462,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddListInfo }
      * 
-     * @return
-     *     the new instance of {@link AddListInfo }
      */
     public AddListInfo createAddListInfo() {
         return new AddListInfo();
@@ -2902,8 +2470,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionEventSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionEventSlimInfo }
      */
     public ReactionEventSlimInfo createReactionEventSlimInfo() {
         return new ReactionEventSlimInfo();
@@ -2912,8 +2478,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionSlimInfo }
      */
     public ReactionSlimInfo createReactionSlimInfo() {
         return new ReactionSlimInfo();
@@ -2922,8 +2486,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfReactionActionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfReactionActionSlimInfo }
      */
     public ArrayOfReactionActionSlimInfo createArrayOfReactionActionSlimInfo() {
         return new ArrayOfReactionActionSlimInfo();
@@ -2932,8 +2494,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReactionActionSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ReactionActionSlimInfo }
      */
     public ReactionActionSlimInfo createReactionActionSlimInfo() {
         return new ReactionActionSlimInfo();
@@ -2942,8 +2502,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfReactionEventSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfReactionEventSlimInfo }
      */
     public ArrayOfReactionEventSlimInfo createArrayOfReactionEventSlimInfo() {
         return new ArrayOfReactionEventSlimInfo();
@@ -2952,8 +2510,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PhotoBankShort }
      * 
-     * @return
-     *     the new instance of {@link PhotoBankShort }
      */
     public PhotoBankShort createPhotoBankShort() {
         return new PhotoBankShort();
@@ -2962,8 +2518,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfWorkplaceModuleInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfWorkplaceModuleInfo }
      */
     public ArrayOfWorkplaceModuleInfo createArrayOfWorkplaceModuleInfo() {
         return new ArrayOfWorkplaceModuleInfo();
@@ -2972,8 +2526,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSSlaveSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSSlaveSlimInfo }
      */
     public ISSSlaveSlimInfo createISSSlaveSlimInfo() {
         return new ISSSlaveSlimInfo();
@@ -2982,8 +2534,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSEntityBase }
      * 
-     * @return
-     *     the new instance of {@link ISSEntityBase }
      */
     public ISSEntityBase createISSEntityBase() {
         return new ISSEntityBase();
@@ -2992,8 +2542,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSDisplaySlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSDisplaySlimInfo }
      */
     public ArrayOfISSDisplaySlimInfo createArrayOfISSDisplaySlimInfo() {
         return new ArrayOfISSDisplaySlimInfo();
@@ -3002,8 +2550,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSDisplaySlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSDisplaySlimInfo }
      */
     public ISSDisplaySlimInfo createISSDisplaySlimInfo() {
         return new ISSDisplaySlimInfo();
@@ -3012,8 +2558,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSEventViewerSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSEventViewerSlimInfo }
      */
     public ArrayOfISSEventViewerSlimInfo createArrayOfISSEventViewerSlimInfo() {
         return new ArrayOfISSEventViewerSlimInfo();
@@ -3022,8 +2566,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSEventViewerSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSEventViewerSlimInfo }
      */
     public ISSEventViewerSlimInfo createISSEventViewerSlimInfo() {
         return new ISSEventViewerSlimInfo();
@@ -3032,8 +2574,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSMonitorSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSMonitorSlimInfo }
      */
     public ArrayOfISSMonitorSlimInfo createArrayOfISSMonitorSlimInfo() {
         return new ArrayOfISSMonitorSlimInfo();
@@ -3042,8 +2582,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSMonitorSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSMonitorSlimInfo }
      */
     public ISSMonitorSlimInfo createISSMonitorSlimInfo() {
         return new ISSMonitorSlimInfo();
@@ -3052,8 +2590,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSCamSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSCamSlimInfo }
      */
     public ArrayOfISSCamSlimInfo createArrayOfISSCamSlimInfo() {
         return new ArrayOfISSCamSlimInfo();
@@ -3062,8 +2598,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSCamSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSCamSlimInfo }
      */
     public ISSCamSlimInfo createISSCamSlimInfo() {
         return new ISSCamSlimInfo();
@@ -3072,8 +2606,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSIntegrationPointSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSIntegrationPointSlimInfo }
      */
     public ArrayOfISSIntegrationPointSlimInfo createArrayOfISSIntegrationPointSlimInfo() {
         return new ArrayOfISSIntegrationPointSlimInfo();
@@ -3082,8 +2614,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSIntegrationPointSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSIntegrationPointSlimInfo }
      */
     public ISSIntegrationPointSlimInfo createISSIntegrationPointSlimInfo() {
         return new ISSIntegrationPointSlimInfo();
@@ -3092,8 +2622,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfISSRusGuardSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfISSRusGuardSlimInfo }
      */
     public ArrayOfISSRusGuardSlimInfo createArrayOfISSRusGuardSlimInfo() {
         return new ArrayOfISSRusGuardSlimInfo();
@@ -3102,8 +2630,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ISSRusGuardSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ISSRusGuardSlimInfo }
      */
     public ISSRusGuardSlimInfo createISSRusGuardSlimInfo() {
         return new ISSRusGuardSlimInfo();
@@ -3112,8 +2638,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AccessBits }
      * 
-     * @return
-     *     the new instance of {@link AccessBits }
      */
     public AccessBits createAccessBits() {
         return new AccessBits();
@@ -3122,8 +2646,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ScreenCellTreeInfo }
      * 
-     * @return
-     *     the new instance of {@link ScreenCellTreeInfo }
      */
     public ScreenCellTreeInfo createScreenCellTreeInfo() {
         return new ScreenCellTreeInfo();
@@ -3132,8 +2654,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ScreenCellInfo }
      * 
-     * @return
-     *     the new instance of {@link ScreenCellInfo }
      */
     public ScreenCellInfo createScreenCellInfo() {
         return new ScreenCellInfo();
@@ -3142,8 +2662,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ScreenCellSaveData }
      * 
-     * @return
-     *     the new instance of {@link ScreenCellSaveData }
      */
     public ScreenCellSaveData createScreenCellSaveData() {
         return new ScreenCellSaveData();
@@ -3152,8 +2670,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfScreenCellTreeInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfScreenCellTreeInfo }
      */
     public ArrayOfScreenCellTreeInfo createArrayOfScreenCellTreeInfo() {
         return new ArrayOfScreenCellTreeInfo();
@@ -3162,8 +2678,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IvideonCameraDriverInfo }
      * 
-     * @return
-     *     the new instance of {@link IvideonCameraDriverInfo }
      */
     public IvideonCameraDriverInfo createIvideonCameraDriverInfo() {
         return new IvideonCameraDriverInfo();
@@ -3172,8 +2686,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmailAddressInfo }
      * 
-     * @return
-     *     the new instance of {@link EmailAddressInfo }
      */
     public EmailAddressInfo createEmailAddressInfo() {
         return new EmailAddressInfo();
@@ -3182,8 +2694,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PhoneNumberInfo }
      * 
-     * @return
-     *     the new instance of {@link PhoneNumberInfo }
      */
     public PhoneNumberInfo createPhoneNumberInfo() {
         return new PhoneNumberInfo();
@@ -3192,8 +2702,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmailDistributionAddressInfo }
      * 
-     * @return
-     *     the new instance of {@link EmailDistributionAddressInfo }
      */
     public EmailDistributionAddressInfo createEmailDistributionAddressInfo() {
         return new EmailDistributionAddressInfo();
@@ -3202,8 +2710,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MifareProfileTagsData }
      * 
-     * @return
-     *     the new instance of {@link MifareProfileTagsData }
      */
     public MifareProfileTagsData createMifareProfileTagsData() {
         return new MifareProfileTagsData();
@@ -3212,8 +2718,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TagFullInfo }
      * 
-     * @return
-     *     the new instance of {@link TagFullInfo }
      */
     public TagFullInfo createTagFullInfo() {
         return new TagFullInfo();
@@ -3222,8 +2726,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReportTagsData }
      * 
-     * @return
-     *     the new instance of {@link ReportTagsData }
      */
     public ReportTagsData createReportTagsData() {
         return new ReportTagsData();
@@ -3232,8 +2734,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeGroupTagsData }
      * 
-     * @return
-     *     the new instance of {@link EmployeeGroupTagsData }
      */
     public EmployeeGroupTagsData createEmployeeGroupTagsData() {
         return new EmployeeGroupTagsData();
@@ -3242,8 +2742,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AccessLevelTagsData }
      * 
-     * @return
-     *     the new instance of {@link AccessLevelTagsData }
      */
     public AccessLevelTagsData createAccessLevelTagsData() {
         return new AccessLevelTagsData();
@@ -3252,8 +2750,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BoxAccessLevelTagsData }
      * 
-     * @return
-     *     the new instance of {@link BoxAccessLevelTagsData }
      */
     public BoxAccessLevelTagsData createBoxAccessLevelTagsData() {
         return new BoxAccessLevelTagsData();
@@ -3262,8 +2758,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ResourceTagsData }
      * 
-     * @return
-     *     the new instance of {@link ResourceTagsData }
      */
     public ResourceTagsData createResourceTagsData() {
         return new ResourceTagsData();
@@ -3272,8 +2766,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ResourceFilterTagsData }
      * 
-     * @return
-     *     the new instance of {@link ResourceFilterTagsData }
      */
     public ResourceFilterTagsData createResourceFilterTagsData() {
         return new ResourceFilterTagsData();
@@ -3282,8 +2774,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FilterTagFullInfo }
      * 
-     * @return
-     *     the new instance of {@link FilterTagFullInfo }
      */
     public FilterTagFullInfo createFilterTagFullInfo() {
         return new FilterTagFullInfo();
@@ -3292,8 +2782,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FavoriteFolderInfoWithEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link FavoriteFolderInfoWithEmployeeGroup }
      */
     public FavoriteFolderInfoWithEmployeeGroup createFavoriteFolderInfoWithEmployeeGroup() {
         return new FavoriteFolderInfoWithEmployeeGroup();
@@ -3302,8 +2790,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserPassSlimData }
      * 
-     * @return
-     *     the new instance of {@link UserPassSlimData }
      */
     public UserPassSlimData createUserPassSlimData() {
         return new UserPassSlimData();
@@ -3312,8 +2798,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfUserPassEditorData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfUserPassEditorData }
      */
     public ArrayOfUserPassEditorData createArrayOfUserPassEditorData() {
         return new ArrayOfUserPassEditorData();
@@ -3322,8 +2806,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLUser }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLUser }
      */
     public ArrayOfLUser createArrayOfLUser() {
         return new ArrayOfLUser();
@@ -3332,8 +2814,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLUserGroup }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLUserGroup }
      */
     public ArrayOfLUserGroup createArrayOfLUserGroup() {
         return new ArrayOfLUserGroup();
@@ -3342,8 +2822,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CardTypeSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link CardTypeSaveInfo }
      */
     public CardTypeSaveInfo createCardTypeSaveInfo() {
         return new CardTypeSaveInfo();
@@ -3352,8 +2830,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfCardTypeInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfCardTypeInfo }
      */
     public ArrayOfCardTypeInfo createArrayOfCardTypeInfo() {
         return new ArrayOfCardTypeInfo();
@@ -3362,8 +2838,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CardTypeBiometricPermission }
      * 
-     * @return
-     *     the new instance of {@link CardTypeBiometricPermission }
      */
     public CardTypeBiometricPermission createCardTypeBiometricPermission() {
         return new CardTypeBiometricPermission();
@@ -3372,8 +2846,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLKeyInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLKeyInfo }
      */
     public ArrayOfLKeyInfo createArrayOfLKeyInfo() {
         return new ArrayOfLKeyInfo();
@@ -3382,8 +2854,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LKeyInfo }
      * 
-     * @return
-     *     the new instance of {@link LKeyInfo }
      */
     public LKeyInfo createLKeyInfo() {
         return new LKeyInfo();
@@ -3392,8 +2862,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LStateBase }
      * 
-     * @return
-     *     the new instance of {@link LStateBase }
      */
     public LStateBase createLStateBase() {
         return new LStateBase();
@@ -3402,8 +2870,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DriverSettings }
      * 
-     * @return
-     *     the new instance of {@link DriverSettings }
      */
     public DriverSettings createDriverSettings() {
         return new DriverSettings();
@@ -3412,8 +2878,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DoorRelays }
      * 
-     * @return
-     *     the new instance of {@link DoorRelays }
      */
     public DoorRelays createDoorRelays() {
         return new DoorRelays();
@@ -3422,8 +2886,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDoorRelay }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDoorRelay }
      */
     public ArrayOfDoorRelay createArrayOfDoorRelay() {
         return new ArrayOfDoorRelay();
@@ -3432,8 +2894,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DoorRelay }
      * 
-     * @return
-     *     the new instance of {@link DoorRelay }
      */
     public DoorRelay createDoorRelay() {
         return new DoorRelay();
@@ -3442,8 +2902,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLDriversCustomizableDays }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLDriversCustomizableDays }
      */
     public ArrayOfLDriversCustomizableDays createArrayOfLDriversCustomizableDays() {
         return new ArrayOfLDriversCustomizableDays();
@@ -3452,8 +2910,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LDriversCustomizableDays }
      * 
-     * @return
-     *     the new instance of {@link LDriversCustomizableDays }
      */
     public LDriversCustomizableDays createLDriversCustomizableDays() {
         return new LDriversCustomizableDays();
@@ -3462,8 +2918,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLCustomizableDayInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLCustomizableDayInfo }
      */
     public ArrayOfLCustomizableDayInfo createArrayOfLCustomizableDayInfo() {
         return new ArrayOfLCustomizableDayInfo();
@@ -3472,8 +2926,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LCustomizableDayInfo }
      * 
-     * @return
-     *     the new instance of {@link LCustomizableDayInfo }
      */
     public LCustomizableDayInfo createLCustomizableDayInfo() {
         return new LCustomizableDayInfo();
@@ -3482,8 +2934,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UserPassEditorSaveData.Editor }
      * 
-     * @return
-     *     the new instance of {@link UserPassEditorSaveData.Editor }
      */
     public UserPassEditorSaveData.Editor createUserPassEditorSaveDataEditor() {
         return new UserPassEditorSaveData.Editor();
@@ -3492,8 +2942,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IncidentTemplateSaveData.Template }
      * 
-     * @return
-     *     the new instance of {@link IncidentTemplateSaveData.Template }
      */
     public IncidentTemplateSaveData.Template createIncidentTemplateSaveDataTemplate() {
         return new IncidentTemplateSaveData.Template();
@@ -3509,7 +2957,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ArrayOfLogMsgSubType")
     public JAXBElement<ArrayOfLogMsgSubType> createArrayOfLogMsgSubType(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_ArrayOfLogMsgSubType_QNAME, ArrayOfLogMsgSubType.class, null, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_ArrayOfLogMsgSubType_QNAME, ArrayOfLogMsgSubType.class, null, value);
     }
 
     /**
@@ -3522,7 +2970,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogMsgSubType")
     public JAXBElement<String> createLogMsgSubType(String value) {
-        return new JAXBElement<>(_LogMsgSubType_QNAME, String.class, null, value);
+        return new JAXBElement<String>(_LogMsgSubType_QNAME, String.class, null, value);
     }
 
     /**
@@ -3535,7 +2983,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ArrayOfLogMessageTypeSlimInfo")
     public JAXBElement<ArrayOfLogMessageTypeSlimInfo> createArrayOfLogMessageTypeSlimInfo(ArrayOfLogMessageTypeSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfLogMessageTypeSlimInfo_QNAME, ArrayOfLogMessageTypeSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfLogMessageTypeSlimInfo>(_ArrayOfLogMessageTypeSlimInfo_QNAME, ArrayOfLogMessageTypeSlimInfo.class, null, value);
     }
 
     /**
@@ -3548,7 +2996,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogMessageTypeSlimInfo")
     public JAXBElement<LogMessageTypeSlimInfo> createLogMessageTypeSlimInfo(LogMessageTypeSlimInfo value) {
-        return new JAXBElement<>(_LogMessageTypeSlimInfo_QNAME, LogMessageTypeSlimInfo.class, null, value);
+        return new JAXBElement<LogMessageTypeSlimInfo>(_LogMessageTypeSlimInfo_QNAME, LogMessageTypeSlimInfo.class, null, value);
     }
 
     /**
@@ -3561,7 +3009,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogMsgType")
     public JAXBElement<LogMsgType> createLogMsgType(LogMsgType value) {
-        return new JAXBElement<>(_LogMsgType_QNAME, LogMsgType.class, null, value);
+        return new JAXBElement<LogMsgType>(_LogMsgType_QNAME, LogMsgType.class, null, value);
     }
 
     /**
@@ -3574,7 +3022,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ArrayOfLogMessageSubtypeSlimInfo")
     public JAXBElement<ArrayOfLogMessageSubtypeSlimInfo> createArrayOfLogMessageSubtypeSlimInfo(ArrayOfLogMessageSubtypeSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfLogMessageSubtypeSlimInfo_QNAME, ArrayOfLogMessageSubtypeSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfLogMessageSubtypeSlimInfo>(_ArrayOfLogMessageSubtypeSlimInfo_QNAME, ArrayOfLogMessageSubtypeSlimInfo.class, null, value);
     }
 
     /**
@@ -3587,7 +3035,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogMessageSubtypeSlimInfo")
     public JAXBElement<LogMessageSubtypeSlimInfo> createLogMessageSubtypeSlimInfo(LogMessageSubtypeSlimInfo value) {
-        return new JAXBElement<>(_LogMessageSubtypeSlimInfo_QNAME, LogMessageSubtypeSlimInfo.class, null, value);
+        return new JAXBElement<LogMessageSubtypeSlimInfo>(_LogMessageSubtypeSlimInfo_QNAME, LogMessageSubtypeSlimInfo.class, null, value);
     }
 
     /**
@@ -3600,7 +3048,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ArrayOfLogMsgType")
     public JAXBElement<ArrayOfLogMsgType> createArrayOfLogMsgType(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_ArrayOfLogMsgType_QNAME, ArrayOfLogMsgType.class, null, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_ArrayOfLogMsgType_QNAME, ArrayOfLogMsgType.class, null, value);
     }
 
     /**
@@ -3613,7 +3061,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogSubjectType")
     public JAXBElement<LogSubjectType> createLogSubjectType(LogSubjectType value) {
-        return new JAXBElement<>(_LogSubjectType_QNAME, LogSubjectType.class, null, value);
+        return new JAXBElement<LogSubjectType>(_LogSubjectType_QNAME, LogSubjectType.class, null, value);
     }
 
     /**
@@ -3626,7 +3074,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogMessageSortedColumn")
     public JAXBElement<LogMessageSortedColumn> createLogMessageSortedColumn(LogMessageSortedColumn value) {
-        return new JAXBElement<>(_LogMessageSortedColumn_QNAME, LogMessageSortedColumn.class, null, value);
+        return new JAXBElement<LogMessageSortedColumn>(_LogMessageSortedColumn_QNAME, LogMessageSortedColumn.class, null, value);
     }
 
     /**
@@ -3639,7 +3087,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogData")
     public JAXBElement<LogData> createLogData(LogData value) {
-        return new JAXBElement<>(_LogData_QNAME, LogData.class, null, value);
+        return new JAXBElement<LogData>(_LogData_QNAME, LogData.class, null, value);
     }
 
     /**
@@ -3652,7 +3100,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ArrayOfLogMessage")
     public JAXBElement<ArrayOfLogMessage> createArrayOfLogMessage(ArrayOfLogMessage value) {
-        return new JAXBElement<>(_ArrayOfLogMessage_QNAME, ArrayOfLogMessage.class, null, value);
+        return new JAXBElement<ArrayOfLogMessage>(_ArrayOfLogMessage_QNAME, ArrayOfLogMessage.class, null, value);
     }
 
     /**
@@ -3665,7 +3113,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogMessage")
     public JAXBElement<LogMessage> createLogMessage(LogMessage value) {
-        return new JAXBElement<>(_LogMessage_QNAME, LogMessage.class, null, value);
+        return new JAXBElement<LogMessage>(_LogMessage_QNAME, LogMessage.class, null, value);
     }
 
     /**
@@ -3678,7 +3126,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "AlcoCheckState")
     public JAXBElement<AlcoCheckState> createAlcoCheckState(AlcoCheckState value) {
-        return new JAXBElement<>(_AlcoCheckState_QNAME, AlcoCheckState.class, null, value);
+        return new JAXBElement<AlcoCheckState>(_AlcoCheckState_QNAME, AlcoCheckState.class, null, value);
     }
 
     /**
@@ -3691,7 +3139,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LogMessageContentDataType")
     public JAXBElement<LogMessageContentDataType> createLogMessageContentDataType(LogMessageContentDataType value) {
-        return new JAXBElement<>(_LogMessageContentDataType_QNAME, LogMessageContentDataType.class, null, value);
+        return new JAXBElement<LogMessageContentDataType>(_LogMessageContentDataType_QNAME, LogMessageContentDataType.class, null, value);
     }
 
     /**
@@ -3704,7 +3152,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "FaceCheckState")
     public JAXBElement<FaceCheckState> createFaceCheckState(FaceCheckState value) {
-        return new JAXBElement<>(_FaceCheckState_QNAME, FaceCheckState.class, null, value);
+        return new JAXBElement<FaceCheckState>(_FaceCheckState_QNAME, FaceCheckState.class, null, value);
     }
 
     /**
@@ -3717,7 +3165,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ScalesMeasurementReuslt")
     public JAXBElement<ScalesMeasurementReuslt> createScalesMeasurementReuslt(ScalesMeasurementReuslt value) {
-        return new JAXBElement<>(_ScalesMeasurementReuslt_QNAME, ScalesMeasurementReuslt.class, null, value);
+        return new JAXBElement<ScalesMeasurementReuslt>(_ScalesMeasurementReuslt_QNAME, ScalesMeasurementReuslt.class, null, value);
     }
 
     /**
@@ -3730,7 +3178,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "TemperatureCheckState")
     public JAXBElement<TemperatureCheckState> createTemperatureCheckState(TemperatureCheckState value) {
-        return new JAXBElement<>(_TemperatureCheckState_QNAME, TemperatureCheckState.class, null, value);
+        return new JAXBElement<TemperatureCheckState>(_TemperatureCheckState_QNAME, TemperatureCheckState.class, null, value);
     }
 
     /**
@@ -3743,7 +3191,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DictionaryElementInfo")
     public JAXBElement<DictionaryElementInfo> createDictionaryElementInfo(DictionaryElementInfo value) {
-        return new JAXBElement<>(_DictionaryElementInfo_QNAME, DictionaryElementInfo.class, null, value);
+        return new JAXBElement<DictionaryElementInfo>(_DictionaryElementInfo_QNAME, DictionaryElementInfo.class, null, value);
     }
 
     /**
@@ -3756,7 +3204,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DictionaryElementSaveInfo")
     public JAXBElement<DictionaryElementSaveInfo> createDictionaryElementSaveInfo(DictionaryElementSaveInfo value) {
-        return new JAXBElement<>(_DictionaryElementSaveInfo_QNAME, DictionaryElementSaveInfo.class, null, value);
+        return new JAXBElement<DictionaryElementSaveInfo>(_DictionaryElementSaveInfo_QNAME, DictionaryElementSaveInfo.class, null, value);
     }
 
     /**
@@ -3769,7 +3217,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SecurityGroupDictionaryElementSaveInfo")
     public JAXBElement<SecurityGroupDictionaryElementSaveInfo> createSecurityGroupDictionaryElementSaveInfo(SecurityGroupDictionaryElementSaveInfo value) {
-        return new JAXBElement<>(_SecurityGroupDictionaryElementSaveInfo_QNAME, SecurityGroupDictionaryElementSaveInfo.class, null, value);
+        return new JAXBElement<SecurityGroupDictionaryElementSaveInfo>(_SecurityGroupDictionaryElementSaveInfo_QNAME, SecurityGroupDictionaryElementSaveInfo.class, null, value);
     }
 
     /**
@@ -3782,7 +3230,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationElementSaveInfo")
     public JAXBElement<OrganizationElementSaveInfo> createOrganizationElementSaveInfo(OrganizationElementSaveInfo value) {
-        return new JAXBElement<>(_OrganizationElementSaveInfo_QNAME, OrganizationElementSaveInfo.class, null, value);
+        return new JAXBElement<OrganizationElementSaveInfo>(_OrganizationElementSaveInfo_QNAME, OrganizationElementSaveInfo.class, null, value);
     }
 
     /**
@@ -3795,7 +3243,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SecurityGroupDictionaryElementInfo")
     public JAXBElement<SecurityGroupDictionaryElementInfo> createSecurityGroupDictionaryElementInfo(SecurityGroupDictionaryElementInfo value) {
-        return new JAXBElement<>(_SecurityGroupDictionaryElementInfo_QNAME, SecurityGroupDictionaryElementInfo.class, null, value);
+        return new JAXBElement<SecurityGroupDictionaryElementInfo>(_SecurityGroupDictionaryElementInfo_QNAME, SecurityGroupDictionaryElementInfo.class, null, value);
     }
 
     /**
@@ -3808,7 +3256,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationDictionaryElementInfo")
     public JAXBElement<OrganizationDictionaryElementInfo> createOrganizationDictionaryElementInfo(OrganizationDictionaryElementInfo value) {
-        return new JAXBElement<>(_OrganizationDictionaryElementInfo_QNAME, OrganizationDictionaryElementInfo.class, null, value);
+        return new JAXBElement<OrganizationDictionaryElementInfo>(_OrganizationDictionaryElementInfo_QNAME, OrganizationDictionaryElementInfo.class, null, value);
     }
 
     /**
@@ -3821,7 +3269,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DictionaryType")
     public JAXBElement<DictionaryType> createDictionaryType(DictionaryType value) {
-        return new JAXBElement<>(_DictionaryType_QNAME, DictionaryType.class, null, value);
+        return new JAXBElement<DictionaryType>(_DictionaryType_QNAME, DictionaryType.class, null, value);
     }
 
     /**
@@ -3834,7 +3282,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DictionaryElementSortedColumn")
     public JAXBElement<DictionaryElementSortedColumn> createDictionaryElementSortedColumn(DictionaryElementSortedColumn value) {
-        return new JAXBElement<>(_DictionaryElementSortedColumn_QNAME, DictionaryElementSortedColumn.class, null, value);
+        return new JAXBElement<DictionaryElementSortedColumn>(_DictionaryElementSortedColumn_QNAME, DictionaryElementSortedColumn.class, null, value);
     }
 
     /**
@@ -3847,7 +3295,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DictionaryElementsInfoData")
     public JAXBElement<DictionaryElementsInfoData> createDictionaryElementsInfoData(DictionaryElementsInfoData value) {
-        return new JAXBElement<>(_DictionaryElementsInfoData_QNAME, DictionaryElementsInfoData.class, null, value);
+        return new JAXBElement<DictionaryElementsInfoData>(_DictionaryElementsInfoData_QNAME, DictionaryElementsInfoData.class, null, value);
     }
 
     /**
@@ -3860,7 +3308,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfDictionaryElementInfo")
     public JAXBElement<ArrayOfDictionaryElementInfo> createArrayOfDictionaryElementInfo(ArrayOfDictionaryElementInfo value) {
-        return new JAXBElement<>(_ArrayOfDictionaryElementInfo_QNAME, ArrayOfDictionaryElementInfo.class, null, value);
+        return new JAXBElement<ArrayOfDictionaryElementInfo>(_ArrayOfDictionaryElementInfo_QNAME, ArrayOfDictionaryElementInfo.class, null, value);
     }
 
     /**
@@ -3873,7 +3321,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DictionaryElementsFilter")
     public JAXBElement<DictionaryElementsFilter> createDictionaryElementsFilter(DictionaryElementsFilter value) {
-        return new JAXBElement<>(_DictionaryElementsFilter_QNAME, DictionaryElementsFilter.class, null, value);
+        return new JAXBElement<DictionaryElementsFilter>(_DictionaryElementsFilter_QNAME, DictionaryElementsFilter.class, null, value);
     }
 
     /**
@@ -3886,7 +3334,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentSortedColumn")
     public JAXBElement<IncidentSortedColumn> createIncidentSortedColumn(IncidentSortedColumn value) {
-        return new JAXBElement<>(_IncidentSortedColumn_QNAME, IncidentSortedColumn.class, null, value);
+        return new JAXBElement<IncidentSortedColumn>(_IncidentSortedColumn_QNAME, IncidentSortedColumn.class, null, value);
     }
 
     /**
@@ -3899,7 +3347,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentsFilter")
     public JAXBElement<IncidentsFilter> createIncidentsFilter(IncidentsFilter value) {
-        return new JAXBElement<>(_IncidentsFilter_QNAME, IncidentsFilter.class, null, value);
+        return new JAXBElement<IncidentsFilter>(_IncidentsFilter_QNAME, IncidentsFilter.class, null, value);
     }
 
     /**
@@ -3912,7 +3360,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentsMegaFilter")
     public JAXBElement<IncidentsMegaFilter> createIncidentsMegaFilter(IncidentsMegaFilter value) {
-        return new JAXBElement<>(_IncidentsMegaFilter_QNAME, IncidentsMegaFilter.class, null, value);
+        return new JAXBElement<IncidentsMegaFilter>(_IncidentsMegaFilter_QNAME, IncidentsMegaFilter.class, null, value);
     }
 
     /**
@@ -3925,7 +3373,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentsInfoData")
     public JAXBElement<IncidentsInfoData> createIncidentsInfoData(IncidentsInfoData value) {
-        return new JAXBElement<>(_IncidentsInfoData_QNAME, IncidentsInfoData.class, null, value);
+        return new JAXBElement<IncidentsInfoData>(_IncidentsInfoData_QNAME, IncidentsInfoData.class, null, value);
     }
 
     /**
@@ -3938,7 +3386,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfIncidentElementFullInfo")
     public JAXBElement<ArrayOfIncidentElementFullInfo> createArrayOfIncidentElementFullInfo(ArrayOfIncidentElementFullInfo value) {
-        return new JAXBElement<>(_ArrayOfIncidentElementFullInfo_QNAME, ArrayOfIncidentElementFullInfo.class, null, value);
+        return new JAXBElement<ArrayOfIncidentElementFullInfo>(_ArrayOfIncidentElementFullInfo_QNAME, ArrayOfIncidentElementFullInfo.class, null, value);
     }
 
     /**
@@ -3951,7 +3399,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentElementFullInfo")
     public JAXBElement<IncidentElementFullInfo> createIncidentElementFullInfo(IncidentElementFullInfo value) {
-        return new JAXBElement<>(_IncidentElementFullInfo_QNAME, IncidentElementFullInfo.class, null, value);
+        return new JAXBElement<IncidentElementFullInfo>(_IncidentElementFullInfo_QNAME, IncidentElementFullInfo.class, null, value);
     }
 
     /**
@@ -3964,7 +3412,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentSaveInfo")
     public JAXBElement<IncidentSaveInfo> createIncidentSaveInfo(IncidentSaveInfo value) {
-        return new JAXBElement<>(_IncidentSaveInfo_QNAME, IncidentSaveInfo.class, null, value);
+        return new JAXBElement<IncidentSaveInfo>(_IncidentSaveInfo_QNAME, IncidentSaveInfo.class, null, value);
     }
 
     /**
@@ -3977,7 +3425,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfViolatorSaveInfo")
     public JAXBElement<ArrayOfViolatorSaveInfo> createArrayOfViolatorSaveInfo(ArrayOfViolatorSaveInfo value) {
-        return new JAXBElement<>(_ArrayOfViolatorSaveInfo_QNAME, ArrayOfViolatorSaveInfo.class, null, value);
+        return new JAXBElement<ArrayOfViolatorSaveInfo>(_ArrayOfViolatorSaveInfo_QNAME, ArrayOfViolatorSaveInfo.class, null, value);
     }
 
     /**
@@ -3990,7 +3438,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolatorSaveInfo")
     public JAXBElement<ViolatorSaveInfo> createViolatorSaveInfo(ViolatorSaveInfo value) {
-        return new JAXBElement<>(_ViolatorSaveInfo_QNAME, ViolatorSaveInfo.class, null, value);
+        return new JAXBElement<ViolatorSaveInfo>(_ViolatorSaveInfo_QNAME, ViolatorSaveInfo.class, null, value);
     }
 
     /**
@@ -4003,7 +3451,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfDocumentForActionSaveInfo")
     public JAXBElement<ArrayOfDocumentForActionSaveInfo> createArrayOfDocumentForActionSaveInfo(ArrayOfDocumentForActionSaveInfo value) {
-        return new JAXBElement<>(_ArrayOfDocumentForActionSaveInfo_QNAME, ArrayOfDocumentForActionSaveInfo.class, null, value);
+        return new JAXBElement<ArrayOfDocumentForActionSaveInfo>(_ArrayOfDocumentForActionSaveInfo_QNAME, ArrayOfDocumentForActionSaveInfo.class, null, value);
     }
 
     /**
@@ -4016,7 +3464,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentForActionSaveInfo")
     public JAXBElement<DocumentForActionSaveInfo> createDocumentForActionSaveInfo(DocumentForActionSaveInfo value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfo_QNAME, DocumentForActionSaveInfo.class, null, value);
+        return new JAXBElement<DocumentForActionSaveInfo>(_DocumentForActionSaveInfo_QNAME, DocumentForActionSaveInfo.class, null, value);
     }
 
     /**
@@ -4029,7 +3477,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfDocumentSaveInfo")
     public JAXBElement<ArrayOfDocumentSaveInfo> createArrayOfDocumentSaveInfo(ArrayOfDocumentSaveInfo value) {
-        return new JAXBElement<>(_ArrayOfDocumentSaveInfo_QNAME, ArrayOfDocumentSaveInfo.class, null, value);
+        return new JAXBElement<ArrayOfDocumentSaveInfo>(_ArrayOfDocumentSaveInfo_QNAME, ArrayOfDocumentSaveInfo.class, null, value);
     }
 
     /**
@@ -4042,7 +3490,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentSaveInfo")
     public JAXBElement<DocumentSaveInfo> createDocumentSaveInfo(DocumentSaveInfo value) {
-        return new JAXBElement<>(_DocumentSaveInfo_QNAME, DocumentSaveInfo.class, null, value);
+        return new JAXBElement<DocumentSaveInfo>(_DocumentSaveInfo_QNAME, DocumentSaveInfo.class, null, value);
     }
 
     /**
@@ -4055,7 +3503,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfViolationSaveInfo")
     public JAXBElement<ArrayOfViolationSaveInfo> createArrayOfViolationSaveInfo(ArrayOfViolationSaveInfo value) {
-        return new JAXBElement<>(_ArrayOfViolationSaveInfo_QNAME, ArrayOfViolationSaveInfo.class, null, value);
+        return new JAXBElement<ArrayOfViolationSaveInfo>(_ArrayOfViolationSaveInfo_QNAME, ArrayOfViolationSaveInfo.class, null, value);
     }
 
     /**
@@ -4068,7 +3516,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationSaveInfo")
     public JAXBElement<ViolationSaveInfo> createViolationSaveInfo(ViolationSaveInfo value) {
-        return new JAXBElement<>(_ViolationSaveInfo_QNAME, ViolationSaveInfo.class, null, value);
+        return new JAXBElement<ViolationSaveInfo>(_ViolationSaveInfo_QNAME, ViolationSaveInfo.class, null, value);
     }
 
     /**
@@ -4081,7 +3529,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationFullInfo")
     public JAXBElement<ViolationFullInfo> createViolationFullInfo(ViolationFullInfo value) {
-        return new JAXBElement<>(_ViolationFullInfo_QNAME, ViolationFullInfo.class, null, value);
+        return new JAXBElement<ViolationFullInfo>(_ViolationFullInfo_QNAME, ViolationFullInfo.class, null, value);
     }
 
     /**
@@ -4094,7 +3542,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfTangiblesSaveInfo")
     public JAXBElement<ArrayOfTangiblesSaveInfo> createArrayOfTangiblesSaveInfo(ArrayOfTangiblesSaveInfo value) {
-        return new JAXBElement<>(_ArrayOfTangiblesSaveInfo_QNAME, ArrayOfTangiblesSaveInfo.class, null, value);
+        return new JAXBElement<ArrayOfTangiblesSaveInfo>(_ArrayOfTangiblesSaveInfo_QNAME, ArrayOfTangiblesSaveInfo.class, null, value);
     }
 
     /**
@@ -4107,7 +3555,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TangiblesSaveInfo")
     public JAXBElement<TangiblesSaveInfo> createTangiblesSaveInfo(TangiblesSaveInfo value) {
-        return new JAXBElement<>(_TangiblesSaveInfo_QNAME, TangiblesSaveInfo.class, null, value);
+        return new JAXBElement<TangiblesSaveInfo>(_TangiblesSaveInfo_QNAME, TangiblesSaveInfo.class, null, value);
     }
 
     /**
@@ -4120,7 +3568,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfViolatorFullInfo")
     public JAXBElement<ArrayOfViolatorFullInfo> createArrayOfViolatorFullInfo(ArrayOfViolatorFullInfo value) {
-        return new JAXBElement<>(_ArrayOfViolatorFullInfo_QNAME, ArrayOfViolatorFullInfo.class, null, value);
+        return new JAXBElement<ArrayOfViolatorFullInfo>(_ArrayOfViolatorFullInfo_QNAME, ArrayOfViolatorFullInfo.class, null, value);
     }
 
     /**
@@ -4133,7 +3581,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolatorFullInfo")
     public JAXBElement<ViolatorFullInfo> createViolatorFullInfo(ViolatorFullInfo value) {
-        return new JAXBElement<>(_ViolatorFullInfo_QNAME, ViolatorFullInfo.class, null, value);
+        return new JAXBElement<ViolatorFullInfo>(_ViolatorFullInfo_QNAME, ViolatorFullInfo.class, null, value);
     }
 
     /**
@@ -4146,7 +3594,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfDocumentFullInfo")
     public JAXBElement<ArrayOfDocumentFullInfo> createArrayOfDocumentFullInfo(ArrayOfDocumentFullInfo value) {
-        return new JAXBElement<>(_ArrayOfDocumentFullInfo_QNAME, ArrayOfDocumentFullInfo.class, null, value);
+        return new JAXBElement<ArrayOfDocumentFullInfo>(_ArrayOfDocumentFullInfo_QNAME, ArrayOfDocumentFullInfo.class, null, value);
     }
 
     /**
@@ -4159,7 +3607,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentFullInfo")
     public JAXBElement<DocumentFullInfo> createDocumentFullInfo(DocumentFullInfo value) {
-        return new JAXBElement<>(_DocumentFullInfo_QNAME, DocumentFullInfo.class, null, value);
+        return new JAXBElement<DocumentFullInfo>(_DocumentFullInfo_QNAME, DocumentFullInfo.class, null, value);
     }
 
     /**
@@ -4172,7 +3620,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfDocumentFullForActionInfo")
     public JAXBElement<ArrayOfDocumentFullForActionInfo> createArrayOfDocumentFullForActionInfo(ArrayOfDocumentFullForActionInfo value) {
-        return new JAXBElement<>(_ArrayOfDocumentFullForActionInfo_QNAME, ArrayOfDocumentFullForActionInfo.class, null, value);
+        return new JAXBElement<ArrayOfDocumentFullForActionInfo>(_ArrayOfDocumentFullForActionInfo_QNAME, ArrayOfDocumentFullForActionInfo.class, null, value);
     }
 
     /**
@@ -4185,7 +3633,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentFullForActionInfo")
     public JAXBElement<DocumentFullForActionInfo> createDocumentFullForActionInfo(DocumentFullForActionInfo value) {
-        return new JAXBElement<>(_DocumentFullForActionInfo_QNAME, DocumentFullForActionInfo.class, null, value);
+        return new JAXBElement<DocumentFullForActionInfo>(_DocumentFullForActionInfo_QNAME, DocumentFullForActionInfo.class, null, value);
     }
 
     /**
@@ -4198,7 +3646,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfViolationFullInfo")
     public JAXBElement<ArrayOfViolationFullInfo> createArrayOfViolationFullInfo(ArrayOfViolationFullInfo value) {
-        return new JAXBElement<>(_ArrayOfViolationFullInfo_QNAME, ArrayOfViolationFullInfo.class, null, value);
+        return new JAXBElement<ArrayOfViolationFullInfo>(_ArrayOfViolationFullInfo_QNAME, ArrayOfViolationFullInfo.class, null, value);
     }
 
     /**
@@ -4211,7 +3659,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfTangiblesFullInfo")
     public JAXBElement<ArrayOfTangiblesFullInfo> createArrayOfTangiblesFullInfo(ArrayOfTangiblesFullInfo value) {
-        return new JAXBElement<>(_ArrayOfTangiblesFullInfo_QNAME, ArrayOfTangiblesFullInfo.class, null, value);
+        return new JAXBElement<ArrayOfTangiblesFullInfo>(_ArrayOfTangiblesFullInfo_QNAME, ArrayOfTangiblesFullInfo.class, null, value);
     }
 
     /**
@@ -4224,7 +3672,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TangiblesFullInfo")
     public JAXBElement<TangiblesFullInfo> createTangiblesFullInfo(TangiblesFullInfo value) {
-        return new JAXBElement<>(_TangiblesFullInfo_QNAME, TangiblesFullInfo.class, null, value);
+        return new JAXBElement<TangiblesFullInfo>(_TangiblesFullInfo_QNAME, TangiblesFullInfo.class, null, value);
     }
 
     /**
@@ -4237,7 +3685,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolatorFilter")
     public JAXBElement<ViolatorFilter> createViolatorFilter(ViolatorFilter value) {
-        return new JAXBElement<>(_ViolatorFilter_QNAME, ViolatorFilter.class, null, value);
+        return new JAXBElement<ViolatorFilter>(_ViolatorFilter_QNAME, ViolatorFilter.class, null, value);
     }
 
     /**
@@ -4250,7 +3698,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfFirebirdIncidentEventsResult")
     public JAXBElement<ArrayOfFirebirdIncidentEventsResult> createArrayOfFirebirdIncidentEventsResult(ArrayOfFirebirdIncidentEventsResult value) {
-        return new JAXBElement<>(_ArrayOfFirebirdIncidentEventsResult_QNAME, ArrayOfFirebirdIncidentEventsResult.class, null, value);
+        return new JAXBElement<ArrayOfFirebirdIncidentEventsResult>(_ArrayOfFirebirdIncidentEventsResult_QNAME, ArrayOfFirebirdIncidentEventsResult.class, null, value);
     }
 
     /**
@@ -4263,7 +3711,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "FirebirdIncidentEventsResult")
     public JAXBElement<FirebirdIncidentEventsResult> createFirebirdIncidentEventsResult(FirebirdIncidentEventsResult value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResult_QNAME, FirebirdIncidentEventsResult.class, null, value);
+        return new JAXBElement<FirebirdIncidentEventsResult>(_FirebirdIncidentEventsResult_QNAME, FirebirdIncidentEventsResult.class, null, value);
     }
 
     /**
@@ -4276,7 +3724,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfViolation")
     public JAXBElement<ArrayOfViolation> createArrayOfViolation(ArrayOfViolation value) {
-        return new JAXBElement<>(_ArrayOfViolation_QNAME, ArrayOfViolation.class, null, value);
+        return new JAXBElement<ArrayOfViolation>(_ArrayOfViolation_QNAME, ArrayOfViolation.class, null, value);
     }
 
     /**
@@ -4289,7 +3737,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Violation")
     public JAXBElement<Violation> createViolation(Violation value) {
-        return new JAXBElement<>(_Violation_QNAME, Violation.class, null, value);
+        return new JAXBElement<Violation>(_Violation_QNAME, Violation.class, null, value);
     }
 
     /**
@@ -4302,7 +3750,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfIncidentTemplateInfo")
     public JAXBElement<ArrayOfIncidentTemplateInfo> createArrayOfIncidentTemplateInfo(ArrayOfIncidentTemplateInfo value) {
-        return new JAXBElement<>(_ArrayOfIncidentTemplateInfo_QNAME, ArrayOfIncidentTemplateInfo.class, null, value);
+        return new JAXBElement<ArrayOfIncidentTemplateInfo>(_ArrayOfIncidentTemplateInfo_QNAME, ArrayOfIncidentTemplateInfo.class, null, value);
     }
 
     /**
@@ -4315,7 +3763,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentTemplateInfo")
     public JAXBElement<IncidentTemplateInfo> createIncidentTemplateInfo(IncidentTemplateInfo value) {
-        return new JAXBElement<>(_IncidentTemplateInfo_QNAME, IncidentTemplateInfo.class, null, value);
+        return new JAXBElement<IncidentTemplateInfo>(_IncidentTemplateInfo_QNAME, IncidentTemplateInfo.class, null, value);
     }
 
     /**
@@ -4328,7 +3776,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentTemplateSaveData")
     public JAXBElement<IncidentTemplateSaveData> createIncidentTemplateSaveData(IncidentTemplateSaveData value) {
-        return new JAXBElement<>(_IncidentTemplateSaveData_QNAME, IncidentTemplateSaveData.class, null, value);
+        return new JAXBElement<IncidentTemplateSaveData>(_IncidentTemplateSaveData_QNAME, IncidentTemplateSaveData.class, null, value);
     }
 
     /**
@@ -4341,7 +3789,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfEmployee2OrganizationAssignmentFull")
     public JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull> createArrayOfEmployee2OrganizationAssignmentFull(ArrayOfEmployee2OrganizationAssignmentFull value) {
-        return new JAXBElement<>(_ArrayOfEmployee2OrganizationAssignmentFull_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, null, value);
+        return new JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull>(_ArrayOfEmployee2OrganizationAssignmentFull_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, null, value);
     }
 
     /**
@@ -4354,7 +3802,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Employee2OrganizationAssignmentFull")
     public JAXBElement<Employee2OrganizationAssignmentFull> createEmployee2OrganizationAssignmentFull(Employee2OrganizationAssignmentFull value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentFull_QNAME, Employee2OrganizationAssignmentFull.class, null, value);
+        return new JAXBElement<Employee2OrganizationAssignmentFull>(_Employee2OrganizationAssignmentFull_QNAME, Employee2OrganizationAssignmentFull.class, null, value);
     }
 
     /**
@@ -4367,7 +3815,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ArrayOfEmployee2OrganizationAssignment")
     public JAXBElement<ArrayOfEmployee2OrganizationAssignment> createArrayOfEmployee2OrganizationAssignment(ArrayOfEmployee2OrganizationAssignment value) {
-        return new JAXBElement<>(_ArrayOfEmployee2OrganizationAssignment_QNAME, ArrayOfEmployee2OrganizationAssignment.class, null, value);
+        return new JAXBElement<ArrayOfEmployee2OrganizationAssignment>(_ArrayOfEmployee2OrganizationAssignment_QNAME, ArrayOfEmployee2OrganizationAssignment.class, null, value);
     }
 
     /**
@@ -4380,7 +3828,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Employee2OrganizationAssignment")
     public JAXBElement<Employee2OrganizationAssignment> createEmployee2OrganizationAssignment(Employee2OrganizationAssignment value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignment_QNAME, Employee2OrganizationAssignment.class, null, value);
+        return new JAXBElement<Employee2OrganizationAssignment>(_Employee2OrganizationAssignment_QNAME, Employee2OrganizationAssignment.class, null, value);
     }
 
     /**
@@ -4393,7 +3841,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "FolderInfo")
     public JAXBElement<FolderInfo> createFolderInfo(FolderInfo value) {
-        return new JAXBElement<>(_FolderInfo_QNAME, FolderInfo.class, null, value);
+        return new JAXBElement<FolderInfo>(_FolderInfo_QNAME, FolderInfo.class, null, value);
     }
 
     /**
@@ -4406,7 +3854,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "FolderSaveData")
     public JAXBElement<FolderSaveData> createFolderSaveData(FolderSaveData value) {
-        return new JAXBElement<>(_FolderSaveData_QNAME, FolderSaveData.class, null, value);
+        return new JAXBElement<FolderSaveData>(_FolderSaveData_QNAME, FolderSaveData.class, null, value);
     }
 
     /**
@@ -4419,7 +3867,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "OwnerType")
     public JAXBElement<OwnerType> createOwnerType(OwnerType value) {
-        return new JAXBElement<>(_OwnerType_QNAME, OwnerType.class, null, value);
+        return new JAXBElement<OwnerType>(_OwnerType_QNAME, OwnerType.class, null, value);
     }
 
     /**
@@ -4432,7 +3880,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "ArrayOfFolderInfo")
     public JAXBElement<ArrayOfFolderInfo> createArrayOfFolderInfo(ArrayOfFolderInfo value) {
-        return new JAXBElement<>(_ArrayOfFolderInfo_QNAME, ArrayOfFolderInfo.class, null, value);
+        return new JAXBElement<ArrayOfFolderInfo>(_ArrayOfFolderInfo_QNAME, ArrayOfFolderInfo.class, null, value);
     }
 
     /**
@@ -4445,7 +3893,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "ArrayOfFolderInfoWithAccessLevel")
     public JAXBElement<ArrayOfFolderInfoWithAccessLevel> createArrayOfFolderInfoWithAccessLevel(ArrayOfFolderInfoWithAccessLevel value) {
-        return new JAXBElement<>(_ArrayOfFolderInfoWithAccessLevel_QNAME, ArrayOfFolderInfoWithAccessLevel.class, null, value);
+        return new JAXBElement<ArrayOfFolderInfoWithAccessLevel>(_ArrayOfFolderInfoWithAccessLevel_QNAME, ArrayOfFolderInfoWithAccessLevel.class, null, value);
     }
 
     /**
@@ -4458,7 +3906,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "FolderInfoWithAccessLevel")
     public JAXBElement<FolderInfoWithAccessLevel> createFolderInfoWithAccessLevel(FolderInfoWithAccessLevel value) {
-        return new JAXBElement<>(_FolderInfoWithAccessLevel_QNAME, FolderInfoWithAccessLevel.class, null, value);
+        return new JAXBElement<FolderInfoWithAccessLevel>(_FolderInfoWithAccessLevel_QNAME, FolderInfoWithAccessLevel.class, null, value);
     }
 
     /**
@@ -4471,7 +3919,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "ArrayOfEmployeePositionSlimInfo")
     public JAXBElement<ArrayOfEmployeePositionSlimInfo> createArrayOfEmployeePositionSlimInfo(ArrayOfEmployeePositionSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfEmployeePositionSlimInfo_QNAME, ArrayOfEmployeePositionSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfEmployeePositionSlimInfo>(_ArrayOfEmployeePositionSlimInfo_QNAME, ArrayOfEmployeePositionSlimInfo.class, null, value);
     }
 
     /**
@@ -4484,7 +3932,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "EmployeePositionSlimInfo")
     public JAXBElement<EmployeePositionSlimInfo> createEmployeePositionSlimInfo(EmployeePositionSlimInfo value) {
-        return new JAXBElement<>(_EmployeePositionSlimInfo_QNAME, EmployeePositionSlimInfo.class, null, value);
+        return new JAXBElement<EmployeePositionSlimInfo>(_EmployeePositionSlimInfo_QNAME, EmployeePositionSlimInfo.class, null, value);
     }
 
     /**
@@ -4497,7 +3945,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "LEmployeePositionInfo")
     public JAXBElement<LEmployeePositionInfo> createLEmployeePositionInfo(LEmployeePositionInfo value) {
-        return new JAXBElement<>(_LEmployeePositionInfo_QNAME, LEmployeePositionInfo.class, null, value);
+        return new JAXBElement<LEmployeePositionInfo>(_LEmployeePositionInfo_QNAME, LEmployeePositionInfo.class, null, value);
     }
 
     /**
@@ -4510,7 +3958,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "EmployeePositionSortedColumn")
     public JAXBElement<EmployeePositionSortedColumn> createEmployeePositionSortedColumn(EmployeePositionSortedColumn value) {
-        return new JAXBElement<>(_EmployeePositionSortedColumn_QNAME, EmployeePositionSortedColumn.class, null, value);
+        return new JAXBElement<EmployeePositionSortedColumn>(_EmployeePositionSortedColumn_QNAME, EmployeePositionSortedColumn.class, null, value);
     }
 
     /**
@@ -4523,7 +3971,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "LEmployeePositionsData")
     public JAXBElement<LEmployeePositionsData> createLEmployeePositionsData(LEmployeePositionsData value) {
-        return new JAXBElement<>(_LEmployeePositionsData_QNAME, LEmployeePositionsData.class, null, value);
+        return new JAXBElement<LEmployeePositionsData>(_LEmployeePositionsData_QNAME, LEmployeePositionsData.class, null, value);
     }
 
     /**
@@ -4536,7 +3984,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "ArrayOfLEmployeePositionInfo")
     public JAXBElement<ArrayOfLEmployeePositionInfo> createArrayOfLEmployeePositionInfo(ArrayOfLEmployeePositionInfo value) {
-        return new JAXBElement<>(_ArrayOfLEmployeePositionInfo_QNAME, ArrayOfLEmployeePositionInfo.class, null, value);
+        return new JAXBElement<ArrayOfLEmployeePositionInfo>(_ArrayOfLEmployeePositionInfo_QNAME, ArrayOfLEmployeePositionInfo.class, null, value);
     }
 
     /**
@@ -4549,7 +3997,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "ArrayOfWorkZoneSlimInfo")
     public JAXBElement<ArrayOfWorkZoneSlimInfo> createArrayOfWorkZoneSlimInfo(ArrayOfWorkZoneSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfWorkZoneSlimInfo_QNAME, ArrayOfWorkZoneSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfWorkZoneSlimInfo>(_ArrayOfWorkZoneSlimInfo_QNAME, ArrayOfWorkZoneSlimInfo.class, null, value);
     }
 
     /**
@@ -4562,7 +4010,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZoneSlimInfo")
     public JAXBElement<WorkZoneSlimInfo> createWorkZoneSlimInfo(WorkZoneSlimInfo value) {
-        return new JAXBElement<>(_WorkZoneSlimInfo_QNAME, WorkZoneSlimInfo.class, null, value);
+        return new JAXBElement<WorkZoneSlimInfo>(_WorkZoneSlimInfo_QNAME, WorkZoneSlimInfo.class, null, value);
     }
 
     /**
@@ -4575,7 +4023,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZoneSlimSaveData")
     public JAXBElement<WorkZoneSlimSaveData> createWorkZoneSlimSaveData(WorkZoneSlimSaveData value) {
-        return new JAXBElement<>(_WorkZoneSlimSaveData_QNAME, WorkZoneSlimSaveData.class, null, value);
+        return new JAXBElement<WorkZoneSlimSaveData>(_WorkZoneSlimSaveData_QNAME, WorkZoneSlimSaveData.class, null, value);
     }
 
     /**
@@ -4588,7 +4036,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "ArrayOfWorkTimetableSlimInfo")
     public JAXBElement<ArrayOfWorkTimetableSlimInfo> createArrayOfWorkTimetableSlimInfo(ArrayOfWorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfWorkTimetableSlimInfo_QNAME, ArrayOfWorkTimetableSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfWorkTimetableSlimInfo>(_ArrayOfWorkTimetableSlimInfo_QNAME, ArrayOfWorkTimetableSlimInfo.class, null, value);
     }
 
     /**
@@ -4601,7 +4049,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkTimetableSlimInfo")
     public JAXBElement<WorkTimetableSlimInfo> createWorkTimetableSlimInfo(WorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_WorkTimetableSlimInfo_QNAME, WorkTimetableSlimInfo.class, null, value);
+        return new JAXBElement<WorkTimetableSlimInfo>(_WorkTimetableSlimInfo_QNAME, WorkTimetableSlimInfo.class, null, value);
     }
 
     /**
@@ -4614,7 +4062,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "DayForm")
     public JAXBElement<DayForm> createDayForm(DayForm value) {
-        return new JAXBElement<>(_DayForm_QNAME, DayForm.class, null, value);
+        return new JAXBElement<DayForm>(_DayForm_QNAME, DayForm.class, null, value);
     }
 
     /**
@@ -4627,7 +4075,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "DayTypeSlimInfo")
     public JAXBElement<DayTypeSlimInfo> createDayTypeSlimInfo(DayTypeSlimInfo value) {
-        return new JAXBElement<>(_DayTypeSlimInfo_QNAME, DayTypeSlimInfo.class, null, value);
+        return new JAXBElement<DayTypeSlimInfo>(_DayTypeSlimInfo_QNAME, DayTypeSlimInfo.class, null, value);
     }
 
     /**
@@ -4640,7 +4088,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "DayTypeSaveData")
     public JAXBElement<DayTypeSaveData> createDayTypeSaveData(DayTypeSaveData value) {
-        return new JAXBElement<>(_DayTypeSaveData_QNAME, DayTypeSaveData.class, null, value);
+        return new JAXBElement<DayTypeSaveData>(_DayTypeSaveData_QNAME, DayTypeSaveData.class, null, value);
     }
 
     /**
@@ -4653,7 +4101,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "DayMode")
     public JAXBElement<DayMode> createDayMode(DayMode value) {
-        return new JAXBElement<>(_DayMode_QNAME, DayMode.class, null, value);
+        return new JAXBElement<DayMode>(_DayMode_QNAME, DayMode.class, null, value);
     }
 
     /**
@@ -4666,7 +4114,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "ArrayOfDayTypeSlimInfo")
     public JAXBElement<ArrayOfDayTypeSlimInfo> createArrayOfDayTypeSlimInfo(ArrayOfDayTypeSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfDayTypeSlimInfo_QNAME, ArrayOfDayTypeSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfDayTypeSlimInfo>(_ArrayOfDayTypeSlimInfo_QNAME, ArrayOfDayTypeSlimInfo.class, null, value);
     }
 
     /**
@@ -4679,7 +4127,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "ArrayOfWorkScheduleSlimInfo")
     public JAXBElement<ArrayOfWorkScheduleSlimInfo> createArrayOfWorkScheduleSlimInfo(ArrayOfWorkScheduleSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfWorkScheduleSlimInfo_QNAME, ArrayOfWorkScheduleSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfWorkScheduleSlimInfo>(_ArrayOfWorkScheduleSlimInfo_QNAME, ArrayOfWorkScheduleSlimInfo.class, null, value);
     }
 
     /**
@@ -4692,7 +4140,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkScheduleSlimInfo")
     public JAXBElement<WorkScheduleSlimInfo> createWorkScheduleSlimInfo(WorkScheduleSlimInfo value) {
-        return new JAXBElement<>(_WorkScheduleSlimInfo_QNAME, WorkScheduleSlimInfo.class, null, value);
+        return new JAXBElement<WorkScheduleSlimInfo>(_WorkScheduleSlimInfo_QNAME, WorkScheduleSlimInfo.class, null, value);
     }
 
     /**
@@ -4705,7 +4153,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkScheduleSlimSaveData")
     public JAXBElement<WorkScheduleSlimSaveData> createWorkScheduleSlimSaveData(WorkScheduleSlimSaveData value) {
-        return new JAXBElement<>(_WorkScheduleSlimSaveData_QNAME, WorkScheduleSlimSaveData.class, null, value);
+        return new JAXBElement<WorkScheduleSlimSaveData>(_WorkScheduleSlimSaveData_QNAME, WorkScheduleSlimSaveData.class, null, value);
     }
 
     /**
@@ -4718,7 +4166,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "ArrayOfWorkZonesAccessPointSlimInfo")
     public JAXBElement<ArrayOfWorkZonesAccessPointSlimInfo> createArrayOfWorkZonesAccessPointSlimInfo(ArrayOfWorkZonesAccessPointSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfWorkZonesAccessPointSlimInfo_QNAME, ArrayOfWorkZonesAccessPointSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfWorkZonesAccessPointSlimInfo>(_ArrayOfWorkZonesAccessPointSlimInfo_QNAME, ArrayOfWorkZonesAccessPointSlimInfo.class, null, value);
     }
 
     /**
@@ -4731,7 +4179,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesAccessPointSlimInfo")
     public JAXBElement<WorkZonesAccessPointSlimInfo> createWorkZonesAccessPointSlimInfo(WorkZonesAccessPointSlimInfo value) {
-        return new JAXBElement<>(_WorkZonesAccessPointSlimInfo_QNAME, WorkZonesAccessPointSlimInfo.class, null, value);
+        return new JAXBElement<WorkZonesAccessPointSlimInfo>(_WorkZonesAccessPointSlimInfo_QNAME, WorkZonesAccessPointSlimInfo.class, null, value);
     }
 
     /**
@@ -4744,7 +4192,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesAccessPointBase")
     public JAXBElement<WorkZonesAccessPointBase> createWorkZonesAccessPointBase(WorkZonesAccessPointBase value) {
-        return new JAXBElement<>(_WorkZonesAccessPointBase_QNAME, WorkZonesAccessPointBase.class, null, value);
+        return new JAXBElement<WorkZonesAccessPointBase>(_WorkZonesAccessPointBase_QNAME, WorkZonesAccessPointBase.class, null, value);
     }
 
     /**
@@ -4757,7 +4205,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesAccessPointType")
     public JAXBElement<WorkZonesAccessPointType> createWorkZonesAccessPointType(WorkZonesAccessPointType value) {
-        return new JAXBElement<>(_WorkZonesAccessPointType_QNAME, WorkZonesAccessPointType.class, null, value);
+        return new JAXBElement<WorkZonesAccessPointType>(_WorkZonesAccessPointType_QNAME, WorkZonesAccessPointType.class, null, value);
     }
 
     /**
@@ -4770,7 +4218,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesAccessPointEventType")
     public JAXBElement<WorkZonesAccessPointEventType> createWorkZonesAccessPointEventType(WorkZonesAccessPointEventType value) {
-        return new JAXBElement<>(_WorkZonesAccessPointEventType_QNAME, WorkZonesAccessPointEventType.class, null, value);
+        return new JAXBElement<WorkZonesAccessPointEventType>(_WorkZonesAccessPointEventType_QNAME, WorkZonesAccessPointEventType.class, null, value);
     }
 
     /**
@@ -4783,7 +4231,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZoneSortedColumn")
     public JAXBElement<WorkZoneSortedColumn> createWorkZoneSortedColumn(WorkZoneSortedColumn value) {
-        return new JAXBElement<>(_WorkZoneSortedColumn_QNAME, WorkZoneSortedColumn.class, null, value);
+        return new JAXBElement<WorkZoneSortedColumn>(_WorkZoneSortedColumn_QNAME, WorkZoneSortedColumn.class, null, value);
     }
 
     /**
@@ -4796,7 +4244,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesOwner")
     public JAXBElement<WorkZonesOwner> createWorkZonesOwner(WorkZonesOwner value) {
-        return new JAXBElement<>(_WorkZonesOwner_QNAME, WorkZonesOwner.class, null, value);
+        return new JAXBElement<WorkZonesOwner>(_WorkZonesOwner_QNAME, WorkZonesOwner.class, null, value);
     }
 
     /**
@@ -4809,7 +4257,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesData")
     public JAXBElement<WorkZonesData> createWorkZonesData(WorkZonesData value) {
-        return new JAXBElement<>(_WorkZonesData_QNAME, WorkZonesData.class, null, value);
+        return new JAXBElement<WorkZonesData>(_WorkZonesData_QNAME, WorkZonesData.class, null, value);
     }
 
     /**
@@ -4822,7 +4270,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkScheduleSortedColumn")
     public JAXBElement<WorkScheduleSortedColumn> createWorkScheduleSortedColumn(WorkScheduleSortedColumn value) {
-        return new JAXBElement<>(_WorkScheduleSortedColumn_QNAME, WorkScheduleSortedColumn.class, null, value);
+        return new JAXBElement<WorkScheduleSortedColumn>(_WorkScheduleSortedColumn_QNAME, WorkScheduleSortedColumn.class, null, value);
     }
 
     /**
@@ -4835,7 +4283,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkSchedulesOwner")
     public JAXBElement<WorkSchedulesOwner> createWorkSchedulesOwner(WorkSchedulesOwner value) {
-        return new JAXBElement<>(_WorkSchedulesOwner_QNAME, WorkSchedulesOwner.class, null, value);
+        return new JAXBElement<WorkSchedulesOwner>(_WorkSchedulesOwner_QNAME, WorkSchedulesOwner.class, null, value);
     }
 
     /**
@@ -4848,7 +4296,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkSchedulesData")
     public JAXBElement<WorkSchedulesData> createWorkSchedulesData(WorkSchedulesData value) {
-        return new JAXBElement<>(_WorkSchedulesData_QNAME, WorkSchedulesData.class, null, value);
+        return new JAXBElement<WorkSchedulesData>(_WorkSchedulesData_QNAME, WorkSchedulesData.class, null, value);
     }
 
     /**
@@ -4861,7 +4309,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesAccessPointSaveData")
     public JAXBElement<WorkZonesAccessPointSaveData> createWorkZonesAccessPointSaveData(WorkZonesAccessPointSaveData value) {
-        return new JAXBElement<>(_WorkZonesAccessPointSaveData_QNAME, WorkZonesAccessPointSaveData.class, null, value);
+        return new JAXBElement<WorkZonesAccessPointSaveData>(_WorkZonesAccessPointSaveData_QNAME, WorkZonesAccessPointSaveData.class, null, value);
     }
 
     /**
@@ -4874,7 +4322,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Branch", name = "ArrayOfBranchInfo")
     public JAXBElement<ArrayOfBranchInfo> createArrayOfBranchInfo(ArrayOfBranchInfo value) {
-        return new JAXBElement<>(_ArrayOfBranchInfo_QNAME, ArrayOfBranchInfo.class, null, value);
+        return new JAXBElement<ArrayOfBranchInfo>(_ArrayOfBranchInfo_QNAME, ArrayOfBranchInfo.class, null, value);
     }
 
     /**
@@ -4887,7 +4335,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Branch", name = "BranchInfo")
     public JAXBElement<BranchInfo> createBranchInfo(BranchInfo value) {
-        return new JAXBElement<>(_BranchInfo_QNAME, BranchInfo.class, null, value);
+        return new JAXBElement<BranchInfo>(_BranchInfo_QNAME, BranchInfo.class, null, value);
     }
 
     /**
@@ -4900,7 +4348,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Branch", name = "BranchSortedColumn")
     public JAXBElement<BranchSortedColumn> createBranchSortedColumn(BranchSortedColumn value) {
-        return new JAXBElement<>(_BranchSortedColumn_QNAME, BranchSortedColumn.class, null, value);
+        return new JAXBElement<BranchSortedColumn>(_BranchSortedColumn_QNAME, BranchSortedColumn.class, null, value);
     }
 
     /**
@@ -4913,7 +4361,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Branch", name = "BranchData")
     public JAXBElement<BranchData> createBranchData(BranchData value) {
-        return new JAXBElement<>(_BranchData_QNAME, BranchData.class, null, value);
+        return new JAXBElement<BranchData>(_BranchData_QNAME, BranchData.class, null, value);
     }
 
     /**
@@ -4926,7 +4374,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "ArrayOfReportSlimInfo")
     public JAXBElement<ArrayOfReportSlimInfo> createArrayOfReportSlimInfo(ArrayOfReportSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfReportSlimInfo_QNAME, ArrayOfReportSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfReportSlimInfo>(_ArrayOfReportSlimInfo_QNAME, ArrayOfReportSlimInfo.class, null, value);
     }
 
     /**
@@ -4939,7 +4387,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "ReportSlimInfo")
     public JAXBElement<ReportSlimInfo> createReportSlimInfo(ReportSlimInfo value) {
-        return new JAXBElement<>(_ReportSlimInfo_QNAME, ReportSlimInfo.class, null, value);
+        return new JAXBElement<ReportSlimInfo>(_ReportSlimInfo_QNAME, ReportSlimInfo.class, null, value);
     }
 
     /**
@@ -4952,7 +4400,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "ReportSaveData")
     public JAXBElement<ReportSaveData> createReportSaveData(ReportSaveData value) {
-        return new JAXBElement<>(_ReportSaveData_QNAME, ReportSaveData.class, null, value);
+        return new JAXBElement<ReportSaveData>(_ReportSaveData_QNAME, ReportSaveData.class, null, value);
     }
 
     /**
@@ -4965,7 +4413,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Photo", name = "PhotoOrder")
     public JAXBElement<PhotoOrder> createPhotoOrder(PhotoOrder value) {
-        return new JAXBElement<>(_PhotoOrder_QNAME, PhotoOrder.class, null, value);
+        return new JAXBElement<PhotoOrder>(_PhotoOrder_QNAME, PhotoOrder.class, null, value);
     }
 
     /**
@@ -4978,7 +4426,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Photo", name = "PhotoOwnerType")
     public JAXBElement<PhotoOwnerType> createPhotoOwnerType(PhotoOwnerType value) {
-        return new JAXBElement<>(_PhotoOwnerType_QNAME, PhotoOwnerType.class, null, value);
+        return new JAXBElement<PhotoOwnerType>(_PhotoOwnerType_QNAME, PhotoOwnerType.class, null, value);
     }
 
     /**
@@ -4991,7 +4439,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Photo", name = "ArrayOfPhotoOrder")
     public JAXBElement<ArrayOfPhotoOrder> createArrayOfPhotoOrder(ArrayOfPhotoOrder value) {
-        return new JAXBElement<>(_ArrayOfPhotoOrder_QNAME, ArrayOfPhotoOrder.class, null, value);
+        return new JAXBElement<ArrayOfPhotoOrder>(_ArrayOfPhotoOrder_QNAME, ArrayOfPhotoOrder.class, null, value);
     }
 
     /**
@@ -5004,7 +4452,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "PhotoMarker")
     public JAXBElement<List<String>> createPhotoMarker(List<String> value) {
-        return new JAXBElement<>(_PhotoMarker_QNAME, ((Class) List.class), null, ((List<String> ) value));
+        return new JAXBElement<List<String>>(_PhotoMarker_QNAME, ((Class) List.class), null, ((List<String> ) value));
     }
 
     /**
@@ -5017,7 +4465,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerFieldType")
     public JAXBElement<OwnerFieldType> createOwnerFieldType(OwnerFieldType value) {
-        return new JAXBElement<>(_OwnerFieldType_QNAME, OwnerFieldType.class, null, value);
+        return new JAXBElement<OwnerFieldType>(_OwnerFieldType_QNAME, OwnerFieldType.class, null, value);
     }
 
     /**
@@ -5030,7 +4478,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAdditionalFieldBase")
     public JAXBElement<ArrayOfAdditionalFieldBase> createArrayOfAdditionalFieldBase(ArrayOfAdditionalFieldBase value) {
-        return new JAXBElement<>(_ArrayOfAdditionalFieldBase_QNAME, ArrayOfAdditionalFieldBase.class, null, value);
+        return new JAXBElement<ArrayOfAdditionalFieldBase>(_ArrayOfAdditionalFieldBase_QNAME, ArrayOfAdditionalFieldBase.class, null, value);
     }
 
     /**
@@ -5043,7 +4491,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AdditionalFieldBase")
     public JAXBElement<AdditionalFieldBase> createAdditionalFieldBase(AdditionalFieldBase value) {
-        return new JAXBElement<>(_AdditionalFieldBase_QNAME, AdditionalFieldBase.class, null, value);
+        return new JAXBElement<AdditionalFieldBase>(_AdditionalFieldBase_QNAME, AdditionalFieldBase.class, null, value);
     }
 
     /**
@@ -5056,7 +4504,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "FieldType")
     public JAXBElement<FieldType> createFieldType(FieldType value) {
-        return new JAXBElement<>(_FieldType_QNAME, FieldType.class, null, value);
+        return new JAXBElement<FieldType>(_FieldType_QNAME, FieldType.class, null, value);
     }
 
     /**
@@ -5069,7 +4517,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DateTimeField")
     public JAXBElement<DateTimeField> createDateTimeField(DateTimeField value) {
-        return new JAXBElement<>(_DateTimeField_QNAME, DateTimeField.class, null, value);
+        return new JAXBElement<DateTimeField>(_DateTimeField_QNAME, DateTimeField.class, null, value);
     }
 
     /**
@@ -5082,7 +4530,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "IntegerField")
     public JAXBElement<IntegerField> createIntegerField(IntegerField value) {
-        return new JAXBElement<>(_IntegerField_QNAME, IntegerField.class, null, value);
+        return new JAXBElement<IntegerField>(_IntegerField_QNAME, IntegerField.class, null, value);
     }
 
     /**
@@ -5095,7 +4543,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DoubleField")
     public JAXBElement<DoubleField> createDoubleField(DoubleField value) {
-        return new JAXBElement<>(_DoubleField_QNAME, DoubleField.class, null, value);
+        return new JAXBElement<DoubleField>(_DoubleField_QNAME, DoubleField.class, null, value);
     }
 
     /**
@@ -5108,7 +4556,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "StringField")
     public JAXBElement<StringField> createStringField(StringField value) {
-        return new JAXBElement<>(_StringField_QNAME, StringField.class, null, value);
+        return new JAXBElement<StringField>(_StringField_QNAME, StringField.class, null, value);
     }
 
     /**
@@ -5121,7 +4569,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ColorField")
     public JAXBElement<ColorField> createColorField(ColorField value) {
-        return new JAXBElement<>(_ColorField_QNAME, ColorField.class, null, value);
+        return new JAXBElement<ColorField>(_ColorField_QNAME, ColorField.class, null, value);
     }
 
     /**
@@ -5134,7 +4582,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ListField")
     public JAXBElement<ListField> createListField(ListField value) {
-        return new JAXBElement<>(_ListField_QNAME, ListField.class, null, value);
+        return new JAXBElement<ListField>(_ListField_QNAME, ListField.class, null, value);
     }
 
     /**
@@ -5147,7 +4595,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ListItem")
     public JAXBElement<ListItem> createListItem(ListItem value) {
-        return new JAXBElement<>(_ListItem_QNAME, ListItem.class, null, value);
+        return new JAXBElement<ListItem>(_ListItem_QNAME, ListItem.class, null, value);
     }
 
     /**
@@ -5160,7 +4608,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfListItem")
     public JAXBElement<ArrayOfListItem> createArrayOfListItem(ArrayOfListItem value) {
-        return new JAXBElement<>(_ArrayOfListItem_QNAME, ArrayOfListItem.class, null, value);
+        return new JAXBElement<ArrayOfListItem>(_ArrayOfListItem_QNAME, ArrayOfListItem.class, null, value);
     }
 
     /**
@@ -5173,7 +4621,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAdditionalFieldValue")
     public JAXBElement<ArrayOfAdditionalFieldValue> createArrayOfAdditionalFieldValue(ArrayOfAdditionalFieldValue value) {
-        return new JAXBElement<>(_ArrayOfAdditionalFieldValue_QNAME, ArrayOfAdditionalFieldValue.class, null, value);
+        return new JAXBElement<ArrayOfAdditionalFieldValue>(_ArrayOfAdditionalFieldValue_QNAME, ArrayOfAdditionalFieldValue.class, null, value);
     }
 
     /**
@@ -5186,7 +4634,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AdditionalFieldValue")
     public JAXBElement<AdditionalFieldValue> createAdditionalFieldValue(AdditionalFieldValue value) {
-        return new JAXBElement<>(_AdditionalFieldValue_QNAME, AdditionalFieldValue.class, null, value);
+        return new JAXBElement<AdditionalFieldValue>(_AdditionalFieldValue_QNAME, AdditionalFieldValue.class, null, value);
     }
 
     /**
@@ -5199,7 +4647,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerValueBase")
     public JAXBElement<OwnerValueBase> createOwnerValueBase(OwnerValueBase value) {
-        return new JAXBElement<>(_OwnerValueBase_QNAME, OwnerValueBase.class, null, value);
+        return new JAXBElement<OwnerValueBase>(_OwnerValueBase_QNAME, OwnerValueBase.class, null, value);
     }
 
     /**
@@ -5212,7 +4660,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerDateTimeValue")
     public JAXBElement<OwnerDateTimeValue> createOwnerDateTimeValue(OwnerDateTimeValue value) {
-        return new JAXBElement<>(_OwnerDateTimeValue_QNAME, OwnerDateTimeValue.class, null, value);
+        return new JAXBElement<OwnerDateTimeValue>(_OwnerDateTimeValue_QNAME, OwnerDateTimeValue.class, null, value);
     }
 
     /**
@@ -5225,7 +4673,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerDoubleValue")
     public JAXBElement<OwnerDoubleValue> createOwnerDoubleValue(OwnerDoubleValue value) {
-        return new JAXBElement<>(_OwnerDoubleValue_QNAME, OwnerDoubleValue.class, null, value);
+        return new JAXBElement<OwnerDoubleValue>(_OwnerDoubleValue_QNAME, OwnerDoubleValue.class, null, value);
     }
 
     /**
@@ -5238,7 +4686,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerIntValue")
     public JAXBElement<OwnerIntValue> createOwnerIntValue(OwnerIntValue value) {
-        return new JAXBElement<>(_OwnerIntValue_QNAME, OwnerIntValue.class, null, value);
+        return new JAXBElement<OwnerIntValue>(_OwnerIntValue_QNAME, OwnerIntValue.class, null, value);
     }
 
     /**
@@ -5251,7 +4699,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerStringValue")
     public JAXBElement<OwnerStringValue> createOwnerStringValue(OwnerStringValue value) {
-        return new JAXBElement<>(_OwnerStringValue_QNAME, OwnerStringValue.class, null, value);
+        return new JAXBElement<OwnerStringValue>(_OwnerStringValue_QNAME, OwnerStringValue.class, null, value);
     }
 
     /**
@@ -5264,7 +4712,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerColorValue")
     public JAXBElement<OwnerColorValue> createOwnerColorValue(OwnerColorValue value) {
-        return new JAXBElement<>(_OwnerColorValue_QNAME, OwnerColorValue.class, null, value);
+        return new JAXBElement<OwnerColorValue>(_OwnerColorValue_QNAME, OwnerColorValue.class, null, value);
     }
 
     /**
@@ -5277,7 +4725,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerListValue")
     public JAXBElement<OwnerListValue> createOwnerListValue(OwnerListValue value) {
-        return new JAXBElement<>(_OwnerListValue_QNAME, OwnerListValue.class, null, value);
+        return new JAXBElement<OwnerListValue>(_OwnerListValue_QNAME, OwnerListValue.class, null, value);
     }
 
     /**
@@ -5290,7 +4738,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "SavedFieldContext")
     public JAXBElement<List<String>> createSavedFieldContext(List<String> value) {
-        return new JAXBElement<>(_SavedFieldContext_QNAME, ((Class) List.class), null, ((List<String> ) value));
+        return new JAXBElement<List<String>>(_SavedFieldContext_QNAME, ((Class) List.class), null, ((List<String> ) value));
     }
 
     /**
@@ -5303,7 +4751,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfOwnerAdditionalFieldsValue")
     public JAXBElement<ArrayOfOwnerAdditionalFieldsValue> createArrayOfOwnerAdditionalFieldsValue(ArrayOfOwnerAdditionalFieldsValue value) {
-        return new JAXBElement<>(_ArrayOfOwnerAdditionalFieldsValue_QNAME, ArrayOfOwnerAdditionalFieldsValue.class, null, value);
+        return new JAXBElement<ArrayOfOwnerAdditionalFieldsValue>(_ArrayOfOwnerAdditionalFieldsValue_QNAME, ArrayOfOwnerAdditionalFieldsValue.class, null, value);
     }
 
     /**
@@ -5316,7 +4764,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerAdditionalFieldsValue")
     public JAXBElement<OwnerAdditionalFieldsValue> createOwnerAdditionalFieldsValue(OwnerAdditionalFieldsValue value) {
-        return new JAXBElement<>(_OwnerAdditionalFieldsValue_QNAME, OwnerAdditionalFieldsValue.class, null, value);
+        return new JAXBElement<OwnerAdditionalFieldsValue>(_OwnerAdditionalFieldsValue_QNAME, OwnerAdditionalFieldsValue.class, null, value);
     }
 
     /**
@@ -5329,7 +4777,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAddDateTimeInfo")
     public JAXBElement<ArrayOfAddDateTimeInfo> createArrayOfAddDateTimeInfo(ArrayOfAddDateTimeInfo value) {
-        return new JAXBElement<>(_ArrayOfAddDateTimeInfo_QNAME, ArrayOfAddDateTimeInfo.class, null, value);
+        return new JAXBElement<ArrayOfAddDateTimeInfo>(_ArrayOfAddDateTimeInfo_QNAME, ArrayOfAddDateTimeInfo.class, null, value);
     }
 
     /**
@@ -5342,7 +4790,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AddDateTimeInfo")
     public JAXBElement<AddDateTimeInfo> createAddDateTimeInfo(AddDateTimeInfo value) {
-        return new JAXBElement<>(_AddDateTimeInfo_QNAME, AddDateTimeInfo.class, null, value);
+        return new JAXBElement<AddDateTimeInfo>(_AddDateTimeInfo_QNAME, AddDateTimeInfo.class, null, value);
     }
 
     /**
@@ -5355,7 +4803,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AddFieldInfo")
     public JAXBElement<AddFieldInfo> createAddFieldInfo(AddFieldInfo value) {
-        return new JAXBElement<>(_AddFieldInfo_QNAME, AddFieldInfo.class, null, value);
+        return new JAXBElement<AddFieldInfo>(_AddFieldInfo_QNAME, AddFieldInfo.class, null, value);
     }
 
     /**
@@ -5368,7 +4816,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAddDoubleInfo")
     public JAXBElement<ArrayOfAddDoubleInfo> createArrayOfAddDoubleInfo(ArrayOfAddDoubleInfo value) {
-        return new JAXBElement<>(_ArrayOfAddDoubleInfo_QNAME, ArrayOfAddDoubleInfo.class, null, value);
+        return new JAXBElement<ArrayOfAddDoubleInfo>(_ArrayOfAddDoubleInfo_QNAME, ArrayOfAddDoubleInfo.class, null, value);
     }
 
     /**
@@ -5381,7 +4829,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AddDoubleInfo")
     public JAXBElement<AddDoubleInfo> createAddDoubleInfo(AddDoubleInfo value) {
-        return new JAXBElement<>(_AddDoubleInfo_QNAME, AddDoubleInfo.class, null, value);
+        return new JAXBElement<AddDoubleInfo>(_AddDoubleInfo_QNAME, AddDoubleInfo.class, null, value);
     }
 
     /**
@@ -5394,7 +4842,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAddIntInfo")
     public JAXBElement<ArrayOfAddIntInfo> createArrayOfAddIntInfo(ArrayOfAddIntInfo value) {
-        return new JAXBElement<>(_ArrayOfAddIntInfo_QNAME, ArrayOfAddIntInfo.class, null, value);
+        return new JAXBElement<ArrayOfAddIntInfo>(_ArrayOfAddIntInfo_QNAME, ArrayOfAddIntInfo.class, null, value);
     }
 
     /**
@@ -5407,7 +4855,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AddIntInfo")
     public JAXBElement<AddIntInfo> createAddIntInfo(AddIntInfo value) {
-        return new JAXBElement<>(_AddIntInfo_QNAME, AddIntInfo.class, null, value);
+        return new JAXBElement<AddIntInfo>(_AddIntInfo_QNAME, AddIntInfo.class, null, value);
     }
 
     /**
@@ -5420,7 +4868,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAddStringInfo")
     public JAXBElement<ArrayOfAddStringInfo> createArrayOfAddStringInfo(ArrayOfAddStringInfo value) {
-        return new JAXBElement<>(_ArrayOfAddStringInfo_QNAME, ArrayOfAddStringInfo.class, null, value);
+        return new JAXBElement<ArrayOfAddStringInfo>(_ArrayOfAddStringInfo_QNAME, ArrayOfAddStringInfo.class, null, value);
     }
 
     /**
@@ -5433,7 +4881,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AddStringInfo")
     public JAXBElement<AddStringInfo> createAddStringInfo(AddStringInfo value) {
-        return new JAXBElement<>(_AddStringInfo_QNAME, AddStringInfo.class, null, value);
+        return new JAXBElement<AddStringInfo>(_AddStringInfo_QNAME, AddStringInfo.class, null, value);
     }
 
     /**
@@ -5446,7 +4894,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAddColorInfo")
     public JAXBElement<ArrayOfAddColorInfo> createArrayOfAddColorInfo(ArrayOfAddColorInfo value) {
-        return new JAXBElement<>(_ArrayOfAddColorInfo_QNAME, ArrayOfAddColorInfo.class, null, value);
+        return new JAXBElement<ArrayOfAddColorInfo>(_ArrayOfAddColorInfo_QNAME, ArrayOfAddColorInfo.class, null, value);
     }
 
     /**
@@ -5459,7 +4907,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AddColorInfo")
     public JAXBElement<AddColorInfo> createAddColorInfo(AddColorInfo value) {
-        return new JAXBElement<>(_AddColorInfo_QNAME, AddColorInfo.class, null, value);
+        return new JAXBElement<AddColorInfo>(_AddColorInfo_QNAME, AddColorInfo.class, null, value);
     }
 
     /**
@@ -5472,7 +4920,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ArrayOfAddListInfo")
     public JAXBElement<ArrayOfAddListInfo> createArrayOfAddListInfo(ArrayOfAddListInfo value) {
-        return new JAXBElement<>(_ArrayOfAddListInfo_QNAME, ArrayOfAddListInfo.class, null, value);
+        return new JAXBElement<ArrayOfAddListInfo>(_ArrayOfAddListInfo_QNAME, ArrayOfAddListInfo.class, null, value);
     }
 
     /**
@@ -5485,7 +4933,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AddListInfo")
     public JAXBElement<AddListInfo> createAddListInfo(AddListInfo value) {
-        return new JAXBElement<>(_AddListInfo_QNAME, AddListInfo.class, null, value);
+        return new JAXBElement<AddListInfo>(_AddListInfo_QNAME, AddListInfo.class, null, value);
     }
 
     /**
@@ -5498,7 +4946,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionEventsFromDevicesSlimInfo")
     public JAXBElement<ReactionEventsFromDevicesSlimInfo> createReactionEventsFromDevicesSlimInfo(ReactionEventsFromDevicesSlimInfo value) {
-        return new JAXBElement<>(_ReactionEventsFromDevicesSlimInfo_QNAME, ReactionEventsFromDevicesSlimInfo.class, null, value);
+        return new JAXBElement<ReactionEventsFromDevicesSlimInfo>(_ReactionEventsFromDevicesSlimInfo_QNAME, ReactionEventsFromDevicesSlimInfo.class, null, value);
     }
 
     /**
@@ -5511,7 +4959,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionEventsFromDevicesSaveData")
     public JAXBElement<ReactionEventsFromDevicesSaveData> createReactionEventsFromDevicesSaveData(ReactionEventsFromDevicesSaveData value) {
-        return new JAXBElement<>(_ReactionEventsFromDevicesSaveData_QNAME, ReactionEventsFromDevicesSaveData.class, null, value);
+        return new JAXBElement<ReactionEventsFromDevicesSaveData>(_ReactionEventsFromDevicesSaveData_QNAME, ReactionEventsFromDevicesSaveData.class, null, value);
     }
 
     /**
@@ -5524,7 +4972,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionEventSlimInfo")
     public JAXBElement<ReactionEventSlimInfo> createReactionEventSlimInfo(ReactionEventSlimInfo value) {
-        return new JAXBElement<>(_ReactionEventSlimInfo_QNAME, ReactionEventSlimInfo.class, null, value);
+        return new JAXBElement<ReactionEventSlimInfo>(_ReactionEventSlimInfo_QNAME, ReactionEventSlimInfo.class, null, value);
     }
 
     /**
@@ -5537,7 +4985,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionEventSaveData")
     public JAXBElement<ReactionEventSaveData> createReactionEventSaveData(ReactionEventSaveData value) {
-        return new JAXBElement<>(_ReactionEventSaveData_QNAME, ReactionEventSaveData.class, null, value);
+        return new JAXBElement<ReactionEventSaveData>(_ReactionEventSaveData_QNAME, ReactionEventSaveData.class, null, value);
     }
 
     /**
@@ -5550,7 +4998,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionEventType")
     public JAXBElement<ReactionEventType> createReactionEventType(ReactionEventType value) {
-        return new JAXBElement<>(_ReactionEventType_QNAME, ReactionEventType.class, null, value);
+        return new JAXBElement<ReactionEventType>(_ReactionEventType_QNAME, ReactionEventType.class, null, value);
     }
 
     /**
@@ -5563,7 +5011,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ArrayOfReactionSlimInfo")
     public JAXBElement<ArrayOfReactionSlimInfo> createArrayOfReactionSlimInfo(ArrayOfReactionSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfReactionSlimInfo_QNAME, ArrayOfReactionSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfReactionSlimInfo>(_ArrayOfReactionSlimInfo_QNAME, ArrayOfReactionSlimInfo.class, null, value);
     }
 
     /**
@@ -5576,7 +5024,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionSlimInfo")
     public JAXBElement<ReactionSlimInfo> createReactionSlimInfo(ReactionSlimInfo value) {
-        return new JAXBElement<>(_ReactionSlimInfo_QNAME, ReactionSlimInfo.class, null, value);
+        return new JAXBElement<ReactionSlimInfo>(_ReactionSlimInfo_QNAME, ReactionSlimInfo.class, null, value);
     }
 
     /**
@@ -5589,7 +5037,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionFullInfo")
     public JAXBElement<ReactionFullInfo> createReactionFullInfo(ReactionFullInfo value) {
-        return new JAXBElement<>(_ReactionFullInfo_QNAME, ReactionFullInfo.class, null, value);
+        return new JAXBElement<ReactionFullInfo>(_ReactionFullInfo_QNAME, ReactionFullInfo.class, null, value);
     }
 
     /**
@@ -5602,7 +5050,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ArrayOfReactionActionSlimInfo")
     public JAXBElement<ArrayOfReactionActionSlimInfo> createArrayOfReactionActionSlimInfo(ArrayOfReactionActionSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfReactionActionSlimInfo_QNAME, ArrayOfReactionActionSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfReactionActionSlimInfo>(_ArrayOfReactionActionSlimInfo_QNAME, ArrayOfReactionActionSlimInfo.class, null, value);
     }
 
     /**
@@ -5615,7 +5063,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionActionSlimInfo")
     public JAXBElement<ReactionActionSlimInfo> createReactionActionSlimInfo(ReactionActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionActionSlimInfo_QNAME, ReactionActionSlimInfo.class, null, value);
+        return new JAXBElement<ReactionActionSlimInfo>(_ReactionActionSlimInfo_QNAME, ReactionActionSlimInfo.class, null, value);
     }
 
     /**
@@ -5628,7 +5076,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionActionSaveData")
     public JAXBElement<ReactionActionSaveData> createReactionActionSaveData(ReactionActionSaveData value) {
-        return new JAXBElement<>(_ReactionActionSaveData_QNAME, ReactionActionSaveData.class, null, value);
+        return new JAXBElement<ReactionActionSaveData>(_ReactionActionSaveData_QNAME, ReactionActionSaveData.class, null, value);
     }
 
     /**
@@ -5641,7 +5089,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionActionType")
     public JAXBElement<ReactionActionType> createReactionActionType(ReactionActionType value) {
-        return new JAXBElement<>(_ReactionActionType_QNAME, ReactionActionType.class, null, value);
+        return new JAXBElement<ReactionActionType>(_ReactionActionType_QNAME, ReactionActionType.class, null, value);
     }
 
     /**
@@ -5654,7 +5102,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ArrayOfReactionEventSlimInfo")
     public JAXBElement<ArrayOfReactionEventSlimInfo> createArrayOfReactionEventSlimInfo(ArrayOfReactionEventSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfReactionEventSlimInfo_QNAME, ArrayOfReactionEventSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfReactionEventSlimInfo>(_ArrayOfReactionEventSlimInfo_QNAME, ArrayOfReactionEventSlimInfo.class, null, value);
     }
 
     /**
@@ -5667,7 +5115,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionSendSMSActionSlimInfo")
     public JAXBElement<ReactionSendSMSActionSlimInfo> createReactionSendSMSActionSlimInfo(ReactionSendSMSActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionSendSMSActionSlimInfo_QNAME, ReactionSendSMSActionSlimInfo.class, null, value);
+        return new JAXBElement<ReactionSendSMSActionSlimInfo>(_ReactionSendSMSActionSlimInfo_QNAME, ReactionSendSMSActionSlimInfo.class, null, value);
     }
 
     /**
@@ -5680,7 +5128,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionSendSMSActionSaveData")
     public JAXBElement<ReactionSendSMSActionSaveData> createReactionSendSMSActionSaveData(ReactionSendSMSActionSaveData value) {
-        return new JAXBElement<>(_ReactionSendSMSActionSaveData_QNAME, ReactionSendSMSActionSaveData.class, null, value);
+        return new JAXBElement<ReactionSendSMSActionSaveData>(_ReactionSendSMSActionSaveData_QNAME, ReactionSendSMSActionSaveData.class, null, value);
     }
 
     /**
@@ -5693,7 +5141,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionSendEmailActionSlimInfo")
     public JAXBElement<ReactionSendEmailActionSlimInfo> createReactionSendEmailActionSlimInfo(ReactionSendEmailActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionSendEmailActionSlimInfo_QNAME, ReactionSendEmailActionSlimInfo.class, null, value);
+        return new JAXBElement<ReactionSendEmailActionSlimInfo>(_ReactionSendEmailActionSlimInfo_QNAME, ReactionSendEmailActionSlimInfo.class, null, value);
     }
 
     /**
@@ -5706,7 +5154,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionSendEmailActionSaveData")
     public JAXBElement<ReactionSendEmailActionSaveData> createReactionSendEmailActionSaveData(ReactionSendEmailActionSaveData value) {
-        return new JAXBElement<>(_ReactionSendEmailActionSaveData_QNAME, ReactionSendEmailActionSaveData.class, null, value);
+        return new JAXBElement<ReactionSendEmailActionSaveData>(_ReactionSendEmailActionSaveData_QNAME, ReactionSendEmailActionSaveData.class, null, value);
     }
 
     /**
@@ -5719,7 +5167,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionExecuteProgramActionSlimInfo")
     public JAXBElement<ReactionExecuteProgramActionSlimInfo> createReactionExecuteProgramActionSlimInfo(ReactionExecuteProgramActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionExecuteProgramActionSlimInfo_QNAME, ReactionExecuteProgramActionSlimInfo.class, null, value);
+        return new JAXBElement<ReactionExecuteProgramActionSlimInfo>(_ReactionExecuteProgramActionSlimInfo_QNAME, ReactionExecuteProgramActionSlimInfo.class, null, value);
     }
 
     /**
@@ -5732,7 +5180,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionExecuteProgramActionSaveData")
     public JAXBElement<ReactionExecuteProgramActionSaveData> createReactionExecuteProgramActionSaveData(ReactionExecuteProgramActionSaveData value) {
-        return new JAXBElement<>(_ReactionExecuteProgramActionSaveData_QNAME, ReactionExecuteProgramActionSaveData.class, null, value);
+        return new JAXBElement<ReactionExecuteProgramActionSaveData>(_ReactionExecuteProgramActionSaveData_QNAME, ReactionExecuteProgramActionSaveData.class, null, value);
     }
 
     /**
@@ -5745,7 +5193,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionRecordVideoActionSlimInfo")
     public JAXBElement<ReactionRecordVideoActionSlimInfo> createReactionRecordVideoActionSlimInfo(ReactionRecordVideoActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSlimInfo_QNAME, ReactionRecordVideoActionSlimInfo.class, null, value);
+        return new JAXBElement<ReactionRecordVideoActionSlimInfo>(_ReactionRecordVideoActionSlimInfo_QNAME, ReactionRecordVideoActionSlimInfo.class, null, value);
     }
 
     /**
@@ -5758,7 +5206,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionRecordVideoActionSaveData")
     public JAXBElement<ReactionRecordVideoActionSaveData> createReactionRecordVideoActionSaveData(ReactionRecordVideoActionSaveData value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSaveData_QNAME, ReactionRecordVideoActionSaveData.class, null, value);
+        return new JAXBElement<ReactionRecordVideoActionSaveData>(_ReactionRecordVideoActionSaveData_QNAME, ReactionRecordVideoActionSaveData.class, null, value);
     }
 
     /**
@@ -5771,7 +5219,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ReactionSaveData")
     public JAXBElement<ReactionSaveData> createReactionSaveData(ReactionSaveData value) {
-        return new JAXBElement<>(_ReactionSaveData_QNAME, ReactionSaveData.class, null, value);
+        return new JAXBElement<ReactionSaveData>(_ReactionSaveData_QNAME, ReactionSaveData.class, null, value);
     }
 
     /**
@@ -5784,7 +5232,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PhotoBank", name = "ArrayOfPhotoBankShort")
     public JAXBElement<ArrayOfPhotoBankShort> createArrayOfPhotoBankShort(ArrayOfPhotoBankShort value) {
-        return new JAXBElement<>(_ArrayOfPhotoBankShort_QNAME, ArrayOfPhotoBankShort.class, null, value);
+        return new JAXBElement<ArrayOfPhotoBankShort>(_ArrayOfPhotoBankShort_QNAME, ArrayOfPhotoBankShort.class, null, value);
     }
 
     /**
@@ -5797,7 +5245,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PhotoBank", name = "PhotoBankShort")
     public JAXBElement<PhotoBankShort> createPhotoBankShort(PhotoBankShort value) {
-        return new JAXBElement<>(_PhotoBankShort_QNAME, PhotoBankShort.class, null, value);
+        return new JAXBElement<PhotoBankShort>(_PhotoBankShort_QNAME, PhotoBankShort.class, null, value);
     }
 
     /**
@@ -5810,7 +5258,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "ArrayOfWorkplaceInfo")
     public JAXBElement<ArrayOfWorkplaceInfo> createArrayOfWorkplaceInfo(ArrayOfWorkplaceInfo value) {
-        return new JAXBElement<>(_ArrayOfWorkplaceInfo_QNAME, ArrayOfWorkplaceInfo.class, null, value);
+        return new JAXBElement<ArrayOfWorkplaceInfo>(_ArrayOfWorkplaceInfo_QNAME, ArrayOfWorkplaceInfo.class, null, value);
     }
 
     /**
@@ -5823,7 +5271,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "WorkplaceInfo")
     public JAXBElement<WorkplaceInfo> createWorkplaceInfo(WorkplaceInfo value) {
-        return new JAXBElement<>(_WorkplaceInfo_QNAME, WorkplaceInfo.class, null, value);
+        return new JAXBElement<WorkplaceInfo>(_WorkplaceInfo_QNAME, WorkplaceInfo.class, null, value);
     }
 
     /**
@@ -5836,7 +5284,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "WorkplaceSaveData")
     public JAXBElement<WorkplaceSaveData> createWorkplaceSaveData(WorkplaceSaveData value) {
-        return new JAXBElement<>(_WorkplaceSaveData_QNAME, WorkplaceSaveData.class, null, value);
+        return new JAXBElement<WorkplaceSaveData>(_WorkplaceSaveData_QNAME, WorkplaceSaveData.class, null, value);
     }
 
     /**
@@ -5849,7 +5297,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "FavoriteType")
     public JAXBElement<FavoriteType> createFavoriteType(FavoriteType value) {
-        return new JAXBElement<>(_FavoriteType_QNAME, FavoriteType.class, null, value);
+        return new JAXBElement<FavoriteType>(_FavoriteType_QNAME, FavoriteType.class, null, value);
     }
 
     /**
@@ -5862,7 +5310,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "ArrayOfWorkplaceModuleInfo")
     public JAXBElement<ArrayOfWorkplaceModuleInfo> createArrayOfWorkplaceModuleInfo(ArrayOfWorkplaceModuleInfo value) {
-        return new JAXBElement<>(_ArrayOfWorkplaceModuleInfo_QNAME, ArrayOfWorkplaceModuleInfo.class, null, value);
+        return new JAXBElement<ArrayOfWorkplaceModuleInfo>(_ArrayOfWorkplaceModuleInfo_QNAME, ArrayOfWorkplaceModuleInfo.class, null, value);
     }
 
     /**
@@ -5875,7 +5323,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "WorkplaceModuleInfo")
     public JAXBElement<WorkplaceModuleInfo> createWorkplaceModuleInfo(WorkplaceModuleInfo value) {
-        return new JAXBElement<>(_WorkplaceModuleInfo_QNAME, WorkplaceModuleInfo.class, null, value);
+        return new JAXBElement<WorkplaceModuleInfo>(_WorkplaceModuleInfo_QNAME, WorkplaceModuleInfo.class, null, value);
     }
 
     /**
@@ -5888,7 +5336,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "WorkplaceModuleSaveData")
     public JAXBElement<WorkplaceModuleSaveData> createWorkplaceModuleSaveData(WorkplaceModuleSaveData value) {
-        return new JAXBElement<>(_WorkplaceModuleSaveData_QNAME, WorkplaceModuleSaveData.class, null, value);
+        return new JAXBElement<WorkplaceModuleSaveData>(_WorkplaceModuleSaveData_QNAME, WorkplaceModuleSaveData.class, null, value);
     }
 
     /**
@@ -5901,7 +5349,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "WorkplaceModuleType")
     public JAXBElement<WorkplaceModuleType> createWorkplaceModuleType(WorkplaceModuleType value) {
-        return new JAXBElement<>(_WorkplaceModuleType_QNAME, WorkplaceModuleType.class, null, value);
+        return new JAXBElement<WorkplaceModuleType>(_WorkplaceModuleType_QNAME, WorkplaceModuleType.class, null, value);
     }
 
     /**
@@ -5914,7 +5362,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "AcsConfiguratorInfo")
     public JAXBElement<AcsConfiguratorInfo> createAcsConfiguratorInfo(AcsConfiguratorInfo value) {
-        return new JAXBElement<>(_AcsConfiguratorInfo_QNAME, AcsConfiguratorInfo.class, null, value);
+        return new JAXBElement<AcsConfiguratorInfo>(_AcsConfiguratorInfo_QNAME, AcsConfiguratorInfo.class, null, value);
     }
 
     /**
@@ -5927,7 +5375,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "AcsConfiguratorSaveData")
     public JAXBElement<AcsConfiguratorSaveData> createAcsConfiguratorSaveData(AcsConfiguratorSaveData value) {
-        return new JAXBElement<>(_AcsConfiguratorSaveData_QNAME, AcsConfiguratorSaveData.class, null, value);
+        return new JAXBElement<AcsConfiguratorSaveData>(_AcsConfiguratorSaveData_QNAME, AcsConfiguratorSaveData.class, null, value);
     }
 
     /**
@@ -5940,7 +5388,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_IIDK_SlimInfo")
     public JAXBElement<ArrayOfISSIIDKSlimInfo> createArrayOfISSIIDKSlimInfo(ArrayOfISSIIDKSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSIIDKSlimInfo_QNAME, ArrayOfISSIIDKSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSIIDKSlimInfo>(_ArrayOfISSIIDKSlimInfo_QNAME, ArrayOfISSIIDKSlimInfo.class, null, value);
     }
 
     /**
@@ -5953,7 +5401,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_IIDK_SlimInfo")
     public JAXBElement<ISSIIDKSlimInfo> createISSIIDKSlimInfo(ISSIIDKSlimInfo value) {
-        return new JAXBElement<>(_ISSIIDKSlimInfo_QNAME, ISSIIDKSlimInfo.class, null, value);
+        return new JAXBElement<ISSIIDKSlimInfo>(_ISSIIDKSlimInfo_QNAME, ISSIIDKSlimInfo.class, null, value);
     }
 
     /**
@@ -5966,7 +5414,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_IIDK_SaveData")
     public JAXBElement<ISSIIDKSaveData> createISSIIDKSaveData(ISSIIDKSaveData value) {
-        return new JAXBElement<>(_ISSIIDKSaveData_QNAME, ISSIIDKSaveData.class, null, value);
+        return new JAXBElement<ISSIIDKSaveData>(_ISSIIDKSaveData_QNAME, ISSIIDKSaveData.class, null, value);
     }
 
     /**
@@ -5979,7 +5427,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_Slave_SlimInfo")
     public JAXBElement<ArrayOfISSSlaveSlimInfo> createArrayOfISSSlaveSlimInfo(ArrayOfISSSlaveSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSSlaveSlimInfo_QNAME, ArrayOfISSSlaveSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSSlaveSlimInfo>(_ArrayOfISSSlaveSlimInfo_QNAME, ArrayOfISSSlaveSlimInfo.class, null, value);
     }
 
     /**
@@ -5992,7 +5440,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Slave_SlimInfo")
     public JAXBElement<ISSSlaveSlimInfo> createISSSlaveSlimInfo(ISSSlaveSlimInfo value) {
-        return new JAXBElement<>(_ISSSlaveSlimInfo_QNAME, ISSSlaveSlimInfo.class, null, value);
+        return new JAXBElement<ISSSlaveSlimInfo>(_ISSSlaveSlimInfo_QNAME, ISSSlaveSlimInfo.class, null, value);
     }
 
     /**
@@ -6005,7 +5453,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Entity_Base")
     public JAXBElement<ISSEntityBase> createISSEntityBase(ISSEntityBase value) {
-        return new JAXBElement<>(_ISSEntityBase_QNAME, ISSEntityBase.class, null, value);
+        return new JAXBElement<ISSEntityBase>(_ISSEntityBase_QNAME, ISSEntityBase.class, null, value);
     }
 
     /**
@@ -6018,7 +5466,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_Display_SlimInfo")
     public JAXBElement<ArrayOfISSDisplaySlimInfo> createArrayOfISSDisplaySlimInfo(ArrayOfISSDisplaySlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSDisplaySlimInfo_QNAME, ArrayOfISSDisplaySlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSDisplaySlimInfo>(_ArrayOfISSDisplaySlimInfo_QNAME, ArrayOfISSDisplaySlimInfo.class, null, value);
     }
 
     /**
@@ -6031,7 +5479,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Display_SlimInfo")
     public JAXBElement<ISSDisplaySlimInfo> createISSDisplaySlimInfo(ISSDisplaySlimInfo value) {
-        return new JAXBElement<>(_ISSDisplaySlimInfo_QNAME, ISSDisplaySlimInfo.class, null, value);
+        return new JAXBElement<ISSDisplaySlimInfo>(_ISSDisplaySlimInfo_QNAME, ISSDisplaySlimInfo.class, null, value);
     }
 
     /**
@@ -6044,7 +5492,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_EventViewer_SlimInfo")
     public JAXBElement<ArrayOfISSEventViewerSlimInfo> createArrayOfISSEventViewerSlimInfo(ArrayOfISSEventViewerSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSEventViewerSlimInfo_QNAME, ArrayOfISSEventViewerSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSEventViewerSlimInfo>(_ArrayOfISSEventViewerSlimInfo_QNAME, ArrayOfISSEventViewerSlimInfo.class, null, value);
     }
 
     /**
@@ -6057,7 +5505,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_EventViewer_SlimInfo")
     public JAXBElement<ISSEventViewerSlimInfo> createISSEventViewerSlimInfo(ISSEventViewerSlimInfo value) {
-        return new JAXBElement<>(_ISSEventViewerSlimInfo_QNAME, ISSEventViewerSlimInfo.class, null, value);
+        return new JAXBElement<ISSEventViewerSlimInfo>(_ISSEventViewerSlimInfo_QNAME, ISSEventViewerSlimInfo.class, null, value);
     }
 
     /**
@@ -6070,7 +5518,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_Monitor_SlimInfo")
     public JAXBElement<ArrayOfISSMonitorSlimInfo> createArrayOfISSMonitorSlimInfo(ArrayOfISSMonitorSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSMonitorSlimInfo_QNAME, ArrayOfISSMonitorSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSMonitorSlimInfo>(_ArrayOfISSMonitorSlimInfo_QNAME, ArrayOfISSMonitorSlimInfo.class, null, value);
     }
 
     /**
@@ -6083,7 +5531,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Monitor_SlimInfo")
     public JAXBElement<ISSMonitorSlimInfo> createISSMonitorSlimInfo(ISSMonitorSlimInfo value) {
-        return new JAXBElement<>(_ISSMonitorSlimInfo_QNAME, ISSMonitorSlimInfo.class, null, value);
+        return new JAXBElement<ISSMonitorSlimInfo>(_ISSMonitorSlimInfo_QNAME, ISSMonitorSlimInfo.class, null, value);
     }
 
     /**
@@ -6096,7 +5544,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_Cam_SlimInfo")
     public JAXBElement<ArrayOfISSCamSlimInfo> createArrayOfISSCamSlimInfo(ArrayOfISSCamSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSCamSlimInfo_QNAME, ArrayOfISSCamSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSCamSlimInfo>(_ArrayOfISSCamSlimInfo_QNAME, ArrayOfISSCamSlimInfo.class, null, value);
     }
 
     /**
@@ -6109,7 +5557,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Cam_SlimInfo")
     public JAXBElement<ISSCamSlimInfo> createISSCamSlimInfo(ISSCamSlimInfo value) {
-        return new JAXBElement<>(_ISSCamSlimInfo_QNAME, ISSCamSlimInfo.class, null, value);
+        return new JAXBElement<ISSCamSlimInfo>(_ISSCamSlimInfo_QNAME, ISSCamSlimInfo.class, null, value);
     }
 
     /**
@@ -6122,7 +5570,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_IntegrationPoint_SlimInfo")
     public JAXBElement<ArrayOfISSIntegrationPointSlimInfo> createArrayOfISSIntegrationPointSlimInfo(ArrayOfISSIntegrationPointSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSIntegrationPointSlimInfo_QNAME, ArrayOfISSIntegrationPointSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSIntegrationPointSlimInfo>(_ArrayOfISSIntegrationPointSlimInfo_QNAME, ArrayOfISSIntegrationPointSlimInfo.class, null, value);
     }
 
     /**
@@ -6135,7 +5583,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_IntegrationPoint_SlimInfo")
     public JAXBElement<ISSIntegrationPointSlimInfo> createISSIntegrationPointSlimInfo(ISSIntegrationPointSlimInfo value) {
-        return new JAXBElement<>(_ISSIntegrationPointSlimInfo_QNAME, ISSIntegrationPointSlimInfo.class, null, value);
+        return new JAXBElement<ISSIntegrationPointSlimInfo>(_ISSIntegrationPointSlimInfo_QNAME, ISSIntegrationPointSlimInfo.class, null, value);
     }
 
     /**
@@ -6148,7 +5596,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_RusGuard_SlimInfo")
     public JAXBElement<ArrayOfISSRusGuardSlimInfo> createArrayOfISSRusGuardSlimInfo(ArrayOfISSRusGuardSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSRusGuardSlimInfo_QNAME, ArrayOfISSRusGuardSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSRusGuardSlimInfo>(_ArrayOfISSRusGuardSlimInfo_QNAME, ArrayOfISSRusGuardSlimInfo.class, null, value);
     }
 
     /**
@@ -6161,7 +5609,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_RusGuard_SlimInfo")
     public JAXBElement<ISSRusGuardSlimInfo> createISSRusGuardSlimInfo(ISSRusGuardSlimInfo value) {
-        return new JAXBElement<>(_ISSRusGuardSlimInfo_QNAME, ISSRusGuardSlimInfo.class, null, value);
+        return new JAXBElement<ISSRusGuardSlimInfo>(_ISSRusGuardSlimInfo_QNAME, ISSRusGuardSlimInfo.class, null, value);
     }
 
     /**
@@ -6174,7 +5622,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_Recognition_SlimInfo")
     public JAXBElement<ArrayOfISSRecognitionSlimInfo> createArrayOfISSRecognitionSlimInfo(ArrayOfISSRecognitionSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSRecognitionSlimInfo_QNAME, ArrayOfISSRecognitionSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSRecognitionSlimInfo>(_ArrayOfISSRecognitionSlimInfo_QNAME, ArrayOfISSRecognitionSlimInfo.class, null, value);
     }
 
     /**
@@ -6187,7 +5635,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Recognition_SlimInfo")
     public JAXBElement<ISSRecognitionSlimInfo> createISSRecognitionSlimInfo(ISSRecognitionSlimInfo value) {
-        return new JAXBElement<>(_ISSRecognitionSlimInfo_QNAME, ISSRecognitionSlimInfo.class, null, value);
+        return new JAXBElement<ISSRecognitionSlimInfo>(_ISSRecognitionSlimInfo_QNAME, ISSRecognitionSlimInfo.class, null, value);
     }
 
     /**
@@ -6200,7 +5648,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Recognition_SaveData")
     public JAXBElement<ISSRecognitionSaveData> createISSRecognitionSaveData(ISSRecognitionSaveData value) {
-        return new JAXBElement<>(_ISSRecognitionSaveData_QNAME, ISSRecognitionSaveData.class, null, value);
+        return new JAXBElement<ISSRecognitionSaveData>(_ISSRecognitionSaveData_QNAME, ISSRecognitionSaveData.class, null, value);
     }
 
     /**
@@ -6213,7 +5661,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_Driver_SlimInfo")
     public JAXBElement<ArrayOfISSDriverSlimInfo> createArrayOfISSDriverSlimInfo(ArrayOfISSDriverSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSDriverSlimInfo_QNAME, ArrayOfISSDriverSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSDriverSlimInfo>(_ArrayOfISSDriverSlimInfo_QNAME, ArrayOfISSDriverSlimInfo.class, null, value);
     }
 
     /**
@@ -6226,7 +5674,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Driver_SlimInfo")
     public JAXBElement<ISSDriverSlimInfo> createISSDriverSlimInfo(ISSDriverSlimInfo value) {
-        return new JAXBElement<>(_ISSDriverSlimInfo_QNAME, ISSDriverSlimInfo.class, null, value);
+        return new JAXBElement<ISSDriverSlimInfo>(_ISSDriverSlimInfo_QNAME, ISSDriverSlimInfo.class, null, value);
     }
 
     /**
@@ -6239,7 +5687,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_Driver_SaveData")
     public JAXBElement<ISSDriverSaveData> createISSDriverSaveData(ISSDriverSaveData value) {
-        return new JAXBElement<>(_ISSDriverSaveData_QNAME, ISSDriverSaveData.class, null, value);
+        return new JAXBElement<ISSDriverSaveData>(_ISSDriverSaveData_QNAME, ISSDriverSaveData.class, null, value);
     }
 
     /**
@@ -6252,7 +5700,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ArrayOfISS_DriverEventPlaybackSlimInfo")
     public JAXBElement<ArrayOfISSDriverEventPlaybackSlimInfo> createArrayOfISSDriverEventPlaybackSlimInfo(ArrayOfISSDriverEventPlaybackSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfISSDriverEventPlaybackSlimInfo_QNAME, ArrayOfISSDriverEventPlaybackSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfISSDriverEventPlaybackSlimInfo>(_ArrayOfISSDriverEventPlaybackSlimInfo_QNAME, ArrayOfISSDriverEventPlaybackSlimInfo.class, null, value);
     }
 
     /**
@@ -6265,7 +5713,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_DriverEventPlaybackSlimInfo")
     public JAXBElement<ISSDriverEventPlaybackSlimInfo> createISSDriverEventPlaybackSlimInfo(ISSDriverEventPlaybackSlimInfo value) {
-        return new JAXBElement<>(_ISSDriverEventPlaybackSlimInfo_QNAME, ISSDriverEventPlaybackSlimInfo.class, null, value);
+        return new JAXBElement<ISSDriverEventPlaybackSlimInfo>(_ISSDriverEventPlaybackSlimInfo_QNAME, ISSDriverEventPlaybackSlimInfo.class, null, value);
     }
 
     /**
@@ -6278,7 +5726,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_DriverEventPlaybackSaveData")
     public JAXBElement<ISSDriverEventPlaybackSaveData> createISSDriverEventPlaybackSaveData(ISSDriverEventPlaybackSaveData value) {
-        return new JAXBElement<>(_ISSDriverEventPlaybackSaveData_QNAME, ISSDriverEventPlaybackSaveData.class, null, value);
+        return new JAXBElement<ISSDriverEventPlaybackSaveData>(_ISSDriverEventPlaybackSaveData_QNAME, ISSDriverEventPlaybackSaveData.class, null, value);
     }
 
     /**
@@ -6291,7 +5739,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ArrayOfUidKeyInfo")
     public JAXBElement<ArrayOfUidKeyInfo> createArrayOfUidKeyInfo(ArrayOfUidKeyInfo value) {
-        return new JAXBElement<>(_ArrayOfUidKeyInfo_QNAME, ArrayOfUidKeyInfo.class, null, value);
+        return new JAXBElement<ArrayOfUidKeyInfo>(_ArrayOfUidKeyInfo_QNAME, ArrayOfUidKeyInfo.class, null, value);
     }
 
     /**
@@ -6304,7 +5752,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "UidKeyInfo")
     public JAXBElement<UidKeyInfo> createUidKeyInfo(UidKeyInfo value) {
-        return new JAXBElement<>(_UidKeyInfo_QNAME, UidKeyInfo.class, null, value);
+        return new JAXBElement<UidKeyInfo>(_UidKeyInfo_QNAME, UidKeyInfo.class, null, value);
     }
 
     /**
@@ -6317,7 +5765,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ProfileTypeFilter")
     public JAXBElement<List<String>> createProfileTypeFilter(List<String> value) {
-        return new JAXBElement<>(_ProfileTypeFilter_QNAME, ((Class) List.class), null, ((List<String> ) value));
+        return new JAXBElement<List<String>>(_ProfileTypeFilter_QNAME, ((Class) List.class), null, ((List<String> ) value));
     }
 
     /**
@@ -6330,7 +5778,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ArrayOfMifareProfileInfo")
     public JAXBElement<ArrayOfMifareProfileInfo> createArrayOfMifareProfileInfo(ArrayOfMifareProfileInfo value) {
-        return new JAXBElement<>(_ArrayOfMifareProfileInfo_QNAME, ArrayOfMifareProfileInfo.class, null, value);
+        return new JAXBElement<ArrayOfMifareProfileInfo>(_ArrayOfMifareProfileInfo_QNAME, ArrayOfMifareProfileInfo.class, null, value);
     }
 
     /**
@@ -6343,7 +5791,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "MifareProfileInfo")
     public JAXBElement<MifareProfileInfo> createMifareProfileInfo(MifareProfileInfo value) {
-        return new JAXBElement<>(_MifareProfileInfo_QNAME, MifareProfileInfo.class, null, value);
+        return new JAXBElement<MifareProfileInfo>(_MifareProfileInfo_QNAME, MifareProfileInfo.class, null, value);
     }
 
     /**
@@ -6356,7 +5804,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "MifareProfileSaveData")
     public JAXBElement<MifareProfileSaveData> createMifareProfileSaveData(MifareProfileSaveData value) {
-        return new JAXBElement<>(_MifareProfileSaveData_QNAME, MifareProfileSaveData.class, null, value);
+        return new JAXBElement<MifareProfileSaveData>(_MifareProfileSaveData_QNAME, MifareProfileSaveData.class, null, value);
     }
 
     /**
@@ -6369,7 +5817,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "SectorAuthentication")
     public JAXBElement<SectorAuthentication> createSectorAuthentication(SectorAuthentication value) {
-        return new JAXBElement<>(_SectorAuthentication_QNAME, SectorAuthentication.class, null, value);
+        return new JAXBElement<SectorAuthentication>(_SectorAuthentication_QNAME, SectorAuthentication.class, null, value);
     }
 
     /**
@@ -6382,7 +5830,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ProfileType")
     public JAXBElement<ProfileType> createProfileType(ProfileType value) {
-        return new JAXBElement<>(_ProfileType_QNAME, ProfileType.class, null, value);
+        return new JAXBElement<ProfileType>(_ProfileType_QNAME, ProfileType.class, null, value);
     }
 
     /**
@@ -6395,7 +5843,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "MifareProfileFullInfo")
     public JAXBElement<MifareProfileFullInfo> createMifareProfileFullInfo(MifareProfileFullInfo value) {
-        return new JAXBElement<>(_MifareProfileFullInfo_QNAME, MifareProfileFullInfo.class, null, value);
+        return new JAXBElement<MifareProfileFullInfo>(_MifareProfileFullInfo_QNAME, MifareProfileFullInfo.class, null, value);
     }
 
     /**
@@ -6408,7 +5856,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "MifareProfileFullSaveData")
     public JAXBElement<MifareProfileFullSaveData> createMifareProfileFullSaveData(MifareProfileFullSaveData value) {
-        return new JAXBElement<>(_MifareProfileFullSaveData_QNAME, MifareProfileFullSaveData.class, null, value);
+        return new JAXBElement<MifareProfileFullSaveData>(_MifareProfileFullSaveData_QNAME, MifareProfileFullSaveData.class, null, value);
     }
 
     /**
@@ -6421,7 +5869,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "AccessBits")
     public JAXBElement<AccessBits> createAccessBits(AccessBits value) {
-        return new JAXBElement<>(_AccessBits_QNAME, AccessBits.class, null, value);
+        return new JAXBElement<AccessBits>(_AccessBits_QNAME, AccessBits.class, null, value);
     }
 
     /**
@@ -6434,7 +5882,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "BlockData")
     public JAXBElement<BlockData> createBlockData(BlockData value) {
-        return new JAXBElement<>(_BlockData_QNAME, BlockData.class, null, value);
+        return new JAXBElement<BlockData>(_BlockData_QNAME, BlockData.class, null, value);
     }
 
     /**
@@ -6447,7 +5895,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "EmissionProtectionLevel")
     public JAXBElement<EmissionProtectionLevel> createEmissionProtectionLevel(EmissionProtectionLevel value) {
-        return new JAXBElement<>(_EmissionProtectionLevel_QNAME, EmissionProtectionLevel.class, null, value);
+        return new JAXBElement<EmissionProtectionLevel>(_EmissionProtectionLevel_QNAME, EmissionProtectionLevel.class, null, value);
     }
 
     /**
@@ -6460,7 +5908,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenLayoutInfo")
     public JAXBElement<ScreenLayoutInfo> createScreenLayoutInfo(ScreenLayoutInfo value) {
-        return new JAXBElement<>(_ScreenLayoutInfo_QNAME, ScreenLayoutInfo.class, null, value);
+        return new JAXBElement<ScreenLayoutInfo>(_ScreenLayoutInfo_QNAME, ScreenLayoutInfo.class, null, value);
     }
 
     /**
@@ -6473,7 +5921,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenLayoutSaveData")
     public JAXBElement<ScreenLayoutSaveData> createScreenLayoutSaveData(ScreenLayoutSaveData value) {
-        return new JAXBElement<>(_ScreenLayoutSaveData_QNAME, ScreenLayoutSaveData.class, null, value);
+        return new JAXBElement<ScreenLayoutSaveData>(_ScreenLayoutSaveData_QNAME, ScreenLayoutSaveData.class, null, value);
     }
 
     /**
@@ -6486,7 +5934,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenAspectRatio")
     public JAXBElement<ScreenAspectRatio> createScreenAspectRatio(ScreenAspectRatio value) {
-        return new JAXBElement<>(_ScreenAspectRatio_QNAME, ScreenAspectRatio.class, null, value);
+        return new JAXBElement<ScreenAspectRatio>(_ScreenAspectRatio_QNAME, ScreenAspectRatio.class, null, value);
     }
 
     /**
@@ -6499,7 +5947,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenScaleMode")
     public JAXBElement<ScreenScaleMode> createScreenScaleMode(ScreenScaleMode value) {
-        return new JAXBElement<>(_ScreenScaleMode_QNAME, ScreenScaleMode.class, null, value);
+        return new JAXBElement<ScreenScaleMode>(_ScreenScaleMode_QNAME, ScreenScaleMode.class, null, value);
     }
 
     /**
@@ -6512,7 +5960,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenCellTreeInfo")
     public JAXBElement<ScreenCellTreeInfo> createScreenCellTreeInfo(ScreenCellTreeInfo value) {
-        return new JAXBElement<>(_ScreenCellTreeInfo_QNAME, ScreenCellTreeInfo.class, null, value);
+        return new JAXBElement<ScreenCellTreeInfo>(_ScreenCellTreeInfo_QNAME, ScreenCellTreeInfo.class, null, value);
     }
 
     /**
@@ -6525,7 +5973,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenCellInfo")
     public JAXBElement<ScreenCellInfo> createScreenCellInfo(ScreenCellInfo value) {
-        return new JAXBElement<>(_ScreenCellInfo_QNAME, ScreenCellInfo.class, null, value);
+        return new JAXBElement<ScreenCellInfo>(_ScreenCellInfo_QNAME, ScreenCellInfo.class, null, value);
     }
 
     /**
@@ -6538,7 +5986,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenCellSaveData")
     public JAXBElement<ScreenCellSaveData> createScreenCellSaveData(ScreenCellSaveData value) {
-        return new JAXBElement<>(_ScreenCellSaveData_QNAME, ScreenCellSaveData.class, null, value);
+        return new JAXBElement<ScreenCellSaveData>(_ScreenCellSaveData_QNAME, ScreenCellSaveData.class, null, value);
     }
 
     /**
@@ -6551,7 +5999,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ScreenCellContentType")
     public JAXBElement<ScreenCellContentType> createScreenCellContentType(ScreenCellContentType value) {
-        return new JAXBElement<>(_ScreenCellContentType_QNAME, ScreenCellContentType.class, null, value);
+        return new JAXBElement<ScreenCellContentType>(_ScreenCellContentType_QNAME, ScreenCellContentType.class, null, value);
     }
 
     /**
@@ -6564,7 +6012,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ArrayOfScreenCellTreeInfo")
     public JAXBElement<ArrayOfScreenCellTreeInfo> createArrayOfScreenCellTreeInfo(ArrayOfScreenCellTreeInfo value) {
-        return new JAXBElement<>(_ArrayOfScreenCellTreeInfo_QNAME, ArrayOfScreenCellTreeInfo.class, null, value);
+        return new JAXBElement<ArrayOfScreenCellTreeInfo>(_ArrayOfScreenCellTreeInfo_QNAME, ArrayOfScreenCellTreeInfo.class, null, value);
     }
 
     /**
@@ -6577,7 +6025,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ArrayOfScreenCellSaveData")
     public JAXBElement<ArrayOfScreenCellSaveData> createArrayOfScreenCellSaveData(ArrayOfScreenCellSaveData value) {
-        return new JAXBElement<>(_ArrayOfScreenCellSaveData_QNAME, ArrayOfScreenCellSaveData.class, null, value);
+        return new JAXBElement<ArrayOfScreenCellSaveData>(_ArrayOfScreenCellSaveData_QNAME, ArrayOfScreenCellSaveData.class, null, value);
     }
 
     /**
@@ -6590,7 +6038,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "ArrayOfScreenCellInfo")
     public JAXBElement<ArrayOfScreenCellInfo> createArrayOfScreenCellInfo(ArrayOfScreenCellInfo value) {
-        return new JAXBElement<>(_ArrayOfScreenCellInfo_QNAME, ArrayOfScreenCellInfo.class, null, value);
+        return new JAXBElement<ArrayOfScreenCellInfo>(_ArrayOfScreenCellInfo_QNAME, ArrayOfScreenCellInfo.class, null, value);
     }
 
     /**
@@ -6603,7 +6051,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IvidionCamera", name = "ArrayOfIvideonCameraDriverInfo")
     public JAXBElement<ArrayOfIvideonCameraDriverInfo> createArrayOfIvideonCameraDriverInfo(ArrayOfIvideonCameraDriverInfo value) {
-        return new JAXBElement<>(_ArrayOfIvideonCameraDriverInfo_QNAME, ArrayOfIvideonCameraDriverInfo.class, null, value);
+        return new JAXBElement<ArrayOfIvideonCameraDriverInfo>(_ArrayOfIvideonCameraDriverInfo_QNAME, ArrayOfIvideonCameraDriverInfo.class, null, value);
     }
 
     /**
@@ -6616,7 +6064,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IvidionCamera", name = "IvideonCameraDriverInfo")
     public JAXBElement<IvideonCameraDriverInfo> createIvideonCameraDriverInfo(IvideonCameraDriverInfo value) {
-        return new JAXBElement<>(_IvideonCameraDriverInfo_QNAME, IvideonCameraDriverInfo.class, null, value);
+        return new JAXBElement<IvideonCameraDriverInfo>(_IvideonCameraDriverInfo_QNAME, IvideonCameraDriverInfo.class, null, value);
     }
 
     /**
@@ -6629,7 +6077,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IvidionCamera", name = "CameraProductType")
     public JAXBElement<CameraProductType> createCameraProductType(CameraProductType value) {
-        return new JAXBElement<>(_CameraProductType_QNAME, CameraProductType.class, null, value);
+        return new JAXBElement<CameraProductType>(_CameraProductType_QNAME, CameraProductType.class, null, value);
     }
 
     /**
@@ -6642,7 +6090,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "EmailAddressOwner")
     public JAXBElement<EmailAddressOwner> createEmailAddressOwner(EmailAddressOwner value) {
-        return new JAXBElement<>(_EmailAddressOwner_QNAME, EmailAddressOwner.class, null, value);
+        return new JAXBElement<EmailAddressOwner>(_EmailAddressOwner_QNAME, EmailAddressOwner.class, null, value);
     }
 
     /**
@@ -6655,7 +6103,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "ArrayOfEmailAddressInfo")
     public JAXBElement<ArrayOfEmailAddressInfo> createArrayOfEmailAddressInfo(ArrayOfEmailAddressInfo value) {
-        return new JAXBElement<>(_ArrayOfEmailAddressInfo_QNAME, ArrayOfEmailAddressInfo.class, null, value);
+        return new JAXBElement<ArrayOfEmailAddressInfo>(_ArrayOfEmailAddressInfo_QNAME, ArrayOfEmailAddressInfo.class, null, value);
     }
 
     /**
@@ -6668,7 +6116,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "EmailAddressInfo")
     public JAXBElement<EmailAddressInfo> createEmailAddressInfo(EmailAddressInfo value) {
-        return new JAXBElement<>(_EmailAddressInfo_QNAME, EmailAddressInfo.class, null, value);
+        return new JAXBElement<EmailAddressInfo>(_EmailAddressInfo_QNAME, EmailAddressInfo.class, null, value);
     }
 
     /**
@@ -6681,7 +6129,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "EmailAddressSaveData")
     public JAXBElement<EmailAddressSaveData> createEmailAddressSaveData(EmailAddressSaveData value) {
-        return new JAXBElement<>(_EmailAddressSaveData_QNAME, EmailAddressSaveData.class, null, value);
+        return new JAXBElement<EmailAddressSaveData>(_EmailAddressSaveData_QNAME, EmailAddressSaveData.class, null, value);
     }
 
     /**
@@ -6694,7 +6142,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "PhoneNumberOwner")
     public JAXBElement<PhoneNumberOwner> createPhoneNumberOwner(PhoneNumberOwner value) {
-        return new JAXBElement<>(_PhoneNumberOwner_QNAME, PhoneNumberOwner.class, null, value);
+        return new JAXBElement<PhoneNumberOwner>(_PhoneNumberOwner_QNAME, PhoneNumberOwner.class, null, value);
     }
 
     /**
@@ -6707,7 +6155,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "ArrayOfPhoneNumberInfo")
     public JAXBElement<ArrayOfPhoneNumberInfo> createArrayOfPhoneNumberInfo(ArrayOfPhoneNumberInfo value) {
-        return new JAXBElement<>(_ArrayOfPhoneNumberInfo_QNAME, ArrayOfPhoneNumberInfo.class, null, value);
+        return new JAXBElement<ArrayOfPhoneNumberInfo>(_ArrayOfPhoneNumberInfo_QNAME, ArrayOfPhoneNumberInfo.class, null, value);
     }
 
     /**
@@ -6720,7 +6168,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "PhoneNumberInfo")
     public JAXBElement<PhoneNumberInfo> createPhoneNumberInfo(PhoneNumberInfo value) {
-        return new JAXBElement<>(_PhoneNumberInfo_QNAME, PhoneNumberInfo.class, null, value);
+        return new JAXBElement<PhoneNumberInfo>(_PhoneNumberInfo_QNAME, PhoneNumberInfo.class, null, value);
     }
 
     /**
@@ -6733,7 +6181,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "PhoneNumberSaveData")
     public JAXBElement<PhoneNumberSaveData> createPhoneNumberSaveData(PhoneNumberSaveData value) {
-        return new JAXBElement<>(_PhoneNumberSaveData_QNAME, PhoneNumberSaveData.class, null, value);
+        return new JAXBElement<PhoneNumberSaveData>(_PhoneNumberSaveData_QNAME, PhoneNumberSaveData.class, null, value);
     }
 
     /**
@@ -6746,7 +6194,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "ArrayOfEmailDistributionAddressInfo")
     public JAXBElement<ArrayOfEmailDistributionAddressInfo> createArrayOfEmailDistributionAddressInfo(ArrayOfEmailDistributionAddressInfo value) {
-        return new JAXBElement<>(_ArrayOfEmailDistributionAddressInfo_QNAME, ArrayOfEmailDistributionAddressInfo.class, null, value);
+        return new JAXBElement<ArrayOfEmailDistributionAddressInfo>(_ArrayOfEmailDistributionAddressInfo_QNAME, ArrayOfEmailDistributionAddressInfo.class, null, value);
     }
 
     /**
@@ -6759,7 +6207,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "EmailDistributionAddressInfo")
     public JAXBElement<EmailDistributionAddressInfo> createEmailDistributionAddressInfo(EmailDistributionAddressInfo value) {
-        return new JAXBElement<>(_EmailDistributionAddressInfo_QNAME, EmailDistributionAddressInfo.class, null, value);
+        return new JAXBElement<EmailDistributionAddressInfo>(_EmailDistributionAddressInfo_QNAME, EmailDistributionAddressInfo.class, null, value);
     }
 
     /**
@@ -6772,7 +6220,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "EmailDistributionAddressSaveData")
     public JAXBElement<EmailDistributionAddressSaveData> createEmailDistributionAddressSaveData(EmailDistributionAddressSaveData value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveData_QNAME, EmailDistributionAddressSaveData.class, null, value);
+        return new JAXBElement<EmailDistributionAddressSaveData>(_EmailDistributionAddressSaveData_QNAME, EmailDistributionAddressSaveData.class, null, value);
     }
 
     /**
@@ -6785,7 +6233,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "SmtpEncryptionType")
     public JAXBElement<SmtpEncryptionType> createSmtpEncryptionType(SmtpEncryptionType value) {
-        return new JAXBElement<>(_SmtpEncryptionType_QNAME, SmtpEncryptionType.class, null, value);
+        return new JAXBElement<SmtpEncryptionType>(_SmtpEncryptionType_QNAME, SmtpEncryptionType.class, null, value);
     }
 
     /**
@@ -6798,7 +6246,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfMifareProfileTagsData")
     public JAXBElement<ArrayOfMifareProfileTagsData> createArrayOfMifareProfileTagsData(ArrayOfMifareProfileTagsData value) {
-        return new JAXBElement<>(_ArrayOfMifareProfileTagsData_QNAME, ArrayOfMifareProfileTagsData.class, null, value);
+        return new JAXBElement<ArrayOfMifareProfileTagsData>(_ArrayOfMifareProfileTagsData_QNAME, ArrayOfMifareProfileTagsData.class, null, value);
     }
 
     /**
@@ -6811,7 +6259,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "MifareProfileTagsData")
     public JAXBElement<MifareProfileTagsData> createMifareProfileTagsData(MifareProfileTagsData value) {
-        return new JAXBElement<>(_MifareProfileTagsData_QNAME, MifareProfileTagsData.class, null, value);
+        return new JAXBElement<MifareProfileTagsData>(_MifareProfileTagsData_QNAME, MifareProfileTagsData.class, null, value);
     }
 
     /**
@@ -6824,7 +6272,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "TagFullInfo")
     public JAXBElement<TagFullInfo> createTagFullInfo(TagFullInfo value) {
-        return new JAXBElement<>(_TagFullInfo_QNAME, TagFullInfo.class, null, value);
+        return new JAXBElement<TagFullInfo>(_TagFullInfo_QNAME, TagFullInfo.class, null, value);
     }
 
     /**
@@ -6837,7 +6285,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfReportTagsData")
     public JAXBElement<ArrayOfReportTagsData> createArrayOfReportTagsData(ArrayOfReportTagsData value) {
-        return new JAXBElement<>(_ArrayOfReportTagsData_QNAME, ArrayOfReportTagsData.class, null, value);
+        return new JAXBElement<ArrayOfReportTagsData>(_ArrayOfReportTagsData_QNAME, ArrayOfReportTagsData.class, null, value);
     }
 
     /**
@@ -6850,7 +6298,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ReportTagsData")
     public JAXBElement<ReportTagsData> createReportTagsData(ReportTagsData value) {
-        return new JAXBElement<>(_ReportTagsData_QNAME, ReportTagsData.class, null, value);
+        return new JAXBElement<ReportTagsData>(_ReportTagsData_QNAME, ReportTagsData.class, null, value);
     }
 
     /**
@@ -6863,7 +6311,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfEmployeeGroupTagsData")
     public JAXBElement<ArrayOfEmployeeGroupTagsData> createArrayOfEmployeeGroupTagsData(ArrayOfEmployeeGroupTagsData value) {
-        return new JAXBElement<>(_ArrayOfEmployeeGroupTagsData_QNAME, ArrayOfEmployeeGroupTagsData.class, null, value);
+        return new JAXBElement<ArrayOfEmployeeGroupTagsData>(_ArrayOfEmployeeGroupTagsData_QNAME, ArrayOfEmployeeGroupTagsData.class, null, value);
     }
 
     /**
@@ -6876,7 +6324,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "EmployeeGroupTagsData")
     public JAXBElement<EmployeeGroupTagsData> createEmployeeGroupTagsData(EmployeeGroupTagsData value) {
-        return new JAXBElement<>(_EmployeeGroupTagsData_QNAME, EmployeeGroupTagsData.class, null, value);
+        return new JAXBElement<EmployeeGroupTagsData>(_EmployeeGroupTagsData_QNAME, EmployeeGroupTagsData.class, null, value);
     }
 
     /**
@@ -6889,7 +6337,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfAccessLevelTagsData")
     public JAXBElement<ArrayOfAccessLevelTagsData> createArrayOfAccessLevelTagsData(ArrayOfAccessLevelTagsData value) {
-        return new JAXBElement<>(_ArrayOfAccessLevelTagsData_QNAME, ArrayOfAccessLevelTagsData.class, null, value);
+        return new JAXBElement<ArrayOfAccessLevelTagsData>(_ArrayOfAccessLevelTagsData_QNAME, ArrayOfAccessLevelTagsData.class, null, value);
     }
 
     /**
@@ -6902,7 +6350,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "AccessLevelTagsData")
     public JAXBElement<AccessLevelTagsData> createAccessLevelTagsData(AccessLevelTagsData value) {
-        return new JAXBElement<>(_AccessLevelTagsData_QNAME, AccessLevelTagsData.class, null, value);
+        return new JAXBElement<AccessLevelTagsData>(_AccessLevelTagsData_QNAME, AccessLevelTagsData.class, null, value);
     }
 
     /**
@@ -6915,7 +6363,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfBoxAccessLevelTagsData")
     public JAXBElement<ArrayOfBoxAccessLevelTagsData> createArrayOfBoxAccessLevelTagsData(ArrayOfBoxAccessLevelTagsData value) {
-        return new JAXBElement<>(_ArrayOfBoxAccessLevelTagsData_QNAME, ArrayOfBoxAccessLevelTagsData.class, null, value);
+        return new JAXBElement<ArrayOfBoxAccessLevelTagsData>(_ArrayOfBoxAccessLevelTagsData_QNAME, ArrayOfBoxAccessLevelTagsData.class, null, value);
     }
 
     /**
@@ -6928,7 +6376,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "BoxAccessLevelTagsData")
     public JAXBElement<BoxAccessLevelTagsData> createBoxAccessLevelTagsData(BoxAccessLevelTagsData value) {
-        return new JAXBElement<>(_BoxAccessLevelTagsData_QNAME, BoxAccessLevelTagsData.class, null, value);
+        return new JAXBElement<BoxAccessLevelTagsData>(_BoxAccessLevelTagsData_QNAME, BoxAccessLevelTagsData.class, null, value);
     }
 
     /**
@@ -6941,7 +6389,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfResourceTagsData")
     public JAXBElement<ArrayOfResourceTagsData> createArrayOfResourceTagsData(ArrayOfResourceTagsData value) {
-        return new JAXBElement<>(_ArrayOfResourceTagsData_QNAME, ArrayOfResourceTagsData.class, null, value);
+        return new JAXBElement<ArrayOfResourceTagsData>(_ArrayOfResourceTagsData_QNAME, ArrayOfResourceTagsData.class, null, value);
     }
 
     /**
@@ -6954,7 +6402,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ResourceTagsData")
     public JAXBElement<ResourceTagsData> createResourceTagsData(ResourceTagsData value) {
-        return new JAXBElement<>(_ResourceTagsData_QNAME, ResourceTagsData.class, null, value);
+        return new JAXBElement<ResourceTagsData>(_ResourceTagsData_QNAME, ResourceTagsData.class, null, value);
     }
 
     /**
@@ -6967,7 +6415,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfResourceFilterTagsData")
     public JAXBElement<ArrayOfResourceFilterTagsData> createArrayOfResourceFilterTagsData(ArrayOfResourceFilterTagsData value) {
-        return new JAXBElement<>(_ArrayOfResourceFilterTagsData_QNAME, ArrayOfResourceFilterTagsData.class, null, value);
+        return new JAXBElement<ArrayOfResourceFilterTagsData>(_ArrayOfResourceFilterTagsData_QNAME, ArrayOfResourceFilterTagsData.class, null, value);
     }
 
     /**
@@ -6980,7 +6428,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ResourceFilterTagsData")
     public JAXBElement<ResourceFilterTagsData> createResourceFilterTagsData(ResourceFilterTagsData value) {
-        return new JAXBElement<>(_ResourceFilterTagsData_QNAME, ResourceFilterTagsData.class, null, value);
+        return new JAXBElement<ResourceFilterTagsData>(_ResourceFilterTagsData_QNAME, ResourceFilterTagsData.class, null, value);
     }
 
     /**
@@ -6993,7 +6441,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "FilterTagFullInfo")
     public JAXBElement<FilterTagFullInfo> createFilterTagFullInfo(FilterTagFullInfo value) {
-        return new JAXBElement<>(_FilterTagFullInfo_QNAME, FilterTagFullInfo.class, null, value);
+        return new JAXBElement<FilterTagFullInfo>(_FilterTagFullInfo_QNAME, FilterTagFullInfo.class, null, value);
     }
 
     /**
@@ -7006,7 +6454,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfTagFullInfo")
     public JAXBElement<ArrayOfTagFullInfo> createArrayOfTagFullInfo(ArrayOfTagFullInfo value) {
-        return new JAXBElement<>(_ArrayOfTagFullInfo_QNAME, ArrayOfTagFullInfo.class, null, value);
+        return new JAXBElement<ArrayOfTagFullInfo>(_ArrayOfTagFullInfo_QNAME, ArrayOfTagFullInfo.class, null, value);
     }
 
     /**
@@ -7019,7 +6467,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "ArrayOfFilterTagFullInfo")
     public JAXBElement<ArrayOfFilterTagFullInfo> createArrayOfFilterTagFullInfo(ArrayOfFilterTagFullInfo value) {
-        return new JAXBElement<>(_ArrayOfFilterTagFullInfo_QNAME, ArrayOfFilterTagFullInfo.class, null, value);
+        return new JAXBElement<ArrayOfFilterTagFullInfo>(_ArrayOfFilterTagFullInfo_QNAME, ArrayOfFilterTagFullInfo.class, null, value);
     }
 
     /**
@@ -7032,7 +6480,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "TagSaveData")
     public JAXBElement<TagSaveData> createTagSaveData(TagSaveData value) {
-        return new JAXBElement<>(_TagSaveData_QNAME, TagSaveData.class, null, value);
+        return new JAXBElement<TagSaveData>(_TagSaveData_QNAME, TagSaveData.class, null, value);
     }
 
     /**
@@ -7045,7 +6493,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "FilterTagSaveData")
     public JAXBElement<FilterTagSaveData> createFilterTagSaveData(FilterTagSaveData value) {
-        return new JAXBElement<>(_FilterTagSaveData_QNAME, FilterTagSaveData.class, null, value);
+        return new JAXBElement<FilterTagSaveData>(_FilterTagSaveData_QNAME, FilterTagSaveData.class, null, value);
     }
 
     /**
@@ -7058,7 +6506,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "ArrayOfFavoriteFolderInfo")
     public JAXBElement<ArrayOfFavoriteFolderInfo> createArrayOfFavoriteFolderInfo(ArrayOfFavoriteFolderInfo value) {
-        return new JAXBElement<>(_ArrayOfFavoriteFolderInfo_QNAME, ArrayOfFavoriteFolderInfo.class, null, value);
+        return new JAXBElement<ArrayOfFavoriteFolderInfo>(_ArrayOfFavoriteFolderInfo_QNAME, ArrayOfFavoriteFolderInfo.class, null, value);
     }
 
     /**
@@ -7071,7 +6519,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "FavoriteFolderInfo")
     public JAXBElement<FavoriteFolderInfo> createFavoriteFolderInfo(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_FavoriteFolderInfo_QNAME, FavoriteFolderInfo.class, null, value);
+        return new JAXBElement<FavoriteFolderInfo>(_FavoriteFolderInfo_QNAME, FavoriteFolderInfo.class, null, value);
     }
 
     /**
@@ -7084,7 +6532,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "FavoriteFolderSaveData")
     public JAXBElement<FavoriteFolderSaveData> createFavoriteFolderSaveData(FavoriteFolderSaveData value) {
-        return new JAXBElement<>(_FavoriteFolderSaveData_QNAME, FavoriteFolderSaveData.class, null, value);
+        return new JAXBElement<FavoriteFolderSaveData>(_FavoriteFolderSaveData_QNAME, FavoriteFolderSaveData.class, null, value);
     }
 
     /**
@@ -7097,7 +6545,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "ArrayOfFavoriteFolderInfoWithEmployeeGroup")
     public JAXBElement<ArrayOfFavoriteFolderInfoWithEmployeeGroup> createArrayOfFavoriteFolderInfoWithEmployeeGroup(ArrayOfFavoriteFolderInfoWithEmployeeGroup value) {
-        return new JAXBElement<>(_ArrayOfFavoriteFolderInfoWithEmployeeGroup_QNAME, ArrayOfFavoriteFolderInfoWithEmployeeGroup.class, null, value);
+        return new JAXBElement<ArrayOfFavoriteFolderInfoWithEmployeeGroup>(_ArrayOfFavoriteFolderInfoWithEmployeeGroup_QNAME, ArrayOfFavoriteFolderInfoWithEmployeeGroup.class, null, value);
     }
 
     /**
@@ -7110,7 +6558,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "FavoriteFolderInfoWithEmployeeGroup")
     public JAXBElement<FavoriteFolderInfoWithEmployeeGroup> createFavoriteFolderInfoWithEmployeeGroup(FavoriteFolderInfoWithEmployeeGroup value) {
-        return new JAXBElement<>(_FavoriteFolderInfoWithEmployeeGroup_QNAME, FavoriteFolderInfoWithEmployeeGroup.class, null, value);
+        return new JAXBElement<FavoriteFolderInfoWithEmployeeGroup>(_FavoriteFolderInfoWithEmployeeGroup_QNAME, FavoriteFolderInfoWithEmployeeGroup.class, null, value);
     }
 
     /**
@@ -7123,7 +6571,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "ArrayOfUserPassSlimData")
     public JAXBElement<ArrayOfUserPassSlimData> createArrayOfUserPassSlimData(ArrayOfUserPassSlimData value) {
-        return new JAXBElement<>(_ArrayOfUserPassSlimData_QNAME, ArrayOfUserPassSlimData.class, null, value);
+        return new JAXBElement<ArrayOfUserPassSlimData>(_ArrayOfUserPassSlimData_QNAME, ArrayOfUserPassSlimData.class, null, value);
     }
 
     /**
@@ -7136,7 +6584,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "UserPassSlimData")
     public JAXBElement<UserPassSlimData> createUserPassSlimData(UserPassSlimData value) {
-        return new JAXBElement<>(_UserPassSlimData_QNAME, UserPassSlimData.class, null, value);
+        return new JAXBElement<UserPassSlimData>(_UserPassSlimData_QNAME, UserPassSlimData.class, null, value);
     }
 
     /**
@@ -7149,7 +6597,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "UserPassSlimSaveData")
     public JAXBElement<UserPassSlimSaveData> createUserPassSlimSaveData(UserPassSlimSaveData value) {
-        return new JAXBElement<>(_UserPassSlimSaveData_QNAME, UserPassSlimSaveData.class, null, value);
+        return new JAXBElement<UserPassSlimSaveData>(_UserPassSlimSaveData_QNAME, UserPassSlimSaveData.class, null, value);
     }
 
     /**
@@ -7162,7 +6610,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "UserPassFullData")
     public JAXBElement<UserPassFullData> createUserPassFullData(UserPassFullData value) {
-        return new JAXBElement<>(_UserPassFullData_QNAME, UserPassFullData.class, null, value);
+        return new JAXBElement<UserPassFullData>(_UserPassFullData_QNAME, UserPassFullData.class, null, value);
     }
 
     /**
@@ -7175,7 +6623,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "UserPassFullSaveData")
     public JAXBElement<UserPassFullSaveData> createUserPassFullSaveData(UserPassFullSaveData value) {
-        return new JAXBElement<>(_UserPassFullSaveData_QNAME, UserPassFullSaveData.class, null, value);
+        return new JAXBElement<UserPassFullSaveData>(_UserPassFullSaveData_QNAME, UserPassFullSaveData.class, null, value);
     }
 
     /**
@@ -7188,7 +6636,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "PassBackgroundType")
     public JAXBElement<PassBackgroundType> createPassBackgroundType(PassBackgroundType value) {
-        return new JAXBElement<>(_PassBackgroundType_QNAME, PassBackgroundType.class, null, value);
+        return new JAXBElement<PassBackgroundType>(_PassBackgroundType_QNAME, PassBackgroundType.class, null, value);
     }
 
     /**
@@ -7201,7 +6649,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "ArrayOfUserPassEditorData")
     public JAXBElement<ArrayOfUserPassEditorData> createArrayOfUserPassEditorData(ArrayOfUserPassEditorData value) {
-        return new JAXBElement<>(_ArrayOfUserPassEditorData_QNAME, ArrayOfUserPassEditorData.class, null, value);
+        return new JAXBElement<ArrayOfUserPassEditorData>(_ArrayOfUserPassEditorData_QNAME, ArrayOfUserPassEditorData.class, null, value);
     }
 
     /**
@@ -7214,7 +6662,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "UserPassEditorData")
     public JAXBElement<UserPassEditorData> createUserPassEditorData(UserPassEditorData value) {
-        return new JAXBElement<>(_UserPassEditorData_QNAME, UserPassEditorData.class, null, value);
+        return new JAXBElement<UserPassEditorData>(_UserPassEditorData_QNAME, UserPassEditorData.class, null, value);
     }
 
     /**
@@ -7227,7 +6675,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "UserPassEditorSaveData")
     public JAXBElement<UserPassEditorSaveData> createUserPassEditorSaveData(UserPassEditorSaveData value) {
-        return new JAXBElement<>(_UserPassEditorSaveData_QNAME, UserPassEditorSaveData.class, null, value);
+        return new JAXBElement<UserPassEditorSaveData>(_UserPassEditorSaveData_QNAME, UserPassEditorSaveData.class, null, value);
     }
 
     /**
@@ -7240,7 +6688,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CommandNotification", name = "NotificationState")
     public JAXBElement<NotificationState> createNotificationState(NotificationState value) {
-        return new JAXBElement<>(_NotificationState_QNAME, NotificationState.class, null, value);
+        return new JAXBElement<NotificationState>(_NotificationState_QNAME, NotificationState.class, null, value);
     }
 
     /**
@@ -7253,7 +6701,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PostOffice", name = "ArrayOfPOBRelation")
     public JAXBElement<ArrayOfPOBRelation> createArrayOfPOBRelation(ArrayOfPOBRelation value) {
-        return new JAXBElement<>(_ArrayOfPOBRelation_QNAME, ArrayOfPOBRelation.class, null, value);
+        return new JAXBElement<ArrayOfPOBRelation>(_ArrayOfPOBRelation_QNAME, ArrayOfPOBRelation.class, null, value);
     }
 
     /**
@@ -7266,7 +6714,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PostOffice", name = "POBRelation")
     public JAXBElement<POBRelation> createPOBRelation(POBRelation value) {
-        return new JAXBElement<>(_POBRelation_QNAME, POBRelation.class, null, value);
+        return new JAXBElement<POBRelation>(_POBRelation_QNAME, POBRelation.class, null, value);
     }
 
     /**
@@ -7279,7 +6727,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.EBS", name = "EmployeeBiometricStatus")
     public JAXBElement<EmployeeBiometricStatus> createEmployeeBiometricStatus(EmployeeBiometricStatus value) {
-        return new JAXBElement<>(_EmployeeBiometricStatus_QNAME, EmployeeBiometricStatus.class, null, value);
+        return new JAXBElement<EmployeeBiometricStatus>(_EmployeeBiometricStatus_QNAME, EmployeeBiometricStatus.class, null, value);
     }
 
     /**
@@ -7292,7 +6740,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "LUser")
     public JAXBElement<LUser> createLUser(LUser value) {
-        return new JAXBElement<>(_LUser_QNAME, LUser.class, null, value);
+        return new JAXBElement<LUser>(_LUser_QNAME, LUser.class, null, value);
     }
 
     /**
@@ -7305,7 +6753,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "UserSortedColumn")
     public JAXBElement<UserSortedColumn> createUserSortedColumn(UserSortedColumn value) {
-        return new JAXBElement<>(_UserSortedColumn_QNAME, UserSortedColumn.class, null, value);
+        return new JAXBElement<UserSortedColumn>(_UserSortedColumn_QNAME, UserSortedColumn.class, null, value);
     }
 
     /**
@@ -7318,7 +6766,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "LUsersData")
     public JAXBElement<LUsersData> createLUsersData(LUsersData value) {
-        return new JAXBElement<>(_LUsersData_QNAME, LUsersData.class, null, value);
+        return new JAXBElement<LUsersData>(_LUsersData_QNAME, LUsersData.class, null, value);
     }
 
     /**
@@ -7331,7 +6779,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "ArrayOfLUser")
     public JAXBElement<ArrayOfLUser> createArrayOfLUser(ArrayOfLUser value) {
-        return new JAXBElement<>(_ArrayOfLUser_QNAME, ArrayOfLUser.class, null, value);
+        return new JAXBElement<ArrayOfLUser>(_ArrayOfLUser_QNAME, ArrayOfLUser.class, null, value);
     }
 
     /**
@@ -7344,7 +6792,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "LUserGroup")
     public JAXBElement<LUserGroup> createLUserGroup(LUserGroup value) {
-        return new JAXBElement<>(_LUserGroup_QNAME, LUserGroup.class, null, value);
+        return new JAXBElement<LUserGroup>(_LUserGroup_QNAME, LUserGroup.class, null, value);
     }
 
     /**
@@ -7357,7 +6805,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "UserGroupType")
     public JAXBElement<UserGroupType> createUserGroupType(UserGroupType value) {
-        return new JAXBElement<>(_UserGroupType_QNAME, UserGroupType.class, null, value);
+        return new JAXBElement<UserGroupType>(_UserGroupType_QNAME, UserGroupType.class, null, value);
     }
 
     /**
@@ -7370,7 +6818,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "UserGroupSortedColumn")
     public JAXBElement<UserGroupSortedColumn> createUserGroupSortedColumn(UserGroupSortedColumn value) {
-        return new JAXBElement<>(_UserGroupSortedColumn_QNAME, UserGroupSortedColumn.class, null, value);
+        return new JAXBElement<UserGroupSortedColumn>(_UserGroupSortedColumn_QNAME, UserGroupSortedColumn.class, null, value);
     }
 
     /**
@@ -7383,7 +6831,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "LUserGroupsData")
     public JAXBElement<LUserGroupsData> createLUserGroupsData(LUserGroupsData value) {
-        return new JAXBElement<>(_LUserGroupsData_QNAME, LUserGroupsData.class, null, value);
+        return new JAXBElement<LUserGroupsData>(_LUserGroupsData_QNAME, LUserGroupsData.class, null, value);
     }
 
     /**
@@ -7396,7 +6844,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "ArrayOfLUserGroup")
     public JAXBElement<ArrayOfLUserGroup> createArrayOfLUserGroup(ArrayOfLUserGroup value) {
-        return new JAXBElement<>(_ArrayOfLUserGroup_QNAME, ArrayOfLUserGroup.class, null, value);
+        return new JAXBElement<ArrayOfLUserGroup>(_ArrayOfLUserGroup_QNAME, ArrayOfLUserGroup.class, null, value);
     }
 
     /**
@@ -7409,7 +6857,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "ClaimInfo")
     public JAXBElement<ClaimInfo> createClaimInfo(ClaimInfo value) {
-        return new JAXBElement<>(_ClaimInfo_QNAME, ClaimInfo.class, null, value);
+        return new JAXBElement<ClaimInfo>(_ClaimInfo_QNAME, ClaimInfo.class, null, value);
     }
 
     /**
@@ -7422,7 +6870,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "ClaimSaveData")
     public JAXBElement<ClaimSaveData> createClaimSaveData(ClaimSaveData value) {
-        return new JAXBElement<>(_ClaimSaveData_QNAME, ClaimSaveData.class, null, value);
+        return new JAXBElement<ClaimSaveData>(_ClaimSaveData_QNAME, ClaimSaveData.class, null, value);
     }
 
     /**
@@ -7435,7 +6883,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "ArrayOfClaimInfo")
     public JAXBElement<ArrayOfClaimInfo> createArrayOfClaimInfo(ArrayOfClaimInfo value) {
-        return new JAXBElement<>(_ArrayOfClaimInfo_QNAME, ArrayOfClaimInfo.class, null, value);
+        return new JAXBElement<ArrayOfClaimInfo>(_ArrayOfClaimInfo_QNAME, ArrayOfClaimInfo.class, null, value);
     }
 
     /**
@@ -7448,7 +6896,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "CardTypeInfo")
     public JAXBElement<CardTypeInfo> createCardTypeInfo(CardTypeInfo value) {
-        return new JAXBElement<>(_CardTypeInfo_QNAME, CardTypeInfo.class, null, value);
+        return new JAXBElement<CardTypeInfo>(_CardTypeInfo_QNAME, CardTypeInfo.class, null, value);
     }
 
     /**
@@ -7461,7 +6909,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "CardTypeSaveInfo")
     public JAXBElement<CardTypeSaveInfo> createCardTypeSaveInfo(CardTypeSaveInfo value) {
-        return new JAXBElement<>(_CardTypeSaveInfo_QNAME, CardTypeSaveInfo.class, null, value);
+        return new JAXBElement<CardTypeSaveInfo>(_CardTypeSaveInfo_QNAME, CardTypeSaveInfo.class, null, value);
     }
 
     /**
@@ -7474,7 +6922,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "CardTypeSortedColumn")
     public JAXBElement<CardTypeSortedColumn> createCardTypeSortedColumn(CardTypeSortedColumn value) {
-        return new JAXBElement<>(_CardTypeSortedColumn_QNAME, CardTypeSortedColumn.class, null, value);
+        return new JAXBElement<CardTypeSortedColumn>(_CardTypeSortedColumn_QNAME, CardTypeSortedColumn.class, null, value);
     }
 
     /**
@@ -7487,7 +6935,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "CardTypesInfoData")
     public JAXBElement<CardTypesInfoData> createCardTypesInfoData(CardTypesInfoData value) {
-        return new JAXBElement<>(_CardTypesInfoData_QNAME, CardTypesInfoData.class, null, value);
+        return new JAXBElement<CardTypesInfoData>(_CardTypesInfoData_QNAME, CardTypesInfoData.class, null, value);
     }
 
     /**
@@ -7500,7 +6948,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "ArrayOfCardTypeInfo")
     public JAXBElement<ArrayOfCardTypeInfo> createArrayOfCardTypeInfo(ArrayOfCardTypeInfo value) {
-        return new JAXBElement<>(_ArrayOfCardTypeInfo_QNAME, ArrayOfCardTypeInfo.class, null, value);
+        return new JAXBElement<ArrayOfCardTypeInfo>(_ArrayOfCardTypeInfo_QNAME, ArrayOfCardTypeInfo.class, null, value);
     }
 
     /**
@@ -7513,7 +6961,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "RecognitionMarker")
     public JAXBElement<RecognitionMarker> createRecognitionMarker(RecognitionMarker value) {
-        return new JAXBElement<>(_RecognitionMarker_QNAME, RecognitionMarker.class, null, value);
+        return new JAXBElement<RecognitionMarker>(_RecognitionMarker_QNAME, RecognitionMarker.class, null, value);
     }
 
     /**
@@ -7526,7 +6974,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "ArrayOfCardTypeBiometricPermission")
     public JAXBElement<ArrayOfCardTypeBiometricPermission> createArrayOfCardTypeBiometricPermission(ArrayOfCardTypeBiometricPermission value) {
-        return new JAXBElement<>(_ArrayOfCardTypeBiometricPermission_QNAME, ArrayOfCardTypeBiometricPermission.class, null, value);
+        return new JAXBElement<ArrayOfCardTypeBiometricPermission>(_ArrayOfCardTypeBiometricPermission_QNAME, ArrayOfCardTypeBiometricPermission.class, null, value);
     }
 
     /**
@@ -7539,7 +6987,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "CardTypeBiometricPermission")
     public JAXBElement<CardTypeBiometricPermission> createCardTypeBiometricPermission(CardTypeBiometricPermission value) {
-        return new JAXBElement<>(_CardTypeBiometricPermission_QNAME, CardTypeBiometricPermission.class, null, value);
+        return new JAXBElement<CardTypeBiometricPermission>(_CardTypeBiometricPermission_QNAME, CardTypeBiometricPermission.class, null, value);
     }
 
     /**
@@ -7552,7 +7000,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "NameFormatType")
     public JAXBElement<NameFormatType> createNameFormatType(NameFormatType value) {
-        return new JAXBElement<>(_NameFormatType_QNAME, NameFormatType.class, null, value);
+        return new JAXBElement<NameFormatType>(_NameFormatType_QNAME, NameFormatType.class, null, value);
     }
 
     /**
@@ -7565,7 +7013,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "LChangedKeys")
     public JAXBElement<LChangedKeys> createLChangedKeys(LChangedKeys value) {
-        return new JAXBElement<>(_LChangedKeys_QNAME, LChangedKeys.class, null, value);
+        return new JAXBElement<LChangedKeys>(_LChangedKeys_QNAME, LChangedKeys.class, null, value);
     }
 
     /**
@@ -7578,7 +7026,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "ArrayOfLKeyInfo")
     public JAXBElement<ArrayOfLKeyInfo> createArrayOfLKeyInfo(ArrayOfLKeyInfo value) {
-        return new JAXBElement<>(_ArrayOfLKeyInfo_QNAME, ArrayOfLKeyInfo.class, null, value);
+        return new JAXBElement<ArrayOfLKeyInfo>(_ArrayOfLKeyInfo_QNAME, ArrayOfLKeyInfo.class, null, value);
     }
 
     /**
@@ -7591,7 +7039,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "LKeyInfo")
     public JAXBElement<LKeyInfo> createLKeyInfo(LKeyInfo value) {
-        return new JAXBElement<>(_LKeyInfo_QNAME, LKeyInfo.class, null, value);
+        return new JAXBElement<LKeyInfo>(_LKeyInfo_QNAME, LKeyInfo.class, null, value);
     }
 
     /**
@@ -7604,7 +7052,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "LStateBase")
     public JAXBElement<LStateBase> createLStateBase(LStateBase value) {
-        return new JAXBElement<>(_LStateBase_QNAME, LStateBase.class, null, value);
+        return new JAXBElement<LStateBase>(_LStateBase_QNAME, LStateBase.class, null, value);
     }
 
     /**
@@ -7617,7 +7065,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "StorageStateEnum")
     public JAXBElement<StorageStateEnum> createStorageStateEnum(StorageStateEnum value) {
-        return new JAXBElement<>(_StorageStateEnum_QNAME, StorageStateEnum.class, null, value);
+        return new JAXBElement<StorageStateEnum>(_StorageStateEnum_QNAME, StorageStateEnum.class, null, value);
     }
 
     /**
@@ -7630,7 +7078,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "DriverSettings")
     public JAXBElement<DriverSettings> createDriverSettings(DriverSettings value) {
-        return new JAXBElement<>(_DriverSettings_QNAME, DriverSettings.class, null, value);
+        return new JAXBElement<DriverSettings>(_DriverSettings_QNAME, DriverSettings.class, null, value);
     }
 
     /**
@@ -7643,7 +7091,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "DoorRelays")
     public JAXBElement<DoorRelays> createDoorRelays(DoorRelays value) {
-        return new JAXBElement<>(_DoorRelays_QNAME, DoorRelays.class, null, value);
+        return new JAXBElement<DoorRelays>(_DoorRelays_QNAME, DoorRelays.class, null, value);
     }
 
     /**
@@ -7656,7 +7104,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "ArrayOfDoorRelay")
     public JAXBElement<ArrayOfDoorRelay> createArrayOfDoorRelay(ArrayOfDoorRelay value) {
-        return new JAXBElement<>(_ArrayOfDoorRelay_QNAME, ArrayOfDoorRelay.class, null, value);
+        return new JAXBElement<ArrayOfDoorRelay>(_ArrayOfDoorRelay_QNAME, ArrayOfDoorRelay.class, null, value);
     }
 
     /**
@@ -7669,7 +7117,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "DoorRelay")
     public JAXBElement<DoorRelay> createDoorRelay(DoorRelay value) {
-        return new JAXBElement<>(_DoorRelay_QNAME, DoorRelay.class, null, value);
+        return new JAXBElement<DoorRelay>(_DoorRelay_QNAME, DoorRelay.class, null, value);
     }
 
     /**
@@ -7682,7 +7130,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "LChangedCustomizableDays")
     public JAXBElement<LChangedCustomizableDays> createLChangedCustomizableDays(LChangedCustomizableDays value) {
-        return new JAXBElement<>(_LChangedCustomizableDays_QNAME, LChangedCustomizableDays.class, null, value);
+        return new JAXBElement<LChangedCustomizableDays>(_LChangedCustomizableDays_QNAME, LChangedCustomizableDays.class, null, value);
     }
 
     /**
@@ -7695,7 +7143,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "ArrayOfLDriversCustomizableDays")
     public JAXBElement<ArrayOfLDriversCustomizableDays> createArrayOfLDriversCustomizableDays(ArrayOfLDriversCustomizableDays value) {
-        return new JAXBElement<>(_ArrayOfLDriversCustomizableDays_QNAME, ArrayOfLDriversCustomizableDays.class, null, value);
+        return new JAXBElement<ArrayOfLDriversCustomizableDays>(_ArrayOfLDriversCustomizableDays_QNAME, ArrayOfLDriversCustomizableDays.class, null, value);
     }
 
     /**
@@ -7708,7 +7156,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "LDriversCustomizableDays")
     public JAXBElement<LDriversCustomizableDays> createLDriversCustomizableDays(LDriversCustomizableDays value) {
-        return new JAXBElement<>(_LDriversCustomizableDays_QNAME, LDriversCustomizableDays.class, null, value);
+        return new JAXBElement<LDriversCustomizableDays>(_LDriversCustomizableDays_QNAME, LDriversCustomizableDays.class, null, value);
     }
 
     /**
@@ -7721,7 +7169,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "ArrayOfLCustomizableDayInfo")
     public JAXBElement<ArrayOfLCustomizableDayInfo> createArrayOfLCustomizableDayInfo(ArrayOfLCustomizableDayInfo value) {
-        return new JAXBElement<>(_ArrayOfLCustomizableDayInfo_QNAME, ArrayOfLCustomizableDayInfo.class, null, value);
+        return new JAXBElement<ArrayOfLCustomizableDayInfo>(_ArrayOfLCustomizableDayInfo_QNAME, ArrayOfLCustomizableDayInfo.class, null, value);
     }
 
     /**
@@ -7734,7 +7182,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "LCustomizableDayInfo")
     public JAXBElement<LCustomizableDayInfo> createLCustomizableDayInfo(LCustomizableDayInfo value) {
-        return new JAXBElement<>(_LCustomizableDayInfo_QNAME, LCustomizableDayInfo.class, null, value);
+        return new JAXBElement<LCustomizableDayInfo>(_LCustomizableDayInfo_QNAME, LCustomizableDayInfo.class, null, value);
     }
 
     /**
@@ -7747,7 +7195,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "CustomizableDayType")
     public JAXBElement<CustomizableDayType> createCustomizableDayType(CustomizableDayType value) {
-        return new JAXBElement<>(_CustomizableDayType_QNAME, CustomizableDayType.class, null, value);
+        return new JAXBElement<CustomizableDayType>(_CustomizableDayType_QNAME, CustomizableDayType.class, null, value);
     }
 
     /**
@@ -7760,7 +7208,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.HotKey", name = "RezervedHotKeys")
     public JAXBElement<RezervedHotKeys> createRezervedHotKeys(RezervedHotKeys value) {
-        return new JAXBElement<>(_RezervedHotKeys_QNAME, RezervedHotKeys.class, null, value);
+        return new JAXBElement<RezervedHotKeys>(_RezervedHotKeys_QNAME, RezervedHotKeys.class, null, value);
     }
 
     /**
@@ -7773,7 +7221,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Name", scope = LCustomizableDayInfo.class)
     public JAXBElement<String> createLCustomizableDayInfoName(String value) {
-        return new JAXBElement<>(_LCustomizableDayInfoName_QNAME, String.class, LCustomizableDayInfo.class, value);
+        return new JAXBElement<String>(_LCustomizableDayInfoName_QNAME, String.class, LCustomizableDayInfo.class, value);
     }
 
     /**
@@ -7786,7 +7234,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "TransferedDate", scope = LCustomizableDayInfo.class)
     public JAXBElement<XMLGregorianCalendar> createLCustomizableDayInfoTransferedDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_LCustomizableDayInfoTransferedDate_QNAME, XMLGregorianCalendar.class, LCustomizableDayInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_LCustomizableDayInfoTransferedDate_QNAME, XMLGregorianCalendar.class, LCustomizableDayInfo.class, value);
     }
 
     /**
@@ -7799,7 +7247,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Days", scope = LDriversCustomizableDays.class)
     public JAXBElement<ArrayOfLCustomizableDayInfo> createLDriversCustomizableDaysDays(ArrayOfLCustomizableDayInfo value) {
-        return new JAXBElement<>(_LDriversCustomizableDaysDays_QNAME, ArrayOfLCustomizableDayInfo.class, LDriversCustomizableDays.class, value);
+        return new JAXBElement<ArrayOfLCustomizableDayInfo>(_LDriversCustomizableDaysDays_QNAME, ArrayOfLCustomizableDayInfo.class, LDriversCustomizableDays.class, value);
     }
 
     /**
@@ -7812,7 +7260,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Relays", scope = DoorRelays.class)
     public JAXBElement<ArrayOfDoorRelay> createDoorRelaysRelays(ArrayOfDoorRelay value) {
-        return new JAXBElement<>(_DoorRelaysRelays_QNAME, ArrayOfDoorRelay.class, DoorRelays.class, value);
+        return new JAXBElement<ArrayOfDoorRelay>(_DoorRelaysRelays_QNAME, ArrayOfDoorRelay.class, DoorRelays.class, value);
     }
 
     /**
@@ -7825,7 +7273,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Antipassback", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsAntipassback(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsAntipassback_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsAntipassback_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7838,7 +7286,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "CardPlusAlcoFrame", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsCardPlusAlcoFrame(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsCardPlusAlcoFrame_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsCardPlusAlcoFrame_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7851,7 +7299,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "CardPlusFace", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsCardPlusFace(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsCardPlusFace_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsCardPlusFace_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7864,7 +7312,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "CardPlusVehicle", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsCardPlusVehicle(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsCardPlusVehicle_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsCardPlusVehicle_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7877,7 +7325,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "DailyAlcoholTestConfirmation", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsDailyAlcoholTestConfirmation(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsDailyAlcoholTestConfirmation_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsDailyAlcoholTestConfirmation_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7890,7 +7338,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "DaySchedule", scope = DriverSettings.class)
     public JAXBElement<AcsDaySchedule> createDriverSettingsDaySchedule(AcsDaySchedule value) {
-        return new JAXBElement<>(_DriverSettingsDaySchedule_QNAME, AcsDaySchedule.class, DriverSettings.class, value);
+        return new JAXBElement<AcsDaySchedule>(_DriverSettingsDaySchedule_QNAME, AcsDaySchedule.class, DriverSettings.class, value);
     }
 
     /**
@@ -7903,7 +7351,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "DoorRelays", scope = DriverSettings.class)
     public JAXBElement<DoorRelays> createDriverSettingsDoorRelays(DoorRelays value) {
-        return new JAXBElement<>(_DoorRelays_QNAME, DoorRelays.class, DriverSettings.class, value);
+        return new JAXBElement<DoorRelays>(_DoorRelays_QNAME, DoorRelays.class, DriverSettings.class, value);
     }
 
     /**
@@ -7916,7 +7364,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "IsConfirmingKey", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsIsConfirmingKey(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsIsConfirmingKey_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsIsConfirmingKey_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7929,7 +7377,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "IsGuardOffModeOn", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsIsGuardOffModeOn(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsIsGuardOffModeOn_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsIsGuardOffModeOn_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7942,7 +7390,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "IsGuardOnModeOn", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsIsGuardOnModeOn(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsIsGuardOnModeOn_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsIsGuardOnModeOn_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7955,7 +7403,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "IsLockModeOn", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsIsLockModeOn(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsIsLockModeOn_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsIsLockModeOn_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7968,7 +7416,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "IsMultiIdentification", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsIsMultiIdentification(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsIsMultiIdentification_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsIsMultiIdentification_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7981,7 +7429,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "IsOpenForALongTimeModeOn", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsIsOpenForALongTimeModeOn(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsIsOpenForALongTimeModeOn_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsIsOpenForALongTimeModeOn_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -7994,7 +7442,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "MultiDaySchedule", scope = DriverSettings.class)
     public JAXBElement<AcsMultiDaySchedule> createDriverSettingsMultiDaySchedule(AcsMultiDaySchedule value) {
-        return new JAXBElement<>(_DriverSettingsMultiDaySchedule_QNAME, AcsMultiDaySchedule.class, DriverSettings.class, value);
+        return new JAXBElement<AcsMultiDaySchedule>(_DriverSettingsMultiDaySchedule_QNAME, AcsMultiDaySchedule.class, DriverSettings.class, value);
     }
 
     /**
@@ -8007,7 +7455,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "OrderedServerIdentification", scope = DriverSettings.class)
     public JAXBElement<ArrayOfServerIdentificationType> createDriverSettingsOrderedServerIdentification(ArrayOfServerIdentificationType value) {
-        return new JAXBElement<>(_DriverSettingsOrderedServerIdentification_QNAME, ArrayOfServerIdentificationType.class, DriverSettings.class, value);
+        return new JAXBElement<ArrayOfServerIdentificationType>(_DriverSettingsOrderedServerIdentification_QNAME, ArrayOfServerIdentificationType.class, DriverSettings.class, value);
     }
 
     /**
@@ -8020,7 +7468,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "ServerVehicleIdentification", scope = DriverSettings.class)
     public JAXBElement<String> createDriverSettingsServerVehicleIdentification(String value) {
-        return new JAXBElement<>(_DriverSettingsServerVehicleIdentification_QNAME, String.class, DriverSettings.class, value);
+        return new JAXBElement<String>(_DriverSettingsServerVehicleIdentification_QNAME, String.class, DriverSettings.class, value);
     }
 
     /**
@@ -8033,7 +7481,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "UseHolidaysAndTransfers", scope = DriverSettings.class)
     public JAXBElement<Boolean> createDriverSettingsUseHolidaysAndTransfers(Boolean value) {
-        return new JAXBElement<>(_DriverSettingsUseHolidaysAndTransfers_QNAME, Boolean.class, DriverSettings.class, value);
+        return new JAXBElement<Boolean>(_DriverSettingsUseHolidaysAndTransfers_QNAME, Boolean.class, DriverSettings.class, value);
     }
 
     /**
@@ -8046,7 +7494,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "WeekSchedule", scope = DriverSettings.class)
     public JAXBElement<AcsWeekScheduleFull> createDriverSettingsWeekSchedule(AcsWeekScheduleFull value) {
-        return new JAXBElement<>(_DriverSettingsWeekSchedule_QNAME, AcsWeekScheduleFull.class, DriverSettings.class, value);
+        return new JAXBElement<AcsWeekScheduleFull>(_DriverSettingsWeekSchedule_QNAME, AcsWeekScheduleFull.class, DriverSettings.class, value);
     }
 
     /**
@@ -8059,7 +7507,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Data", scope = LKeyInfo.class)
     public JAXBElement<String> createLKeyInfoData(String value) {
-        return new JAXBElement<>(_LKeyInfoData_QNAME, String.class, LKeyInfo.class, value);
+        return new JAXBElement<String>(_LKeyInfoData_QNAME, String.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8072,7 +7520,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "DriverSettings", scope = LKeyInfo.class)
     public JAXBElement<DriverSettings> createLKeyInfoDriverSettings(DriverSettings value) {
-        return new JAXBElement<>(_DriverSettings_QNAME, DriverSettings.class, LKeyInfo.class, value);
+        return new JAXBElement<DriverSettings>(_DriverSettings_QNAME, DriverSettings.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8085,7 +7533,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "EmployeeFirstName", scope = LKeyInfo.class)
     public JAXBElement<String> createLKeyInfoEmployeeFirstName(String value) {
-        return new JAXBElement<>(_LKeyInfoEmployeeFirstName_QNAME, String.class, LKeyInfo.class, value);
+        return new JAXBElement<String>(_LKeyInfoEmployeeFirstName_QNAME, String.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8098,7 +7546,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "EmployeeLastName", scope = LKeyInfo.class)
     public JAXBElement<String> createLKeyInfoEmployeeLastName(String value) {
-        return new JAXBElement<>(_LKeyInfoEmployeeLastName_QNAME, String.class, LKeyInfo.class, value);
+        return new JAXBElement<String>(_LKeyInfoEmployeeLastName_QNAME, String.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8111,7 +7559,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "EmployeeSecondName", scope = LKeyInfo.class)
     public JAXBElement<String> createLKeyInfoEmployeeSecondName(String value) {
-        return new JAXBElement<>(_LKeyInfoEmployeeSecondName_QNAME, String.class, LKeyInfo.class, value);
+        return new JAXBElement<String>(_LKeyInfoEmployeeSecondName_QNAME, String.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8124,7 +7572,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "EndDate", scope = LKeyInfo.class)
     public JAXBElement<XMLGregorianCalendar> createLKeyInfoEndDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_LKeyInfoEndDate_QNAME, XMLGregorianCalendar.class, LKeyInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_LKeyInfoEndDate_QNAME, XMLGregorianCalendar.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8137,7 +7585,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Finger1_Template", scope = LKeyInfo.class)
     public JAXBElement<byte[]> createLKeyInfoFinger1Template(byte[] value) {
-        return new JAXBElement<>(_LKeyInfoFinger1Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_LKeyInfoFinger1Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
     }
 
     /**
@@ -8150,7 +7598,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Finger2_Template", scope = LKeyInfo.class)
     public JAXBElement<byte[]> createLKeyInfoFinger2Template(byte[] value) {
-        return new JAXBElement<>(_LKeyInfoFinger2Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_LKeyInfoFinger2Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
     }
 
     /**
@@ -8163,7 +7611,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Finger3_Template", scope = LKeyInfo.class)
     public JAXBElement<byte[]> createLKeyInfoFinger3Template(byte[] value) {
-        return new JAXBElement<>(_LKeyInfoFinger3Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_LKeyInfoFinger3Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
     }
 
     /**
@@ -8176,7 +7624,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Finger4_Template", scope = LKeyInfo.class)
     public JAXBElement<byte[]> createLKeyInfoFinger4Template(byte[] value) {
-        return new JAXBElement<>(_LKeyInfoFinger4Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_LKeyInfoFinger4Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
     }
 
     /**
@@ -8189,7 +7637,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Finger5_Template", scope = LKeyInfo.class)
     public JAXBElement<byte[]> createLKeyInfoFinger5Template(byte[] value) {
-        return new JAXBElement<>(_LKeyInfoFinger5Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_LKeyInfoFinger5Template_QNAME, byte[].class, LKeyInfo.class, ((byte[]) value));
     }
 
     /**
@@ -8202,7 +7650,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "PINCode", scope = LKeyInfo.class)
     public JAXBElement<Long> createLKeyInfoPINCode(Long value) {
-        return new JAXBElement<>(_LKeyInfoPINCode_QNAME, Long.class, LKeyInfo.class, value);
+        return new JAXBElement<Long>(_LKeyInfoPINCode_QNAME, Long.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8215,7 +7663,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "PINCodeUnderPressure", scope = LKeyInfo.class)
     public JAXBElement<Long> createLKeyInfoPINCodeUnderPressure(Long value) {
-        return new JAXBElement<>(_LKeyInfoPINCodeUnderPressure_QNAME, Long.class, LKeyInfo.class, value);
+        return new JAXBElement<Long>(_LKeyInfoPINCodeUnderPressure_QNAME, Long.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8228,7 +7676,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "StartDate", scope = LKeyInfo.class)
     public JAXBElement<XMLGregorianCalendar> createLKeyInfoStartDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_LKeyInfoStartDate_QNAME, XMLGregorianCalendar.class, LKeyInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_LKeyInfoStartDate_QNAME, XMLGregorianCalendar.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8241,7 +7689,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "TabNumber", scope = LKeyInfo.class)
     public JAXBElement<Integer> createLKeyInfoTabNumber(Integer value) {
-        return new JAXBElement<>(_LKeyInfoTabNumber_QNAME, Integer.class, LKeyInfo.class, value);
+        return new JAXBElement<Integer>(_LKeyInfoTabNumber_QNAME, Integer.class, LKeyInfo.class, value);
     }
 
     /**
@@ -8254,7 +7702,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "CardTypeID", scope = CardTypeBiometricPermission.class)
     public JAXBElement<String> createCardTypeBiometricPermissionCardTypeID(String value) {
-        return new JAXBElement<>(_CardTypeBiometricPermissionCardTypeID_QNAME, String.class, CardTypeBiometricPermission.class, value);
+        return new JAXBElement<String>(_CardTypeBiometricPermissionCardTypeID_QNAME, String.class, CardTypeBiometricPermission.class, value);
     }
 
     /**
@@ -8267,7 +7715,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "CardTypeName", scope = CardTypeBiometricPermission.class)
     public JAXBElement<String> createCardTypeBiometricPermissionCardTypeName(String value) {
-        return new JAXBElement<>(_CardTypeBiometricPermissionCardTypeName_QNAME, String.class, CardTypeBiometricPermission.class, value);
+        return new JAXBElement<String>(_CardTypeBiometricPermissionCardTypeName_QNAME, String.class, CardTypeBiometricPermission.class, value);
     }
 
     /**
@@ -8280,7 +7728,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "Comment", scope = CardTypeSaveInfo.class)
     public JAXBElement<String> createCardTypeSaveInfoComment(String value) {
-        return new JAXBElement<>(_CardTypeSaveInfoComment_QNAME, String.class, CardTypeSaveInfo.class, value);
+        return new JAXBElement<String>(_CardTypeSaveInfoComment_QNAME, String.class, CardTypeSaveInfo.class, value);
     }
 
     /**
@@ -8293,7 +7741,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "Name", scope = CardTypeSaveInfo.class)
     public JAXBElement<String> createCardTypeSaveInfoName(String value) {
-        return new JAXBElement<>(_CardTypeSaveInfoName_QNAME, String.class, CardTypeSaveInfo.class, value);
+        return new JAXBElement<String>(_CardTypeSaveInfoName_QNAME, String.class, CardTypeSaveInfo.class, value);
     }
 
     /**
@@ -8306,7 +7754,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "Editor", scope = UserPassEditorSaveData.class)
     public JAXBElement<UserPassEditorSaveData.Editor> createUserPassEditorSaveDataEditor(UserPassEditorSaveData.Editor value) {
-        return new JAXBElement<>(_UserPassEditorSaveDataEditor_QNAME, UserPassEditorSaveData.Editor.class, UserPassEditorSaveData.class, value);
+        return new JAXBElement<UserPassEditorSaveData.Editor>(_UserPassEditorSaveDataEditor_QNAME, UserPassEditorSaveData.Editor.class, UserPassEditorSaveData.class, value);
     }
 
     /**
@@ -8319,7 +7767,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "Description", scope = UserPassSlimSaveData.class)
     public JAXBElement<String> createUserPassSlimSaveDataDescription(String value) {
-        return new JAXBElement<>(_UserPassSlimSaveDataDescription_QNAME, String.class, UserPassSlimSaveData.class, value);
+        return new JAXBElement<String>(_UserPassSlimSaveDataDescription_QNAME, String.class, UserPassSlimSaveData.class, value);
     }
 
     /**
@@ -8332,7 +7780,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "Name", scope = UserPassSlimSaveData.class)
     public JAXBElement<String> createUserPassSlimSaveDataName(String value) {
-        return new JAXBElement<>(_UserPassSlimSaveDataName_QNAME, String.class, UserPassSlimSaveData.class, value);
+        return new JAXBElement<String>(_UserPassSlimSaveDataName_QNAME, String.class, UserPassSlimSaveData.class, value);
     }
 
     /**
@@ -8345,7 +7793,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "Name", scope = FavoriteFolderSaveData.class)
     public JAXBElement<String> createFavoriteFolderSaveDataName(String value) {
-        return new JAXBElement<>(_FavoriteFolderSaveDataName_QNAME, String.class, FavoriteFolderSaveData.class, value);
+        return new JAXBElement<String>(_FavoriteFolderSaveDataName_QNAME, String.class, FavoriteFolderSaveData.class, value);
     }
 
     /**
@@ -8358,7 +7806,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "ParentID", scope = FavoriteFolderSaveData.class)
     public JAXBElement<String> createFavoriteFolderSaveDataParentID(String value) {
-        return new JAXBElement<>(_FavoriteFolderSaveDataParentID_QNAME, String.class, FavoriteFolderSaveData.class, value);
+        return new JAXBElement<String>(_FavoriteFolderSaveDataParentID_QNAME, String.class, FavoriteFolderSaveData.class, value);
     }
 
     /**
@@ -8371,7 +7819,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "UserID", scope = FavoriteFolderSaveData.class)
     public JAXBElement<String> createFavoriteFolderSaveDataUserID(String value) {
-        return new JAXBElement<>(_FavoriteFolderSaveDataUserID_QNAME, String.class, FavoriteFolderSaveData.class, value);
+        return new JAXBElement<String>(_FavoriteFolderSaveDataUserID_QNAME, String.class, FavoriteFolderSaveData.class, value);
     }
 
     /**
@@ -8384,7 +7832,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "WorkplaceID", scope = FavoriteFolderSaveData.class)
     public JAXBElement<String> createFavoriteFolderSaveDataWorkplaceID(String value) {
-        return new JAXBElement<>(_FavoriteFolderSaveDataWorkplaceID_QNAME, String.class, FavoriteFolderSaveData.class, value);
+        return new JAXBElement<String>(_FavoriteFolderSaveDataWorkplaceID_QNAME, String.class, FavoriteFolderSaveData.class, value);
     }
 
     /**
@@ -8397,7 +7845,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "FavoreteFolderRelationName", scope = FavoriteFolderInfo.class)
     public JAXBElement<String> createFavoriteFolderInfoFavoreteFolderRelationName(String value) {
-        return new JAXBElement<>(_FavoriteFolderInfoFavoreteFolderRelationName_QNAME, String.class, FavoriteFolderInfo.class, value);
+        return new JAXBElement<String>(_FavoriteFolderInfoFavoreteFolderRelationName_QNAME, String.class, FavoriteFolderInfo.class, value);
     }
 
     /**
@@ -8410,7 +7858,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "FavoreteFolderRelationPath", scope = FavoriteFolderInfo.class)
     public JAXBElement<String> createFavoriteFolderInfoFavoreteFolderRelationPath(String value) {
-        return new JAXBElement<>(_FavoriteFolderInfoFavoreteFolderRelationPath_QNAME, String.class, FavoriteFolderInfo.class, value);
+        return new JAXBElement<String>(_FavoriteFolderInfoFavoreteFolderRelationPath_QNAME, String.class, FavoriteFolderInfo.class, value);
     }
 
     /**
@@ -8423,7 +7871,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", name = "Groups", scope = FavoriteFolderInfoWithEmployeeGroup.class)
     public JAXBElement<ArrayOfAcsEmployeeGroup> createFavoriteFolderInfoWithEmployeeGroupGroups(ArrayOfAcsEmployeeGroup value) {
-        return new JAXBElement<>(_FavoriteFolderInfoWithEmployeeGroupGroups_QNAME, ArrayOfAcsEmployeeGroup.class, FavoriteFolderInfoWithEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroup>(_FavoriteFolderInfoWithEmployeeGroupGroups_QNAME, ArrayOfAcsEmployeeGroup.class, FavoriteFolderInfoWithEmployeeGroup.class, value);
     }
 
     /**
@@ -8436,7 +7884,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Description", scope = FilterTagFullInfo.class)
     public JAXBElement<String> createFilterTagFullInfoDescription(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoDescription_QNAME, String.class, FilterTagFullInfo.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoDescription_QNAME, String.class, FilterTagFullInfo.class, value);
     }
 
     /**
@@ -8449,7 +7897,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Name", scope = FilterTagFullInfo.class)
     public JAXBElement<String> createFilterTagFullInfoName(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoName_QNAME, String.class, FilterTagFullInfo.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoName_QNAME, String.class, FilterTagFullInfo.class, value);
     }
 
     /**
@@ -8462,7 +7910,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Description", scope = TagFullInfo.class)
     public JAXBElement<String> createTagFullInfoDescription(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoDescription_QNAME, String.class, TagFullInfo.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoDescription_QNAME, String.class, TagFullInfo.class, value);
     }
 
     /**
@@ -8475,7 +7923,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Name", scope = TagFullInfo.class)
     public JAXBElement<String> createTagFullInfoName(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoName_QNAME, String.class, TagFullInfo.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoName_QNAME, String.class, TagFullInfo.class, value);
     }
 
     /**
@@ -8488,7 +7936,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "Description", scope = EmailDistributionAddressSaveData.class)
     public JAXBElement<String> createEmailDistributionAddressSaveDataDescription(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataDescription_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataDescription_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
     }
 
     /**
@@ -8501,7 +7949,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "Login", scope = EmailDistributionAddressSaveData.class)
     public JAXBElement<String> createEmailDistributionAddressSaveDataLogin(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataLogin_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataLogin_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
     }
 
     /**
@@ -8514,7 +7962,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "Name", scope = EmailDistributionAddressSaveData.class)
     public JAXBElement<String> createEmailDistributionAddressSaveDataName(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataName_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataName_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
     }
 
     /**
@@ -8527,7 +7975,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "Password", scope = EmailDistributionAddressSaveData.class)
     public JAXBElement<String> createEmailDistributionAddressSaveDataPassword(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataPassword_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataPassword_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
     }
 
     /**
@@ -8540,7 +7988,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "SenderEmailAddress", scope = EmailDistributionAddressSaveData.class)
     public JAXBElement<String> createEmailDistributionAddressSaveDataSenderEmailAddress(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataSenderEmailAddress_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataSenderEmailAddress_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
     }
 
     /**
@@ -8553,7 +8001,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "SenderName", scope = EmailDistributionAddressSaveData.class)
     public JAXBElement<String> createEmailDistributionAddressSaveDataSenderName(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataSenderName_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataSenderName_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
     }
 
     /**
@@ -8566,7 +8014,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "SmtpServerAddress", scope = EmailDistributionAddressSaveData.class)
     public JAXBElement<String> createEmailDistributionAddressSaveDataSmtpServerAddress(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataSmtpServerAddress_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataSmtpServerAddress_QNAME, String.class, EmailDistributionAddressSaveData.class, value);
     }
 
     /**
@@ -8579,7 +8027,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "CityCode", scope = PhoneNumberSaveData.class)
     public JAXBElement<String> createPhoneNumberSaveDataCityCode(String value) {
-        return new JAXBElement<>(_PhoneNumberSaveDataCityCode_QNAME, String.class, PhoneNumberSaveData.class, value);
+        return new JAXBElement<String>(_PhoneNumberSaveDataCityCode_QNAME, String.class, PhoneNumberSaveData.class, value);
     }
 
     /**
@@ -8592,7 +8040,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "CountryCode", scope = PhoneNumberSaveData.class)
     public JAXBElement<String> createPhoneNumberSaveDataCountryCode(String value) {
-        return new JAXBElement<>(_PhoneNumberSaveDataCountryCode_QNAME, String.class, PhoneNumberSaveData.class, value);
+        return new JAXBElement<String>(_PhoneNumberSaveDataCountryCode_QNAME, String.class, PhoneNumberSaveData.class, value);
     }
 
     /**
@@ -8605,7 +8053,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "Description", scope = PhoneNumberSaveData.class)
     public JAXBElement<String> createPhoneNumberSaveDataDescription(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataDescription_QNAME, String.class, PhoneNumberSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataDescription_QNAME, String.class, PhoneNumberSaveData.class, value);
     }
 
     /**
@@ -8618,7 +8066,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "PhoneNumber", scope = PhoneNumberSaveData.class)
     public JAXBElement<String> createPhoneNumberSaveDataPhoneNumber(String value) {
-        return new JAXBElement<>(_PhoneNumberSaveDataPhoneNumber_QNAME, String.class, PhoneNumberSaveData.class, value);
+        return new JAXBElement<String>(_PhoneNumberSaveDataPhoneNumber_QNAME, String.class, PhoneNumberSaveData.class, value);
     }
 
     /**
@@ -8631,7 +8079,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "Description", scope = EmailAddressSaveData.class)
     public JAXBElement<String> createEmailAddressSaveDataDescription(String value) {
-        return new JAXBElement<>(_EmailDistributionAddressSaveDataDescription_QNAME, String.class, EmailAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailDistributionAddressSaveDataDescription_QNAME, String.class, EmailAddressSaveData.class, value);
     }
 
     /**
@@ -8644,7 +8092,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ContactInformation", name = "Email", scope = EmailAddressSaveData.class)
     public JAXBElement<String> createEmailAddressSaveDataEmail(String value) {
-        return new JAXBElement<>(_EmailAddressSaveDataEmail_QNAME, String.class, EmailAddressSaveData.class, value);
+        return new JAXBElement<String>(_EmailAddressSaveDataEmail_QNAME, String.class, EmailAddressSaveData.class, value);
     }
 
     /**
@@ -8657,7 +8105,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IvidionCamera", name = "Name", scope = IvideonCameraDriverInfo.class)
     public JAXBElement<String> createIvideonCameraDriverInfoName(String value) {
-        return new JAXBElement<>(_IvideonCameraDriverInfoName_QNAME, String.class, IvideonCameraDriverInfo.class, value);
+        return new JAXBElement<String>(_IvideonCameraDriverInfoName_QNAME, String.class, IvideonCameraDriverInfo.class, value);
     }
 
     /**
@@ -8670,7 +8118,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IvidionCamera", name = "Path", scope = IvideonCameraDriverInfo.class)
     public JAXBElement<String> createIvideonCameraDriverInfoPath(String value) {
-        return new JAXBElement<>(_IvideonCameraDriverInfoPath_QNAME, String.class, IvideonCameraDriverInfo.class, value);
+        return new JAXBElement<String>(_IvideonCameraDriverInfoPath_QNAME, String.class, IvideonCameraDriverInfo.class, value);
     }
 
     /**
@@ -8683,7 +8131,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IvidionCamera", name = "ServerType", scope = IvideonCameraDriverInfo.class)
     public JAXBElement<String> createIvideonCameraDriverInfoServerType(String value) {
-        return new JAXBElement<>(_IvideonCameraDriverInfoServerType_QNAME, String.class, IvideonCameraDriverInfo.class, value);
+        return new JAXBElement<String>(_IvideonCameraDriverInfoServerType_QNAME, String.class, IvideonCameraDriverInfo.class, value);
     }
 
     /**
@@ -8696,7 +8144,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "Name", scope = ScreenCellSaveData.class)
     public JAXBElement<String> createScreenCellSaveDataName(String value) {
-        return new JAXBElement<>(_ScreenCellSaveDataName_QNAME, String.class, ScreenCellSaveData.class, value);
+        return new JAXBElement<String>(_ScreenCellSaveDataName_QNAME, String.class, ScreenCellSaveData.class, value);
     }
 
     /**
@@ -8709,7 +8157,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "Children", scope = ScreenCellTreeInfo.class)
     public JAXBElement<ArrayOfScreenCellTreeInfo> createScreenCellTreeInfoChildren(ArrayOfScreenCellTreeInfo value) {
-        return new JAXBElement<>(_ScreenCellTreeInfoChildren_QNAME, ArrayOfScreenCellTreeInfo.class, ScreenCellTreeInfo.class, value);
+        return new JAXBElement<ArrayOfScreenCellTreeInfo>(_ScreenCellTreeInfoChildren_QNAME, ArrayOfScreenCellTreeInfo.class, ScreenCellTreeInfo.class, value);
     }
 
     /**
@@ -8722,7 +8170,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "ISS_OBJ_ID", scope = ISSEntityBase.class)
     public JAXBElement<String> createISSEntityBaseISSOBJID(String value) {
-        return new JAXBElement<>(_ISSEntityBaseISSOBJID_QNAME, String.class, ISSEntityBase.class, value);
+        return new JAXBElement<String>(_ISSEntityBaseISSOBJID_QNAME, String.class, ISSEntityBase.class, value);
     }
 
     /**
@@ -8735,7 +8183,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Name", scope = ISSEntityBase.class)
     public JAXBElement<String> createISSEntityBaseName(String value) {
-        return new JAXBElement<>(_ISSEntityBaseName_QNAME, String.class, ISSEntityBase.class, value);
+        return new JAXBElement<String>(_ISSEntityBaseName_QNAME, String.class, ISSEntityBase.class, value);
     }
 
     /**
@@ -8748,7 +8196,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "RusGuardIntegrationPoints", scope = ISSIntegrationPointSlimInfo.class)
     public JAXBElement<ArrayOfISSRusGuardSlimInfo> createISSIntegrationPointSlimInfoRusGuardIntegrationPoints(ArrayOfISSRusGuardSlimInfo value) {
-        return new JAXBElement<>(_ISSIntegrationPointSlimInfoRusGuardIntegrationPoints_QNAME, ArrayOfISSRusGuardSlimInfo.class, ISSIntegrationPointSlimInfo.class, value);
+        return new JAXBElement<ArrayOfISSRusGuardSlimInfo>(_ISSIntegrationPointSlimInfoRusGuardIntegrationPoints_QNAME, ArrayOfISSRusGuardSlimInfo.class, ISSIntegrationPointSlimInfo.class, value);
     }
 
     /**
@@ -8761,7 +8209,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Cameras", scope = ISSMonitorSlimInfo.class)
     public JAXBElement<ArrayOfISSCamSlimInfo> createISSMonitorSlimInfoCameras(ArrayOfISSCamSlimInfo value) {
-        return new JAXBElement<>(_ISSMonitorSlimInfoCameras_QNAME, ArrayOfISSCamSlimInfo.class, ISSMonitorSlimInfo.class, value);
+        return new JAXBElement<ArrayOfISSCamSlimInfo>(_ISSMonitorSlimInfoCameras_QNAME, ArrayOfISSCamSlimInfo.class, ISSMonitorSlimInfo.class, value);
     }
 
     /**
@@ -8774,7 +8222,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "EventViewers", scope = ISSDisplaySlimInfo.class)
     public JAXBElement<ArrayOfISSEventViewerSlimInfo> createISSDisplaySlimInfoEventViewers(ArrayOfISSEventViewerSlimInfo value) {
-        return new JAXBElement<>(_ISSDisplaySlimInfoEventViewers_QNAME, ArrayOfISSEventViewerSlimInfo.class, ISSDisplaySlimInfo.class, value);
+        return new JAXBElement<ArrayOfISSEventViewerSlimInfo>(_ISSDisplaySlimInfoEventViewers_QNAME, ArrayOfISSEventViewerSlimInfo.class, ISSDisplaySlimInfo.class, value);
     }
 
     /**
@@ -8787,7 +8235,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Monitors", scope = ISSDisplaySlimInfo.class)
     public JAXBElement<ArrayOfISSMonitorSlimInfo> createISSDisplaySlimInfoMonitors(ArrayOfISSMonitorSlimInfo value) {
-        return new JAXBElement<>(_ISSDisplaySlimInfoMonitors_QNAME, ArrayOfISSMonitorSlimInfo.class, ISSDisplaySlimInfo.class, value);
+        return new JAXBElement<ArrayOfISSMonitorSlimInfo>(_ISSDisplaySlimInfoMonitors_QNAME, ArrayOfISSMonitorSlimInfo.class, ISSDisplaySlimInfo.class, value);
     }
 
     /**
@@ -8800,7 +8248,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Displays", scope = ISSSlaveSlimInfo.class)
     public JAXBElement<ArrayOfISSDisplaySlimInfo> createISSSlaveSlimInfoDisplays(ArrayOfISSDisplaySlimInfo value) {
-        return new JAXBElement<>(_ISSSlaveSlimInfoDisplays_QNAME, ArrayOfISSDisplaySlimInfo.class, ISSSlaveSlimInfo.class, value);
+        return new JAXBElement<ArrayOfISSDisplaySlimInfo>(_ISSSlaveSlimInfoDisplays_QNAME, ArrayOfISSDisplaySlimInfo.class, ISSSlaveSlimInfo.class, value);
     }
 
     /**
@@ -8813,7 +8261,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Dns", scope = ISSSlaveSlimInfo.class)
     public JAXBElement<String> createISSSlaveSlimInfoDns(String value) {
-        return new JAXBElement<>(_ISSSlaveSlimInfoDns_QNAME, String.class, ISSSlaveSlimInfo.class, value);
+        return new JAXBElement<String>(_ISSSlaveSlimInfoDns_QNAME, String.class, ISSSlaveSlimInfo.class, value);
     }
 
     /**
@@ -8826,7 +8274,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "IPAddress", scope = ISSSlaveSlimInfo.class)
     public JAXBElement<String> createISSSlaveSlimInfoIPAddress(String value) {
-        return new JAXBElement<>(_ISSSlaveSlimInfoIPAddress_QNAME, String.class, ISSSlaveSlimInfo.class, value);
+        return new JAXBElement<String>(_ISSSlaveSlimInfoIPAddress_QNAME, String.class, ISSSlaveSlimInfo.class, value);
     }
 
     /**
@@ -8839,7 +8287,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "IntegrationPoints", scope = ISSSlaveSlimInfo.class)
     public JAXBElement<ArrayOfISSIntegrationPointSlimInfo> createISSSlaveSlimInfoIntegrationPoints(ArrayOfISSIntegrationPointSlimInfo value) {
-        return new JAXBElement<>(_ISSSlaveSlimInfoIntegrationPoints_QNAME, ArrayOfISSIntegrationPointSlimInfo.class, ISSSlaveSlimInfo.class, value);
+        return new JAXBElement<ArrayOfISSIntegrationPointSlimInfo>(_ISSSlaveSlimInfoIntegrationPoints_QNAME, ArrayOfISSIntegrationPointSlimInfo.class, ISSSlaveSlimInfo.class, value);
     }
 
     /**
@@ -8852,7 +8300,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PhotoBank", name = "DateOfBirth", scope = PhotoBankShort.class)
     public JAXBElement<XMLGregorianCalendar> createPhotoBankShortDateOfBirth(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_PhotoBankShortDateOfBirth_QNAME, XMLGregorianCalendar.class, PhotoBankShort.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_PhotoBankShortDateOfBirth_QNAME, XMLGregorianCalendar.class, PhotoBankShort.class, value);
     }
 
     /**
@@ -8865,7 +8313,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PhotoBank", name = "FullName", scope = PhotoBankShort.class)
     public JAXBElement<String> createPhotoBankShortFullName(String value) {
-        return new JAXBElement<>(_PhotoBankShortFullName_QNAME, String.class, PhotoBankShort.class, value);
+        return new JAXBElement<String>(_PhotoBankShortFullName_QNAME, String.class, PhotoBankShort.class, value);
     }
 
     /**
@@ -8878,7 +8326,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PhotoBank", name = "PersonNumber", scope = PhotoBankShort.class)
     public JAXBElement<Long> createPhotoBankShortPersonNumber(Long value) {
-        return new JAXBElement<>(_PhotoBankShortPersonNumber_QNAME, Long.class, PhotoBankShort.class, value);
+        return new JAXBElement<Long>(_PhotoBankShortPersonNumber_QNAME, Long.class, PhotoBankShort.class, value);
     }
 
     /**
@@ -8891,7 +8339,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Name", scope = ReactionActionSaveData.class)
     public JAXBElement<String> createReactionActionSaveDataName(String value) {
-        return new JAXBElement<>(_ReactionActionSaveDataName_QNAME, String.class, ReactionActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionActionSaveDataName_QNAME, String.class, ReactionActionSaveData.class, value);
     }
 
     /**
@@ -8904,7 +8352,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Name", scope = ReactionSlimInfo.class)
     public JAXBElement<String> createReactionSlimInfoName(String value) {
-        return new JAXBElement<>(_ReactionActionSaveDataName_QNAME, String.class, ReactionSlimInfo.class, value);
+        return new JAXBElement<String>(_ReactionActionSaveDataName_QNAME, String.class, ReactionSlimInfo.class, value);
     }
 
     /**
@@ -8917,7 +8365,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Name", scope = ReactionEventSaveData.class)
     public JAXBElement<String> createReactionEventSaveDataName(String value) {
-        return new JAXBElement<>(_ReactionActionSaveDataName_QNAME, String.class, ReactionEventSaveData.class, value);
+        return new JAXBElement<String>(_ReactionActionSaveDataName_QNAME, String.class, ReactionEventSaveData.class, value);
     }
 
     /**
@@ -8930,7 +8378,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = AddListInfo.class)
     public JAXBElement<ListItem> createAddListInfoValue(ListItem value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, ListItem.class, AddListInfo.class, value);
+        return new JAXBElement<ListItem>(_AddListInfoValue_QNAME, ListItem.class, AddListInfo.class, value);
     }
 
     /**
@@ -8943,7 +8391,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = AddColorInfo.class)
     public JAXBElement<byte[]> createAddColorInfoValue(byte[] value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, byte[].class, AddColorInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AddListInfoValue_QNAME, byte[].class, AddColorInfo.class, ((byte[]) value));
     }
 
     /**
@@ -8956,7 +8404,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = AddStringInfo.class)
     public JAXBElement<String> createAddStringInfoValue(String value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, String.class, AddStringInfo.class, value);
+        return new JAXBElement<String>(_AddListInfoValue_QNAME, String.class, AddStringInfo.class, value);
     }
 
     /**
@@ -8969,7 +8417,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = AddIntInfo.class)
     public JAXBElement<Integer> createAddIntInfoValue(Integer value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, Integer.class, AddIntInfo.class, value);
+        return new JAXBElement<Integer>(_AddListInfoValue_QNAME, Integer.class, AddIntInfo.class, value);
     }
 
     /**
@@ -8982,7 +8430,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = AddDoubleInfo.class)
     public JAXBElement<Double> createAddDoubleInfoValue(Double value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, Double.class, AddDoubleInfo.class, value);
+        return new JAXBElement<Double>(_AddListInfoValue_QNAME, Double.class, AddDoubleInfo.class, value);
     }
 
     /**
@@ -8995,7 +8443,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = AddDateTimeInfo.class)
     public JAXBElement<XMLGregorianCalendar> createAddDateTimeInfoValue(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, XMLGregorianCalendar.class, AddDateTimeInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AddListInfoValue_QNAME, XMLGregorianCalendar.class, AddDateTimeInfo.class, value);
     }
 
     /**
@@ -9008,7 +8456,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Fields", scope = OwnerAdditionalFieldsValue.class)
     public JAXBElement<ArrayOfAdditionalFieldValue> createOwnerAdditionalFieldsValueFields(ArrayOfAdditionalFieldValue value) {
-        return new JAXBElement<>(_OwnerAdditionalFieldsValueFields_QNAME, ArrayOfAdditionalFieldValue.class, OwnerAdditionalFieldsValue.class, value);
+        return new JAXBElement<ArrayOfAdditionalFieldValue>(_OwnerAdditionalFieldsValueFields_QNAME, ArrayOfAdditionalFieldValue.class, OwnerAdditionalFieldsValue.class, value);
     }
 
     /**
@@ -9021,7 +8469,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = OwnerListValue.class)
     public JAXBElement<ListItem> createOwnerListValueValue(ListItem value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, ListItem.class, OwnerListValue.class, value);
+        return new JAXBElement<ListItem>(_AddListInfoValue_QNAME, ListItem.class, OwnerListValue.class, value);
     }
 
     /**
@@ -9034,7 +8482,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = OwnerColorValue.class)
     public JAXBElement<byte[]> createOwnerColorValueValue(byte[] value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, byte[].class, OwnerColorValue.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AddListInfoValue_QNAME, byte[].class, OwnerColorValue.class, ((byte[]) value));
     }
 
     /**
@@ -9047,7 +8495,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = OwnerStringValue.class)
     public JAXBElement<String> createOwnerStringValueValue(String value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, String.class, OwnerStringValue.class, value);
+        return new JAXBElement<String>(_AddListInfoValue_QNAME, String.class, OwnerStringValue.class, value);
     }
 
     /**
@@ -9060,7 +8508,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = OwnerIntValue.class)
     public JAXBElement<Integer> createOwnerIntValueValue(Integer value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, Integer.class, OwnerIntValue.class, value);
+        return new JAXBElement<Integer>(_AddListInfoValue_QNAME, Integer.class, OwnerIntValue.class, value);
     }
 
     /**
@@ -9073,7 +8521,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = OwnerDoubleValue.class)
     public JAXBElement<Double> createOwnerDoubleValueValue(Double value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, Double.class, OwnerDoubleValue.class, value);
+        return new JAXBElement<Double>(_AddListInfoValue_QNAME, Double.class, OwnerDoubleValue.class, value);
     }
 
     /**
@@ -9086,7 +8534,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Value", scope = OwnerDateTimeValue.class)
     public JAXBElement<XMLGregorianCalendar> createOwnerDateTimeValueValue(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AddListInfoValue_QNAME, XMLGregorianCalendar.class, OwnerDateTimeValue.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AddListInfoValue_QNAME, XMLGregorianCalendar.class, OwnerDateTimeValue.class, value);
     }
 
     /**
@@ -9099,7 +8547,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "AdditionalFieldInfo", scope = AdditionalFieldValue.class)
     public JAXBElement<AdditionalFieldBase> createAdditionalFieldValueAdditionalFieldInfo(AdditionalFieldBase value) {
-        return new JAXBElement<>(_AdditionalFieldValueAdditionalFieldInfo_QNAME, AdditionalFieldBase.class, AdditionalFieldValue.class, value);
+        return new JAXBElement<AdditionalFieldBase>(_AdditionalFieldValueAdditionalFieldInfo_QNAME, AdditionalFieldBase.class, AdditionalFieldValue.class, value);
     }
 
     /**
@@ -9112,7 +8560,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "OwnerValue", scope = AdditionalFieldValue.class)
     public JAXBElement<OwnerValueBase> createAdditionalFieldValueOwnerValue(OwnerValueBase value) {
-        return new JAXBElement<>(_AdditionalFieldValueOwnerValue_QNAME, OwnerValueBase.class, AdditionalFieldValue.class, value);
+        return new JAXBElement<OwnerValueBase>(_AdditionalFieldValueOwnerValue_QNAME, OwnerValueBase.class, AdditionalFieldValue.class, value);
     }
 
     /**
@@ -9125,7 +8573,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Name", scope = AdditionalFieldBase.class)
     public JAXBElement<String> createAdditionalFieldBaseName(String value) {
-        return new JAXBElement<>(_AdditionalFieldBaseName_QNAME, String.class, AdditionalFieldBase.class, value);
+        return new JAXBElement<String>(_AdditionalFieldBaseName_QNAME, String.class, AdditionalFieldBase.class, value);
     }
 
     /**
@@ -9138,7 +8586,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DefaultValue", scope = ListField.class)
     public JAXBElement<ListItem> createListFieldDefaultValue(ListItem value) {
-        return new JAXBElement<>(_ListFieldDefaultValue_QNAME, ListItem.class, ListField.class, value);
+        return new JAXBElement<ListItem>(_ListFieldDefaultValue_QNAME, ListItem.class, ListField.class, value);
     }
 
     /**
@@ -9151,7 +8599,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Items", scope = ListField.class)
     public JAXBElement<ArrayOfListItem> createListFieldItems(ArrayOfListItem value) {
-        return new JAXBElement<>(_ListFieldItems_QNAME, ArrayOfListItem.class, ListField.class, value);
+        return new JAXBElement<ArrayOfListItem>(_ListFieldItems_QNAME, ArrayOfListItem.class, ListField.class, value);
     }
 
     /**
@@ -9164,7 +8612,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DefaultValue", scope = ColorField.class)
     public JAXBElement<byte[]> createColorFieldDefaultValue(byte[] value) {
-        return new JAXBElement<>(_ListFieldDefaultValue_QNAME, byte[].class, ColorField.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_ListFieldDefaultValue_QNAME, byte[].class, ColorField.class, ((byte[]) value));
     }
 
     /**
@@ -9177,7 +8625,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DefaultValue", scope = StringField.class)
     public JAXBElement<String> createStringFieldDefaultValue(String value) {
-        return new JAXBElement<>(_ListFieldDefaultValue_QNAME, String.class, StringField.class, value);
+        return new JAXBElement<String>(_ListFieldDefaultValue_QNAME, String.class, StringField.class, value);
     }
 
     /**
@@ -9190,7 +8638,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DefaultValue", scope = DoubleField.class)
     public JAXBElement<Double> createDoubleFieldDefaultValue(Double value) {
-        return new JAXBElement<>(_ListFieldDefaultValue_QNAME, Double.class, DoubleField.class, value);
+        return new JAXBElement<Double>(_ListFieldDefaultValue_QNAME, Double.class, DoubleField.class, value);
     }
 
     /**
@@ -9203,7 +8651,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DefaultValue", scope = IntegerField.class)
     public JAXBElement<Integer> createIntegerFieldDefaultValue(Integer value) {
-        return new JAXBElement<>(_ListFieldDefaultValue_QNAME, Integer.class, IntegerField.class, value);
+        return new JAXBElement<Integer>(_ListFieldDefaultValue_QNAME, Integer.class, IntegerField.class, value);
     }
 
     /**
@@ -9216,7 +8664,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "DefaultValue", scope = DateTimeField.class)
     public JAXBElement<XMLGregorianCalendar> createDateTimeFieldDefaultValue(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_ListFieldDefaultValue_QNAME, XMLGregorianCalendar.class, DateTimeField.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_ListFieldDefaultValue_QNAME, XMLGregorianCalendar.class, DateTimeField.class, value);
     }
 
     /**
@@ -9229,7 +8677,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "Format", scope = DateTimeField.class)
     public JAXBElement<String> createDateTimeFieldFormat(String value) {
-        return new JAXBElement<>(_DateTimeFieldFormat_QNAME, String.class, DateTimeField.class, value);
+        return new JAXBElement<String>(_DateTimeFieldFormat_QNAME, String.class, DateTimeField.class, value);
     }
 
     /**
@@ -9242,7 +8690,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "IsCurrent", scope = DateTimeField.class)
     public JAXBElement<Boolean> createDateTimeFieldIsCurrent(Boolean value) {
-        return new JAXBElement<>(_DateTimeFieldIsCurrent_QNAME, Boolean.class, DateTimeField.class, value);
+        return new JAXBElement<Boolean>(_DateTimeFieldIsCurrent_QNAME, Boolean.class, DateTimeField.class, value);
     }
 
     /**
@@ -9255,7 +8703,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "AdditionalField1", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataAdditionalField1(String value) {
-        return new JAXBElement<>(_ReportSaveDataAdditionalField1_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataAdditionalField1_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9268,7 +8716,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "AdditionalField2", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataAdditionalField2(String value) {
-        return new JAXBElement<>(_ReportSaveDataAdditionalField2_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataAdditionalField2_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9281,7 +8729,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "AdditionalField3", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataAdditionalField3(String value) {
-        return new JAXBElement<>(_ReportSaveDataAdditionalField3_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataAdditionalField3_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9294,7 +8742,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "Company", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataCompany(String value) {
-        return new JAXBElement<>(_ReportSaveDataCompany_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataCompany_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9307,7 +8755,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "Department", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataDepartment(String value) {
-        return new JAXBElement<>(_ReportSaveDataDepartment_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataDepartment_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9320,7 +8768,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "Description", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataDescription(String value) {
-        return new JAXBElement<>(_ReportSaveDataDescription_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataDescription_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9333,7 +8781,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "Identity", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataIdentity(String value) {
-        return new JAXBElement<>(_ReportSaveDataIdentity_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataIdentity_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9346,7 +8794,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Report", name = "Name", scope = ReportSaveData.class)
     public JAXBElement<String> createReportSaveDataName(String value) {
-        return new JAXBElement<>(_ReportSaveDataName_QNAME, String.class, ReportSaveData.class, value);
+        return new JAXBElement<String>(_ReportSaveDataName_QNAME, String.class, ReportSaveData.class, value);
     }
 
     /**
@@ -9359,7 +8807,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "Comment", scope = WorkTimetableSlimInfo.class)
     public JAXBElement<String> createWorkTimetableSlimInfoComment(String value) {
-        return new JAXBElement<>(_WorkTimetableSlimInfoComment_QNAME, String.class, WorkTimetableSlimInfo.class, value);
+        return new JAXBElement<String>(_WorkTimetableSlimInfoComment_QNAME, String.class, WorkTimetableSlimInfo.class, value);
     }
 
     /**
@@ -9372,7 +8820,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "DayMode", scope = WorkTimetableSlimInfo.class)
     public JAXBElement<DayTypeSlimInfo> createWorkTimetableSlimInfoDayMode(DayTypeSlimInfo value) {
-        return new JAXBElement<>(_DayMode_QNAME, DayTypeSlimInfo.class, WorkTimetableSlimInfo.class, value);
+        return new JAXBElement<DayTypeSlimInfo>(_DayMode_QNAME, DayTypeSlimInfo.class, WorkTimetableSlimInfo.class, value);
     }
 
     /**
@@ -9385,7 +8833,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "Name", scope = EmployeePositionSlimInfo.class)
     public JAXBElement<String> createEmployeePositionSlimInfoName(String value) {
-        return new JAXBElement<>(_EmployeePositionSlimInfoName_QNAME, String.class, EmployeePositionSlimInfo.class, value);
+        return new JAXBElement<String>(_EmployeePositionSlimInfoName_QNAME, String.class, EmployeePositionSlimInfo.class, value);
     }
 
     /**
@@ -9398,7 +8846,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "Description", scope = FolderSaveData.class)
     public JAXBElement<String> createFolderSaveDataDescription(String value) {
-        return new JAXBElement<>(_FolderSaveDataDescription_QNAME, String.class, FolderSaveData.class, value);
+        return new JAXBElement<String>(_FolderSaveDataDescription_QNAME, String.class, FolderSaveData.class, value);
     }
 
     /**
@@ -9411,7 +8859,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "Name", scope = FolderSaveData.class)
     public JAXBElement<String> createFolderSaveDataName(String value) {
-        return new JAXBElement<>(_FolderSaveDataName_QNAME, String.class, FolderSaveData.class, value);
+        return new JAXBElement<String>(_FolderSaveDataName_QNAME, String.class, FolderSaveData.class, value);
     }
 
     /**
@@ -9424,7 +8872,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "ParentID", scope = FolderSaveData.class)
     public JAXBElement<String> createFolderSaveDataParentID(String value) {
-        return new JAXBElement<>(_FolderSaveDataParentID_QNAME, String.class, FolderSaveData.class, value);
+        return new JAXBElement<String>(_FolderSaveDataParentID_QNAME, String.class, FolderSaveData.class, value);
     }
 
     /**
@@ -9437,7 +8885,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", name = "Levels", scope = FolderInfoWithAccessLevel.class)
     public JAXBElement<ArrayOfAcsAccessLevelSlimInfo> createFolderInfoWithAccessLevelLevels(ArrayOfAcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_FolderInfoWithAccessLevelLevels_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, FolderInfoWithAccessLevel.class, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSlimInfo>(_FolderInfoWithAccessLevelLevels_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, FolderInfoWithAccessLevel.class, value);
     }
 
     /**
@@ -9450,7 +8898,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Comment", scope = Employee2OrganizationAssignment.class)
     public JAXBElement<String> createEmployee2OrganizationAssignmentComment(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentComment_QNAME, String.class, Employee2OrganizationAssignment.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentComment_QNAME, String.class, Employee2OrganizationAssignment.class, value);
     }
 
     /**
@@ -9463,7 +8911,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ID", scope = Employee2OrganizationAssignment.class)
     public JAXBElement<String> createEmployee2OrganizationAssignmentID(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentID_QNAME, String.class, Employee2OrganizationAssignment.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentID_QNAME, String.class, Employee2OrganizationAssignment.class, value);
     }
 
     /**
@@ -9476,7 +8924,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SubdivisionID", scope = Employee2OrganizationAssignment.class)
     public JAXBElement<String> createEmployee2OrganizationAssignmentSubdivisionID(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentSubdivisionID_QNAME, String.class, Employee2OrganizationAssignment.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentSubdivisionID_QNAME, String.class, Employee2OrganizationAssignment.class, value);
     }
 
     /**
@@ -9489,7 +8937,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Comment", scope = Employee2OrganizationAssignmentFull.class)
     public JAXBElement<String> createEmployee2OrganizationAssignmentFullComment(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentComment_QNAME, String.class, Employee2OrganizationAssignmentFull.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentComment_QNAME, String.class, Employee2OrganizationAssignmentFull.class, value);
     }
 
     /**
@@ -9502,7 +8950,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ID", scope = Employee2OrganizationAssignmentFull.class)
     public JAXBElement<String> createEmployee2OrganizationAssignmentFullID(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentID_QNAME, String.class, Employee2OrganizationAssignmentFull.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentID_QNAME, String.class, Employee2OrganizationAssignmentFull.class, value);
     }
 
     /**
@@ -9515,7 +8963,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Organization", scope = Employee2OrganizationAssignmentFull.class)
     public JAXBElement<DictionaryElementInfo> createEmployee2OrganizationAssignmentFullOrganization(DictionaryElementInfo value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentFullOrganization_QNAME, DictionaryElementInfo.class, Employee2OrganizationAssignmentFull.class, value);
+        return new JAXBElement<DictionaryElementInfo>(_Employee2OrganizationAssignmentFullOrganization_QNAME, DictionaryElementInfo.class, Employee2OrganizationAssignmentFull.class, value);
     }
 
     /**
@@ -9528,7 +8976,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Subdivision", scope = Employee2OrganizationAssignmentFull.class)
     public JAXBElement<DictionaryElementInfo> createEmployee2OrganizationAssignmentFullSubdivision(DictionaryElementInfo value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentFullSubdivision_QNAME, DictionaryElementInfo.class, Employee2OrganizationAssignmentFull.class, value);
+        return new JAXBElement<DictionaryElementInfo>(_Employee2OrganizationAssignmentFullSubdivision_QNAME, DictionaryElementInfo.class, Employee2OrganizationAssignmentFull.class, value);
     }
 
     /**
@@ -9541,7 +8989,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentNumber", scope = Violation.class)
     public JAXBElement<String> createViolationDocumentNumber(String value) {
-        return new JAXBElement<>(_ViolationDocumentNumber_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationDocumentNumber_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9554,7 +9002,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentType", scope = Violation.class)
     public JAXBElement<String> createViolationDocumentType(String value) {
-        return new JAXBElement<>(_ViolationDocumentType_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationDocumentType_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9567,7 +9015,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "FirstName", scope = Violation.class)
     public JAXBElement<String> createViolationFirstName(String value) {
-        return new JAXBElement<>(_ViolationFirstName_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationFirstName_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9580,7 +9028,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "GroupName", scope = Violation.class)
     public JAXBElement<String> createViolationGroupName(String value) {
-        return new JAXBElement<>(_ViolationGroupName_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationGroupName_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9593,7 +9041,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "GroupPath", scope = Violation.class)
     public JAXBElement<String> createViolationGroupPath(String value) {
-        return new JAXBElement<>(_ViolationGroupPath_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationGroupPath_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9606,7 +9054,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentDate", scope = Violation.class)
     public JAXBElement<XMLGregorianCalendar> createViolationIncidentDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_ViolationIncidentDate_QNAME, XMLGregorianCalendar.class, Violation.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_ViolationIncidentDate_QNAME, XMLGregorianCalendar.class, Violation.class, value);
     }
 
     /**
@@ -9619,7 +9067,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LastName", scope = Violation.class)
     public JAXBElement<String> createViolationLastName(String value) {
-        return new JAXBElement<>(_ViolationLastName_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationLastName_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9632,7 +9080,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "NatureOfViolation", scope = Violation.class)
     public JAXBElement<String> createViolationNatureOfViolation(String value) {
-        return new JAXBElement<>(_ViolationNatureOfViolation_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationNatureOfViolation_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9645,7 +9093,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SecondName", scope = Violation.class)
     public JAXBElement<String> createViolationSecondName(String value) {
-        return new JAXBElement<>(_ViolationSecondName_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationSecondName_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9658,7 +9106,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Significance", scope = Violation.class)
     public JAXBElement<String> createViolationSignificance(String value) {
-        return new JAXBElement<>(_ViolationSignificance_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationSignificance_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9671,7 +9119,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TypeOfViolation", scope = Violation.class)
     public JAXBElement<String> createViolationTypeOfViolation(String value) {
-        return new JAXBElement<>(_ViolationTypeOfViolation_QNAME, String.class, Violation.class, value);
+        return new JAXBElement<String>(_ViolationTypeOfViolation_QNAME, String.class, Violation.class, value);
     }
 
     /**
@@ -9684,7 +9132,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Apartm", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultApartm(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultApartm_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultApartm_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9697,7 +9145,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Area", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultArea(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultArea_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultArea_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9710,7 +9158,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "BirthDay", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<XMLGregorianCalendar> createFirebirdIncidentEventsResultBirthDay(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultBirthDay_QNAME, XMLGregorianCalendar.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_FirebirdIncidentEventsResultBirthDay_QNAME, XMLGregorianCalendar.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9723,7 +9171,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Cases", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultCases(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultCases_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultCases_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9736,7 +9184,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "City", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultCity(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultCity_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultCity_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9749,7 +9197,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Country", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultCountry(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultCountry_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultCountry_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9762,7 +9210,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DateEvent", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<XMLGregorianCalendar> createFirebirdIncidentEventsResultDateEvent(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultDateEvent_QNAME, XMLGregorianCalendar.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_FirebirdIncidentEventsResultDateEvent_QNAME, XMLGregorianCalendar.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9775,7 +9223,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Firm", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultFirm(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultFirm_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultFirm_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9788,7 +9236,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "House", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultHouse(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultHouse_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultHouse_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9801,7 +9249,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Name", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultName(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultName_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultName_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9814,7 +9262,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "NameDoc", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultNameDoc(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultNameDoc_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultNameDoc_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9827,7 +9275,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "NumDoc", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultNumDoc(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultNumDoc_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultNumDoc_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9840,7 +9288,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Patronomic", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultPatronomic(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultPatronomic_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultPatronomic_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9853,7 +9301,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Significance", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultSignificance(String value) {
-        return new JAXBElement<>(_ViolationSignificance_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_ViolationSignificance_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9866,7 +9314,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Street", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultStreet(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultStreet_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultStreet_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9879,7 +9327,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Surname", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultSurname(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultSurname_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultSurname_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9892,7 +9340,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Violation", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultViolation(String value) {
-        return new JAXBElement<>(_Violation_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_Violation_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9905,7 +9353,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "WayOfPlunder", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultWayOfPlunder(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultWayOfPlunder_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultWayOfPlunder_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9918,7 +9366,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "WayOfPlunderInfo", scope = FirebirdIncidentEventsResult.class)
     public JAXBElement<String> createFirebirdIncidentEventsResultWayOfPlunderInfo(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultWayOfPlunderInfo_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultWayOfPlunderInfo_QNAME, String.class, FirebirdIncidentEventsResult.class, value);
     }
 
     /**
@@ -9931,7 +9379,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Description", scope = TangiblesSaveInfo.class)
     public JAXBElement<String> createTangiblesSaveInfoDescription(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoDescription_QNAME, String.class, TangiblesSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoDescription_QNAME, String.class, TangiblesSaveInfo.class, value);
     }
 
     /**
@@ -9944,7 +9392,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "MeasureID", scope = TangiblesSaveInfo.class)
     public JAXBElement<String> createTangiblesSaveInfoMeasureID(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoMeasureID_QNAME, String.class, TangiblesSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoMeasureID_QNAME, String.class, TangiblesSaveInfo.class, value);
     }
 
     /**
@@ -9957,7 +9405,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "NumberAndDateOfReturn", scope = TangiblesSaveInfo.class)
     public JAXBElement<String> createTangiblesSaveInfoNumberAndDateOfReturn(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoNumberAndDateOfReturn_QNAME, String.class, TangiblesSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoNumberAndDateOfReturn_QNAME, String.class, TangiblesSaveInfo.class, value);
     }
 
     /**
@@ -9970,7 +9418,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "WhoTransferedID", scope = TangiblesSaveInfo.class)
     public JAXBElement<String> createTangiblesSaveInfoWhoTransferedID(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoWhoTransferedID_QNAME, String.class, TangiblesSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoWhoTransferedID_QNAME, String.class, TangiblesSaveInfo.class, value);
     }
 
     /**
@@ -9983,7 +9431,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "MeasureName", scope = TangiblesFullInfo.class)
     public JAXBElement<String> createTangiblesFullInfoMeasureName(String value) {
-        return new JAXBElement<>(_TangiblesFullInfoMeasureName_QNAME, String.class, TangiblesFullInfo.class, value);
+        return new JAXBElement<String>(_TangiblesFullInfoMeasureName_QNAME, String.class, TangiblesFullInfo.class, value);
     }
 
     /**
@@ -9996,7 +9444,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TangiblesName", scope = TangiblesFullInfo.class)
     public JAXBElement<String> createTangiblesFullInfoTangiblesName(String value) {
-        return new JAXBElement<>(_TangiblesFullInfoTangiblesName_QNAME, String.class, TangiblesFullInfo.class, value);
+        return new JAXBElement<String>(_TangiblesFullInfoTangiblesName_QNAME, String.class, TangiblesFullInfo.class, value);
     }
 
     /**
@@ -10009,7 +9457,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "WhoTransferedName", scope = TangiblesFullInfo.class)
     public JAXBElement<String> createTangiblesFullInfoWhoTransferedName(String value) {
-        return new JAXBElement<>(_TangiblesFullInfoWhoTransferedName_QNAME, String.class, TangiblesFullInfo.class, value);
+        return new JAXBElement<String>(_TangiblesFullInfoWhoTransferedName_QNAME, String.class, TangiblesFullInfo.class, value);
     }
 
     /**
@@ -10022,7 +9470,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "AnswerDate", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<XMLGregorianCalendar> createDocumentForActionSaveInfoAnswerDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoAnswerDate_QNAME, XMLGregorianCalendar.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_DocumentForActionSaveInfoAnswerDate_QNAME, XMLGregorianCalendar.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10035,7 +9483,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "AnswerNumber", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<String> createDocumentForActionSaveInfoAnswerNumber(String value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoAnswerNumber_QNAME, String.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentForActionSaveInfoAnswerNumber_QNAME, String.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10048,7 +9496,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "CreateDate", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<XMLGregorianCalendar> createDocumentForActionSaveInfoCreateDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoCreateDate_QNAME, XMLGregorianCalendar.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_DocumentForActionSaveInfoCreateDate_QNAME, XMLGregorianCalendar.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10061,7 +9509,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DecisionDocumentTypeID", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<String> createDocumentForActionSaveInfoDecisionDocumentTypeID(String value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoDecisionDocumentTypeID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentForActionSaveInfoDecisionDocumentTypeID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10074,7 +9522,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentNumber", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<String> createDocumentForActionSaveInfoDocumentNumber(String value) {
-        return new JAXBElement<>(_ViolationDocumentNumber_QNAME, String.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolationDocumentNumber_QNAME, String.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10087,7 +9535,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ExtraFinalPunishmentID", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<String> createDocumentForActionSaveInfoExtraFinalPunishmentID(String value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoExtraFinalPunishmentID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentForActionSaveInfoExtraFinalPunishmentID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10100,7 +9548,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "FinalPunishmentID", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<String> createDocumentForActionSaveInfoFinalPunishmentID(String value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoFinalPunishmentID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentForActionSaveInfoFinalPunishmentID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10113,7 +9561,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SentDate", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<XMLGregorianCalendar> createDocumentForActionSaveInfoSentDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoSentDate_QNAME, XMLGregorianCalendar.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_DocumentForActionSaveInfoSentDate_QNAME, XMLGregorianCalendar.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10126,7 +9574,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "WhoTransferredDecisionDocumentID", scope = DocumentForActionSaveInfo.class)
     public JAXBElement<String> createDocumentForActionSaveInfoWhoTransferredDecisionDocumentID(String value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfoWhoTransferredDecisionDocumentID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentForActionSaveInfoWhoTransferredDecisionDocumentID_QNAME, String.class, DocumentForActionSaveInfo.class, value);
     }
 
     /**
@@ -10139,7 +9587,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentSentName", scope = DocumentFullForActionInfo.class)
     public JAXBElement<String> createDocumentFullForActionInfoDocumentSentName(String value) {
-        return new JAXBElement<>(_DocumentFullForActionInfoDocumentSentName_QNAME, String.class, DocumentFullForActionInfo.class, value);
+        return new JAXBElement<String>(_DocumentFullForActionInfoDocumentSentName_QNAME, String.class, DocumentFullForActionInfo.class, value);
     }
 
     /**
@@ -10152,7 +9600,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentTypeName", scope = DocumentFullForActionInfo.class)
     public JAXBElement<String> createDocumentFullForActionInfoDocumentTypeName(String value) {
-        return new JAXBElement<>(_DocumentFullForActionInfoDocumentTypeName_QNAME, String.class, DocumentFullForActionInfo.class, value);
+        return new JAXBElement<String>(_DocumentFullForActionInfoDocumentTypeName_QNAME, String.class, DocumentFullForActionInfo.class, value);
     }
 
     /**
@@ -10165,7 +9613,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ExtraFinalPunishmentName", scope = DocumentFullForActionInfo.class)
     public JAXBElement<String> createDocumentFullForActionInfoExtraFinalPunishmentName(String value) {
-        return new JAXBElement<>(_DocumentFullForActionInfoExtraFinalPunishmentName_QNAME, String.class, DocumentFullForActionInfo.class, value);
+        return new JAXBElement<String>(_DocumentFullForActionInfoExtraFinalPunishmentName_QNAME, String.class, DocumentFullForActionInfo.class, value);
     }
 
     /**
@@ -10178,7 +9626,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "FinalPunishmentName", scope = DocumentFullForActionInfo.class)
     public JAXBElement<String> createDocumentFullForActionInfoFinalPunishmentName(String value) {
-        return new JAXBElement<>(_DocumentFullForActionInfoFinalPunishmentName_QNAME, String.class, DocumentFullForActionInfo.class, value);
+        return new JAXBElement<String>(_DocumentFullForActionInfoFinalPunishmentName_QNAME, String.class, DocumentFullForActionInfo.class, value);
     }
 
     /**
@@ -10191,7 +9639,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentNumber", scope = DocumentSaveInfo.class)
     public JAXBElement<String> createDocumentSaveInfoDocumentNumber(String value) {
-        return new JAXBElement<>(_ViolationDocumentNumber_QNAME, String.class, DocumentSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolationDocumentNumber_QNAME, String.class, DocumentSaveInfo.class, value);
     }
 
     /**
@@ -10204,7 +9652,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentTypeID", scope = DocumentSaveInfo.class)
     public JAXBElement<String> createDocumentSaveInfoDocumentTypeID(String value) {
-        return new JAXBElement<>(_DocumentSaveInfoDocumentTypeID_QNAME, String.class, DocumentSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentSaveInfoDocumentTypeID_QNAME, String.class, DocumentSaveInfo.class, value);
     }
 
     /**
@@ -10217,7 +9665,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "NumberAndDateOfReturn", scope = DocumentSaveInfo.class)
     public JAXBElement<String> createDocumentSaveInfoNumberAndDateOfReturn(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoNumberAndDateOfReturn_QNAME, String.class, DocumentSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoNumberAndDateOfReturn_QNAME, String.class, DocumentSaveInfo.class, value);
     }
 
     /**
@@ -10230,7 +9678,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "WhoTransferedDocumentID", scope = DocumentSaveInfo.class)
     public JAXBElement<String> createDocumentSaveInfoWhoTransferedDocumentID(String value) {
-        return new JAXBElement<>(_DocumentSaveInfoWhoTransferedDocumentID_QNAME, String.class, DocumentSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentSaveInfoWhoTransferedDocumentID_QNAME, String.class, DocumentSaveInfo.class, value);
     }
 
     /**
@@ -10243,7 +9691,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DecisionDocumentTypeName", scope = DocumentFullInfo.class)
     public JAXBElement<String> createDocumentFullInfoDecisionDocumentTypeName(String value) {
-        return new JAXBElement<>(_DocumentFullInfoDecisionDocumentTypeName_QNAME, String.class, DocumentFullInfo.class, value);
+        return new JAXBElement<String>(_DocumentFullInfoDecisionDocumentTypeName_QNAME, String.class, DocumentFullInfo.class, value);
     }
 
     /**
@@ -10256,7 +9704,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "WhoTransferredDecisionDocumentName", scope = DocumentFullInfo.class)
     public JAXBElement<String> createDocumentFullInfoWhoTransferredDecisionDocumentName(String value) {
-        return new JAXBElement<>(_DocumentFullInfoWhoTransferredDecisionDocumentName_QNAME, String.class, DocumentFullInfo.class, value);
+        return new JAXBElement<String>(_DocumentFullInfoWhoTransferredDecisionDocumentName_QNAME, String.class, DocumentFullInfo.class, value);
     }
 
     /**
@@ -10269,7 +9717,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ActNumber", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoActNumber(String value) {
-        return new JAXBElement<>(_ViolatorSaveInfoActNumber_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolatorSaveInfoActNumber_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10282,7 +9730,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Comment", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoComment(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentComment_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentComment_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10295,7 +9743,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Description", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoDescription(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoDescription_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoDescription_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10308,7 +9756,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DetentionID", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoDetentionID(String value) {
-        return new JAXBElement<>(_ViolatorSaveInfoDetentionID_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolatorSaveInfoDetentionID_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10321,7 +9769,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentForActionSaveInfo", scope = ViolatorSaveInfo.class)
     public JAXBElement<ArrayOfDocumentForActionSaveInfo> createViolatorSaveInfoDocumentForActionSaveInfo(ArrayOfDocumentForActionSaveInfo value) {
-        return new JAXBElement<>(_DocumentForActionSaveInfo_QNAME, ArrayOfDocumentForActionSaveInfo.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<ArrayOfDocumentForActionSaveInfo>(_DocumentForActionSaveInfo_QNAME, ArrayOfDocumentForActionSaveInfo.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10334,7 +9782,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentSaveInfo", scope = ViolatorSaveInfo.class)
     public JAXBElement<ArrayOfDocumentSaveInfo> createViolatorSaveInfoDocumentSaveInfo(ArrayOfDocumentSaveInfo value) {
-        return new JAXBElement<>(_DocumentSaveInfo_QNAME, ArrayOfDocumentSaveInfo.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<ArrayOfDocumentSaveInfo>(_DocumentSaveInfo_QNAME, ArrayOfDocumentSaveInfo.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10347,7 +9795,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationID", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoOrganizationID(String value) {
-        return new JAXBElement<>(_ViolatorSaveInfoOrganizationID_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolatorSaveInfoOrganizationID_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10360,7 +9808,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "PositionID", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoPositionID(String value) {
-        return new JAXBElement<>(_ViolatorSaveInfoPositionID_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolatorSaveInfoPositionID_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10373,7 +9821,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "PunishmentID", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoPunishmentID(String value) {
-        return new JAXBElement<>(_ViolatorSaveInfoPunishmentID_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolatorSaveInfoPunishmentID_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10386,7 +9834,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "StatusID", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoStatusID(String value) {
-        return new JAXBElement<>(_ViolatorSaveInfoStatusID_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolatorSaveInfoStatusID_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10399,7 +9847,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SubdivisionID", scope = ViolatorSaveInfo.class)
     public JAXBElement<String> createViolatorSaveInfoSubdivisionID(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentSubdivisionID_QNAME, String.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentSubdivisionID_QNAME, String.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10412,7 +9860,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TabNumber", scope = ViolatorSaveInfo.class)
     public JAXBElement<Integer> createViolatorSaveInfoTabNumber(Integer value) {
-        return new JAXBElement<>(_ViolatorSaveInfoTabNumber_QNAME, Integer.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<Integer>(_ViolatorSaveInfoTabNumber_QNAME, Integer.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10425,7 +9873,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationsSaveInfo", scope = ViolatorSaveInfo.class)
     public JAXBElement<ArrayOfViolationSaveInfo> createViolatorSaveInfoViolationsSaveInfo(ArrayOfViolationSaveInfo value) {
-        return new JAXBElement<>(_ViolatorSaveInfoViolationsSaveInfo_QNAME, ArrayOfViolationSaveInfo.class, ViolatorSaveInfo.class, value);
+        return new JAXBElement<ArrayOfViolationSaveInfo>(_ViolatorSaveInfoViolationsSaveInfo_QNAME, ArrayOfViolationSaveInfo.class, ViolatorSaveInfo.class, value);
     }
 
     /**
@@ -10438,7 +9886,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "AcsEmployeeDocumentsData", scope = ViolatorFullInfo.class)
     public JAXBElement<AcsEmployeeDocumentsData> createViolatorFullInfoAcsEmployeeDocumentsData(AcsEmployeeDocumentsData value) {
-        return new JAXBElement<>(_ViolatorFullInfoAcsEmployeeDocumentsData_QNAME, AcsEmployeeDocumentsData.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<AcsEmployeeDocumentsData>(_ViolatorFullInfoAcsEmployeeDocumentsData_QNAME, AcsEmployeeDocumentsData.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10451,7 +9899,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "AcsEmployeeFull", scope = ViolatorFullInfo.class)
     public JAXBElement<AcsEmployeeFull> createViolatorFullInfoAcsEmployeeFull(AcsEmployeeFull value) {
-        return new JAXBElement<>(_ViolatorFullInfoAcsEmployeeFull_QNAME, AcsEmployeeFull.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<AcsEmployeeFull>(_ViolatorFullInfoAcsEmployeeFull_QNAME, AcsEmployeeFull.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10464,7 +9912,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DetentionName", scope = ViolatorFullInfo.class)
     public JAXBElement<String> createViolatorFullInfoDetentionName(String value) {
-        return new JAXBElement<>(_ViolatorFullInfoDetentionName_QNAME, String.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<String>(_ViolatorFullInfoDetentionName_QNAME, String.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10477,7 +9925,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentsData", scope = ViolatorFullInfo.class)
     public JAXBElement<ArrayOfDocumentFullInfo> createViolatorFullInfoDocumentsData(ArrayOfDocumentFullInfo value) {
-        return new JAXBElement<>(_ViolatorFullInfoDocumentsData_QNAME, ArrayOfDocumentFullInfo.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<ArrayOfDocumentFullInfo>(_ViolatorFullInfoDocumentsData_QNAME, ArrayOfDocumentFullInfo.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10490,7 +9938,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentsForActionData", scope = ViolatorFullInfo.class)
     public JAXBElement<ArrayOfDocumentFullForActionInfo> createViolatorFullInfoDocumentsForActionData(ArrayOfDocumentFullForActionInfo value) {
-        return new JAXBElement<>(_ViolatorFullInfoDocumentsForActionData_QNAME, ArrayOfDocumentFullForActionInfo.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<ArrayOfDocumentFullForActionInfo>(_ViolatorFullInfoDocumentsForActionData_QNAME, ArrayOfDocumentFullForActionInfo.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10503,7 +9951,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationName", scope = ViolatorFullInfo.class)
     public JAXBElement<String> createViolatorFullInfoOrganizationName(String value) {
-        return new JAXBElement<>(_ViolatorFullInfoOrganizationName_QNAME, String.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<String>(_ViolatorFullInfoOrganizationName_QNAME, String.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10516,7 +9964,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "PositionName", scope = ViolatorFullInfo.class)
     public JAXBElement<String> createViolatorFullInfoPositionName(String value) {
-        return new JAXBElement<>(_ViolatorFullInfoPositionName_QNAME, String.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<String>(_ViolatorFullInfoPositionName_QNAME, String.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10529,7 +9977,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "PunishmentName", scope = ViolatorFullInfo.class)
     public JAXBElement<String> createViolatorFullInfoPunishmentName(String value) {
-        return new JAXBElement<>(_ViolatorFullInfoPunishmentName_QNAME, String.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<String>(_ViolatorFullInfoPunishmentName_QNAME, String.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10542,7 +9990,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "StatusName", scope = ViolatorFullInfo.class)
     public JAXBElement<String> createViolatorFullInfoStatusName(String value) {
-        return new JAXBElement<>(_ViolatorFullInfoStatusName_QNAME, String.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<String>(_ViolatorFullInfoStatusName_QNAME, String.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10555,7 +10003,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SubdivisionName", scope = ViolatorFullInfo.class)
     public JAXBElement<String> createViolatorFullInfoSubdivisionName(String value) {
-        return new JAXBElement<>(_ViolatorFullInfoSubdivisionName_QNAME, String.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<String>(_ViolatorFullInfoSubdivisionName_QNAME, String.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10568,7 +10016,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationsData", scope = ViolatorFullInfo.class)
     public JAXBElement<ArrayOfViolationFullInfo> createViolatorFullInfoViolationsData(ArrayOfViolationFullInfo value) {
-        return new JAXBElement<>(_ViolatorFullInfoViolationsData_QNAME, ArrayOfViolationFullInfo.class, ViolatorFullInfo.class, value);
+        return new JAXBElement<ArrayOfViolationFullInfo>(_ViolatorFullInfoViolationsData_QNAME, ArrayOfViolationFullInfo.class, ViolatorFullInfo.class, value);
     }
 
     /**
@@ -10581,7 +10029,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Description", scope = ViolationSaveInfo.class)
     public JAXBElement<String> createViolationSaveInfoDescription(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoDescription_QNAME, String.class, ViolationSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoDescription_QNAME, String.class, ViolationSaveInfo.class, value);
     }
 
     /**
@@ -10594,7 +10042,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "NatureID", scope = ViolationSaveInfo.class)
     public JAXBElement<String> createViolationSaveInfoNatureID(String value) {
-        return new JAXBElement<>(_ViolationSaveInfoNatureID_QNAME, String.class, ViolationSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolationSaveInfoNatureID_QNAME, String.class, ViolationSaveInfo.class, value);
     }
 
     /**
@@ -10607,7 +10055,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TheftMethodID", scope = ViolationSaveInfo.class)
     public JAXBElement<String> createViolationSaveInfoTheftMethodID(String value) {
-        return new JAXBElement<>(_ViolationSaveInfoTheftMethodID_QNAME, String.class, ViolationSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolationSaveInfoTheftMethodID_QNAME, String.class, ViolationSaveInfo.class, value);
     }
 
     /**
@@ -10620,7 +10068,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TypeID", scope = ViolationSaveInfo.class)
     public JAXBElement<String> createViolationSaveInfoTypeID(String value) {
-        return new JAXBElement<>(_ViolationSaveInfoTypeID_QNAME, String.class, ViolationSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolationSaveInfoTypeID_QNAME, String.class, ViolationSaveInfo.class, value);
     }
 
     /**
@@ -10633,7 +10081,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "NatureName", scope = ViolationFullInfo.class)
     public JAXBElement<String> createViolationFullInfoNatureName(String value) {
-        return new JAXBElement<>(_ViolationFullInfoNatureName_QNAME, String.class, ViolationFullInfo.class, value);
+        return new JAXBElement<String>(_ViolationFullInfoNatureName_QNAME, String.class, ViolationFullInfo.class, value);
     }
 
     /**
@@ -10646,7 +10094,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TheftMethodName", scope = ViolationFullInfo.class)
     public JAXBElement<String> createViolationFullInfoTheftMethodName(String value) {
-        return new JAXBElement<>(_ViolationFullInfoTheftMethodName_QNAME, String.class, ViolationFullInfo.class, value);
+        return new JAXBElement<String>(_ViolationFullInfoTheftMethodName_QNAME, String.class, ViolationFullInfo.class, value);
     }
 
     /**
@@ -10659,7 +10107,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TypeName", scope = ViolationFullInfo.class)
     public JAXBElement<String> createViolationFullInfoTypeName(String value) {
-        return new JAXBElement<>(_ViolationFullInfoTypeName_QNAME, String.class, ViolationFullInfo.class, value);
+        return new JAXBElement<String>(_ViolationFullInfoTypeName_QNAME, String.class, ViolationFullInfo.class, value);
     }
 
     /**
@@ -10672,7 +10120,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "BeginDate", scope = IncidentsMegaFilter.class)
     public JAXBElement<XMLGregorianCalendar> createIncidentsMegaFilterBeginDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_IncidentsMegaFilterBeginDate_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_IncidentsMegaFilterBeginDate_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10685,7 +10133,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "BeginTime", scope = IncidentsMegaFilter.class)
     public JAXBElement<Duration> createIncidentsMegaFilterBeginTime(Duration value) {
-        return new JAXBElement<>(_IncidentsMegaFilterBeginTime_QNAME, Duration.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<Duration>(_IncidentsMegaFilterBeginTime_QNAME, Duration.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10698,7 +10146,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Branches", scope = IncidentsMegaFilter.class)
     public JAXBElement<ArrayOfguid> createIncidentsMegaFilterBranches(ArrayOfguid value) {
-        return new JAXBElement<>(_IncidentsMegaFilterBranches_QNAME, ArrayOfguid.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<ArrayOfguid>(_IncidentsMegaFilterBranches_QNAME, ArrayOfguid.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10711,7 +10159,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DatOfBirth", scope = IncidentsMegaFilter.class)
     public JAXBElement<XMLGregorianCalendar> createIncidentsMegaFilterDatOfBirth(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_IncidentsMegaFilterDatOfBirth_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_IncidentsMegaFilterDatOfBirth_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10724,7 +10172,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DecisionCreateDate", scope = IncidentsMegaFilter.class)
     public JAXBElement<XMLGregorianCalendar> createIncidentsMegaFilterDecisionCreateDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_IncidentsMegaFilterDecisionCreateDate_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_IncidentsMegaFilterDecisionCreateDate_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10737,7 +10185,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DecisionDocumentNumber", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterDecisionDocumentNumber(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterDecisionDocumentNumber_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterDecisionDocumentNumber_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10750,7 +10198,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DecisionFinalPunishmentID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterDecisionFinalPunishmentID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterDecisionFinalPunishmentID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterDecisionFinalPunishmentID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10763,7 +10211,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentNumber", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterDocumentNumber(String value) {
-        return new JAXBElement<>(_ViolationDocumentNumber_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_ViolationDocumentNumber_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10776,7 +10224,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "EmployeeConfirmatorID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterEmployeeConfirmatorID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterEmployeeConfirmatorID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterEmployeeConfirmatorID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10789,7 +10237,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "EndDate", scope = IncidentsMegaFilter.class)
     public JAXBElement<XMLGregorianCalendar> createIncidentsMegaFilterEndDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_IncidentsMegaFilterEndDate_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_IncidentsMegaFilterEndDate_QNAME, XMLGregorianCalendar.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10802,7 +10250,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "EndTime", scope = IncidentsMegaFilter.class)
     public JAXBElement<Duration> createIncidentsMegaFilterEndTime(Duration value) {
-        return new JAXBElement<>(_IncidentsMegaFilterEndTime_QNAME, Duration.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<Duration>(_IncidentsMegaFilterEndTime_QNAME, Duration.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10815,7 +10263,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "FirstName", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterFirstName(String value) {
-        return new JAXBElement<>(_ViolationFirstName_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_ViolationFirstName_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10828,7 +10276,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentDetentionID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterIncidentDetentionID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterIncidentDetentionID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterIncidentDetentionID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10841,7 +10289,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentNatureID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterIncidentNatureID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterIncidentNatureID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterIncidentNatureID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10854,7 +10302,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentTheftMethodID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterIncidentTheftMethodID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterIncidentTheftMethodID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterIncidentTheftMethodID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10867,7 +10315,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentTypeID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterIncidentTypeID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterIncidentTypeID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterIncidentTypeID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10880,7 +10328,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LastName", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterLastName(String value) {
-        return new JAXBElement<>(_ViolationLastName_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_ViolationLastName_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10893,7 +10341,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LocationClarificationID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterLocationClarificationID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterLocationClarificationID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterLocationClarificationID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10906,7 +10354,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LocationID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterLocationID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterLocationID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterLocationID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10919,7 +10367,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterOrganizationID(String value) {
-        return new JAXBElement<>(_ViolatorSaveInfoOrganizationID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_ViolatorSaveInfoOrganizationID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10932,7 +10380,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "RegistrationAddress", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterRegistrationAddress(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterRegistrationAddress_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterRegistrationAddress_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10945,7 +10393,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ResidentialAddress", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterResidentialAddress(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterResidentialAddress_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterResidentialAddress_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10958,7 +10406,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SecondName", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterSecondName(String value) {
-        return new JAXBElement<>(_ViolationSecondName_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_ViolationSecondName_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10971,7 +10419,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SignificanceID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterSignificanceID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterSignificanceID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterSignificanceID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10984,7 +10432,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SubdivisionID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterSubdivisionID(String value) {
-        return new JAXBElement<>(_Employee2OrganizationAssignmentSubdivisionID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_Employee2OrganizationAssignmentSubdivisionID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -10997,7 +10445,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TabNumber", scope = IncidentsMegaFilter.class)
     public JAXBElement<Integer> createIncidentsMegaFilterTabNumber(Integer value) {
-        return new JAXBElement<>(_ViolatorSaveInfoTabNumber_QNAME, Integer.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<Integer>(_ViolatorSaveInfoTabNumber_QNAME, Integer.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -11010,7 +10458,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TangiblesMeasureID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterTangiblesMeasureID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterTangiblesMeasureID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterTangiblesMeasureID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -11023,7 +10471,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TangiblesNameID", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterTangiblesNameID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterTangiblesNameID_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterTangiblesNameID_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -11036,7 +10484,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "VehicleMark", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterVehicleMark(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterVehicleMark_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterVehicleMark_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -11049,7 +10497,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "VehicleRegistrationNumber", scope = IncidentsMegaFilter.class)
     public JAXBElement<String> createIncidentsMegaFilterVehicleRegistrationNumber(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterVehicleRegistrationNumber_QNAME, String.class, IncidentsMegaFilter.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterVehicleRegistrationNumber_QNAME, String.class, IncidentsMegaFilter.class, value);
     }
 
     /**
@@ -11062,7 +10510,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Description", scope = DictionaryElementSaveInfo.class)
     public JAXBElement<String> createDictionaryElementSaveInfoDescription(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoDescription_QNAME, String.class, DictionaryElementSaveInfo.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoDescription_QNAME, String.class, DictionaryElementSaveInfo.class, value);
     }
 
     /**
@@ -11075,7 +10523,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ForeignID", scope = DictionaryElementSaveInfo.class)
     public JAXBElement<String> createDictionaryElementSaveInfoForeignID(String value) {
-        return new JAXBElement<>(_DictionaryElementSaveInfoForeignID_QNAME, String.class, DictionaryElementSaveInfo.class, value);
+        return new JAXBElement<String>(_DictionaryElementSaveInfoForeignID_QNAME, String.class, DictionaryElementSaveInfo.class, value);
     }
 
     /**
@@ -11088,7 +10536,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Name", scope = DictionaryElementSaveInfo.class)
     public JAXBElement<String> createDictionaryElementSaveInfoName(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultName_QNAME, String.class, DictionaryElementSaveInfo.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultName_QNAME, String.class, DictionaryElementSaveInfo.class, value);
     }
 
     /**
@@ -11101,7 +10549,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ForeignDescription", scope = DictionaryElementInfo.class)
     public JAXBElement<String> createDictionaryElementInfoForeignDescription(String value) {
-        return new JAXBElement<>(_DictionaryElementInfoForeignDescription_QNAME, String.class, DictionaryElementInfo.class, value);
+        return new JAXBElement<String>(_DictionaryElementInfoForeignDescription_QNAME, String.class, DictionaryElementInfo.class, value);
     }
 
     /**
@@ -11114,7 +10562,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ForeignName", scope = DictionaryElementInfo.class)
     public JAXBElement<String> createDictionaryElementInfoForeignName(String value) {
-        return new JAXBElement<>(_DictionaryElementInfoForeignName_QNAME, String.class, DictionaryElementInfo.class, value);
+        return new JAXBElement<String>(_DictionaryElementInfoForeignName_QNAME, String.class, DictionaryElementInfo.class, value);
     }
 
     /**
@@ -11127,7 +10575,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationTypeID", scope = OrganizationDictionaryElementInfo.class)
     public JAXBElement<String> createOrganizationDictionaryElementInfoOrganizationTypeID(String value) {
-        return new JAXBElement<>(_OrganizationDictionaryElementInfoOrganizationTypeID_QNAME, String.class, OrganizationDictionaryElementInfo.class, value);
+        return new JAXBElement<String>(_OrganizationDictionaryElementInfoOrganizationTypeID_QNAME, String.class, OrganizationDictionaryElementInfo.class, value);
     }
 
     /**
@@ -11140,7 +10588,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationTypeName", scope = OrganizationDictionaryElementInfo.class)
     public JAXBElement<String> createOrganizationDictionaryElementInfoOrganizationTypeName(String value) {
-        return new JAXBElement<>(_OrganizationDictionaryElementInfoOrganizationTypeName_QNAME, String.class, OrganizationDictionaryElementInfo.class, value);
+        return new JAXBElement<String>(_OrganizationDictionaryElementInfoOrganizationTypeName_QNAME, String.class, OrganizationDictionaryElementInfo.class, value);
     }
 
     /**
@@ -11153,7 +10601,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ParentID", scope = SecurityGroupDictionaryElementInfo.class)
     public JAXBElement<String> createSecurityGroupDictionaryElementInfoParentID(String value) {
-        return new JAXBElement<>(_SecurityGroupDictionaryElementInfoParentID_QNAME, String.class, SecurityGroupDictionaryElementInfo.class, value);
+        return new JAXBElement<String>(_SecurityGroupDictionaryElementInfoParentID_QNAME, String.class, SecurityGroupDictionaryElementInfo.class, value);
     }
 
     /**
@@ -11166,7 +10614,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "OrganizationTypeID", scope = OrganizationElementSaveInfo.class)
     public JAXBElement<String> createOrganizationElementSaveInfoOrganizationTypeID(String value) {
-        return new JAXBElement<>(_OrganizationDictionaryElementInfoOrganizationTypeID_QNAME, String.class, OrganizationElementSaveInfo.class, value);
+        return new JAXBElement<String>(_OrganizationDictionaryElementInfoOrganizationTypeID_QNAME, String.class, OrganizationElementSaveInfo.class, value);
     }
 
     /**
@@ -11179,7 +10627,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ParentID", scope = SecurityGroupDictionaryElementSaveInfo.class)
     public JAXBElement<String> createSecurityGroupDictionaryElementSaveInfoParentID(String value) {
-        return new JAXBElement<>(_SecurityGroupDictionaryElementInfoParentID_QNAME, String.class, SecurityGroupDictionaryElementSaveInfo.class, value);
+        return new JAXBElement<String>(_SecurityGroupDictionaryElementInfoParentID_QNAME, String.class, SecurityGroupDictionaryElementSaveInfo.class, value);
     }
 
     /**
@@ -11192,7 +10640,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "AlcoholResult", scope = LogMessage.class)
     public JAXBElement<Integer> createLogMessageAlcoholResult(Integer value) {
-        return new JAXBElement<>(_LogMessageAlcoholResult_QNAME, Integer.class, LogMessage.class, value);
+        return new JAXBElement<Integer>(_LogMessageAlcoholResult_QNAME, Integer.class, LogMessage.class, value);
     }
 
     /**
@@ -11205,7 +10653,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ContentData", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageContentData(String value) {
-        return new JAXBElement<>(_LogMessageContentData_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageContentData_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11218,7 +10666,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ContentType", scope = LogMessage.class)
     public JAXBElement<LogMessageContentDataType> createLogMessageContentType(LogMessageContentDataType value) {
-        return new JAXBElement<>(_LogMessageContentType_QNAME, LogMessageContentDataType.class, LogMessage.class, value);
+        return new JAXBElement<LogMessageContentDataType>(_LogMessageContentType_QNAME, LogMessageContentDataType.class, LogMessage.class, value);
     }
 
     /**
@@ -11231,7 +10679,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "Details", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageDetails(String value) {
-        return new JAXBElement<>(_LogMessageDetails_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageDetails_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11244,7 +10692,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "DriverID", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageDriverID(String value) {
-        return new JAXBElement<>(_LogMessageDriverID_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageDriverID_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11257,7 +10705,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "DriverName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageDriverName(String value) {
-        return new JAXBElement<>(_LogMessageDriverName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageDriverName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11270,7 +10718,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeFirstName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageEmployeeFirstName(String value) {
-        return new JAXBElement<>(_LogMessageEmployeeFirstName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageEmployeeFirstName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11283,7 +10731,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeGroupFullName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageEmployeeGroupFullName(String value) {
-        return new JAXBElement<>(_LogMessageEmployeeGroupFullName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageEmployeeGroupFullName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11296,7 +10744,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeGroupId", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageEmployeeGroupId(String value) {
-        return new JAXBElement<>(_LogMessageEmployeeGroupId_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageEmployeeGroupId_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11309,7 +10757,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeGroupName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageEmployeeGroupName(String value) {
-        return new JAXBElement<>(_LogMessageEmployeeGroupName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageEmployeeGroupName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11322,7 +10770,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeID", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageEmployeeID(String value) {
-        return new JAXBElement<>(_LogMessageEmployeeID_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageEmployeeID_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11335,7 +10783,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeLastName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageEmployeeLastName(String value) {
-        return new JAXBElement<>(_LogMessageEmployeeLastName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageEmployeeLastName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11348,7 +10796,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeSecondName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageEmployeeSecondName(String value) {
-        return new JAXBElement<>(_LogMessageEmployeeSecondName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageEmployeeSecondName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11361,7 +10809,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "EmployeeTableNumber", scope = LogMessage.class)
     public JAXBElement<Integer> createLogMessageEmployeeTableNumber(Integer value) {
-        return new JAXBElement<>(_LogMessageEmployeeTableNumber_QNAME, Integer.class, LogMessage.class, value);
+        return new JAXBElement<Integer>(_LogMessageEmployeeTableNumber_QNAME, Integer.class, LogMessage.class, value);
     }
 
     /**
@@ -11374,7 +10822,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "LivenessResult", scope = LogMessage.class)
     public JAXBElement<Boolean> createLogMessageLivenessResult(Boolean value) {
-        return new JAXBElement<>(_LogMessageLivenessResult_QNAME, Boolean.class, LogMessage.class, value);
+        return new JAXBElement<Boolean>(_LogMessageLivenessResult_QNAME, Boolean.class, LogMessage.class, value);
     }
 
     /**
@@ -11387,7 +10835,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "Message", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageMessage(String value) {
-        return new JAXBElement<>(_LogMessageMessage_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageMessage_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11400,7 +10848,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "OperatorFullName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageOperatorFullName(String value) {
-        return new JAXBElement<>(_LogMessageOperatorFullName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageOperatorFullName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11413,7 +10861,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "OperatorID", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageOperatorID(String value) {
-        return new JAXBElement<>(_LogMessageOperatorID_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageOperatorID_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11426,7 +10874,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "OperatorLogin", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageOperatorLogin(String value) {
-        return new JAXBElement<>(_LogMessageOperatorLogin_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageOperatorLogin_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11439,7 +10887,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ServerId", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageServerId(String value) {
-        return new JAXBElement<>(_LogMessageServerId_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageServerId_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11452,7 +10900,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "ServerName", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageServerName(String value) {
-        return new JAXBElement<>(_LogMessageServerName_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageServerName_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11465,7 +10913,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "TemperatureResult", scope = LogMessage.class)
     public JAXBElement<Integer> createLogMessageTemperatureResult(Integer value) {
-        return new JAXBElement<>(_LogMessageTemperatureResult_QNAME, Integer.class, LogMessage.class, value);
+        return new JAXBElement<Integer>(_LogMessageTemperatureResult_QNAME, Integer.class, LogMessage.class, value);
     }
 
     /**
@@ -11478,7 +10926,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "VehicleBrand", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageVehicleBrand(String value) {
-        return new JAXBElement<>(_LogMessageVehicleBrand_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageVehicleBrand_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11491,7 +10939,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "VehicleID", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageVehicleID(String value) {
-        return new JAXBElement<>(_LogMessageVehicleID_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageVehicleID_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11504,7 +10952,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "VehicleRegistrationNumber", scope = LogMessage.class)
     public JAXBElement<String> createLogMessageVehicleRegistrationNumber(String value) {
-        return new JAXBElement<>(_LogMessageVehicleRegistrationNumber_QNAME, String.class, LogMessage.class, value);
+        return new JAXBElement<String>(_LogMessageVehicleRegistrationNumber_QNAME, String.class, LogMessage.class, value);
     }
 
     /**
@@ -11517,7 +10965,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "Name", scope = LogMessageSubtypeSlimInfo.class)
     public JAXBElement<String> createLogMessageSubtypeSlimInfoName(String value) {
-        return new JAXBElement<>(_LogMessageSubtypeSlimInfoName_QNAME, String.class, LogMessageSubtypeSlimInfo.class, value);
+        return new JAXBElement<String>(_LogMessageSubtypeSlimInfoName_QNAME, String.class, LogMessageSubtypeSlimInfo.class, value);
     }
 
     /**
@@ -11530,7 +10978,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "Name", scope = LogMessageTypeSlimInfo.class)
     public JAXBElement<String> createLogMessageTypeSlimInfoName(String value) {
-        return new JAXBElement<>(_LogMessageSubtypeSlimInfoName_QNAME, String.class, LogMessageTypeSlimInfo.class, value);
+        return new JAXBElement<String>(_LogMessageSubtypeSlimInfoName_QNAME, String.class, LogMessageTypeSlimInfo.class, value);
     }
 
     /**
@@ -11543,7 +10991,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", name = "ItemValue", scope = ListItem.class)
     public JAXBElement<String> createListItemItemValue(String value) {
-        return new JAXBElement<>(_ListItemItemValue_QNAME, String.class, ListItem.class, value);
+        return new JAXBElement<String>(_ListItemItemValue_QNAME, String.class, ListItem.class, value);
     }
 
     /**
@@ -11556,7 +11004,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Description", scope = MifareProfileSaveData.class)
     public JAXBElement<String> createMifareProfileSaveDataDescription(String value) {
-        return new JAXBElement<>(_MifareProfileSaveDataDescription_QNAME, String.class, MifareProfileSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileSaveDataDescription_QNAME, String.class, MifareProfileSaveData.class, value);
     }
 
     /**
@@ -11569,7 +11017,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Name", scope = MifareProfileSaveData.class)
     public JAXBElement<String> createMifareProfileSaveDataName(String value) {
-        return new JAXBElement<>(_MifareProfileSaveDataName_QNAME, String.class, MifareProfileSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileSaveDataName_QNAME, String.class, MifareProfileSaveData.class, value);
     }
 
     /**
@@ -11582,7 +11030,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Block1", scope = MifareProfileFullSaveData.class)
     public JAXBElement<AccessBits> createMifareProfileFullSaveDataBlock1(AccessBits value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataBlock1_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<AccessBits>(_MifareProfileFullSaveDataBlock1_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11595,7 +11043,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Block2", scope = MifareProfileFullSaveData.class)
     public JAXBElement<AccessBits> createMifareProfileFullSaveDataBlock2(AccessBits value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataBlock2_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<AccessBits>(_MifareProfileFullSaveDataBlock2_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11608,7 +11056,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Block3", scope = MifareProfileFullSaveData.class)
     public JAXBElement<AccessBits> createMifareProfileFullSaveDataBlock3(AccessBits value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataBlock3_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<AccessBits>(_MifareProfileFullSaveDataBlock3_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11621,7 +11069,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "CardConfigurationKey", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataCardConfigurationKey(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataCardConfigurationKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataCardConfigurationKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11634,7 +11082,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "CardMasterKey", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataCardMasterKey(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataCardMasterKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataCardMasterKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11647,7 +11095,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ClassicEmissionMode", scope = MifareProfileFullSaveData.class)
     public JAXBElement<Boolean> createMifareProfileFullSaveDataClassicEmissionMode(Boolean value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataClassicEmissionMode_QNAME, Boolean.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<Boolean>(_MifareProfileFullSaveDataClassicEmissionMode_QNAME, Boolean.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11660,7 +11108,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ClassicKeyA", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataClassicKeyA(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataClassicKeyA_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataClassicKeyA_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11673,7 +11121,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ClassicKeyB", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataClassicKeyB(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataClassicKeyB_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataClassicKeyB_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11686,7 +11134,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "KeyBlock", scope = MifareProfileFullSaveData.class)
     public JAXBElement<AccessBits> createMifareProfileFullSaveDataKeyBlock(AccessBits value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataKeyBlock_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<AccessBits>(_MifareProfileFullSaveDataKeyBlock_QNAME, AccessBits.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11699,7 +11147,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Level2SwitchKey", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataLevel2SwitchKey(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataLevel2SwitchKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataLevel2SwitchKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11712,7 +11160,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Level3SwitchKey", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataLevel3SwitchKey(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataLevel3SwitchKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataLevel3SwitchKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11725,7 +11173,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "PlusEmissionMode", scope = MifareProfileFullSaveData.class)
     public JAXBElement<Boolean> createMifareProfileFullSaveDataPlusEmissionMode(Boolean value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataPlusEmissionMode_QNAME, Boolean.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<Boolean>(_MifareProfileFullSaveDataPlusEmissionMode_QNAME, Boolean.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11738,7 +11186,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "PlusKeyA", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataPlusKeyA(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataPlusKeyA_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataPlusKeyA_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11751,7 +11199,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "PlusKeyB", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataPlusKeyB(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataPlusKeyB_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataPlusKeyB_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11764,7 +11212,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Sl1CardAuthenticationKey", scope = MifareProfileFullSaveData.class)
     public JAXBElement<String> createMifareProfileFullSaveDataSl1CardAuthenticationKey(String value) {
-        return new JAXBElement<>(_MifareProfileFullSaveDataSl1CardAuthenticationKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
+        return new JAXBElement<String>(_MifareProfileFullSaveDataSl1CardAuthenticationKey_QNAME, String.class, MifareProfileFullSaveData.class, value);
     }
 
     /**
@@ -11777,7 +11225,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "BranchID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoBranchID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoBranchID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoBranchID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11790,7 +11238,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Date", scope = IncidentSaveInfo.class)
     public JAXBElement<XMLGregorianCalendar> createIncidentSaveInfoDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_IncidentSaveInfoDate_QNAME, XMLGregorianCalendar.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_IncidentSaveInfoDate_QNAME, XMLGregorianCalendar.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11803,7 +11251,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentNumber", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoDocumentNumber(String value) {
-        return new JAXBElement<>(_ViolationDocumentNumber_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_ViolationDocumentNumber_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11816,7 +11264,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentTypeID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoDocumentTypeID(String value) {
-        return new JAXBElement<>(_DocumentSaveInfoDocumentTypeID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_DocumentSaveInfoDocumentTypeID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11829,7 +11277,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "EmployeeID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoEmployeeID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoEmployeeID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoEmployeeID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11842,7 +11290,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LocationClarificationID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoLocationClarificationID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterLocationClarificationID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterLocationClarificationID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11855,7 +11303,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LocationID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoLocationID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterLocationID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterLocationID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11868,7 +11316,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "MembersSaveInfo", scope = IncidentSaveInfo.class)
     public JAXBElement<ArrayOfViolatorSaveInfo> createIncidentSaveInfoMembersSaveInfo(ArrayOfViolatorSaveInfo value) {
-        return new JAXBElement<>(_IncidentSaveInfoMembersSaveInfo_QNAME, ArrayOfViolatorSaveInfo.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<ArrayOfViolatorSaveInfo>(_IncidentSaveInfoMembersSaveInfo_QNAME, ArrayOfViolatorSaveInfo.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11881,7 +11329,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SecurityGroupID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoSecurityGroupID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoSecurityGroupID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoSecurityGroupID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11894,7 +11342,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SignificanceID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoSignificanceID(String value) {
-        return new JAXBElement<>(_IncidentsMegaFilterSignificanceID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentsMegaFilterSignificanceID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11907,7 +11355,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TangiblesSaveInfo", scope = IncidentSaveInfo.class)
     public JAXBElement<ArrayOfTangiblesSaveInfo> createIncidentSaveInfoTangiblesSaveInfo(ArrayOfTangiblesSaveInfo value) {
-        return new JAXBElement<>(_TangiblesSaveInfo_QNAME, ArrayOfTangiblesSaveInfo.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<ArrayOfTangiblesSaveInfo>(_TangiblesSaveInfo_QNAME, ArrayOfTangiblesSaveInfo.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11920,7 +11368,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Time", scope = IncidentSaveInfo.class)
     public JAXBElement<Duration> createIncidentSaveInfoTime(Duration value) {
-        return new JAXBElement<>(_IncidentSaveInfoTime_QNAME, Duration.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<Duration>(_IncidentSaveInfoTime_QNAME, Duration.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11933,7 +11381,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "VehicleComment", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoVehicleComment(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoVehicleComment_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoVehicleComment_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11946,7 +11394,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "VehicleID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoVehicleID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoVehicleID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoVehicleID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11959,7 +11407,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "VehicleOrganizationID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoVehicleOrganizationID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoVehicleOrganizationID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoVehicleOrganizationID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11972,7 +11420,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationDescription", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoViolationDescription(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoViolationDescription_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoViolationDescription_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11985,7 +11433,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationNatureID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoViolationNatureID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoViolationNatureID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoViolationNatureID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -11998,7 +11446,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationTheftMethodID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoViolationTheftMethodID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoViolationTheftMethodID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoViolationTheftMethodID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -12011,7 +11459,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationTypeID", scope = IncidentSaveInfo.class)
     public JAXBElement<String> createIncidentSaveInfoViolationTypeID(String value) {
-        return new JAXBElement<>(_IncidentSaveInfoViolationTypeID_QNAME, String.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<String>(_IncidentSaveInfoViolationTypeID_QNAME, String.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -12024,7 +11472,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolatorSaveInfo", scope = IncidentSaveInfo.class)
     public JAXBElement<ArrayOfViolatorSaveInfo> createIncidentSaveInfoViolatorSaveInfo(ArrayOfViolatorSaveInfo value) {
-        return new JAXBElement<>(_ViolatorSaveInfo_QNAME, ArrayOfViolatorSaveInfo.class, IncidentSaveInfo.class, value);
+        return new JAXBElement<ArrayOfViolatorSaveInfo>(_ViolatorSaveInfo_QNAME, ArrayOfViolatorSaveInfo.class, IncidentSaveInfo.class, value);
     }
 
     /**
@@ -12037,7 +11485,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Description", scope = IncidentTemplateSaveData.class)
     public JAXBElement<String> createIncidentTemplateSaveDataDescription(String value) {
-        return new JAXBElement<>(_TangiblesSaveInfoDescription_QNAME, String.class, IncidentTemplateSaveData.class, value);
+        return new JAXBElement<String>(_TangiblesSaveInfoDescription_QNAME, String.class, IncidentTemplateSaveData.class, value);
     }
 
     /**
@@ -12050,7 +11498,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Name", scope = IncidentTemplateSaveData.class)
     public JAXBElement<String> createIncidentTemplateSaveDataName(String value) {
-        return new JAXBElement<>(_FirebirdIncidentEventsResultName_QNAME, String.class, IncidentTemplateSaveData.class, value);
+        return new JAXBElement<String>(_FirebirdIncidentEventsResultName_QNAME, String.class, IncidentTemplateSaveData.class, value);
     }
 
     /**
@@ -12063,7 +11511,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Template", scope = IncidentTemplateSaveData.class)
     public JAXBElement<IncidentTemplateSaveData.Template> createIncidentTemplateSaveDataTemplate(IncidentTemplateSaveData.Template value) {
-        return new JAXBElement<>(_IncidentTemplateSaveDataTemplate_QNAME, IncidentTemplateSaveData.Template.class, IncidentTemplateSaveData.class, value);
+        return new JAXBElement<IncidentTemplateSaveData.Template>(_IncidentTemplateSaveDataTemplate_QNAME, IncidentTemplateSaveData.Template.class, IncidentTemplateSaveData.class, value);
     }
 
     /**
@@ -12076,7 +11524,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "Resource", scope = ClaimSaveData.class)
     public JAXBElement<String> createClaimSaveDataResource(String value) {
-        return new JAXBElement<>(_ClaimSaveDataResource_QNAME, String.class, ClaimSaveData.class, value);
+        return new JAXBElement<String>(_ClaimSaveDataResource_QNAME, String.class, ClaimSaveData.class, value);
     }
 
     /**
@@ -12089,7 +11537,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "Type", scope = ClaimSaveData.class)
     public JAXBElement<String> createClaimSaveDataType(String value) {
-        return new JAXBElement<>(_ClaimSaveDataType_QNAME, String.class, ClaimSaveData.class, value);
+        return new JAXBElement<String>(_ClaimSaveDataType_QNAME, String.class, ClaimSaveData.class, value);
     }
 
     /**
@@ -12102,7 +11550,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "Description", scope = WorkScheduleSlimSaveData.class)
     public JAXBElement<String> createWorkScheduleSlimSaveDataDescription(String value) {
-        return new JAXBElement<>(_WorkScheduleSlimSaveDataDescription_QNAME, String.class, WorkScheduleSlimSaveData.class, value);
+        return new JAXBElement<String>(_WorkScheduleSlimSaveDataDescription_QNAME, String.class, WorkScheduleSlimSaveData.class, value);
     }
 
     /**
@@ -12115,7 +11563,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "Name", scope = WorkScheduleSlimSaveData.class)
     public JAXBElement<String> createWorkScheduleSlimSaveDataName(String value) {
-        return new JAXBElement<>(_WorkScheduleSlimSaveDataName_QNAME, String.class, WorkScheduleSlimSaveData.class, value);
+        return new JAXBElement<String>(_WorkScheduleSlimSaveDataName_QNAME, String.class, WorkScheduleSlimSaveData.class, value);
     }
 
     /**
@@ -12128,7 +11576,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "Convention", scope = DayTypeSaveData.class)
     public JAXBElement<String> createDayTypeSaveDataConvention(String value) {
-        return new JAXBElement<>(_DayTypeSaveDataConvention_QNAME, String.class, DayTypeSaveData.class, value);
+        return new JAXBElement<String>(_DayTypeSaveDataConvention_QNAME, String.class, DayTypeSaveData.class, value);
     }
 
     /**
@@ -12141,7 +11589,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "DigitalConvention", scope = DayTypeSaveData.class)
     public JAXBElement<Integer> createDayTypeSaveDataDigitalConvention(Integer value) {
-        return new JAXBElement<>(_DayTypeSaveDataDigitalConvention_QNAME, Integer.class, DayTypeSaveData.class, value);
+        return new JAXBElement<Integer>(_DayTypeSaveDataDigitalConvention_QNAME, Integer.class, DayTypeSaveData.class, value);
     }
 
     /**
@@ -12154,7 +11602,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "Name", scope = DayTypeSaveData.class)
     public JAXBElement<String> createDayTypeSaveDataName(String value) {
-        return new JAXBElement<>(_WorkScheduleSlimSaveDataName_QNAME, String.class, DayTypeSaveData.class, value);
+        return new JAXBElement<String>(_WorkScheduleSlimSaveDataName_QNAME, String.class, DayTypeSaveData.class, value);
     }
 
     /**
@@ -12167,7 +11615,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "RowColor", scope = DayTypeSaveData.class)
     public JAXBElement<byte[]> createDayTypeSaveDataRowColor(byte[] value) {
-        return new JAXBElement<>(_DayTypeSaveDataRowColor_QNAME, byte[].class, DayTypeSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_DayTypeSaveDataRowColor_QNAME, byte[].class, DayTypeSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -12180,7 +11628,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "DriverLicensePhoto", scope = AcsConfiguratorSaveData.class)
     public JAXBElement<PhotoOrder> createAcsConfiguratorSaveDataDriverLicensePhoto(PhotoOrder value) {
-        return new JAXBElement<>(_AcsConfiguratorSaveDataDriverLicensePhoto_QNAME, PhotoOrder.class, AcsConfiguratorSaveData.class, value);
+        return new JAXBElement<PhotoOrder>(_AcsConfiguratorSaveDataDriverLicensePhoto_QNAME, PhotoOrder.class, AcsConfiguratorSaveData.class, value);
     }
 
     /**
@@ -12193,7 +11641,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "EmployeeTabs", scope = AcsConfiguratorSaveData.class)
     public JAXBElement<String> createAcsConfiguratorSaveDataEmployeeTabs(String value) {
-        return new JAXBElement<>(_AcsConfiguratorSaveDataEmployeeTabs_QNAME, String.class, AcsConfiguratorSaveData.class, value);
+        return new JAXBElement<String>(_AcsConfiguratorSaveDataEmployeeTabs_QNAME, String.class, AcsConfiguratorSaveData.class, value);
     }
 
     /**
@@ -12206,7 +11654,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "ForeignPassportPhoto", scope = AcsConfiguratorSaveData.class)
     public JAXBElement<PhotoOrder> createAcsConfiguratorSaveDataForeignPassportPhoto(PhotoOrder value) {
-        return new JAXBElement<>(_AcsConfiguratorSaveDataForeignPassportPhoto_QNAME, PhotoOrder.class, AcsConfiguratorSaveData.class, value);
+        return new JAXBElement<PhotoOrder>(_AcsConfiguratorSaveDataForeignPassportPhoto_QNAME, PhotoOrder.class, AcsConfiguratorSaveData.class, value);
     }
 
     /**
@@ -12219,7 +11667,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "PassportPhoto", scope = AcsConfiguratorSaveData.class)
     public JAXBElement<PhotoOrder> createAcsConfiguratorSaveDataPassportPhoto(PhotoOrder value) {
-        return new JAXBElement<>(_AcsConfiguratorSaveDataPassportPhoto_QNAME, PhotoOrder.class, AcsConfiguratorSaveData.class, value);
+        return new JAXBElement<PhotoOrder>(_AcsConfiguratorSaveDataPassportPhoto_QNAME, PhotoOrder.class, AcsConfiguratorSaveData.class, value);
     }
 
     /**
@@ -12232,7 +11680,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "UseDefaultFIODocumentType", scope = AcsConfiguratorSaveData.class)
     public JAXBElement<DocumentType> createAcsConfiguratorSaveDataUseDefaultFIODocumentType(DocumentType value) {
-        return new JAXBElement<>(_AcsConfiguratorSaveDataUseDefaultFIODocumentType_QNAME, DocumentType.class, AcsConfiguratorSaveData.class, value);
+        return new JAXBElement<DocumentType>(_AcsConfiguratorSaveDataUseDefaultFIODocumentType_QNAME, DocumentType.class, AcsConfiguratorSaveData.class, value);
     }
 
     /**
@@ -12245,7 +11693,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "Comment", scope = WorkplaceModuleSaveData.class)
     public JAXBElement<String> createWorkplaceModuleSaveDataComment(String value) {
-        return new JAXBElement<>(_WorkplaceModuleSaveDataComment_QNAME, String.class, WorkplaceModuleSaveData.class, value);
+        return new JAXBElement<String>(_WorkplaceModuleSaveDataComment_QNAME, String.class, WorkplaceModuleSaveData.class, value);
     }
 
     /**
@@ -12258,7 +11706,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "Name", scope = WorkplaceModuleSaveData.class)
     public JAXBElement<String> createWorkplaceModuleSaveDataName(String value) {
-        return new JAXBElement<>(_WorkplaceModuleSaveDataName_QNAME, String.class, WorkplaceModuleSaveData.class, value);
+        return new JAXBElement<String>(_WorkplaceModuleSaveDataName_QNAME, String.class, WorkplaceModuleSaveData.class, value);
     }
 
     /**
@@ -12271,7 +11719,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "Comment", scope = WorkplaceSaveData.class)
     public JAXBElement<String> createWorkplaceSaveDataComment(String value) {
-        return new JAXBElement<>(_WorkplaceModuleSaveDataComment_QNAME, String.class, WorkplaceSaveData.class, value);
+        return new JAXBElement<String>(_WorkplaceModuleSaveDataComment_QNAME, String.class, WorkplaceSaveData.class, value);
     }
 
     /**
@@ -12284,7 +11732,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "Name", scope = WorkplaceSaveData.class)
     public JAXBElement<String> createWorkplaceSaveDataName(String value) {
-        return new JAXBElement<>(_WorkplaceModuleSaveDataName_QNAME, String.class, WorkplaceSaveData.class, value);
+        return new JAXBElement<String>(_WorkplaceModuleSaveDataName_QNAME, String.class, WorkplaceSaveData.class, value);
     }
 
     /**
@@ -12297,7 +11745,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace", name = "Modules", scope = WorkplaceInfo.class)
     public JAXBElement<ArrayOfWorkplaceModuleInfo> createWorkplaceInfoModules(ArrayOfWorkplaceModuleInfo value) {
-        return new JAXBElement<>(_WorkplaceInfoModules_QNAME, ArrayOfWorkplaceModuleInfo.class, WorkplaceInfo.class, value);
+        return new JAXBElement<ArrayOfWorkplaceModuleInfo>(_WorkplaceInfoModules_QNAME, ArrayOfWorkplaceModuleInfo.class, WorkplaceInfo.class, value);
     }
 
     /**
@@ -12310,7 +11758,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Rows", scope = LChangedCustomizableDays.class)
     public JAXBElement<ArrayOfLDriversCustomizableDays> createLChangedCustomizableDaysRows(ArrayOfLDriversCustomizableDays value) {
-        return new JAXBElement<>(_LChangedCustomizableDaysRows_QNAME, ArrayOfLDriversCustomizableDays.class, LChangedCustomizableDays.class, value);
+        return new JAXBElement<ArrayOfLDriversCustomizableDays>(_LChangedCustomizableDaysRows_QNAME, ArrayOfLDriversCustomizableDays.class, LChangedCustomizableDays.class, value);
     }
 
     /**
@@ -12323,7 +11771,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", name = "Keys", scope = LChangedKeys.class)
     public JAXBElement<ArrayOfLKeyInfo> createLChangedKeysKeys(ArrayOfLKeyInfo value) {
-        return new JAXBElement<>(_LChangedKeysKeys_QNAME, ArrayOfLKeyInfo.class, LChangedKeys.class, value);
+        return new JAXBElement<ArrayOfLKeyInfo>(_LChangedKeysKeys_QNAME, ArrayOfLKeyInfo.class, LChangedKeys.class, value);
     }
 
     /**
@@ -12336,7 +11784,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.HotKey", name = "Modules", scope = RezervedHotKeys.class)
     public JAXBElement<ArrayOfstring> createRezervedHotKeysModules(ArrayOfstring value) {
-        return new JAXBElement<>(_RezervedHotKeysModules_QNAME, ArrayOfstring.class, RezervedHotKeys.class, value);
+        return new JAXBElement<ArrayOfstring>(_RezervedHotKeysModules_QNAME, ArrayOfstring.class, RezervedHotKeys.class, value);
     }
 
     /**
@@ -12349,7 +11797,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Photo", name = "Name", scope = PhotoOrder.class)
     public JAXBElement<String> createPhotoOrderName(String value) {
-        return new JAXBElement<>(_PhotoOrderName_QNAME, String.class, PhotoOrder.class, value);
+        return new JAXBElement<String>(_PhotoOrderName_QNAME, String.class, PhotoOrder.class, value);
     }
 
     /**
@@ -12362,7 +11810,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CameraDriverId", scope = ReactionRecordVideoActionSaveData.class)
     public JAXBElement<String> createReactionRecordVideoActionSaveDataCameraDriverId(String value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSaveDataCameraDriverId_QNAME, String.class, ReactionRecordVideoActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionRecordVideoActionSaveDataCameraDriverId_QNAME, String.class, ReactionRecordVideoActionSaveData.class, value);
     }
 
     /**
@@ -12375,7 +11823,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Args", scope = ReactionExecuteProgramActionSaveData.class)
     public JAXBElement<String> createReactionExecuteProgramActionSaveDataArgs(String value) {
-        return new JAXBElement<>(_ReactionExecuteProgramActionSaveDataArgs_QNAME, String.class, ReactionExecuteProgramActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionExecuteProgramActionSaveDataArgs_QNAME, String.class, ReactionExecuteProgramActionSaveData.class, value);
     }
 
     /**
@@ -12388,7 +11836,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "FilePath", scope = ReactionExecuteProgramActionSaveData.class)
     public JAXBElement<String> createReactionExecuteProgramActionSaveDataFilePath(String value) {
-        return new JAXBElement<>(_ReactionExecuteProgramActionSaveDataFilePath_QNAME, String.class, ReactionExecuteProgramActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionExecuteProgramActionSaveDataFilePath_QNAME, String.class, ReactionExecuteProgramActionSaveData.class, value);
     }
 
     /**
@@ -12401,7 +11849,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "WorkingDir", scope = ReactionExecuteProgramActionSaveData.class)
     public JAXBElement<String> createReactionExecuteProgramActionSaveDataWorkingDir(String value) {
-        return new JAXBElement<>(_ReactionExecuteProgramActionSaveDataWorkingDir_QNAME, String.class, ReactionExecuteProgramActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionExecuteProgramActionSaveDataWorkingDir_QNAME, String.class, ReactionExecuteProgramActionSaveData.class, value);
     }
 
     /**
@@ -12414,7 +11862,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CustomText", scope = ReactionSendEmailActionSaveData.class)
     public JAXBElement<String> createReactionSendEmailActionSaveDataCustomText(String value) {
-        return new JAXBElement<>(_ReactionSendEmailActionSaveDataCustomText_QNAME, String.class, ReactionSendEmailActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionSendEmailActionSaveDataCustomText_QNAME, String.class, ReactionSendEmailActionSaveData.class, value);
     }
 
     /**
@@ -12427,7 +11875,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "EmailDistributionAddressId", scope = ReactionSendEmailActionSaveData.class)
     public JAXBElement<String> createReactionSendEmailActionSaveDataEmailDistributionAddressId(String value) {
-        return new JAXBElement<>(_ReactionSendEmailActionSaveDataEmailDistributionAddressId_QNAME, String.class, ReactionSendEmailActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionSendEmailActionSaveDataEmailDistributionAddressId_QNAME, String.class, ReactionSendEmailActionSaveData.class, value);
     }
 
     /**
@@ -12440,7 +11888,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "NumbersToSendEmailForEmployeesFromEvents", scope = ReactionSendEmailActionSaveData.class)
     public JAXBElement<ArrayOfint> createReactionSendEmailActionSaveDataNumbersToSendEmailForEmployeesFromEvents(ArrayOfint value) {
-        return new JAXBElement<>(_ReactionSendEmailActionSaveDataNumbersToSendEmailForEmployeesFromEvents_QNAME, ArrayOfint.class, ReactionSendEmailActionSaveData.class, value);
+        return new JAXBElement<ArrayOfint>(_ReactionSendEmailActionSaveDataNumbersToSendEmailForEmployeesFromEvents_QNAME, ArrayOfint.class, ReactionSendEmailActionSaveData.class, value);
     }
 
     /**
@@ -12453,7 +11901,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "NumbersToSendEmailForEmployeesFromList", scope = ReactionSendEmailActionSaveData.class)
     public JAXBElement<ArrayOfint> createReactionSendEmailActionSaveDataNumbersToSendEmailForEmployeesFromList(ArrayOfint value) {
-        return new JAXBElement<>(_ReactionSendEmailActionSaveDataNumbersToSendEmailForEmployeesFromList_QNAME, ArrayOfint.class, ReactionSendEmailActionSaveData.class, value);
+        return new JAXBElement<ArrayOfint>(_ReactionSendEmailActionSaveDataNumbersToSendEmailForEmployeesFromList_QNAME, ArrayOfint.class, ReactionSendEmailActionSaveData.class, value);
     }
 
     /**
@@ -12466,7 +11914,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CustomText", scope = ReactionSendSMSActionSaveData.class)
     public JAXBElement<String> createReactionSendSMSActionSaveDataCustomText(String value) {
-        return new JAXBElement<>(_ReactionSendEmailActionSaveDataCustomText_QNAME, String.class, ReactionSendSMSActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionSendEmailActionSaveDataCustomText_QNAME, String.class, ReactionSendSMSActionSaveData.class, value);
     }
 
     /**
@@ -12479,7 +11927,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "GsmModemDriverId", scope = ReactionSendSMSActionSaveData.class)
     public JAXBElement<String> createReactionSendSMSActionSaveDataGsmModemDriverId(String value) {
-        return new JAXBElement<>(_ReactionSendSMSActionSaveDataGsmModemDriverId_QNAME, String.class, ReactionSendSMSActionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionSendSMSActionSaveDataGsmModemDriverId_QNAME, String.class, ReactionSendSMSActionSaveData.class, value);
     }
 
     /**
@@ -12492,7 +11940,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "NumbersToSendSMSForEmployeesFromEvents", scope = ReactionSendSMSActionSaveData.class)
     public JAXBElement<ArrayOfint> createReactionSendSMSActionSaveDataNumbersToSendSMSForEmployeesFromEvents(ArrayOfint value) {
-        return new JAXBElement<>(_ReactionSendSMSActionSaveDataNumbersToSendSMSForEmployeesFromEvents_QNAME, ArrayOfint.class, ReactionSendSMSActionSaveData.class, value);
+        return new JAXBElement<ArrayOfint>(_ReactionSendSMSActionSaveDataNumbersToSendSMSForEmployeesFromEvents_QNAME, ArrayOfint.class, ReactionSendSMSActionSaveData.class, value);
     }
 
     /**
@@ -12505,7 +11953,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "NumbersToSendSMSForEmployeesFromList", scope = ReactionSendSMSActionSaveData.class)
     public JAXBElement<ArrayOfint> createReactionSendSMSActionSaveDataNumbersToSendSMSForEmployeesFromList(ArrayOfint value) {
-        return new JAXBElement<>(_ReactionSendSMSActionSaveDataNumbersToSendSMSForEmployeesFromList_QNAME, ArrayOfint.class, ReactionSendSMSActionSaveData.class, value);
+        return new JAXBElement<ArrayOfint>(_ReactionSendSMSActionSaveDataNumbersToSendSMSForEmployeesFromList_QNAME, ArrayOfint.class, ReactionSendSMSActionSaveData.class, value);
     }
 
     /**
@@ -12518,7 +11966,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Description", scope = ReactionSaveData.class)
     public JAXBElement<String> createReactionSaveDataDescription(String value) {
-        return new JAXBElement<>(_ReactionSaveDataDescription_QNAME, String.class, ReactionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionSaveDataDescription_QNAME, String.class, ReactionSaveData.class, value);
     }
 
     /**
@@ -12531,7 +11979,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Name", scope = ReactionSaveData.class)
     public JAXBElement<String> createReactionSaveDataName(String value) {
-        return new JAXBElement<>(_ReactionActionSaveDataName_QNAME, String.class, ReactionSaveData.class, value);
+        return new JAXBElement<String>(_ReactionActionSaveDataName_QNAME, String.class, ReactionSaveData.class, value);
     }
 
     /**
@@ -12544,7 +11992,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "Id", scope = UserPassEditorData.class)
     public JAXBElement<String> createUserPassEditorDataId(String value) {
-        return new JAXBElement<>(_UserPassEditorDataId_QNAME, String.class, UserPassEditorData.class, value);
+        return new JAXBElement<String>(_UserPassEditorDataId_QNAME, String.class, UserPassEditorData.class, value);
     }
 
     /**
@@ -12557,7 +12005,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "BackgroindImage", scope = UserPassFullSaveData.class)
     public JAXBElement<byte[]> createUserPassFullSaveDataBackgroindImage(byte[] value) {
-        return new JAXBElement<>(_UserPassFullSaveDataBackgroindImage_QNAME, byte[].class, UserPassFullSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_UserPassFullSaveDataBackgroindImage_QNAME, byte[].class, UserPassFullSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -12570,7 +12018,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "BackgroundColor", scope = UserPassFullSaveData.class)
     public JAXBElement<byte[]> createUserPassFullSaveDataBackgroundColor(byte[] value) {
-        return new JAXBElement<>(_UserPassFullSaveDataBackgroundColor_QNAME, byte[].class, UserPassFullSaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_UserPassFullSaveDataBackgroundColor_QNAME, byte[].class, UserPassFullSaveData.class, ((byte[]) value));
     }
 
     /**
@@ -12583,7 +12031,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Description", scope = FilterTagSaveData.class)
     public JAXBElement<String> createFilterTagSaveDataDescription(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoDescription_QNAME, String.class, FilterTagSaveData.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoDescription_QNAME, String.class, FilterTagSaveData.class, value);
     }
 
     /**
@@ -12596,7 +12044,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Name", scope = FilterTagSaveData.class)
     public JAXBElement<String> createFilterTagSaveDataName(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoName_QNAME, String.class, FilterTagSaveData.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoName_QNAME, String.class, FilterTagSaveData.class, value);
     }
 
     /**
@@ -12609,7 +12057,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Description", scope = TagSaveData.class)
     public JAXBElement<String> createTagSaveDataDescription(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoDescription_QNAME, String.class, TagSaveData.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoDescription_QNAME, String.class, TagSaveData.class, value);
     }
 
     /**
@@ -12622,7 +12070,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Tag", name = "Name", scope = TagSaveData.class)
     public JAXBElement<String> createTagSaveDataName(String value) {
-        return new JAXBElement<>(_FilterTagFullInfoName_QNAME, String.class, TagSaveData.class, value);
+        return new JAXBElement<String>(_FilterTagFullInfoName_QNAME, String.class, TagSaveData.class, value);
     }
 
     /**
@@ -12635,7 +12083,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PostOffice", name = "KeyKeeperRBDriverID", scope = POBRelation.class)
     public JAXBElement<String> createPOBRelationKeyKeeperRBDriverID(String value) {
-        return new JAXBElement<>(_POBRelationKeyKeeperRBDriverID_QNAME, String.class, POBRelation.class, value);
+        return new JAXBElement<String>(_POBRelationKeyKeeperRBDriverID_QNAME, String.class, POBRelation.class, value);
     }
 
     /**
@@ -12648,7 +12096,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PostOffice", name = "POBCellDriverID", scope = POBRelation.class)
     public JAXBElement<String> createPOBRelationPOBCellDriverID(String value) {
-        return new JAXBElement<>(_POBRelationPOBCellDriverID_QNAME, String.class, POBRelation.class, value);
+        return new JAXBElement<String>(_POBRelationPOBCellDriverID_QNAME, String.class, POBRelation.class, value);
     }
 
     /**
@@ -12661,7 +12109,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.PostOffice", name = "Pin", scope = POBRelation.class)
     public JAXBElement<Integer> createPOBRelationPin(Integer value) {
-        return new JAXBElement<>(_POBRelationPin_QNAME, Integer.class, POBRelation.class, value);
+        return new JAXBElement<Integer>(_POBRelationPin_QNAME, Integer.class, POBRelation.class, value);
     }
 
     /**
@@ -12674,7 +12122,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "Name", scope = ScreenLayoutSaveData.class)
     public JAXBElement<String> createScreenLayoutSaveDataName(String value) {
-        return new JAXBElement<>(_ScreenCellSaveDataName_QNAME, String.class, ScreenLayoutSaveData.class, value);
+        return new JAXBElement<String>(_ScreenCellSaveDataName_QNAME, String.class, ScreenLayoutSaveData.class, value);
     }
 
     /**
@@ -12687,7 +12135,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Name", scope = ISSDriverSlimInfo.class)
     public JAXBElement<String> createISSDriverSlimInfoName(String value) {
-        return new JAXBElement<>(_ISSEntityBaseName_QNAME, String.class, ISSDriverSlimInfo.class, value);
+        return new JAXBElement<String>(_ISSEntityBaseName_QNAME, String.class, ISSDriverSlimInfo.class, value);
     }
 
     /**
@@ -12700,7 +12148,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Address", scope = ISSRecognitionSaveData.class)
     public JAXBElement<String> createISSRecognitionSaveDataAddress(String value) {
-        return new JAXBElement<>(_ISSRecognitionSaveDataAddress_QNAME, String.class, ISSRecognitionSaveData.class, value);
+        return new JAXBElement<String>(_ISSRecognitionSaveDataAddress_QNAME, String.class, ISSRecognitionSaveData.class, value);
     }
 
     /**
@@ -12713,7 +12161,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Name", scope = ISSRecognitionSaveData.class)
     public JAXBElement<String> createISSRecognitionSaveDataName(String value) {
-        return new JAXBElement<>(_ISSEntityBaseName_QNAME, String.class, ISSRecognitionSaveData.class, value);
+        return new JAXBElement<String>(_ISSEntityBaseName_QNAME, String.class, ISSRecognitionSaveData.class, value);
     }
 
     /**
@@ -12726,7 +12174,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Address", scope = ISSIIDKSaveData.class)
     public JAXBElement<String> createISSIIDKSaveDataAddress(String value) {
-        return new JAXBElement<>(_ISSRecognitionSaveDataAddress_QNAME, String.class, ISSIIDKSaveData.class, value);
+        return new JAXBElement<String>(_ISSRecognitionSaveDataAddress_QNAME, String.class, ISSIIDKSaveData.class, value);
     }
 
     /**
@@ -12739,7 +12187,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Name", scope = ISSIIDKSaveData.class)
     public JAXBElement<String> createISSIIDKSaveDataName(String value) {
-        return new JAXBElement<>(_ISSEntityBaseName_QNAME, String.class, ISSIIDKSaveData.class, value);
+        return new JAXBElement<String>(_ISSEntityBaseName_QNAME, String.class, ISSIIDKSaveData.class, value);
     }
 
     /**
@@ -12752,7 +12200,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", name = "Slaves", scope = ISSIIDKSlimInfo.class)
     public JAXBElement<ArrayOfISSSlaveSlimInfo> createISSIIDKSlimInfoSlaves(ArrayOfISSSlaveSlimInfo value) {
-        return new JAXBElement<>(_ISSIIDKSlimInfoSlaves_QNAME, ArrayOfISSSlaveSlimInfo.class, ISSIIDKSlimInfo.class, value);
+        return new JAXBElement<ArrayOfISSSlaveSlimInfo>(_ISSIIDKSlimInfoSlaves_QNAME, ArrayOfISSSlaveSlimInfo.class, ISSIIDKSlimInfo.class, value);
     }
 
     /**
@@ -12765,7 +12213,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "AcsAccessPointDriverInfo", scope = WorkZonesAccessPointSlimInfo.class)
     public JAXBElement<AcsAccessPointDriverInfo> createWorkZonesAccessPointSlimInfoAcsAccessPointDriverInfo(AcsAccessPointDriverInfo value) {
-        return new JAXBElement<>(_WorkZonesAccessPointSlimInfoAcsAccessPointDriverInfo_QNAME, AcsAccessPointDriverInfo.class, WorkZonesAccessPointSlimInfo.class, value);
+        return new JAXBElement<AcsAccessPointDriverInfo>(_WorkZonesAccessPointSlimInfoAcsAccessPointDriverInfo_QNAME, AcsAccessPointDriverInfo.class, WorkZonesAccessPointSlimInfo.class, value);
     }
 
     /**
@@ -12778,7 +12226,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "Description", scope = WorkZoneSlimSaveData.class)
     public JAXBElement<String> createWorkZoneSlimSaveDataDescription(String value) {
-        return new JAXBElement<>(_WorkScheduleSlimSaveDataDescription_QNAME, String.class, WorkZoneSlimSaveData.class, value);
+        return new JAXBElement<String>(_WorkScheduleSlimSaveDataDescription_QNAME, String.class, WorkZoneSlimSaveData.class, value);
     }
 
     /**
@@ -12791,7 +12239,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "Name", scope = WorkZoneSlimSaveData.class)
     public JAXBElement<String> createWorkZoneSlimSaveDataName(String value) {
-        return new JAXBElement<>(_WorkScheduleSlimSaveDataName_QNAME, String.class, WorkZoneSlimSaveData.class, value);
+        return new JAXBElement<String>(_WorkScheduleSlimSaveDataName_QNAME, String.class, WorkZoneSlimSaveData.class, value);
     }
 
     /**
@@ -12804,7 +12252,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "ScheduleId", scope = ReactionEventsFromDevicesSaveData.class)
     public JAXBElement<String> createReactionEventsFromDevicesSaveDataScheduleId(String value) {
-        return new JAXBElement<>(_ReactionEventsFromDevicesSaveDataScheduleId_QNAME, String.class, ReactionEventsFromDevicesSaveData.class, value);
+        return new JAXBElement<String>(_ReactionEventsFromDevicesSaveDataScheduleId_QNAME, String.class, ReactionEventsFromDevicesSaveData.class, value);
     }
 
     /**
@@ -12817,7 +12265,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "UserPositions", scope = LEmployeePositionsData.class)
     public JAXBElement<ArrayOfLEmployeePositionInfo> createLEmployeePositionsDataUserPositions(ArrayOfLEmployeePositionInfo value) {
-        return new JAXBElement<>(_LEmployeePositionsDataUserPositions_QNAME, ArrayOfLEmployeePositionInfo.class, LEmployeePositionsData.class, value);
+        return new JAXBElement<ArrayOfLEmployeePositionInfo>(_LEmployeePositionsDataUserPositions_QNAME, ArrayOfLEmployeePositionInfo.class, LEmployeePositionsData.class, value);
     }
 
     /**
@@ -12830,7 +12278,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "Code", scope = LEmployeePositionInfo.class)
     public JAXBElement<String> createLEmployeePositionInfoCode(String value) {
-        return new JAXBElement<>(_LEmployeePositionInfoCode_QNAME, String.class, LEmployeePositionInfo.class, value);
+        return new JAXBElement<String>(_LEmployeePositionInfoCode_QNAME, String.class, LEmployeePositionInfo.class, value);
     }
 
     /**
@@ -12843,7 +12291,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "Comment", scope = LEmployeePositionInfo.class)
     public JAXBElement<String> createLEmployeePositionInfoComment(String value) {
-        return new JAXBElement<>(_LEmployeePositionInfoComment_QNAME, String.class, LEmployeePositionInfo.class, value);
+        return new JAXBElement<String>(_LEmployeePositionInfoComment_QNAME, String.class, LEmployeePositionInfo.class, value);
     }
 
     /**
@@ -12856,7 +12304,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", name = "Name", scope = LEmployeePositionInfo.class)
     public JAXBElement<String> createLEmployeePositionInfoName(String value) {
-        return new JAXBElement<>(_EmployeePositionSlimInfoName_QNAME, String.class, LEmployeePositionInfo.class, value);
+        return new JAXBElement<String>(_EmployeePositionSlimInfoName_QNAME, String.class, LEmployeePositionInfo.class, value);
     }
 
     /**
@@ -12869,7 +12317,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CardType", name = "CardTypes", scope = CardTypesInfoData.class)
     public JAXBElement<ArrayOfCardTypeInfo> createCardTypesInfoDataCardTypes(ArrayOfCardTypeInfo value) {
-        return new JAXBElement<>(_CardTypesInfoDataCardTypes_QNAME, ArrayOfCardTypeInfo.class, CardTypesInfoData.class, value);
+        return new JAXBElement<ArrayOfCardTypeInfo>(_CardTypesInfoDataCardTypes_QNAME, ArrayOfCardTypeInfo.class, CardTypesInfoData.class, value);
     }
 
     /**
@@ -12882,7 +12330,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DateOfBirth", scope = ViolatorFilter.class)
     public JAXBElement<XMLGregorianCalendar> createViolatorFilterDateOfBirth(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_ViolatorFilterDateOfBirth_QNAME, XMLGregorianCalendar.class, ViolatorFilter.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_ViolatorFilterDateOfBirth_QNAME, XMLGregorianCalendar.class, ViolatorFilter.class, value);
     }
 
     /**
@@ -12895,7 +12343,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "FirstName", scope = ViolatorFilter.class)
     public JAXBElement<String> createViolatorFilterFirstName(String value) {
-        return new JAXBElement<>(_ViolationFirstName_QNAME, String.class, ViolatorFilter.class, value);
+        return new JAXBElement<String>(_ViolationFirstName_QNAME, String.class, ViolatorFilter.class, value);
     }
 
     /**
@@ -12908,7 +12356,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LastName", scope = ViolatorFilter.class)
     public JAXBElement<String> createViolatorFilterLastName(String value) {
-        return new JAXBElement<>(_ViolationLastName_QNAME, String.class, ViolatorFilter.class, value);
+        return new JAXBElement<String>(_ViolationLastName_QNAME, String.class, ViolatorFilter.class, value);
     }
 
     /**
@@ -12921,7 +12369,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SecondName", scope = ViolatorFilter.class)
     public JAXBElement<String> createViolatorFilterSecondName(String value) {
-        return new JAXBElement<>(_ViolationSecondName_QNAME, String.class, ViolatorFilter.class, value);
+        return new JAXBElement<String>(_ViolationSecondName_QNAME, String.class, ViolatorFilter.class, value);
     }
 
     /**
@@ -12934,7 +12382,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "TableNumber", scope = ViolatorFilter.class)
     public JAXBElement<Integer> createViolatorFilterTableNumber(Integer value) {
-        return new JAXBElement<>(_ViolatorFilterTableNumber_QNAME, Integer.class, ViolatorFilter.class, value);
+        return new JAXBElement<Integer>(_ViolatorFilterTableNumber_QNAME, Integer.class, ViolatorFilter.class, value);
     }
 
     /**
@@ -12947,7 +12395,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "AcsEmployeeDocumentsData", scope = IncidentElementFullInfo.class)
     public JAXBElement<AcsEmployeeDocumentsData> createIncidentElementFullInfoAcsEmployeeDocumentsData(AcsEmployeeDocumentsData value) {
-        return new JAXBElement<>(_ViolatorFullInfoAcsEmployeeDocumentsData_QNAME, AcsEmployeeDocumentsData.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<AcsEmployeeDocumentsData>(_ViolatorFullInfoAcsEmployeeDocumentsData_QNAME, AcsEmployeeDocumentsData.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -12960,7 +12408,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "AcsEmployeeFull", scope = IncidentElementFullInfo.class)
     public JAXBElement<AcsEmployeeFull> createIncidentElementFullInfoAcsEmployeeFull(AcsEmployeeFull value) {
-        return new JAXBElement<>(_ViolatorFullInfoAcsEmployeeFull_QNAME, AcsEmployeeFull.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<AcsEmployeeFull>(_ViolatorFullInfoAcsEmployeeFull_QNAME, AcsEmployeeFull.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -12973,7 +12421,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "BranchName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoBranchName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoBranchName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoBranchName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -12986,7 +12434,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "DocumentTypeName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoDocumentTypeName(String value) {
-        return new JAXBElement<>(_DocumentFullForActionInfoDocumentTypeName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_DocumentFullForActionInfoDocumentTypeName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -12999,7 +12447,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "EmployeeFullName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoEmployeeFullName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoEmployeeFullName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoEmployeeFullName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13012,7 +12460,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LocationClarificationName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoLocationClarificationName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoLocationClarificationName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoLocationClarificationName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13025,7 +12473,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "LocationName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoLocationName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoLocationName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoLocationName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13038,7 +12486,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Members", scope = IncidentElementFullInfo.class)
     public JAXBElement<ArrayOfViolatorFullInfo> createIncidentElementFullInfoMembers(ArrayOfViolatorFullInfo value) {
-        return new JAXBElement<>(_IncidentElementFullInfoMembers_QNAME, ArrayOfViolatorFullInfo.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<ArrayOfViolatorFullInfo>(_IncidentElementFullInfoMembers_QNAME, ArrayOfViolatorFullInfo.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13051,7 +12499,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SecurityGroupName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoSecurityGroupName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoSecurityGroupName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoSecurityGroupName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13064,7 +12512,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "SignificanceName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoSignificanceName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoSignificanceName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoSignificanceName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13077,7 +12525,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Tangibles", scope = IncidentElementFullInfo.class)
     public JAXBElement<ArrayOfTangiblesFullInfo> createIncidentElementFullInfoTangibles(ArrayOfTangiblesFullInfo value) {
-        return new JAXBElement<>(_IncidentElementFullInfoTangibles_QNAME, ArrayOfTangiblesFullInfo.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<ArrayOfTangiblesFullInfo>(_IncidentElementFullInfoTangibles_QNAME, ArrayOfTangiblesFullInfo.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13090,7 +12538,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Vehicle", scope = IncidentElementFullInfo.class)
     public JAXBElement<AcsVehicle> createIncidentElementFullInfoVehicle(AcsVehicle value) {
-        return new JAXBElement<>(_IncidentElementFullInfoVehicle_QNAME, AcsVehicle.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<AcsVehicle>(_IncidentElementFullInfoVehicle_QNAME, AcsVehicle.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13103,7 +12551,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "VehicleOrganizationName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoVehicleOrganizationName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoVehicleOrganizationName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoVehicleOrganizationName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13116,7 +12564,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationNatureName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoViolationNatureName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoViolationNatureName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoViolationNatureName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13129,7 +12577,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationTheftMethodName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoViolationTheftMethodName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoViolationTheftMethodName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoViolationTheftMethodName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13142,7 +12590,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ViolationTypeName", scope = IncidentElementFullInfo.class)
     public JAXBElement<String> createIncidentElementFullInfoViolationTypeName(String value) {
-        return new JAXBElement<>(_IncidentElementFullInfoViolationTypeName_QNAME, String.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<String>(_IncidentElementFullInfoViolationTypeName_QNAME, String.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13155,7 +12603,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Violators", scope = IncidentElementFullInfo.class)
     public JAXBElement<ArrayOfViolatorFullInfo> createIncidentElementFullInfoViolators(ArrayOfViolatorFullInfo value) {
-        return new JAXBElement<>(_IncidentElementFullInfoViolators_QNAME, ArrayOfViolatorFullInfo.class, IncidentElementFullInfo.class, value);
+        return new JAXBElement<ArrayOfViolatorFullInfo>(_IncidentElementFullInfoViolators_QNAME, ArrayOfViolatorFullInfo.class, IncidentElementFullInfo.class, value);
     }
 
     /**
@@ -13168,7 +12616,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Incidents", scope = IncidentsInfoData.class)
     public JAXBElement<ArrayOfIncidentElementFullInfo> createIncidentsInfoDataIncidents(ArrayOfIncidentElementFullInfo value) {
-        return new JAXBElement<>(_IncidentsInfoDataIncidents_QNAME, ArrayOfIncidentElementFullInfo.class, IncidentsInfoData.class, value);
+        return new JAXBElement<ArrayOfIncidentElementFullInfo>(_IncidentsInfoDataIncidents_QNAME, ArrayOfIncidentElementFullInfo.class, IncidentsInfoData.class, value);
     }
 
     /**
@@ -13181,7 +12629,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "BeginDate", scope = IncidentsFilter.class)
     public JAXBElement<XMLGregorianCalendar> createIncidentsFilterBeginDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_IncidentsMegaFilterBeginDate_QNAME, XMLGregorianCalendar.class, IncidentsFilter.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_IncidentsMegaFilterBeginDate_QNAME, XMLGregorianCalendar.class, IncidentsFilter.class, value);
     }
 
     /**
@@ -13194,7 +12642,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "EndDate", scope = IncidentsFilter.class)
     public JAXBElement<XMLGregorianCalendar> createIncidentsFilterEndDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_IncidentsMegaFilterEndDate_QNAME, XMLGregorianCalendar.class, IncidentsFilter.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_IncidentsMegaFilterEndDate_QNAME, XMLGregorianCalendar.class, IncidentsFilter.class, value);
     }
 
     /**
@@ -13207,7 +12655,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "IncidentsMegaFilter", scope = IncidentsFilter.class)
     public JAXBElement<IncidentsMegaFilter> createIncidentsFilterIncidentsMegaFilter(IncidentsMegaFilter value) {
-        return new JAXBElement<>(_IncidentsMegaFilter_QNAME, IncidentsMegaFilter.class, IncidentsFilter.class, value);
+        return new JAXBElement<IncidentsMegaFilter>(_IncidentsMegaFilter_QNAME, IncidentsMegaFilter.class, IncidentsFilter.class, value);
     }
 
     /**
@@ -13220,7 +12668,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "User", scope = IncidentsFilter.class)
     public JAXBElement<String> createIncidentsFilterUser(String value) {
-        return new JAXBElement<>(_IncidentsFilterUser_QNAME, String.class, IncidentsFilter.class, value);
+        return new JAXBElement<String>(_IncidentsFilterUser_QNAME, String.class, IncidentsFilter.class, value);
     }
 
     /**
@@ -13233,7 +12681,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Branch", name = "Comment", scope = BranchInfo.class)
     public JAXBElement<String> createBranchInfoComment(String value) {
-        return new JAXBElement<>(_BranchInfoComment_QNAME, String.class, BranchInfo.class, value);
+        return new JAXBElement<String>(_BranchInfoComment_QNAME, String.class, BranchInfo.class, value);
     }
 
     /**
@@ -13246,7 +12694,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Branch", name = "Name", scope = BranchInfo.class)
     public JAXBElement<String> createBranchInfoName(String value) {
-        return new JAXBElement<>(_BranchInfoName_QNAME, String.class, BranchInfo.class, value);
+        return new JAXBElement<String>(_BranchInfoName_QNAME, String.class, BranchInfo.class, value);
     }
 
     /**
@@ -13259,7 +12707,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Branch", name = "Branches", scope = BranchData.class)
     public JAXBElement<ArrayOfBranchInfo> createBranchDataBranches(ArrayOfBranchInfo value) {
-        return new JAXBElement<>(_BranchDataBranches_QNAME, ArrayOfBranchInfo.class, BranchData.class, value);
+        return new JAXBElement<ArrayOfBranchInfo>(_BranchDataBranches_QNAME, ArrayOfBranchInfo.class, BranchData.class, value);
     }
 
     /**
@@ -13272,7 +12720,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "ForeignID", scope = DictionaryElementsFilter.class)
     public JAXBElement<String> createDictionaryElementsFilterForeignID(String value) {
-        return new JAXBElement<>(_DictionaryElementSaveInfoForeignID_QNAME, String.class, DictionaryElementsFilter.class, value);
+        return new JAXBElement<String>(_DictionaryElementSaveInfoForeignID_QNAME, String.class, DictionaryElementsFilter.class, value);
     }
 
     /**
@@ -13285,7 +12733,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", name = "Elements", scope = DictionaryElementsInfoData.class)
     public JAXBElement<ArrayOfDictionaryElementInfo> createDictionaryElementsInfoDataElements(ArrayOfDictionaryElementInfo value) {
-        return new JAXBElement<>(_DictionaryElementsInfoDataElements_QNAME, ArrayOfDictionaryElementInfo.class, DictionaryElementsInfoData.class, value);
+        return new JAXBElement<ArrayOfDictionaryElementInfo>(_DictionaryElementsInfoDataElements_QNAME, ArrayOfDictionaryElementInfo.class, DictionaryElementsInfoData.class, value);
     }
 
     /**
@@ -13298,7 +12746,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "UserGroups", scope = LUserGroupsData.class)
     public JAXBElement<ArrayOfLUserGroup> createLUserGroupsDataUserGroups(ArrayOfLUserGroup value) {
-        return new JAXBElement<>(_LUserGroupsDataUserGroups_QNAME, ArrayOfLUserGroup.class, LUserGroupsData.class, value);
+        return new JAXBElement<ArrayOfLUserGroup>(_LUserGroupsDataUserGroups_QNAME, ArrayOfLUserGroup.class, LUserGroupsData.class, value);
     }
 
     /**
@@ -13311,7 +12759,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "Description", scope = LUserGroup.class)
     public JAXBElement<String> createLUserGroupDescription(String value) {
-        return new JAXBElement<>(_LUserGroupDescription_QNAME, String.class, LUserGroup.class, value);
+        return new JAXBElement<String>(_LUserGroupDescription_QNAME, String.class, LUserGroup.class, value);
     }
 
     /**
@@ -13324,7 +12772,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "Name", scope = LUserGroup.class)
     public JAXBElement<String> createLUserGroupName(String value) {
-        return new JAXBElement<>(_LUserGroupName_QNAME, String.class, LUserGroup.class, value);
+        return new JAXBElement<String>(_LUserGroupName_QNAME, String.class, LUserGroup.class, value);
     }
 
     /**
@@ -13337,7 +12785,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "Users", scope = LUsersData.class)
     public JAXBElement<ArrayOfLUser> createLUsersDataUsers(ArrayOfLUser value) {
-        return new JAXBElement<>(_LUsersDataUsers_QNAME, ArrayOfLUser.class, LUsersData.class, value);
+        return new JAXBElement<ArrayOfLUser>(_LUsersDataUsers_QNAME, ArrayOfLUser.class, LUsersData.class, value);
     }
 
     /**
@@ -13350,7 +12798,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "Description", scope = LUser.class)
     public JAXBElement<String> createLUserDescription(String value) {
-        return new JAXBElement<>(_LUserGroupDescription_QNAME, String.class, LUser.class, value);
+        return new JAXBElement<String>(_LUserGroupDescription_QNAME, String.class, LUser.class, value);
     }
 
     /**
@@ -13363,7 +12811,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "FullName", scope = LUser.class)
     public JAXBElement<String> createLUserFullName(String value) {
-        return new JAXBElement<>(_LUserFullName_QNAME, String.class, LUser.class, value);
+        return new JAXBElement<String>(_LUserFullName_QNAME, String.class, LUser.class, value);
     }
 
     /**
@@ -13376,7 +12824,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Security", name = "Login", scope = LUser.class)
     public JAXBElement<String> createLUserLogin(String value) {
-        return new JAXBElement<>(_LUserLogin_QNAME, String.class, LUser.class, value);
+        return new JAXBElement<String>(_LUserLogin_QNAME, String.class, LUser.class, value);
     }
 
     /**
@@ -13389,7 +12837,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", name = "Messages", scope = LogData.class)
     public JAXBElement<ArrayOfLogMessage> createLogDataMessages(ArrayOfLogMessage value) {
-        return new JAXBElement<>(_LogDataMessages_QNAME, ArrayOfLogMessage.class, LogData.class, value);
+        return new JAXBElement<ArrayOfLogMessage>(_LogDataMessages_QNAME, ArrayOfLogMessage.class, LogData.class, value);
     }
 
     /**
@@ -13402,7 +12850,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CommandNotification", name = "Error", scope = NotificationState.class)
     public JAXBElement<Short> createNotificationStateError(Short value) {
-        return new JAXBElement<>(_NotificationStateError_QNAME, Short.class, NotificationState.class, value);
+        return new JAXBElement<Short>(_NotificationStateError_QNAME, Short.class, NotificationState.class, value);
     }
 
     /**
@@ -13415,7 +12863,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CommandNotification", name = "NotifyName", scope = NotificationState.class)
     public JAXBElement<String> createNotificationStateNotifyName(String value) {
-        return new JAXBElement<>(_NotificationStateNotifyName_QNAME, String.class, NotificationState.class, value);
+        return new JAXBElement<String>(_NotificationStateNotifyName_QNAME, String.class, NotificationState.class, value);
     }
 
     /**
@@ -13428,7 +12876,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CommandNotification", name = "State", scope = NotificationState.class)
     public JAXBElement<String> createNotificationStateState(String value) {
-        return new JAXBElement<>(_NotificationStateState_QNAME, String.class, NotificationState.class, value);
+        return new JAXBElement<String>(_NotificationStateState_QNAME, String.class, NotificationState.class, value);
     }
 
     /**
@@ -13441,7 +12889,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.CommandNotification", name = "Value", scope = NotificationState.class)
     public JAXBElement<String> createNotificationStateValue(String value) {
-        return new JAXBElement<>(_NotificationStateValue_QNAME, String.class, NotificationState.class, value);
+        return new JAXBElement<String>(_NotificationStateValue_QNAME, String.class, NotificationState.class, value);
     }
 
     /**
@@ -13454,7 +12902,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CommonData", scope = ReactionRecordVideoActionSlimInfo.class)
     public JAXBElement<ReactionActionSlimInfo> createReactionRecordVideoActionSlimInfoCommonData(ReactionActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionRecordVideoActionSlimInfo.class, value);
+        return new JAXBElement<ReactionActionSlimInfo>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionRecordVideoActionSlimInfo.class, value);
     }
 
     /**
@@ -13467,7 +12915,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CommonData", scope = ReactionExecuteProgramActionSlimInfo.class)
     public JAXBElement<ReactionActionSlimInfo> createReactionExecuteProgramActionSlimInfoCommonData(ReactionActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionExecuteProgramActionSlimInfo.class, value);
+        return new JAXBElement<ReactionActionSlimInfo>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionExecuteProgramActionSlimInfo.class, value);
     }
 
     /**
@@ -13480,7 +12928,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CommonData", scope = ReactionSendEmailActionSlimInfo.class)
     public JAXBElement<ReactionActionSlimInfo> createReactionSendEmailActionSlimInfoCommonData(ReactionActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionSendEmailActionSlimInfo.class, value);
+        return new JAXBElement<ReactionActionSlimInfo>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionSendEmailActionSlimInfo.class, value);
     }
 
     /**
@@ -13493,7 +12941,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CommonData", scope = ReactionSendSMSActionSlimInfo.class)
     public JAXBElement<ReactionActionSlimInfo> createReactionSendSMSActionSlimInfoCommonData(ReactionActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionSendSMSActionSlimInfo.class, value);
+        return new JAXBElement<ReactionActionSlimInfo>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionActionSlimInfo.class, ReactionSendSMSActionSlimInfo.class, value);
     }
 
     /**
@@ -13506,7 +12954,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Actions", scope = ReactionFullInfo.class)
     public JAXBElement<ArrayOfReactionActionSlimInfo> createReactionFullInfoActions(ArrayOfReactionActionSlimInfo value) {
-        return new JAXBElement<>(_ReactionFullInfoActions_QNAME, ArrayOfReactionActionSlimInfo.class, ReactionFullInfo.class, value);
+        return new JAXBElement<ArrayOfReactionActionSlimInfo>(_ReactionFullInfoActions_QNAME, ArrayOfReactionActionSlimInfo.class, ReactionFullInfo.class, value);
     }
 
     /**
@@ -13519,7 +12967,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Description", scope = ReactionFullInfo.class)
     public JAXBElement<String> createReactionFullInfoDescription(String value) {
-        return new JAXBElement<>(_ReactionSaveDataDescription_QNAME, String.class, ReactionFullInfo.class, value);
+        return new JAXBElement<String>(_ReactionSaveDataDescription_QNAME, String.class, ReactionFullInfo.class, value);
     }
 
     /**
@@ -13532,7 +12980,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "Events", scope = ReactionFullInfo.class)
     public JAXBElement<ArrayOfReactionEventSlimInfo> createReactionFullInfoEvents(ArrayOfReactionEventSlimInfo value) {
-        return new JAXBElement<>(_ReactionFullInfoEvents_QNAME, ArrayOfReactionEventSlimInfo.class, ReactionFullInfo.class, value);
+        return new JAXBElement<ArrayOfReactionEventSlimInfo>(_ReactionFullInfoEvents_QNAME, ArrayOfReactionEventSlimInfo.class, ReactionFullInfo.class, value);
     }
 
     /**
@@ -13545,7 +12993,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", name = "UserPassEditors", scope = UserPassFullData.class)
     public JAXBElement<ArrayOfUserPassEditorData> createUserPassFullDataUserPassEditors(ArrayOfUserPassEditorData value) {
-        return new JAXBElement<>(_UserPassFullDataUserPassEditors_QNAME, ArrayOfUserPassEditorData.class, UserPassFullData.class, value);
+        return new JAXBElement<ArrayOfUserPassEditorData>(_UserPassFullDataUserPassEditors_QNAME, ArrayOfUserPassEditorData.class, UserPassFullData.class, value);
     }
 
     /**
@@ -13558,7 +13006,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout", name = "RootCell", scope = ScreenLayoutInfo.class)
     public JAXBElement<ScreenCellTreeInfo> createScreenLayoutInfoRootCell(ScreenCellTreeInfo value) {
-        return new JAXBElement<>(_ScreenLayoutInfoRootCell_QNAME, ScreenCellTreeInfo.class, ScreenLayoutInfo.class, value);
+        return new JAXBElement<ScreenCellTreeInfo>(_ScreenLayoutInfoRootCell_QNAME, ScreenCellTreeInfo.class, ScreenLayoutInfo.class, value);
     }
 
     /**
@@ -13571,7 +13019,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "ICCID", scope = UidKeyInfo.class)
     public JAXBElement<String> createUidKeyInfoICCID(String value) {
-        return new JAXBElement<>(_UidKeyInfoICCID_QNAME, String.class, UidKeyInfo.class, value);
+        return new JAXBElement<String>(_UidKeyInfoICCID_QNAME, String.class, UidKeyInfo.class, value);
     }
 
     /**
@@ -13584,7 +13032,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Key", scope = UidKeyInfo.class)
     public JAXBElement<String> createUidKeyInfoKey(String value) {
-        return new JAXBElement<>(_UidKeyInfoKey_QNAME, String.class, UidKeyInfo.class, value);
+        return new JAXBElement<String>(_UidKeyInfoKey_QNAME, String.class, UidKeyInfo.class, value);
     }
 
     /**
@@ -13597,7 +13045,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Mifare", name = "Uid", scope = UidKeyInfo.class)
     public JAXBElement<String> createUidKeyInfoUid(String value) {
-        return new JAXBElement<>(_UidKeyInfoUid_QNAME, String.class, UidKeyInfo.class, value);
+        return new JAXBElement<String>(_UidKeyInfoUid_QNAME, String.class, UidKeyInfo.class, value);
     }
 
     /**
@@ -13610,7 +13058,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkSchedulesSlimInfo", scope = WorkSchedulesData.class)
     public JAXBElement<ArrayOfWorkScheduleSlimInfo> createWorkSchedulesDataWorkSchedulesSlimInfo(ArrayOfWorkScheduleSlimInfo value) {
-        return new JAXBElement<>(_WorkSchedulesDataWorkSchedulesSlimInfo_QNAME, ArrayOfWorkScheduleSlimInfo.class, WorkSchedulesData.class, value);
+        return new JAXBElement<ArrayOfWorkScheduleSlimInfo>(_WorkSchedulesDataWorkSchedulesSlimInfo_QNAME, ArrayOfWorkScheduleSlimInfo.class, WorkSchedulesData.class, value);
     }
 
     /**
@@ -13623,7 +13071,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", name = "WorkZonesSlimInfo", scope = WorkZonesData.class)
     public JAXBElement<ArrayOfWorkZoneSlimInfo> createWorkZonesDataWorkZonesSlimInfo(ArrayOfWorkZoneSlimInfo value) {
-        return new JAXBElement<>(_WorkZonesDataWorkZonesSlimInfo_QNAME, ArrayOfWorkZoneSlimInfo.class, WorkZonesData.class, value);
+        return new JAXBElement<ArrayOfWorkZoneSlimInfo>(_WorkZonesDataWorkZonesSlimInfo_QNAME, ArrayOfWorkZoneSlimInfo.class, WorkZonesData.class, value);
     }
 
     /**
@@ -13636,7 +13084,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", name = "CommonData", scope = ReactionEventsFromDevicesSlimInfo.class)
     public JAXBElement<ReactionEventSlimInfo> createReactionEventsFromDevicesSlimInfoCommonData(ReactionEventSlimInfo value) {
-        return new JAXBElement<>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionEventSlimInfo.class, ReactionEventsFromDevicesSlimInfo.class, value);
+        return new JAXBElement<ReactionEventSlimInfo>(_ReactionRecordVideoActionSlimInfoCommonData_QNAME, ReactionEventSlimInfo.class, ReactionEventsFromDevicesSlimInfo.class, value);
     }
 
 }

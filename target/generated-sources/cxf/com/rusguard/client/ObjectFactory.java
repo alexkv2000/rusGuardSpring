@@ -1,6 +1,10 @@
 
 package com.rusguard.client;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfArrayOfKeyValueOfstringstring;
@@ -8,10 +12,6 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfdateTime;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfint;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.rusguard.ArrayOfPlanModel;
 import org.datacontract.schemas._2004._07.system.ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW;
 import org.datacontract.schemas._2004._07.system.IPAddress;
@@ -313,7 +313,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_net_services.Op
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the com.rusguard.client package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -324,7 +324,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_net_services.Op
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _GetDriversOfReportParametersResponseGetDriversOfReportParametersResult_QNAME = new QName("http://www.rusguardsecurity.ru", "GetDriversOfReportParametersResult");
@@ -805,8 +805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GeEmployeesViewResponse }
      * 
-     * @return
-     *     the new instance of {@link GeEmployeesViewResponse }
      */
     public GeEmployeesViewResponse createGeEmployeesViewResponse() {
         return new GeEmployeesViewResponse();
@@ -815,8 +813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriversOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetDriversOfReportParameters }
      */
     public GetDriversOfReportParameters createGetDriversOfReportParameters() {
         return new GetDriversOfReportParameters();
@@ -825,8 +821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriversOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDriversOfReportParametersResponse }
      */
     public GetDriversOfReportParametersResponse createGetDriversOfReportParametersResponse() {
         return new GetDriversOfReportParametersResponse();
@@ -835,8 +829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageSubtypesOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageSubtypesOfReportParameters }
      */
     public GetLogMessageSubtypesOfReportParameters createGetLogMessageSubtypesOfReportParameters() {
         return new GetLogMessageSubtypesOfReportParameters();
@@ -845,8 +837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageSubtypesOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageSubtypesOfReportParametersResponse }
      */
     public GetLogMessageSubtypesOfReportParametersResponse createGetLogMessageSubtypesOfReportParametersResponse() {
         return new GetLogMessageSubtypesOfReportParametersResponse();
@@ -855,8 +845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesOfReportParameters }
      */
     public GetEmployeesOfReportParameters createGetEmployeesOfReportParameters() {
         return new GetEmployeesOfReportParameters();
@@ -865,8 +853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesOfReportParametersResponse }
      */
     public GetEmployeesOfReportParametersResponse createGetEmployeesOfReportParametersResponse() {
         return new GetEmployeesOfReportParametersResponse();
@@ -875,8 +861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsOfReportParameters }
      */
     public GetEmployeeGroupsOfReportParameters createGetEmployeeGroupsOfReportParameters() {
         return new GetEmployeeGroupsOfReportParameters();
@@ -885,8 +869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsOfReportParametersResponse }
      */
     public GetEmployeeGroupsOfReportParametersResponse createGetEmployeeGroupsOfReportParametersResponse() {
         return new GetEmployeeGroupsOfReportParametersResponse();
@@ -895,8 +877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesOfReportParameters }
      */
     public GetWorkZonesOfReportParameters createGetWorkZonesOfReportParameters() {
         return new GetWorkZonesOfReportParameters();
@@ -905,8 +885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesOfReportParametersResponse }
      */
     public GetWorkZonesOfReportParametersResponse createGetWorkZonesOfReportParametersResponse() {
         return new GetWorkZonesOfReportParametersResponse();
@@ -915,8 +893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAlcoGroupsOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetAlcoGroupsOfReportParameters }
      */
     public GetAlcoGroupsOfReportParameters createGetAlcoGroupsOfReportParameters() {
         return new GetAlcoGroupsOfReportParameters();
@@ -925,8 +901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAlcoGroupsOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAlcoGroupsOfReportParametersResponse }
      */
     public GetAlcoGroupsOfReportParametersResponse createGetAlcoGroupsOfReportParametersResponse() {
         return new GetAlcoGroupsOfReportParametersResponse();
@@ -935,8 +909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentTypeOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentTypeOfReportParameters }
      */
     public GetIncidentTypeOfReportParameters createGetIncidentTypeOfReportParameters() {
         return new GetIncidentTypeOfReportParameters();
@@ -945,8 +917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentTypeOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentTypeOfReportParametersResponse }
      */
     public GetIncidentTypeOfReportParametersResponse createGetIncidentTypeOfReportParametersResponse() {
         return new GetIncidentTypeOfReportParametersResponse();
@@ -955,8 +925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehicleTypesOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetVehicleTypesOfReportParameters }
      */
     public GetVehicleTypesOfReportParameters createGetVehicleTypesOfReportParameters() {
         return new GetVehicleTypesOfReportParameters();
@@ -965,8 +933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehicleTypesOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetVehicleTypesOfReportParametersResponse }
      */
     public GetVehicleTypesOfReportParametersResponse createGetVehicleTypesOfReportParametersResponse() {
         return new GetVehicleTypesOfReportParametersResponse();
@@ -975,8 +941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehiclesOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetVehiclesOfReportParameters }
      */
     public GetVehiclesOfReportParameters createGetVehiclesOfReportParameters() {
         return new GetVehiclesOfReportParameters();
@@ -985,8 +949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehiclesOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetVehiclesOfReportParametersResponse }
      */
     public GetVehiclesOfReportParametersResponse createGetVehiclesOfReportParametersResponse() {
         return new GetVehiclesOfReportParametersResponse();
@@ -995,8 +957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetBranchOfReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetBranchOfReportParameters }
      */
     public GetBranchOfReportParameters createGetBranchOfReportParameters() {
         return new GetBranchOfReportParameters();
@@ -1005,8 +965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetBranchOfReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetBranchOfReportParametersResponse }
      */
     public GetBranchOfReportParametersResponse createGetBranchOfReportParametersResponse() {
         return new GetBranchOfReportParametersResponse();
@@ -1015,8 +973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindReports }
      * 
-     * @return
-     *     the new instance of {@link FindReports }
      */
     public FindReports createFindReports() {
         return new FindReports();
@@ -1025,8 +981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindReportsResponse }
      * 
-     * @return
-     *     the new instance of {@link FindReportsResponse }
      */
     public FindReportsResponse createFindReportsResponse() {
         return new FindReportsResponse();
@@ -1035,8 +989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesOfReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesOfReactionEvent }
      */
     public GetEmployeesOfReactionEvent createGetEmployeesOfReactionEvent() {
         return new GetEmployeesOfReactionEvent();
@@ -1045,8 +997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesOfReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesOfReactionEventResponse }
      */
     public GetEmployeesOfReactionEventResponse createGetEmployeesOfReactionEventResponse() {
         return new GetEmployeesOfReactionEventResponse();
@@ -1055,8 +1005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsOfReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsOfReactionEvent }
      */
     public GetEmployeeGroupsOfReactionEvent createGetEmployeeGroupsOfReactionEvent() {
         return new GetEmployeeGroupsOfReactionEvent();
@@ -1065,8 +1013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsOfReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsOfReactionEventResponse }
      */
     public GetEmployeeGroupsOfReactionEventResponse createGetEmployeeGroupsOfReactionEventResponse() {
         return new GetEmployeeGroupsOfReactionEventResponse();
@@ -1075,8 +1021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriversOfReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link GetDriversOfReactionEvent }
      */
     public GetDriversOfReactionEvent createGetDriversOfReactionEvent() {
         return new GetDriversOfReactionEvent();
@@ -1085,8 +1029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriversOfReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDriversOfReactionEventResponse }
      */
     public GetDriversOfReactionEventResponse createGetDriversOfReactionEventResponse() {
         return new GetDriversOfReactionEventResponse();
@@ -1095,8 +1037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageSubtypesOfReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageSubtypesOfReactionEvent }
      */
     public GetLogMessageSubtypesOfReactionEvent createGetLogMessageSubtypesOfReactionEvent() {
         return new GetLogMessageSubtypesOfReactionEvent();
@@ -1105,8 +1045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageSubtypesOfReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageSubtypesOfReactionEventResponse }
      */
     public GetLogMessageSubtypesOfReactionEventResponse createGetLogMessageSubtypesOfReactionEventResponse() {
         return new GetLogMessageSubtypesOfReactionEventResponse();
@@ -1115,8 +1053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSwitchedOffLogMessageSubtypesOfWorkplace }
      * 
-     * @return
-     *     the new instance of {@link GetSwitchedOffLogMessageSubtypesOfWorkplace }
      */
     public GetSwitchedOffLogMessageSubtypesOfWorkplace createGetSwitchedOffLogMessageSubtypesOfWorkplace() {
         return new GetSwitchedOffLogMessageSubtypesOfWorkplace();
@@ -1125,8 +1061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSwitchedOffLogMessageSubtypesOfWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link GetSwitchedOffLogMessageSubtypesOfWorkplaceResponse }
      */
     public GetSwitchedOffLogMessageSubtypesOfWorkplaceResponse createGetSwitchedOffLogMessageSubtypesOfWorkplaceResponse() {
         return new GetSwitchedOffLogMessageSubtypesOfWorkplaceResponse();
@@ -1135,8 +1069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSwitchedOffLogDriversOfWorkplace }
      * 
-     * @return
-     *     the new instance of {@link GetSwitchedOffLogDriversOfWorkplace }
      */
     public GetSwitchedOffLogDriversOfWorkplace createGetSwitchedOffLogDriversOfWorkplace() {
         return new GetSwitchedOffLogDriversOfWorkplace();
@@ -1145,8 +1077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSwitchedOffLogDriversOfWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link GetSwitchedOffLogDriversOfWorkplaceResponse }
      */
     public GetSwitchedOffLogDriversOfWorkplaceResponse createGetSwitchedOffLogDriversOfWorkplaceResponse() {
         return new GetSwitchedOffLogDriversOfWorkplaceResponse();
@@ -1155,8 +1085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRemoteTerminalInfoByWorkplaceModuleId }
      * 
-     * @return
-     *     the new instance of {@link GetRemoteTerminalInfoByWorkplaceModuleId }
      */
     public GetRemoteTerminalInfoByWorkplaceModuleId createGetRemoteTerminalInfoByWorkplaceModuleId() {
         return new GetRemoteTerminalInfoByWorkplaceModuleId();
@@ -1165,8 +1093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRemoteTerminalInfoByWorkplaceModuleIdResponse }
      * 
-     * @return
-     *     the new instance of {@link GetRemoteTerminalInfoByWorkplaceModuleIdResponse }
      */
     public GetRemoteTerminalInfoByWorkplaceModuleIdResponse createGetRemoteTerminalInfoByWorkplaceModuleIdResponse() {
         return new GetRemoteTerminalInfoByWorkplaceModuleIdResponse();
@@ -1175,8 +1101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionEventsFromDevices }
      * 
-     * @return
-     *     the new instance of {@link GetReactionEventsFromDevices }
      */
     public GetReactionEventsFromDevices createGetReactionEventsFromDevices() {
         return new GetReactionEventsFromDevices();
@@ -1185,8 +1109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionEventsFromDevicesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReactionEventsFromDevicesResponse }
      */
     public GetReactionEventsFromDevicesResponse createGetReactionEventsFromDevicesResponse() {
         return new GetReactionEventsFromDevicesResponse();
@@ -1195,8 +1117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLicense }
      * 
-     * @return
-     *     the new instance of {@link GetLicense }
      */
     public GetLicense createGetLicense() {
         return new GetLicense();
@@ -1205,8 +1125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLicenseResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLicenseResponse }
      */
     public GetLicenseResponse createGetLicenseResponse() {
         return new GetLicenseResponse();
@@ -1215,8 +1133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsKeysForEmployeeWithLost }
      * 
-     * @return
-     *     the new instance of {@link GetAcsKeysForEmployeeWithLost }
      */
     public GetAcsKeysForEmployeeWithLost createGetAcsKeysForEmployeeWithLost() {
         return new GetAcsKeysForEmployeeWithLost();
@@ -1225,8 +1141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsKeysForEmployeeWithLostResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsKeysForEmployeeWithLostResponse }
      */
     public GetAcsKeysForEmployeeWithLostResponse createGetAcsKeysForEmployeeWithLostResponse() {
         return new GetAcsKeysForEmployeeWithLostResponse();
@@ -1235,8 +1149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsKeysForEmployeeWithLostIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetAcsKeysForEmployeeWithLostIncludeRemovedEmployees }
      */
     public GetAcsKeysForEmployeeWithLostIncludeRemovedEmployees createGetAcsKeysForEmployeeWithLostIncludeRemovedEmployees() {
         return new GetAcsKeysForEmployeeWithLostIncludeRemovedEmployees();
@@ -1245,8 +1157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse }
      */
     public GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse createGetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse() {
         return new GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse();
@@ -1255,8 +1165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindEmployees }
      * 
-     * @return
-     *     the new instance of {@link FindEmployees }
      */
     public FindEmployees createFindEmployees() {
         return new FindEmployees();
@@ -1265,8 +1173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link FindEmployeesResponse }
      */
     public FindEmployeesResponse createFindEmployeesResponse() {
         return new FindEmployeesResponse();
@@ -1275,8 +1181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindGroups }
      * 
-     * @return
-     *     the new instance of {@link FindGroups }
      */
     public FindGroups createFindGroups() {
         return new FindGroups();
@@ -1285,8 +1189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link FindGroupsResponse }
      */
     public FindGroupsResponse createFindGroupsResponse() {
         return new FindGroupsResponse();
@@ -1295,8 +1197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindVehicle }
      * 
-     * @return
-     *     the new instance of {@link FindVehicle }
      */
     public FindVehicle createFindVehicle() {
         return new FindVehicle();
@@ -1305,8 +1205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link FindVehicleResponse }
      */
     public FindVehicleResponse createFindVehicleResponse() {
         return new FindVehicleResponse();
@@ -1315,8 +1213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUnResolvedPhotoBankDetails }
      * 
-     * @return
-     *     the new instance of {@link GetUnResolvedPhotoBankDetails }
      */
     public GetUnResolvedPhotoBankDetails createGetUnResolvedPhotoBankDetails() {
         return new GetUnResolvedPhotoBankDetails();
@@ -1325,8 +1221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUnResolvedPhotoBankDetailsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUnResolvedPhotoBankDetailsResponse }
      */
     public GetUnResolvedPhotoBankDetailsResponse createGetUnResolvedPhotoBankDetailsResponse() {
         return new GetUnResolvedPhotoBankDetailsResponse();
@@ -1335,8 +1229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ResolvePhotoBankEntity }
      * 
-     * @return
-     *     the new instance of {@link ResolvePhotoBankEntity }
      */
     public ResolvePhotoBankEntity createResolvePhotoBankEntity() {
         return new ResolvePhotoBankEntity();
@@ -1345,8 +1237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ResolvePhotoBankEntityResponse }
      * 
-     * @return
-     *     the new instance of {@link ResolvePhotoBankEntityResponse }
      */
     public ResolvePhotoBankEntityResponse createResolvePhotoBankEntityResponse() {
         return new ResolvePhotoBankEntityResponse();
@@ -1355,8 +1245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsVehiclesByGroup }
      * 
-     * @return
-     *     the new instance of {@link GetAcsVehiclesByGroup }
      */
     public GetAcsVehiclesByGroup createGetAcsVehiclesByGroup() {
         return new GetAcsVehiclesByGroup();
@@ -1365,8 +1253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsVehiclesByGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsVehiclesByGroupResponse }
      */
     public GetAcsVehiclesByGroupResponse createGetAcsVehiclesByGroupResponse() {
         return new GetAcsVehiclesByGroupResponse();
@@ -1375,8 +1261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsVehiclesGuidsByGroups }
      * 
-     * @return
-     *     the new instance of {@link GetAcsVehiclesGuidsByGroups }
      */
     public GetAcsVehiclesGuidsByGroups createGetAcsVehiclesGuidsByGroups() {
         return new GetAcsVehiclesGuidsByGroups();
@@ -1385,8 +1269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsVehiclesGuidsByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsVehiclesGuidsByGroupsResponse }
      */
     public GetAcsVehiclesGuidsByGroupsResponse createGetAcsVehiclesGuidsByGroupsResponse() {
         return new GetAcsVehiclesGuidsByGroupsResponse();
@@ -1395,8 +1277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsVehicle }
      * 
-     * @return
-     *     the new instance of {@link GetAcsVehicle }
      */
     public GetAcsVehicle createGetAcsVehicle() {
         return new GetAcsVehicle();
@@ -1405,8 +1285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsVehicleResponse }
      */
     public GetAcsVehicleResponse createGetAcsVehicleResponse() {
         return new GetAcsVehicleResponse();
@@ -1415,8 +1293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkTimeTable }
      * 
-     * @return
-     *     the new instance of {@link GetWorkTimeTable }
      */
     public GetWorkTimeTable createGetWorkTimeTable() {
         return new GetWorkTimeTable();
@@ -1425,8 +1301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkTimeTableResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkTimeTableResponse }
      */
     public GetWorkTimeTableResponse createGetWorkTimeTableResponse() {
         return new GetWorkTimeTableResponse();
@@ -1435,8 +1309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeTimeTable }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeTimeTable }
      */
     public GetEmployeeTimeTable createGetEmployeeTimeTable() {
         return new GetEmployeeTimeTable();
@@ -1445,8 +1317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeTimeTableResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeTimeTableResponse }
      */
     public GetEmployeeTimeTableResponse createGetEmployeeTimeTableResponse() {
         return new GetEmployeeTimeTableResponse();
@@ -1455,8 +1325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDayTypesSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link GetDayTypesSlimInfo }
      */
     public GetDayTypesSlimInfo createGetDayTypesSlimInfo() {
         return new GetDayTypesSlimInfo();
@@ -1465,8 +1333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDayTypesSlimInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDayTypesSlimInfoResponse }
      */
     public GetDayTypesSlimInfoResponse createGetDayTypesSlimInfoResponse() {
         return new GetDayTypesSlimInfoResponse();
@@ -1475,8 +1341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesSlimInfo }
      */
     public GetWorkSchedulesSlimInfo createGetWorkSchedulesSlimInfo() {
         return new GetWorkSchedulesSlimInfo();
@@ -1485,8 +1349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesSlimInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesSlimInfoResponse }
      */
     public GetWorkSchedulesSlimInfoResponse createGetWorkSchedulesSlimInfoResponse() {
         return new GetWorkSchedulesSlimInfoResponse();
@@ -1495,8 +1357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesSlimInfo }
      */
     public GetWorkZonesSlimInfo createGetWorkZonesSlimInfo() {
         return new GetWorkZonesSlimInfo();
@@ -1505,8 +1365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesSlimInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesSlimInfoResponse }
      */
     public GetWorkZonesSlimInfoResponse createGetWorkZonesSlimInfoResponse() {
         return new GetWorkZonesSlimInfoResponse();
@@ -1515,8 +1373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesAccessPoints }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesAccessPoints }
      */
     public GetWorkZonesAccessPoints createGetWorkZonesAccessPoints() {
         return new GetWorkZonesAccessPoints();
@@ -1525,8 +1381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesAccessPointsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesAccessPointsResponse }
      */
     public GetWorkZonesAccessPointsResponse createGetWorkZonesAccessPointsResponse() {
         return new GetWorkZonesAccessPointsResponse();
@@ -1535,8 +1389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsBoxAccessElements }
      * 
-     * @return
-     *     the new instance of {@link GetAcsBoxAccessElements }
      */
     public GetAcsBoxAccessElements createGetAcsBoxAccessElements() {
         return new GetAcsBoxAccessElements();
@@ -1545,8 +1397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsBoxAccessElementsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsBoxAccessElementsResponse }
      */
     public GetAcsBoxAccessElementsResponse createGetAcsBoxAccessElementsResponse() {
         return new GetAcsBoxAccessElementsResponse();
@@ -1555,8 +1405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsBoxAccessLevelsSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link GetAcsBoxAccessLevelsSlimInfo }
      */
     public GetAcsBoxAccessLevelsSlimInfo createGetAcsBoxAccessLevelsSlimInfo() {
         return new GetAcsBoxAccessLevelsSlimInfo();
@@ -1565,8 +1413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsBoxAccessLevelsSlimInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsBoxAccessLevelsSlimInfoResponse }
      */
     public GetAcsBoxAccessLevelsSlimInfoResponse createGetAcsBoxAccessLevelsSlimInfoResponse() {
         return new GetAcsBoxAccessLevelsSlimInfoResponse();
@@ -1575,8 +1421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessLevelsSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessLevelsSlimInfo }
      */
     public GetAcsAccessLevelsSlimInfo createGetAcsAccessLevelsSlimInfo() {
         return new GetAcsAccessLevelsSlimInfo();
@@ -1585,8 +1429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessLevelsSlimInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessLevelsSlimInfoResponse }
      */
     public GetAcsAccessLevelsSlimInfoResponse createGetAcsAccessLevelsSlimInfoResponse() {
         return new GetAcsAccessLevelsSlimInfoResponse();
@@ -1595,8 +1437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessLevelsSlimInfo2 }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessLevelsSlimInfo2 }
      */
     public GetAcsAccessLevelsSlimInfo2 createGetAcsAccessLevelsSlimInfo2() {
         return new GetAcsAccessLevelsSlimInfo2();
@@ -1605,8 +1445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessLevelsSlimInfo2Response }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessLevelsSlimInfo2Response }
      */
     public GetAcsAccessLevelsSlimInfo2Response createGetAcsAccessLevelsSlimInfo2Response() {
         return new GetAcsAccessLevelsSlimInfo2Response();
@@ -1615,8 +1453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAlcoGroupsSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link GetAlcoGroupsSlimInfo }
      */
     public GetAlcoGroupsSlimInfo createGetAlcoGroupsSlimInfo() {
         return new GetAlcoGroupsSlimInfo();
@@ -1625,8 +1461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAlcoGroupsSlimInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAlcoGroupsSlimInfoResponse }
      */
     public GetAlcoGroupsSlimInfoResponse createGetAlcoGroupsSlimInfoResponse() {
         return new GetAlcoGroupsSlimInfoResponse();
@@ -1635,8 +1469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePostionsForAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePostionsForAlcoGroup }
      */
     public GetEmployeePostionsForAlcoGroup createGetEmployeePostionsForAlcoGroup() {
         return new GetEmployeePostionsForAlcoGroup();
@@ -1645,8 +1477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePostionsForAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePostionsForAlcoGroupResponse }
      */
     public GetEmployeePostionsForAlcoGroupResponse createGetEmployeePostionsForAlcoGroupResponse() {
         return new GetEmployeePostionsForAlcoGroupResponse();
@@ -1655,8 +1485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPositionCodes }
      * 
-     * @return
-     *     the new instance of {@link GetPositionCodes }
      */
     public GetPositionCodes createGetPositionCodes() {
         return new GetPositionCodes();
@@ -1665,8 +1493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPositionCodesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPositionCodesResponse }
      */
     public GetPositionCodesResponse createGetPositionCodesResponse() {
         return new GetPositionCodesResponse();
@@ -1675,8 +1501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsForAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsForAlcoGroup }
      */
     public GetEmployeeGroupsForAlcoGroup createGetEmployeeGroupsForAlcoGroup() {
         return new GetEmployeeGroupsForAlcoGroup();
@@ -1685,8 +1509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsForAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsForAlcoGroupResponse }
      */
     public GetEmployeeGroupsForAlcoGroupResponse createGetEmployeeGroupsForAlcoGroupResponse() {
         return new GetEmployeeGroupsForAlcoGroupResponse();
@@ -1695,8 +1517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessPointDrivers }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessPointDrivers }
      */
     public GetAcsAccessPointDrivers createGetAcsAccessPointDrivers() {
         return new GetAcsAccessPointDrivers();
@@ -1705,8 +1525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessPointDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessPointDriversResponse }
      */
     public GetAcsAccessPointDriversResponse createGetAcsAccessPointDriversResponse() {
         return new GetAcsAccessPointDriversResponse();
@@ -1715,8 +1533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessPoints }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessPoints }
      */
     public GetAcsAccessPoints createGetAcsAccessPoints() {
         return new GetAcsAccessPoints();
@@ -1725,8 +1541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsAccessPointsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsAccessPointsResponse }
      */
     public GetAcsAccessPointsResponse createGetAcsAccessPointsResponse() {
         return new GetAcsAccessPointsResponse();
@@ -1735,8 +1549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GeFilteredtDrivers }
      * 
-     * @return
-     *     the new instance of {@link GeFilteredtDrivers }
      */
     public GeFilteredtDrivers createGeFilteredtDrivers() {
         return new GeFilteredtDrivers();
@@ -1745,8 +1557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GeFilteredtDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link GeFilteredtDriversResponse }
      */
     public GeFilteredtDriversResponse createGeFilteredtDriversResponse() {
         return new GeFilteredtDriversResponse();
@@ -1755,8 +1565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByDriverID }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByDriverID }
      */
     public GetWorkZonesByDriverID createGetWorkZonesByDriverID() {
         return new GetWorkZonesByDriverID();
@@ -1765,8 +1573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByDriverIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByDriverIDResponse }
      */
     public GetWorkZonesByDriverIDResponse createGetWorkZonesByDriverIDResponse() {
         return new GetWorkZonesByDriverIDResponse();
@@ -1775,8 +1581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByEmployeeID }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByEmployeeID }
      */
     public GetWorkZonesByEmployeeID createGetWorkZonesByEmployeeID() {
         return new GetWorkZonesByEmployeeID();
@@ -1785,8 +1589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByEmployeeIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByEmployeeIDResponse }
      */
     public GetWorkZonesByEmployeeIDResponse createGetWorkZonesByEmployeeIDResponse() {
         return new GetWorkZonesByEmployeeIDResponse();
@@ -1795,8 +1597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByEmployeeIDIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByEmployeeIDIncludeRemovedEmployees }
      */
     public GetWorkZonesByEmployeeIDIncludeRemovedEmployees createGetWorkZonesByEmployeeIDIncludeRemovedEmployees() {
         return new GetWorkZonesByEmployeeIDIncludeRemovedEmployees();
@@ -1805,8 +1605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse }
      */
     public GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse createGetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse() {
         return new GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse();
@@ -1815,8 +1613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByEmployeeGroupID }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByEmployeeGroupID }
      */
     public GetWorkZonesByEmployeeGroupID createGetWorkZonesByEmployeeGroupID() {
         return new GetWorkZonesByEmployeeGroupID();
@@ -1825,8 +1621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZonesByEmployeeGroupIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZonesByEmployeeGroupIDResponse }
      */
     public GetWorkZonesByEmployeeGroupIDResponse createGetWorkZonesByEmployeeGroupIDResponse() {
         return new GetWorkZonesByEmployeeGroupIDResponse();
@@ -1835,8 +1629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesByEmployeeID }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesByEmployeeID }
      */
     public GetWorkSchedulesByEmployeeID createGetWorkSchedulesByEmployeeID() {
         return new GetWorkSchedulesByEmployeeID();
@@ -1845,8 +1637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesByEmployeeIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesByEmployeeIDResponse }
      */
     public GetWorkSchedulesByEmployeeIDResponse createGetWorkSchedulesByEmployeeIDResponse() {
         return new GetWorkSchedulesByEmployeeIDResponse();
@@ -1855,8 +1645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesByEmployeeIDIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesByEmployeeIDIncludeRemovedEmployees }
      */
     public GetWorkSchedulesByEmployeeIDIncludeRemovedEmployees createGetWorkSchedulesByEmployeeIDIncludeRemovedEmployees() {
         return new GetWorkSchedulesByEmployeeIDIncludeRemovedEmployees();
@@ -1865,8 +1653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse }
      */
     public GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse createGetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse() {
         return new GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse();
@@ -1875,8 +1661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesByEmployeeGroupID }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesByEmployeeGroupID }
      */
     public GetWorkSchedulesByEmployeeGroupID createGetWorkSchedulesByEmployeeGroupID() {
         return new GetWorkSchedulesByEmployeeGroupID();
@@ -1885,8 +1669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkSchedulesByEmployeeGroupIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkSchedulesByEmployeeGroupIDResponse }
      */
     public GetWorkSchedulesByEmployeeGroupIDResponse createGetWorkSchedulesByEmployeeGroupIDResponse() {
         return new GetWorkSchedulesByEmployeeGroupIDResponse();
@@ -1895,8 +1677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeForAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeForAlcoGroup }
      */
     public GetEmployeeForAlcoGroup createGetEmployeeForAlcoGroup() {
         return new GetEmployeeForAlcoGroup();
@@ -1905,8 +1685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeForAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeForAlcoGroupResponse }
      */
     public GetEmployeeForAlcoGroupResponse createGetEmployeeForAlcoGroupResponse() {
         return new GetEmployeeForAlcoGroupResponse();
@@ -1915,8 +1693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePageForAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePageForAlcoGroup }
      */
     public GetEmployeePageForAlcoGroup createGetEmployeePageForAlcoGroup() {
         return new GetEmployeePageForAlcoGroup();
@@ -1925,8 +1701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePageForAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePageForAlcoGroupResponse }
      */
     public GetEmployeePageForAlcoGroupResponse createGetEmployeePageForAlcoGroupResponse() {
         return new GetEmployeePageForAlcoGroupResponse();
@@ -1935,8 +1709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkplaces }
      * 
-     * @return
-     *     the new instance of {@link GetWorkplaces }
      */
     public GetWorkplaces createGetWorkplaces() {
         return new GetWorkplaces();
@@ -1945,8 +1717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkplacesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkplacesResponse }
      */
     public GetWorkplacesResponse createGetWorkplacesResponse() {
         return new GetWorkplacesResponse();
@@ -1955,8 +1725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSIIDKs }
      * 
-     * @return
-     *     the new instance of {@link GetISSIIDKs }
      */
     public GetISSIIDKs createGetISSIIDKs() {
         return new GetISSIIDKs();
@@ -1965,8 +1733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSIIDKsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetISSIIDKsResponse }
      */
     public GetISSIIDKsResponse createGetISSIIDKsResponse() {
         return new GetISSIIDKsResponse();
@@ -1975,8 +1741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSRecognition }
      * 
-     * @return
-     *     the new instance of {@link GetISSRecognition }
      */
     public GetISSRecognition createGetISSRecognition() {
         return new GetISSRecognition();
@@ -1985,8 +1749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSRecognitionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetISSRecognitionResponse }
      */
     public GetISSRecognitionResponse createGetISSRecognitionResponse() {
         return new GetISSRecognitionResponse();
@@ -1995,8 +1757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSDrivers }
      * 
-     * @return
-     *     the new instance of {@link GetISSDrivers }
      */
     public GetISSDrivers createGetISSDrivers() {
         return new GetISSDrivers();
@@ -2005,8 +1765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link GetISSDriversResponse }
      */
     public GetISSDriversResponse createGetISSDriversResponse() {
         return new GetISSDriversResponse();
@@ -2015,8 +1773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSIIDKSlaves }
      * 
-     * @return
-     *     the new instance of {@link GetISSIIDKSlaves }
      */
     public GetISSIIDKSlaves createGetISSIIDKSlaves() {
         return new GetISSIIDKSlaves();
@@ -2025,8 +1781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSIIDKSlavesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetISSIIDKSlavesResponse }
      */
     public GetISSIIDKSlavesResponse createGetISSIIDKSlavesResponse() {
         return new GetISSIIDKSlavesResponse();
@@ -2035,8 +1789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSDriverEventsPlayback }
      * 
-     * @return
-     *     the new instance of {@link GetISSDriverEventsPlayback }
      */
     public GetISSDriverEventsPlayback createGetISSDriverEventsPlayback() {
         return new GetISSDriverEventsPlayback();
@@ -2045,8 +1797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetISSDriverEventsPlaybackResponse }
      * 
-     * @return
-     *     the new instance of {@link GetISSDriverEventsPlaybackResponse }
      */
     public GetISSDriverEventsPlaybackResponse createGetISSDriverEventsPlaybackResponse() {
         return new GetISSDriverEventsPlaybackResponse();
@@ -2055,8 +1805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllMaps }
      * 
-     * @return
-     *     the new instance of {@link GetAllMaps }
      */
     public GetAllMaps createGetAllMaps() {
         return new GetAllMaps();
@@ -2065,8 +1813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllMapsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAllMapsResponse }
      */
     public GetAllMapsResponse createGetAllMapsResponse() {
         return new GetAllMapsResponse();
@@ -2075,8 +1821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMapById }
      * 
-     * @return
-     *     the new instance of {@link GetMapById }
      */
     public GetMapById createGetMapById() {
         return new GetMapById();
@@ -2085,8 +1829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMapByIdResponse }
      * 
-     * @return
-     *     the new instance of {@link GetMapByIdResponse }
      */
     public GetMapByIdResponse createGetMapByIdResponse() {
         return new GetMapByIdResponse();
@@ -2095,8 +1837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMapImage }
      * 
-     * @return
-     *     the new instance of {@link GetMapImage }
      */
     public GetMapImage createGetMapImage() {
         return new GetMapImage();
@@ -2105,8 +1845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMapImageResponse }
      * 
-     * @return
-     *     the new instance of {@link GetMapImageResponse }
      */
     public GetMapImageResponse createGetMapImageResponse() {
         return new GetMapImageResponse();
@@ -2115,8 +1853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsConfiguratorSettingsByWorkplaceModule }
      * 
-     * @return
-     *     the new instance of {@link GetAcsConfiguratorSettingsByWorkplaceModule }
      */
     public GetAcsConfiguratorSettingsByWorkplaceModule createGetAcsConfiguratorSettingsByWorkplaceModule() {
         return new GetAcsConfiguratorSettingsByWorkplaceModule();
@@ -2125,8 +1861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsConfiguratorSettingsByWorkplaceModuleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsConfiguratorSettingsByWorkplaceModuleResponse }
      */
     public GetAcsConfiguratorSettingsByWorkplaceModuleResponse createGetAcsConfiguratorSettingsByWorkplaceModuleResponse() {
         return new GetAcsConfiguratorSettingsByWorkplaceModuleResponse();
@@ -2135,8 +1869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVisitorsScoreboardSettingsByWorkplaceModuleId }
      * 
-     * @return
-     *     the new instance of {@link GetVisitorsScoreboardSettingsByWorkplaceModuleId }
      */
     public GetVisitorsScoreboardSettingsByWorkplaceModuleId createGetVisitorsScoreboardSettingsByWorkplaceModuleId() {
         return new GetVisitorsScoreboardSettingsByWorkplaceModuleId();
@@ -2145,8 +1877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse }
      * 
-     * @return
-     *     the new instance of {@link GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse }
      */
     public GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse createGetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse() {
         return new GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse();
@@ -2155,8 +1885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetVisitorsScoreboardSettingsByWorkplaceModuleId }
      * 
-     * @return
-     *     the new instance of {@link SetVisitorsScoreboardSettingsByWorkplaceModuleId }
      */
     public SetVisitorsScoreboardSettingsByWorkplaceModuleId createSetVisitorsScoreboardSettingsByWorkplaceModuleId() {
         return new SetVisitorsScoreboardSettingsByWorkplaceModuleId();
@@ -2165,8 +1893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse }
      * 
-     * @return
-     *     the new instance of {@link SetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse }
      */
     public SetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse createSetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse() {
         return new SetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse();
@@ -2175,8 +1901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZoneVisitorsCount }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZoneVisitorsCount }
      */
     public GetWorkZoneVisitorsCount createGetWorkZoneVisitorsCount() {
         return new GetWorkZoneVisitorsCount();
@@ -2185,8 +1909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetWorkZoneVisitorsCountResponse }
      * 
-     * @return
-     *     the new instance of {@link GetWorkZoneVisitorsCountResponse }
      */
     public GetWorkZoneVisitorsCountResponse createGetWorkZoneVisitorsCountResponse() {
         return new GetWorkZoneVisitorsCountResponse();
@@ -2195,8 +1917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUidsKeys }
      * 
-     * @return
-     *     the new instance of {@link GetUidsKeys }
      */
     public GetUidsKeys createGetUidsKeys() {
         return new GetUidsKeys();
@@ -2205,8 +1925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUidsKeysResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUidsKeysResponse }
      */
     public GetUidsKeysResponse createGetUidsKeysResponse() {
         return new GetUidsKeysResponse();
@@ -2215,8 +1933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeyByUid }
      * 
-     * @return
-     *     the new instance of {@link GetKeyByUid }
      */
     public GetKeyByUid createGetKeyByUid() {
         return new GetKeyByUid();
@@ -2225,8 +1941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeyByUidResponse }
      * 
-     * @return
-     *     the new instance of {@link GetKeyByUidResponse }
      */
     public GetKeyByUidResponse createGetKeyByUidResponse() {
         return new GetKeyByUidResponse();
@@ -2235,8 +1949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GenerateKey }
      * 
-     * @return
-     *     the new instance of {@link GenerateKey }
      */
     public GenerateKey createGenerateKey() {
         return new GenerateKey();
@@ -2245,8 +1957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GenerateKeyResponse }
      * 
-     * @return
-     *     the new instance of {@link GenerateKeyResponse }
      */
     public GenerateKeyResponse createGenerateKeyResponse() {
         return new GenerateKeyResponse();
@@ -2255,8 +1965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GenerateEPC }
      * 
-     * @return
-     *     the new instance of {@link GenerateEPC }
      */
     public GenerateEPC createGenerateEPC() {
         return new GenerateEPC();
@@ -2265,8 +1973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GenerateEPCResponse }
      * 
-     * @return
-     *     the new instance of {@link GenerateEPCResponse }
      */
     public GenerateEPCResponse createGenerateEPCResponse() {
         return new GenerateEPCResponse();
@@ -2275,8 +1981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMifareProfiles }
      * 
-     * @return
-     *     the new instance of {@link GetMifareProfiles }
      */
     public GetMifareProfiles createGetMifareProfiles() {
         return new GetMifareProfiles();
@@ -2285,8 +1989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMifareProfilesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetMifareProfilesResponse }
      */
     public GetMifareProfilesResponse createGetMifareProfilesResponse() {
         return new GetMifareProfilesResponse();
@@ -2295,8 +1997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMifareProfilesFullInfo }
      * 
-     * @return
-     *     the new instance of {@link GetMifareProfilesFullInfo }
      */
     public GetMifareProfilesFullInfo createGetMifareProfilesFullInfo() {
         return new GetMifareProfilesFullInfo();
@@ -2305,8 +2005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetMifareProfilesFullInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetMifareProfilesFullInfoResponse }
      */
     public GetMifareProfilesFullInfoResponse createGetMifareProfilesFullInfoResponse() {
         return new GetMifareProfilesFullInfoResponse();
@@ -2315,8 +2013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenLayoutForWorkplaceModule }
      * 
-     * @return
-     *     the new instance of {@link GetScreenLayoutForWorkplaceModule }
      */
     public GetScreenLayoutForWorkplaceModule createGetScreenLayoutForWorkplaceModule() {
         return new GetScreenLayoutForWorkplaceModule();
@@ -2325,8 +2021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenLayoutForWorkplaceModuleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetScreenLayoutForWorkplaceModuleResponse }
      */
     public GetScreenLayoutForWorkplaceModuleResponse createGetScreenLayoutForWorkplaceModuleResponse() {
         return new GetScreenLayoutForWorkplaceModuleResponse();
@@ -2335,8 +2029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenCellPhotoIdentificationContent }
      * 
-     * @return
-     *     the new instance of {@link GetScreenCellPhotoIdentificationContent }
      */
     public GetScreenCellPhotoIdentificationContent createGetScreenCellPhotoIdentificationContent() {
         return new GetScreenCellPhotoIdentificationContent();
@@ -2345,8 +2037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenCellPhotoIdentificationContentResponse }
      * 
-     * @return
-     *     the new instance of {@link GetScreenCellPhotoIdentificationContentResponse }
      */
     public GetScreenCellPhotoIdentificationContentResponse createGetScreenCellPhotoIdentificationContentResponse() {
         return new GetScreenCellPhotoIdentificationContentResponse();
@@ -2355,8 +2045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenCellCameraContent }
      * 
-     * @return
-     *     the new instance of {@link GetScreenCellCameraContent }
      */
     public GetScreenCellCameraContent createGetScreenCellCameraContent() {
         return new GetScreenCellCameraContent();
@@ -2365,8 +2053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenCellCameraContentResponse }
      * 
-     * @return
-     *     the new instance of {@link GetScreenCellCameraContentResponse }
      */
     public GetScreenCellCameraContentResponse createGetScreenCellCameraContentResponse() {
         return new GetScreenCellCameraContentResponse();
@@ -2375,8 +2061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenCellPassInfoContent }
      * 
-     * @return
-     *     the new instance of {@link GetScreenCellPassInfoContent }
      */
     public GetScreenCellPassInfoContent createGetScreenCellPassInfoContent() {
         return new GetScreenCellPassInfoContent();
@@ -2385,8 +2069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetScreenCellPassInfoContentResponse }
      * 
-     * @return
-     *     the new instance of {@link GetScreenCellPassInfoContentResponse }
      */
     public GetScreenCellPassInfoContentResponse createGetScreenCellPassInfoContentResponse() {
         return new GetScreenCellPassInfoContentResponse();
@@ -2395,8 +2077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIvideonCameraDrivers }
      * 
-     * @return
-     *     the new instance of {@link GetIvideonCameraDrivers }
      */
     public GetIvideonCameraDrivers createGetIvideonCameraDrivers() {
         return new GetIvideonCameraDrivers();
@@ -2405,8 +2085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIvideonCameraDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIvideonCameraDriversResponse }
      */
     public GetIvideonCameraDriversResponse createGetIvideonCameraDriversResponse() {
         return new GetIvideonCameraDriversResponse();
@@ -2415,8 +2093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhotoidentificationPersonalData }
      * 
-     * @return
-     *     the new instance of {@link GetPhotoidentificationPersonalData }
      */
     public GetPhotoidentificationPersonalData createGetPhotoidentificationPersonalData() {
         return new GetPhotoidentificationPersonalData();
@@ -2425,8 +2101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhotoidentificationPersonalDataResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPhotoidentificationPersonalDataResponse }
      */
     public GetPhotoidentificationPersonalDataResponse createGetPhotoidentificationPersonalDataResponse() {
         return new GetPhotoidentificationPersonalDataResponse();
@@ -2435,8 +2109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmailAddresses }
      * 
-     * @return
-     *     the new instance of {@link GetEmailAddresses }
      */
     public GetEmailAddresses createGetEmailAddresses() {
         return new GetEmailAddresses();
@@ -2445,8 +2117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmailAddressesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmailAddressesResponse }
      */
     public GetEmailAddressesResponse createGetEmailAddressesResponse() {
         return new GetEmailAddressesResponse();
@@ -2455,8 +2125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmailAddressesIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetEmailAddressesIncludeRemovedEmployees }
      */
     public GetEmailAddressesIncludeRemovedEmployees createGetEmailAddressesIncludeRemovedEmployees() {
         return new GetEmailAddressesIncludeRemovedEmployees();
@@ -2465,8 +2133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmailAddressesIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmailAddressesIncludeRemovedEmployeesResponse }
      */
     public GetEmailAddressesIncludeRemovedEmployeesResponse createGetEmailAddressesIncludeRemovedEmployeesResponse() {
         return new GetEmailAddressesIncludeRemovedEmployeesResponse();
@@ -2475,8 +2141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhoneNumbers }
      * 
-     * @return
-     *     the new instance of {@link GetPhoneNumbers }
      */
     public GetPhoneNumbers createGetPhoneNumbers() {
         return new GetPhoneNumbers();
@@ -2485,8 +2149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhoneNumbersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPhoneNumbersResponse }
      */
     public GetPhoneNumbersResponse createGetPhoneNumbersResponse() {
         return new GetPhoneNumbersResponse();
@@ -2495,8 +2157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhoneNumbersIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetPhoneNumbersIncludeRemovedEmployees }
      */
     public GetPhoneNumbersIncludeRemovedEmployees createGetPhoneNumbersIncludeRemovedEmployees() {
         return new GetPhoneNumbersIncludeRemovedEmployees();
@@ -2505,8 +2165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhoneNumbersIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPhoneNumbersIncludeRemovedEmployeesResponse }
      */
     public GetPhoneNumbersIncludeRemovedEmployeesResponse createGetPhoneNumbersIncludeRemovedEmployeesResponse() {
         return new GetPhoneNumbersIncludeRemovedEmployeesResponse();
@@ -2515,8 +2173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeSchedules }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeSchedules }
      */
     public GetEmployeeSchedules createGetEmployeeSchedules() {
         return new GetEmployeeSchedules();
@@ -2525,8 +2181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeSchedulesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeSchedulesResponse }
      */
     public GetEmployeeSchedulesResponse createGetEmployeeSchedulesResponse() {
         return new GetEmployeeSchedulesResponse();
@@ -2535,8 +2189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeSchedulesIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeSchedulesIncludeRemovedEmployees }
      */
     public GetEmployeeSchedulesIncludeRemovedEmployees createGetEmployeeSchedulesIncludeRemovedEmployees() {
         return new GetEmployeeSchedulesIncludeRemovedEmployees();
@@ -2545,8 +2197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeSchedulesIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeSchedulesIncludeRemovedEmployeesResponse }
      */
     public GetEmployeeSchedulesIncludeRemovedEmployeesResponse createGetEmployeeSchedulesIncludeRemovedEmployeesResponse() {
         return new GetEmployeeSchedulesIncludeRemovedEmployeesResponse();
@@ -2555,8 +2205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmailDistributionAddresses }
      * 
-     * @return
-     *     the new instance of {@link GetEmailDistributionAddresses }
      */
     public GetEmailDistributionAddresses createGetEmailDistributionAddresses() {
         return new GetEmailDistributionAddresses();
@@ -2565,8 +2213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmailDistributionAddressesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmailDistributionAddressesResponse }
      */
     public GetEmailDistributionAddressesResponse createGetEmailDistributionAddressesResponse() {
         return new GetEmailDistributionAddressesResponse();
@@ -2575,8 +2221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendEmail }
      * 
-     * @return
-     *     the new instance of {@link SendEmail }
      */
     public SendEmail createSendEmail() {
         return new SendEmail();
@@ -2585,8 +2229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendEmailResponse }
      * 
-     * @return
-     *     the new instance of {@link SendEmailResponse }
      */
     public SendEmailResponse createSendEmailResponse() {
         return new SendEmailResponse();
@@ -2595,8 +2237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFields }
      * 
-     * @return
-     *     the new instance of {@link GetFields }
      */
     public GetFields createGetFields() {
         return new GetFields();
@@ -2605,8 +2245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFieldsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFieldsResponse }
      */
     public GetFieldsResponse createGetFieldsResponse() {
         return new GetFieldsResponse();
@@ -2615,8 +2253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFieldsValue }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFieldsValue }
      */
     public GetAdditionalFieldsValue createGetAdditionalFieldsValue() {
         return new GetAdditionalFieldsValue();
@@ -2625,8 +2261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFieldsValueResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFieldsValueResponse }
      */
     public GetAdditionalFieldsValueResponse createGetAdditionalFieldsValueResponse() {
         return new GetAdditionalFieldsValueResponse();
@@ -2635,8 +2269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFields }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFields }
      */
     public GetAdditionalFields createGetAdditionalFields() {
         return new GetAdditionalFields();
@@ -2645,8 +2277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFieldsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFieldsResponse }
      */
     public GetAdditionalFieldsResponse createGetAdditionalFieldsResponse() {
         return new GetAdditionalFieldsResponse();
@@ -2655,8 +2285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFieldsValueForOwners }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFieldsValueForOwners }
      */
     public GetAdditionalFieldsValueForOwners createGetAdditionalFieldsValueForOwners() {
         return new GetAdditionalFieldsValueForOwners();
@@ -2665,8 +2293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFieldsValueForOwnersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFieldsValueForOwnersResponse }
      */
     public GetAdditionalFieldsValueForOwnersResponse createGetAdditionalFieldsValueForOwnersResponse() {
         return new GetAdditionalFieldsValueForOwnersResponse();
@@ -2675,8 +2301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFieldsForOwners }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFieldsForOwners }
      */
     public GetAdditionalFieldsForOwners createGetAdditionalFieldsForOwners() {
         return new GetAdditionalFieldsForOwners();
@@ -2685,8 +2309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAdditionalFieldsForOwnersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAdditionalFieldsForOwnersResponse }
      */
     public GetAdditionalFieldsForOwnersResponse createGetAdditionalFieldsForOwnersResponse() {
         return new GetAdditionalFieldsForOwnersResponse();
@@ -2695,8 +2317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhotoOrders }
      * 
-     * @return
-     *     the new instance of {@link GetPhotoOrders }
      */
     public GetPhotoOrders createGetPhotoOrders() {
         return new GetPhotoOrders();
@@ -2705,8 +2325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPhotoOrdersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPhotoOrdersResponse }
      */
     public GetPhotoOrdersResponse createGetPhotoOrdersResponse() {
         return new GetPhotoOrdersResponse();
@@ -2715,8 +2333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByMifareProfileID }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByMifareProfileID }
      */
     public GetTagsByMifareProfileID createGetTagsByMifareProfileID() {
         return new GetTagsByMifareProfileID();
@@ -2725,8 +2341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByMifareProfileIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByMifareProfileIDResponse }
      */
     public GetTagsByMifareProfileIDResponse createGetTagsByMifareProfileIDResponse() {
         return new GetTagsByMifareProfileIDResponse();
@@ -2735,8 +2349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByReportID }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByReportID }
      */
     public GetTagsByReportID createGetTagsByReportID() {
         return new GetTagsByReportID();
@@ -2745,8 +2357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByReportIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByReportIDResponse }
      */
     public GetTagsByReportIDResponse createGetTagsByReportIDResponse() {
         return new GetTagsByReportIDResponse();
@@ -2755,8 +2365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByEmployeeGroupID }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByEmployeeGroupID }
      */
     public GetTagsByEmployeeGroupID createGetTagsByEmployeeGroupID() {
         return new GetTagsByEmployeeGroupID();
@@ -2765,8 +2373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByEmployeeGroupIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByEmployeeGroupIDResponse }
      */
     public GetTagsByEmployeeGroupIDResponse createGetTagsByEmployeeGroupIDResponse() {
         return new GetTagsByEmployeeGroupIDResponse();
@@ -2775,8 +2381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByAccessLevelID }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByAccessLevelID }
      */
     public GetTagsByAccessLevelID createGetTagsByAccessLevelID() {
         return new GetTagsByAccessLevelID();
@@ -2785,8 +2389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByAccessLevelIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByAccessLevelIDResponse }
      */
     public GetTagsByAccessLevelIDResponse createGetTagsByAccessLevelIDResponse() {
         return new GetTagsByAccessLevelIDResponse();
@@ -2795,8 +2397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByBoxAccessLevelID }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByBoxAccessLevelID }
      */
     public GetTagsByBoxAccessLevelID createGetTagsByBoxAccessLevelID() {
         return new GetTagsByBoxAccessLevelID();
@@ -2805,8 +2405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByBoxAccessLevelIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByBoxAccessLevelIDResponse }
      */
     public GetTagsByBoxAccessLevelIDResponse createGetTagsByBoxAccessLevelIDResponse() {
         return new GetTagsByBoxAccessLevelIDResponse();
@@ -2815,8 +2413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByResourceID }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByResourceID }
      */
     public GetTagsByResourceID createGetTagsByResourceID() {
         return new GetTagsByResourceID();
@@ -2825,8 +2421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByResourceIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByResourceIDResponse }
      */
     public GetTagsByResourceIDResponse createGetTagsByResourceIDResponse() {
         return new GetTagsByResourceIDResponse();
@@ -2835,8 +2429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilterTagsByResourceID }
      * 
-     * @return
-     *     the new instance of {@link GetFilterTagsByResourceID }
      */
     public GetFilterTagsByResourceID createGetFilterTagsByResourceID() {
         return new GetFilterTagsByResourceID();
@@ -2845,8 +2437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilterTagsByResourceIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFilterTagsByResourceIDResponse }
      */
     public GetFilterTagsByResourceIDResponse createGetFilterTagsByResourceIDResponse() {
         return new GetFilterTagsByResourceIDResponse();
@@ -2855,8 +2445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilterTagsForResources }
      * 
-     * @return
-     *     the new instance of {@link GetFilterTagsForResources }
      */
     public GetFilterTagsForResources createGetFilterTagsForResources() {
         return new GetFilterTagsForResources();
@@ -2865,8 +2453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilterTagsForResourcesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFilterTagsForResourcesResponse }
      */
     public GetFilterTagsForResourcesResponse createGetFilterTagsForResourcesResponse() {
         return new GetFilterTagsForResourcesResponse();
@@ -2875,8 +2461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTags }
      * 
-     * @return
-     *     the new instance of {@link GetTags }
      */
     public GetTags createGetTags() {
         return new GetTags();
@@ -2885,8 +2469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsResponse }
      */
     public GetTagsResponse createGetTagsResponse() {
         return new GetTagsResponse();
@@ -2895,8 +2477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilterTags }
      * 
-     * @return
-     *     the new instance of {@link GetFilterTags }
      */
     public GetFilterTags createGetFilterTags() {
         return new GetFilterTags();
@@ -2905,8 +2485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilterTagsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFilterTagsResponse }
      */
     public GetFilterTagsResponse createGetFilterTagsResponse() {
         return new GetFilterTagsResponse();
@@ -2915,8 +2493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFolders }
      * 
-     * @return
-     *     the new instance of {@link GetFolders }
      */
     public GetFolders createGetFolders() {
         return new GetFolders();
@@ -2925,8 +2501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFoldersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFoldersResponse }
      */
     public GetFoldersResponse createGetFoldersResponse() {
         return new GetFoldersResponse();
@@ -2935,8 +2509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFoldersWithAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link GetFoldersWithAccessLevel }
      */
     public GetFoldersWithAccessLevel createGetFoldersWithAccessLevel() {
         return new GetFoldersWithAccessLevel();
@@ -2945,8 +2517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFoldersWithAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFoldersWithAccessLevelResponse }
      */
     public GetFoldersWithAccessLevelResponse createGetFoldersWithAccessLevelResponse() {
         return new GetFoldersWithAccessLevelResponse();
@@ -2955,8 +2525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFolderForAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link GetFolderForAccessLevel }
      */
     public GetFolderForAccessLevel createGetFolderForAccessLevel() {
         return new GetFolderForAccessLevel();
@@ -2965,8 +2533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFolderForAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFolderForAccessLevelResponse }
      */
     public GetFolderForAccessLevelResponse createGetFolderForAccessLevelResponse() {
         return new GetFolderForAccessLevelResponse();
@@ -2975,8 +2541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFolders }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFolders }
      */
     public GetFavoriteFolders createGetFavoriteFolders() {
         return new GetFavoriteFolders();
@@ -2985,8 +2549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFoldersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFoldersResponse }
      */
     public GetFavoriteFoldersResponse createGetFavoriteFoldersResponse() {
         return new GetFavoriteFoldersResponse();
@@ -2995,8 +2557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFoldersByWorkplace }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFoldersByWorkplace }
      */
     public GetFavoriteFoldersByWorkplace createGetFavoriteFoldersByWorkplace() {
         return new GetFavoriteFoldersByWorkplace();
@@ -3005,8 +2565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFoldersByWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFoldersByWorkplaceResponse }
      */
     public GetFavoriteFoldersByWorkplaceResponse createGetFavoriteFoldersByWorkplaceResponse() {
         return new GetFavoriteFoldersByWorkplaceResponse();
@@ -3015,8 +2573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFoldersWithEmployeeGroups }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFoldersWithEmployeeGroups }
      */
     public GetFavoriteFoldersWithEmployeeGroups createGetFavoriteFoldersWithEmployeeGroups() {
         return new GetFavoriteFoldersWithEmployeeGroups();
@@ -3025,8 +2581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFoldersWithEmployeeGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFoldersWithEmployeeGroupsResponse }
      */
     public GetFavoriteFoldersWithEmployeeGroupsResponse createGetFavoriteFoldersWithEmployeeGroupsResponse() {
         return new GetFavoriteFoldersWithEmployeeGroupsResponse();
@@ -3035,8 +2589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFoldersWithEmployeeGroupsByWorkplace }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFoldersWithEmployeeGroupsByWorkplace }
      */
     public GetFavoriteFoldersWithEmployeeGroupsByWorkplace createGetFavoriteFoldersWithEmployeeGroupsByWorkplace() {
         return new GetFavoriteFoldersWithEmployeeGroupsByWorkplace();
@@ -3045,8 +2597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse }
      */
     public GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse createGetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse() {
         return new GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse();
@@ -3055,8 +2605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFolderForEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFolderForEmployeeGroup }
      */
     public GetFavoriteFolderForEmployeeGroup createGetFavoriteFolderForEmployeeGroup() {
         return new GetFavoriteFolderForEmployeeGroup();
@@ -3065,8 +2613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFolderForEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFolderForEmployeeGroupResponse }
      */
     public GetFavoriteFolderForEmployeeGroupResponse createGetFavoriteFolderForEmployeeGroupResponse() {
         return new GetFavoriteFolderForEmployeeGroupResponse();
@@ -3075,8 +2621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFolderForEmployeeGroupByWorkplace }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFolderForEmployeeGroupByWorkplace }
      */
     public GetFavoriteFolderForEmployeeGroupByWorkplace createGetFavoriteFolderForEmployeeGroupByWorkplace() {
         return new GetFavoriteFolderForEmployeeGroupByWorkplace();
@@ -3085,8 +2629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFavoriteFolderForEmployeeGroupByWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFavoriteFolderForEmployeeGroupByWorkplaceResponse }
      */
     public GetFavoriteFolderForEmployeeGroupByWorkplaceResponse createGetFavoriteFolderForEmployeeGroupByWorkplaceResponse() {
         return new GetFavoriteFolderForEmployeeGroupByWorkplaceResponse();
@@ -3095,8 +2637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserPasses }
      * 
-     * @return
-     *     the new instance of {@link GetUserPasses }
      */
     public GetUserPasses createGetUserPasses() {
         return new GetUserPasses();
@@ -3105,8 +2645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserPassesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUserPassesResponse }
      */
     public GetUserPassesResponse createGetUserPassesResponse() {
         return new GetUserPassesResponse();
@@ -3115,8 +2653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadUserPass }
      * 
-     * @return
-     *     the new instance of {@link LoadUserPass }
      */
     public LoadUserPass createLoadUserPass() {
         return new LoadUserPass();
@@ -3125,8 +2661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadUserPassResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadUserPassResponse }
      */
     public LoadUserPassResponse createLoadUserPassResponse() {
         return new LoadUserPassResponse();
@@ -3135,8 +2669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactions }
      * 
-     * @return
-     *     the new instance of {@link GetReactions }
      */
     public GetReactions createGetReactions() {
         return new GetReactions();
@@ -3145,8 +2677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReactionsResponse }
      */
     public GetReactionsResponse createGetReactionsResponse() {
         return new GetReactionsResponse();
@@ -3155,8 +2685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionFullInfo }
      * 
-     * @return
-     *     the new instance of {@link GetReactionFullInfo }
      */
     public GetReactionFullInfo createGetReactionFullInfo() {
         return new GetReactionFullInfo();
@@ -3165,8 +2693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionFullInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReactionFullInfoResponse }
      */
     public GetReactionFullInfoResponse createGetReactionFullInfoResponse() {
         return new GetReactionFullInfoResponse();
@@ -3175,8 +2701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesOfReactionAction }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesOfReactionAction }
      */
     public GetEmployeesOfReactionAction createGetEmployeesOfReactionAction() {
         return new GetEmployeesOfReactionAction();
@@ -3185,8 +2709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesOfReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesOfReactionActionResponse }
      */
     public GetEmployeesOfReactionActionResponse createGetEmployeesOfReactionActionResponse() {
         return new GetEmployeesOfReactionActionResponse();
@@ -3195,8 +2717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsOfReactionAction }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsOfReactionAction }
      */
     public GetEmployeeGroupsOfReactionAction createGetEmployeeGroupsOfReactionAction() {
         return new GetEmployeeGroupsOfReactionAction();
@@ -3205,8 +2725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeGroupsOfReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeGroupsOfReactionActionResponse }
      */
     public GetEmployeeGroupsOfReactionActionResponse createGetEmployeeGroupsOfReactionActionResponse() {
         return new GetEmployeeGroupsOfReactionActionResponse();
@@ -3215,8 +2733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionSendSMSAction }
      * 
-     * @return
-     *     the new instance of {@link GetReactionSendSMSAction }
      */
     public GetReactionSendSMSAction createGetReactionSendSMSAction() {
         return new GetReactionSendSMSAction();
@@ -3225,8 +2741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionSendSMSActionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReactionSendSMSActionResponse }
      */
     public GetReactionSendSMSActionResponse createGetReactionSendSMSActionResponse() {
         return new GetReactionSendSMSActionResponse();
@@ -3235,8 +2749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionSendEmailAction }
      * 
-     * @return
-     *     the new instance of {@link GetReactionSendEmailAction }
      */
     public GetReactionSendEmailAction createGetReactionSendEmailAction() {
         return new GetReactionSendEmailAction();
@@ -3245,8 +2757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionSendEmailActionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReactionSendEmailActionResponse }
      */
     public GetReactionSendEmailActionResponse createGetReactionSendEmailActionResponse() {
         return new GetReactionSendEmailActionResponse();
@@ -3255,8 +2765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionExecuteProgramAction }
      * 
-     * @return
-     *     the new instance of {@link GetReactionExecuteProgramAction }
      */
     public GetReactionExecuteProgramAction createGetReactionExecuteProgramAction() {
         return new GetReactionExecuteProgramAction();
@@ -3265,8 +2773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionExecuteProgramActionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReactionExecuteProgramActionResponse }
      */
     public GetReactionExecuteProgramActionResponse createGetReactionExecuteProgramActionResponse() {
         return new GetReactionExecuteProgramActionResponse();
@@ -3275,8 +2781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionRecordVideoAction }
      * 
-     * @return
-     *     the new instance of {@link GetReactionRecordVideoAction }
      */
     public GetReactionRecordVideoAction createGetReactionRecordVideoAction() {
         return new GetReactionRecordVideoAction();
@@ -3285,8 +2789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReactionRecordVideoActionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReactionRecordVideoActionResponse }
      */
     public GetReactionRecordVideoActionResponse createGetReactionRecordVideoActionResponse() {
         return new GetReactionRecordVideoActionResponse();
@@ -3295,8 +2797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReports }
      * 
-     * @return
-     *     the new instance of {@link GetReports }
      */
     public GetReports createGetReports() {
         return new GetReports();
@@ -3305,8 +2805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReportsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReportsResponse }
      */
     public GetReportsResponse createGetReportsResponse() {
         return new GetReportsResponse();
@@ -3315,8 +2813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVariable }
      * 
-     * @return
-     *     the new instance of {@link GetVariable }
      */
     public GetVariable createGetVariable() {
         return new GetVariable();
@@ -3325,8 +2821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVariableResponse }
      * 
-     * @return
-     *     the new instance of {@link GetVariableResponse }
      */
     public GetVariableResponse createGetVariableResponse() {
         return new GetVariableResponse();
@@ -3335,8 +2829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetChildrenNets }
      * 
-     * @return
-     *     the new instance of {@link GetChildrenNets }
      */
     public GetChildrenNets createGetChildrenNets() {
         return new GetChildrenNets();
@@ -3345,8 +2837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetChildrenNetsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetChildrenNetsResponse }
      */
     public GetChildrenNetsResponse createGetChildrenNetsResponse() {
         return new GetChildrenNetsResponse();
@@ -3355,8 +2845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllNets }
      * 
-     * @return
-     *     the new instance of {@link GetAllNets }
      */
     public GetAllNets createGetAllNets() {
         return new GetAllNets();
@@ -3365,8 +2853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllNetsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAllNetsResponse }
      */
     public GetAllNetsResponse createGetAllNetsResponse() {
         return new GetAllNetsResponse();
@@ -3375,8 +2861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLocalNet }
      * 
-     * @return
-     *     the new instance of {@link GetLocalNet }
      */
     public GetLocalNet createGetLocalNet() {
         return new GetLocalNet();
@@ -3385,8 +2869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLocalNetResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLocalNetResponse }
      */
     public GetLocalNetResponse createGetLocalNetResponse() {
         return new GetLocalNetResponse();
@@ -3395,8 +2877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNetServers }
      * 
-     * @return
-     *     the new instance of {@link GetNetServers }
      */
     public GetNetServers createGetNetServers() {
         return new GetNetServers();
@@ -3405,8 +2885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNetServersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetNetServersResponse }
      */
     public GetNetServersResponse createGetNetServersResponse() {
         return new GetNetServersResponse();
@@ -3415,8 +2893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServer }
      * 
-     * @return
-     *     the new instance of {@link GetServer }
      */
     public GetServer createGetServer() {
         return new GetServer();
@@ -3425,8 +2901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServerResponse }
      * 
-     * @return
-     *     the new instance of {@link GetServerResponse }
      */
     public GetServerResponse createGetServerResponse() {
         return new GetServerResponse();
@@ -3435,8 +2909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRootServerDrivers }
      * 
-     * @return
-     *     the new instance of {@link GetRootServerDrivers }
      */
     public GetRootServerDrivers createGetRootServerDrivers() {
         return new GetRootServerDrivers();
@@ -3445,8 +2917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRootServerDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link GetRootServerDriversResponse }
      */
     public GetRootServerDriversResponse createGetRootServerDriversResponse() {
         return new GetRootServerDriversResponse();
@@ -3455,8 +2925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriversByType }
      * 
-     * @return
-     *     the new instance of {@link GetDriversByType }
      */
     public GetDriversByType createGetDriversByType() {
         return new GetDriversByType();
@@ -3465,8 +2933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriversByTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDriversByTypeResponse }
      */
     public GetDriversByTypeResponse createGetDriversByTypeResponse() {
         return new GetDriversByTypeResponse();
@@ -3475,8 +2941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServerDriversFullInfo }
      * 
-     * @return
-     *     the new instance of {@link GetServerDriversFullInfo }
      */
     public GetServerDriversFullInfo createGetServerDriversFullInfo() {
         return new GetServerDriversFullInfo();
@@ -3485,8 +2949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetServerDriversFullInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetServerDriversFullInfoResponse }
      */
     public GetServerDriversFullInfoResponse createGetServerDriversFullInfoResponse() {
         return new GetServerDriversFullInfoResponse();
@@ -3495,8 +2957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNetworkChanges }
      * 
-     * @return
-     *     the new instance of {@link GetNetworkChanges }
      */
     public GetNetworkChanges createGetNetworkChanges() {
         return new GetNetworkChanges();
@@ -3505,8 +2965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNetworkChangesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetNetworkChangesResponse }
      */
     public GetNetworkChangesResponse createGetNetworkChangesResponse() {
         return new GetNetworkChangesResponse();
@@ -3515,8 +2973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PutNotify }
      * 
-     * @return
-     *     the new instance of {@link PutNotify }
      */
     public PutNotify createPutNotify() {
         return new PutNotify();
@@ -3525,8 +2981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PutNotifyResponse }
      * 
-     * @return
-     *     the new instance of {@link PutNotifyResponse }
      */
     public PutNotifyResponse createPutNotifyResponse() {
         return new PutNotifyResponse();
@@ -3535,8 +2989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNotify }
      * 
-     * @return
-     *     the new instance of {@link GetNotify }
      */
     public GetNotify createGetNotify() {
         return new GetNotify();
@@ -3545,8 +2997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNotifyResponse }
      * 
-     * @return
-     *     the new instance of {@link GetNotifyResponse }
      */
     public GetNotifyResponse createGetNotifyResponse() {
         return new GetNotifyResponse();
@@ -3555,8 +3005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindNotify }
      * 
-     * @return
-     *     the new instance of {@link FindNotify }
      */
     public FindNotify createFindNotify() {
         return new FindNotify();
@@ -3565,8 +3013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindNotifyResponse }
      * 
-     * @return
-     *     the new instance of {@link FindNotifyResponse }
      */
     public FindNotifyResponse createFindNotifyResponse() {
         return new FindNotifyResponse();
@@ -3575,8 +3021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveNotify }
      * 
-     * @return
-     *     the new instance of {@link RemoveNotify }
      */
     public RemoveNotify createRemoveNotify() {
         return new RemoveNotify();
@@ -3585,8 +3029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveNotifyResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveNotifyResponse }
      */
     public RemoveNotifyResponse createRemoveNotifyResponse() {
         return new RemoveNotifyResponse();
@@ -3595,8 +3037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriver }
      * 
-     * @return
-     *     the new instance of {@link GetDriver }
      */
     public GetDriver createGetDriver() {
         return new GetDriver();
@@ -3605,8 +3045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDriverResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDriverResponse }
      */
     public GetDriverResponse createGetDriverResponse() {
         return new GetDriverResponse();
@@ -3615,8 +3053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageTypes }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageTypes }
      */
     public GetLogMessageTypes createGetLogMessageTypes() {
         return new GetLogMessageTypes();
@@ -3625,8 +3061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageTypesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageTypesResponse }
      */
     public GetLogMessageTypesResponse createGetLogMessageTypesResponse() {
         return new GetLogMessageTypesResponse();
@@ -3635,8 +3069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageSubtypes }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageSubtypes }
      */
     public GetLogMessageSubtypes createGetLogMessageSubtypes() {
         return new GetLogMessageSubtypes();
@@ -3645,8 +3077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLogMessageSubtypesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLogMessageSubtypesResponse }
      */
     public GetLogMessageSubtypesResponse createGetLogMessageSubtypesResponse() {
         return new GetLogMessageSubtypesResponse();
@@ -3655,8 +3085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEvents }
      * 
-     * @return
-     *     the new instance of {@link GetEvents }
      */
     public GetEvents createGetEvents() {
         return new GetEvents();
@@ -3665,8 +3093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEventsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEventsResponse }
      */
     public GetEventsResponse createGetEventsResponse() {
         return new GetEventsResponse();
@@ -3675,8 +3101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLastEvent }
      * 
-     * @return
-     *     the new instance of {@link GetLastEvent }
      */
     public GetLastEvent createGetLastEvent() {
         return new GetLastEvent();
@@ -3685,8 +3109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLastEventResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLastEventResponse }
      */
     public GetLastEventResponse createGetLastEventResponse() {
         return new GetLastEventResponse();
@@ -3695,8 +3117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEventsByDeviceIDs }
      * 
-     * @return
-     *     the new instance of {@link GetEventsByDeviceIDs }
      */
     public GetEventsByDeviceIDs createGetEventsByDeviceIDs() {
         return new GetEventsByDeviceIDs();
@@ -3705,8 +3125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEventsByDeviceIDsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEventsByDeviceIDsResponse }
      */
     public GetEventsByDeviceIDsResponse createGetEventsByDeviceIDsResponse() {
         return new GetEventsByDeviceIDsResponse();
@@ -3715,8 +3133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilteredEvents }
      * 
-     * @return
-     *     the new instance of {@link GetFilteredEvents }
      */
     public GetFilteredEvents createGetFilteredEvents() {
         return new GetFilteredEvents();
@@ -3725,8 +3141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilteredEventsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFilteredEventsResponse }
      */
     public GetFilteredEventsResponse createGetFilteredEventsResponse() {
         return new GetFilteredEventsResponse();
@@ -3735,8 +3149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLastEventByDeviceIDs }
      * 
-     * @return
-     *     the new instance of {@link GetLastEventByDeviceIDs }
      */
     public GetLastEventByDeviceIDs createGetLastEventByDeviceIDs() {
         return new GetLastEventByDeviceIDs();
@@ -3745,8 +3157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLastEventByDeviceIDsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLastEventByDeviceIDsResponse }
      */
     public GetLastEventByDeviceIDsResponse createGetLastEventByDeviceIDsResponse() {
         return new GetLastEventByDeviceIDsResponse();
@@ -3755,8 +3165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEventsByDeviceTypes }
      * 
-     * @return
-     *     the new instance of {@link GetEventsByDeviceTypes }
      */
     public GetEventsByDeviceTypes createGetEventsByDeviceTypes() {
         return new GetEventsByDeviceTypes();
@@ -3765,8 +3173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEventsByDeviceTypesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEventsByDeviceTypesResponse }
      */
     public GetEventsByDeviceTypesResponse createGetEventsByDeviceTypesResponse() {
         return new GetEventsByDeviceTypesResponse();
@@ -3775,8 +3181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLastEventByDeviceTypes }
      * 
-     * @return
-     *     the new instance of {@link GetLastEventByDeviceTypes }
      */
     public GetLastEventByDeviceTypes createGetLastEventByDeviceTypes() {
         return new GetLastEventByDeviceTypes();
@@ -3785,8 +3189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetLastEventByDeviceTypesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetLastEventByDeviceTypesResponse }
      */
     public GetLastEventByDeviceTypesResponse createGetLastEventByDeviceTypesResponse() {
         return new GetLastEventByDeviceTypesResponse();
@@ -3795,8 +3197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPOBCell2DriverRelations }
      * 
-     * @return
-     *     the new instance of {@link GetPOBCell2DriverRelations }
      */
     public GetPOBCell2DriverRelations createGetPOBCell2DriverRelations() {
         return new GetPOBCell2DriverRelations();
@@ -3805,8 +3205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPOBCell2DriverRelationsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPOBCell2DriverRelationsResponse }
      */
     public GetPOBCell2DriverRelationsResponse createGetPOBCell2DriverRelationsResponse() {
         return new GetPOBCell2DriverRelationsResponse();
@@ -3815,8 +3213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CheckEbsBiometricStatus }
      * 
-     * @return
-     *     the new instance of {@link CheckEbsBiometricStatus }
      */
     public CheckEbsBiometricStatus createCheckEbsBiometricStatus() {
         return new CheckEbsBiometricStatus();
@@ -3825,8 +3221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CheckEbsBiometricStatusResponse }
      * 
-     * @return
-     *     the new instance of {@link CheckEbsBiometricStatusResponse }
      */
     public CheckEbsBiometricStatusResponse createCheckEbsBiometricStatusResponse() {
         return new CheckEbsBiometricStatusResponse();
@@ -3835,8 +3229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRelayBlocksStatus }
      * 
-     * @return
-     *     the new instance of {@link GetRelayBlocksStatus }
      */
     public GetRelayBlocksStatus createGetRelayBlocksStatus() {
         return new GetRelayBlocksStatus();
@@ -3845,8 +3237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetRelayBlocksStatusResponse }
      * 
-     * @return
-     *     the new instance of {@link GetRelayBlocksStatusResponse }
      */
     public GetRelayBlocksStatusResponse createGetRelayBlocksStatusResponse() {
         return new GetRelayBlocksStatusResponse();
@@ -3855,8 +3245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUser }
      * 
-     * @return
-     *     the new instance of {@link GetUser }
      */
     public GetUser createGetUser() {
         return new GetUser();
@@ -3865,8 +3253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUserResponse }
      */
     public GetUserResponse createGetUserResponse() {
         return new GetUserResponse();
@@ -3875,8 +3261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOperator }
      * 
-     * @return
-     *     the new instance of {@link GetOperator }
      */
     public GetOperator createGetOperator() {
         return new GetOperator();
@@ -3885,8 +3269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOperatorResponse }
      * 
-     * @return
-     *     the new instance of {@link GetOperatorResponse }
      */
     public GetOperatorResponse createGetOperatorResponse() {
         return new GetOperatorResponse();
@@ -3895,8 +3277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUsers }
      * 
-     * @return
-     *     the new instance of {@link GetUsers }
      */
     public GetUsers createGetUsers() {
         return new GetUsers();
@@ -3905,8 +3285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUsersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUsersResponse }
      */
     public GetUsersResponse createGetUsersResponse() {
         return new GetUsersResponse();
@@ -3915,8 +3293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserGroup }
      * 
-     * @return
-     *     the new instance of {@link GetUserGroup }
      */
     public GetUserGroup createGetUserGroup() {
         return new GetUserGroup();
@@ -3925,8 +3301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUserGroupResponse }
      */
     public GetUserGroupResponse createGetUserGroupResponse() {
         return new GetUserGroupResponse();
@@ -3935,8 +3309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserGroups }
      * 
-     * @return
-     *     the new instance of {@link GetUserGroups }
      */
     public GetUserGroups createGetUserGroups() {
         return new GetUserGroups();
@@ -3945,8 +3317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUserGroupsResponse }
      */
     public GetUserGroupsResponse createGetUserGroupsResponse() {
         return new GetUserGroupsResponse();
@@ -3955,8 +3325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserGroupsByUserID }
      * 
-     * @return
-     *     the new instance of {@link GetUserGroupsByUserID }
      */
     public GetUserGroupsByUserID createGetUserGroupsByUserID() {
         return new GetUserGroupsByUserID();
@@ -3965,8 +3333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUserGroupsByUserIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUserGroupsByUserIDResponse }
      */
     public GetUserGroupsByUserIDResponse createGetUserGroupsByUserIDResponse() {
         return new GetUserGroupsByUserIDResponse();
@@ -3975,8 +3341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUsersByUserGroupID }
      * 
-     * @return
-     *     the new instance of {@link GetUsersByUserGroupID }
      */
     public GetUsersByUserGroupID createGetUsersByUserGroupID() {
         return new GetUsersByUserGroupID();
@@ -3985,8 +3349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetUsersByUserGroupIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetUsersByUserGroupIDResponse }
      */
     public GetUsersByUserGroupIDResponse createGetUsersByUserGroupIDResponse() {
         return new GetUsersByUserGroupIDResponse();
@@ -3995,8 +3357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaim }
      * 
-     * @return
-     *     the new instance of {@link GetClaim }
      */
     public GetClaim createGetClaim() {
         return new GetClaim();
@@ -4005,8 +3365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaimResponse }
      * 
-     * @return
-     *     the new instance of {@link GetClaimResponse }
      */
     public GetClaimResponse createGetClaimResponse() {
         return new GetClaimResponse();
@@ -4015,8 +3373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaimsForUserGroup }
      * 
-     * @return
-     *     the new instance of {@link GetClaimsForUserGroup }
      */
     public GetClaimsForUserGroup createGetClaimsForUserGroup() {
         return new GetClaimsForUserGroup();
@@ -4025,8 +3381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaimsForUserGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetClaimsForUserGroupResponse }
      */
     public GetClaimsForUserGroupResponse createGetClaimsForUserGroupResponse() {
         return new GetClaimsForUserGroupResponse();
@@ -4035,8 +3389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaimsForUserByUserId }
      * 
-     * @return
-     *     the new instance of {@link GetClaimsForUserByUserId }
      */
     public GetClaimsForUserByUserId createGetClaimsForUserByUserId() {
         return new GetClaimsForUserByUserId();
@@ -4045,8 +3397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaimsForUserByUserIdResponse }
      * 
-     * @return
-     *     the new instance of {@link GetClaimsForUserByUserIdResponse }
      */
     public GetClaimsForUserByUserIdResponse createGetClaimsForUserByUserIdResponse() {
         return new GetClaimsForUserByUserIdResponse();
@@ -4055,8 +3405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaimsForUserByUserLogin }
      * 
-     * @return
-     *     the new instance of {@link GetClaimsForUserByUserLogin }
      */
     public GetClaimsForUserByUserLogin createGetClaimsForUserByUserLogin() {
         return new GetClaimsForUserByUserLogin();
@@ -4065,8 +3413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetClaimsForUserByUserLoginResponse }
      * 
-     * @return
-     *     the new instance of {@link GetClaimsForUserByUserLoginResponse }
      */
     public GetClaimsForUserByUserLoginResponse createGetClaimsForUserByUserLoginResponse() {
         return new GetClaimsForUserByUserLoginResponse();
@@ -4075,8 +3421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDaySchedules }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDaySchedules }
      */
     public GetAcsDaySchedules createGetAcsDaySchedules() {
         return new GetAcsDaySchedules();
@@ -4085,8 +3429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDaySchedulesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDaySchedulesResponse }
      */
     public GetAcsDaySchedulesResponse createGetAcsDaySchedulesResponse() {
         return new GetAcsDaySchedulesResponse();
@@ -4095,8 +3437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDaySchedulesByOwner }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDaySchedulesByOwner }
      */
     public GetAcsDaySchedulesByOwner createGetAcsDaySchedulesByOwner() {
         return new GetAcsDaySchedulesByOwner();
@@ -4105,8 +3445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDaySchedulesByOwnerResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDaySchedulesByOwnerResponse }
      */
     public GetAcsDaySchedulesByOwnerResponse createGetAcsDaySchedulesByOwnerResponse() {
         return new GetAcsDaySchedulesByOwnerResponse();
@@ -4115,8 +3453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDaySchedule }
      */
     public GetAcsDaySchedule createGetAcsDaySchedule() {
         return new GetAcsDaySchedule();
@@ -4125,8 +3461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDayScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDayScheduleResponse }
      */
     public GetAcsDayScheduleResponse createGetAcsDayScheduleResponse() {
         return new GetAcsDayScheduleResponse();
@@ -4135,8 +3469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDayScheduleByOwner }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDayScheduleByOwner }
      */
     public GetAcsDayScheduleByOwner createGetAcsDayScheduleByOwner() {
         return new GetAcsDayScheduleByOwner();
@@ -4145,8 +3477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsDayScheduleByOwnerResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsDayScheduleByOwnerResponse }
      */
     public GetAcsDayScheduleByOwnerResponse createGetAcsDayScheduleByOwnerResponse() {
         return new GetAcsDayScheduleByOwnerResponse();
@@ -4155,8 +3485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsMultiDaySchedules }
      * 
-     * @return
-     *     the new instance of {@link GetAcsMultiDaySchedules }
      */
     public GetAcsMultiDaySchedules createGetAcsMultiDaySchedules() {
         return new GetAcsMultiDaySchedules();
@@ -4165,8 +3493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsMultiDaySchedulesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsMultiDaySchedulesResponse }
      */
     public GetAcsMultiDaySchedulesResponse createGetAcsMultiDaySchedulesResponse() {
         return new GetAcsMultiDaySchedulesResponse();
@@ -4175,8 +3501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsMultiDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link GetAcsMultiDaySchedule }
      */
     public GetAcsMultiDaySchedule createGetAcsMultiDaySchedule() {
         return new GetAcsMultiDaySchedule();
@@ -4185,8 +3509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsMultiDayScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsMultiDayScheduleResponse }
      */
     public GetAcsMultiDayScheduleResponse createGetAcsMultiDayScheduleResponse() {
         return new GetAcsMultiDayScheduleResponse();
@@ -4195,8 +3517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWeekSlimSchedules }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWeekSlimSchedules }
      */
     public GetAcsWeekSlimSchedules createGetAcsWeekSlimSchedules() {
         return new GetAcsWeekSlimSchedules();
@@ -4205,8 +3525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWeekSlimSchedulesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWeekSlimSchedulesResponse }
      */
     public GetAcsWeekSlimSchedulesResponse createGetAcsWeekSlimSchedulesResponse() {
         return new GetAcsWeekSlimSchedulesResponse();
@@ -4215,8 +3533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWeekFullSchedules }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWeekFullSchedules }
      */
     public GetAcsWeekFullSchedules createGetAcsWeekFullSchedules() {
         return new GetAcsWeekFullSchedules();
@@ -4225,8 +3541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWeekFullSchedulesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWeekFullSchedulesResponse }
      */
     public GetAcsWeekFullSchedulesResponse createGetAcsWeekFullSchedulesResponse() {
         return new GetAcsWeekFullSchedulesResponse();
@@ -4235,8 +3549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWeekSchedule }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWeekSchedule }
      */
     public GetAcsWeekSchedule createGetAcsWeekSchedule() {
         return new GetAcsWeekSchedule();
@@ -4245,8 +3557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWeekScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWeekScheduleResponse }
      */
     public GetAcsWeekScheduleResponse createGetAcsWeekScheduleResponse() {
         return new GetAcsWeekScheduleResponse();
@@ -4255,8 +3565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsCustomDays }
      * 
-     * @return
-     *     the new instance of {@link GetAcsCustomDays }
      */
     public GetAcsCustomDays createGetAcsCustomDays() {
         return new GetAcsCustomDays();
@@ -4265,8 +3573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsCustomDaysResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsCustomDaysResponse }
      */
     public GetAcsCustomDaysResponse createGetAcsCustomDaysResponse() {
         return new GetAcsCustomDaysResponse();
@@ -4275,8 +3581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsCustomDay }
      * 
-     * @return
-     *     the new instance of {@link GetAcsCustomDay }
      */
     public GetAcsCustomDay createGetAcsCustomDay() {
         return new GetAcsCustomDay();
@@ -4285,8 +3589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsCustomDayResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsCustomDayResponse }
      */
     public GetAcsCustomDayResponse createGetAcsCustomDayResponse() {
         return new GetAcsCustomDayResponse();
@@ -4295,8 +3597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWorkDaysWithTransfer }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWorkDaysWithTransfer }
      */
     public GetAcsWorkDaysWithTransfer createGetAcsWorkDaysWithTransfer() {
         return new GetAcsWorkDaysWithTransfer();
@@ -4305,8 +3605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWorkDaysWithTransferResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWorkDaysWithTransferResponse }
      */
     public GetAcsWorkDaysWithTransferResponse createGetAcsWorkDaysWithTransferResponse() {
         return new GetAcsWorkDaysWithTransferResponse();
@@ -4315,8 +3613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWorkDayWithTransfer }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWorkDayWithTransfer }
      */
     public GetAcsWorkDayWithTransfer createGetAcsWorkDayWithTransfer() {
         return new GetAcsWorkDayWithTransfer();
@@ -4325,8 +3621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsWorkDayWithTransferResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsWorkDayWithTransferResponse }
      */
     public GetAcsWorkDayWithTransferResponse createGetAcsWorkDayWithTransferResponse() {
         return new GetAcsWorkDayWithTransferResponse();
@@ -4335,8 +3629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDictionaryElement }
      * 
-     * @return
-     *     the new instance of {@link GetDictionaryElement }
      */
     public GetDictionaryElement createGetDictionaryElement() {
         return new GetDictionaryElement();
@@ -4345,8 +3637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDictionaryElementResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDictionaryElementResponse }
      */
     public GetDictionaryElementResponse createGetDictionaryElementResponse() {
         return new GetDictionaryElementResponse();
@@ -4355,8 +3645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDictionaryElements }
      * 
-     * @return
-     *     the new instance of {@link GetDictionaryElements }
      */
     public GetDictionaryElements createGetDictionaryElements() {
         return new GetDictionaryElements();
@@ -4365,8 +3653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDictionaryElementsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDictionaryElementsResponse }
      */
     public GetDictionaryElementsResponse createGetDictionaryElementsResponse() {
         return new GetDictionaryElementsResponse();
@@ -4375,8 +3661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDictionaryElementsWithFilter }
      * 
-     * @return
-     *     the new instance of {@link GetDictionaryElementsWithFilter }
      */
     public GetDictionaryElementsWithFilter createGetDictionaryElementsWithFilter() {
         return new GetDictionaryElementsWithFilter();
@@ -4385,8 +3669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetDictionaryElementsWithFilterResponse }
      * 
-     * @return
-     *     the new instance of {@link GetDictionaryElementsWithFilterResponse }
      */
     public GetDictionaryElementsWithFilterResponse createGetDictionaryElementsWithFilterResponse() {
         return new GetDictionaryElementsWithFilterResponse();
@@ -4395,8 +3677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCardType }
      * 
-     * @return
-     *     the new instance of {@link GetCardType }
      */
     public GetCardType createGetCardType() {
         return new GetCardType();
@@ -4405,8 +3685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCardTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetCardTypeResponse }
      */
     public GetCardTypeResponse createGetCardTypeResponse() {
         return new GetCardTypeResponse();
@@ -4415,8 +3693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllBranch }
      * 
-     * @return
-     *     the new instance of {@link GetAllBranch }
      */
     public GetAllBranch createGetAllBranch() {
         return new GetAllBranch();
@@ -4425,8 +3701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllBranchResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAllBranchResponse }
      */
     public GetAllBranchResponse createGetAllBranchResponse() {
         return new GetAllBranchResponse();
@@ -4435,8 +3709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetBranch }
      * 
-     * @return
-     *     the new instance of {@link GetBranch }
      */
     public GetBranch createGetBranch() {
         return new GetBranch();
@@ -4445,8 +3717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetBranchResponse }
      * 
-     * @return
-     *     the new instance of {@link GetBranchResponse }
      */
     public GetBranchResponse createGetBranchResponse() {
         return new GetBranchResponse();
@@ -4455,8 +3725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidents }
      * 
-     * @return
-     *     the new instance of {@link GetIncidents }
      */
     public GetIncidents createGetIncidents() {
         return new GetIncidents();
@@ -4465,8 +3733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentsResponse }
      */
     public GetIncidentsResponse createGetIncidentsResponse() {
         return new GetIncidentsResponse();
@@ -4475,8 +3741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncident }
      * 
-     * @return
-     *     the new instance of {@link GetIncident }
      */
     public GetIncident createGetIncident() {
         return new GetIncident();
@@ -4485,8 +3749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentResponse }
      */
     public GetIncidentResponse createGetIncidentResponse() {
         return new GetIncidentResponse();
@@ -4495,8 +3757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchFirebirdIncidents }
      * 
-     * @return
-     *     the new instance of {@link SearchFirebirdIncidents }
      */
     public SearchFirebirdIncidents createSearchFirebirdIncidents() {
         return new SearchFirebirdIncidents();
@@ -4505,8 +3765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchFirebirdIncidentsResponse }
      * 
-     * @return
-     *     the new instance of {@link SearchFirebirdIncidentsResponse }
      */
     public SearchFirebirdIncidentsResponse createSearchFirebirdIncidentsResponse() {
         return new SearchFirebirdIncidentsResponse();
@@ -4515,8 +3773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindViolationByEmployee }
      * 
-     * @return
-     *     the new instance of {@link FindViolationByEmployee }
      */
     public FindViolationByEmployee createFindViolationByEmployee() {
         return new FindViolationByEmployee();
@@ -4525,8 +3781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindViolationByEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link FindViolationByEmployeeResponse }
      */
     public FindViolationByEmployeeResponse createFindViolationByEmployeeResponse() {
         return new FindViolationByEmployeeResponse();
@@ -4535,8 +3789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentTemplates }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentTemplates }
      */
     public GetIncidentTemplates createGetIncidentTemplates() {
         return new GetIncidentTemplates();
@@ -4545,8 +3797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentTemplatesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentTemplatesResponse }
      */
     public GetIncidentTemplatesResponse createGetIncidentTemplatesResponse() {
         return new GetIncidentTemplatesResponse();
@@ -4555,8 +3805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationForEmployee }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationForEmployee }
      */
     public GetOrganizationForEmployee createGetOrganizationForEmployee() {
         return new GetOrganizationForEmployee();
@@ -4565,8 +3813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationForEmployeeResponse }
      */
     public GetOrganizationForEmployeeResponse createGetOrganizationForEmployeeResponse() {
         return new GetOrganizationForEmployeeResponse();
@@ -4575,8 +3821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSubdivisionsForEmployee }
      * 
-     * @return
-     *     the new instance of {@link GetSubdivisionsForEmployee }
      */
     public GetSubdivisionsForEmployee createGetSubdivisionsForEmployee() {
         return new GetSubdivisionsForEmployee();
@@ -4585,8 +3829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSubdivisionsForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetSubdivisionsForEmployeeResponse }
      */
     public GetSubdivisionsForEmployeeResponse createGetSubdivisionsForEmployeeResponse() {
         return new GetSubdivisionsForEmployeeResponse();
@@ -4595,8 +3837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationAssignmentsForEmployee }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationAssignmentsForEmployee }
      */
     public GetOrganizationAssignmentsForEmployee createGetOrganizationAssignmentsForEmployee() {
         return new GetOrganizationAssignmentsForEmployee();
@@ -4605,8 +3845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationAssignmentsForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationAssignmentsForEmployeeResponse }
      */
     public GetOrganizationAssignmentsForEmployeeResponse createGetOrganizationAssignmentsForEmployeeResponse() {
         return new GetOrganizationAssignmentsForEmployeeResponse();
@@ -4615,8 +3853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployees }
      */
     public GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployees createGetOrganizationAssignmentsForEmployeeIncludeRemovedEmployees() {
         return new GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployees();
@@ -4625,8 +3861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse }
      */
     public GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse createGetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse() {
         return new GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse();
@@ -4635,8 +3869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationForVehicle }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationForVehicle }
      */
     public GetOrganizationForVehicle createGetOrganizationForVehicle() {
         return new GetOrganizationForVehicle();
@@ -4645,8 +3877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationForVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationForVehicleResponse }
      */
     public GetOrganizationForVehicleResponse createGetOrganizationForVehicleResponse() {
         return new GetOrganizationForVehicleResponse();
@@ -4655,8 +3885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSubdivisionsForVehicle }
      * 
-     * @return
-     *     the new instance of {@link GetSubdivisionsForVehicle }
      */
     public GetSubdivisionsForVehicle createGetSubdivisionsForVehicle() {
         return new GetSubdivisionsForVehicle();
@@ -4665,8 +3893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSubdivisionsForVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetSubdivisionsForVehicleResponse }
      */
     public GetSubdivisionsForVehicleResponse createGetSubdivisionsForVehicleResponse() {
         return new GetSubdivisionsForVehicleResponse();
@@ -4675,8 +3901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationAssignmentsForVehicle }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationAssignmentsForVehicle }
      */
     public GetOrganizationAssignmentsForVehicle createGetOrganizationAssignmentsForVehicle() {
         return new GetOrganizationAssignmentsForVehicle();
@@ -4685,8 +3909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetOrganizationAssignmentsForVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetOrganizationAssignmentsForVehicleResponse }
      */
     public GetOrganizationAssignmentsForVehicleResponse createGetOrganizationAssignmentsForVehicleResponse() {
         return new GetOrganizationAssignmentsForVehicleResponse();
@@ -4695,8 +3917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCardTypes }
      * 
-     * @return
-     *     the new instance of {@link GetCardTypes }
      */
     public GetCardTypes createGetCardTypes() {
         return new GetCardTypes();
@@ -4705,8 +3925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCardTypesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetCardTypesResponse }
      */
     public GetCardTypesResponse createGetCardTypesResponse() {
         return new GetCardTypesResponse();
@@ -4715,8 +3933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePosition }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePosition }
      */
     public GetEmployeePosition createGetEmployeePosition() {
         return new GetEmployeePosition();
@@ -4725,8 +3941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePositionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePositionResponse }
      */
     public GetEmployeePositionResponse createGetEmployeePositionResponse() {
         return new GetEmployeePositionResponse();
@@ -4735,8 +3949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePositions }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePositions }
      */
     public GetEmployeePositions createGetEmployeePositions() {
         return new GetEmployeePositions();
@@ -4745,8 +3957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePositionsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePositionsResponse }
      */
     public GetEmployeePositionsResponse createGetEmployeePositionsResponse() {
         return new GetEmployeePositionsResponse();
@@ -4755,8 +3965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePositionsForIncident }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePositionsForIncident }
      */
     public GetEmployeePositionsForIncident createGetEmployeePositionsForIncident() {
         return new GetEmployeePositionsForIncident();
@@ -4765,8 +3973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeePositionsForIncidentResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeePositionsForIncidentResponse }
      */
     public GetEmployeePositionsForIncidentResponse createGetEmployeePositionsForIncidentResponse() {
         return new GetEmployeePositionsForIncidentResponse();
@@ -4775,8 +3981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsFull }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsFull }
      */
     public GetAcsEmployeeGroupsFull createGetAcsEmployeeGroupsFull() {
         return new GetAcsEmployeeGroupsFull();
@@ -4785,8 +3989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsFullResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsFullResponse }
      */
     public GetAcsEmployeeGroupsFullResponse createGetAcsEmployeeGroupsFullResponse() {
         return new GetAcsEmployeeGroupsFullResponse();
@@ -4795,8 +3997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroups }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroups }
      */
     public GetAcsEmployeeGroups createGetAcsEmployeeGroups() {
         return new GetAcsEmployeeGroups();
@@ -4805,8 +4005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsResponse }
      */
     public GetAcsEmployeeGroupsResponse createGetAcsEmployeeGroupsResponse() {
         return new GetAcsEmployeeGroupsResponse();
@@ -4815,8 +4013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetViolatorAcsEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link GetViolatorAcsEmployeeGroup }
      */
     public GetViolatorAcsEmployeeGroup createGetViolatorAcsEmployeeGroup() {
         return new GetViolatorAcsEmployeeGroup();
@@ -4825,8 +4021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetViolatorAcsEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetViolatorAcsEmployeeGroupResponse }
      */
     public GetViolatorAcsEmployeeGroupResponse createGetViolatorAcsEmployeeGroupResponse() {
         return new GetViolatorAcsEmployeeGroupResponse();
@@ -4835,8 +4029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsByTags }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsByTags }
      */
     public GetAcsEmployeeGroupsByTags createGetAcsEmployeeGroupsByTags() {
         return new GetAcsEmployeeGroupsByTags();
@@ -4845,8 +4037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsByTagsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsByTagsResponse }
      */
     public GetAcsEmployeeGroupsByTagsResponse createGetAcsEmployeeGroupsByTagsResponse() {
         return new GetAcsEmployeeGroupsByTagsResponse();
@@ -4855,8 +4045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroup }
      */
     public GetAcsEmployeeGroup createGetAcsEmployeeGroup() {
         return new GetAcsEmployeeGroup();
@@ -4865,8 +4053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupResponse }
      */
     public GetAcsEmployeeGroupResponse createGetAcsEmployeeGroupResponse() {
         return new GetAcsEmployeeGroupResponse();
@@ -4875,8 +4061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsForReportParameters }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsForReportParameters }
      */
     public GetAcsEmployeeGroupsForReportParameters createGetAcsEmployeeGroupsForReportParameters() {
         return new GetAcsEmployeeGroupsForReportParameters();
@@ -4885,8 +4069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsForReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsForReportParametersResponse }
      */
     public GetAcsEmployeeGroupsForReportParametersResponse createGetAcsEmployeeGroupsForReportParametersResponse() {
         return new GetAcsEmployeeGroupsForReportParametersResponse();
@@ -4895,8 +4077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsForReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsForReactionEvent }
      */
     public GetAcsEmployeeGroupsForReactionEvent createGetAcsEmployeeGroupsForReactionEvent() {
         return new GetAcsEmployeeGroupsForReactionEvent();
@@ -4905,8 +4085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsForReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsForReactionEventResponse }
      */
     public GetAcsEmployeeGroupsForReactionEventResponse createGetAcsEmployeeGroupsForReactionEventResponse() {
         return new GetAcsEmployeeGroupsForReactionEventResponse();
@@ -4915,8 +4093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsForReactionAction }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsForReactionAction }
      */
     public GetAcsEmployeeGroupsForReactionAction createGetAcsEmployeeGroupsForReactionAction() {
         return new GetAcsEmployeeGroupsForReactionAction();
@@ -4925,8 +4101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeGroupsForReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeGroupsForReactionActionResponse }
      */
     public GetAcsEmployeeGroupsForReactionActionResponse createGetAcsEmployeeGroupsForReactionActionResponse() {
         return new GetAcsEmployeeGroupsForReactionActionResponse();
@@ -4935,8 +4109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesByGroup }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesByGroup }
      */
     public GetAcsEmployeesByGroup createGetAcsEmployeesByGroup() {
         return new GetAcsEmployeesByGroup();
@@ -4945,8 +4117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesByGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesByGroupResponse }
      */
     public GetAcsEmployeesByGroupResponse createGetAcsEmployeesByGroupResponse() {
         return new GetAcsEmployeesByGroupResponse();
@@ -4955,8 +4125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployees }
      */
     public GetAcsEmployees createGetAcsEmployees() {
         return new GetAcsEmployees();
@@ -4965,8 +4133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesResponse }
      */
     public GetAcsEmployeesResponse createGetAcsEmployeesResponse() {
         return new GetAcsEmployeesResponse();
@@ -4975,8 +4141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFaceById }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFaceById }
      */
     public GetEmployeeFaceById createGetEmployeeFaceById() {
         return new GetEmployeeFaceById();
@@ -4985,8 +4149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFaceByIdResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFaceByIdResponse }
      */
     public GetEmployeeFaceByIdResponse createGetEmployeeFaceByIdResponse() {
         return new GetEmployeeFaceByIdResponse();
@@ -4995,8 +4157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFaces }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFaces }
      */
     public GetEmployeeFaces createGetEmployeeFaces() {
         return new GetEmployeeFaces();
@@ -5005,8 +4165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFacesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFacesResponse }
      */
     public GetEmployeeFacesResponse createGetEmployeeFacesResponse() {
         return new GetEmployeeFacesResponse();
@@ -5015,8 +4173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFacesIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFacesIncludeRemovedEmployees }
      */
     public GetEmployeeFacesIncludeRemovedEmployees createGetEmployeeFacesIncludeRemovedEmployees() {
         return new GetEmployeeFacesIncludeRemovedEmployees();
@@ -5025,8 +4181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFacesIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFacesIncludeRemovedEmployeesResponse }
      */
     public GetEmployeeFacesIncludeRemovedEmployeesResponse createGetEmployeeFacesIncludeRemovedEmployeesResponse() {
         return new GetEmployeeFacesIncludeRemovedEmployeesResponse();
@@ -5035,8 +4189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFacesFull }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFacesFull }
      */
     public GetEmployeeFacesFull createGetEmployeeFacesFull() {
         return new GetEmployeeFacesFull();
@@ -5045,8 +4197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeeFacesFullResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeeFacesFullResponse }
      */
     public GetEmployeeFacesFullResponse createGetEmployeeFacesFullResponse() {
         return new GetEmployeeFacesFullResponse();
@@ -5055,8 +4205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesByGroups }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesByGroups }
      */
     public GetAcsEmployeesByGroups createGetAcsEmployeesByGroups() {
         return new GetAcsEmployeesByGroups();
@@ -5065,8 +4213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesByGroupsResponse }
      */
     public GetAcsEmployeesByGroupsResponse createGetAcsEmployeesByGroupsResponse() {
         return new GetAcsEmployeesByGroupsResponse();
@@ -5075,8 +4221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetListAcsEmployeesByGroup }
      * 
-     * @return
-     *     the new instance of {@link GetListAcsEmployeesByGroup }
      */
     public GetListAcsEmployeesByGroup createGetListAcsEmployeesByGroup() {
         return new GetListAcsEmployeesByGroup();
@@ -5085,8 +4229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetListAcsEmployeesByGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetListAcsEmployeesByGroupResponse }
      */
     public GetListAcsEmployeesByGroupResponse createGetListAcsEmployeesByGroupResponse() {
         return new GetListAcsEmployeesByGroupResponse();
@@ -5095,8 +4237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchEmployee }
      * 
-     * @return
-     *     the new instance of {@link SearchEmployee }
      */
     public SearchEmployee createSearchEmployee() {
         return new SearchEmployee();
@@ -5105,8 +4245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link SearchEmployeeResponse }
      */
     public SearchEmployeeResponse createSearchEmployeeResponse() {
         return new SearchEmployeeResponse();
@@ -5115,8 +4253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPageFilteredEmployeesByGroup }
      * 
-     * @return
-     *     the new instance of {@link GetPageFilteredEmployeesByGroup }
      */
     public GetPageFilteredEmployeesByGroup createGetPageFilteredEmployeesByGroup() {
         return new GetPageFilteredEmployeesByGroup();
@@ -5125,8 +4261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPageFilteredEmployeesByGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPageFilteredEmployeesByGroupResponse }
      */
     public GetPageFilteredEmployeesByGroupResponse createGetPageFilteredEmployeesByGroupResponse() {
         return new GetPageFilteredEmployeesByGroupResponse();
@@ -5135,8 +4269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPageFilterredIncidents }
      * 
-     * @return
-     *     the new instance of {@link GetPageFilterredIncidents }
      */
     public GetPageFilterredIncidents createGetPageFilterredIncidents() {
         return new GetPageFilterredIncidents();
@@ -5145,8 +4277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetPageFilterredIncidentsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetPageFilterredIncidentsResponse }
      */
     public GetPageFilterredIncidentsResponse createGetPageFilterredIncidentsResponse() {
         return new GetPageFilterredIncidentsResponse();
@@ -5155,8 +4285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesGuidsByGroups }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesGuidsByGroups }
      */
     public GetAcsEmployeesGuidsByGroups createGetAcsEmployeesGuidsByGroups() {
         return new GetAcsEmployeesGuidsByGroups();
@@ -5165,8 +4293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesGuidsByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesGuidsByGroupsResponse }
      */
     public GetAcsEmployeesGuidsByGroupsResponse createGetAcsEmployeesGuidsByGroupsResponse() {
         return new GetAcsEmployeesGuidsByGroupsResponse();
@@ -5175,8 +4301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployee }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployee }
      */
     public GetAcsEmployee createGetAcsEmployee() {
         return new GetAcsEmployee();
@@ -5185,8 +4309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeResponse }
      */
     public GetAcsEmployeeResponse createGetAcsEmployeeResponse() {
         return new GetAcsEmployeeResponse();
@@ -5195,8 +4317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeForRemoteTerminal }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeForRemoteTerminal }
      */
     public GetAcsEmployeeForRemoteTerminal createGetAcsEmployeeForRemoteTerminal() {
         return new GetAcsEmployeeForRemoteTerminal();
@@ -5205,8 +4325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeForRemoteTerminalResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeForRemoteTerminalResponse }
      */
     public GetAcsEmployeeForRemoteTerminalResponse createGetAcsEmployeeForRemoteTerminalResponse() {
         return new GetAcsEmployeeForRemoteTerminalResponse();
@@ -5215,8 +4333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GeEmployeesView }
      * 
-     * @return
-     *     the new instance of {@link GeEmployeesView }
      */
     public GeEmployeesView createGeEmployeesView() {
         return new GeEmployeesView();
@@ -5225,8 +4341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GeEmployeesViewResponse.GeEmployeesViewResult }
      * 
-     * @return
-     *     the new instance of {@link GeEmployeesViewResponse.GeEmployeesViewResult }
      */
     public GeEmployeesViewResponse.GeEmployeesViewResult createGeEmployeesViewResponseGeEmployeesViewResult() {
         return new GeEmployeesViewResponse.GeEmployeesViewResult();
@@ -5235,8 +4349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GeEmployeesViewMetadata }
      * 
-     * @return
-     *     the new instance of {@link GeEmployeesViewMetadata }
      */
     public GeEmployeesViewMetadata createGeEmployeesViewMetadata() {
         return new GeEmployeesViewMetadata();
@@ -5245,8 +4357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GeEmployeesViewMetadataResponse }
      * 
-     * @return
-     *     the new instance of {@link GeEmployeesViewMetadataResponse }
      */
     public GeEmployeesViewMetadataResponse createGeEmployeesViewMetadataResponse() {
         return new GeEmployeesViewMetadataResponse();
@@ -5255,8 +4365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesByTableNumbers }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesByTableNumbers }
      */
     public GetAcsEmployeesByTableNumbers createGetAcsEmployeesByTableNumbers() {
         return new GetAcsEmployeesByTableNumbers();
@@ -5265,8 +4373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesByTableNumbersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesByTableNumbersResponse }
      */
     public GetAcsEmployeesByTableNumbersResponse createGetAcsEmployeesByTableNumbersResponse() {
         return new GetAcsEmployeesByTableNumbersResponse();
@@ -5275,8 +4381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeIDsByTableNumbers }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeIDsByTableNumbers }
      */
     public GetAcsEmployeeIDsByTableNumbers createGetAcsEmployeeIDsByTableNumbers() {
         return new GetAcsEmployeeIDsByTableNumbers();
@@ -5285,8 +4389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeeIDsByTableNumbersResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeeIDsByTableNumbersResponse }
      */
     public GetAcsEmployeeIDsByTableNumbersResponse createGetAcsEmployeeIDsByTableNumbersResponse() {
         return new GetAcsEmployeeIDsByTableNumbersResponse();
@@ -5295,8 +4397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesDocuments }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesDocuments }
      */
     public GetAcsEmployeesDocuments createGetAcsEmployeesDocuments() {
         return new GetAcsEmployeesDocuments();
@@ -5305,8 +4405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeesDocumentsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeesDocumentsResponse }
      */
     public GetAcsEmployeesDocumentsResponse createGetAcsEmployeesDocumentsResponse() {
         return new GetAcsEmployeesDocumentsResponse();
@@ -5315,8 +4413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeePhotoInfos }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeePhotoInfos }
      */
     public GetAcsEmployeePhotoInfos createGetAcsEmployeePhotoInfos() {
         return new GetAcsEmployeePhotoInfos();
@@ -5325,8 +4421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeePhotoInfosResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeePhotoInfosResponse }
      */
     public GetAcsEmployeePhotoInfosResponse createGetAcsEmployeePhotoInfosResponse() {
         return new GetAcsEmployeePhotoInfosResponse();
@@ -5335,8 +4429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeePhoto }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeePhoto }
      */
     public GetAcsEmployeePhoto createGetAcsEmployeePhoto() {
         return new GetAcsEmployeePhoto();
@@ -5345,8 +4437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeePhotoResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeePhotoResponse }
      */
     public GetAcsEmployeePhotoResponse createGetAcsEmployeePhotoResponse() {
         return new GetAcsEmployeePhotoResponse();
@@ -5355,8 +4445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeePhotoByType }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeePhotoByType }
      */
     public GetAcsEmployeePhotoByType createGetAcsEmployeePhotoByType() {
         return new GetAcsEmployeePhotoByType();
@@ -5365,8 +4453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsEmployeePhotoByTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsEmployeePhotoByTypeResponse }
      */
     public GetAcsEmployeePhotoByTypeResponse createGetAcsEmployeePhotoByTypeResponse() {
         return new GetAcsEmployeePhotoByTypeResponse();
@@ -5375,8 +4461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesByAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesByAccessLevel }
      */
     public GetEmployeesByAccessLevel createGetEmployeesByAccessLevel() {
         return new GetEmployeesByAccessLevel();
@@ -5385,8 +4469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesByAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesByAccessLevelResponse }
      */
     public GetEmployeesByAccessLevelResponse createGetEmployeesByAccessLevelResponse() {
         return new GetEmployeesByAccessLevelResponse();
@@ -5395,8 +4477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsKeysForEmployee }
      * 
-     * @return
-     *     the new instance of {@link GetAcsKeysForEmployee }
      */
     public GetAcsKeysForEmployee createGetAcsKeysForEmployee() {
         return new GetAcsKeysForEmployee();
@@ -5405,8 +4485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAcsKeysForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAcsKeysForEmployeeResponse }
      */
     public GetAcsKeysForEmployeeResponse createGetAcsKeysForEmployeeResponse() {
         return new GetAcsKeysForEmployeeResponse();
@@ -5415,8 +4493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesByCardType }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesByCardType }
      */
     public GetEmployeesByCardType createGetEmployeesByCardType() {
         return new GetEmployeesByCardType();
@@ -5425,8 +4501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesByCardTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesByCardTypeResponse }
      */
     public GetEmployeesByCardTypeResponse createGetEmployeesByCardTypeResponse() {
         return new GetEmployeesByCardTypeResponse();
@@ -5435,8 +4509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAssignedAcsKeyByKeyNumber }
      * 
-     * @return
-     *     the new instance of {@link GetAssignedAcsKeyByKeyNumber }
      */
     public GetAssignedAcsKeyByKeyNumber createGetAssignedAcsKeyByKeyNumber() {
         return new GetAssignedAcsKeyByKeyNumber();
@@ -5445,8 +4517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAssignedAcsKeyByKeyNumberResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAssignedAcsKeyByKeyNumberResponse }
      */
     public GetAssignedAcsKeyByKeyNumberResponse createGetAssignedAcsKeyByKeyNumberResponse() {
         return new GetAssignedAcsKeyByKeyNumberResponse();
@@ -5455,8 +4525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Connect }
      * 
-     * @return
-     *     the new instance of {@link Connect }
      */
     public Connect createConnect() {
         return new Connect();
@@ -5465,8 +4533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ConnectResponse }
      * 
-     * @return
-     *     the new instance of {@link ConnectResponse }
      */
     public ConnectResponse createConnectResponse() {
         return new ConnectResponse();
@@ -5475,8 +4541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IsAdmin }
      * 
-     * @return
-     *     the new instance of {@link IsAdmin }
      */
     public IsAdmin createIsAdmin() {
         return new IsAdmin();
@@ -5485,8 +4549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IsAdminResponse }
      * 
-     * @return
-     *     the new instance of {@link IsAdminResponse }
      */
     public IsAdminResponse createIsAdminResponse() {
         return new IsAdminResponse();
@@ -5495,8 +4557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Disconnect }
      * 
-     * @return
-     *     the new instance of {@link Disconnect }
      */
     public Disconnect createDisconnect() {
         return new Disconnect();
@@ -5505,8 +4565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DisconnectResponse }
      * 
-     * @return
-     *     the new instance of {@link DisconnectResponse }
      */
     public DisconnectResponse createDisconnectResponse() {
         return new DisconnectResponse();
@@ -5515,8 +4573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNotification }
      * 
-     * @return
-     *     the new instance of {@link GetNotification }
      */
     public GetNotification createGetNotification() {
         return new GetNotification();
@@ -5525,8 +4581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetNotificationResponse }
      * 
-     * @return
-     *     the new instance of {@link GetNotificationResponse }
      */
     public GetNotificationResponse createGetNotificationResponse() {
         return new GetNotificationResponse();
@@ -5535,8 +4589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Process }
      * 
-     * @return
-     *     the new instance of {@link Process }
      */
     public Process createProcess() {
         return new Process();
@@ -5545,8 +4597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessResponse }
      * 
-     * @return
-     *     the new instance of {@link ProcessResponse }
      */
     public ProcessResponse createProcessResponse() {
         return new ProcessResponse();
@@ -5555,8 +4605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IsSessionExists }
      * 
-     * @return
-     *     the new instance of {@link IsSessionExists }
      */
     public IsSessionExists createIsSessionExists() {
         return new IsSessionExists();
@@ -5565,8 +4613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IsSessionExistsResponse }
      * 
-     * @return
-     *     the new instance of {@link IsSessionExistsResponse }
      */
     public IsSessionExistsResponse createIsSessionExistsResponse() {
         return new IsSessionExistsResponse();
@@ -5575,8 +4621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Ping }
      * 
-     * @return
-     *     the new instance of {@link Ping }
      */
     public Ping createPing() {
         return new Ping();
@@ -5585,8 +4629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PingResponse }
      * 
-     * @return
-     *     the new instance of {@link PingResponse }
      */
     public PingResponse createPingResponse() {
         return new PingResponse();
@@ -5595,8 +4637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessSubnetworkStateChanged }
      * 
-     * @return
-     *     the new instance of {@link ProcessSubnetworkStateChanged }
      */
     public ProcessSubnetworkStateChanged createProcessSubnetworkStateChanged() {
         return new ProcessSubnetworkStateChanged();
@@ -5605,8 +4645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessSubnetworkStateChangedResponse }
      * 
-     * @return
-     *     the new instance of {@link ProcessSubnetworkStateChangedResponse }
      */
     public ProcessSubnetworkStateChangedResponse createProcessSubnetworkStateChangedResponse() {
         return new ProcessSubnetworkStateChangedResponse();
@@ -5615,8 +4653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupsFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupsFromReportParameters }
      */
     public RemoveEmployeeGroupsFromReportParameters createRemoveEmployeeGroupsFromReportParameters() {
         return new RemoveEmployeeGroupsFromReportParameters();
@@ -5625,8 +4661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupsFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupsFromReportParametersResponse }
      */
     public RemoveEmployeeGroupsFromReportParametersResponse createRemoveEmployeeGroupsFromReportParametersResponse() {
         return new RemoveEmployeeGroupsFromReportParametersResponse();
@@ -5635,8 +4669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeFromReportParametersByGroups }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeFromReportParametersByGroups }
      */
     public RemoveEmployeeFromReportParametersByGroups createRemoveEmployeeFromReportParametersByGroups() {
         return new RemoveEmployeeFromReportParametersByGroups();
@@ -5645,8 +4677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeFromReportParametersByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeFromReportParametersByGroupsResponse }
      */
     public RemoveEmployeeFromReportParametersByGroupsResponse createRemoveEmployeeFromReportParametersByGroupsResponse() {
         return new RemoveEmployeeFromReportParametersByGroupsResponse();
@@ -5655,8 +4685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReportParameters }
      */
     public AddEmployeesToReportParameters createAddEmployeesToReportParameters() {
         return new AddEmployeesToReportParameters();
@@ -5665,8 +4693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReportParametersResponse }
      */
     public AddEmployeesToReportParametersResponse createAddEmployeesToReportParametersResponse() {
         return new AddEmployeesToReportParametersResponse();
@@ -5675,8 +4701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesFromReportParameters }
      */
     public RemoveEmployeesFromReportParameters createRemoveEmployeesFromReportParameters() {
         return new RemoveEmployeesFromReportParameters();
@@ -5685,8 +4709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesFromReportParametersResponse }
      */
     public RemoveEmployeesFromReportParametersResponse createRemoveEmployeesFromReportParametersResponse() {
         return new RemoveEmployeesFromReportParametersResponse();
@@ -5695,8 +4717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesToReportParameters }
      */
     public AddWorkZonesToReportParameters createAddWorkZonesToReportParameters() {
         return new AddWorkZonesToReportParameters();
@@ -5705,8 +4725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesToReportParametersResponse }
      */
     public AddWorkZonesToReportParametersResponse createAddWorkZonesToReportParametersResponse() {
         return new AddWorkZonesToReportParametersResponse();
@@ -5715,8 +4733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAlcoGroupsFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveAlcoGroupsFromReportParameters }
      */
     public RemoveAlcoGroupsFromReportParameters createRemoveAlcoGroupsFromReportParameters() {
         return new RemoveAlcoGroupsFromReportParameters();
@@ -5725,8 +4741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAlcoGroupsFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAlcoGroupsFromReportParametersResponse }
      */
     public RemoveAlcoGroupsFromReportParametersResponse createRemoveAlcoGroupsFromReportParametersResponse() {
         return new RemoveAlcoGroupsFromReportParametersResponse();
@@ -5735,8 +4749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAlcoGroupsToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddAlcoGroupsToReportParameters }
      */
     public AddAlcoGroupsToReportParameters createAddAlcoGroupsToReportParameters() {
         return new AddAlcoGroupsToReportParameters();
@@ -5745,8 +4757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAlcoGroupsToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAlcoGroupsToReportParametersResponse }
      */
     public AddAlcoGroupsToReportParametersResponse createAddAlcoGroupsToReportParametersResponse() {
         return new AddAlcoGroupsToReportParametersResponse();
@@ -5755,8 +4765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZonesFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZonesFromReportParameters }
      */
     public RemoveWorkZonesFromReportParameters createRemoveWorkZonesFromReportParameters() {
         return new RemoveWorkZonesFromReportParameters();
@@ -5765,8 +4773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZonesFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZonesFromReportParametersResponse }
      */
     public RemoveWorkZonesFromReportParametersResponse createRemoveWorkZonesFromReportParametersResponse() {
         return new RemoveWorkZonesFromReportParametersResponse();
@@ -5775,8 +4781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddVehicleTypesToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddVehicleTypesToReportParameters }
      */
     public AddVehicleTypesToReportParameters createAddVehicleTypesToReportParameters() {
         return new AddVehicleTypesToReportParameters();
@@ -5785,8 +4789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddVehicleTypesToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddVehicleTypesToReportParametersResponse }
      */
     public AddVehicleTypesToReportParametersResponse createAddVehicleTypesToReportParametersResponse() {
         return new AddVehicleTypesToReportParametersResponse();
@@ -5795,8 +4797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveVehicleTypesFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveVehicleTypesFromReportParameters }
      */
     public RemoveVehicleTypesFromReportParameters createRemoveVehicleTypesFromReportParameters() {
         return new RemoveVehicleTypesFromReportParameters();
@@ -5805,8 +4805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveVehicleTypesFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveVehicleTypesFromReportParametersResponse }
      */
     public RemoveVehicleTypesFromReportParametersResponse createRemoveVehicleTypesFromReportParametersResponse() {
         return new RemoveVehicleTypesFromReportParametersResponse();
@@ -5815,8 +4813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddVehiclesToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddVehiclesToReportParameters }
      */
     public AddVehiclesToReportParameters createAddVehiclesToReportParameters() {
         return new AddVehiclesToReportParameters();
@@ -5825,8 +4821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddVehiclesToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddVehiclesToReportParametersResponse }
      */
     public AddVehiclesToReportParametersResponse createAddVehiclesToReportParametersResponse() {
         return new AddVehiclesToReportParametersResponse();
@@ -5835,8 +4829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveVehiclesFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveVehiclesFromReportParameters }
      */
     public RemoveVehiclesFromReportParameters createRemoveVehiclesFromReportParameters() {
         return new RemoveVehiclesFromReportParameters();
@@ -5845,8 +4837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveVehiclesFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveVehiclesFromReportParametersResponse }
      */
     public RemoveVehiclesFromReportParametersResponse createRemoveVehiclesFromReportParametersResponse() {
         return new RemoveVehiclesFromReportParametersResponse();
@@ -5855,8 +4845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link AddReactionEvent }
      */
     public AddReactionEvent createAddReactionEvent() {
         return new AddReactionEvent();
@@ -5865,8 +4853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link AddReactionEventResponse }
      */
     public AddReactionEventResponse createAddReactionEventResponse() {
         return new AddReactionEventResponse();
@@ -5875,8 +4861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionEventCommonData }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionEventCommonData }
      */
     public SaveReactionEventCommonData createSaveReactionEventCommonData() {
         return new SaveReactionEventCommonData();
@@ -5885,8 +4869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionEventCommonDataResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionEventCommonDataResponse }
      */
     public SaveReactionEventCommonDataResponse createSaveReactionEventCommonDataResponse() {
         return new SaveReactionEventCommonDataResponse();
@@ -5895,8 +4877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReactionEvents }
      * 
-     * @return
-     *     the new instance of {@link RemoveReactionEvents }
      */
     public RemoveReactionEvents createRemoveReactionEvents() {
         return new RemoveReactionEvents();
@@ -5905,8 +4885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReactionEventsResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveReactionEventsResponse }
      */
     public RemoveReactionEventsResponse createRemoveReactionEventsResponse() {
         return new RemoveReactionEventsResponse();
@@ -5915,8 +4893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionEvent }
      */
     public AddEmployeesToReactionEvent createAddEmployeesToReactionEvent() {
         return new AddEmployeesToReactionEvent();
@@ -5925,8 +4901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionEventResponse }
      */
     public AddEmployeesToReactionEventResponse createAddEmployeesToReactionEventResponse() {
         return new AddEmployeesToReactionEventResponse();
@@ -5935,8 +4909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesFromReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesFromReactionEvent }
      */
     public RemoveEmployeesFromReactionEvent createRemoveEmployeesFromReactionEvent() {
         return new RemoveEmployeesFromReactionEvent();
@@ -5945,8 +4917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesFromReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesFromReactionEventResponse }
      */
     public RemoveEmployeesFromReactionEventResponse createRemoveEmployeesFromReactionEventResponse() {
         return new RemoveEmployeesFromReactionEventResponse();
@@ -5955,8 +4925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToReactionEvent }
      */
     public AddEmployeeGroupsToReactionEvent createAddEmployeeGroupsToReactionEvent() {
         return new AddEmployeeGroupsToReactionEvent();
@@ -5965,8 +4933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToReactionEventResponse }
      */
     public AddEmployeeGroupsToReactionEventResponse createAddEmployeeGroupsToReactionEventResponse() {
         return new AddEmployeeGroupsToReactionEventResponse();
@@ -5975,8 +4941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionEventByGroups }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionEventByGroups }
      */
     public AddEmployeesToReactionEventByGroups createAddEmployeesToReactionEventByGroups() {
         return new AddEmployeesToReactionEventByGroups();
@@ -5985,8 +4949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionEventByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionEventByGroupsResponse }
      */
     public AddEmployeesToReactionEventByGroupsResponse createAddEmployeesToReactionEventByGroupsResponse() {
         return new AddEmployeesToReactionEventByGroupsResponse();
@@ -5995,8 +4957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupsFromReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupsFromReactionEvent }
      */
     public RemoveEmployeeGroupsFromReactionEvent createRemoveEmployeeGroupsFromReactionEvent() {
         return new RemoveEmployeeGroupsFromReactionEvent();
@@ -6005,8 +4965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupsFromReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupsFromReactionEventResponse }
      */
     public RemoveEmployeeGroupsFromReactionEventResponse createRemoveEmployeeGroupsFromReactionEventResponse() {
         return new RemoveEmployeeGroupsFromReactionEventResponse();
@@ -6015,8 +4973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeFromReactionEventByGroups }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeFromReactionEventByGroups }
      */
     public RemoveEmployeeFromReactionEventByGroups createRemoveEmployeeFromReactionEventByGroups() {
         return new RemoveEmployeeFromReactionEventByGroups();
@@ -6025,8 +4981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeFromReactionEventByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeFromReactionEventByGroupsResponse }
      */
     public RemoveEmployeeFromReactionEventByGroupsResponse createRemoveEmployeeFromReactionEventByGroupsResponse() {
         return new RemoveEmployeeFromReactionEventByGroupsResponse();
@@ -6035,8 +4989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriversToReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link AddDriversToReactionEvent }
      */
     public AddDriversToReactionEvent createAddDriversToReactionEvent() {
         return new AddDriversToReactionEvent();
@@ -6045,8 +4997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriversToReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link AddDriversToReactionEventResponse }
      */
     public AddDriversToReactionEventResponse createAddDriversToReactionEventResponse() {
         return new AddDriversToReactionEventResponse();
@@ -6055,8 +5005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriversFromReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriversFromReactionEvent }
      */
     public RemoveDriversFromReactionEvent createRemoveDriversFromReactionEvent() {
         return new RemoveDriversFromReactionEvent();
@@ -6065,8 +5013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriversFromReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriversFromReactionEventResponse }
      */
     public RemoveDriversFromReactionEventResponse createRemoveDriversFromReactionEventResponse() {
         return new RemoveDriversFromReactionEventResponse();
@@ -6075,8 +5021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLogMessageSubtypesToReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link AddLogMessageSubtypesToReactionEvent }
      */
     public AddLogMessageSubtypesToReactionEvent createAddLogMessageSubtypesToReactionEvent() {
         return new AddLogMessageSubtypesToReactionEvent();
@@ -6085,8 +5029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLogMessageSubtypesToReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link AddLogMessageSubtypesToReactionEventResponse }
      */
     public AddLogMessageSubtypesToReactionEventResponse createAddLogMessageSubtypesToReactionEventResponse() {
         return new AddLogMessageSubtypesToReactionEventResponse();
@@ -6095,8 +5037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveLogMessageSubtypesFromReactionEvent }
      * 
-     * @return
-     *     the new instance of {@link RemoveLogMessageSubtypesFromReactionEvent }
      */
     public RemoveLogMessageSubtypesFromReactionEvent createRemoveLogMessageSubtypesFromReactionEvent() {
         return new RemoveLogMessageSubtypesFromReactionEvent();
@@ -6105,8 +5045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveLogMessageSubtypesFromReactionEventResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveLogMessageSubtypesFromReactionEventResponse }
      */
     public RemoveLogMessageSubtypesFromReactionEventResponse createRemoveLogMessageSubtypesFromReactionEventResponse() {
         return new RemoveLogMessageSubtypesFromReactionEventResponse();
@@ -6115,8 +5053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddSwitchedOffLogMessageSubtypesToWorkplace }
      * 
-     * @return
-     *     the new instance of {@link AddSwitchedOffLogMessageSubtypesToWorkplace }
      */
     public AddSwitchedOffLogMessageSubtypesToWorkplace createAddSwitchedOffLogMessageSubtypesToWorkplace() {
         return new AddSwitchedOffLogMessageSubtypesToWorkplace();
@@ -6125,8 +5061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddSwitchedOffLogMessageSubtypesToWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link AddSwitchedOffLogMessageSubtypesToWorkplaceResponse }
      */
     public AddSwitchedOffLogMessageSubtypesToWorkplaceResponse createAddSwitchedOffLogMessageSubtypesToWorkplaceResponse() {
         return new AddSwitchedOffLogMessageSubtypesToWorkplaceResponse();
@@ -6135,8 +5069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveSwitchedOffLogMessageSubtypesFromWorkplace }
      * 
-     * @return
-     *     the new instance of {@link RemoveSwitchedOffLogMessageSubtypesFromWorkplace }
      */
     public RemoveSwitchedOffLogMessageSubtypesFromWorkplace createRemoveSwitchedOffLogMessageSubtypesFromWorkplace() {
         return new RemoveSwitchedOffLogMessageSubtypesFromWorkplace();
@@ -6145,8 +5077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveSwitchedOffLogMessageSubtypesFromWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveSwitchedOffLogMessageSubtypesFromWorkplaceResponse }
      */
     public RemoveSwitchedOffLogMessageSubtypesFromWorkplaceResponse createRemoveSwitchedOffLogMessageSubtypesFromWorkplaceResponse() {
         return new RemoveSwitchedOffLogMessageSubtypesFromWorkplaceResponse();
@@ -6155,8 +5085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetRemoteTerminalSettingsByWorkplaceModuleId }
      * 
-     * @return
-     *     the new instance of {@link SetRemoteTerminalSettingsByWorkplaceModuleId }
      */
     public SetRemoteTerminalSettingsByWorkplaceModuleId createSetRemoteTerminalSettingsByWorkplaceModuleId() {
         return new SetRemoteTerminalSettingsByWorkplaceModuleId();
@@ -6165,8 +5093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetRemoteTerminalSettingsByWorkplaceModuleIdResponse }
      * 
-     * @return
-     *     the new instance of {@link SetRemoteTerminalSettingsByWorkplaceModuleIdResponse }
      */
     public SetRemoteTerminalSettingsByWorkplaceModuleIdResponse createSetRemoteTerminalSettingsByWorkplaceModuleIdResponse() {
         return new SetRemoteTerminalSettingsByWorkplaceModuleIdResponse();
@@ -6175,8 +5101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddSwitchedOffLogDriversToWorkplace }
      * 
-     * @return
-     *     the new instance of {@link AddSwitchedOffLogDriversToWorkplace }
      */
     public AddSwitchedOffLogDriversToWorkplace createAddSwitchedOffLogDriversToWorkplace() {
         return new AddSwitchedOffLogDriversToWorkplace();
@@ -6185,8 +5109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddSwitchedOffLogDriversToWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link AddSwitchedOffLogDriversToWorkplaceResponse }
      */
     public AddSwitchedOffLogDriversToWorkplaceResponse createAddSwitchedOffLogDriversToWorkplaceResponse() {
         return new AddSwitchedOffLogDriversToWorkplaceResponse();
@@ -6195,8 +5117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveSwitchedOffLogDriversFromWorkplace }
      * 
-     * @return
-     *     the new instance of {@link RemoveSwitchedOffLogDriversFromWorkplace }
      */
     public RemoveSwitchedOffLogDriversFromWorkplace createRemoveSwitchedOffLogDriversFromWorkplace() {
         return new RemoveSwitchedOffLogDriversFromWorkplace();
@@ -6205,8 +5125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveSwitchedOffLogDriversFromWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveSwitchedOffLogDriversFromWorkplaceResponse }
      */
     public RemoveSwitchedOffLogDriversFromWorkplaceResponse createRemoveSwitchedOffLogDriversFromWorkplaceResponse() {
         return new RemoveSwitchedOffLogDriversFromWorkplaceResponse();
@@ -6215,8 +5133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionEventsFromDevices }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionEventsFromDevices }
      */
     public SaveReactionEventsFromDevices createSaveReactionEventsFromDevices() {
         return new SaveReactionEventsFromDevices();
@@ -6225,8 +5141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionEventsFromDevicesResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionEventsFromDevicesResponse }
      */
     public SaveReactionEventsFromDevicesResponse createSaveReactionEventsFromDevicesResponse() {
         return new SaveReactionEventsFromDevicesResponse();
@@ -6235,8 +5149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetViolationPlan }
      * 
-     * @return
-     *     the new instance of {@link GetViolationPlan }
      */
     public GetViolationPlan createGetViolationPlan() {
         return new GetViolationPlan();
@@ -6245,8 +5157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetViolationPlanResponse }
      * 
-     * @return
-     *     the new instance of {@link GetViolationPlanResponse }
      */
     public GetViolationPlanResponse createGetViolationPlanResponse() {
         return new GetViolationPlanResponse();
@@ -6255,8 +5165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetViolationPlan }
      * 
-     * @return
-     *     the new instance of {@link SetViolationPlan }
      */
     public SetViolationPlan createSetViolationPlan() {
         return new SetViolationPlan();
@@ -6265,8 +5173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetViolationPlanResponse }
      * 
-     * @return
-     *     the new instance of {@link SetViolationPlanResponse }
      */
     public SetViolationPlanResponse createSetViolationPlanResponse() {
         return new SetViolationPlanResponse();
@@ -6275,8 +5181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddBranch }
      * 
-     * @return
-     *     the new instance of {@link AddBranch }
      */
     public AddBranch createAddBranch() {
         return new AddBranch();
@@ -6285,8 +5189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddBranchResponse }
      * 
-     * @return
-     *     the new instance of {@link AddBranchResponse }
      */
     public AddBranchResponse createAddBranchResponse() {
         return new AddBranchResponse();
@@ -6295,8 +5197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveBranch }
      * 
-     * @return
-     *     the new instance of {@link SaveBranch }
      */
     public SaveBranch createSaveBranch() {
         return new SaveBranch();
@@ -6305,8 +5205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveBranchResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveBranchResponse }
      */
     public SaveBranchResponse createSaveBranchResponse() {
         return new SaveBranchResponse();
@@ -6315,8 +5213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveBranch }
      * 
-     * @return
-     *     the new instance of {@link RemoveBranch }
      */
     public RemoveBranch createRemoveBranch() {
         return new RemoveBranch();
@@ -6325,8 +5221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveBranchResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveBranchResponse }
      */
     public RemoveBranchResponse createRemoveBranchResponse() {
         return new RemoveBranchResponse();
@@ -6335,8 +5229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SynchronizeEbs }
      * 
-     * @return
-     *     the new instance of {@link SynchronizeEbs }
      */
     public SynchronizeEbs createSynchronizeEbs() {
         return new SynchronizeEbs();
@@ -6345,8 +5237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SynchronizeEbsResponse }
      * 
-     * @return
-     *     the new instance of {@link SynchronizeEbsResponse }
      */
     public SynchronizeEbsResponse createSynchronizeEbsResponse() {
         return new SynchronizeEbsResponse();
@@ -6355,8 +5245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentFloorTransfers }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentFloorTransfers }
      */
     public SetUseEmployeeParentFloorTransfers createSetUseEmployeeParentFloorTransfers() {
         return new SetUseEmployeeParentFloorTransfers();
@@ -6365,8 +5253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentFloorTransfersResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentFloorTransfersResponse }
      */
     public SetUseEmployeeParentFloorTransfersResponse createSetUseEmployeeParentFloorTransfersResponse() {
         return new SetUseEmployeeParentFloorTransfersResponse();
@@ -6375,8 +5261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentFloorTransfers }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentFloorTransfers }
      */
     public SetUseEmployeeGroupParentFloorTransfers createSetUseEmployeeGroupParentFloorTransfers() {
         return new SetUseEmployeeGroupParentFloorTransfers();
@@ -6385,8 +5269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentFloorTransfersResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentFloorTransfersResponse }
      */
     public SetUseEmployeeGroupParentFloorTransfersResponse createSetUseEmployeeGroupParentFloorTransfersResponse() {
         return new SetUseEmployeeGroupParentFloorTransfersResponse();
@@ -6395,8 +5277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZone }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZone }
      */
     public AddWorkZone createAddWorkZone() {
         return new AddWorkZone();
@@ -6405,8 +5285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZoneResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZoneResponse }
      */
     public AddWorkZoneResponse createAddWorkZoneResponse() {
         return new AddWorkZoneResponse();
@@ -6415,8 +5293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZones }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZones }
      */
     public RemoveWorkZones createRemoveWorkZones() {
         return new RemoveWorkZones();
@@ -6425,8 +5301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZonesResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZonesResponse }
      */
     public RemoveWorkZonesResponse createRemoveWorkZonesResponse() {
         return new RemoveWorkZonesResponse();
@@ -6435,8 +5309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkZone }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkZone }
      */
     public SaveWorkZone createSaveWorkZone() {
         return new SaveWorkZone();
@@ -6445,8 +5317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkZoneResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkZoneResponse }
      */
     public SaveWorkZoneResponse createSaveWorkZoneResponse() {
         return new SaveWorkZoneResponse();
@@ -6455,8 +5325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesAccessPoint }
      */
     public AddWorkZonesAccessPoint createAddWorkZonesAccessPoint() {
         return new AddWorkZonesAccessPoint();
@@ -6465,8 +5333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesAccessPointResponse }
      */
     public AddWorkZonesAccessPointResponse createAddWorkZonesAccessPointResponse() {
         return new AddWorkZonesAccessPointResponse();
@@ -6475,8 +5341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkZonesAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkZonesAccessPoint }
      */
     public SaveWorkZonesAccessPoint createSaveWorkZonesAccessPoint() {
         return new SaveWorkZonesAccessPoint();
@@ -6485,8 +5349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkZonesAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkZonesAccessPointResponse }
      */
     public SaveWorkZonesAccessPointResponse createSaveWorkZonesAccessPointResponse() {
         return new SaveWorkZonesAccessPointResponse();
@@ -6495,8 +5357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZonesAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZonesAccessPoint }
      */
     public RemoveWorkZonesAccessPoint createRemoveWorkZonesAccessPoint() {
         return new RemoveWorkZonesAccessPoint();
@@ -6505,8 +5365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZonesAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZonesAccessPointResponse }
      */
     public RemoveWorkZonesAccessPointResponse createRemoveWorkZonesAccessPointResponse() {
         return new RemoveWorkZonesAccessPointResponse();
@@ -6515,8 +5373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SyncFindFace }
      * 
-     * @return
-     *     the new instance of {@link SyncFindFace }
      */
     public SyncFindFace createSyncFindFace() {
         return new SyncFindFace();
@@ -6525,8 +5381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SyncFindFaceResponse }
      * 
-     * @return
-     *     the new instance of {@link SyncFindFaceResponse }
      */
     public SyncFindFaceResponse createSyncFindFaceResponse() {
         return new SyncFindFaceResponse();
@@ -6535,8 +5389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClearPhotoState }
      * 
-     * @return
-     *     the new instance of {@link ClearPhotoState }
      */
     public ClearPhotoState createClearPhotoState() {
         return new ClearPhotoState();
@@ -6545,8 +5397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClearPhotoStateResponse }
      * 
-     * @return
-     *     the new instance of {@link ClearPhotoStateResponse }
      */
     public ClearPhotoStateResponse createClearPhotoStateResponse() {
         return new ClearPhotoStateResponse();
@@ -6555,8 +5405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SyncFaceX }
      * 
-     * @return
-     *     the new instance of {@link SyncFaceX }
      */
     public SyncFaceX createSyncFaceX() {
         return new SyncFaceX();
@@ -6565,8 +5413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SyncFaceXResponse }
      * 
-     * @return
-     *     the new instance of {@link SyncFaceXResponse }
      */
     public SyncFaceXResponse createSyncFaceXResponse() {
         return new SyncFaceXResponse();
@@ -6575,8 +5421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClearFaceX }
      * 
-     * @return
-     *     the new instance of {@link ClearFaceX }
      */
     public ClearFaceX createClearFaceX() {
         return new ClearFaceX();
@@ -6585,8 +5429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ClearFaceXResponse }
      * 
-     * @return
-     *     the new instance of {@link ClearFaceXResponse }
      */
     public ClearFaceXResponse createClearFaceXResponse() {
         return new ClearFaceXResponse();
@@ -6595,8 +5437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSIIDKs }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSIIDKs }
      */
     public RemoveISSIIDKs createRemoveISSIIDKs() {
         return new RemoveISSIIDKs();
@@ -6605,8 +5445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSIIDKsResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSIIDKsResponse }
      */
     public RemoveISSIIDKsResponse createRemoveISSIIDKsResponse() {
         return new RemoveISSIIDKsResponse();
@@ -6615,8 +5453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSRecognition }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSRecognition }
      */
     public RemoveISSRecognition createRemoveISSRecognition() {
         return new RemoveISSRecognition();
@@ -6625,8 +5461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSRecognitionResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSRecognitionResponse }
      */
     public RemoveISSRecognitionResponse createRemoveISSRecognitionResponse() {
         return new RemoveISSRecognitionResponse();
@@ -6635,8 +5469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSDrivers }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSDrivers }
      */
     public RemoveISSDrivers createRemoveISSDrivers() {
         return new RemoveISSDrivers();
@@ -6645,8 +5477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSDriversResponse }
      */
     public RemoveISSDriversResponse createRemoveISSDriversResponse() {
         return new RemoveISSDriversResponse();
@@ -6655,8 +5485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveISSIIDK }
      * 
-     * @return
-     *     the new instance of {@link SaveISSIIDK }
      */
     public SaveISSIIDK createSaveISSIIDK() {
         return new SaveISSIIDK();
@@ -6665,8 +5493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveISSIIDKResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveISSIIDKResponse }
      */
     public SaveISSIIDKResponse createSaveISSIIDKResponse() {
         return new SaveISSIIDKResponse();
@@ -6675,8 +5501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveISSRecognition }
      * 
-     * @return
-     *     the new instance of {@link SaveISSRecognition }
      */
     public SaveISSRecognition createSaveISSRecognition() {
         return new SaveISSRecognition();
@@ -6685,8 +5509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveISSRecognitionResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveISSRecognitionResponse }
      */
     public SaveISSRecognitionResponse createSaveISSRecognitionResponse() {
         return new SaveISSRecognitionResponse();
@@ -6695,8 +5517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveISSDriver }
      * 
-     * @return
-     *     the new instance of {@link SaveISSDriver }
      */
     public SaveISSDriver createSaveISSDriver() {
         return new SaveISSDriver();
@@ -6705,8 +5525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveISSDriverResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveISSDriverResponse }
      */
     public SaveISSDriverResponse createSaveISSDriverResponse() {
         return new SaveISSDriverResponse();
@@ -6715,8 +5533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSIIDK }
      * 
-     * @return
-     *     the new instance of {@link AddISSIIDK }
      */
     public AddISSIIDK createAddISSIIDK() {
         return new AddISSIIDK();
@@ -6725,8 +5541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSIIDKResponse }
      * 
-     * @return
-     *     the new instance of {@link AddISSIIDKResponse }
      */
     public AddISSIIDKResponse createAddISSIIDKResponse() {
         return new AddISSIIDKResponse();
@@ -6735,8 +5549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSRecognition }
      * 
-     * @return
-     *     the new instance of {@link AddISSRecognition }
      */
     public AddISSRecognition createAddISSRecognition() {
         return new AddISSRecognition();
@@ -6745,8 +5557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSRecognitionResponse }
      * 
-     * @return
-     *     the new instance of {@link AddISSRecognitionResponse }
      */
     public AddISSRecognitionResponse createAddISSRecognitionResponse() {
         return new AddISSRecognitionResponse();
@@ -6755,8 +5565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSDriver }
      * 
-     * @return
-     *     the new instance of {@link AddISSDriver }
      */
     public AddISSDriver createAddISSDriver() {
         return new AddISSDriver();
@@ -6765,8 +5573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSDriverResponse }
      * 
-     * @return
-     *     the new instance of {@link AddISSDriverResponse }
      */
     public AddISSDriverResponse createAddISSDriverResponse() {
         return new AddISSDriverResponse();
@@ -6775,8 +5581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateSecurOSConfiguration }
      * 
-     * @return
-     *     the new instance of {@link UpdateSecurOSConfiguration }
      */
     public UpdateSecurOSConfiguration createUpdateSecurOSConfiguration() {
         return new UpdateSecurOSConfiguration();
@@ -6785,8 +5589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateSecurOSConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link UpdateSecurOSConfigurationResponse }
      */
     public UpdateSecurOSConfigurationResponse createUpdateSecurOSConfigurationResponse() {
         return new UpdateSecurOSConfigurationResponse();
@@ -6795,8 +5597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSecureOSCameras }
      * 
-     * @return
-     *     the new instance of {@link GetSecureOSCameras }
      */
     public GetSecureOSCameras createGetSecureOSCameras() {
         return new GetSecureOSCameras();
@@ -6805,8 +5605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetSecureOSCamerasResponse }
      * 
-     * @return
-     *     the new instance of {@link GetSecureOSCamerasResponse }
      */
     public GetSecureOSCamerasResponse createGetSecureOSCamerasResponse() {
         return new GetSecureOSCamerasResponse();
@@ -6815,8 +5613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSDriverEventPlayback }
      * 
-     * @return
-     *     the new instance of {@link AddISSDriverEventPlayback }
      */
     public AddISSDriverEventPlayback createAddISSDriverEventPlayback() {
         return new AddISSDriverEventPlayback();
@@ -6825,8 +5621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddISSDriverEventPlaybackResponse }
      * 
-     * @return
-     *     the new instance of {@link AddISSDriverEventPlaybackResponse }
      */
     public AddISSDriverEventPlaybackResponse createAddISSDriverEventPlaybackResponse() {
         return new AddISSDriverEventPlaybackResponse();
@@ -6835,8 +5629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSDriverEventPlayback }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSDriverEventPlayback }
      */
     public RemoveISSDriverEventPlayback createRemoveISSDriverEventPlayback() {
         return new RemoveISSDriverEventPlayback();
@@ -6845,8 +5637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveISSDriverEventPlaybackResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveISSDriverEventPlaybackResponse }
      */
     public RemoveISSDriverEventPlaybackResponse createRemoveISSDriverEventPlaybackResponse() {
         return new RemoveISSDriverEventPlaybackResponse();
@@ -6855,8 +5645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadPanasonicConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadPanasonicConfiguration }
      */
     public LoadPanasonicConfiguration createLoadPanasonicConfiguration() {
         return new LoadPanasonicConfiguration();
@@ -6865,8 +5653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadPanasonicConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadPanasonicConfigurationResponse }
      */
     public LoadPanasonicConfigurationResponse createLoadPanasonicConfigurationResponse() {
         return new LoadPanasonicConfigurationResponse();
@@ -6875,8 +5661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateBasIpDrivers }
      * 
-     * @return
-     *     the new instance of {@link UpdateBasIpDrivers }
      */
     public UpdateBasIpDrivers createUpdateBasIpDrivers() {
         return new UpdateBasIpDrivers();
@@ -6885,8 +5669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateBasIpDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link UpdateBasIpDriversResponse }
      */
     public UpdateBasIpDriversResponse createUpdateBasIpDriversResponse() {
         return new UpdateBasIpDriversResponse();
@@ -6895,8 +5677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadNTechLabRecognitionServiceConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadNTechLabRecognitionServiceConfiguration }
      */
     public LoadNTechLabRecognitionServiceConfiguration createLoadNTechLabRecognitionServiceConfiguration() {
         return new LoadNTechLabRecognitionServiceConfiguration();
@@ -6905,8 +5685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadNTechLabRecognitionServiceConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadNTechLabRecognitionServiceConfigurationResponse }
      */
     public LoadNTechLabRecognitionServiceConfigurationResponse createLoadNTechLabRecognitionServiceConfigurationResponse() {
         return new LoadNTechLabRecognitionServiceConfigurationResponse();
@@ -6915,8 +5693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadKeyKeeperServiceConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadKeyKeeperServiceConfiguration }
      */
     public LoadKeyKeeperServiceConfiguration createLoadKeyKeeperServiceConfiguration() {
         return new LoadKeyKeeperServiceConfiguration();
@@ -6925,8 +5701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadKeyKeeperServiceConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadKeyKeeperServiceConfigurationResponse }
      */
     public LoadKeyKeeperServiceConfigurationResponse createLoadKeyKeeperServiceConfigurationResponse() {
         return new LoadKeyKeeperServiceConfigurationResponse();
@@ -6935,8 +5709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeyKeeperSlotsStatus }
      * 
-     * @return
-     *     the new instance of {@link GetKeyKeeperSlotsStatus }
      */
     public GetKeyKeeperSlotsStatus createGetKeyKeeperSlotsStatus() {
         return new GetKeyKeeperSlotsStatus();
@@ -6945,8 +5717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeyKeeperSlotsStatusResponse }
      * 
-     * @return
-     *     the new instance of {@link GetKeyKeeperSlotsStatusResponse }
      */
     public GetKeyKeeperSlotsStatusResponse createGetKeyKeeperSlotsStatusResponse() {
         return new GetKeyKeeperSlotsStatusResponse();
@@ -6955,8 +5725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeyLocation }
      * 
-     * @return
-     *     the new instance of {@link GetKeyLocation }
      */
     public GetKeyLocation createGetKeyLocation() {
         return new GetKeyLocation();
@@ -6965,8 +5733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeyLocationResponse }
      * 
-     * @return
-     *     the new instance of {@link GetKeyLocationResponse }
      */
     public GetKeyLocationResponse createGetKeyLocationResponse() {
         return new GetKeyLocationResponse();
@@ -6975,8 +5741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OpenKeyKeeperDoorAndTakeKey }
      * 
-     * @return
-     *     the new instance of {@link OpenKeyKeeperDoorAndTakeKey }
      */
     public OpenKeyKeeperDoorAndTakeKey createOpenKeyKeeperDoorAndTakeKey() {
         return new OpenKeyKeeperDoorAndTakeKey();
@@ -6985,8 +5749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OpenKeyKeeperDoorAndTakeKeyResponse }
      * 
-     * @return
-     *     the new instance of {@link OpenKeyKeeperDoorAndTakeKeyResponse }
      */
     public OpenKeyKeeperDoorAndTakeKeyResponse createOpenKeyKeeperDoorAndTakeKeyResponse() {
         return new OpenKeyKeeperDoorAndTakeKeyResponse();
@@ -6995,8 +5757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OpenKeyKeeperDoor }
      * 
-     * @return
-     *     the new instance of {@link OpenKeyKeeperDoor }
      */
     public OpenKeyKeeperDoor createOpenKeyKeeperDoor() {
         return new OpenKeyKeeperDoor();
@@ -7005,8 +5765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OpenKeyKeeperDoorResponse }
      * 
-     * @return
-     *     the new instance of {@link OpenKeyKeeperDoorResponse }
      */
     public OpenKeyKeeperDoorResponse createOpenKeyKeeperDoorResponse() {
         return new OpenKeyKeeperDoorResponse();
@@ -7015,8 +5773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OpenCellCommand }
      * 
-     * @return
-     *     the new instance of {@link OpenCellCommand }
      */
     public OpenCellCommand createOpenCellCommand() {
         return new OpenCellCommand();
@@ -7025,8 +5781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OpenCellCommandResponse }
      * 
-     * @return
-     *     the new instance of {@link OpenCellCommandResponse }
      */
     public OpenCellCommandResponse createOpenCellCommandResponse() {
         return new OpenCellCommandResponse();
@@ -7035,8 +5789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadNUUOConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadNUUOConfiguration }
      */
     public LoadNUUOConfiguration createLoadNUUOConfiguration() {
         return new LoadNUUOConfiguration();
@@ -7045,8 +5797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadNUUOConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadNUUOConfigurationResponse }
      */
     public LoadNUUOConfigurationResponse createLoadNUUOConfigurationResponse() {
         return new LoadNUUOConfigurationResponse();
@@ -7055,8 +5805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadTrassirConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadTrassirConfiguration }
      */
     public LoadTrassirConfiguration createLoadTrassirConfiguration() {
         return new LoadTrassirConfiguration();
@@ -7065,8 +5813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadTrassirConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadTrassirConfigurationResponse }
      */
     public LoadTrassirConfigurationResponse createLoadTrassirConfigurationResponse() {
         return new LoadTrassirConfigurationResponse();
@@ -7075,8 +5821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadIdisConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadIdisConfiguration }
      */
     public LoadIdisConfiguration createLoadIdisConfiguration() {
         return new LoadIdisConfiguration();
@@ -7085,8 +5829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadIdisConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadIdisConfigurationResponse }
      */
     public LoadIdisConfigurationResponse createLoadIdisConfigurationResponse() {
         return new LoadIdisConfigurationResponse();
@@ -7095,8 +5837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadServerConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadServerConfiguration }
      */
     public LoadServerConfiguration createLoadServerConfiguration() {
         return new LoadServerConfiguration();
@@ -7105,8 +5845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadServerConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadServerConfigurationResponse }
      */
     public LoadServerConfigurationResponse createLoadServerConfigurationResponse() {
         return new LoadServerConfigurationResponse();
@@ -7115,8 +5853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadPersonalCabinetConfiguration }
      * 
-     * @return
-     *     the new instance of {@link LoadPersonalCabinetConfiguration }
      */
     public LoadPersonalCabinetConfiguration createLoadPersonalCabinetConfiguration() {
         return new LoadPersonalCabinetConfiguration();
@@ -7125,8 +5861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LoadPersonalCabinetConfigurationResponse }
      * 
-     * @return
-     *     the new instance of {@link LoadPersonalCabinetConfigurationResponse }
      */
     public LoadPersonalCabinetConfigurationResponse createLoadPersonalCabinetConfigurationResponse() {
         return new LoadPersonalCabinetConfigurationResponse();
@@ -7135,8 +5869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BroadcastFindBasIpDevices }
      * 
-     * @return
-     *     the new instance of {@link BroadcastFindBasIpDevices }
      */
     public BroadcastFindBasIpDevices createBroadcastFindBasIpDevices() {
         return new BroadcastFindBasIpDevices();
@@ -7145,8 +5877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BroadcastFindBasIpDevicesResponse }
      * 
-     * @return
-     *     the new instance of {@link BroadcastFindBasIpDevicesResponse }
      */
     public BroadcastFindBasIpDevicesResponse createBroadcastFindBasIpDevicesResponse() {
         return new BroadcastFindBasIpDevicesResponse();
@@ -7155,8 +5885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BroadcastFindLPRCameras }
      * 
-     * @return
-     *     the new instance of {@link BroadcastFindLPRCameras }
      */
     public BroadcastFindLPRCameras createBroadcastFindLPRCameras() {
         return new BroadcastFindLPRCameras();
@@ -7165,8 +5893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BroadcastFindLPRCamerasResponse }
      * 
-     * @return
-     *     the new instance of {@link BroadcastFindLPRCamerasResponse }
      */
     public BroadcastFindLPRCamerasResponse createBroadcastFindLPRCamerasResponse() {
         return new BroadcastFindLPRCamerasResponse();
@@ -7175,8 +5901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindUsbCanConverters }
      * 
-     * @return
-     *     the new instance of {@link FindUsbCanConverters }
      */
     public FindUsbCanConverters createFindUsbCanConverters() {
         return new FindUsbCanConverters();
@@ -7185,8 +5909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindUsbCanConvertersResponse }
      * 
-     * @return
-     *     the new instance of {@link FindUsbCanConvertersResponse }
      */
     public FindUsbCanConvertersResponse createFindUsbCanConvertersResponse() {
         return new FindUsbCanConvertersResponse();
@@ -7195,8 +5917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BroadcastFindLanConverters }
      * 
-     * @return
-     *     the new instance of {@link BroadcastFindLanConverters }
      */
     public BroadcastFindLanConverters createBroadcastFindLanConverters() {
         return new BroadcastFindLanConverters();
@@ -7205,8 +5925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BroadcastFindLanConvertersResponse }
      * 
-     * @return
-     *     the new instance of {@link BroadcastFindLanConvertersResponse }
      */
     public BroadcastFindLanConvertersResponse createBroadcastFindLanConvertersResponse() {
         return new BroadcastFindLanConvertersResponse();
@@ -7215,8 +5933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindLanConverter }
      * 
-     * @return
-     *     the new instance of {@link FindLanConverter }
      */
     public FindLanConverter createFindLanConverter() {
         return new FindLanConverter();
@@ -7225,8 +5941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindLanConverterResponse }
      * 
-     * @return
-     *     the new instance of {@link FindLanConverterResponse }
      */
     public FindLanConverterResponse createFindLanConverterResponse() {
         return new FindLanConverterResponse();
@@ -7235,8 +5949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindLanConverter2 }
      * 
-     * @return
-     *     the new instance of {@link FindLanConverter2 }
      */
     public FindLanConverter2 createFindLanConverter2() {
         return new FindLanConverter2();
@@ -7245,8 +5957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindLanConverter2Response }
      * 
-     * @return
-     *     the new instance of {@link FindLanConverter2Response }
      */
     public FindLanConverter2Response createFindLanConverter2Response() {
         return new FindLanConverter2Response();
@@ -7255,8 +5965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindCanControllersViaCanConverter }
      * 
-     * @return
-     *     the new instance of {@link FindCanControllersViaCanConverter }
      */
     public FindCanControllersViaCanConverter createFindCanControllersViaCanConverter() {
         return new FindCanControllersViaCanConverter();
@@ -7265,8 +5973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindCanControllersViaCanConverterResponse }
      * 
-     * @return
-     *     the new instance of {@link FindCanControllersViaCanConverterResponse }
      */
     public FindCanControllersViaCanConverterResponse createFindCanControllersViaCanConverterResponse() {
         return new FindCanControllersViaCanConverterResponse();
@@ -7275,8 +5981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetDevicesAddressBySidViaCanConverter }
      * 
-     * @return
-     *     the new instance of {@link SetDevicesAddressBySidViaCanConverter }
      */
     public SetDevicesAddressBySidViaCanConverter createSetDevicesAddressBySidViaCanConverter() {
         return new SetDevicesAddressBySidViaCanConverter();
@@ -7285,8 +5989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetDevicesAddressBySidViaCanConverterResponse }
      * 
-     * @return
-     *     the new instance of {@link SetDevicesAddressBySidViaCanConverterResponse }
      */
     public SetDevicesAddressBySidViaCanConverterResponse createSetDevicesAddressBySidViaCanConverterResponse() {
         return new SetDevicesAddressBySidViaCanConverterResponse();
@@ -7295,8 +5997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetNetworkConfigurationToDevice }
      * 
-     * @return
-     *     the new instance of {@link SetNetworkConfigurationToDevice }
      */
     public SetNetworkConfigurationToDevice createSetNetworkConfigurationToDevice() {
         return new SetNetworkConfigurationToDevice();
@@ -7305,8 +6005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetNetworkConfigurationToDeviceResponse }
      * 
-     * @return
-     *     the new instance of {@link SetNetworkConfigurationToDeviceResponse }
      */
     public SetNetworkConfigurationToDeviceResponse createSetNetworkConfigurationToDeviceResponse() {
         return new SetNetworkConfigurationToDeviceResponse();
@@ -7315,8 +6013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetControllerConfigurationsViaCanConverter }
      * 
-     * @return
-     *     the new instance of {@link GetControllerConfigurationsViaCanConverter }
      */
     public GetControllerConfigurationsViaCanConverter createGetControllerConfigurationsViaCanConverter() {
         return new GetControllerConfigurationsViaCanConverter();
@@ -7325,8 +6021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetControllerConfigurationsViaCanConverterResponse }
      * 
-     * @return
-     *     the new instance of {@link GetControllerConfigurationsViaCanConverterResponse }
      */
     public GetControllerConfigurationsViaCanConverterResponse createGetControllerConfigurationsViaCanConverterResponse() {
         return new GetControllerConfigurationsViaCanConverterResponse();
@@ -7335,8 +6029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddNestedCell }
      * 
-     * @return
-     *     the new instance of {@link AddNestedCell }
      */
     public AddNestedCell createAddNestedCell() {
         return new AddNestedCell();
@@ -7345,8 +6037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddNestedCellResponse }
      * 
-     * @return
-     *     the new instance of {@link AddNestedCellResponse }
      */
     public AddNestedCellResponse createAddNestedCellResponse() {
         return new AddNestedCellResponse();
@@ -7355,8 +6045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveCell }
      * 
-     * @return
-     *     the new instance of {@link SaveCell }
      */
     public SaveCell createSaveCell() {
         return new SaveCell();
@@ -7365,8 +6053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveCellResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveCellResponse }
      */
     public SaveCellResponse createSaveCellResponse() {
         return new SaveCellResponse();
@@ -7375,8 +6061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveCell }
      * 
-     * @return
-     *     the new instance of {@link RemoveCell }
      */
     public RemoveCell createRemoveCell() {
         return new RemoveCell();
@@ -7385,8 +6069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveCellResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveCellResponse }
      */
     public RemoveCellResponse createRemoveCellResponse() {
         return new RemoveCellResponse();
@@ -7395,8 +6077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveScreen }
      * 
-     * @return
-     *     the new instance of {@link SaveScreen }
      */
     public SaveScreen createSaveScreen() {
         return new SaveScreen();
@@ -7405,8 +6085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveScreenResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveScreenResponse }
      */
     public SaveScreenResponse createSaveScreenResponse() {
         return new SaveScreenResponse();
@@ -7415,8 +6093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToNone }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToNone }
      */
     public SetScreenCellContentToNone createSetScreenCellContentToNone() {
         return new SetScreenCellContentToNone();
@@ -7425,8 +6101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToNoneResponse }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToNoneResponse }
      */
     public SetScreenCellContentToNoneResponse createSetScreenCellContentToNoneResponse() {
         return new SetScreenCellContentToNoneResponse();
@@ -7435,8 +6109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToPhotoIdentification }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToPhotoIdentification }
      */
     public SetScreenCellContentToPhotoIdentification createSetScreenCellContentToPhotoIdentification() {
         return new SetScreenCellContentToPhotoIdentification();
@@ -7445,8 +6117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToPhotoIdentificationResponse }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToPhotoIdentificationResponse }
      */
     public SetScreenCellContentToPhotoIdentificationResponse createSetScreenCellContentToPhotoIdentificationResponse() {
         return new SetScreenCellContentToPhotoIdentificationResponse();
@@ -7455,8 +6125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToCamera }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToCamera }
      */
     public SetScreenCellContentToCamera createSetScreenCellContentToCamera() {
         return new SetScreenCellContentToCamera();
@@ -7465,8 +6133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToCameraResponse }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToCameraResponse }
      */
     public SetScreenCellContentToCameraResponse createSetScreenCellContentToCameraResponse() {
         return new SetScreenCellContentToCameraResponse();
@@ -7475,8 +6141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToPassInfo }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToPassInfo }
      */
     public SetScreenCellContentToPassInfo createSetScreenCellContentToPassInfo() {
         return new SetScreenCellContentToPassInfo();
@@ -7485,8 +6149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetScreenCellContentToPassInfoResponse }
      * 
-     * @return
-     *     the new instance of {@link SetScreenCellContentToPassInfoResponse }
      */
     public SetScreenCellContentToPassInfoResponse createSetScreenCellContentToPassInfoResponse() {
         return new SetScreenCellContentToPassInfoResponse();
@@ -7495,8 +6157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmailAddress }
      * 
-     * @return
-     *     the new instance of {@link AddEmailAddress }
      */
     public AddEmailAddress createAddEmailAddress() {
         return new AddEmailAddress();
@@ -7505,8 +6165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmailAddressResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmailAddressResponse }
      */
     public AddEmailAddressResponse createAddEmailAddressResponse() {
         return new AddEmailAddressResponse();
@@ -7515,8 +6173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmailAddress }
      * 
-     * @return
-     *     the new instance of {@link SaveEmailAddress }
      */
     public SaveEmailAddress createSaveEmailAddress() {
         return new SaveEmailAddress();
@@ -7525,8 +6181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmailAddressResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveEmailAddressResponse }
      */
     public SaveEmailAddressResponse createSaveEmailAddressResponse() {
         return new SaveEmailAddressResponse();
@@ -7535,8 +6189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmailAddress }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmailAddress }
      */
     public RemoveEmailAddress createRemoveEmailAddress() {
         return new RemoveEmailAddress();
@@ -7545,8 +6197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmailAddressResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmailAddressResponse }
      */
     public RemoveEmailAddressResponse createRemoveEmailAddressResponse() {
         return new RemoveEmailAddressResponse();
@@ -7555,8 +6205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddPhoneNumber }
      * 
-     * @return
-     *     the new instance of {@link AddPhoneNumber }
      */
     public AddPhoneNumber createAddPhoneNumber() {
         return new AddPhoneNumber();
@@ -7565,8 +6213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddPhoneNumberResponse }
      * 
-     * @return
-     *     the new instance of {@link AddPhoneNumberResponse }
      */
     public AddPhoneNumberResponse createAddPhoneNumberResponse() {
         return new AddPhoneNumberResponse();
@@ -7575,8 +6221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SavePhoneNumber }
      * 
-     * @return
-     *     the new instance of {@link SavePhoneNumber }
      */
     public SavePhoneNumber createSavePhoneNumber() {
         return new SavePhoneNumber();
@@ -7585,8 +6229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SavePhoneNumberResponse }
      * 
-     * @return
-     *     the new instance of {@link SavePhoneNumberResponse }
      */
     public SavePhoneNumberResponse createSavePhoneNumberResponse() {
         return new SavePhoneNumberResponse();
@@ -7595,8 +6237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemovePhoneNumbers }
      * 
-     * @return
-     *     the new instance of {@link RemovePhoneNumbers }
      */
     public RemovePhoneNumbers createRemovePhoneNumbers() {
         return new RemovePhoneNumbers();
@@ -7605,8 +6245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemovePhoneNumbersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemovePhoneNumbersResponse }
      */
     public RemovePhoneNumbersResponse createRemovePhoneNumbersResponse() {
         return new RemovePhoneNumbersResponse();
@@ -7615,8 +6253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmailDistributionAddress }
      * 
-     * @return
-     *     the new instance of {@link AddEmailDistributionAddress }
      */
     public AddEmailDistributionAddress createAddEmailDistributionAddress() {
         return new AddEmailDistributionAddress();
@@ -7625,8 +6261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmailDistributionAddressResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmailDistributionAddressResponse }
      */
     public AddEmailDistributionAddressResponse createAddEmailDistributionAddressResponse() {
         return new AddEmailDistributionAddressResponse();
@@ -7635,8 +6269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmailDistributionAddress }
      * 
-     * @return
-     *     the new instance of {@link SaveEmailDistributionAddress }
      */
     public SaveEmailDistributionAddress createSaveEmailDistributionAddress() {
         return new SaveEmailDistributionAddress();
@@ -7645,8 +6277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmailDistributionAddressResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveEmailDistributionAddressResponse }
      */
     public SaveEmailDistributionAddressResponse createSaveEmailDistributionAddressResponse() {
         return new SaveEmailDistributionAddressResponse();
@@ -7655,8 +6285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmailDistributionAddresses }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmailDistributionAddresses }
      */
     public RemoveEmailDistributionAddresses createRemoveEmailDistributionAddresses() {
         return new RemoveEmailDistributionAddresses();
@@ -7665,8 +6293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmailDistributionAddressesResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmailDistributionAddressesResponse }
      */
     public RemoveEmailDistributionAddressesResponse createRemoveEmailDistributionAddressesResponse() {
         return new RemoveEmailDistributionAddressesResponse();
@@ -7675,8 +6301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetFilterTagsForResource }
      * 
-     * @return
-     *     the new instance of {@link SetFilterTagsForResource }
      */
     public SetFilterTagsForResource createSetFilterTagsForResource() {
         return new SetFilterTagsForResource();
@@ -7685,8 +6309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetFilterTagsForResourceResponse }
      * 
-     * @return
-     *     the new instance of {@link SetFilterTagsForResourceResponse }
      */
     public SetFilterTagsForResourceResponse createSetFilterTagsForResourceResponse() {
         return new SetFilterTagsForResourceResponse();
@@ -7695,8 +6317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetTagsForResource }
      * 
-     * @return
-     *     the new instance of {@link SetTagsForResource }
      */
     public SetTagsForResource createSetTagsForResource() {
         return new SetTagsForResource();
@@ -7705,8 +6325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetTagsForResourceResponse }
      * 
-     * @return
-     *     the new instance of {@link SetTagsForResourceResponse }
      */
     public SetTagsForResourceResponse createSetTagsForResourceResponse() {
         return new SetTagsForResourceResponse();
@@ -7715,8 +6333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAccessPoint2CameraChain }
      * 
-     * @return
-     *     the new instance of {@link SetAccessPoint2CameraChain }
      */
     public SetAccessPoint2CameraChain createSetAccessPoint2CameraChain() {
         return new SetAccessPoint2CameraChain();
@@ -7725,8 +6341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAccessPoint2CameraChainResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAccessPoint2CameraChainResponse }
      */
     public SetAccessPoint2CameraChainResponse createSetAccessPoint2CameraChainResponse() {
         return new SetAccessPoint2CameraChainResponse();
@@ -7735,8 +6349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetPOBCell2DriverRelation }
      * 
-     * @return
-     *     the new instance of {@link SetPOBCell2DriverRelation }
      */
     public SetPOBCell2DriverRelation createSetPOBCell2DriverRelation() {
         return new SetPOBCell2DriverRelation();
@@ -7745,8 +6357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetPOBCell2DriverRelationResponse }
      * 
-     * @return
-     *     the new instance of {@link SetPOBCell2DriverRelationResponse }
      */
     public SetPOBCell2DriverRelationResponse createSetPOBCell2DriverRelationResponse() {
         return new SetPOBCell2DriverRelationResponse();
@@ -7755,8 +6365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemovePOBCell2DriverRelation }
      * 
-     * @return
-     *     the new instance of {@link RemovePOBCell2DriverRelation }
      */
     public RemovePOBCell2DriverRelation createRemovePOBCell2DriverRelation() {
         return new RemovePOBCell2DriverRelation();
@@ -7765,8 +6373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemovePOBCell2DriverRelationResponse }
      * 
-     * @return
-     *     the new instance of {@link RemovePOBCell2DriverRelationResponse }
      */
     public RemovePOBCell2DriverRelationResponse createRemovePOBCell2DriverRelationResponse() {
         return new RemovePOBCell2DriverRelationResponse();
@@ -7775,8 +6381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFolder }
      * 
-     * @return
-     *     the new instance of {@link AddFolder }
      */
     public AddFolder createAddFolder() {
         return new AddFolder();
@@ -7785,8 +6389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link AddFolderResponse }
      */
     public AddFolderResponse createAddFolderResponse() {
         return new AddFolderResponse();
@@ -7795,8 +6397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveFolder }
      * 
-     * @return
-     *     the new instance of {@link SaveFolder }
      */
     public SaveFolder createSaveFolder() {
         return new SaveFolder();
@@ -7805,8 +6405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveFolderResponse }
      */
     public SaveFolderResponse createSaveFolderResponse() {
         return new SaveFolderResponse();
@@ -7815,8 +6413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveFolder }
      * 
-     * @return
-     *     the new instance of {@link MoveFolder }
      */
     public MoveFolder createMoveFolder() {
         return new MoveFolder();
@@ -7825,8 +6421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link MoveFolderResponse }
      */
     public MoveFolderResponse createMoveFolderResponse() {
         return new MoveFolderResponse();
@@ -7835,8 +6429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFolder }
      * 
-     * @return
-     *     the new instance of {@link RemoveFolder }
      */
     public RemoveFolder createRemoveFolder() {
         return new RemoveFolder();
@@ -7845,8 +6437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveFolderResponse }
      */
     public RemoveFolderResponse createRemoveFolderResponse() {
         return new RemoveFolderResponse();
@@ -7855,8 +6445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromFolder }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromFolder }
      */
     public RemoveAccessLevelFromFolder createRemoveAccessLevelFromFolder() {
         return new RemoveAccessLevelFromFolder();
@@ -7865,8 +6453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromFolderResponse }
      */
     public RemoveAccessLevelFromFolderResponse createRemoveAccessLevelFromFolderResponse() {
         return new RemoveAccessLevelFromFolderResponse();
@@ -7875,8 +6461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAccessLevelToFolder }
      * 
-     * @return
-     *     the new instance of {@link SetAccessLevelToFolder }
      */
     public SetAccessLevelToFolder createSetAccessLevelToFolder() {
         return new SetAccessLevelToFolder();
@@ -7885,8 +6469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAccessLevelToFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAccessLevelToFolderResponse }
      */
     public SetAccessLevelToFolderResponse createSetAccessLevelToFolderResponse() {
         return new SetAccessLevelToFolderResponse();
@@ -7895,8 +6477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFavoriteFolder }
      * 
-     * @return
-     *     the new instance of {@link AddFavoriteFolder }
      */
     public AddFavoriteFolder createAddFavoriteFolder() {
         return new AddFavoriteFolder();
@@ -7905,8 +6485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFavoriteFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link AddFavoriteFolderResponse }
      */
     public AddFavoriteFolderResponse createAddFavoriteFolderResponse() {
         return new AddFavoriteFolderResponse();
@@ -7915,8 +6493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFavoriteFolderByWorplace }
      * 
-     * @return
-     *     the new instance of {@link AddFavoriteFolderByWorplace }
      */
     public AddFavoriteFolderByWorplace createAddFavoriteFolderByWorplace() {
         return new AddFavoriteFolderByWorplace();
@@ -7925,8 +6501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFavoriteFolderByWorplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link AddFavoriteFolderByWorplaceResponse }
      */
     public AddFavoriteFolderByWorplaceResponse createAddFavoriteFolderByWorplaceResponse() {
         return new AddFavoriteFolderByWorplaceResponse();
@@ -7935,8 +6509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveFavoriteFolder }
      * 
-     * @return
-     *     the new instance of {@link SaveFavoriteFolder }
      */
     public SaveFavoriteFolder createSaveFavoriteFolder() {
         return new SaveFavoriteFolder();
@@ -7945,8 +6517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveFavoriteFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveFavoriteFolderResponse }
      */
     public SaveFavoriteFolderResponse createSaveFavoriteFolderResponse() {
         return new SaveFavoriteFolderResponse();
@@ -7955,8 +6525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveFavoriteFolder }
      * 
-     * @return
-     *     the new instance of {@link MoveFavoriteFolder }
      */
     public MoveFavoriteFolder createMoveFavoriteFolder() {
         return new MoveFavoriteFolder();
@@ -7965,8 +6533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveFavoriteFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link MoveFavoriteFolderResponse }
      */
     public MoveFavoriteFolderResponse createMoveFavoriteFolderResponse() {
         return new MoveFavoriteFolderResponse();
@@ -7975,8 +6541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveFavoriteFolderByWorkplace }
      * 
-     * @return
-     *     the new instance of {@link MoveFavoriteFolderByWorkplace }
      */
     public MoveFavoriteFolderByWorkplace createMoveFavoriteFolderByWorkplace() {
         return new MoveFavoriteFolderByWorkplace();
@@ -7985,8 +6549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveFavoriteFolderByWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link MoveFavoriteFolderByWorkplaceResponse }
      */
     public MoveFavoriteFolderByWorkplaceResponse createMoveFavoriteFolderByWorkplaceResponse() {
         return new MoveFavoriteFolderByWorkplaceResponse();
@@ -7995,8 +6557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFavoriteFolder }
      * 
-     * @return
-     *     the new instance of {@link RemoveFavoriteFolder }
      */
     public RemoveFavoriteFolder createRemoveFavoriteFolder() {
         return new RemoveFavoriteFolder();
@@ -8005,8 +6565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFavoriteFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveFavoriteFolderResponse }
      */
     public RemoveFavoriteFolderResponse createRemoveFavoriteFolderResponse() {
         return new RemoveFavoriteFolderResponse();
@@ -8015,8 +6573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFavoriteFolderByWorkplace }
      * 
-     * @return
-     *     the new instance of {@link RemoveFavoriteFolderByWorkplace }
      */
     public RemoveFavoriteFolderByWorkplace createRemoveFavoriteFolderByWorkplace() {
         return new RemoveFavoriteFolderByWorkplace();
@@ -8025,8 +6581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFavoriteFolderByWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveFavoriteFolderByWorkplaceResponse }
      */
     public RemoveFavoriteFolderByWorkplaceResponse createRemoveFavoriteFolderByWorkplaceResponse() {
         return new RemoveFavoriteFolderByWorkplaceResponse();
@@ -8035,8 +6589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupFromFavoriteFolder }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupFromFavoriteFolder }
      */
     public RemoveEmployeeGroupFromFavoriteFolder createRemoveEmployeeGroupFromFavoriteFolder() {
         return new RemoveEmployeeGroupFromFavoriteFolder();
@@ -8045,8 +6597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupFromFavoriteFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupFromFavoriteFolderResponse }
      */
     public RemoveEmployeeGroupFromFavoriteFolderResponse createRemoveEmployeeGroupFromFavoriteFolderResponse() {
         return new RemoveEmployeeGroupFromFavoriteFolderResponse();
@@ -8055,8 +6605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployeeGroupToFavoriteFolder }
      * 
-     * @return
-     *     the new instance of {@link SetEmployeeGroupToFavoriteFolder }
      */
     public SetEmployeeGroupToFavoriteFolder createSetEmployeeGroupToFavoriteFolder() {
         return new SetEmployeeGroupToFavoriteFolder();
@@ -8065,8 +6613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployeeGroupToFavoriteFolderResponse }
      * 
-     * @return
-     *     the new instance of {@link SetEmployeeGroupToFavoriteFolderResponse }
      */
     public SetEmployeeGroupToFavoriteFolderResponse createSetEmployeeGroupToFavoriteFolderResponse() {
         return new SetEmployeeGroupToFavoriteFolderResponse();
@@ -8075,8 +6621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployeeGroupToFavoriteFolderByWorkplace }
      * 
-     * @return
-     *     the new instance of {@link SetEmployeeGroupToFavoriteFolderByWorkplace }
      */
     public SetEmployeeGroupToFavoriteFolderByWorkplace createSetEmployeeGroupToFavoriteFolderByWorkplace() {
         return new SetEmployeeGroupToFavoriteFolderByWorkplace();
@@ -8085,8 +6629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployeeGroupToFavoriteFolderByWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link SetEmployeeGroupToFavoriteFolderByWorkplaceResponse }
      */
     public SetEmployeeGroupToFavoriteFolderByWorkplaceResponse createSetEmployeeGroupToFavoriteFolderByWorkplaceResponse() {
         return new SetEmployeeGroupToFavoriteFolderByWorkplaceResponse();
@@ -8095,8 +6637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddTag }
      * 
-     * @return
-     *     the new instance of {@link AddTag }
      */
     public AddTag createAddTag() {
         return new AddTag();
@@ -8105,8 +6645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddTagResponse }
      * 
-     * @return
-     *     the new instance of {@link AddTagResponse }
      */
     public AddTagResponse createAddTagResponse() {
         return new AddTagResponse();
@@ -8115,8 +6653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveTag }
      * 
-     * @return
-     *     the new instance of {@link SaveTag }
      */
     public SaveTag createSaveTag() {
         return new SaveTag();
@@ -8125,8 +6661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveTagResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveTagResponse }
      */
     public SaveTagResponse createSaveTagResponse() {
         return new SaveTagResponse();
@@ -8135,8 +6669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveTag }
      * 
-     * @return
-     *     the new instance of {@link RemoveTag }
      */
     public RemoveTag createRemoveTag() {
         return new RemoveTag();
@@ -8145,8 +6677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveTagResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveTagResponse }
      */
     public RemoveTagResponse createRemoveTagResponse() {
         return new RemoveTagResponse();
@@ -8155,8 +6685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFilterTag }
      * 
-     * @return
-     *     the new instance of {@link AddFilterTag }
      */
     public AddFilterTag createAddFilterTag() {
         return new AddFilterTag();
@@ -8165,8 +6693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFilterTagResponse }
      * 
-     * @return
-     *     the new instance of {@link AddFilterTagResponse }
      */
     public AddFilterTagResponse createAddFilterTagResponse() {
         return new AddFilterTagResponse();
@@ -8175,8 +6701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveFilterTag }
      * 
-     * @return
-     *     the new instance of {@link SaveFilterTag }
      */
     public SaveFilterTag createSaveFilterTag() {
         return new SaveFilterTag();
@@ -8185,8 +6709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveFilterTagResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveFilterTagResponse }
      */
     public SaveFilterTagResponse createSaveFilterTagResponse() {
         return new SaveFilterTagResponse();
@@ -8195,8 +6717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFilterTag }
      * 
-     * @return
-     *     the new instance of {@link RemoveFilterTag }
      */
     public RemoveFilterTag createRemoveFilterTag() {
         return new RemoveFilterTag();
@@ -8205,8 +6725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveFilterTagResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveFilterTagResponse }
      */
     public RemoveFilterTagResponse createRemoveFilterTagResponse() {
         return new RemoveFilterTagResponse();
@@ -8215,8 +6733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUserPass }
      * 
-     * @return
-     *     the new instance of {@link AddUserPass }
      */
     public AddUserPass createAddUserPass() {
         return new AddUserPass();
@@ -8225,8 +6741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUserPassResponse }
      * 
-     * @return
-     *     the new instance of {@link AddUserPassResponse }
      */
     public AddUserPassResponse createAddUserPassResponse() {
         return new AddUserPassResponse();
@@ -8235,8 +6749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUserPass }
      * 
-     * @return
-     *     the new instance of {@link SaveUserPass }
      */
     public SaveUserPass createSaveUserPass() {
         return new SaveUserPass();
@@ -8245,8 +6757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUserPassResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveUserPassResponse }
      */
     public SaveUserPassResponse createSaveUserPassResponse() {
         return new SaveUserPassResponse();
@@ -8255,8 +6765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUserPassFull }
      * 
-     * @return
-     *     the new instance of {@link SaveUserPassFull }
      */
     public SaveUserPassFull createSaveUserPassFull() {
         return new SaveUserPassFull();
@@ -8265,8 +6773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUserPassFullResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveUserPassFullResponse }
      */
     public SaveUserPassFullResponse createSaveUserPassFullResponse() {
         return new SaveUserPassFullResponse();
@@ -8275,8 +6781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserPass }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserPass }
      */
     public RemoveUserPass createRemoveUserPass() {
         return new RemoveUserPass();
@@ -8285,8 +6789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserPassResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserPassResponse }
      */
     public RemoveUserPassResponse createRemoveUserPassResponse() {
         return new RemoveUserPassResponse();
@@ -8295,8 +6797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUserPassEditor }
      * 
-     * @return
-     *     the new instance of {@link SetUserPassEditor }
      */
     public SetUserPassEditor createSetUserPassEditor() {
         return new SetUserPassEditor();
@@ -8305,8 +6805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUserPassEditorResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUserPassEditorResponse }
      */
     public SetUserPassEditorResponse createSetUserPassEditorResponse() {
         return new SetUserPassEditorResponse();
@@ -8315,8 +6813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserPassEditor }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserPassEditor }
      */
     public RemoveUserPassEditor createRemoveUserPassEditor() {
         return new RemoveUserPassEditor();
@@ -8325,8 +6821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserPassEditorResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserPassEditorResponse }
      */
     public RemoveUserPassEditorResponse createRemoveUserPassEditorResponse() {
         return new RemoveUserPassEditorResponse();
@@ -8335,8 +6829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReaction }
      * 
-     * @return
-     *     the new instance of {@link AddReaction }
      */
     public AddReaction createAddReaction() {
         return new AddReaction();
@@ -8345,8 +6837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReactionResponse }
      * 
-     * @return
-     *     the new instance of {@link AddReactionResponse }
      */
     public AddReactionResponse createAddReactionResponse() {
         return new AddReactionResponse();
@@ -8355,8 +6845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReaction }
      * 
-     * @return
-     *     the new instance of {@link SaveReaction }
      */
     public SaveReaction createSaveReaction() {
         return new SaveReaction();
@@ -8365,8 +6853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionResponse }
      */
     public SaveReactionResponse createSaveReactionResponse() {
         return new SaveReactionResponse();
@@ -8375,8 +6861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReaction }
      * 
-     * @return
-     *     the new instance of {@link RemoveReaction }
      */
     public RemoveReaction createRemoveReaction() {
         return new RemoveReaction();
@@ -8385,8 +6869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReactionResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveReactionResponse }
      */
     public RemoveReactionResponse createRemoveReactionResponse() {
         return new RemoveReactionResponse();
@@ -8395,8 +6877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReactionAction }
      * 
-     * @return
-     *     the new instance of {@link AddReactionAction }
      */
     public AddReactionAction createAddReactionAction() {
         return new AddReactionAction();
@@ -8405,8 +6885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link AddReactionActionResponse }
      */
     public AddReactionActionResponse createAddReactionActionResponse() {
         return new AddReactionActionResponse();
@@ -8415,8 +6893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionActionCommonData }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionActionCommonData }
      */
     public SaveReactionActionCommonData createSaveReactionActionCommonData() {
         return new SaveReactionActionCommonData();
@@ -8425,8 +6901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionActionCommonDataResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionActionCommonDataResponse }
      */
     public SaveReactionActionCommonDataResponse createSaveReactionActionCommonDataResponse() {
         return new SaveReactionActionCommonDataResponse();
@@ -8435,8 +6909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReactionActions }
      * 
-     * @return
-     *     the new instance of {@link RemoveReactionActions }
      */
     public RemoveReactionActions createRemoveReactionActions() {
         return new RemoveReactionActions();
@@ -8445,8 +6917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReactionActionsResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveReactionActionsResponse }
      */
     public RemoveReactionActionsResponse createRemoveReactionActionsResponse() {
         return new RemoveReactionActionsResponse();
@@ -8455,8 +6925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionAction }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionAction }
      */
     public AddEmployeesToReactionAction createAddEmployeesToReactionAction() {
         return new AddEmployeesToReactionAction();
@@ -8465,8 +6933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionActionResponse }
      */
     public AddEmployeesToReactionActionResponse createAddEmployeesToReactionActionResponse() {
         return new AddEmployeesToReactionActionResponse();
@@ -8475,8 +6941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesFromReactionAction }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesFromReactionAction }
      */
     public RemoveEmployeesFromReactionAction createRemoveEmployeesFromReactionAction() {
         return new RemoveEmployeesFromReactionAction();
@@ -8485,8 +6949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesFromReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesFromReactionActionResponse }
      */
     public RemoveEmployeesFromReactionActionResponse createRemoveEmployeesFromReactionActionResponse() {
         return new RemoveEmployeesFromReactionActionResponse();
@@ -8495,8 +6957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToReactionAction }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToReactionAction }
      */
     public AddEmployeeGroupsToReactionAction createAddEmployeeGroupsToReactionAction() {
         return new AddEmployeeGroupsToReactionAction();
@@ -8505,8 +6965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToReactionActionResponse }
      */
     public AddEmployeeGroupsToReactionActionResponse createAddEmployeeGroupsToReactionActionResponse() {
         return new AddEmployeeGroupsToReactionActionResponse();
@@ -8515,8 +6973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionActionByGroups }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionActionByGroups }
      */
     public AddEmployeesToReactionActionByGroups createAddEmployeesToReactionActionByGroups() {
         return new AddEmployeesToReactionActionByGroups();
@@ -8525,8 +6981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReactionActionByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReactionActionByGroupsResponse }
      */
     public AddEmployeesToReactionActionByGroupsResponse createAddEmployeesToReactionActionByGroupsResponse() {
         return new AddEmployeesToReactionActionByGroupsResponse();
@@ -8535,8 +6989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupsFromReactionAction }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupsFromReactionAction }
      */
     public RemoveEmployeeGroupsFromReactionAction createRemoveEmployeeGroupsFromReactionAction() {
         return new RemoveEmployeeGroupsFromReactionAction();
@@ -8545,8 +6997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeGroupsFromReactionActionResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeGroupsFromReactionActionResponse }
      */
     public RemoveEmployeeGroupsFromReactionActionResponse createRemoveEmployeeGroupsFromReactionActionResponse() {
         return new RemoveEmployeeGroupsFromReactionActionResponse();
@@ -8555,8 +7005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeFromReactionActionByGroups }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeFromReactionActionByGroups }
      */
     public RemoveEmployeeFromReactionActionByGroups createRemoveEmployeeFromReactionActionByGroups() {
         return new RemoveEmployeeFromReactionActionByGroups();
@@ -8565,8 +7013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeFromReactionActionByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeFromReactionActionByGroupsResponse }
      */
     public RemoveEmployeeFromReactionActionByGroupsResponse createRemoveEmployeeFromReactionActionByGroupsResponse() {
         return new RemoveEmployeeFromReactionActionByGroupsResponse();
@@ -8575,8 +7021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionSendSMSAction }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionSendSMSAction }
      */
     public SaveReactionSendSMSAction createSaveReactionSendSMSAction() {
         return new SaveReactionSendSMSAction();
@@ -8585,8 +7029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionSendSMSActionResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionSendSMSActionResponse }
      */
     public SaveReactionSendSMSActionResponse createSaveReactionSendSMSActionResponse() {
         return new SaveReactionSendSMSActionResponse();
@@ -8595,8 +7037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionSendEmailAction }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionSendEmailAction }
      */
     public SaveReactionSendEmailAction createSaveReactionSendEmailAction() {
         return new SaveReactionSendEmailAction();
@@ -8605,8 +7045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionSendEmailActionResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionSendEmailActionResponse }
      */
     public SaveReactionSendEmailActionResponse createSaveReactionSendEmailActionResponse() {
         return new SaveReactionSendEmailActionResponse();
@@ -8615,8 +7053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionExecuteProgramAction }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionExecuteProgramAction }
      */
     public SaveReactionExecuteProgramAction createSaveReactionExecuteProgramAction() {
         return new SaveReactionExecuteProgramAction();
@@ -8625,8 +7061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionExecuteProgramActionResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionExecuteProgramActionResponse }
      */
     public SaveReactionExecuteProgramActionResponse createSaveReactionExecuteProgramActionResponse() {
         return new SaveReactionExecuteProgramActionResponse();
@@ -8635,8 +7069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionRecordVideoAction }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionRecordVideoAction }
      */
     public SaveReactionRecordVideoAction createSaveReactionRecordVideoAction() {
         return new SaveReactionRecordVideoAction();
@@ -8645,8 +7077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReactionRecordVideoActionResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReactionRecordVideoActionResponse }
      */
     public SaveReactionRecordVideoActionResponse createSaveReactionRecordVideoActionResponse() {
         return new SaveReactionRecordVideoActionResponse();
@@ -8655,8 +7085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReport }
      * 
-     * @return
-     *     the new instance of {@link AddReport }
      */
     public AddReport createAddReport() {
         return new AddReport();
@@ -8665,8 +7093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddReportResponse }
      * 
-     * @return
-     *     the new instance of {@link AddReportResponse }
      */
     public AddReportResponse createAddReportResponse() {
         return new AddReportResponse();
@@ -8675,8 +7101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReport }
      * 
-     * @return
-     *     the new instance of {@link SaveReport }
      */
     public SaveReport createSaveReport() {
         return new SaveReport();
@@ -8685,8 +7109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveReportResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveReportResponse }
      */
     public SaveReportResponse createSaveReportResponse() {
         return new SaveReportResponse();
@@ -8695,8 +7117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReport }
      * 
-     * @return
-     *     the new instance of {@link RemoveReport }
      */
     public RemoveReport createRemoveReport() {
         return new RemoveReport();
@@ -8705,8 +7125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveReportResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveReportResponse }
      */
     public RemoveReportResponse createRemoveReportResponse() {
         return new RemoveReportResponse();
@@ -8715,8 +7133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriversFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriversFromReportParameters }
      */
     public RemoveDriversFromReportParameters createRemoveDriversFromReportParameters() {
         return new RemoveDriversFromReportParameters();
@@ -8725,8 +7141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriversFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriversFromReportParametersResponse }
      */
     public RemoveDriversFromReportParametersResponse createRemoveDriversFromReportParametersResponse() {
         return new RemoveDriversFromReportParametersResponse();
@@ -8735,8 +7149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriversToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddDriversToReportParameters }
      */
     public AddDriversToReportParameters createAddDriversToReportParameters() {
         return new AddDriversToReportParameters();
@@ -8745,8 +7157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriversToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddDriversToReportParametersResponse }
      */
     public AddDriversToReportParametersResponse createAddDriversToReportParametersResponse() {
         return new AddDriversToReportParametersResponse();
@@ -8755,8 +7165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveLogMessageSubtypesFromReportParameters }
      * 
-     * @return
-     *     the new instance of {@link RemoveLogMessageSubtypesFromReportParameters }
      */
     public RemoveLogMessageSubtypesFromReportParameters createRemoveLogMessageSubtypesFromReportParameters() {
         return new RemoveLogMessageSubtypesFromReportParameters();
@@ -8765,8 +7173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveLogMessageSubtypesFromReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveLogMessageSubtypesFromReportParametersResponse }
      */
     public RemoveLogMessageSubtypesFromReportParametersResponse createRemoveLogMessageSubtypesFromReportParametersResponse() {
         return new RemoveLogMessageSubtypesFromReportParametersResponse();
@@ -8775,8 +7181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLogMessageSubtypesToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddLogMessageSubtypesToReportParameters }
      */
     public AddLogMessageSubtypesToReportParameters createAddLogMessageSubtypesToReportParameters() {
         return new AddLogMessageSubtypesToReportParameters();
@@ -8785,8 +7189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLogMessageSubtypesToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddLogMessageSubtypesToReportParametersResponse }
      */
     public AddLogMessageSubtypesToReportParametersResponse createAddLogMessageSubtypesToReportParametersResponse() {
         return new AddLogMessageSubtypesToReportParametersResponse();
@@ -8795,8 +7197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToReportParameters }
      */
     public AddEmployeeGroupsToReportParameters createAddEmployeeGroupsToReportParameters() {
         return new AddEmployeeGroupsToReportParameters();
@@ -8805,8 +7205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToReportParametersResponse }
      */
     public AddEmployeeGroupsToReportParametersResponse createAddEmployeeGroupsToReportParametersResponse() {
         return new AddEmployeeGroupsToReportParametersResponse();
@@ -8815,8 +7213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReportParametersByGroups }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReportParametersByGroups }
      */
     public AddEmployeesToReportParametersByGroups createAddEmployeesToReportParametersByGroups() {
         return new AddEmployeesToReportParametersByGroups();
@@ -8825,8 +7221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReportParametersByGroupsResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReportParametersByGroupsResponse }
      */
     public AddEmployeesToReportParametersByGroupsResponse createAddEmployeesToReportParametersByGroupsResponse() {
         return new AddEmployeesToReportParametersByGroupsResponse();
@@ -8835,8 +7229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReportParametersByTabNumbers }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReportParametersByTabNumbers }
      */
     public AddEmployeesToReportParametersByTabNumbers createAddEmployeesToReportParametersByTabNumbers() {
         return new AddEmployeesToReportParametersByTabNumbers();
@@ -8845,8 +7237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToReportParametersByTabNumbersResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToReportParametersByTabNumbersResponse }
      */
     public AddEmployeesToReportParametersByTabNumbersResponse createAddEmployeesToReportParametersByTabNumbersResponse() {
         return new AddEmployeesToReportParametersByTabNumbersResponse();
@@ -8855,8 +7245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteFields }
      * 
-     * @return
-     *     the new instance of {@link DeleteFields }
      */
     public DeleteFields createDeleteFields() {
         return new DeleteFields();
@@ -8865,8 +7253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteFieldsResponse }
      * 
-     * @return
-     *     the new instance of {@link DeleteFieldsResponse }
      */
     public DeleteFieldsResponse createDeleteFieldsResponse() {
         return new DeleteFieldsResponse();
@@ -8875,8 +7261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddPhotoOrder }
      * 
-     * @return
-     *     the new instance of {@link AddPhotoOrder }
      */
     public AddPhotoOrder createAddPhotoOrder() {
         return new AddPhotoOrder();
@@ -8885,8 +7269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddPhotoOrderResponse }
      * 
-     * @return
-     *     the new instance of {@link AddPhotoOrderResponse }
      */
     public AddPhotoOrderResponse createAddPhotoOrderResponse() {
         return new AddPhotoOrderResponse();
@@ -8895,8 +7277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SavePhotoOrder }
      * 
-     * @return
-     *     the new instance of {@link SavePhotoOrder }
      */
     public SavePhotoOrder createSavePhotoOrder() {
         return new SavePhotoOrder();
@@ -8905,8 +7285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SavePhotoOrderResponse }
      * 
-     * @return
-     *     the new instance of {@link SavePhotoOrderResponse }
      */
     public SavePhotoOrderResponse createSavePhotoOrderResponse() {
         return new SavePhotoOrderResponse();
@@ -8915,8 +7293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeletePhotoFields }
      * 
-     * @return
-     *     the new instance of {@link DeletePhotoFields }
      */
     public DeletePhotoFields createDeletePhotoFields() {
         return new DeletePhotoFields();
@@ -8925,8 +7301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeletePhotoFieldsResponse }
      * 
-     * @return
-     *     the new instance of {@link DeletePhotoFieldsResponse }
      */
     public DeletePhotoFieldsResponse createDeletePhotoFieldsResponse() {
         return new DeletePhotoFieldsResponse();
@@ -8935,8 +7309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsBoxAccessElements }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsBoxAccessElements }
      */
     public SaveAcsBoxAccessElements createSaveAcsBoxAccessElements() {
         return new SaveAcsBoxAccessElements();
@@ -8945,8 +7317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsBoxAccessElementsResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsBoxAccessElementsResponse }
      */
     public SaveAcsBoxAccessElementsResponse createSaveAcsBoxAccessElementsResponse() {
         return new SaveAcsBoxAccessElementsResponse();
@@ -8955,8 +7325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsBoxAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link AddAcsBoxAccessLevel }
      */
     public AddAcsBoxAccessLevel createAddAcsBoxAccessLevel() {
         return new AddAcsBoxAccessLevel();
@@ -8965,8 +7333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsBoxAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsBoxAccessLevelResponse }
      */
     public AddAcsBoxAccessLevelResponse createAddAcsBoxAccessLevelResponse() {
         return new AddAcsBoxAccessLevelResponse();
@@ -8975,8 +7341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsBoxAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsBoxAccessLevel }
      */
     public SaveAcsBoxAccessLevel createSaveAcsBoxAccessLevel() {
         return new SaveAcsBoxAccessLevel();
@@ -8985,8 +7349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsBoxAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsBoxAccessLevelResponse }
      */
     public SaveAcsBoxAccessLevelResponse createSaveAcsBoxAccessLevelResponse() {
         return new SaveAcsBoxAccessLevelResponse();
@@ -8995,8 +7357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsBoxAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsBoxAccessLevel }
      */
     public RemoveAcsBoxAccessLevel createRemoveAcsBoxAccessLevel() {
         return new RemoveAcsBoxAccessLevel();
@@ -9005,8 +7365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsBoxAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsBoxAccessLevelResponse }
      */
     public RemoveAcsBoxAccessLevelResponse createRemoveAcsBoxAccessLevelResponse() {
         return new RemoveAcsBoxAccessLevelResponse();
@@ -9015,8 +7373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link AddAcsAccessLevel }
      */
     public AddAcsAccessLevel createAddAcsAccessLevel() {
         return new AddAcsAccessLevel();
@@ -9025,8 +7381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsAccessLevelResponse }
      */
     public AddAcsAccessLevelResponse createAddAcsAccessLevelResponse() {
         return new AddAcsAccessLevelResponse();
@@ -9035,8 +7389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveAlcoGroup }
      */
     public RemoveAlcoGroup createRemoveAlcoGroup() {
         return new RemoveAlcoGroup();
@@ -9045,8 +7397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAlcoGroupResponse }
      */
     public RemoveAlcoGroupResponse createRemoveAlcoGroupResponse() {
         return new RemoveAlcoGroupResponse();
@@ -9055,8 +7405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link AddAlcoGroup }
      */
     public AddAlcoGroup createAddAlcoGroup() {
         return new AddAlcoGroup();
@@ -9065,8 +7413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAlcoGroupResponse }
      */
     public AddAlcoGroupResponse createAddAlcoGroupResponse() {
         return new AddAlcoGroupResponse();
@@ -9075,8 +7421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AlcoGroupChangePriority }
      * 
-     * @return
-     *     the new instance of {@link AlcoGroupChangePriority }
      */
     public AlcoGroupChangePriority createAlcoGroupChangePriority() {
         return new AlcoGroupChangePriority();
@@ -9085,8 +7429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AlcoGroupChangePriorityResponse }
      * 
-     * @return
-     *     the new instance of {@link AlcoGroupChangePriorityResponse }
      */
     public AlcoGroupChangePriorityResponse createAlcoGroupChangePriorityResponse() {
         return new AlcoGroupChangePriorityResponse();
@@ -9095,8 +7437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link SaveAlcoGroup }
      */
     public SaveAlcoGroup createSaveAlcoGroup() {
         return new SaveAlcoGroup();
@@ -9105,8 +7445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAlcoGroupResponse }
      */
     public SaveAlcoGroupResponse createSaveAlcoGroupResponse() {
         return new SaveAlcoGroupResponse();
@@ -9115,8 +7453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployees2AlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link SetEmployees2AlcoGroup }
      */
     public SetEmployees2AlcoGroup createSetEmployees2AlcoGroup() {
         return new SetEmployees2AlcoGroup();
@@ -9125,8 +7461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployees2AlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link SetEmployees2AlcoGroupResponse }
      */
     public SetEmployees2AlcoGroupResponse createSetEmployees2AlcoGroupResponse() {
         return new SetEmployees2AlcoGroupResponse();
@@ -9135,8 +7469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeePositionsToAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeePositionsToAlcoGroup }
      */
     public AddEmployeePositionsToAlcoGroup createAddEmployeePositionsToAlcoGroup() {
         return new AddEmployeePositionsToAlcoGroup();
@@ -9145,8 +7477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeePositionsToAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeePositionsToAlcoGroupResponse }
      */
     public AddEmployeePositionsToAlcoGroupResponse createAddEmployeePositionsToAlcoGroupResponse() {
         return new AddEmployeePositionsToAlcoGroupResponse();
@@ -9155,8 +7485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetPositionCodesToAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link SetPositionCodesToAlcoGroup }
      */
     public SetPositionCodesToAlcoGroup createSetPositionCodesToAlcoGroup() {
         return new SetPositionCodesToAlcoGroup();
@@ -9165,8 +7493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetPositionCodesToAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link SetPositionCodesToAlcoGroupResponse }
      */
     public SetPositionCodesToAlcoGroupResponse createSetPositionCodesToAlcoGroupResponse() {
         return new SetPositionCodesToAlcoGroupResponse();
@@ -9175,8 +7501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetBiometricPermissions }
      * 
-     * @return
-     *     the new instance of {@link SetBiometricPermissions }
      */
     public SetBiometricPermissions createSetBiometricPermissions() {
         return new SetBiometricPermissions();
@@ -9185,8 +7509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetBiometricPermissionsResponse }
      * 
-     * @return
-     *     the new instance of {@link SetBiometricPermissionsResponse }
      */
     public SetBiometricPermissionsResponse createSetBiometricPermissionsResponse() {
         return new SetBiometricPermissionsResponse();
@@ -9195,8 +7517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToAlcoGroup }
      */
     public AddEmployeeGroupsToAlcoGroup createAddEmployeeGroupsToAlcoGroup() {
         return new AddEmployeeGroupsToAlcoGroup();
@@ -9205,8 +7525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeGroupsToAlcoGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeGroupsToAlcoGroupResponse }
      */
     public AddEmployeeGroupsToAlcoGroupResponse createAddEmployeeGroupsToAlcoGroupResponse() {
         return new AddEmployeeGroupsToAlcoGroupResponse();
@@ -9215,8 +7533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsAccessLevel }
      */
     public SaveAcsAccessLevel createSaveAcsAccessLevel() {
         return new SaveAcsAccessLevel();
@@ -9225,8 +7541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsAccessLevelResponse }
      */
     public SaveAcsAccessLevelResponse createSaveAcsAccessLevelResponse() {
         return new SaveAcsAccessLevelResponse();
@@ -9235,8 +7549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsAccessLevel }
      */
     public RemoveAcsAccessLevel createRemoveAcsAccessLevel() {
         return new RemoveAcsAccessLevel();
@@ -9245,8 +7557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsAccessLevelResponse }
      */
     public RemoveAcsAccessLevelResponse createRemoveAcsAccessLevelResponse() {
         return new RemoveAcsAccessLevelResponse();
@@ -9255,8 +7565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link AddAcsAccessPoint }
      */
     public AddAcsAccessPoint createAddAcsAccessPoint() {
         return new AddAcsAccessPoint();
@@ -9265,8 +7573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsAccessPointResponse }
      */
     public AddAcsAccessPointResponse createAddAcsAccessPointResponse() {
         return new AddAcsAccessPointResponse();
@@ -9275,8 +7581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsAccessPoint }
      */
     public SaveAcsAccessPoint createSaveAcsAccessPoint() {
         return new SaveAcsAccessPoint();
@@ -9285,8 +7589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsAccessPointResponse }
      */
     public SaveAcsAccessPointResponse createSaveAcsAccessPointResponse() {
         return new SaveAcsAccessPointResponse();
@@ -9295,8 +7597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsAccessPoint }
      */
     public RemoveAcsAccessPoint createRemoveAcsAccessPoint() {
         return new RemoveAcsAccessPoint();
@@ -9305,8 +7605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsAccessPointResponse }
      */
     public RemoveAcsAccessPointResponse createRemoveAcsAccessPointResponse() {
         return new RemoveAcsAccessPointResponse();
@@ -9315,8 +7613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReplaceAccessPointDriver }
      * 
-     * @return
-     *     the new instance of {@link ReplaceAccessPointDriver }
      */
     public ReplaceAccessPointDriver createReplaceAccessPointDriver() {
         return new ReplaceAccessPointDriver();
@@ -9325,8 +7621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReplaceAccessPointDriverResponse }
      * 
-     * @return
-     *     the new instance of {@link ReplaceAccessPointDriverResponse }
      */
     public ReplaceAccessPointDriverResponse createReplaceAccessPointDriverResponse() {
         return new ReplaceAccessPointDriverResponse();
@@ -9335,8 +7629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToSecurityGroup }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToSecurityGroup }
      */
     public AddEmployeesToSecurityGroup createAddEmployeesToSecurityGroup() {
         return new AddEmployeesToSecurityGroup();
@@ -9345,8 +7637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeesToSecurityGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeesToSecurityGroupResponse }
      */
     public AddEmployeesToSecurityGroupResponse createAddEmployeesToSecurityGroupResponse() {
         return new AddEmployeesToSecurityGroupResponse();
@@ -9355,8 +7645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CheckRezeredHotKeys }
      * 
-     * @return
-     *     the new instance of {@link CheckRezeredHotKeys }
      */
     public CheckRezeredHotKeys createCheckRezeredHotKeys() {
         return new CheckRezeredHotKeys();
@@ -9365,8 +7653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CheckRezeredHotKeysResponse }
      * 
-     * @return
-     *     the new instance of {@link CheckRezeredHotKeysResponse }
      */
     public CheckRezeredHotKeysResponse createCheckRezeredHotKeysResponse() {
         return new CheckRezeredHotKeysResponse();
@@ -9375,8 +7661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesToSecurityGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesToSecurityGroup }
      */
     public RemoveEmployeesToSecurityGroup createRemoveEmployeesToSecurityGroup() {
         return new RemoveEmployeesToSecurityGroup();
@@ -9385,8 +7669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeesToSecurityGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeesToSecurityGroupResponse }
      */
     public RemoveEmployeesToSecurityGroupResponse createRemoveEmployeesToSecurityGroupResponse() {
         return new RemoveEmployeesToSecurityGroupResponse();
@@ -9395,8 +7677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeWithPeriod }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeWithPeriod }
      */
     public AddAccessLevelsToEmployeeWithPeriod createAddAccessLevelsToEmployeeWithPeriod() {
         return new AddAccessLevelsToEmployeeWithPeriod();
@@ -9405,8 +7685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeWithPeriodResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeWithPeriodResponse }
      */
     public AddAccessLevelsToEmployeeWithPeriodResponse createAddAccessLevelsToEmployeeWithPeriodResponse() {
         return new AddAccessLevelsToEmployeeWithPeriodResponse();
@@ -9415,8 +7693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeGroupWithPeriod }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeGroupWithPeriod }
      */
     public AddAccessLevelsToEmployeeGroupWithPeriod createAddAccessLevelsToEmployeeGroupWithPeriod() {
         return new AddAccessLevelsToEmployeeGroupWithPeriod();
@@ -9425,8 +7701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeGroupWithPeriodResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeGroupWithPeriodResponse }
      */
     public AddAccessLevelsToEmployeeGroupWithPeriodResponse createAddAccessLevelsToEmployeeGroupWithPeriodResponse() {
         return new AddAccessLevelsToEmployeeGroupWithPeriodResponse();
@@ -9435,8 +7709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployee }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployee }
      */
     public AddAccessLevelsToEmployee createAddAccessLevelsToEmployee() {
         return new AddAccessLevelsToEmployee();
@@ -9445,8 +7717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeResponse }
      */
     public AddAccessLevelsToEmployeeResponse createAddAccessLevelsToEmployeeResponse() {
         return new AddAccessLevelsToEmployeeResponse();
@@ -9455,8 +7725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeGroup }
      */
     public AddAccessLevelsToEmployeeGroup createAddAccessLevelsToEmployeeGroup() {
         return new AddAccessLevelsToEmployeeGroup();
@@ -9465,8 +7733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeGroupResponse }
      */
     public AddAccessLevelsToEmployeeGroupResponse createAddAccessLevelsToEmployeeGroupResponse() {
         return new AddAccessLevelsToEmployeeGroupResponse();
@@ -9475,8 +7741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelsFromEmployeeForce }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelsFromEmployeeForce }
      */
     public RemoveAccessLevelsFromEmployeeForce createRemoveAccessLevelsFromEmployeeForce() {
         return new RemoveAccessLevelsFromEmployeeForce();
@@ -9485,8 +7749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelsFromEmployeeForceResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelsFromEmployeeForceResponse }
      */
     public RemoveAccessLevelsFromEmployeeForceResponse createRemoveAccessLevelsFromEmployeeForceResponse() {
         return new RemoveAccessLevelsFromEmployeeForceResponse();
@@ -9495,8 +7757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeForce }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeForce }
      */
     public AddAccessLevelsToEmployeeForce createAddAccessLevelsToEmployeeForce() {
         return new AddAccessLevelsToEmployeeForce();
@@ -9505,8 +7765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToEmployeeForceResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToEmployeeForceResponse }
      */
     public AddAccessLevelsToEmployeeForceResponse createAddAccessLevelsToEmployeeForceResponse() {
         return new AddAccessLevelsToEmployeeForceResponse();
@@ -9515,8 +7773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromEmployee }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromEmployee }
      */
     public RemoveAccessLevelFromEmployee createRemoveAccessLevelFromEmployee() {
         return new RemoveAccessLevelFromEmployee();
@@ -9525,8 +7781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromEmployeeResponse }
      */
     public RemoveAccessLevelFromEmployeeResponse createRemoveAccessLevelFromEmployeeResponse() {
         return new RemoveAccessLevelFromEmployeeResponse();
@@ -9535,8 +7789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromEmployeeGroup }
      */
     public RemoveAccessLevelFromEmployeeGroup createRemoveAccessLevelFromEmployeeGroup() {
         return new RemoveAccessLevelFromEmployeeGroup();
@@ -9545,8 +7797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromEmployeeGroupResponse }
      */
     public RemoveAccessLevelFromEmployeeGroupResponse createRemoveAccessLevelFromEmployeeGroupResponse() {
         return new RemoveAccessLevelFromEmployeeGroupResponse();
@@ -9555,8 +7805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByEmployeeID }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByEmployeeID }
      */
     public GetAccessLevelsByEmployeeID createGetAccessLevelsByEmployeeID() {
         return new GetAccessLevelsByEmployeeID();
@@ -9565,8 +7813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByEmployeeIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByEmployeeIDResponse }
      */
     public GetAccessLevelsByEmployeeIDResponse createGetAccessLevelsByEmployeeIDResponse() {
         return new GetAccessLevelsByEmployeeIDResponse();
@@ -9575,8 +7821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByEmployeeIDIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByEmployeeIDIncludeRemovedEmployees }
      */
     public GetAccessLevelsByEmployeeIDIncludeRemovedEmployees createGetAccessLevelsByEmployeeIDIncludeRemovedEmployees() {
         return new GetAccessLevelsByEmployeeIDIncludeRemovedEmployees();
@@ -9585,8 +7829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse }
      */
     public GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse createGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse() {
         return new GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse();
@@ -9595,8 +7837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByDriverID }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByDriverID }
      */
     public GetAccessLevelsByDriverID createGetAccessLevelsByDriverID() {
         return new GetAccessLevelsByDriverID();
@@ -9605,8 +7845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByDriverIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByDriverIDResponse }
      */
     public GetAccessLevelsByDriverIDResponse createGetAccessLevelsByDriverIDResponse() {
         return new GetAccessLevelsByDriverIDResponse();
@@ -9615,8 +7853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetBiometricPermissions }
      * 
-     * @return
-     *     the new instance of {@link GetBiometricPermissions }
      */
     public GetBiometricPermissions createGetBiometricPermissions() {
         return new GetBiometricPermissions();
@@ -9625,8 +7861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetBiometricPermissionsResponse }
      * 
-     * @return
-     *     the new instance of {@link GetBiometricPermissionsResponse }
      */
     public GetBiometricPermissionsResponse createGetBiometricPermissionsResponse() {
         return new GetBiometricPermissionsResponse();
@@ -9635,8 +7869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByEmployeeGroupID }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByEmployeeGroupID }
      */
     public GetAccessLevelsByEmployeeGroupID createGetAccessLevelsByEmployeeGroupID() {
         return new GetAccessLevelsByEmployeeGroupID();
@@ -9645,8 +7877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByEmployeeGroupIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByEmployeeGroupIDResponse }
      */
     public GetAccessLevelsByEmployeeGroupIDResponse createGetAccessLevelsByEmployeeGroupIDResponse() {
         return new GetAccessLevelsByEmployeeGroupIDResponse();
@@ -9655,8 +7885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllAccessLevelsByEmployeeGroupID }
      * 
-     * @return
-     *     the new instance of {@link GetAllAccessLevelsByEmployeeGroupID }
      */
     public GetAllAccessLevelsByEmployeeGroupID createGetAllAccessLevelsByEmployeeGroupID() {
         return new GetAllAccessLevelsByEmployeeGroupID();
@@ -9665,8 +7893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAllAccessLevelsByEmployeeGroupIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAllAccessLevelsByEmployeeGroupIDResponse }
      */
     public GetAllAccessLevelsByEmployeeGroupIDResponse createGetAllAccessLevelsByEmployeeGroupIDResponse() {
         return new GetAllAccessLevelsByEmployeeGroupIDResponse();
@@ -9675,8 +7901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentAccessLevel }
      */
     public SetUseEmployeeParentAccessLevel createSetUseEmployeeParentAccessLevel() {
         return new SetUseEmployeeParentAccessLevel();
@@ -9685,8 +7909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentAccessLevelResponse }
      */
     public SetUseEmployeeParentAccessLevelResponse createSetUseEmployeeParentAccessLevelResponse() {
         return new SetUseEmployeeParentAccessLevelResponse();
@@ -9695,8 +7917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentAccessLevel }
      */
     public SetUseEmployeeGroupParentAccessLevel createSetUseEmployeeGroupParentAccessLevel() {
         return new SetUseEmployeeGroupParentAccessLevel();
@@ -9705,8 +7925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentAccessLevelResponse }
      */
     public SetUseEmployeeGroupParentAccessLevelResponse createSetUseEmployeeGroupParentAccessLevelResponse() {
         return new SetUseEmployeeGroupParentAccessLevelResponse();
@@ -9715,8 +7933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToVehicleWithPeriod }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToVehicleWithPeriod }
      */
     public AddAccessLevelsToVehicleWithPeriod createAddAccessLevelsToVehicleWithPeriod() {
         return new AddAccessLevelsToVehicleWithPeriod();
@@ -9725,8 +7941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToVehicleWithPeriodResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToVehicleWithPeriodResponse }
      */
     public AddAccessLevelsToVehicleWithPeriodResponse createAddAccessLevelsToVehicleWithPeriodResponse() {
         return new AddAccessLevelsToVehicleWithPeriodResponse();
@@ -9735,8 +7949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToVehicle }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToVehicle }
      */
     public AddAccessLevelsToVehicle createAddAccessLevelsToVehicle() {
         return new AddAccessLevelsToVehicle();
@@ -9745,8 +7957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToVehicleResponse }
      */
     public AddAccessLevelsToVehicleResponse createAddAccessLevelsToVehicleResponse() {
         return new AddAccessLevelsToVehicleResponse();
@@ -9755,8 +7965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelsFromVehicleForce }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelsFromVehicleForce }
      */
     public RemoveAccessLevelsFromVehicleForce createRemoveAccessLevelsFromVehicleForce() {
         return new RemoveAccessLevelsFromVehicleForce();
@@ -9765,8 +7973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelsFromVehicleForceResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelsFromVehicleForceResponse }
      */
     public RemoveAccessLevelsFromVehicleForceResponse createRemoveAccessLevelsFromVehicleForceResponse() {
         return new RemoveAccessLevelsFromVehicleForceResponse();
@@ -9775,8 +7981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToVehicleForce }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToVehicleForce }
      */
     public AddAccessLevelsToVehicleForce createAddAccessLevelsToVehicleForce() {
         return new AddAccessLevelsToVehicleForce();
@@ -9785,8 +7989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessLevelsToVehicleForceResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessLevelsToVehicleForceResponse }
      */
     public AddAccessLevelsToVehicleForceResponse createAddAccessLevelsToVehicleForceResponse() {
         return new AddAccessLevelsToVehicleForceResponse();
@@ -9795,8 +7997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromVehicle }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromVehicle }
      */
     public RemoveAccessLevelFromVehicle createRemoveAccessLevelFromVehicle() {
         return new RemoveAccessLevelFromVehicle();
@@ -9805,8 +8005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessLevelFromVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessLevelFromVehicleResponse }
      */
     public RemoveAccessLevelFromVehicleResponse createRemoveAccessLevelFromVehicleResponse() {
         return new RemoveAccessLevelFromVehicleResponse();
@@ -9815,8 +8013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByVehicleID }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByVehicleID }
      */
     public GetAccessLevelsByVehicleID createGetAccessLevelsByVehicleID() {
         return new GetAccessLevelsByVehicleID();
@@ -9825,8 +8021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByVehicleIDResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByVehicleIDResponse }
      */
     public GetAccessLevelsByVehicleIDResponse createGetAccessLevelsByVehicleIDResponse() {
         return new GetAccessLevelsByVehicleIDResponse();
@@ -9835,8 +8029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByVehicleIDIncludeRemovedVehicles }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByVehicleIDIncludeRemovedVehicles }
      */
     public GetAccessLevelsByVehicleIDIncludeRemovedVehicles createGetAccessLevelsByVehicleIDIncludeRemovedVehicles() {
         return new GetAccessLevelsByVehicleIDIncludeRemovedVehicles();
@@ -9845,8 +8037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse }
      */
     public GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse createGetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse() {
         return new GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse();
@@ -9855,8 +8045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseVehicleParentAccessLevel }
      * 
-     * @return
-     *     the new instance of {@link SetUseVehicleParentAccessLevel }
      */
     public SetUseVehicleParentAccessLevel createSetUseVehicleParentAccessLevel() {
         return new SetUseVehicleParentAccessLevel();
@@ -9865,8 +8053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseVehicleParentAccessLevelResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseVehicleParentAccessLevelResponse }
      */
     public SetUseVehicleParentAccessLevelResponse createSetUseVehicleParentAccessLevelResponse() {
         return new SetUseVehicleParentAccessLevelResponse();
@@ -9875,8 +8061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeysChanges }
      * 
-     * @return
-     *     the new instance of {@link GetKeysChanges }
      */
     public GetKeysChanges createGetKeysChanges() {
         return new GetKeysChanges();
@@ -9885,8 +8069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetKeysChangesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetKeysChangesResponse }
      */
     public GetKeysChangesResponse createGetKeysChangesResponse() {
         return new GetKeysChangesResponse();
@@ -9895,8 +8077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessOnChangeDriver }
      * 
-     * @return
-     *     the new instance of {@link ProcessOnChangeDriver }
      */
     public ProcessOnChangeDriver createProcessOnChangeDriver() {
         return new ProcessOnChangeDriver();
@@ -9905,8 +8085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessOnChangeDriverResponse }
      * 
-     * @return
-     *     the new instance of {@link ProcessOnChangeDriverResponse }
      */
     public ProcessOnChangeDriverResponse createProcessOnChangeDriverResponse() {
         return new ProcessOnChangeDriverResponse();
@@ -9915,8 +8093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessSyncDriver }
      * 
-     * @return
-     *     the new instance of {@link ProcessSyncDriver }
      */
     public ProcessSyncDriver createProcessSyncDriver() {
         return new ProcessSyncDriver();
@@ -9925,8 +8101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessSyncDriverResponse }
      * 
-     * @return
-     *     the new instance of {@link ProcessSyncDriverResponse }
      */
     public ProcessSyncDriverResponse createProcessSyncDriverResponse() {
         return new ProcessSyncDriverResponse();
@@ -9935,8 +8109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessSyncDriverLight }
      * 
-     * @return
-     *     the new instance of {@link ProcessSyncDriverLight }
      */
     public ProcessSyncDriverLight createProcessSyncDriverLight() {
         return new ProcessSyncDriverLight();
@@ -9945,8 +8117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProcessSyncDriverLightResponse }
      * 
-     * @return
-     *     the new instance of {@link ProcessSyncDriverLightResponse }
      */
     public ProcessSyncDriverLightResponse createProcessSyncDriverLightResponse() {
         return new ProcessSyncDriverLightResponse();
@@ -9955,8 +8125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCustomizableDaysChanges }
      * 
-     * @return
-     *     the new instance of {@link GetCustomizableDaysChanges }
      */
     public GetCustomizableDaysChanges createGetCustomizableDaysChanges() {
         return new GetCustomizableDaysChanges();
@@ -9965,8 +8133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetCustomizableDaysChangesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetCustomizableDaysChangesResponse }
      */
     public GetCustomizableDaysChangesResponse createGetCustomizableDaysChangesResponse() {
         return new GetCustomizableDaysChangesResponse();
@@ -9975,8 +8141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Import }
      * 
-     * @return
-     *     the new instance of {@link Import }
      */
     public Import createImport() {
         return new Import();
@@ -9985,8 +8149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ImportResponse }
      * 
-     * @return
-     *     the new instance of {@link ImportResponse }
      */
     public ImportResponse createImportResponse() {
         return new ImportResponse();
@@ -9995,8 +8157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateDeviceDrivers }
      * 
-     * @return
-     *     the new instance of {@link UpdateDeviceDrivers }
      */
     public UpdateDeviceDrivers createUpdateDeviceDrivers() {
         return new UpdateDeviceDrivers();
@@ -10005,8 +8165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateDeviceDriversResponse }
      * 
-     * @return
-     *     the new instance of {@link UpdateDeviceDriversResponse }
      */
     public UpdateDeviceDriversResponse createUpdateDeviceDriversResponse() {
         return new UpdateDeviceDriversResponse();
@@ -10015,8 +8173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkplace }
      * 
-     * @return
-     *     the new instance of {@link AddWorkplace }
      */
     public AddWorkplace createAddWorkplace() {
         return new AddWorkplace();
@@ -10025,8 +8181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkplaceResponse }
      */
     public AddWorkplaceResponse createAddWorkplaceResponse() {
         return new AddWorkplaceResponse();
@@ -10035,8 +8189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkplace }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkplace }
      */
     public SaveWorkplace createSaveWorkplace() {
         return new SaveWorkplace();
@@ -10045,8 +8197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkplaceResponse }
      */
     public SaveWorkplaceResponse createSaveWorkplaceResponse() {
         return new SaveWorkplaceResponse();
@@ -10055,8 +8205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkplace }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkplace }
      */
     public RemoveWorkplace createRemoveWorkplace() {
         return new RemoveWorkplace();
@@ -10065,8 +8213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkplaceResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkplaceResponse }
      */
     public RemoveWorkplaceResponse createRemoveWorkplaceResponse() {
         return new RemoveWorkplaceResponse();
@@ -10075,8 +8221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkplaceModule }
      * 
-     * @return
-     *     the new instance of {@link AddWorkplaceModule }
      */
     public AddWorkplaceModule createAddWorkplaceModule() {
         return new AddWorkplaceModule();
@@ -10085,8 +8229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkplaceModuleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkplaceModuleResponse }
      */
     public AddWorkplaceModuleResponse createAddWorkplaceModuleResponse() {
         return new AddWorkplaceModuleResponse();
@@ -10095,8 +8237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkplaceModule }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkplaceModule }
      */
     public SaveWorkplaceModule createSaveWorkplaceModule() {
         return new SaveWorkplaceModule();
@@ -10105,8 +8245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkplaceModuleResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkplaceModuleResponse }
      */
     public SaveWorkplaceModuleResponse createSaveWorkplaceModuleResponse() {
         return new SaveWorkplaceModuleResponse();
@@ -10115,8 +8253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkplaceModule }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkplaceModule }
      */
     public RemoveWorkplaceModule createRemoveWorkplaceModule() {
         return new RemoveWorkplaceModule();
@@ -10125,8 +8261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkplaceModuleResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkplaceModuleResponse }
      */
     public RemoveWorkplaceModuleResponse createRemoveWorkplaceModuleResponse() {
         return new RemoveWorkplaceModuleResponse();
@@ -10135,8 +8269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRootMap }
      * 
-     * @return
-     *     the new instance of {@link AddRootMap }
      */
     public AddRootMap createAddRootMap() {
         return new AddRootMap();
@@ -10145,8 +8277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRootMapResponse }
      * 
-     * @return
-     *     the new instance of {@link AddRootMapResponse }
      */
     public AddRootMapResponse createAddRootMapResponse() {
         return new AddRootMapResponse();
@@ -10155,8 +8285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddMap }
      * 
-     * @return
-     *     the new instance of {@link AddMap }
      */
     public AddMap createAddMap() {
         return new AddMap();
@@ -10165,8 +8293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddMapResponse }
      * 
-     * @return
-     *     the new instance of {@link AddMapResponse }
      */
     public AddMapResponse createAddMapResponse() {
         return new AddMapResponse();
@@ -10175,8 +8301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveMap }
      * 
-     * @return
-     *     the new instance of {@link SaveMap }
      */
     public SaveMap createSaveMap() {
         return new SaveMap();
@@ -10185,8 +8309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveMapResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveMapResponse }
      */
     public SaveMapResponse createSaveMapResponse() {
         return new SaveMapResponse();
@@ -10195,8 +8317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveMap }
      * 
-     * @return
-     *     the new instance of {@link RemoveMap }
      */
     public RemoveMap createRemoveMap() {
         return new RemoveMap();
@@ -10205,8 +8325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveMapResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveMapResponse }
      */
     public RemoveMapResponse createRemoveMapResponse() {
         return new RemoveMapResponse();
@@ -10215,8 +8333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetMapImage }
      * 
-     * @return
-     *     the new instance of {@link SetMapImage }
      */
     public SetMapImage createSetMapImage() {
         return new SetMapImage();
@@ -10225,8 +8341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetMapImageResponse }
      * 
-     * @return
-     *     the new instance of {@link SetMapImageResponse }
      */
     public SetMapImageResponse createSetMapImageResponse() {
         return new SetMapImageResponse();
@@ -10235,8 +8349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriverFigureToMap }
      * 
-     * @return
-     *     the new instance of {@link AddDriverFigureToMap }
      */
     public AddDriverFigureToMap createAddDriverFigureToMap() {
         return new AddDriverFigureToMap();
@@ -10245,8 +8357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriverFigureToMapResponse }
      * 
-     * @return
-     *     the new instance of {@link AddDriverFigureToMapResponse }
      */
     public AddDriverFigureToMapResponse createAddDriverFigureToMapResponse() {
         return new AddDriverFigureToMapResponse();
@@ -10255,8 +8365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateDriverFigureOnTheMap }
      * 
-     * @return
-     *     the new instance of {@link UpdateDriverFigureOnTheMap }
      */
     public UpdateDriverFigureOnTheMap createUpdateDriverFigureOnTheMap() {
         return new UpdateDriverFigureOnTheMap();
@@ -10265,8 +8373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateDriverFigureOnTheMapResponse }
      * 
-     * @return
-     *     the new instance of {@link UpdateDriverFigureOnTheMapResponse }
      */
     public UpdateDriverFigureOnTheMapResponse createUpdateDriverFigureOnTheMapResponse() {
         return new UpdateDriverFigureOnTheMapResponse();
@@ -10275,8 +8381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriverFigureFromMap }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriverFigureFromMap }
      */
     public RemoveDriverFigureFromMap createRemoveDriverFigureFromMap() {
         return new RemoveDriverFigureFromMap();
@@ -10285,8 +8389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriverFigureFromMapResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriverFigureFromMapResponse }
      */
     public RemoveDriverFigureFromMapResponse createRemoveDriverFigureFromMapResponse() {
         return new RemoveDriverFigureFromMapResponse();
@@ -10295,8 +8397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAcsConfiguratorSettingsByWorkplaceModule }
      * 
-     * @return
-     *     the new instance of {@link SetAcsConfiguratorSettingsByWorkplaceModule }
      */
     public SetAcsConfiguratorSettingsByWorkplaceModule createSetAcsConfiguratorSettingsByWorkplaceModule() {
         return new SetAcsConfiguratorSettingsByWorkplaceModule();
@@ -10305,8 +8405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAcsConfiguratorSettingsByWorkplaceModuleResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAcsConfiguratorSettingsByWorkplaceModuleResponse }
      */
     public SetAcsConfiguratorSettingsByWorkplaceModuleResponse createSetAcsConfiguratorSettingsByWorkplaceModuleResponse() {
         return new SetAcsConfiguratorSettingsByWorkplaceModuleResponse();
@@ -10315,8 +8413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReportingServicesUrl }
      * 
-     * @return
-     *     the new instance of {@link GetReportingServicesUrl }
      */
     public GetReportingServicesUrl createGetReportingServicesUrl() {
         return new GetReportingServicesUrl();
@@ -10325,8 +8421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetReportingServicesUrlResponse }
      * 
-     * @return
-     *     the new instance of {@link GetReportingServicesUrlResponse }
      */
     public GetReportingServicesUrlResponse createGetReportingServicesUrlResponse() {
         return new GetReportingServicesUrlResponse();
@@ -10335,8 +8429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetIncidentTypeToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link SetIncidentTypeToReportParameters }
      */
     public SetIncidentTypeToReportParameters createSetIncidentTypeToReportParameters() {
         return new SetIncidentTypeToReportParameters();
@@ -10345,8 +8437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetIncidentTypeToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link SetIncidentTypeToReportParametersResponse }
      */
     public SetIncidentTypeToReportParametersResponse createSetIncidentTypeToReportParametersResponse() {
         return new SetIncidentTypeToReportParametersResponse();
@@ -10355,8 +8445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetBranchToReportParameters }
      * 
-     * @return
-     *     the new instance of {@link SetBranchToReportParameters }
      */
     public SetBranchToReportParameters createSetBranchToReportParameters() {
         return new SetBranchToReportParameters();
@@ -10365,8 +8453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetBranchToReportParametersResponse }
      * 
-     * @return
-     *     the new instance of {@link SetBranchToReportParametersResponse }
      */
     public SetBranchToReportParametersResponse createSetBranchToReportParametersResponse() {
         return new SetBranchToReportParametersResponse();
@@ -10375,8 +8461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentArchiveReport }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentArchiveReport }
      */
     public GetIncidentArchiveReport createGetIncidentArchiveReport() {
         return new GetIncidentArchiveReport();
@@ -10385,8 +8469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentArchiveReportResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentArchiveReportResponse }
      */
     public GetIncidentArchiveReportResponse createGetIncidentArchiveReportResponse() {
         return new GetIncidentArchiveReportResponse();
@@ -10395,8 +8477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentStatisticReport }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentStatisticReport }
      */
     public GetIncidentStatisticReport createGetIncidentStatisticReport() {
         return new GetIncidentStatisticReport();
@@ -10405,8 +8485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentStatisticReportResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentStatisticReportResponse }
      */
     public GetIncidentStatisticReportResponse createGetIncidentStatisticReportResponse() {
         return new GetIncidentStatisticReportResponse();
@@ -10415,8 +8493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentStatisticReportByWeek }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentStatisticReportByWeek }
      */
     public GetIncidentStatisticReportByWeek createGetIncidentStatisticReportByWeek() {
         return new GetIncidentStatisticReportByWeek();
@@ -10425,8 +8501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetIncidentStatisticReportByWeekResponse }
      * 
-     * @return
-     *     the new instance of {@link GetIncidentStatisticReportByWeekResponse }
      */
     public GetIncidentStatisticReportByWeekResponse createGetIncidentStatisticReportByWeekResponse() {
         return new GetIncidentStatisticReportByWeekResponse();
@@ -10435,8 +8509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkSchedulesToEmployee }
      * 
-     * @return
-     *     the new instance of {@link AddWorkSchedulesToEmployee }
      */
     public AddWorkSchedulesToEmployee createAddWorkSchedulesToEmployee() {
         return new AddWorkSchedulesToEmployee();
@@ -10445,8 +8517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkSchedulesToEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkSchedulesToEmployeeResponse }
      */
     public AddWorkSchedulesToEmployeeResponse createAddWorkSchedulesToEmployeeResponse() {
         return new AddWorkSchedulesToEmployeeResponse();
@@ -10455,8 +8525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkSchedulesToEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link AddWorkSchedulesToEmployeeGroup }
      */
     public AddWorkSchedulesToEmployeeGroup createAddWorkSchedulesToEmployeeGroup() {
         return new AddWorkSchedulesToEmployeeGroup();
@@ -10465,8 +8533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkSchedulesToEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkSchedulesToEmployeeGroupResponse }
      */
     public AddWorkSchedulesToEmployeeGroupResponse createAddWorkSchedulesToEmployeeGroupResponse() {
         return new AddWorkSchedulesToEmployeeGroupResponse();
@@ -10475,8 +8541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkSchedulesFromEmployee }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkSchedulesFromEmployee }
      */
     public RemoveWorkSchedulesFromEmployee createRemoveWorkSchedulesFromEmployee() {
         return new RemoveWorkSchedulesFromEmployee();
@@ -10485,8 +8549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkSchedulesFromEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkSchedulesFromEmployeeResponse }
      */
     public RemoveWorkSchedulesFromEmployeeResponse createRemoveWorkSchedulesFromEmployeeResponse() {
         return new RemoveWorkSchedulesFromEmployeeResponse();
@@ -10495,8 +8557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkSchedulesFromEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkSchedulesFromEmployeeGroup }
      */
     public RemoveWorkSchedulesFromEmployeeGroup createRemoveWorkSchedulesFromEmployeeGroup() {
         return new RemoveWorkSchedulesFromEmployeeGroup();
@@ -10505,8 +8565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkSchedulesFromEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkSchedulesFromEmployeeGroupResponse }
      */
     public RemoveWorkSchedulesFromEmployeeGroupResponse createRemoveWorkSchedulesFromEmployeeGroupResponse() {
         return new RemoveWorkSchedulesFromEmployeeGroupResponse();
@@ -10515,8 +8573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentWorkSchedule }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentWorkSchedule }
      */
     public SetUseEmployeeParentWorkSchedule createSetUseEmployeeParentWorkSchedule() {
         return new SetUseEmployeeParentWorkSchedule();
@@ -10525,8 +8581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentWorkScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentWorkScheduleResponse }
      */
     public SetUseEmployeeParentWorkScheduleResponse createSetUseEmployeeParentWorkScheduleResponse() {
         return new SetUseEmployeeParentWorkScheduleResponse();
@@ -10535,8 +8589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentWorkSchedule }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentWorkSchedule }
      */
     public SetUseEmployeeGroupParentWorkSchedule createSetUseEmployeeGroupParentWorkSchedule() {
         return new SetUseEmployeeGroupParentWorkSchedule();
@@ -10545,8 +8597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentWorkScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentWorkScheduleResponse }
      */
     public SetUseEmployeeGroupParentWorkScheduleResponse createSetUseEmployeeGroupParentWorkScheduleResponse() {
         return new SetUseEmployeeGroupParentWorkScheduleResponse();
@@ -10555,8 +8605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesToEmployee }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesToEmployee }
      */
     public AddWorkZonesToEmployee createAddWorkZonesToEmployee() {
         return new AddWorkZonesToEmployee();
@@ -10565,8 +8613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesToEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesToEmployeeResponse }
      */
     public AddWorkZonesToEmployeeResponse createAddWorkZonesToEmployeeResponse() {
         return new AddWorkZonesToEmployeeResponse();
@@ -10575,8 +8621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesToEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesToEmployeeGroup }
      */
     public AddWorkZonesToEmployeeGroup createAddWorkZonesToEmployeeGroup() {
         return new AddWorkZonesToEmployeeGroup();
@@ -10585,8 +8629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkZonesToEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkZonesToEmployeeGroupResponse }
      */
     public AddWorkZonesToEmployeeGroupResponse createAddWorkZonesToEmployeeGroupResponse() {
         return new AddWorkZonesToEmployeeGroupResponse();
@@ -10595,8 +8637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZoneFromEmployee }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZoneFromEmployee }
      */
     public RemoveWorkZoneFromEmployee createRemoveWorkZoneFromEmployee() {
         return new RemoveWorkZoneFromEmployee();
@@ -10605,8 +8645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZoneFromEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZoneFromEmployeeResponse }
      */
     public RemoveWorkZoneFromEmployeeResponse createRemoveWorkZoneFromEmployeeResponse() {
         return new RemoveWorkZoneFromEmployeeResponse();
@@ -10615,8 +8653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZoneFromEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZoneFromEmployeeGroup }
      */
     public RemoveWorkZoneFromEmployeeGroup createRemoveWorkZoneFromEmployeeGroup() {
         return new RemoveWorkZoneFromEmployeeGroup();
@@ -10625,8 +8661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkZoneFromEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkZoneFromEmployeeGroupResponse }
      */
     public RemoveWorkZoneFromEmployeeGroupResponse createRemoveWorkZoneFromEmployeeGroupResponse() {
         return new RemoveWorkZoneFromEmployeeGroupResponse();
@@ -10635,8 +8669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentWorkZone }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentWorkZone }
      */
     public SetUseEmployeeParentWorkZone createSetUseEmployeeParentWorkZone() {
         return new SetUseEmployeeParentWorkZone();
@@ -10645,8 +8677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeParentWorkZoneResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeParentWorkZoneResponse }
      */
     public SetUseEmployeeParentWorkZoneResponse createSetUseEmployeeParentWorkZoneResponse() {
         return new SetUseEmployeeParentWorkZoneResponse();
@@ -10655,8 +8685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentWorkZone }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentWorkZone }
      */
     public SetUseEmployeeGroupParentWorkZone createSetUseEmployeeGroupParentWorkZone() {
         return new SetUseEmployeeGroupParentWorkZone();
@@ -10665,8 +8693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUseEmployeeGroupParentWorkZoneResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUseEmployeeGroupParentWorkZoneResponse }
      */
     public SetUseEmployeeGroupParentWorkZoneResponse createSetUseEmployeeGroupParentWorkZoneResponse() {
         return new SetUseEmployeeGroupParentWorkZoneResponse();
@@ -10675,8 +8701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDayType }
      * 
-     * @return
-     *     the new instance of {@link AddDayType }
      */
     public AddDayType createAddDayType() {
         return new AddDayType();
@@ -10685,8 +8709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDayTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link AddDayTypeResponse }
      */
     public AddDayTypeResponse createAddDayTypeResponse() {
         return new AddDayTypeResponse();
@@ -10695,8 +8717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkTimtable }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkTimtable }
      */
     public SaveWorkTimtable createSaveWorkTimtable() {
         return new SaveWorkTimtable();
@@ -10705,8 +8725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkTimtableResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkTimtableResponse }
      */
     public SaveWorkTimtableResponse createSaveWorkTimtableResponse() {
         return new SaveWorkTimtableResponse();
@@ -10715,8 +8733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeeTimtable }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeeTimtable }
      */
     public SaveEmployeeTimtable createSaveEmployeeTimtable() {
         return new SaveEmployeeTimtable();
@@ -10725,8 +8741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeeTimtableResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeeTimtableResponse }
      */
     public SaveEmployeeTimtableResponse createSaveEmployeeTimtableResponse() {
         return new SaveEmployeeTimtableResponse();
@@ -10735,8 +8749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveDayType }
      * 
-     * @return
-     *     the new instance of {@link SaveDayType }
      */
     public SaveDayType createSaveDayType() {
         return new SaveDayType();
@@ -10745,8 +8757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveDayTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveDayTypeResponse }
      */
     public SaveDayTypeResponse createSaveDayTypeResponse() {
         return new SaveDayTypeResponse();
@@ -10755,8 +8765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDayTypes }
      * 
-     * @return
-     *     the new instance of {@link RemoveDayTypes }
      */
     public RemoveDayTypes createRemoveDayTypes() {
         return new RemoveDayTypes();
@@ -10765,8 +8773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDayTypesResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveDayTypesResponse }
      */
     public RemoveDayTypesResponse createRemoveDayTypesResponse() {
         return new RemoveDayTypesResponse();
@@ -10775,8 +8781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteWorkTimetable }
      * 
-     * @return
-     *     the new instance of {@link DeleteWorkTimetable }
      */
     public DeleteWorkTimetable createDeleteWorkTimetable() {
         return new DeleteWorkTimetable();
@@ -10785,8 +8789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteWorkTimetableResponse }
      * 
-     * @return
-     *     the new instance of {@link DeleteWorkTimetableResponse }
      */
     public DeleteWorkTimetableResponse createDeleteWorkTimetableResponse() {
         return new DeleteWorkTimetableResponse();
@@ -10795,8 +8797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteEmployeeTimetable }
      * 
-     * @return
-     *     the new instance of {@link DeleteEmployeeTimetable }
      */
     public DeleteEmployeeTimetable createDeleteEmployeeTimetable() {
         return new DeleteEmployeeTimetable();
@@ -10805,8 +8805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeleteEmployeeTimetableResponse }
      * 
-     * @return
-     *     the new instance of {@link DeleteEmployeeTimetableResponse }
      */
     public DeleteEmployeeTimetableResponse createDeleteEmployeeTimetableResponse() {
         return new DeleteEmployeeTimetableResponse();
@@ -10815,8 +8813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateWorkTimeTable }
      * 
-     * @return
-     *     the new instance of {@link UpdateWorkTimeTable }
      */
     public UpdateWorkTimeTable createUpdateWorkTimeTable() {
         return new UpdateWorkTimeTable();
@@ -10825,8 +8821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateWorkTimeTableResponse }
      * 
-     * @return
-     *     the new instance of {@link UpdateWorkTimeTableResponse }
      */
     public UpdateWorkTimeTableResponse createUpdateWorkTimeTableResponse() {
         return new UpdateWorkTimeTableResponse();
@@ -10835,8 +8829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateEmployeeTimeTable }
      * 
-     * @return
-     *     the new instance of {@link UpdateEmployeeTimeTable }
      */
     public UpdateEmployeeTimeTable createUpdateEmployeeTimeTable() {
         return new UpdateEmployeeTimeTable();
@@ -10845,8 +8837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateEmployeeTimeTableResponse }
      * 
-     * @return
-     *     the new instance of {@link UpdateEmployeeTimeTableResponse }
      */
     public UpdateEmployeeTimeTableResponse createUpdateEmployeeTimeTableResponse() {
         return new UpdateEmployeeTimeTableResponse();
@@ -10855,8 +8845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkSchedule }
      * 
-     * @return
-     *     the new instance of {@link AddWorkSchedule }
      */
     public AddWorkSchedule createAddWorkSchedule() {
         return new AddWorkSchedule();
@@ -10865,8 +8853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddWorkScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddWorkScheduleResponse }
      */
     public AddWorkScheduleResponse createAddWorkScheduleResponse() {
         return new AddWorkScheduleResponse();
@@ -10875,8 +8861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkSchedule }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkSchedule }
      */
     public SaveWorkSchedule createSaveWorkSchedule() {
         return new SaveWorkSchedule();
@@ -10885,8 +8869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveWorkScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveWorkScheduleResponse }
      */
     public SaveWorkScheduleResponse createSaveWorkScheduleResponse() {
         return new SaveWorkScheduleResponse();
@@ -10895,8 +8877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkSchedules }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkSchedules }
      */
     public RemoveWorkSchedules createRemoveWorkSchedules() {
         return new RemoveWorkSchedules();
@@ -10905,8 +8885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveWorkSchedulesResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveWorkSchedulesResponse }
      */
     public RemoveWorkSchedulesResponse createRemoveWorkSchedulesResponse() {
         return new RemoveWorkSchedulesResponse();
@@ -10915,8 +8893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByClaim }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByClaim }
      */
     public GetTagsByClaim createGetTagsByClaim() {
         return new GetTagsByClaim();
@@ -10925,8 +8901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetTagsByClaimResponse }
      * 
-     * @return
-     *     the new instance of {@link GetTagsByClaimResponse }
      */
     public GetTagsByClaimResponse createGetTagsByClaimResponse() {
         return new GetTagsByClaimResponse();
@@ -10935,8 +8909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetVariable }
      * 
-     * @return
-     *     the new instance of {@link SetVariable }
      */
     public SetVariable createSetVariable() {
         return new SetVariable();
@@ -10945,8 +8917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetVariableResponse }
      * 
-     * @return
-     *     the new instance of {@link SetVariableResponse }
      */
     public SetVariableResponse createSetVariableResponse() {
         return new SetVariableResponse();
@@ -10955,8 +8925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddNetwork }
      * 
-     * @return
-     *     the new instance of {@link AddNetwork }
      */
     public AddNetwork createAddNetwork() {
         return new AddNetwork();
@@ -10965,8 +8933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddNetworkResponse }
      * 
-     * @return
-     *     the new instance of {@link AddNetworkResponse }
      */
     public AddNetworkResponse createAddNetworkResponse() {
         return new AddNetworkResponse();
@@ -10975,8 +8941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveNetwork }
      * 
-     * @return
-     *     the new instance of {@link RemoveNetwork }
      */
     public RemoveNetwork createRemoveNetwork() {
         return new RemoveNetwork();
@@ -10985,8 +8949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveNetworkResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveNetworkResponse }
      */
     public RemoveNetworkResponse createRemoveNetworkResponse() {
         return new RemoveNetworkResponse();
@@ -10995,8 +8957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLocalServer }
      * 
-     * @return
-     *     the new instance of {@link AddLocalServer }
      */
     public AddLocalServer createAddLocalServer() {
         return new AddLocalServer();
@@ -11005,8 +8965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLocalServerResponse }
      * 
-     * @return
-     *     the new instance of {@link AddLocalServerResponse }
      */
     public AddLocalServerResponse createAddLocalServerResponse() {
         return new AddLocalServerResponse();
@@ -11015,8 +8973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddServer }
      * 
-     * @return
-     *     the new instance of {@link AddServer }
      */
     public AddServer createAddServer() {
         return new AddServer();
@@ -11025,8 +8981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddServerResponse }
      * 
-     * @return
-     *     the new instance of {@link AddServerResponse }
      */
     public AddServerResponse createAddServerResponse() {
         return new AddServerResponse();
@@ -11035,8 +8989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveServer }
      * 
-     * @return
-     *     the new instance of {@link RemoveServer }
      */
     public RemoveServer createRemoveServer() {
         return new RemoveServer();
@@ -11045,8 +8997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveServerResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveServerResponse }
      */
     public RemoveServerResponse createRemoveServerResponse() {
         return new RemoveServerResponse();
@@ -11055,8 +9005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRootDriverProps }
      * 
-     * @return
-     *     the new instance of {@link AddRootDriverProps }
      */
     public AddRootDriverProps createAddRootDriverProps() {
         return new AddRootDriverProps();
@@ -11065,8 +9013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddRootDriverPropsResponse }
      * 
-     * @return
-     *     the new instance of {@link AddRootDriverPropsResponse }
      */
     public AddRootDriverPropsResponse createAddRootDriverPropsResponse() {
         return new AddRootDriverPropsResponse();
@@ -11075,8 +9021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriverProps }
      * 
-     * @return
-     *     the new instance of {@link AddDriverProps }
      */
     public AddDriverProps createAddDriverProps() {
         return new AddDriverProps();
@@ -11085,8 +9029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDriverPropsResponse }
      * 
-     * @return
-     *     the new instance of {@link AddDriverPropsResponse }
      */
     public AddDriverPropsResponse createAddDriverPropsResponse() {
         return new AddDriverPropsResponse();
@@ -11095,8 +9037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriver }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriver }
      */
     public RemoveDriver createRemoveDriver() {
         return new RemoveDriver();
@@ -11105,8 +9045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDriverResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveDriverResponse }
      */
     public RemoveDriverResponse createRemoveDriverResponse() {
         return new RemoveDriverResponse();
@@ -11115,8 +9053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddNetworkToSubnetworkLink }
      * 
-     * @return
-     *     the new instance of {@link AddNetworkToSubnetworkLink }
      */
     public AddNetworkToSubnetworkLink createAddNetworkToSubnetworkLink() {
         return new AddNetworkToSubnetworkLink();
@@ -11125,8 +9061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddNetworkToSubnetworkLinkResponse }
      * 
-     * @return
-     *     the new instance of {@link AddNetworkToSubnetworkLinkResponse }
      */
     public AddNetworkToSubnetworkLinkResponse createAddNetworkToSubnetworkLinkResponse() {
         return new AddNetworkToSubnetworkLinkResponse();
@@ -11135,8 +9069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveNetworkToSubnetworkLink }
      * 
-     * @return
-     *     the new instance of {@link RemoveNetworkToSubnetworkLink }
      */
     public RemoveNetworkToSubnetworkLink createRemoveNetworkToSubnetworkLink() {
         return new RemoveNetworkToSubnetworkLink();
@@ -11145,8 +9077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveNetworkToSubnetworkLinkResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveNetworkToSubnetworkLinkResponse }
      */
     public RemoveNetworkToSubnetworkLinkResponse createRemoveNetworkToSubnetworkLinkResponse() {
         return new RemoveNetworkToSubnetworkLinkResponse();
@@ -11155,8 +9085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetProperty }
      * 
-     * @return
-     *     the new instance of {@link SetProperty }
      */
     public SetProperty createSetProperty() {
         return new SetProperty();
@@ -11165,8 +9093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetPropertyResponse }
      * 
-     * @return
-     *     the new instance of {@link SetPropertyResponse }
      */
     public SetPropertyResponse createSetPropertyResponse() {
         return new SetPropertyResponse();
@@ -11175,8 +9101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetPropertyValues }
      * 
-     * @return
-     *     the new instance of {@link SetPropertyValues }
      */
     public SetPropertyValues createSetPropertyValues() {
         return new SetPropertyValues();
@@ -11185,8 +9109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetPropertyValuesResponse }
      * 
-     * @return
-     *     the new instance of {@link SetPropertyValuesResponse }
      */
     public SetPropertyValuesResponse createSetPropertyValuesResponse() {
         return new SetPropertyValuesResponse();
@@ -11195,8 +9117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUser }
      * 
-     * @return
-     *     the new instance of {@link AddUser }
      */
     public AddUser createAddUser() {
         return new AddUser();
@@ -11205,8 +9125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUserResponse }
      * 
-     * @return
-     *     the new instance of {@link AddUserResponse }
      */
     public AddUserResponse createAddUserResponse() {
         return new AddUserResponse();
@@ -11215,8 +9133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUser }
      * 
-     * @return
-     *     the new instance of {@link SaveUser }
      */
     public SaveUser createSaveUser() {
         return new SaveUser();
@@ -11225,8 +9141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUserResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveUserResponse }
      */
     public SaveUserResponse createSaveUserResponse() {
         return new SaveUserResponse();
@@ -11235,8 +9149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUser }
      * 
-     * @return
-     *     the new instance of {@link RemoveUser }
      */
     public RemoveUser createRemoveUser() {
         return new RemoveUser();
@@ -11245,8 +9157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserResponse }
      */
     public RemoveUserResponse createRemoveUserResponse() {
         return new RemoveUserResponse();
@@ -11255,8 +9165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUserGroup }
      * 
-     * @return
-     *     the new instance of {@link AddUserGroup }
      */
     public AddUserGroup createAddUserGroup() {
         return new AddUserGroup();
@@ -11265,8 +9173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUserGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddUserGroupResponse }
      */
     public AddUserGroupResponse createAddUserGroupResponse() {
         return new AddUserGroupResponse();
@@ -11275,8 +9181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUserGroup }
      * 
-     * @return
-     *     the new instance of {@link SaveUserGroup }
      */
     public SaveUserGroup createSaveUserGroup() {
         return new SaveUserGroup();
@@ -11285,8 +9189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveUserGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveUserGroupResponse }
      */
     public SaveUserGroupResponse createSaveUserGroupResponse() {
         return new SaveUserGroupResponse();
@@ -11295,8 +9197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserGroup }
      */
     public RemoveUserGroup createRemoveUserGroup() {
         return new RemoveUserGroup();
@@ -11305,8 +9205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserGroupResponse }
      */
     public RemoveUserGroupResponse createRemoveUserGroupResponse() {
         return new RemoveUserGroupResponse();
@@ -11315,8 +9213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUsersToUserGroup }
      * 
-     * @return
-     *     the new instance of {@link AddUsersToUserGroup }
      */
     public AddUsersToUserGroup createAddUsersToUserGroup() {
         return new AddUsersToUserGroup();
@@ -11325,8 +9221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUsersToUserGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddUsersToUserGroupResponse }
      */
     public AddUsersToUserGroupResponse createAddUsersToUserGroupResponse() {
         return new AddUsersToUserGroupResponse();
@@ -11335,8 +9229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUsersFromUserGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveUsersFromUserGroup }
      */
     public RemoveUsersFromUserGroup createRemoveUsersFromUserGroup() {
         return new RemoveUsersFromUserGroup();
@@ -11345,8 +9237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUsersFromUserGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveUsersFromUserGroupResponse }
      */
     public RemoveUsersFromUserGroupResponse createRemoveUsersFromUserGroupResponse() {
         return new RemoveUsersFromUserGroupResponse();
@@ -11355,8 +9245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUserGroupsToUser }
      * 
-     * @return
-     *     the new instance of {@link AddUserGroupsToUser }
      */
     public AddUserGroupsToUser createAddUserGroupsToUser() {
         return new AddUserGroupsToUser();
@@ -11365,8 +9253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddUserGroupsToUserResponse }
      * 
-     * @return
-     *     the new instance of {@link AddUserGroupsToUserResponse }
      */
     public AddUserGroupsToUserResponse createAddUserGroupsToUserResponse() {
         return new AddUserGroupsToUserResponse();
@@ -11375,8 +9261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserGroupsFromUser }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserGroupsFromUser }
      */
     public RemoveUserGroupsFromUser createRemoveUserGroupsFromUser() {
         return new RemoveUserGroupsFromUser();
@@ -11385,8 +9269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveUserGroupsFromUserResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveUserGroupsFromUserResponse }
      */
     public RemoveUserGroupsFromUserResponse createRemoveUserGroupsFromUserResponse() {
         return new RemoveUserGroupsFromUserResponse();
@@ -11395,8 +9277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddClaim }
      * 
-     * @return
-     *     the new instance of {@link AddClaim }
      */
     public AddClaim createAddClaim() {
         return new AddClaim();
@@ -11405,8 +9285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddClaimResponse }
      * 
-     * @return
-     *     the new instance of {@link AddClaimResponse }
      */
     public AddClaimResponse createAddClaimResponse() {
         return new AddClaimResponse();
@@ -11415,8 +9293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveClaim }
      * 
-     * @return
-     *     the new instance of {@link RemoveClaim }
      */
     public RemoveClaim createRemoveClaim() {
         return new RemoveClaim();
@@ -11425,8 +9301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveClaimResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveClaimResponse }
      */
     public RemoveClaimResponse createRemoveClaimResponse() {
         return new RemoveClaimResponse();
@@ -11435,8 +9309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsSchedule }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsSchedule }
      */
     public RemoveAcsSchedule createRemoveAcsSchedule() {
         return new RemoveAcsSchedule();
@@ -11445,8 +9317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsScheduleResponse }
      */
     public RemoveAcsScheduleResponse createRemoveAcsScheduleResponse() {
         return new RemoveAcsScheduleResponse();
@@ -11455,8 +9325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link AddAcsDaySchedule }
      */
     public AddAcsDaySchedule createAddAcsDaySchedule() {
         return new AddAcsDaySchedule();
@@ -11465,8 +9333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsDayScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsDayScheduleResponse }
      */
     public AddAcsDayScheduleResponse createAddAcsDayScheduleResponse() {
         return new AddAcsDayScheduleResponse();
@@ -11475,8 +9341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsDayScheduleForOwner }
      * 
-     * @return
-     *     the new instance of {@link AddAcsDayScheduleForOwner }
      */
     public AddAcsDayScheduleForOwner createAddAcsDayScheduleForOwner() {
         return new AddAcsDayScheduleForOwner();
@@ -11485,8 +9349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsDayScheduleForOwnerResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsDayScheduleForOwnerResponse }
      */
     public AddAcsDayScheduleForOwnerResponse createAddAcsDayScheduleForOwnerResponse() {
         return new AddAcsDayScheduleForOwnerResponse();
@@ -11495,8 +9357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsDaySchedule }
      */
     public SaveAcsDaySchedule createSaveAcsDaySchedule() {
         return new SaveAcsDaySchedule();
@@ -11505,8 +9365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsDayScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsDayScheduleResponse }
      */
     public SaveAcsDayScheduleResponse createSaveAcsDayScheduleResponse() {
         return new SaveAcsDayScheduleResponse();
@@ -11515,8 +9373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsDayScheduleForOwner }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsDayScheduleForOwner }
      */
     public SaveAcsDayScheduleForOwner createSaveAcsDayScheduleForOwner() {
         return new SaveAcsDayScheduleForOwner();
@@ -11525,8 +9381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsDayScheduleForOwnerResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsDayScheduleForOwnerResponse }
      */
     public SaveAcsDayScheduleForOwnerResponse createSaveAcsDayScheduleForOwnerResponse() {
         return new SaveAcsDayScheduleForOwnerResponse();
@@ -11535,8 +9389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsMultiDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link AddAcsMultiDaySchedule }
      */
     public AddAcsMultiDaySchedule createAddAcsMultiDaySchedule() {
         return new AddAcsMultiDaySchedule();
@@ -11545,8 +9397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsMultiDayScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsMultiDayScheduleResponse }
      */
     public AddAcsMultiDayScheduleResponse createAddAcsMultiDayScheduleResponse() {
         return new AddAcsMultiDayScheduleResponse();
@@ -11555,8 +9405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsMultiDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsMultiDaySchedule }
      */
     public SaveAcsMultiDaySchedule createSaveAcsMultiDaySchedule() {
         return new SaveAcsMultiDaySchedule();
@@ -11565,8 +9413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsMultiDayScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsMultiDayScheduleResponse }
      */
     public SaveAcsMultiDayScheduleResponse createSaveAcsMultiDayScheduleResponse() {
         return new SaveAcsMultiDayScheduleResponse();
@@ -11575,8 +9421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsWeekSchedule }
      * 
-     * @return
-     *     the new instance of {@link AddAcsWeekSchedule }
      */
     public AddAcsWeekSchedule createAddAcsWeekSchedule() {
         return new AddAcsWeekSchedule();
@@ -11585,8 +9429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsWeekScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsWeekScheduleResponse }
      */
     public AddAcsWeekScheduleResponse createAddAcsWeekScheduleResponse() {
         return new AddAcsWeekScheduleResponse();
@@ -11595,8 +9437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsWeekSchedule }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsWeekSchedule }
      */
     public SaveAcsWeekSchedule createSaveAcsWeekSchedule() {
         return new SaveAcsWeekSchedule();
@@ -11605,8 +9445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsWeekScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsWeekScheduleResponse }
      */
     public SaveAcsWeekScheduleResponse createSaveAcsWeekScheduleResponse() {
         return new SaveAcsWeekScheduleResponse();
@@ -11615,8 +9453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsDay }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsDay }
      */
     public RemoveAcsDay createRemoveAcsDay() {
         return new RemoveAcsDay();
@@ -11625,8 +9461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsDayResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsDayResponse }
      */
     public RemoveAcsDayResponse createRemoveAcsDayResponse() {
         return new RemoveAcsDayResponse();
@@ -11635,8 +9469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsCustomDay }
      * 
-     * @return
-     *     the new instance of {@link AddAcsCustomDay }
      */
     public AddAcsCustomDay createAddAcsCustomDay() {
         return new AddAcsCustomDay();
@@ -11645,8 +9477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsCustomDayResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsCustomDayResponse }
      */
     public AddAcsCustomDayResponse createAddAcsCustomDayResponse() {
         return new AddAcsCustomDayResponse();
@@ -11655,8 +9485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsCustomDay }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsCustomDay }
      */
     public SaveAcsCustomDay createSaveAcsCustomDay() {
         return new SaveAcsCustomDay();
@@ -11665,8 +9493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsCustomDayResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsCustomDayResponse }
      */
     public SaveAcsCustomDayResponse createSaveAcsCustomDayResponse() {
         return new SaveAcsCustomDayResponse();
@@ -11675,8 +9501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsWorkDayWithTransfer }
      * 
-     * @return
-     *     the new instance of {@link AddAcsWorkDayWithTransfer }
      */
     public AddAcsWorkDayWithTransfer createAddAcsWorkDayWithTransfer() {
         return new AddAcsWorkDayWithTransfer();
@@ -11685,8 +9509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsWorkDayWithTransferResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsWorkDayWithTransferResponse }
      */
     public AddAcsWorkDayWithTransferResponse createAddAcsWorkDayWithTransferResponse() {
         return new AddAcsWorkDayWithTransferResponse();
@@ -11695,8 +9517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsWorkDayWithTransfer }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsWorkDayWithTransfer }
      */
     public SaveAcsWorkDayWithTransfer createSaveAcsWorkDayWithTransfer() {
         return new SaveAcsWorkDayWithTransfer();
@@ -11705,8 +9525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsWorkDayWithTransferResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsWorkDayWithTransferResponse }
      */
     public SaveAcsWorkDayWithTransferResponse createSaveAcsWorkDayWithTransferResponse() {
         return new SaveAcsWorkDayWithTransferResponse();
@@ -11715,8 +9533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeePosition }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeePosition }
      */
     public AddEmployeePosition createAddEmployeePosition() {
         return new AddEmployeePosition();
@@ -11725,8 +9541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeePositionResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeePositionResponse }
      */
     public AddEmployeePositionResponse createAddEmployeePositionResponse() {
         return new AddEmployeePositionResponse();
@@ -11735,8 +9549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeePositionForIncident }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeePositionForIncident }
      */
     public AddEmployeePositionForIncident createAddEmployeePositionForIncident() {
         return new AddEmployeePositionForIncident();
@@ -11745,8 +9557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeePositionForIncidentResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeePositionForIncidentResponse }
      */
     public AddEmployeePositionForIncidentResponse createAddEmployeePositionForIncidentResponse() {
         return new AddEmployeePositionForIncidentResponse();
@@ -11755,8 +9565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeePosition }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeePosition }
      */
     public SaveEmployeePosition createSaveEmployeePosition() {
         return new SaveEmployeePosition();
@@ -11765,8 +9573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeePositionResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeePositionResponse }
      */
     public SaveEmployeePositionResponse createSaveEmployeePositionResponse() {
         return new SaveEmployeePositionResponse();
@@ -11775,8 +9581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeePositionForIncident }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeePositionForIncident }
      */
     public SaveEmployeePositionForIncident createSaveEmployeePositionForIncident() {
         return new SaveEmployeePositionForIncident();
@@ -11785,8 +9589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeePositionForIncidentResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeePositionForIncidentResponse }
      */
     public SaveEmployeePositionForIncidentResponse createSaveEmployeePositionForIncidentResponse() {
         return new SaveEmployeePositionForIncidentResponse();
@@ -11795,8 +9597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeePosition }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeePosition }
      */
     public RemoveEmployeePosition createRemoveEmployeePosition() {
         return new RemoveEmployeePosition();
@@ -11805,8 +9605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeePositionResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeePositionResponse }
      */
     public RemoveEmployeePositionResponse createRemoveEmployeePositionResponse() {
         return new RemoveEmployeePositionResponse();
@@ -11815,8 +9613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeePositionForIncident }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeePositionForIncident }
      */
     public RemoveEmployeePositionForIncident createRemoveEmployeePositionForIncident() {
         return new RemoveEmployeePositionForIncident();
@@ -11825,8 +9621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeePositionForIncidentResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeePositionForIncidentResponse }
      */
     public RemoveEmployeePositionForIncidentResponse createRemoveEmployeePositionForIncidentResponse() {
         return new RemoveEmployeePositionForIncidentResponse();
@@ -11835,8 +9629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddIncidentTemplate }
      * 
-     * @return
-     *     the new instance of {@link AddIncidentTemplate }
      */
     public AddIncidentTemplate createAddIncidentTemplate() {
         return new AddIncidentTemplate();
@@ -11845,8 +9637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddIncidentTemplateResponse }
      * 
-     * @return
-     *     the new instance of {@link AddIncidentTemplateResponse }
      */
     public AddIncidentTemplateResponse createAddIncidentTemplateResponse() {
         return new AddIncidentTemplateResponse();
@@ -11855,8 +9645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveIncidentTemplate }
      * 
-     * @return
-     *     the new instance of {@link SaveIncidentTemplate }
      */
     public SaveIncidentTemplate createSaveIncidentTemplate() {
         return new SaveIncidentTemplate();
@@ -11865,8 +9653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveIncidentTemplateResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveIncidentTemplateResponse }
      */
     public SaveIncidentTemplateResponse createSaveIncidentTemplateResponse() {
         return new SaveIncidentTemplateResponse();
@@ -11875,8 +9661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveIncidentTemplate }
      * 
-     * @return
-     *     the new instance of {@link RemoveIncidentTemplate }
      */
     public RemoveIncidentTemplate createRemoveIncidentTemplate() {
         return new RemoveIncidentTemplate();
@@ -11885,8 +9669,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveIncidentTemplateResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveIncidentTemplateResponse }
      */
     public RemoveIncidentTemplateResponse createRemoveIncidentTemplateResponse() {
         return new RemoveIncidentTemplateResponse();
@@ -11895,8 +9677,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddIncident }
      * 
-     * @return
-     *     the new instance of {@link AddIncident }
      */
     public AddIncident createAddIncident() {
         return new AddIncident();
@@ -11905,8 +9685,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddIncidentResponse }
      * 
-     * @return
-     *     the new instance of {@link AddIncidentResponse }
      */
     public AddIncidentResponse createAddIncidentResponse() {
         return new AddIncidentResponse();
@@ -11915,8 +9693,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveIncident }
      * 
-     * @return
-     *     the new instance of {@link SaveIncident }
      */
     public SaveIncident createSaveIncident() {
         return new SaveIncident();
@@ -11925,8 +9701,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveIncidentResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveIncidentResponse }
      */
     public SaveIncidentResponse createSaveIncidentResponse() {
         return new SaveIncidentResponse();
@@ -11935,8 +9709,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveIncidents }
      * 
-     * @return
-     *     the new instance of {@link RemoveIncidents }
      */
     public RemoveIncidents createRemoveIncidents() {
         return new RemoveIncidents();
@@ -11945,8 +9717,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveIncidentsResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveIncidentsResponse }
      */
     public RemoveIncidentsResponse createRemoveIncidentsResponse() {
         return new RemoveIncidentsResponse();
@@ -11955,8 +9725,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDictionaryElement }
      * 
-     * @return
-     *     the new instance of {@link AddDictionaryElement }
      */
     public AddDictionaryElement createAddDictionaryElement() {
         return new AddDictionaryElement();
@@ -11965,8 +9733,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddDictionaryElementResponse }
      * 
-     * @return
-     *     the new instance of {@link AddDictionaryElementResponse }
      */
     public AddDictionaryElementResponse createAddDictionaryElementResponse() {
         return new AddDictionaryElementResponse();
@@ -11975,8 +9741,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveDictionaryElement }
      * 
-     * @return
-     *     the new instance of {@link SaveDictionaryElement }
      */
     public SaveDictionaryElement createSaveDictionaryElement() {
         return new SaveDictionaryElement();
@@ -11985,8 +9749,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveDictionaryElementResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveDictionaryElementResponse }
      */
     public SaveDictionaryElementResponse createSaveDictionaryElementResponse() {
         return new SaveDictionaryElementResponse();
@@ -11995,8 +9757,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDectionaryElement }
      * 
-     * @return
-     *     the new instance of {@link RemoveDectionaryElement }
      */
     public RemoveDectionaryElement createRemoveDectionaryElement() {
         return new RemoveDectionaryElement();
@@ -12005,8 +9765,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveDectionaryElementResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveDectionaryElementResponse }
      */
     public RemoveDectionaryElementResponse createRemoveDectionaryElementResponse() {
         return new RemoveDectionaryElementResponse();
@@ -12015,8 +9773,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetOrganization2EmployeeChain }
      * 
-     * @return
-     *     the new instance of {@link SetOrganization2EmployeeChain }
      */
     public SetOrganization2EmployeeChain createSetOrganization2EmployeeChain() {
         return new SetOrganization2EmployeeChain();
@@ -12025,8 +9781,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetOrganization2EmployeeChainResponse }
      * 
-     * @return
-     *     the new instance of {@link SetOrganization2EmployeeChainResponse }
      */
     public SetOrganization2EmployeeChainResponse createSetOrganization2EmployeeChainResponse() {
         return new SetOrganization2EmployeeChainResponse();
@@ -12035,8 +9789,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetOrganization2VehicleChain }
      * 
-     * @return
-     *     the new instance of {@link SetOrganization2VehicleChain }
      */
     public SetOrganization2VehicleChain createSetOrganization2VehicleChain() {
         return new SetOrganization2VehicleChain();
@@ -12045,8 +9797,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetOrganization2VehicleChainResponse }
      * 
-     * @return
-     *     the new instance of {@link SetOrganization2VehicleChainResponse }
      */
     public SetOrganization2VehicleChainResponse createSetOrganization2VehicleChainResponse() {
         return new SetOrganization2VehicleChainResponse();
@@ -12055,8 +9805,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddCardType }
      * 
-     * @return
-     *     the new instance of {@link AddCardType }
      */
     public AddCardType createAddCardType() {
         return new AddCardType();
@@ -12065,8 +9813,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddCardTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link AddCardTypeResponse }
      */
     public AddCardTypeResponse createAddCardTypeResponse() {
         return new AddCardTypeResponse();
@@ -12075,8 +9821,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveCardType }
      * 
-     * @return
-     *     the new instance of {@link SaveCardType }
      */
     public SaveCardType createSaveCardType() {
         return new SaveCardType();
@@ -12085,8 +9829,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveCardTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveCardTypeResponse }
      */
     public SaveCardTypeResponse createSaveCardTypeResponse() {
         return new SaveCardTypeResponse();
@@ -12095,8 +9837,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveCardType }
      * 
-     * @return
-     *     the new instance of {@link RemoveCardType }
      */
     public RemoveCardType createRemoveCardType() {
         return new RemoveCardType();
@@ -12105,8 +9845,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveCardTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveCardTypeResponse }
      */
     public RemoveCardTypeResponse createRemoveCardTypeResponse() {
         return new RemoveCardTypeResponse();
@@ -12115,8 +9853,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddMifareProfile }
      * 
-     * @return
-     *     the new instance of {@link AddMifareProfile }
      */
     public AddMifareProfile createAddMifareProfile() {
         return new AddMifareProfile();
@@ -12125,8 +9861,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddMifareProfileResponse }
      * 
-     * @return
-     *     the new instance of {@link AddMifareProfileResponse }
      */
     public AddMifareProfileResponse createAddMifareProfileResponse() {
         return new AddMifareProfileResponse();
@@ -12135,8 +9869,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveMifareProfile }
      * 
-     * @return
-     *     the new instance of {@link RemoveMifareProfile }
      */
     public RemoveMifareProfile createRemoveMifareProfile() {
         return new RemoveMifareProfile();
@@ -12145,8 +9877,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveMifareProfileResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveMifareProfileResponse }
      */
     public RemoveMifareProfileResponse createRemoveMifareProfileResponse() {
         return new RemoveMifareProfileResponse();
@@ -12155,8 +9885,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveMifareProfile }
      * 
-     * @return
-     *     the new instance of {@link SaveMifareProfile }
      */
     public SaveMifareProfile createSaveMifareProfile() {
         return new SaveMifareProfile();
@@ -12165,8 +9893,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveMifareProfileResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveMifareProfileResponse }
      */
     public SaveMifareProfileResponse createSaveMifareProfileResponse() {
         return new SaveMifareProfileResponse();
@@ -12175,8 +9901,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUidsKeys }
      * 
-     * @return
-     *     the new instance of {@link SetUidsKeys }
      */
     public SetUidsKeys createSetUidsKeys() {
         return new SetUidsKeys();
@@ -12185,8 +9909,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetUidsKeysResponse }
      * 
-     * @return
-     *     the new instance of {@link SetUidsKeysResponse }
      */
     public SetUidsKeysResponse createSetUidsKeysResponse() {
         return new SetUidsKeysResponse();
@@ -12195,8 +9917,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link AddAcsEmployeeGroup }
      */
     public AddAcsEmployeeGroup createAddAcsEmployeeGroup() {
         return new AddAcsEmployeeGroup();
@@ -12205,8 +9925,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsEmployeeGroupResponse }
      */
     public AddAcsEmployeeGroupResponse createAddAcsEmployeeGroupResponse() {
         return new AddAcsEmployeeGroupResponse();
@@ -12215,8 +9933,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployeeGroup }
      */
     public SaveAcsEmployeeGroup createSaveAcsEmployeeGroup() {
         return new SaveAcsEmployeeGroup();
@@ -12225,8 +9941,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployeeGroupResponse }
      */
     public SaveAcsEmployeeGroupResponse createSaveAcsEmployeeGroupResponse() {
         return new SaveAcsEmployeeGroupResponse();
@@ -12235,8 +9949,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsEmployeeGroupWithGroupType }
      * 
-     * @return
-     *     the new instance of {@link AddAcsEmployeeGroupWithGroupType }
      */
     public AddAcsEmployeeGroupWithGroupType createAddAcsEmployeeGroupWithGroupType() {
         return new AddAcsEmployeeGroupWithGroupType();
@@ -12245,8 +9957,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsEmployeeGroupWithGroupTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsEmployeeGroupWithGroupTypeResponse }
      */
     public AddAcsEmployeeGroupWithGroupTypeResponse createAddAcsEmployeeGroupWithGroupTypeResponse() {
         return new AddAcsEmployeeGroupWithGroupTypeResponse();
@@ -12255,8 +9965,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployeeGroupWithGroupType }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployeeGroupWithGroupType }
      */
     public SaveAcsEmployeeGroupWithGroupType createSaveAcsEmployeeGroupWithGroupType() {
         return new SaveAcsEmployeeGroupWithGroupType();
@@ -12265,8 +9973,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployeeGroupWithGroupTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployeeGroupWithGroupTypeResponse }
      */
     public SaveAcsEmployeeGroupWithGroupTypeResponse createSaveAcsEmployeeGroupWithGroupTypeResponse() {
         return new SaveAcsEmployeeGroupWithGroupTypeResponse();
@@ -12275,8 +9981,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsEmployeeGroup }
      */
     public RemoveAcsEmployeeGroup createRemoveAcsEmployeeGroup() {
         return new RemoveAcsEmployeeGroup();
@@ -12285,8 +9989,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsEmployeeGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsEmployeeGroupResponse }
      */
     public RemoveAcsEmployeeGroupResponse createRemoveAcsEmployeeGroupResponse() {
         return new RemoveAcsEmployeeGroupResponse();
@@ -12295,8 +9997,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsEmployee }
      * 
-     * @return
-     *     the new instance of {@link AddAcsEmployee }
      */
     public AddAcsEmployee createAddAcsEmployee() {
         return new AddAcsEmployee();
@@ -12305,8 +10005,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsEmployeeResponse }
      */
     public AddAcsEmployeeResponse createAddAcsEmployeeResponse() {
         return new AddAcsEmployeeResponse();
@@ -12315,8 +10013,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveEmployeesToGroup }
      * 
-     * @return
-     *     the new instance of {@link MoveEmployeesToGroup }
      */
     public MoveEmployeesToGroup createMoveEmployeesToGroup() {
         return new MoveEmployeesToGroup();
@@ -12325,8 +10021,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveEmployeesToGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link MoveEmployeesToGroupResponse }
      */
     public MoveEmployeesToGroupResponse createMoveEmployeesToGroupResponse() {
         return new MoveEmployeesToGroupResponse();
@@ -12335,8 +10029,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilteredEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetFilteredEmployees }
      */
     public GetFilteredEmployees createGetFilteredEmployees() {
         return new GetFilteredEmployees();
@@ -12345,8 +10037,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetFilteredEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetFilteredEmployeesResponse }
      */
     public GetFilteredEmployeesResponse createGetFilteredEmployeesResponse() {
         return new GetFilteredEmployeesResponse();
@@ -12355,8 +10045,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployee }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployee }
      */
     public SaveAcsEmployee createSaveAcsEmployee() {
         return new SaveAcsEmployee();
@@ -12365,8 +10053,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployeeResponse }
      */
     public SaveAcsEmployeeResponse createSaveAcsEmployeeResponse() {
         return new SaveAcsEmployeeResponse();
@@ -12375,8 +10061,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployeesDocuments }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployeesDocuments }
      */
     public SaveAcsEmployeesDocuments createSaveAcsEmployeesDocuments() {
         return new SaveAcsEmployeesDocuments();
@@ -12385,8 +10069,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsEmployeesDocumentsResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsEmployeesDocumentsResponse }
      */
     public SaveAcsEmployeesDocumentsResponse createSaveAcsEmployeesDocumentsResponse() {
         return new SaveAcsEmployeesDocumentsResponse();
@@ -12395,8 +10077,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployeeFaces }
      * 
-     * @return
-     *     the new instance of {@link SetEmployeeFaces }
      */
     public SetEmployeeFaces createSetEmployeeFaces() {
         return new SetEmployeeFaces();
@@ -12405,8 +10085,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetEmployeeFacesResponse }
      * 
-     * @return
-     *     the new instance of {@link SetEmployeeFacesResponse }
      */
     public SetEmployeeFacesResponse createSetEmployeeFacesResponse() {
         return new SetEmployeeFacesResponse();
@@ -12415,8 +10093,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LockAcsEmployee }
      * 
-     * @return
-     *     the new instance of {@link LockAcsEmployee }
      */
     public LockAcsEmployee createLockAcsEmployee() {
         return new LockAcsEmployee();
@@ -12425,8 +10101,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LockAcsEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link LockAcsEmployeeResponse }
      */
     public LockAcsEmployeeResponse createLockAcsEmployeeResponse() {
         return new LockAcsEmployeeResponse();
@@ -12435,8 +10109,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsEmployee }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsEmployee }
      */
     public RemoveAcsEmployee createRemoveAcsEmployee() {
         return new RemoveAcsEmployee();
@@ -12445,8 +10117,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsEmployeeResponse }
      */
     public RemoveAcsEmployeeResponse createRemoveAcsEmployeeResponse() {
         return new RemoveAcsEmployeeResponse();
@@ -12455,8 +10125,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeSchedule }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeSchedule }
      */
     public AddEmployeeSchedule createAddEmployeeSchedule() {
         return new AddEmployeeSchedule();
@@ -12465,8 +10133,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployeeScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployeeScheduleResponse }
      */
     public AddEmployeeScheduleResponse createAddEmployeeScheduleResponse() {
         return new AddEmployeeScheduleResponse();
@@ -12475,8 +10141,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeeSchedule }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeeSchedule }
      */
     public SaveEmployeeSchedule createSaveEmployeeSchedule() {
         return new SaveEmployeeSchedule();
@@ -12485,8 +10149,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveEmployeeScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveEmployeeScheduleResponse }
      */
     public SaveEmployeeScheduleResponse createSaveEmployeeScheduleResponse() {
         return new SaveEmployeeScheduleResponse();
@@ -12495,8 +10157,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeSchedule }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeSchedule }
      */
     public RemoveEmployeeSchedule createRemoveEmployeeSchedule() {
         return new RemoveEmployeeSchedule();
@@ -12505,8 +10165,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveEmployeeScheduleResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveEmployeeScheduleResponse }
      */
     public RemoveEmployeeScheduleResponse createRemoveEmployeeScheduleResponse() {
         return new RemoveEmployeeScheduleResponse();
@@ -12515,8 +10173,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAcsEmployeePhoto }
      * 
-     * @return
-     *     the new instance of {@link SetAcsEmployeePhoto }
      */
     public SetAcsEmployeePhoto createSetAcsEmployeePhoto() {
         return new SetAcsEmployeePhoto();
@@ -12525,8 +10181,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAcsEmployeePhotoResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAcsEmployeePhotoResponse }
      */
     public SetAcsEmployeePhotoResponse createSetAcsEmployeePhotoResponse() {
         return new SetAcsEmployeePhotoResponse();
@@ -12535,8 +10189,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAcsEmployeePhotoByType }
      * 
-     * @return
-     *     the new instance of {@link SetAcsEmployeePhotoByType }
      */
     public SetAcsEmployeePhotoByType createSetAcsEmployeePhotoByType() {
         return new SetAcsEmployeePhotoByType();
@@ -12545,8 +10197,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAcsEmployeePhotoByTypeResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAcsEmployeePhotoByTypeResponse }
      */
     public SetAcsEmployeePhotoByTypeResponse createSetAcsEmployeePhotoByTypeResponse() {
         return new SetAcsEmployeePhotoByTypeResponse();
@@ -12555,8 +10205,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AssignAcsKeyForEmployee }
      * 
-     * @return
-     *     the new instance of {@link AssignAcsKeyForEmployee }
      */
     public AssignAcsKeyForEmployee createAssignAcsKeyForEmployee() {
         return new AssignAcsKeyForEmployee();
@@ -12565,8 +10213,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AssignAcsKeyForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link AssignAcsKeyForEmployeeResponse }
      */
     public AssignAcsKeyForEmployeeResponse createAssignAcsKeyForEmployeeResponse() {
         return new AssignAcsKeyForEmployeeResponse();
@@ -12575,8 +10221,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReindexKeys }
      * 
-     * @return
-     *     the new instance of {@link ReindexKeys }
      */
     public ReindexKeys createReindexKeys() {
         return new ReindexKeys();
@@ -12585,8 +10229,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ReindexKeysResponse }
      * 
-     * @return
-     *     the new instance of {@link ReindexKeysResponse }
      */
     public ReindexKeysResponse createReindexKeysResponse() {
         return new ReindexKeysResponse();
@@ -12595,8 +10237,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateAcsKeyEndTime }
      * 
-     * @return
-     *     the new instance of {@link UpdateAcsKeyEndTime }
      */
     public UpdateAcsKeyEndTime createUpdateAcsKeyEndTime() {
         return new UpdateAcsKeyEndTime();
@@ -12605,8 +10245,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UpdateAcsKeyEndTimeResponse }
      * 
-     * @return
-     *     the new instance of {@link UpdateAcsKeyEndTimeResponse }
      */
     public UpdateAcsKeyEndTimeResponse createUpdateAcsKeyEndTimeResponse() {
         return new UpdateAcsKeyEndTimeResponse();
@@ -12615,8 +10253,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ForceAssignAcsKeyForEmployee }
      * 
-     * @return
-     *     the new instance of {@link ForceAssignAcsKeyForEmployee }
      */
     public ForceAssignAcsKeyForEmployee createForceAssignAcsKeyForEmployee() {
         return new ForceAssignAcsKeyForEmployee();
@@ -12625,8 +10261,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ForceAssignAcsKeyForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link ForceAssignAcsKeyForEmployeeResponse }
      */
     public ForceAssignAcsKeyForEmployeeResponse createForceAssignAcsKeyForEmployeeResponse() {
         return new ForceAssignAcsKeyForEmployeeResponse();
@@ -12635,8 +10269,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetStatusOfAcsKeyAsLost }
      * 
-     * @return
-     *     the new instance of {@link SetStatusOfAcsKeyAsLost }
      */
     public SetStatusOfAcsKeyAsLost createSetStatusOfAcsKeyAsLost() {
         return new SetStatusOfAcsKeyAsLost();
@@ -12645,8 +10277,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetStatusOfAcsKeyAsLostResponse }
      * 
-     * @return
-     *     the new instance of {@link SetStatusOfAcsKeyAsLostResponse }
      */
     public SetStatusOfAcsKeyAsLostResponse createSetStatusOfAcsKeyAsLostResponse() {
         return new SetStatusOfAcsKeyAsLostResponse();
@@ -12655,8 +10285,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetStatusOfAcsKeyAsClear }
      * 
-     * @return
-     *     the new instance of {@link SetStatusOfAcsKeyAsClear }
      */
     public SetStatusOfAcsKeyAsClear createSetStatusOfAcsKeyAsClear() {
         return new SetStatusOfAcsKeyAsClear();
@@ -12665,8 +10293,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetStatusOfAcsKeyAsClearResponse }
      * 
-     * @return
-     *     the new instance of {@link SetStatusOfAcsKeyAsClearResponse }
      */
     public SetStatusOfAcsKeyAsClearResponse createSetStatusOfAcsKeyAsClearResponse() {
         return new SetStatusOfAcsKeyAsClearResponse();
@@ -12675,8 +10301,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessPoint2CameraChain }
      * 
-     * @return
-     *     the new instance of {@link AddAccessPoint2CameraChain }
      */
     public AddAccessPoint2CameraChain createAddAccessPoint2CameraChain() {
         return new AddAccessPoint2CameraChain();
@@ -12685,8 +10309,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAccessPoint2CameraChainResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAccessPoint2CameraChainResponse }
      */
     public AddAccessPoint2CameraChainResponse createAddAccessPoint2CameraChainResponse() {
         return new AddAccessPoint2CameraChainResponse();
@@ -12695,8 +10317,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessPoint2CameraChain }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessPoint2CameraChain }
      */
     public RemoveAccessPoint2CameraChain createRemoveAccessPoint2CameraChain() {
         return new RemoveAccessPoint2CameraChain();
@@ -12705,8 +10325,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAccessPoint2CameraChainResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAccessPoint2CameraChainResponse }
      */
     public RemoveAccessPoint2CameraChainResponse createRemoveAccessPoint2CameraChainResponse() {
         return new RemoveAccessPoint2CameraChainResponse();
@@ -12715,8 +10333,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessPoint2CameraForAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link GetAccessPoint2CameraForAccessPoint }
      */
     public GetAccessPoint2CameraForAccessPoint createGetAccessPoint2CameraForAccessPoint() {
         return new GetAccessPoint2CameraForAccessPoint();
@@ -12725,8 +10341,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetAccessPoint2CameraForAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link GetAccessPoint2CameraForAccessPointResponse }
      */
     public GetAccessPoint2CameraForAccessPointResponse createGetAccessPoint2CameraForAccessPointResponse() {
         return new GetAccessPoint2CameraForAccessPointResponse();
@@ -12735,8 +10349,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsVehicle }
      * 
-     * @return
-     *     the new instance of {@link AddAcsVehicle }
      */
     public AddAcsVehicle createAddAcsVehicle() {
         return new AddAcsVehicle();
@@ -12745,8 +10357,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddAcsVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link AddAcsVehicleResponse }
      */
     public AddAcsVehicleResponse createAddAcsVehicleResponse() {
         return new AddAcsVehicleResponse();
@@ -12755,8 +10365,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsVehicle }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsVehicle }
      */
     public SaveAcsVehicle createSaveAcsVehicle() {
         return new SaveAcsVehicle();
@@ -12765,8 +10373,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveAcsVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveAcsVehicleResponse }
      */
     public SaveAcsVehicleResponse createSaveAcsVehicleResponse() {
         return new SaveAcsVehicleResponse();
@@ -12775,8 +10381,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsVehicle }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsVehicle }
      */
     public RemoveAcsVehicle createRemoveAcsVehicle() {
         return new RemoveAcsVehicle();
@@ -12785,8 +10389,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAcsVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAcsVehicleResponse }
      */
     public RemoveAcsVehicleResponse createRemoveAcsVehicleResponse() {
         return new RemoveAcsVehicleResponse();
@@ -12795,8 +10397,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveVehiclesToGroup }
      * 
-     * @return
-     *     the new instance of {@link MoveVehiclesToGroup }
      */
     public MoveVehiclesToGroup createMoveVehiclesToGroup() {
         return new MoveVehiclesToGroup();
@@ -12805,8 +10405,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MoveVehiclesToGroupResponse }
      * 
-     * @return
-     *     the new instance of {@link MoveVehiclesToGroupResponse }
      */
     public MoveVehiclesToGroupResponse createMoveVehiclesToGroupResponse() {
         return new MoveVehiclesToGroupResponse();
@@ -12815,8 +10413,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployee2VehicleChain }
      * 
-     * @return
-     *     the new instance of {@link AddEmployee2VehicleChain }
      */
     public AddEmployee2VehicleChain createAddEmployee2VehicleChain() {
         return new AddEmployee2VehicleChain();
@@ -12825,8 +10421,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddEmployee2VehicleChainResponse }
      * 
-     * @return
-     *     the new instance of {@link AddEmployee2VehicleChainResponse }
      */
     public AddEmployee2VehicleChainResponse createAddEmployee2VehicleChainResponse() {
         return new AddEmployee2VehicleChainResponse();
@@ -12835,8 +10429,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LockAcsVehicles }
      * 
-     * @return
-     *     the new instance of {@link LockAcsVehicles }
      */
     public LockAcsVehicles createLockAcsVehicles() {
         return new LockAcsVehicles();
@@ -12845,8 +10437,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LockAcsVehiclesResponse }
      * 
-     * @return
-     *     the new instance of {@link LockAcsVehiclesResponse }
      */
     public LockAcsVehiclesResponse createLockAcsVehiclesResponse() {
         return new LockAcsVehiclesResponse();
@@ -12855,8 +10445,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehicleForEmployee }
      * 
-     * @return
-     *     the new instance of {@link GetVehicleForEmployee }
      */
     public GetVehicleForEmployee createGetVehicleForEmployee() {
         return new GetVehicleForEmployee();
@@ -12865,8 +10453,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehicleForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link GetVehicleForEmployeeResponse }
      */
     public GetVehicleForEmployeeResponse createGetVehicleForEmployeeResponse() {
         return new GetVehicleForEmployeeResponse();
@@ -12875,8 +10461,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehicleForEmployeeIncludeRemovedEmployees }
      * 
-     * @return
-     *     the new instance of {@link GetVehicleForEmployeeIncludeRemovedEmployees }
      */
     public GetVehicleForEmployeeIncludeRemovedEmployees createGetVehicleForEmployeeIncludeRemovedEmployees() {
         return new GetVehicleForEmployeeIncludeRemovedEmployees();
@@ -12885,8 +10469,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetVehicleForEmployeeIncludeRemovedEmployeesResponse }
      * 
-     * @return
-     *     the new instance of {@link GetVehicleForEmployeeIncludeRemovedEmployeesResponse }
      */
     public GetVehicleForEmployeeIncludeRemovedEmployeesResponse createGetVehicleForEmployeeIncludeRemovedEmployeesResponse() {
         return new GetVehicleForEmployeeIncludeRemovedEmployeesResponse();
@@ -12895,8 +10477,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesForVehicle }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesForVehicle }
      */
     public GetEmployeesForVehicle createGetEmployeesForVehicle() {
         return new GetEmployeesForVehicle();
@@ -12905,8 +10485,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetEmployeesForVehicleResponse }
      * 
-     * @return
-     *     the new instance of {@link GetEmployeesForVehicleResponse }
      */
     public GetEmployeesForVehicleResponse createGetEmployeesForVehicleResponse() {
         return new GetEmployeesForVehicleResponse();
@@ -12915,8 +10493,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAllEmployee2VehicleChainForEmployee }
      * 
-     * @return
-     *     the new instance of {@link RemoveAllEmployee2VehicleChainForEmployee }
      */
     public RemoveAllEmployee2VehicleChainForEmployee createRemoveAllEmployee2VehicleChainForEmployee() {
         return new RemoveAllEmployee2VehicleChainForEmployee();
@@ -12925,8 +10501,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RemoveAllEmployee2VehicleChainForEmployeeResponse }
      * 
-     * @return
-     *     the new instance of {@link RemoveAllEmployee2VehicleChainForEmployeeResponse }
      */
     public RemoveAllEmployee2VehicleChainForEmployeeResponse createRemoveAllEmployee2VehicleChainForEmployeeResponse() {
         return new RemoveAllEmployee2VehicleChainForEmployeeResponse();
@@ -12935,8 +10509,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLogMessageForAccessPoint }
      * 
-     * @return
-     *     the new instance of {@link AddLogMessageForAccessPoint }
      */
     public AddLogMessageForAccessPoint createAddLogMessageForAccessPoint() {
         return new AddLogMessageForAccessPoint();
@@ -12945,8 +10517,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddLogMessageForAccessPointResponse }
      * 
-     * @return
-     *     the new instance of {@link AddLogMessageForAccessPointResponse }
      */
     public AddLogMessageForAccessPointResponse createAddLogMessageForAccessPointResponse() {
         return new AddLogMessageForAccessPointResponse();
@@ -12955,8 +10525,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalDateTimeValue }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalDateTimeValue }
      */
     public SetAdditionalDateTimeValue createSetAdditionalDateTimeValue() {
         return new SetAdditionalDateTimeValue();
@@ -12965,8 +10533,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalDateTimeValueResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalDateTimeValueResponse }
      */
     public SetAdditionalDateTimeValueResponse createSetAdditionalDateTimeValueResponse() {
         return new SetAdditionalDateTimeValueResponse();
@@ -12975,8 +10541,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalIntValue }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalIntValue }
      */
     public SetAdditionalIntValue createSetAdditionalIntValue() {
         return new SetAdditionalIntValue();
@@ -12985,8 +10549,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalIntValueResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalIntValueResponse }
      */
     public SetAdditionalIntValueResponse createSetAdditionalIntValueResponse() {
         return new SetAdditionalIntValueResponse();
@@ -12995,8 +10557,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalDoubleValue }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalDoubleValue }
      */
     public SetAdditionalDoubleValue createSetAdditionalDoubleValue() {
         return new SetAdditionalDoubleValue();
@@ -13005,8 +10565,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalDoubleValueResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalDoubleValueResponse }
      */
     public SetAdditionalDoubleValueResponse createSetAdditionalDoubleValueResponse() {
         return new SetAdditionalDoubleValueResponse();
@@ -13015,8 +10573,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalColorValue }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalColorValue }
      */
     public SetAdditionalColorValue createSetAdditionalColorValue() {
         return new SetAdditionalColorValue();
@@ -13025,8 +10581,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalColorValueResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalColorValueResponse }
      */
     public SetAdditionalColorValueResponse createSetAdditionalColorValueResponse() {
         return new SetAdditionalColorValueResponse();
@@ -13035,8 +10589,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalListValue }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalListValue }
      */
     public SetAdditionalListValue createSetAdditionalListValue() {
         return new SetAdditionalListValue();
@@ -13045,8 +10597,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalListValueResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalListValueResponse }
      */
     public SetAdditionalListValueResponse createSetAdditionalListValueResponse() {
         return new SetAdditionalListValueResponse();
@@ -13055,8 +10605,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalStringValue }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalStringValue }
      */
     public SetAdditionalStringValue createSetAdditionalStringValue() {
         return new SetAdditionalStringValue();
@@ -13065,8 +10613,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalStringValueResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalStringValueResponse }
      */
     public SetAdditionalStringValueResponse createSetAdditionalStringValueResponse() {
         return new SetAdditionalStringValueResponse();
@@ -13075,8 +10621,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalFieldsVlaues }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalFieldsVlaues }
      */
     public SetAdditionalFieldsVlaues createSetAdditionalFieldsVlaues() {
         return new SetAdditionalFieldsVlaues();
@@ -13085,8 +10629,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetAdditionalFieldsVlauesResponse }
      * 
-     * @return
-     *     the new instance of {@link SetAdditionalFieldsVlauesResponse }
      */
     public SetAdditionalFieldsVlauesResponse createSetAdditionalFieldsVlauesResponse() {
         return new SetAdditionalFieldsVlauesResponse();
@@ -13095,8 +10637,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddField }
      * 
-     * @return
-     *     the new instance of {@link AddField }
      */
     public AddField createAddField() {
         return new AddField();
@@ -13105,8 +10645,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AddFieldResponse }
      * 
-     * @return
-     *     the new instance of {@link AddFieldResponse }
      */
     public AddFieldResponse createAddFieldResponse() {
         return new AddFieldResponse();
@@ -13115,8 +10653,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveField }
      * 
-     * @return
-     *     the new instance of {@link SaveField }
      */
     public SaveField createSaveField() {
         return new SaveField();
@@ -13125,8 +10661,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SaveFieldResponse }
      * 
-     * @return
-     *     the new instance of {@link SaveFieldResponse }
      */
     public SaveFieldResponse createSaveFieldResponse() {
         return new SaveFieldResponse();
@@ -13142,7 +10676,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDriversOfReportParametersResult", scope = GetDriversOfReportParametersResponse.class)
     public JAXBElement<ArrayOfguid> createGetDriversOfReportParametersResponseGetDriversOfReportParametersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetDriversOfReportParametersResponseGetDriversOfReportParametersResult_QNAME, ArrayOfguid.class, GetDriversOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetDriversOfReportParametersResponseGetDriversOfReportParametersResult_QNAME, ArrayOfguid.class, GetDriversOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13155,7 +10689,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLogMessageSubtypesOfReportParametersResult", scope = GetLogMessageSubtypesOfReportParametersResponse.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetLogMessageSubtypesOfReportParametersResponseGetLogMessageSubtypesOfReportParametersResult(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetLogMessageSubtypesOfReportParametersResponseGetLogMessageSubtypesOfReportParametersResult_QNAME, ArrayOfLogMsgSubType.class, GetLogMessageSubtypesOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetLogMessageSubtypesOfReportParametersResponseGetLogMessageSubtypesOfReportParametersResult_QNAME, ArrayOfLogMsgSubType.class, GetLogMessageSubtypesOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13168,7 +10702,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeesOfReportParametersResult", scope = GetEmployeesOfReportParametersResponse.class)
     public JAXBElement<ArrayOfguid> createGetEmployeesOfReportParametersResponseGetEmployeesOfReportParametersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEmployeesOfReportParametersResponseGetEmployeesOfReportParametersResult_QNAME, ArrayOfguid.class, GetEmployeesOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEmployeesOfReportParametersResponseGetEmployeesOfReportParametersResult_QNAME, ArrayOfguid.class, GetEmployeesOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13181,7 +10715,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeGroupsOfReportParametersResult", scope = GetEmployeeGroupsOfReportParametersResponse.class)
     public JAXBElement<ArrayOfguid> createGetEmployeeGroupsOfReportParametersResponseGetEmployeeGroupsOfReportParametersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEmployeeGroupsOfReportParametersResponseGetEmployeeGroupsOfReportParametersResult_QNAME, ArrayOfguid.class, GetEmployeeGroupsOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEmployeeGroupsOfReportParametersResponseGetEmployeeGroupsOfReportParametersResult_QNAME, ArrayOfguid.class, GetEmployeeGroupsOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13194,7 +10728,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZonesOfReportParametersResult", scope = GetWorkZonesOfReportParametersResponse.class)
     public JAXBElement<ArrayOfguid> createGetWorkZonesOfReportParametersResponseGetWorkZonesOfReportParametersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetWorkZonesOfReportParametersResponseGetWorkZonesOfReportParametersResult_QNAME, ArrayOfguid.class, GetWorkZonesOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetWorkZonesOfReportParametersResponseGetWorkZonesOfReportParametersResult_QNAME, ArrayOfguid.class, GetWorkZonesOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13207,7 +10741,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAlcoGroupsOfReportParametersResult", scope = GetAlcoGroupsOfReportParametersResponse.class)
     public JAXBElement<ArrayOfguid> createGetAlcoGroupsOfReportParametersResponseGetAlcoGroupsOfReportParametersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsOfReportParametersResponseGetAlcoGroupsOfReportParametersResult_QNAME, ArrayOfguid.class, GetAlcoGroupsOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsOfReportParametersResponseGetAlcoGroupsOfReportParametersResult_QNAME, ArrayOfguid.class, GetAlcoGroupsOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13220,7 +10754,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIncidentTypeOfReportParametersResult", scope = GetIncidentTypeOfReportParametersResponse.class)
     public JAXBElement<ArrayOfIncidentTypeInfo> createGetIncidentTypeOfReportParametersResponseGetIncidentTypeOfReportParametersResult(ArrayOfIncidentTypeInfo value) {
-        return new JAXBElement<>(_GetIncidentTypeOfReportParametersResponseGetIncidentTypeOfReportParametersResult_QNAME, ArrayOfIncidentTypeInfo.class, GetIncidentTypeOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfIncidentTypeInfo>(_GetIncidentTypeOfReportParametersResponseGetIncidentTypeOfReportParametersResult_QNAME, ArrayOfIncidentTypeInfo.class, GetIncidentTypeOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13233,7 +10767,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetVehicleTypesOfReportParametersResult", scope = GetVehicleTypesOfReportParametersResponse.class)
     public JAXBElement<ArrayOfguid> createGetVehicleTypesOfReportParametersResponseGetVehicleTypesOfReportParametersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetVehicleTypesOfReportParametersResponseGetVehicleTypesOfReportParametersResult_QNAME, ArrayOfguid.class, GetVehicleTypesOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetVehicleTypesOfReportParametersResponseGetVehicleTypesOfReportParametersResult_QNAME, ArrayOfguid.class, GetVehicleTypesOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13246,7 +10780,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetVehiclesOfReportParametersResult", scope = GetVehiclesOfReportParametersResponse.class)
     public JAXBElement<ArrayOfguid> createGetVehiclesOfReportParametersResponseGetVehiclesOfReportParametersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetVehiclesOfReportParametersResponseGetVehiclesOfReportParametersResult_QNAME, ArrayOfguid.class, GetVehiclesOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetVehiclesOfReportParametersResponseGetVehiclesOfReportParametersResult_QNAME, ArrayOfguid.class, GetVehiclesOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13259,7 +10793,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetBranchOfReportParametersResult", scope = GetBranchOfReportParametersResponse.class)
     public JAXBElement<ArrayOfBranchInfo> createGetBranchOfReportParametersResponseGetBranchOfReportParametersResult(ArrayOfBranchInfo value) {
-        return new JAXBElement<>(_GetBranchOfReportParametersResponseGetBranchOfReportParametersResult_QNAME, ArrayOfBranchInfo.class, GetBranchOfReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfBranchInfo>(_GetBranchOfReportParametersResponseGetBranchOfReportParametersResult_QNAME, ArrayOfBranchInfo.class, GetBranchOfReportParametersResponse.class, value);
     }
 
     /**
@@ -13272,7 +10806,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "reportIdentity", scope = FindReports.class)
     public JAXBElement<String> createFindReportsReportIdentity(String value) {
-        return new JAXBElement<>(_FindReportsReportIdentity_QNAME, String.class, FindReports.class, value);
+        return new JAXBElement<String>(_FindReportsReportIdentity_QNAME, String.class, FindReports.class, value);
     }
 
     /**
@@ -13285,7 +10819,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindReportsResult", scope = FindReportsResponse.class)
     public JAXBElement<ArrayOfReportSlimInfo> createFindReportsResponseFindReportsResult(ArrayOfReportSlimInfo value) {
-        return new JAXBElement<>(_FindReportsResponseFindReportsResult_QNAME, ArrayOfReportSlimInfo.class, FindReportsResponse.class, value);
+        return new JAXBElement<ArrayOfReportSlimInfo>(_FindReportsResponseFindReportsResult_QNAME, ArrayOfReportSlimInfo.class, FindReportsResponse.class, value);
     }
 
     /**
@@ -13298,7 +10832,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeesOfReactionEventResult", scope = GetEmployeesOfReactionEventResponse.class)
     public JAXBElement<ArrayOfguid> createGetEmployeesOfReactionEventResponseGetEmployeesOfReactionEventResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEmployeesOfReactionEventResponseGetEmployeesOfReactionEventResult_QNAME, ArrayOfguid.class, GetEmployeesOfReactionEventResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEmployeesOfReactionEventResponseGetEmployeesOfReactionEventResult_QNAME, ArrayOfguid.class, GetEmployeesOfReactionEventResponse.class, value);
     }
 
     /**
@@ -13311,7 +10845,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeGroupsOfReactionEventResult", scope = GetEmployeeGroupsOfReactionEventResponse.class)
     public JAXBElement<ArrayOfguid> createGetEmployeeGroupsOfReactionEventResponseGetEmployeeGroupsOfReactionEventResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEmployeeGroupsOfReactionEventResponseGetEmployeeGroupsOfReactionEventResult_QNAME, ArrayOfguid.class, GetEmployeeGroupsOfReactionEventResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEmployeeGroupsOfReactionEventResponseGetEmployeeGroupsOfReactionEventResult_QNAME, ArrayOfguid.class, GetEmployeeGroupsOfReactionEventResponse.class, value);
     }
 
     /**
@@ -13324,7 +10858,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDriversOfReactionEventResult", scope = GetDriversOfReactionEventResponse.class)
     public JAXBElement<ArrayOfguid> createGetDriversOfReactionEventResponseGetDriversOfReactionEventResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetDriversOfReactionEventResponseGetDriversOfReactionEventResult_QNAME, ArrayOfguid.class, GetDriversOfReactionEventResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetDriversOfReactionEventResponseGetDriversOfReactionEventResult_QNAME, ArrayOfguid.class, GetDriversOfReactionEventResponse.class, value);
     }
 
     /**
@@ -13337,7 +10871,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLogMessageSubtypesOfReactionEventResult", scope = GetLogMessageSubtypesOfReactionEventResponse.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetLogMessageSubtypesOfReactionEventResponseGetLogMessageSubtypesOfReactionEventResult(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetLogMessageSubtypesOfReactionEventResponseGetLogMessageSubtypesOfReactionEventResult_QNAME, ArrayOfLogMsgSubType.class, GetLogMessageSubtypesOfReactionEventResponse.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetLogMessageSubtypesOfReactionEventResponseGetLogMessageSubtypesOfReactionEventResult_QNAME, ArrayOfLogMsgSubType.class, GetLogMessageSubtypesOfReactionEventResponse.class, value);
     }
 
     /**
@@ -13350,7 +10884,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetSwitchedOffLogMessageSubtypesOfWorkplaceResult", scope = GetSwitchedOffLogMessageSubtypesOfWorkplaceResponse.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetSwitchedOffLogMessageSubtypesOfWorkplaceResponseGetSwitchedOffLogMessageSubtypesOfWorkplaceResult(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetSwitchedOffLogMessageSubtypesOfWorkplaceResponseGetSwitchedOffLogMessageSubtypesOfWorkplaceResult_QNAME, ArrayOfLogMsgSubType.class, GetSwitchedOffLogMessageSubtypesOfWorkplaceResponse.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetSwitchedOffLogMessageSubtypesOfWorkplaceResponseGetSwitchedOffLogMessageSubtypesOfWorkplaceResult_QNAME, ArrayOfLogMsgSubType.class, GetSwitchedOffLogMessageSubtypesOfWorkplaceResponse.class, value);
     }
 
     /**
@@ -13363,7 +10897,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetSwitchedOffLogDriversOfWorkplaceResult", scope = GetSwitchedOffLogDriversOfWorkplaceResponse.class)
     public JAXBElement<ArrayOfguid> createGetSwitchedOffLogDriversOfWorkplaceResponseGetSwitchedOffLogDriversOfWorkplaceResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetSwitchedOffLogDriversOfWorkplaceResponseGetSwitchedOffLogDriversOfWorkplaceResult_QNAME, ArrayOfguid.class, GetSwitchedOffLogDriversOfWorkplaceResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetSwitchedOffLogDriversOfWorkplaceResponseGetSwitchedOffLogDriversOfWorkplaceResult_QNAME, ArrayOfguid.class, GetSwitchedOffLogDriversOfWorkplaceResponse.class, value);
     }
 
     /**
@@ -13376,7 +10910,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetRemoteTerminalInfoByWorkplaceModuleIdResult", scope = GetRemoteTerminalInfoByWorkplaceModuleIdResponse.class)
     public JAXBElement<RemoteTerminalInfo> createGetRemoteTerminalInfoByWorkplaceModuleIdResponseGetRemoteTerminalInfoByWorkplaceModuleIdResult(RemoteTerminalInfo value) {
-        return new JAXBElement<>(_GetRemoteTerminalInfoByWorkplaceModuleIdResponseGetRemoteTerminalInfoByWorkplaceModuleIdResult_QNAME, RemoteTerminalInfo.class, GetRemoteTerminalInfoByWorkplaceModuleIdResponse.class, value);
+        return new JAXBElement<RemoteTerminalInfo>(_GetRemoteTerminalInfoByWorkplaceModuleIdResponseGetRemoteTerminalInfoByWorkplaceModuleIdResult_QNAME, RemoteTerminalInfo.class, GetRemoteTerminalInfoByWorkplaceModuleIdResponse.class, value);
     }
 
     /**
@@ -13389,7 +10923,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReactionEventsFromDevicesResult", scope = GetReactionEventsFromDevicesResponse.class)
     public JAXBElement<ReactionEventsFromDevicesSlimInfo> createGetReactionEventsFromDevicesResponseGetReactionEventsFromDevicesResult(ReactionEventsFromDevicesSlimInfo value) {
-        return new JAXBElement<>(_GetReactionEventsFromDevicesResponseGetReactionEventsFromDevicesResult_QNAME, ReactionEventsFromDevicesSlimInfo.class, GetReactionEventsFromDevicesResponse.class, value);
+        return new JAXBElement<ReactionEventsFromDevicesSlimInfo>(_GetReactionEventsFromDevicesResponseGetReactionEventsFromDevicesResult_QNAME, ReactionEventsFromDevicesSlimInfo.class, GetReactionEventsFromDevicesResponse.class, value);
     }
 
     /**
@@ -13402,7 +10936,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "moduleID", scope = GetLicense.class)
     public JAXBElement<String> createGetLicenseModuleID(String value) {
-        return new JAXBElement<>(_GetLicenseModuleID_QNAME, String.class, GetLicense.class, value);
+        return new JAXBElement<String>(_GetLicenseModuleID_QNAME, String.class, GetLicense.class, value);
     }
 
     /**
@@ -13415,7 +10949,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "elementID", scope = GetLicense.class)
     public JAXBElement<String> createGetLicenseElementID(String value) {
-        return new JAXBElement<>(_GetLicenseElementID_QNAME, String.class, GetLicense.class, value);
+        return new JAXBElement<String>(_GetLicenseElementID_QNAME, String.class, GetLicense.class, value);
     }
 
     /**
@@ -13428,7 +10962,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLicenseResult", scope = GetLicenseResponse.class)
     public JAXBElement<License> createGetLicenseResponseGetLicenseResult(License value) {
-        return new JAXBElement<>(_GetLicenseResponseGetLicenseResult_QNAME, License.class, GetLicenseResponse.class, value);
+        return new JAXBElement<License>(_GetLicenseResponseGetLicenseResult_QNAME, License.class, GetLicenseResponse.class, value);
     }
 
     /**
@@ -13441,7 +10975,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsKeysForEmployeeWithLostResult", scope = GetAcsKeysForEmployeeWithLostResponse.class)
     public JAXBElement<ArrayOfAcsKeyInfo> createGetAcsKeysForEmployeeWithLostResponseGetAcsKeysForEmployeeWithLostResult(ArrayOfAcsKeyInfo value) {
-        return new JAXBElement<>(_GetAcsKeysForEmployeeWithLostResponseGetAcsKeysForEmployeeWithLostResult_QNAME, ArrayOfAcsKeyInfo.class, GetAcsKeysForEmployeeWithLostResponse.class, value);
+        return new JAXBElement<ArrayOfAcsKeyInfo>(_GetAcsKeysForEmployeeWithLostResponseGetAcsKeysForEmployeeWithLostResult_QNAME, ArrayOfAcsKeyInfo.class, GetAcsKeysForEmployeeWithLostResponse.class, value);
     }
 
     /**
@@ -13454,7 +10988,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResult", scope = GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse.class)
     public JAXBElement<ArrayOfAcsKeyInfo> createGetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponseGetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResult(ArrayOfAcsKeyInfo value) {
-        return new JAXBElement<>(_GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponseGetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsKeyInfo.class, GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsKeyInfo>(_GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponseGetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsKeyInfo.class, GetAcsKeysForEmployeeWithLostIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -13467,7 +11001,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "searchCondition", scope = FindEmployees.class)
     public JAXBElement<SearchCondition> createFindEmployeesSearchCondition(SearchCondition value) {
-        return new JAXBElement<>(_FindEmployeesSearchCondition_QNAME, SearchCondition.class, FindEmployees.class, value);
+        return new JAXBElement<SearchCondition>(_FindEmployeesSearchCondition_QNAME, SearchCondition.class, FindEmployees.class, value);
     }
 
     /**
@@ -13480,7 +11014,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindEmployeesResult", scope = FindEmployeesResponse.class)
     public JAXBElement<ArrayOfAcsEmployee> createFindEmployeesResponseFindEmployeesResult(ArrayOfAcsEmployee value) {
-        return new JAXBElement<>(_FindEmployeesResponseFindEmployeesResult_QNAME, ArrayOfAcsEmployee.class, FindEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployee>(_FindEmployeesResponseFindEmployeesResult_QNAME, ArrayOfAcsEmployee.class, FindEmployeesResponse.class, value);
     }
 
     /**
@@ -13493,7 +11027,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = FindGroups.class)
     public JAXBElement<String> createFindGroupsName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, FindGroups.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, FindGroups.class, value);
     }
 
     /**
@@ -13506,7 +11040,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindGroupsResult", scope = FindGroupsResponse.class)
     public JAXBElement<ArrayOfguid> createFindGroupsResponseFindGroupsResult(ArrayOfguid value) {
-        return new JAXBElement<>(_FindGroupsResponseFindGroupsResult_QNAME, ArrayOfguid.class, FindGroupsResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_FindGroupsResponseFindGroupsResult_QNAME, ArrayOfguid.class, FindGroupsResponse.class, value);
     }
 
     /**
@@ -13519,7 +11053,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = FindVehicle.class)
     public JAXBElement<String> createFindVehicleName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, FindVehicle.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, FindVehicle.class, value);
     }
 
     /**
@@ -13532,7 +11066,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindVehicleResult", scope = FindVehicleResponse.class)
     public JAXBElement<ArrayOfAcsVehicleSearched> createFindVehicleResponseFindVehicleResult(ArrayOfAcsVehicleSearched value) {
-        return new JAXBElement<>(_FindVehicleResponseFindVehicleResult_QNAME, ArrayOfAcsVehicleSearched.class, FindVehicleResponse.class, value);
+        return new JAXBElement<ArrayOfAcsVehicleSearched>(_FindVehicleResponseFindVehicleResult_QNAME, ArrayOfAcsVehicleSearched.class, FindVehicleResponse.class, value);
     }
 
     /**
@@ -13545,7 +11079,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUnResolvedPhotoBankDetailsResult", scope = GetUnResolvedPhotoBankDetailsResponse.class)
     public JAXBElement<ArrayOfPhotoBankShort> createGetUnResolvedPhotoBankDetailsResponseGetUnResolvedPhotoBankDetailsResult(ArrayOfPhotoBankShort value) {
-        return new JAXBElement<>(_GetUnResolvedPhotoBankDetailsResponseGetUnResolvedPhotoBankDetailsResult_QNAME, ArrayOfPhotoBankShort.class, GetUnResolvedPhotoBankDetailsResponse.class, value);
+        return new JAXBElement<ArrayOfPhotoBankShort>(_GetUnResolvedPhotoBankDetailsResponseGetUnResolvedPhotoBankDetailsResult_QNAME, ArrayOfPhotoBankShort.class, GetUnResolvedPhotoBankDetailsResponse.class, value);
     }
 
     /**
@@ -13558,7 +11092,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupIds", scope = GetAcsVehiclesByGroup.class)
     public JAXBElement<ArrayOfguid> createGetAcsVehiclesByGroupGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsVehiclesByGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsVehiclesByGroup.class, value);
     }
 
     /**
@@ -13571,7 +11105,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsVehiclesByGroupResult", scope = GetAcsVehiclesByGroupResponse.class)
     public JAXBElement<ArrayOfAcsVehicle> createGetAcsVehiclesByGroupResponseGetAcsVehiclesByGroupResult(ArrayOfAcsVehicle value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupResponseGetAcsVehiclesByGroupResult_QNAME, ArrayOfAcsVehicle.class, GetAcsVehiclesByGroupResponse.class, value);
+        return new JAXBElement<ArrayOfAcsVehicle>(_GetAcsVehiclesByGroupResponseGetAcsVehiclesByGroupResult_QNAME, ArrayOfAcsVehicle.class, GetAcsVehiclesByGroupResponse.class, value);
     }
 
     /**
@@ -13584,7 +11118,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupIds", scope = GetAcsVehiclesGuidsByGroups.class)
     public JAXBElement<ArrayOfguid> createGetAcsVehiclesGuidsByGroupsGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsVehiclesGuidsByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsVehiclesGuidsByGroups.class, value);
     }
 
     /**
@@ -13597,7 +11131,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsVehiclesGuidsByGroupsResult", scope = GetAcsVehiclesGuidsByGroupsResponse.class)
     public JAXBElement<ArrayOfguid> createGetAcsVehiclesGuidsByGroupsResponseGetAcsVehiclesGuidsByGroupsResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesGuidsByGroupsResponseGetAcsVehiclesGuidsByGroupsResult_QNAME, ArrayOfguid.class, GetAcsVehiclesGuidsByGroupsResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesGuidsByGroupsResponseGetAcsVehiclesGuidsByGroupsResult_QNAME, ArrayOfguid.class, GetAcsVehiclesGuidsByGroupsResponse.class, value);
     }
 
     /**
@@ -13610,7 +11144,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsVehicleResult", scope = GetAcsVehicleResponse.class)
     public JAXBElement<AcsVehicle> createGetAcsVehicleResponseGetAcsVehicleResult(AcsVehicle value) {
-        return new JAXBElement<>(_GetAcsVehicleResponseGetAcsVehicleResult_QNAME, AcsVehicle.class, GetAcsVehicleResponse.class, value);
+        return new JAXBElement<AcsVehicle>(_GetAcsVehicleResponseGetAcsVehicleResult_QNAME, AcsVehicle.class, GetAcsVehicleResponse.class, value);
     }
 
     /**
@@ -13623,7 +11157,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkTimeTableResult", scope = GetWorkTimeTableResponse.class)
     public JAXBElement<ArrayOfWorkTimetableSlimInfo> createGetWorkTimeTableResponseGetWorkTimeTableResult(ArrayOfWorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_GetWorkTimeTableResponseGetWorkTimeTableResult_QNAME, ArrayOfWorkTimetableSlimInfo.class, GetWorkTimeTableResponse.class, value);
+        return new JAXBElement<ArrayOfWorkTimetableSlimInfo>(_GetWorkTimeTableResponseGetWorkTimeTableResult_QNAME, ArrayOfWorkTimetableSlimInfo.class, GetWorkTimeTableResponse.class, value);
     }
 
     /**
@@ -13636,7 +11170,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeTimeTableResult", scope = GetEmployeeTimeTableResponse.class)
     public JAXBElement<ArrayOfWorkTimetableSlimInfo> createGetEmployeeTimeTableResponseGetEmployeeTimeTableResult(ArrayOfWorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_GetEmployeeTimeTableResponseGetEmployeeTimeTableResult_QNAME, ArrayOfWorkTimetableSlimInfo.class, GetEmployeeTimeTableResponse.class, value);
+        return new JAXBElement<ArrayOfWorkTimetableSlimInfo>(_GetEmployeeTimeTableResponseGetEmployeeTimeTableResult_QNAME, ArrayOfWorkTimetableSlimInfo.class, GetEmployeeTimeTableResponse.class, value);
     }
 
     /**
@@ -13649,7 +11183,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDayTypesSlimInfoResult", scope = GetDayTypesSlimInfoResponse.class)
     public JAXBElement<ArrayOfDayTypeSlimInfo> createGetDayTypesSlimInfoResponseGetDayTypesSlimInfoResult(ArrayOfDayTypeSlimInfo value) {
-        return new JAXBElement<>(_GetDayTypesSlimInfoResponseGetDayTypesSlimInfoResult_QNAME, ArrayOfDayTypeSlimInfo.class, GetDayTypesSlimInfoResponse.class, value);
+        return new JAXBElement<ArrayOfDayTypeSlimInfo>(_GetDayTypesSlimInfoResponseGetDayTypesSlimInfoResult_QNAME, ArrayOfDayTypeSlimInfo.class, GetDayTypesSlimInfoResponse.class, value);
     }
 
     /**
@@ -13662,7 +11196,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkSchedulesSlimInfoResult", scope = GetWorkSchedulesSlimInfoResponse.class)
     public JAXBElement<ArrayOfWorkScheduleSlimInfo> createGetWorkSchedulesSlimInfoResponseGetWorkSchedulesSlimInfoResult(ArrayOfWorkScheduleSlimInfo value) {
-        return new JAXBElement<>(_GetWorkSchedulesSlimInfoResponseGetWorkSchedulesSlimInfoResult_QNAME, ArrayOfWorkScheduleSlimInfo.class, GetWorkSchedulesSlimInfoResponse.class, value);
+        return new JAXBElement<ArrayOfWorkScheduleSlimInfo>(_GetWorkSchedulesSlimInfoResponseGetWorkSchedulesSlimInfoResult_QNAME, ArrayOfWorkScheduleSlimInfo.class, GetWorkSchedulesSlimInfoResponse.class, value);
     }
 
     /**
@@ -13675,7 +11209,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZonesSlimInfoResult", scope = GetWorkZonesSlimInfoResponse.class)
     public JAXBElement<ArrayOfWorkZoneSlimInfo> createGetWorkZonesSlimInfoResponseGetWorkZonesSlimInfoResult(ArrayOfWorkZoneSlimInfo value) {
-        return new JAXBElement<>(_GetWorkZonesSlimInfoResponseGetWorkZonesSlimInfoResult_QNAME, ArrayOfWorkZoneSlimInfo.class, GetWorkZonesSlimInfoResponse.class, value);
+        return new JAXBElement<ArrayOfWorkZoneSlimInfo>(_GetWorkZonesSlimInfoResponseGetWorkZonesSlimInfoResult_QNAME, ArrayOfWorkZoneSlimInfo.class, GetWorkZonesSlimInfoResponse.class, value);
     }
 
     /**
@@ -13688,7 +11222,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZonesAccessPointsResult", scope = GetWorkZonesAccessPointsResponse.class)
     public JAXBElement<ArrayOfWorkZonesAccessPointSlimInfo> createGetWorkZonesAccessPointsResponseGetWorkZonesAccessPointsResult(ArrayOfWorkZonesAccessPointSlimInfo value) {
-        return new JAXBElement<>(_GetWorkZonesAccessPointsResponseGetWorkZonesAccessPointsResult_QNAME, ArrayOfWorkZonesAccessPointSlimInfo.class, GetWorkZonesAccessPointsResponse.class, value);
+        return new JAXBElement<ArrayOfWorkZonesAccessPointSlimInfo>(_GetWorkZonesAccessPointsResponseGetWorkZonesAccessPointsResult_QNAME, ArrayOfWorkZonesAccessPointSlimInfo.class, GetWorkZonesAccessPointsResponse.class, value);
     }
 
     /**
@@ -13701,7 +11235,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsBoxAccessElementsResult", scope = GetAcsBoxAccessElementsResponse.class)
     public JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> createGetAcsBoxAccessElementsResponseGetAcsBoxAccessElementsResult(ArrayOfAcsBoxAccessLevelElementSlimInfo value) {
-        return new JAXBElement<>(_GetAcsBoxAccessElementsResponseGetAcsBoxAccessElementsResult_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, GetAcsBoxAccessElementsResponse.class, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo>(_GetAcsBoxAccessElementsResponseGetAcsBoxAccessElementsResult_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, GetAcsBoxAccessElementsResponse.class, value);
     }
 
     /**
@@ -13714,7 +11248,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsBoxAccessLevelsSlimInfoResult", scope = GetAcsBoxAccessLevelsSlimInfoResponse.class)
     public JAXBElement<ArrayOfAcsBoxAccessLevelSlimInfo> createGetAcsBoxAccessLevelsSlimInfoResponseGetAcsBoxAccessLevelsSlimInfoResult(ArrayOfAcsBoxAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_GetAcsBoxAccessLevelsSlimInfoResponseGetAcsBoxAccessLevelsSlimInfoResult_QNAME, ArrayOfAcsBoxAccessLevelSlimInfo.class, GetAcsBoxAccessLevelsSlimInfoResponse.class, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessLevelSlimInfo>(_GetAcsBoxAccessLevelsSlimInfoResponseGetAcsBoxAccessLevelsSlimInfoResult_QNAME, ArrayOfAcsBoxAccessLevelSlimInfo.class, GetAcsBoxAccessLevelsSlimInfoResponse.class, value);
     }
 
     /**
@@ -13727,7 +11261,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsAccessLevelsSlimInfoResult", scope = GetAcsAccessLevelsSlimInfoResponse.class)
     public JAXBElement<ArrayOfAcsAccessLevelSlimInfo> createGetAcsAccessLevelsSlimInfoResponseGetAcsAccessLevelsSlimInfoResult(ArrayOfAcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_GetAcsAccessLevelsSlimInfoResponseGetAcsAccessLevelsSlimInfoResult_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, GetAcsAccessLevelsSlimInfoResponse.class, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSlimInfo>(_GetAcsAccessLevelsSlimInfoResponseGetAcsAccessLevelsSlimInfoResult_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, GetAcsAccessLevelsSlimInfoResponse.class, value);
     }
 
     /**
@@ -13740,7 +11274,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsAccessLevelsSlimInfo2Result", scope = GetAcsAccessLevelsSlimInfo2Response.class)
     public JAXBElement<ArrayOfAcsAccessLevelSlimInfo> createGetAcsAccessLevelsSlimInfo2ResponseGetAcsAccessLevelsSlimInfo2Result(ArrayOfAcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_GetAcsAccessLevelsSlimInfo2ResponseGetAcsAccessLevelsSlimInfo2Result_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, GetAcsAccessLevelsSlimInfo2Response.class, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSlimInfo>(_GetAcsAccessLevelsSlimInfo2ResponseGetAcsAccessLevelsSlimInfo2Result_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, GetAcsAccessLevelsSlimInfo2Response.class, value);
     }
 
     /**
@@ -13753,7 +11287,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = GetAlcoGroupsSlimInfo.class)
     public JAXBElement<ArrayOfguid> createGetAlcoGroupsSlimInfoIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, GetAlcoGroupsSlimInfo.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, GetAlcoGroupsSlimInfo.class, value);
     }
 
     /**
@@ -13766,7 +11300,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAlcoGroupsSlimInfoResult", scope = GetAlcoGroupsSlimInfoResponse.class)
     public JAXBElement<ArrayOfAcsAlcoGroupSlimInfo> createGetAlcoGroupsSlimInfoResponseGetAlcoGroupsSlimInfoResult(ArrayOfAcsAlcoGroupSlimInfo value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoResponseGetAlcoGroupsSlimInfoResult_QNAME, ArrayOfAcsAlcoGroupSlimInfo.class, GetAlcoGroupsSlimInfoResponse.class, value);
+        return new JAXBElement<ArrayOfAcsAlcoGroupSlimInfo>(_GetAlcoGroupsSlimInfoResponseGetAlcoGroupsSlimInfoResult_QNAME, ArrayOfAcsAlcoGroupSlimInfo.class, GetAlcoGroupsSlimInfoResponse.class, value);
     }
 
     /**
@@ -13779,7 +11313,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeePostionsForAlcoGroupResult", scope = GetEmployeePostionsForAlcoGroupResponse.class)
     public JAXBElement<ArrayOfEmployeePositionSlimInfo> createGetEmployeePostionsForAlcoGroupResponseGetEmployeePostionsForAlcoGroupResult(ArrayOfEmployeePositionSlimInfo value) {
-        return new JAXBElement<>(_GetEmployeePostionsForAlcoGroupResponseGetEmployeePostionsForAlcoGroupResult_QNAME, ArrayOfEmployeePositionSlimInfo.class, GetEmployeePostionsForAlcoGroupResponse.class, value);
+        return new JAXBElement<ArrayOfEmployeePositionSlimInfo>(_GetEmployeePostionsForAlcoGroupResponseGetEmployeePostionsForAlcoGroupResult_QNAME, ArrayOfEmployeePositionSlimInfo.class, GetEmployeePostionsForAlcoGroupResponse.class, value);
     }
 
     /**
@@ -13792,7 +11326,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPositionCodesResult", scope = GetPositionCodesResponse.class)
     public JAXBElement<ArrayOfstring> createGetPositionCodesResponseGetPositionCodesResult(ArrayOfstring value) {
-        return new JAXBElement<>(_GetPositionCodesResponseGetPositionCodesResult_QNAME, ArrayOfstring.class, GetPositionCodesResponse.class, value);
+        return new JAXBElement<ArrayOfstring>(_GetPositionCodesResponseGetPositionCodesResult_QNAME, ArrayOfstring.class, GetPositionCodesResponse.class, value);
     }
 
     /**
@@ -13805,7 +11339,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeGroupsForAlcoGroupResult", scope = GetEmployeeGroupsForAlcoGroupResponse.class)
     public JAXBElement<ArrayOfEmployeeGroupForAlcoGroupFull> createGetEmployeeGroupsForAlcoGroupResponseGetEmployeeGroupsForAlcoGroupResult(ArrayOfEmployeeGroupForAlcoGroupFull value) {
-        return new JAXBElement<>(_GetEmployeeGroupsForAlcoGroupResponseGetEmployeeGroupsForAlcoGroupResult_QNAME, ArrayOfEmployeeGroupForAlcoGroupFull.class, GetEmployeeGroupsForAlcoGroupResponse.class, value);
+        return new JAXBElement<ArrayOfEmployeeGroupForAlcoGroupFull>(_GetEmployeeGroupsForAlcoGroupResponseGetEmployeeGroupsForAlcoGroupResult_QNAME, ArrayOfEmployeeGroupForAlcoGroupFull.class, GetEmployeeGroupsForAlcoGroupResponse.class, value);
     }
 
     /**
@@ -13818,7 +11352,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsAccessPointDriversResult", scope = GetAcsAccessPointDriversResponse.class)
     public JAXBElement<ArrayOfAcsAccessPointDriverInfo> createGetAcsAccessPointDriversResponseGetAcsAccessPointDriversResult(ArrayOfAcsAccessPointDriverInfo value) {
-        return new JAXBElement<>(_GetAcsAccessPointDriversResponseGetAcsAccessPointDriversResult_QNAME, ArrayOfAcsAccessPointDriverInfo.class, GetAcsAccessPointDriversResponse.class, value);
+        return new JAXBElement<ArrayOfAcsAccessPointDriverInfo>(_GetAcsAccessPointDriversResponseGetAcsAccessPointDriversResult_QNAME, ArrayOfAcsAccessPointDriverInfo.class, GetAcsAccessPointDriversResponse.class, value);
     }
 
     /**
@@ -13831,7 +11365,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsAccessPointsResult", scope = GetAcsAccessPointsResponse.class)
     public JAXBElement<ArrayOfAcsAccessPointSlimInfo> createGetAcsAccessPointsResponseGetAcsAccessPointsResult(ArrayOfAcsAccessPointSlimInfo value) {
-        return new JAXBElement<>(_GetAcsAccessPointsResponseGetAcsAccessPointsResult_QNAME, ArrayOfAcsAccessPointSlimInfo.class, GetAcsAccessPointsResponse.class, value);
+        return new JAXBElement<ArrayOfAcsAccessPointSlimInfo>(_GetAcsAccessPointsResponseGetAcsAccessPointsResult_QNAME, ArrayOfAcsAccessPointSlimInfo.class, GetAcsAccessPointsResponse.class, value);
     }
 
     /**
@@ -13844,7 +11378,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "searchString", scope = GeFilteredtDrivers.class)
     public JAXBElement<String> createGeFilteredtDriversSearchString(String value) {
-        return new JAXBElement<>(_GeFilteredtDriversSearchString_QNAME, String.class, GeFilteredtDrivers.class, value);
+        return new JAXBElement<String>(_GeFilteredtDriversSearchString_QNAME, String.class, GeFilteredtDrivers.class, value);
     }
 
     /**
@@ -13857,7 +11391,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GeFilteredtDriversResult", scope = GeFilteredtDriversResponse.class)
     public JAXBElement<AccessPointData> createGeFilteredtDriversResponseGeFilteredtDriversResult(AccessPointData value) {
-        return new JAXBElement<>(_GeFilteredtDriversResponseGeFilteredtDriversResult_QNAME, AccessPointData.class, GeFilteredtDriversResponse.class, value);
+        return new JAXBElement<AccessPointData>(_GeFilteredtDriversResponseGeFilteredtDriversResult_QNAME, AccessPointData.class, GeFilteredtDriversResponse.class, value);
     }
 
     /**
@@ -13870,7 +11404,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZonesByDriverIDResult", scope = GetWorkZonesByDriverIDResponse.class)
     public JAXBElement<ArrayOfWorkZoneSlimInfo> createGetWorkZonesByDriverIDResponseGetWorkZonesByDriverIDResult(ArrayOfWorkZoneSlimInfo value) {
-        return new JAXBElement<>(_GetWorkZonesByDriverIDResponseGetWorkZonesByDriverIDResult_QNAME, ArrayOfWorkZoneSlimInfo.class, GetWorkZonesByDriverIDResponse.class, value);
+        return new JAXBElement<ArrayOfWorkZoneSlimInfo>(_GetWorkZonesByDriverIDResponseGetWorkZonesByDriverIDResult_QNAME, ArrayOfWorkZoneSlimInfo.class, GetWorkZonesByDriverIDResponse.class, value);
     }
 
     /**
@@ -13883,7 +11417,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZonesByEmployeeIDResult", scope = GetWorkZonesByEmployeeIDResponse.class)
     public JAXBElement<WorkZonesData> createGetWorkZonesByEmployeeIDResponseGetWorkZonesByEmployeeIDResult(WorkZonesData value) {
-        return new JAXBElement<>(_GetWorkZonesByEmployeeIDResponseGetWorkZonesByEmployeeIDResult_QNAME, WorkZonesData.class, GetWorkZonesByEmployeeIDResponse.class, value);
+        return new JAXBElement<WorkZonesData>(_GetWorkZonesByEmployeeIDResponseGetWorkZonesByEmployeeIDResult_QNAME, WorkZonesData.class, GetWorkZonesByEmployeeIDResponse.class, value);
     }
 
     /**
@@ -13896,7 +11430,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResult", scope = GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse.class)
     public JAXBElement<WorkZonesData> createGetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponseGetWorkZonesByEmployeeIDIncludeRemovedEmployeesResult(WorkZonesData value) {
-        return new JAXBElement<>(_GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponseGetWorkZonesByEmployeeIDIncludeRemovedEmployeesResult_QNAME, WorkZonesData.class, GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<WorkZonesData>(_GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponseGetWorkZonesByEmployeeIDIncludeRemovedEmployeesResult_QNAME, WorkZonesData.class, GetWorkZonesByEmployeeIDIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -13909,7 +11443,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZonesByEmployeeGroupIDResult", scope = GetWorkZonesByEmployeeGroupIDResponse.class)
     public JAXBElement<WorkZonesData> createGetWorkZonesByEmployeeGroupIDResponseGetWorkZonesByEmployeeGroupIDResult(WorkZonesData value) {
-        return new JAXBElement<>(_GetWorkZonesByEmployeeGroupIDResponseGetWorkZonesByEmployeeGroupIDResult_QNAME, WorkZonesData.class, GetWorkZonesByEmployeeGroupIDResponse.class, value);
+        return new JAXBElement<WorkZonesData>(_GetWorkZonesByEmployeeGroupIDResponseGetWorkZonesByEmployeeGroupIDResult_QNAME, WorkZonesData.class, GetWorkZonesByEmployeeGroupIDResponse.class, value);
     }
 
     /**
@@ -13922,7 +11456,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkSchedulesByEmployeeIDResult", scope = GetWorkSchedulesByEmployeeIDResponse.class)
     public JAXBElement<WorkSchedulesData> createGetWorkSchedulesByEmployeeIDResponseGetWorkSchedulesByEmployeeIDResult(WorkSchedulesData value) {
-        return new JAXBElement<>(_GetWorkSchedulesByEmployeeIDResponseGetWorkSchedulesByEmployeeIDResult_QNAME, WorkSchedulesData.class, GetWorkSchedulesByEmployeeIDResponse.class, value);
+        return new JAXBElement<WorkSchedulesData>(_GetWorkSchedulesByEmployeeIDResponseGetWorkSchedulesByEmployeeIDResult_QNAME, WorkSchedulesData.class, GetWorkSchedulesByEmployeeIDResponse.class, value);
     }
 
     /**
@@ -13935,7 +11469,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResult", scope = GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse.class)
     public JAXBElement<WorkSchedulesData> createGetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponseGetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResult(WorkSchedulesData value) {
-        return new JAXBElement<>(_GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponseGetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResult_QNAME, WorkSchedulesData.class, GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<WorkSchedulesData>(_GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponseGetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResult_QNAME, WorkSchedulesData.class, GetWorkSchedulesByEmployeeIDIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -13948,7 +11482,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkSchedulesByEmployeeGroupIDResult", scope = GetWorkSchedulesByEmployeeGroupIDResponse.class)
     public JAXBElement<WorkSchedulesData> createGetWorkSchedulesByEmployeeGroupIDResponseGetWorkSchedulesByEmployeeGroupIDResult(WorkSchedulesData value) {
-        return new JAXBElement<>(_GetWorkSchedulesByEmployeeGroupIDResponseGetWorkSchedulesByEmployeeGroupIDResult_QNAME, WorkSchedulesData.class, GetWorkSchedulesByEmployeeGroupIDResponse.class, value);
+        return new JAXBElement<WorkSchedulesData>(_GetWorkSchedulesByEmployeeGroupIDResponseGetWorkSchedulesByEmployeeGroupIDResult_QNAME, WorkSchedulesData.class, GetWorkSchedulesByEmployeeGroupIDResponse.class, value);
     }
 
     /**
@@ -13961,7 +11495,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeForAlcoGroupResult", scope = GetEmployeeForAlcoGroupResponse.class)
     public JAXBElement<EmployeesInfoData> createGetEmployeeForAlcoGroupResponseGetEmployeeForAlcoGroupResult(EmployeesInfoData value) {
-        return new JAXBElement<>(_GetEmployeeForAlcoGroupResponseGetEmployeeForAlcoGroupResult_QNAME, EmployeesInfoData.class, GetEmployeeForAlcoGroupResponse.class, value);
+        return new JAXBElement<EmployeesInfoData>(_GetEmployeeForAlcoGroupResponseGetEmployeeForAlcoGroupResult_QNAME, EmployeesInfoData.class, GetEmployeeForAlcoGroupResponse.class, value);
     }
 
     /**
@@ -13974,7 +11508,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = GetEmployeePageForAlcoGroup.class)
     public JAXBElement<EmployeesFilter> createGetEmployeePageForAlcoGroupFilter(EmployeesFilter value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, EmployeesFilter.class, GetEmployeePageForAlcoGroup.class, value);
+        return new JAXBElement<EmployeesFilter>(_GetEmployeePageForAlcoGroupFilter_QNAME, EmployeesFilter.class, GetEmployeePageForAlcoGroup.class, value);
     }
 
     /**
@@ -13987,7 +11521,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeSearchId", scope = GetEmployeePageForAlcoGroup.class)
     public JAXBElement<String> createGetEmployeePageForAlcoGroupEmployeeSearchId(String value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupEmployeeSearchId_QNAME, String.class, GetEmployeePageForAlcoGroup.class, value);
+        return new JAXBElement<String>(_GetEmployeePageForAlcoGroupEmployeeSearchId_QNAME, String.class, GetEmployeePageForAlcoGroup.class, value);
     }
 
     /**
@@ -14000,7 +11534,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "showColumn", scope = GetEmployeePageForAlcoGroup.class)
     public JAXBElement<EmployeeShowColumn> createGetEmployeePageForAlcoGroupShowColumn(EmployeeShowColumn value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupShowColumn_QNAME, EmployeeShowColumn.class, GetEmployeePageForAlcoGroup.class, value);
+        return new JAXBElement<EmployeeShowColumn>(_GetEmployeePageForAlcoGroupShowColumn_QNAME, EmployeeShowColumn.class, GetEmployeePageForAlcoGroup.class, value);
     }
 
     /**
@@ -14013,7 +11547,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeePageForAlcoGroupResult", scope = GetEmployeePageForAlcoGroupResponse.class)
     public JAXBElement<EmployeesInfoData> createGetEmployeePageForAlcoGroupResponseGetEmployeePageForAlcoGroupResult(EmployeesInfoData value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupResponseGetEmployeePageForAlcoGroupResult_QNAME, EmployeesInfoData.class, GetEmployeePageForAlcoGroupResponse.class, value);
+        return new JAXBElement<EmployeesInfoData>(_GetEmployeePageForAlcoGroupResponseGetEmployeePageForAlcoGroupResult_QNAME, EmployeesInfoData.class, GetEmployeePageForAlcoGroupResponse.class, value);
     }
 
     /**
@@ -14026,7 +11560,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkplacesResult", scope = GetWorkplacesResponse.class)
     public JAXBElement<ArrayOfWorkplaceInfo> createGetWorkplacesResponseGetWorkplacesResult(ArrayOfWorkplaceInfo value) {
-        return new JAXBElement<>(_GetWorkplacesResponseGetWorkplacesResult_QNAME, ArrayOfWorkplaceInfo.class, GetWorkplacesResponse.class, value);
+        return new JAXBElement<ArrayOfWorkplaceInfo>(_GetWorkplacesResponseGetWorkplacesResult_QNAME, ArrayOfWorkplaceInfo.class, GetWorkplacesResponse.class, value);
     }
 
     /**
@@ -14039,7 +11573,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetISS_IIDKsResult", scope = GetISSIIDKsResponse.class)
     public JAXBElement<ArrayOfISSIIDKSlimInfo> createGetISSIIDKsResponseGetISSIIDKsResult(ArrayOfISSIIDKSlimInfo value) {
-        return new JAXBElement<>(_GetISSIIDKsResponseGetISSIIDKsResult_QNAME, ArrayOfISSIIDKSlimInfo.class, GetISSIIDKsResponse.class, value);
+        return new JAXBElement<ArrayOfISSIIDKSlimInfo>(_GetISSIIDKsResponseGetISSIIDKsResult_QNAME, ArrayOfISSIIDKSlimInfo.class, GetISSIIDKsResponse.class, value);
     }
 
     /**
@@ -14052,7 +11586,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetISS_RecognitionResult", scope = GetISSRecognitionResponse.class)
     public JAXBElement<ArrayOfISSRecognitionSlimInfo> createGetISSRecognitionResponseGetISSRecognitionResult(ArrayOfISSRecognitionSlimInfo value) {
-        return new JAXBElement<>(_GetISSRecognitionResponseGetISSRecognitionResult_QNAME, ArrayOfISSRecognitionSlimInfo.class, GetISSRecognitionResponse.class, value);
+        return new JAXBElement<ArrayOfISSRecognitionSlimInfo>(_GetISSRecognitionResponseGetISSRecognitionResult_QNAME, ArrayOfISSRecognitionSlimInfo.class, GetISSRecognitionResponse.class, value);
     }
 
     /**
@@ -14065,7 +11599,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetISS_DriversResult", scope = GetISSDriversResponse.class)
     public JAXBElement<ArrayOfISSDriverSlimInfo> createGetISSDriversResponseGetISSDriversResult(ArrayOfISSDriverSlimInfo value) {
-        return new JAXBElement<>(_GetISSDriversResponseGetISSDriversResult_QNAME, ArrayOfISSDriverSlimInfo.class, GetISSDriversResponse.class, value);
+        return new JAXBElement<ArrayOfISSDriverSlimInfo>(_GetISSDriversResponseGetISSDriversResult_QNAME, ArrayOfISSDriverSlimInfo.class, GetISSDriversResponse.class, value);
     }
 
     /**
@@ -14078,7 +11612,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetISS_IIDK_SlavesResult", scope = GetISSIIDKSlavesResponse.class)
     public JAXBElement<ArrayOfISSSlaveSlimInfo> createGetISSIIDKSlavesResponseGetISSIIDKSlavesResult(ArrayOfISSSlaveSlimInfo value) {
-        return new JAXBElement<>(_GetISSIIDKSlavesResponseGetISSIIDKSlavesResult_QNAME, ArrayOfISSSlaveSlimInfo.class, GetISSIIDKSlavesResponse.class, value);
+        return new JAXBElement<ArrayOfISSSlaveSlimInfo>(_GetISSIIDKSlavesResponseGetISSIIDKSlavesResult_QNAME, ArrayOfISSSlaveSlimInfo.class, GetISSIIDKSlavesResponse.class, value);
     }
 
     /**
@@ -14091,7 +11625,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "Get_ISS_DriverEventsPlaybackResult", scope = GetISSDriverEventsPlaybackResponse.class)
     public JAXBElement<ArrayOfISSDriverEventPlaybackSlimInfo> createGetISSDriverEventsPlaybackResponseGetISSDriverEventsPlaybackResult(ArrayOfISSDriverEventPlaybackSlimInfo value) {
-        return new JAXBElement<>(_GetISSDriverEventsPlaybackResponseGetISSDriverEventsPlaybackResult_QNAME, ArrayOfISSDriverEventPlaybackSlimInfo.class, GetISSDriverEventsPlaybackResponse.class, value);
+        return new JAXBElement<ArrayOfISSDriverEventPlaybackSlimInfo>(_GetISSDriverEventsPlaybackResponseGetISSDriverEventsPlaybackResult_QNAME, ArrayOfISSDriverEventPlaybackSlimInfo.class, GetISSDriverEventsPlaybackResponse.class, value);
     }
 
     /**
@@ -14104,7 +11638,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAllMapsResult", scope = GetAllMapsResponse.class)
     public JAXBElement<ArrayOfMapInfo> createGetAllMapsResponseGetAllMapsResult(ArrayOfMapInfo value) {
-        return new JAXBElement<>(_GetAllMapsResponseGetAllMapsResult_QNAME, ArrayOfMapInfo.class, GetAllMapsResponse.class, value);
+        return new JAXBElement<ArrayOfMapInfo>(_GetAllMapsResponseGetAllMapsResult_QNAME, ArrayOfMapInfo.class, GetAllMapsResponse.class, value);
     }
 
     /**
@@ -14117,7 +11651,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetMapByIdResult", scope = GetMapByIdResponse.class)
     public JAXBElement<MapInfo> createGetMapByIdResponseGetMapByIdResult(MapInfo value) {
-        return new JAXBElement<>(_GetMapByIdResponseGetMapByIdResult_QNAME, MapInfo.class, GetMapByIdResponse.class, value);
+        return new JAXBElement<MapInfo>(_GetMapByIdResponseGetMapByIdResult_QNAME, MapInfo.class, GetMapByIdResponse.class, value);
     }
 
     /**
@@ -14130,7 +11664,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetMapImageResult", scope = GetMapImageResponse.class)
     public JAXBElement<byte[]> createGetMapImageResponseGetMapImageResult(byte[] value) {
-        return new JAXBElement<>(_GetMapImageResponseGetMapImageResult_QNAME, byte[].class, GetMapImageResponse.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_GetMapImageResponseGetMapImageResult_QNAME, byte[].class, GetMapImageResponse.class, ((byte[]) value));
     }
 
     /**
@@ -14143,7 +11677,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsConfiguratorSettingsByWorkplaceModuleResult", scope = GetAcsConfiguratorSettingsByWorkplaceModuleResponse.class)
     public JAXBElement<AcsConfiguratorInfo> createGetAcsConfiguratorSettingsByWorkplaceModuleResponseGetAcsConfiguratorSettingsByWorkplaceModuleResult(AcsConfiguratorInfo value) {
-        return new JAXBElement<>(_GetAcsConfiguratorSettingsByWorkplaceModuleResponseGetAcsConfiguratorSettingsByWorkplaceModuleResult_QNAME, AcsConfiguratorInfo.class, GetAcsConfiguratorSettingsByWorkplaceModuleResponse.class, value);
+        return new JAXBElement<AcsConfiguratorInfo>(_GetAcsConfiguratorSettingsByWorkplaceModuleResponseGetAcsConfiguratorSettingsByWorkplaceModuleResult_QNAME, AcsConfiguratorInfo.class, GetAcsConfiguratorSettingsByWorkplaceModuleResponse.class, value);
     }
 
     /**
@@ -14156,7 +11690,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetVisitorsScoreboardSettingsByWorkplaceModuleIdResult", scope = GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse.class)
     public JAXBElement<VisitorsScoreboardWorkplaceModuleInfo> createGetVisitorsScoreboardSettingsByWorkplaceModuleIdResponseGetVisitorsScoreboardSettingsByWorkplaceModuleIdResult(VisitorsScoreboardWorkplaceModuleInfo value) {
-        return new JAXBElement<>(_GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponseGetVisitorsScoreboardSettingsByWorkplaceModuleIdResult_QNAME, VisitorsScoreboardWorkplaceModuleInfo.class, GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse.class, value);
+        return new JAXBElement<VisitorsScoreboardWorkplaceModuleInfo>(_GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponseGetVisitorsScoreboardSettingsByWorkplaceModuleIdResult_QNAME, VisitorsScoreboardWorkplaceModuleInfo.class, GetVisitorsScoreboardSettingsByWorkplaceModuleIdResponse.class, value);
     }
 
     /**
@@ -14169,7 +11703,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "saveData", scope = SetVisitorsScoreboardSettingsByWorkplaceModuleId.class)
     public JAXBElement<VisitorsScoreboardWorkplaceModuleSaveData> createSetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData(VisitorsScoreboardWorkplaceModuleSaveData value) {
-        return new JAXBElement<>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, VisitorsScoreboardWorkplaceModuleSaveData.class, SetVisitorsScoreboardSettingsByWorkplaceModuleId.class, value);
+        return new JAXBElement<VisitorsScoreboardWorkplaceModuleSaveData>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, VisitorsScoreboardWorkplaceModuleSaveData.class, SetVisitorsScoreboardSettingsByWorkplaceModuleId.class, value);
     }
 
     /**
@@ -14182,7 +11716,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetWorkZoneVisitorsCountResult", scope = GetWorkZoneVisitorsCountResponse.class)
     public JAXBElement<WorkZoneVisitorsCountDTO> createGetWorkZoneVisitorsCountResponseGetWorkZoneVisitorsCountResult(WorkZoneVisitorsCountDTO value) {
-        return new JAXBElement<>(_GetWorkZoneVisitorsCountResponseGetWorkZoneVisitorsCountResult_QNAME, WorkZoneVisitorsCountDTO.class, GetWorkZoneVisitorsCountResponse.class, value);
+        return new JAXBElement<WorkZoneVisitorsCountDTO>(_GetWorkZoneVisitorsCountResponseGetWorkZoneVisitorsCountResult_QNAME, WorkZoneVisitorsCountDTO.class, GetWorkZoneVisitorsCountResponse.class, value);
     }
 
     /**
@@ -14195,7 +11729,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUidsKeysResult", scope = GetUidsKeysResponse.class)
     public JAXBElement<ArrayOfUidKeyInfo> createGetUidsKeysResponseGetUidsKeysResult(ArrayOfUidKeyInfo value) {
-        return new JAXBElement<>(_GetUidsKeysResponseGetUidsKeysResult_QNAME, ArrayOfUidKeyInfo.class, GetUidsKeysResponse.class, value);
+        return new JAXBElement<ArrayOfUidKeyInfo>(_GetUidsKeysResponseGetUidsKeysResult_QNAME, ArrayOfUidKeyInfo.class, GetUidsKeysResponse.class, value);
     }
 
     /**
@@ -14208,7 +11742,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "uid", scope = GetKeyByUid.class)
     public JAXBElement<String> createGetKeyByUidUid(String value) {
-        return new JAXBElement<>(_GetKeyByUidUid_QNAME, String.class, GetKeyByUid.class, value);
+        return new JAXBElement<String>(_GetKeyByUidUid_QNAME, String.class, GetKeyByUid.class, value);
     }
 
     /**
@@ -14221,7 +11755,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetKeyByUidResult", scope = GetKeyByUidResponse.class)
     public JAXBElement<UidKeyInfo> createGetKeyByUidResponseGetKeyByUidResult(UidKeyInfo value) {
-        return new JAXBElement<>(_GetKeyByUidResponseGetKeyByUidResult_QNAME, UidKeyInfo.class, GetKeyByUidResponse.class, value);
+        return new JAXBElement<UidKeyInfo>(_GetKeyByUidResponseGetKeyByUidResult_QNAME, UidKeyInfo.class, GetKeyByUidResponse.class, value);
     }
 
     /**
@@ -14234,7 +11768,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "profileId", scope = GenerateEPC.class)
     public JAXBElement<String> createGenerateEPCProfileId(String value) {
-        return new JAXBElement<>(_GenerateEPCProfileId_QNAME, String.class, GenerateEPC.class, value);
+        return new JAXBElement<String>(_GenerateEPCProfileId_QNAME, String.class, GenerateEPC.class, value);
     }
 
     /**
@@ -14247,7 +11781,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GenerateEPCResult", scope = GenerateEPCResponse.class)
     public JAXBElement<byte[]> createGenerateEPCResponseGenerateEPCResult(byte[] value) {
-        return new JAXBElement<>(_GenerateEPCResponseGenerateEPCResult_QNAME, byte[].class, GenerateEPCResponse.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_GenerateEPCResponseGenerateEPCResult_QNAME, byte[].class, GenerateEPCResponse.class, ((byte[]) value));
     }
 
     /**
@@ -14260,7 +11794,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetMifareProfilesResult", scope = GetMifareProfilesResponse.class)
     public JAXBElement<ArrayOfMifareProfileInfo> createGetMifareProfilesResponseGetMifareProfilesResult(ArrayOfMifareProfileInfo value) {
-        return new JAXBElement<>(_GetMifareProfilesResponseGetMifareProfilesResult_QNAME, ArrayOfMifareProfileInfo.class, GetMifareProfilesResponse.class, value);
+        return new JAXBElement<ArrayOfMifareProfileInfo>(_GetMifareProfilesResponseGetMifareProfilesResult_QNAME, ArrayOfMifareProfileInfo.class, GetMifareProfilesResponse.class, value);
     }
 
     /**
@@ -14273,7 +11807,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetMifareProfilesFullInfoResult", scope = GetMifareProfilesFullInfoResponse.class)
     public JAXBElement<MifareProfileFullInfo> createGetMifareProfilesFullInfoResponseGetMifareProfilesFullInfoResult(MifareProfileFullInfo value) {
-        return new JAXBElement<>(_GetMifareProfilesFullInfoResponseGetMifareProfilesFullInfoResult_QNAME, MifareProfileFullInfo.class, GetMifareProfilesFullInfoResponse.class, value);
+        return new JAXBElement<MifareProfileFullInfo>(_GetMifareProfilesFullInfoResponseGetMifareProfilesFullInfoResult_QNAME, MifareProfileFullInfo.class, GetMifareProfilesFullInfoResponse.class, value);
     }
 
     /**
@@ -14286,7 +11820,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetScreenLayoutForWorkplaceModuleResult", scope = GetScreenLayoutForWorkplaceModuleResponse.class)
     public JAXBElement<ScreenLayoutInfo> createGetScreenLayoutForWorkplaceModuleResponseGetScreenLayoutForWorkplaceModuleResult(ScreenLayoutInfo value) {
-        return new JAXBElement<>(_GetScreenLayoutForWorkplaceModuleResponseGetScreenLayoutForWorkplaceModuleResult_QNAME, ScreenLayoutInfo.class, GetScreenLayoutForWorkplaceModuleResponse.class, value);
+        return new JAXBElement<ScreenLayoutInfo>(_GetScreenLayoutForWorkplaceModuleResponseGetScreenLayoutForWorkplaceModuleResult_QNAME, ScreenLayoutInfo.class, GetScreenLayoutForWorkplaceModuleResponse.class, value);
     }
 
     /**
@@ -14299,7 +11833,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetScreenCellPhotoIdentificationContentResult", scope = GetScreenCellPhotoIdentificationContentResponse.class)
     public JAXBElement<CellContentFotoIdentificationInfo> createGetScreenCellPhotoIdentificationContentResponseGetScreenCellPhotoIdentificationContentResult(CellContentFotoIdentificationInfo value) {
-        return new JAXBElement<>(_GetScreenCellPhotoIdentificationContentResponseGetScreenCellPhotoIdentificationContentResult_QNAME, CellContentFotoIdentificationInfo.class, GetScreenCellPhotoIdentificationContentResponse.class, value);
+        return new JAXBElement<CellContentFotoIdentificationInfo>(_GetScreenCellPhotoIdentificationContentResponseGetScreenCellPhotoIdentificationContentResult_QNAME, CellContentFotoIdentificationInfo.class, GetScreenCellPhotoIdentificationContentResponse.class, value);
     }
 
     /**
@@ -14312,7 +11846,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetScreenCellCameraContentResult", scope = GetScreenCellCameraContentResponse.class)
     public JAXBElement<CellContentCameraInfo> createGetScreenCellCameraContentResponseGetScreenCellCameraContentResult(CellContentCameraInfo value) {
-        return new JAXBElement<>(_GetScreenCellCameraContentResponseGetScreenCellCameraContentResult_QNAME, CellContentCameraInfo.class, GetScreenCellCameraContentResponse.class, value);
+        return new JAXBElement<CellContentCameraInfo>(_GetScreenCellCameraContentResponseGetScreenCellCameraContentResult_QNAME, CellContentCameraInfo.class, GetScreenCellCameraContentResponse.class, value);
     }
 
     /**
@@ -14325,7 +11859,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetScreenCellPassInfoContentResult", scope = GetScreenCellPassInfoContentResponse.class)
     public JAXBElement<CellContentPassInfo> createGetScreenCellPassInfoContentResponseGetScreenCellPassInfoContentResult(CellContentPassInfo value) {
-        return new JAXBElement<>(_GetScreenCellPassInfoContentResponseGetScreenCellPassInfoContentResult_QNAME, CellContentPassInfo.class, GetScreenCellPassInfoContentResponse.class, value);
+        return new JAXBElement<CellContentPassInfo>(_GetScreenCellPassInfoContentResponseGetScreenCellPassInfoContentResult_QNAME, CellContentPassInfo.class, GetScreenCellPassInfoContentResponse.class, value);
     }
 
     /**
@@ -14338,7 +11872,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIvideonCameraDriversResult", scope = GetIvideonCameraDriversResponse.class)
     public JAXBElement<ArrayOfIvideonCameraDriverInfo> createGetIvideonCameraDriversResponseGetIvideonCameraDriversResult(ArrayOfIvideonCameraDriverInfo value) {
-        return new JAXBElement<>(_GetIvideonCameraDriversResponseGetIvideonCameraDriversResult_QNAME, ArrayOfIvideonCameraDriverInfo.class, GetIvideonCameraDriversResponse.class, value);
+        return new JAXBElement<ArrayOfIvideonCameraDriverInfo>(_GetIvideonCameraDriversResponseGetIvideonCameraDriversResult_QNAME, ArrayOfIvideonCameraDriverInfo.class, GetIvideonCameraDriversResponse.class, value);
     }
 
     /**
@@ -14351,7 +11885,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPhotoidentificationPersonalDataResult", scope = GetPhotoidentificationPersonalDataResponse.class)
     public JAXBElement<ArrayOfPhotoidentificationPersonalData> createGetPhotoidentificationPersonalDataResponseGetPhotoidentificationPersonalDataResult(ArrayOfPhotoidentificationPersonalData value) {
-        return new JAXBElement<>(_GetPhotoidentificationPersonalDataResponseGetPhotoidentificationPersonalDataResult_QNAME, ArrayOfPhotoidentificationPersonalData.class, GetPhotoidentificationPersonalDataResponse.class, value);
+        return new JAXBElement<ArrayOfPhotoidentificationPersonalData>(_GetPhotoidentificationPersonalDataResponseGetPhotoidentificationPersonalDataResult_QNAME, ArrayOfPhotoidentificationPersonalData.class, GetPhotoidentificationPersonalDataResponse.class, value);
     }
 
     /**
@@ -14364,7 +11898,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmailAddressesResult", scope = GetEmailAddressesResponse.class)
     public JAXBElement<ArrayOfEmailAddressInfo> createGetEmailAddressesResponseGetEmailAddressesResult(ArrayOfEmailAddressInfo value) {
-        return new JAXBElement<>(_GetEmailAddressesResponseGetEmailAddressesResult_QNAME, ArrayOfEmailAddressInfo.class, GetEmailAddressesResponse.class, value);
+        return new JAXBElement<ArrayOfEmailAddressInfo>(_GetEmailAddressesResponseGetEmailAddressesResult_QNAME, ArrayOfEmailAddressInfo.class, GetEmailAddressesResponse.class, value);
     }
 
     /**
@@ -14377,7 +11911,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmailAddressesIncludeRemovedEmployeesResult", scope = GetEmailAddressesIncludeRemovedEmployeesResponse.class)
     public JAXBElement<ArrayOfEmailAddressInfo> createGetEmailAddressesIncludeRemovedEmployeesResponseGetEmailAddressesIncludeRemovedEmployeesResult(ArrayOfEmailAddressInfo value) {
-        return new JAXBElement<>(_GetEmailAddressesIncludeRemovedEmployeesResponseGetEmailAddressesIncludeRemovedEmployeesResult_QNAME, ArrayOfEmailAddressInfo.class, GetEmailAddressesIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfEmailAddressInfo>(_GetEmailAddressesIncludeRemovedEmployeesResponseGetEmailAddressesIncludeRemovedEmployeesResult_QNAME, ArrayOfEmailAddressInfo.class, GetEmailAddressesIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -14390,7 +11924,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPhoneNumbersResult", scope = GetPhoneNumbersResponse.class)
     public JAXBElement<ArrayOfPhoneNumberInfo> createGetPhoneNumbersResponseGetPhoneNumbersResult(ArrayOfPhoneNumberInfo value) {
-        return new JAXBElement<>(_GetPhoneNumbersResponseGetPhoneNumbersResult_QNAME, ArrayOfPhoneNumberInfo.class, GetPhoneNumbersResponse.class, value);
+        return new JAXBElement<ArrayOfPhoneNumberInfo>(_GetPhoneNumbersResponseGetPhoneNumbersResult_QNAME, ArrayOfPhoneNumberInfo.class, GetPhoneNumbersResponse.class, value);
     }
 
     /**
@@ -14403,7 +11937,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPhoneNumbersIncludeRemovedEmployeesResult", scope = GetPhoneNumbersIncludeRemovedEmployeesResponse.class)
     public JAXBElement<ArrayOfPhoneNumberInfo> createGetPhoneNumbersIncludeRemovedEmployeesResponseGetPhoneNumbersIncludeRemovedEmployeesResult(ArrayOfPhoneNumberInfo value) {
-        return new JAXBElement<>(_GetPhoneNumbersIncludeRemovedEmployeesResponseGetPhoneNumbersIncludeRemovedEmployeesResult_QNAME, ArrayOfPhoneNumberInfo.class, GetPhoneNumbersIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfPhoneNumberInfo>(_GetPhoneNumbersIncludeRemovedEmployeesResponseGetPhoneNumbersIncludeRemovedEmployeesResult_QNAME, ArrayOfPhoneNumberInfo.class, GetPhoneNumbersIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -14416,7 +11950,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeSchedulesResult", scope = GetEmployeeSchedulesResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeSchedule> createGetEmployeeSchedulesResponseGetEmployeeSchedulesResult(ArrayOfAcsEmployeeSchedule value) {
-        return new JAXBElement<>(_GetEmployeeSchedulesResponseGetEmployeeSchedulesResult_QNAME, ArrayOfAcsEmployeeSchedule.class, GetEmployeeSchedulesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeSchedule>(_GetEmployeeSchedulesResponseGetEmployeeSchedulesResult_QNAME, ArrayOfAcsEmployeeSchedule.class, GetEmployeeSchedulesResponse.class, value);
     }
 
     /**
@@ -14429,7 +11963,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeSchedulesIncludeRemovedEmployeesResult", scope = GetEmployeeSchedulesIncludeRemovedEmployeesResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeSchedule> createGetEmployeeSchedulesIncludeRemovedEmployeesResponseGetEmployeeSchedulesIncludeRemovedEmployeesResult(ArrayOfAcsEmployeeSchedule value) {
-        return new JAXBElement<>(_GetEmployeeSchedulesIncludeRemovedEmployeesResponseGetEmployeeSchedulesIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsEmployeeSchedule.class, GetEmployeeSchedulesIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeSchedule>(_GetEmployeeSchedulesIncludeRemovedEmployeesResponseGetEmployeeSchedulesIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsEmployeeSchedule.class, GetEmployeeSchedulesIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -14442,7 +11976,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmailDistributionAddressesResult", scope = GetEmailDistributionAddressesResponse.class)
     public JAXBElement<ArrayOfEmailDistributionAddressInfo> createGetEmailDistributionAddressesResponseGetEmailDistributionAddressesResult(ArrayOfEmailDistributionAddressInfo value) {
-        return new JAXBElement<>(_GetEmailDistributionAddressesResponseGetEmailDistributionAddressesResult_QNAME, ArrayOfEmailDistributionAddressInfo.class, GetEmailDistributionAddressesResponse.class, value);
+        return new JAXBElement<ArrayOfEmailDistributionAddressInfo>(_GetEmailDistributionAddressesResponseGetEmailDistributionAddressesResult_QNAME, ArrayOfEmailDistributionAddressInfo.class, GetEmailDistributionAddressesResponse.class, value);
     }
 
     /**
@@ -14455,7 +11989,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subject", scope = SendEmail.class)
     public JAXBElement<String> createSendEmailSubject(String value) {
-        return new JAXBElement<>(_SendEmailSubject_QNAME, String.class, SendEmail.class, value);
+        return new JAXBElement<String>(_SendEmailSubject_QNAME, String.class, SendEmail.class, value);
     }
 
     /**
@@ -14468,7 +12002,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "message", scope = SendEmail.class)
     public JAXBElement<String> createSendEmailMessage(String value) {
-        return new JAXBElement<>(_SendEmailMessage_QNAME, String.class, SendEmail.class, value);
+        return new JAXBElement<String>(_SendEmailMessage_QNAME, String.class, SendEmail.class, value);
     }
 
     /**
@@ -14481,7 +12015,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "toEmailAddress", scope = SendEmail.class)
     public JAXBElement<String> createSendEmailToEmailAddress(String value) {
-        return new JAXBElement<>(_SendEmailToEmailAddress_QNAME, String.class, SendEmail.class, value);
+        return new JAXBElement<String>(_SendEmailToEmailAddress_QNAME, String.class, SendEmail.class, value);
     }
 
     /**
@@ -14494,7 +12028,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFieldsResult", scope = GetFieldsResponse.class)
     public JAXBElement<ArrayOfAdditionalFieldBase> createGetFieldsResponseGetFieldsResult(ArrayOfAdditionalFieldBase value) {
-        return new JAXBElement<>(_GetFieldsResponseGetFieldsResult_QNAME, ArrayOfAdditionalFieldBase.class, GetFieldsResponse.class, value);
+        return new JAXBElement<ArrayOfAdditionalFieldBase>(_GetFieldsResponseGetFieldsResult_QNAME, ArrayOfAdditionalFieldBase.class, GetFieldsResponse.class, value);
     }
 
     /**
@@ -14507,7 +12041,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAdditionalFieldsValueResult", scope = GetAdditionalFieldsValueResponse.class)
     public JAXBElement<ArrayOfAdditionalFieldValue> createGetAdditionalFieldsValueResponseGetAdditionalFieldsValueResult(ArrayOfAdditionalFieldValue value) {
-        return new JAXBElement<>(_GetAdditionalFieldsValueResponseGetAdditionalFieldsValueResult_QNAME, ArrayOfAdditionalFieldValue.class, GetAdditionalFieldsValueResponse.class, value);
+        return new JAXBElement<ArrayOfAdditionalFieldValue>(_GetAdditionalFieldsValueResponseGetAdditionalFieldsValueResult_QNAME, ArrayOfAdditionalFieldValue.class, GetAdditionalFieldsValueResponse.class, value);
     }
 
     /**
@@ -14520,7 +12054,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAdditionalFieldsResult", scope = GetAdditionalFieldsResponse.class)
     public JAXBElement<ArrayOfAdditionalFieldValue> createGetAdditionalFieldsResponseGetAdditionalFieldsResult(ArrayOfAdditionalFieldValue value) {
-        return new JAXBElement<>(_GetAdditionalFieldsResponseGetAdditionalFieldsResult_QNAME, ArrayOfAdditionalFieldValue.class, GetAdditionalFieldsResponse.class, value);
+        return new JAXBElement<ArrayOfAdditionalFieldValue>(_GetAdditionalFieldsResponseGetAdditionalFieldsResult_QNAME, ArrayOfAdditionalFieldValue.class, GetAdditionalFieldsResponse.class, value);
     }
 
     /**
@@ -14533,7 +12067,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ownerIds", scope = GetAdditionalFieldsValueForOwners.class)
     public JAXBElement<ArrayOfguid> createGetAdditionalFieldsValueForOwnersOwnerIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAdditionalFieldsValueForOwnersOwnerIds_QNAME, ArrayOfguid.class, GetAdditionalFieldsValueForOwners.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAdditionalFieldsValueForOwnersOwnerIds_QNAME, ArrayOfguid.class, GetAdditionalFieldsValueForOwners.class, value);
     }
 
     /**
@@ -14546,7 +12080,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAdditionalFieldsValueForOwnersResult", scope = GetAdditionalFieldsValueForOwnersResponse.class)
     public JAXBElement<ArrayOfOwnerAdditionalFieldsValue> createGetAdditionalFieldsValueForOwnersResponseGetAdditionalFieldsValueForOwnersResult(ArrayOfOwnerAdditionalFieldsValue value) {
-        return new JAXBElement<>(_GetAdditionalFieldsValueForOwnersResponseGetAdditionalFieldsValueForOwnersResult_QNAME, ArrayOfOwnerAdditionalFieldsValue.class, GetAdditionalFieldsValueForOwnersResponse.class, value);
+        return new JAXBElement<ArrayOfOwnerAdditionalFieldsValue>(_GetAdditionalFieldsValueForOwnersResponseGetAdditionalFieldsValueForOwnersResult_QNAME, ArrayOfOwnerAdditionalFieldsValue.class, GetAdditionalFieldsValueForOwnersResponse.class, value);
     }
 
     /**
@@ -14559,7 +12093,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ownerIds", scope = GetAdditionalFieldsForOwners.class)
     public JAXBElement<ArrayOfguid> createGetAdditionalFieldsForOwnersOwnerIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAdditionalFieldsValueForOwnersOwnerIds_QNAME, ArrayOfguid.class, GetAdditionalFieldsForOwners.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAdditionalFieldsValueForOwnersOwnerIds_QNAME, ArrayOfguid.class, GetAdditionalFieldsForOwners.class, value);
     }
 
     /**
@@ -14572,7 +12106,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAdditionalFieldsForOwnersResult", scope = GetAdditionalFieldsForOwnersResponse.class)
     public JAXBElement<ArrayOfOwnerAdditionalFieldsValue> createGetAdditionalFieldsForOwnersResponseGetAdditionalFieldsForOwnersResult(ArrayOfOwnerAdditionalFieldsValue value) {
-        return new JAXBElement<>(_GetAdditionalFieldsForOwnersResponseGetAdditionalFieldsForOwnersResult_QNAME, ArrayOfOwnerAdditionalFieldsValue.class, GetAdditionalFieldsForOwnersResponse.class, value);
+        return new JAXBElement<ArrayOfOwnerAdditionalFieldsValue>(_GetAdditionalFieldsForOwnersResponseGetAdditionalFieldsForOwnersResult_QNAME, ArrayOfOwnerAdditionalFieldsValue.class, GetAdditionalFieldsForOwnersResponse.class, value);
     }
 
     /**
@@ -14585,7 +12119,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPhotoOrdersResult", scope = GetPhotoOrdersResponse.class)
     public JAXBElement<ArrayOfPhotoOrder> createGetPhotoOrdersResponseGetPhotoOrdersResult(ArrayOfPhotoOrder value) {
-        return new JAXBElement<>(_GetPhotoOrdersResponseGetPhotoOrdersResult_QNAME, ArrayOfPhotoOrder.class, GetPhotoOrdersResponse.class, value);
+        return new JAXBElement<ArrayOfPhotoOrder>(_GetPhotoOrdersResponseGetPhotoOrdersResult_QNAME, ArrayOfPhotoOrder.class, GetPhotoOrdersResponse.class, value);
     }
 
     /**
@@ -14598,7 +12132,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsByMifareProfileIDResult", scope = GetTagsByMifareProfileIDResponse.class)
     public JAXBElement<ArrayOfMifareProfileTagsData> createGetTagsByMifareProfileIDResponseGetTagsByMifareProfileIDResult(ArrayOfMifareProfileTagsData value) {
-        return new JAXBElement<>(_GetTagsByMifareProfileIDResponseGetTagsByMifareProfileIDResult_QNAME, ArrayOfMifareProfileTagsData.class, GetTagsByMifareProfileIDResponse.class, value);
+        return new JAXBElement<ArrayOfMifareProfileTagsData>(_GetTagsByMifareProfileIDResponseGetTagsByMifareProfileIDResult_QNAME, ArrayOfMifareProfileTagsData.class, GetTagsByMifareProfileIDResponse.class, value);
     }
 
     /**
@@ -14611,7 +12145,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsByReportIDResult", scope = GetTagsByReportIDResponse.class)
     public JAXBElement<ArrayOfReportTagsData> createGetTagsByReportIDResponseGetTagsByReportIDResult(ArrayOfReportTagsData value) {
-        return new JAXBElement<>(_GetTagsByReportIDResponseGetTagsByReportIDResult_QNAME, ArrayOfReportTagsData.class, GetTagsByReportIDResponse.class, value);
+        return new JAXBElement<ArrayOfReportTagsData>(_GetTagsByReportIDResponseGetTagsByReportIDResult_QNAME, ArrayOfReportTagsData.class, GetTagsByReportIDResponse.class, value);
     }
 
     /**
@@ -14624,7 +12158,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsByEmployeeGroupIDResult", scope = GetTagsByEmployeeGroupIDResponse.class)
     public JAXBElement<ArrayOfEmployeeGroupTagsData> createGetTagsByEmployeeGroupIDResponseGetTagsByEmployeeGroupIDResult(ArrayOfEmployeeGroupTagsData value) {
-        return new JAXBElement<>(_GetTagsByEmployeeGroupIDResponseGetTagsByEmployeeGroupIDResult_QNAME, ArrayOfEmployeeGroupTagsData.class, GetTagsByEmployeeGroupIDResponse.class, value);
+        return new JAXBElement<ArrayOfEmployeeGroupTagsData>(_GetTagsByEmployeeGroupIDResponseGetTagsByEmployeeGroupIDResult_QNAME, ArrayOfEmployeeGroupTagsData.class, GetTagsByEmployeeGroupIDResponse.class, value);
     }
 
     /**
@@ -14637,7 +12171,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsByAccessLevelIDResult", scope = GetTagsByAccessLevelIDResponse.class)
     public JAXBElement<ArrayOfAccessLevelTagsData> createGetTagsByAccessLevelIDResponseGetTagsByAccessLevelIDResult(ArrayOfAccessLevelTagsData value) {
-        return new JAXBElement<>(_GetTagsByAccessLevelIDResponseGetTagsByAccessLevelIDResult_QNAME, ArrayOfAccessLevelTagsData.class, GetTagsByAccessLevelIDResponse.class, value);
+        return new JAXBElement<ArrayOfAccessLevelTagsData>(_GetTagsByAccessLevelIDResponseGetTagsByAccessLevelIDResult_QNAME, ArrayOfAccessLevelTagsData.class, GetTagsByAccessLevelIDResponse.class, value);
     }
 
     /**
@@ -14650,7 +12184,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsByBoxAccessLevelIDResult", scope = GetTagsByBoxAccessLevelIDResponse.class)
     public JAXBElement<ArrayOfBoxAccessLevelTagsData> createGetTagsByBoxAccessLevelIDResponseGetTagsByBoxAccessLevelIDResult(ArrayOfBoxAccessLevelTagsData value) {
-        return new JAXBElement<>(_GetTagsByBoxAccessLevelIDResponseGetTagsByBoxAccessLevelIDResult_QNAME, ArrayOfBoxAccessLevelTagsData.class, GetTagsByBoxAccessLevelIDResponse.class, value);
+        return new JAXBElement<ArrayOfBoxAccessLevelTagsData>(_GetTagsByBoxAccessLevelIDResponseGetTagsByBoxAccessLevelIDResult_QNAME, ArrayOfBoxAccessLevelTagsData.class, GetTagsByBoxAccessLevelIDResponse.class, value);
     }
 
     /**
@@ -14663,7 +12197,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsByResourceIDResult", scope = GetTagsByResourceIDResponse.class)
     public JAXBElement<ArrayOfResourceTagsData> createGetTagsByResourceIDResponseGetTagsByResourceIDResult(ArrayOfResourceTagsData value) {
-        return new JAXBElement<>(_GetTagsByResourceIDResponseGetTagsByResourceIDResult_QNAME, ArrayOfResourceTagsData.class, GetTagsByResourceIDResponse.class, value);
+        return new JAXBElement<ArrayOfResourceTagsData>(_GetTagsByResourceIDResponseGetTagsByResourceIDResult_QNAME, ArrayOfResourceTagsData.class, GetTagsByResourceIDResponse.class, value);
     }
 
     /**
@@ -14676,7 +12210,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFilterTagsByResourceIDResult", scope = GetFilterTagsByResourceIDResponse.class)
     public JAXBElement<ArrayOfResourceFilterTagsData> createGetFilterTagsByResourceIDResponseGetFilterTagsByResourceIDResult(ArrayOfResourceFilterTagsData value) {
-        return new JAXBElement<>(_GetFilterTagsByResourceIDResponseGetFilterTagsByResourceIDResult_QNAME, ArrayOfResourceFilterTagsData.class, GetFilterTagsByResourceIDResponse.class, value);
+        return new JAXBElement<ArrayOfResourceFilterTagsData>(_GetFilterTagsByResourceIDResponseGetFilterTagsByResourceIDResult_QNAME, ArrayOfResourceFilterTagsData.class, GetFilterTagsByResourceIDResponse.class, value);
     }
 
     /**
@@ -14689,7 +12223,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFilterTagsForResourcesResult", scope = GetFilterTagsForResourcesResponse.class)
     public JAXBElement<ArrayOfResourceFilterTagsData> createGetFilterTagsForResourcesResponseGetFilterTagsForResourcesResult(ArrayOfResourceFilterTagsData value) {
-        return new JAXBElement<>(_GetFilterTagsForResourcesResponseGetFilterTagsForResourcesResult_QNAME, ArrayOfResourceFilterTagsData.class, GetFilterTagsForResourcesResponse.class, value);
+        return new JAXBElement<ArrayOfResourceFilterTagsData>(_GetFilterTagsForResourcesResponseGetFilterTagsForResourcesResult_QNAME, ArrayOfResourceFilterTagsData.class, GetFilterTagsForResourcesResponse.class, value);
     }
 
     /**
@@ -14702,7 +12236,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsResult", scope = GetTagsResponse.class)
     public JAXBElement<ArrayOfTagFullInfo> createGetTagsResponseGetTagsResult(ArrayOfTagFullInfo value) {
-        return new JAXBElement<>(_GetTagsResponseGetTagsResult_QNAME, ArrayOfTagFullInfo.class, GetTagsResponse.class, value);
+        return new JAXBElement<ArrayOfTagFullInfo>(_GetTagsResponseGetTagsResult_QNAME, ArrayOfTagFullInfo.class, GetTagsResponse.class, value);
     }
 
     /**
@@ -14715,7 +12249,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFilterTagsResult", scope = GetFilterTagsResponse.class)
     public JAXBElement<ArrayOfFilterTagFullInfo> createGetFilterTagsResponseGetFilterTagsResult(ArrayOfFilterTagFullInfo value) {
-        return new JAXBElement<>(_GetFilterTagsResponseGetFilterTagsResult_QNAME, ArrayOfFilterTagFullInfo.class, GetFilterTagsResponse.class, value);
+        return new JAXBElement<ArrayOfFilterTagFullInfo>(_GetFilterTagsResponseGetFilterTagsResult_QNAME, ArrayOfFilterTagFullInfo.class, GetFilterTagsResponse.class, value);
     }
 
     /**
@@ -14728,7 +12262,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "folderId", scope = GetFolders.class)
     public JAXBElement<String> createGetFoldersFolderId(String value) {
-        return new JAXBElement<>(_GetFoldersFolderId_QNAME, String.class, GetFolders.class, value);
+        return new JAXBElement<String>(_GetFoldersFolderId_QNAME, String.class, GetFolders.class, value);
     }
 
     /**
@@ -14741,7 +12275,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "left_key", scope = GetFolders.class)
     public JAXBElement<Integer> createGetFoldersLeftKey(Integer value) {
-        return new JAXBElement<>(_GetFoldersLeftKey_QNAME, Integer.class, GetFolders.class, value);
+        return new JAXBElement<Integer>(_GetFoldersLeftKey_QNAME, Integer.class, GetFolders.class, value);
     }
 
     /**
@@ -14754,7 +12288,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFoldersResult", scope = GetFoldersResponse.class)
     public JAXBElement<ArrayOfFolderInfo> createGetFoldersResponseGetFoldersResult(ArrayOfFolderInfo value) {
-        return new JAXBElement<>(_GetFoldersResponseGetFoldersResult_QNAME, ArrayOfFolderInfo.class, GetFoldersResponse.class, value);
+        return new JAXBElement<ArrayOfFolderInfo>(_GetFoldersResponseGetFoldersResult_QNAME, ArrayOfFolderInfo.class, GetFoldersResponse.class, value);
     }
 
     /**
@@ -14767,7 +12301,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "folderId", scope = GetFoldersWithAccessLevel.class)
     public JAXBElement<String> createGetFoldersWithAccessLevelFolderId(String value) {
-        return new JAXBElement<>(_GetFoldersFolderId_QNAME, String.class, GetFoldersWithAccessLevel.class, value);
+        return new JAXBElement<String>(_GetFoldersFolderId_QNAME, String.class, GetFoldersWithAccessLevel.class, value);
     }
 
     /**
@@ -14780,7 +12314,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFoldersWithAccessLevelResult", scope = GetFoldersWithAccessLevelResponse.class)
     public JAXBElement<ArrayOfFolderInfoWithAccessLevel> createGetFoldersWithAccessLevelResponseGetFoldersWithAccessLevelResult(ArrayOfFolderInfoWithAccessLevel value) {
-        return new JAXBElement<>(_GetFoldersWithAccessLevelResponseGetFoldersWithAccessLevelResult_QNAME, ArrayOfFolderInfoWithAccessLevel.class, GetFoldersWithAccessLevelResponse.class, value);
+        return new JAXBElement<ArrayOfFolderInfoWithAccessLevel>(_GetFoldersWithAccessLevelResponseGetFoldersWithAccessLevelResult_QNAME, ArrayOfFolderInfoWithAccessLevel.class, GetFoldersWithAccessLevelResponse.class, value);
     }
 
     /**
@@ -14793,7 +12327,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFolderForAccessLevelResult", scope = GetFolderForAccessLevelResponse.class)
     public JAXBElement<FolderInfo> createGetFolderForAccessLevelResponseGetFolderForAccessLevelResult(FolderInfo value) {
-        return new JAXBElement<>(_GetFolderForAccessLevelResponseGetFolderForAccessLevelResult_QNAME, FolderInfo.class, GetFolderForAccessLevelResponse.class, value);
+        return new JAXBElement<FolderInfo>(_GetFolderForAccessLevelResponseGetFolderForAccessLevelResult_QNAME, FolderInfo.class, GetFolderForAccessLevelResponse.class, value);
     }
 
     /**
@@ -14806,7 +12340,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "folderId", scope = GetFavoriteFolders.class)
     public JAXBElement<String> createGetFavoriteFoldersFolderId(String value) {
-        return new JAXBElement<>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFolders.class, value);
+        return new JAXBElement<String>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFolders.class, value);
     }
 
     /**
@@ -14819,7 +12353,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "left_key", scope = GetFavoriteFolders.class)
     public JAXBElement<Integer> createGetFavoriteFoldersLeftKey(Integer value) {
-        return new JAXBElement<>(_GetFoldersLeftKey_QNAME, Integer.class, GetFavoriteFolders.class, value);
+        return new JAXBElement<Integer>(_GetFoldersLeftKey_QNAME, Integer.class, GetFavoriteFolders.class, value);
     }
 
     /**
@@ -14832,7 +12366,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFavoriteFoldersResult", scope = GetFavoriteFoldersResponse.class)
     public JAXBElement<ArrayOfFavoriteFolderInfo> createGetFavoriteFoldersResponseGetFavoriteFoldersResult(ArrayOfFavoriteFolderInfo value) {
-        return new JAXBElement<>(_GetFavoriteFoldersResponseGetFavoriteFoldersResult_QNAME, ArrayOfFavoriteFolderInfo.class, GetFavoriteFoldersResponse.class, value);
+        return new JAXBElement<ArrayOfFavoriteFolderInfo>(_GetFavoriteFoldersResponseGetFavoriteFoldersResult_QNAME, ArrayOfFavoriteFolderInfo.class, GetFavoriteFoldersResponse.class, value);
     }
 
     /**
@@ -14845,7 +12379,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "folderId", scope = GetFavoriteFoldersByWorkplace.class)
     public JAXBElement<String> createGetFavoriteFoldersByWorkplaceFolderId(String value) {
-        return new JAXBElement<>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFoldersByWorkplace.class, value);
+        return new JAXBElement<String>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFoldersByWorkplace.class, value);
     }
 
     /**
@@ -14858,7 +12392,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "left_key", scope = GetFavoriteFoldersByWorkplace.class)
     public JAXBElement<Integer> createGetFavoriteFoldersByWorkplaceLeftKey(Integer value) {
-        return new JAXBElement<>(_GetFoldersLeftKey_QNAME, Integer.class, GetFavoriteFoldersByWorkplace.class, value);
+        return new JAXBElement<Integer>(_GetFoldersLeftKey_QNAME, Integer.class, GetFavoriteFoldersByWorkplace.class, value);
     }
 
     /**
@@ -14871,7 +12405,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFavoriteFoldersByWorkplaceResult", scope = GetFavoriteFoldersByWorkplaceResponse.class)
     public JAXBElement<ArrayOfFavoriteFolderInfo> createGetFavoriteFoldersByWorkplaceResponseGetFavoriteFoldersByWorkplaceResult(ArrayOfFavoriteFolderInfo value) {
-        return new JAXBElement<>(_GetFavoriteFoldersByWorkplaceResponseGetFavoriteFoldersByWorkplaceResult_QNAME, ArrayOfFavoriteFolderInfo.class, GetFavoriteFoldersByWorkplaceResponse.class, value);
+        return new JAXBElement<ArrayOfFavoriteFolderInfo>(_GetFavoriteFoldersByWorkplaceResponseGetFavoriteFoldersByWorkplaceResult_QNAME, ArrayOfFavoriteFolderInfo.class, GetFavoriteFoldersByWorkplaceResponse.class, value);
     }
 
     /**
@@ -14884,7 +12418,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "folderId", scope = GetFavoriteFoldersWithEmployeeGroups.class)
     public JAXBElement<String> createGetFavoriteFoldersWithEmployeeGroupsFolderId(String value) {
-        return new JAXBElement<>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFoldersWithEmployeeGroups.class, value);
+        return new JAXBElement<String>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFoldersWithEmployeeGroups.class, value);
     }
 
     /**
@@ -14897,7 +12431,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFavoriteFoldersWithEmployeeGroupsResult", scope = GetFavoriteFoldersWithEmployeeGroupsResponse.class)
     public JAXBElement<ArrayOfFavoriteFolderInfoWithEmployeeGroup> createGetFavoriteFoldersWithEmployeeGroupsResponseGetFavoriteFoldersWithEmployeeGroupsResult(ArrayOfFavoriteFolderInfoWithEmployeeGroup value) {
-        return new JAXBElement<>(_GetFavoriteFoldersWithEmployeeGroupsResponseGetFavoriteFoldersWithEmployeeGroupsResult_QNAME, ArrayOfFavoriteFolderInfoWithEmployeeGroup.class, GetFavoriteFoldersWithEmployeeGroupsResponse.class, value);
+        return new JAXBElement<ArrayOfFavoriteFolderInfoWithEmployeeGroup>(_GetFavoriteFoldersWithEmployeeGroupsResponseGetFavoriteFoldersWithEmployeeGroupsResult_QNAME, ArrayOfFavoriteFolderInfoWithEmployeeGroup.class, GetFavoriteFoldersWithEmployeeGroupsResponse.class, value);
     }
 
     /**
@@ -14910,7 +12444,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "folderId", scope = GetFavoriteFoldersWithEmployeeGroupsByWorkplace.class)
     public JAXBElement<String> createGetFavoriteFoldersWithEmployeeGroupsByWorkplaceFolderId(String value) {
-        return new JAXBElement<>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFoldersWithEmployeeGroupsByWorkplace.class, value);
+        return new JAXBElement<String>(_GetFoldersFolderId_QNAME, String.class, GetFavoriteFoldersWithEmployeeGroupsByWorkplace.class, value);
     }
 
     /**
@@ -14923,7 +12457,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResult", scope = GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse.class)
     public JAXBElement<ArrayOfFavoriteFolderInfoWithEmployeeGroup> createGetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponseGetFavoriteFoldersWithEmployeeGroupsByWorkplaceResult(ArrayOfFavoriteFolderInfoWithEmployeeGroup value) {
-        return new JAXBElement<>(_GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponseGetFavoriteFoldersWithEmployeeGroupsByWorkplaceResult_QNAME, ArrayOfFavoriteFolderInfoWithEmployeeGroup.class, GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse.class, value);
+        return new JAXBElement<ArrayOfFavoriteFolderInfoWithEmployeeGroup>(_GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponseGetFavoriteFoldersWithEmployeeGroupsByWorkplaceResult_QNAME, ArrayOfFavoriteFolderInfoWithEmployeeGroup.class, GetFavoriteFoldersWithEmployeeGroupsByWorkplaceResponse.class, value);
     }
 
     /**
@@ -14936,7 +12470,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFavoriteFolderForEmployeeGroupResult", scope = GetFavoriteFolderForEmployeeGroupResponse.class)
     public JAXBElement<FavoriteFolderInfo> createGetFavoriteFolderForEmployeeGroupResponseGetFavoriteFolderForEmployeeGroupResult(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_GetFavoriteFolderForEmployeeGroupResponseGetFavoriteFolderForEmployeeGroupResult_QNAME, FavoriteFolderInfo.class, GetFavoriteFolderForEmployeeGroupResponse.class, value);
+        return new JAXBElement<FavoriteFolderInfo>(_GetFavoriteFolderForEmployeeGroupResponseGetFavoriteFolderForEmployeeGroupResult_QNAME, FavoriteFolderInfo.class, GetFavoriteFolderForEmployeeGroupResponse.class, value);
     }
 
     /**
@@ -14949,7 +12483,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFavoriteFolderForEmployeeGroupByWorkplaceResult", scope = GetFavoriteFolderForEmployeeGroupByWorkplaceResponse.class)
     public JAXBElement<FavoriteFolderInfo> createGetFavoriteFolderForEmployeeGroupByWorkplaceResponseGetFavoriteFolderForEmployeeGroupByWorkplaceResult(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_GetFavoriteFolderForEmployeeGroupByWorkplaceResponseGetFavoriteFolderForEmployeeGroupByWorkplaceResult_QNAME, FavoriteFolderInfo.class, GetFavoriteFolderForEmployeeGroupByWorkplaceResponse.class, value);
+        return new JAXBElement<FavoriteFolderInfo>(_GetFavoriteFolderForEmployeeGroupByWorkplaceResponseGetFavoriteFolderForEmployeeGroupByWorkplaceResult_QNAME, FavoriteFolderInfo.class, GetFavoriteFolderForEmployeeGroupByWorkplaceResponse.class, value);
     }
 
     /**
@@ -14962,7 +12496,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUserPassesResult", scope = GetUserPassesResponse.class)
     public JAXBElement<ArrayOfUserPassSlimData> createGetUserPassesResponseGetUserPassesResult(ArrayOfUserPassSlimData value) {
-        return new JAXBElement<>(_GetUserPassesResponseGetUserPassesResult_QNAME, ArrayOfUserPassSlimData.class, GetUserPassesResponse.class, value);
+        return new JAXBElement<ArrayOfUserPassSlimData>(_GetUserPassesResponseGetUserPassesResult_QNAME, ArrayOfUserPassSlimData.class, GetUserPassesResponse.class, value);
     }
 
     /**
@@ -14975,7 +12509,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadUserPassResult", scope = LoadUserPassResponse.class)
     public JAXBElement<UserPassFullData> createLoadUserPassResponseLoadUserPassResult(UserPassFullData value) {
-        return new JAXBElement<>(_LoadUserPassResponseLoadUserPassResult_QNAME, UserPassFullData.class, LoadUserPassResponse.class, value);
+        return new JAXBElement<UserPassFullData>(_LoadUserPassResponseLoadUserPassResult_QNAME, UserPassFullData.class, LoadUserPassResponse.class, value);
     }
 
     /**
@@ -14988,7 +12522,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReactionsResult", scope = GetReactionsResponse.class)
     public JAXBElement<ArrayOfReactionSlimInfo> createGetReactionsResponseGetReactionsResult(ArrayOfReactionSlimInfo value) {
-        return new JAXBElement<>(_GetReactionsResponseGetReactionsResult_QNAME, ArrayOfReactionSlimInfo.class, GetReactionsResponse.class, value);
+        return new JAXBElement<ArrayOfReactionSlimInfo>(_GetReactionsResponseGetReactionsResult_QNAME, ArrayOfReactionSlimInfo.class, GetReactionsResponse.class, value);
     }
 
     /**
@@ -15001,7 +12535,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReactionFullInfoResult", scope = GetReactionFullInfoResponse.class)
     public JAXBElement<ReactionFullInfo> createGetReactionFullInfoResponseGetReactionFullInfoResult(ReactionFullInfo value) {
-        return new JAXBElement<>(_GetReactionFullInfoResponseGetReactionFullInfoResult_QNAME, ReactionFullInfo.class, GetReactionFullInfoResponse.class, value);
+        return new JAXBElement<ReactionFullInfo>(_GetReactionFullInfoResponseGetReactionFullInfoResult_QNAME, ReactionFullInfo.class, GetReactionFullInfoResponse.class, value);
     }
 
     /**
@@ -15014,7 +12548,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeesOfReactionActionResult", scope = GetEmployeesOfReactionActionResponse.class)
     public JAXBElement<ArrayOfguid> createGetEmployeesOfReactionActionResponseGetEmployeesOfReactionActionResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEmployeesOfReactionActionResponseGetEmployeesOfReactionActionResult_QNAME, ArrayOfguid.class, GetEmployeesOfReactionActionResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEmployeesOfReactionActionResponseGetEmployeesOfReactionActionResult_QNAME, ArrayOfguid.class, GetEmployeesOfReactionActionResponse.class, value);
     }
 
     /**
@@ -15027,7 +12561,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeGroupsOfReactionActionResult", scope = GetEmployeeGroupsOfReactionActionResponse.class)
     public JAXBElement<ArrayOfguid> createGetEmployeeGroupsOfReactionActionResponseGetEmployeeGroupsOfReactionActionResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEmployeeGroupsOfReactionActionResponseGetEmployeeGroupsOfReactionActionResult_QNAME, ArrayOfguid.class, GetEmployeeGroupsOfReactionActionResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEmployeeGroupsOfReactionActionResponseGetEmployeeGroupsOfReactionActionResult_QNAME, ArrayOfguid.class, GetEmployeeGroupsOfReactionActionResponse.class, value);
     }
 
     /**
@@ -15040,7 +12574,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReactionSendSMSActionResult", scope = GetReactionSendSMSActionResponse.class)
     public JAXBElement<ReactionSendSMSActionSlimInfo> createGetReactionSendSMSActionResponseGetReactionSendSMSActionResult(ReactionSendSMSActionSlimInfo value) {
-        return new JAXBElement<>(_GetReactionSendSMSActionResponseGetReactionSendSMSActionResult_QNAME, ReactionSendSMSActionSlimInfo.class, GetReactionSendSMSActionResponse.class, value);
+        return new JAXBElement<ReactionSendSMSActionSlimInfo>(_GetReactionSendSMSActionResponseGetReactionSendSMSActionResult_QNAME, ReactionSendSMSActionSlimInfo.class, GetReactionSendSMSActionResponse.class, value);
     }
 
     /**
@@ -15053,7 +12587,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReactionSendEmailActionResult", scope = GetReactionSendEmailActionResponse.class)
     public JAXBElement<ReactionSendEmailActionSlimInfo> createGetReactionSendEmailActionResponseGetReactionSendEmailActionResult(ReactionSendEmailActionSlimInfo value) {
-        return new JAXBElement<>(_GetReactionSendEmailActionResponseGetReactionSendEmailActionResult_QNAME, ReactionSendEmailActionSlimInfo.class, GetReactionSendEmailActionResponse.class, value);
+        return new JAXBElement<ReactionSendEmailActionSlimInfo>(_GetReactionSendEmailActionResponseGetReactionSendEmailActionResult_QNAME, ReactionSendEmailActionSlimInfo.class, GetReactionSendEmailActionResponse.class, value);
     }
 
     /**
@@ -15066,7 +12600,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReactionExecuteProgramActionResult", scope = GetReactionExecuteProgramActionResponse.class)
     public JAXBElement<ReactionExecuteProgramActionSlimInfo> createGetReactionExecuteProgramActionResponseGetReactionExecuteProgramActionResult(ReactionExecuteProgramActionSlimInfo value) {
-        return new JAXBElement<>(_GetReactionExecuteProgramActionResponseGetReactionExecuteProgramActionResult_QNAME, ReactionExecuteProgramActionSlimInfo.class, GetReactionExecuteProgramActionResponse.class, value);
+        return new JAXBElement<ReactionExecuteProgramActionSlimInfo>(_GetReactionExecuteProgramActionResponseGetReactionExecuteProgramActionResult_QNAME, ReactionExecuteProgramActionSlimInfo.class, GetReactionExecuteProgramActionResponse.class, value);
     }
 
     /**
@@ -15079,7 +12613,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReactionRecordVideoActionResult", scope = GetReactionRecordVideoActionResponse.class)
     public JAXBElement<ReactionRecordVideoActionSlimInfo> createGetReactionRecordVideoActionResponseGetReactionRecordVideoActionResult(ReactionRecordVideoActionSlimInfo value) {
-        return new JAXBElement<>(_GetReactionRecordVideoActionResponseGetReactionRecordVideoActionResult_QNAME, ReactionRecordVideoActionSlimInfo.class, GetReactionRecordVideoActionResponse.class, value);
+        return new JAXBElement<ReactionRecordVideoActionSlimInfo>(_GetReactionRecordVideoActionResponseGetReactionRecordVideoActionResult_QNAME, ReactionRecordVideoActionSlimInfo.class, GetReactionRecordVideoActionResponse.class, value);
     }
 
     /**
@@ -15092,7 +12626,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "reportIdentity", scope = GetReports.class)
     public JAXBElement<String> createGetReportsReportIdentity(String value) {
-        return new JAXBElement<>(_FindReportsReportIdentity_QNAME, String.class, GetReports.class, value);
+        return new JAXBElement<String>(_FindReportsReportIdentity_QNAME, String.class, GetReports.class, value);
     }
 
     /**
@@ -15105,7 +12639,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReportsResult", scope = GetReportsResponse.class)
     public JAXBElement<ArrayOfReportSlimInfo> createGetReportsResponseGetReportsResult(ArrayOfReportSlimInfo value) {
-        return new JAXBElement<>(_GetReportsResponseGetReportsResult_QNAME, ArrayOfReportSlimInfo.class, GetReportsResponse.class, value);
+        return new JAXBElement<ArrayOfReportSlimInfo>(_GetReportsResponseGetReportsResult_QNAME, ArrayOfReportSlimInfo.class, GetReportsResponse.class, value);
     }
 
     /**
@@ -15118,7 +12652,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = GetVariable.class)
     public JAXBElement<String> createGetVariableName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, GetVariable.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, GetVariable.class, value);
     }
 
     /**
@@ -15131,7 +12665,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetVariableResult", scope = GetVariableResponse.class)
     public JAXBElement<VariableInfo> createGetVariableResponseGetVariableResult(VariableInfo value) {
-        return new JAXBElement<>(_GetVariableResponseGetVariableResult_QNAME, VariableInfo.class, GetVariableResponse.class, value);
+        return new JAXBElement<VariableInfo>(_GetVariableResponseGetVariableResult_QNAME, VariableInfo.class, GetVariableResponse.class, value);
     }
 
     /**
@@ -15144,7 +12678,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetChildrenNetsResult", scope = GetChildrenNetsResponse.class)
     public JAXBElement<ArrayOfLNetInfo> createGetChildrenNetsResponseGetChildrenNetsResult(ArrayOfLNetInfo value) {
-        return new JAXBElement<>(_GetChildrenNetsResponseGetChildrenNetsResult_QNAME, ArrayOfLNetInfo.class, GetChildrenNetsResponse.class, value);
+        return new JAXBElement<ArrayOfLNetInfo>(_GetChildrenNetsResponseGetChildrenNetsResult_QNAME, ArrayOfLNetInfo.class, GetChildrenNetsResponse.class, value);
     }
 
     /**
@@ -15157,7 +12691,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAllNetsResult", scope = GetAllNetsResponse.class)
     public JAXBElement<ArrayOfLNetInfo> createGetAllNetsResponseGetAllNetsResult(ArrayOfLNetInfo value) {
-        return new JAXBElement<>(_GetAllNetsResponseGetAllNetsResult_QNAME, ArrayOfLNetInfo.class, GetAllNetsResponse.class, value);
+        return new JAXBElement<ArrayOfLNetInfo>(_GetAllNetsResponseGetAllNetsResult_QNAME, ArrayOfLNetInfo.class, GetAllNetsResponse.class, value);
     }
 
     /**
@@ -15170,7 +12704,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLocalNetResult", scope = GetLocalNetResponse.class)
     public JAXBElement<LNetInfo> createGetLocalNetResponseGetLocalNetResult(LNetInfo value) {
-        return new JAXBElement<>(_GetLocalNetResponseGetLocalNetResult_QNAME, LNetInfo.class, GetLocalNetResponse.class, value);
+        return new JAXBElement<LNetInfo>(_GetLocalNetResponseGetLocalNetResult_QNAME, LNetInfo.class, GetLocalNetResponse.class, value);
     }
 
     /**
@@ -15183,7 +12717,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetNetServersResult", scope = GetNetServersResponse.class)
     public JAXBElement<ArrayOfLServerInfo> createGetNetServersResponseGetNetServersResult(ArrayOfLServerInfo value) {
-        return new JAXBElement<>(_GetNetServersResponseGetNetServersResult_QNAME, ArrayOfLServerInfo.class, GetNetServersResponse.class, value);
+        return new JAXBElement<ArrayOfLServerInfo>(_GetNetServersResponseGetNetServersResult_QNAME, ArrayOfLServerInfo.class, GetNetServersResponse.class, value);
     }
 
     /**
@@ -15196,7 +12730,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetServerResult", scope = GetServerResponse.class)
     public JAXBElement<LServerInfo> createGetServerResponseGetServerResult(LServerInfo value) {
-        return new JAXBElement<>(_GetServerResponseGetServerResult_QNAME, LServerInfo.class, GetServerResponse.class, value);
+        return new JAXBElement<LServerInfo>(_GetServerResponseGetServerResult_QNAME, LServerInfo.class, GetServerResponse.class, value);
     }
 
     /**
@@ -15209,7 +12743,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetRootServerDriversResult", scope = GetRootServerDriversResponse.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createGetRootServerDriversResponseGetRootServerDriversResult(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_GetRootServerDriversResponseGetRootServerDriversResult_QNAME, ArrayOfLDriverFullInfo.class, GetRootServerDriversResponse.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_GetRootServerDriversResponseGetRootServerDriversResult_QNAME, ArrayOfLDriverFullInfo.class, GetRootServerDriversResponse.class, value);
     }
 
     /**
@@ -15222,7 +12756,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverType", scope = GetDriversByType.class)
     public JAXBElement<String> createGetDriversByTypeDriverType(String value) {
-        return new JAXBElement<>(_GetDriversByTypeDriverType_QNAME, String.class, GetDriversByType.class, value);
+        return new JAXBElement<String>(_GetDriversByTypeDriverType_QNAME, String.class, GetDriversByType.class, value);
     }
 
     /**
@@ -15235,7 +12769,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "property", scope = GetDriversByType.class)
     public JAXBElement<LProperty> createGetDriversByTypeProperty(LProperty value) {
-        return new JAXBElement<>(_GetDriversByTypeProperty_QNAME, LProperty.class, GetDriversByType.class, value);
+        return new JAXBElement<LProperty>(_GetDriversByTypeProperty_QNAME, LProperty.class, GetDriversByType.class, value);
     }
 
     /**
@@ -15248,7 +12782,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDriversByTypeResult", scope = GetDriversByTypeResponse.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createGetDriversByTypeResponseGetDriversByTypeResult(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_GetDriversByTypeResponseGetDriversByTypeResult_QNAME, ArrayOfLDriverFullInfo.class, GetDriversByTypeResponse.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_GetDriversByTypeResponseGetDriversByTypeResult_QNAME, ArrayOfLDriverFullInfo.class, GetDriversByTypeResponse.class, value);
     }
 
     /**
@@ -15261,7 +12795,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workplaceModuleId", scope = GetServerDriversFullInfo.class)
     public JAXBElement<String> createGetServerDriversFullInfoWorkplaceModuleId(String value) {
-        return new JAXBElement<>(_GetServerDriversFullInfoWorkplaceModuleId_QNAME, String.class, GetServerDriversFullInfo.class, value);
+        return new JAXBElement<String>(_GetServerDriversFullInfoWorkplaceModuleId_QNAME, String.class, GetServerDriversFullInfo.class, value);
     }
 
     /**
@@ -15274,7 +12808,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetServerDriversFullInfoResult", scope = GetServerDriversFullInfoResponse.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createGetServerDriversFullInfoResponseGetServerDriversFullInfoResult(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_GetServerDriversFullInfoResponseGetServerDriversFullInfoResult_QNAME, ArrayOfLDriverFullInfo.class, GetServerDriversFullInfoResponse.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_GetServerDriversFullInfoResponseGetServerDriversFullInfoResult_QNAME, ArrayOfLDriverFullInfo.class, GetServerDriversFullInfoResponse.class, value);
     }
 
     /**
@@ -15287,7 +12821,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetNetworkChangesResult", scope = GetNetworkChangesResponse.class)
     public JAXBElement<LNetworkChanges> createGetNetworkChangesResponseGetNetworkChangesResult(LNetworkChanges value) {
-        return new JAXBElement<>(_GetNetworkChangesResponseGetNetworkChangesResult_QNAME, LNetworkChanges.class, GetNetworkChangesResponse.class, value);
+        return new JAXBElement<LNetworkChanges>(_GetNetworkChangesResponseGetNetworkChangesResult_QNAME, LNetworkChanges.class, GetNetworkChangesResponse.class, value);
     }
 
     /**
@@ -15300,7 +12834,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "command", scope = PutNotify.class)
     public JAXBElement<NotificationState> createPutNotifyCommand(NotificationState value) {
-        return new JAXBElement<>(_PutNotifyCommand_QNAME, NotificationState.class, PutNotify.class, value);
+        return new JAXBElement<NotificationState>(_PutNotifyCommand_QNAME, NotificationState.class, PutNotify.class, value);
     }
 
     /**
@@ -15313,7 +12847,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "id", scope = PutNotify.class)
     public JAXBElement<String> createPutNotifyId(String value) {
-        return new JAXBElement<>(_PutNotifyId_QNAME, String.class, PutNotify.class, value);
+        return new JAXBElement<String>(_PutNotifyId_QNAME, String.class, PutNotify.class, value);
     }
 
     /**
@@ -15326,7 +12860,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "PutNotifyResult", scope = PutNotifyResponse.class)
     public JAXBElement<String> createPutNotifyResponsePutNotifyResult(String value) {
-        return new JAXBElement<>(_PutNotifyResponsePutNotifyResult_QNAME, String.class, PutNotifyResponse.class, value);
+        return new JAXBElement<String>(_PutNotifyResponsePutNotifyResult_QNAME, String.class, PutNotifyResponse.class, value);
     }
 
     /**
@@ -15339,7 +12873,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetNotifyResult", scope = GetNotifyResponse.class)
     public JAXBElement<NotificationState> createGetNotifyResponseGetNotifyResult(NotificationState value) {
-        return new JAXBElement<>(_GetNotifyResponseGetNotifyResult_QNAME, NotificationState.class, GetNotifyResponse.class, value);
+        return new JAXBElement<NotificationState>(_GetNotifyResponseGetNotifyResult_QNAME, NotificationState.class, GetNotifyResponse.class, value);
     }
 
     /**
@@ -15352,7 +12886,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "command", scope = FindNotify.class)
     public JAXBElement<String> createFindNotifyCommand(String value) {
-        return new JAXBElement<>(_PutNotifyCommand_QNAME, String.class, FindNotify.class, value);
+        return new JAXBElement<String>(_PutNotifyCommand_QNAME, String.class, FindNotify.class, value);
     }
 
     /**
@@ -15365,7 +12899,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindNotifyResult", scope = FindNotifyResponse.class)
     public JAXBElement<ArrayOfguid> createFindNotifyResponseFindNotifyResult(ArrayOfguid value) {
-        return new JAXBElement<>(_FindNotifyResponseFindNotifyResult_QNAME, ArrayOfguid.class, FindNotifyResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_FindNotifyResponseFindNotifyResult_QNAME, ArrayOfguid.class, FindNotifyResponse.class, value);
     }
 
     /**
@@ -15378,7 +12912,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDriverResult", scope = GetDriverResponse.class)
     public JAXBElement<LDriverFullInfo> createGetDriverResponseGetDriverResult(LDriverFullInfo value) {
-        return new JAXBElement<>(_GetDriverResponseGetDriverResult_QNAME, LDriverFullInfo.class, GetDriverResponse.class, value);
+        return new JAXBElement<LDriverFullInfo>(_GetDriverResponseGetDriverResult_QNAME, LDriverFullInfo.class, GetDriverResponse.class, value);
     }
 
     /**
@@ -15391,7 +12925,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLogMessageTypesResult", scope = GetLogMessageTypesResponse.class)
     public JAXBElement<ArrayOfLogMessageTypeSlimInfo> createGetLogMessageTypesResponseGetLogMessageTypesResult(ArrayOfLogMessageTypeSlimInfo value) {
-        return new JAXBElement<>(_GetLogMessageTypesResponseGetLogMessageTypesResult_QNAME, ArrayOfLogMessageTypeSlimInfo.class, GetLogMessageTypesResponse.class, value);
+        return new JAXBElement<ArrayOfLogMessageTypeSlimInfo>(_GetLogMessageTypesResponseGetLogMessageTypesResult_QNAME, ArrayOfLogMessageTypeSlimInfo.class, GetLogMessageTypesResponse.class, value);
     }
 
     /**
@@ -15404,7 +12938,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLogMessageSubtypesResult", scope = GetLogMessageSubtypesResponse.class)
     public JAXBElement<ArrayOfLogMessageSubtypeSlimInfo> createGetLogMessageSubtypesResponseGetLogMessageSubtypesResult(ArrayOfLogMessageSubtypeSlimInfo value) {
-        return new JAXBElement<>(_GetLogMessageSubtypesResponseGetLogMessageSubtypesResult_QNAME, ArrayOfLogMessageSubtypeSlimInfo.class, GetLogMessageSubtypesResponse.class, value);
+        return new JAXBElement<ArrayOfLogMessageSubtypeSlimInfo>(_GetLogMessageSubtypesResponseGetLogMessageSubtypesResult_QNAME, ArrayOfLogMessageSubtypeSlimInfo.class, GetLogMessageSubtypesResponse.class, value);
     }
 
     /**
@@ -15417,7 +12951,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgTypes", scope = GetEvents.class)
     public JAXBElement<ArrayOfLogMsgType> createGetEventsMsgTypes(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetEvents.class, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetEvents.class, value);
     }
 
     /**
@@ -15430,7 +12964,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgSubTypes", scope = GetEvents.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetEventsMsgSubTypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetEvents.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetEvents.class, value);
     }
 
     /**
@@ -15443,7 +12977,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs", scope = GetEvents.class)
     public JAXBElement<ArrayOfguid> createGetEventsSubjectIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetEvents.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetEvents.class, value);
     }
 
     /**
@@ -15456,7 +12990,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEventsResult", scope = GetEventsResponse.class)
     public JAXBElement<LogData> createGetEventsResponseGetEventsResult(LogData value) {
-        return new JAXBElement<>(_GetEventsResponseGetEventsResult_QNAME, LogData.class, GetEventsResponse.class, value);
+        return new JAXBElement<LogData>(_GetEventsResponseGetEventsResult_QNAME, LogData.class, GetEventsResponse.class, value);
     }
 
     /**
@@ -15469,7 +13003,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgTypes", scope = GetLastEvent.class)
     public JAXBElement<ArrayOfLogMsgType> createGetLastEventMsgTypes(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetLastEvent.class, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetLastEvent.class, value);
     }
 
     /**
@@ -15482,7 +13016,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgSubTypes", scope = GetLastEvent.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetLastEventMsgSubTypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetLastEvent.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetLastEvent.class, value);
     }
 
     /**
@@ -15495,7 +13029,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs", scope = GetLastEvent.class)
     public JAXBElement<ArrayOfguid> createGetLastEventSubjectIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetLastEvent.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetLastEvent.class, value);
     }
 
     /**
@@ -15508,7 +13042,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLastEventResult", scope = GetLastEventResponse.class)
     public JAXBElement<LogData> createGetLastEventResponseGetLastEventResult(LogData value) {
-        return new JAXBElement<>(_GetLastEventResponseGetLastEventResult_QNAME, LogData.class, GetLastEventResponse.class, value);
+        return new JAXBElement<LogData>(_GetLastEventResponseGetLastEventResult_QNAME, LogData.class, GetLastEventResponse.class, value);
     }
 
     /**
@@ -15521,7 +13055,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgTypes", scope = GetEventsByDeviceIDs.class)
     public JAXBElement<ArrayOfLogMsgType> createGetEventsByDeviceIDsMsgTypes(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetEventsByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetEventsByDeviceIDs.class, value);
     }
 
     /**
@@ -15534,7 +13068,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgSubTypes", scope = GetEventsByDeviceIDs.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetEventsByDeviceIDsMsgSubTypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetEventsByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetEventsByDeviceIDs.class, value);
     }
 
     /**
@@ -15547,7 +13081,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "deviceIDs", scope = GetEventsByDeviceIDs.class)
     public JAXBElement<ArrayOfguid> createGetEventsByDeviceIDsDeviceIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsByDeviceIDsDeviceIDs_QNAME, ArrayOfguid.class, GetEventsByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsByDeviceIDsDeviceIDs_QNAME, ArrayOfguid.class, GetEventsByDeviceIDs.class, value);
     }
 
     /**
@@ -15560,7 +13094,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs", scope = GetEventsByDeviceIDs.class)
     public JAXBElement<ArrayOfguid> createGetEventsByDeviceIDsSubjectIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetEventsByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetEventsByDeviceIDs.class, value);
     }
 
     /**
@@ -15573,7 +13107,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEventsByDeviceIDsResult", scope = GetEventsByDeviceIDsResponse.class)
     public JAXBElement<LogData> createGetEventsByDeviceIDsResponseGetEventsByDeviceIDsResult(LogData value) {
-        return new JAXBElement<>(_GetEventsByDeviceIDsResponseGetEventsByDeviceIDsResult_QNAME, LogData.class, GetEventsByDeviceIDsResponse.class, value);
+        return new JAXBElement<LogData>(_GetEventsByDeviceIDsResponseGetEventsByDeviceIDsResult_QNAME, LogData.class, GetEventsByDeviceIDsResponse.class, value);
     }
 
     /**
@@ -15586,7 +13120,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgTypes", scope = GetFilteredEvents.class)
     public JAXBElement<ArrayOfLogMsgType> createGetFilteredEventsMsgTypes(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetFilteredEvents.class, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetFilteredEvents.class, value);
     }
 
     /**
@@ -15599,7 +13133,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgSubTypes", scope = GetFilteredEvents.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetFilteredEventsMsgSubTypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetFilteredEvents.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetFilteredEvents.class, value);
     }
 
     /**
@@ -15612,7 +13146,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "deviceIDs", scope = GetFilteredEvents.class)
     public JAXBElement<ArrayOfguid> createGetFilteredEventsDeviceIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsByDeviceIDsDeviceIDs_QNAME, ArrayOfguid.class, GetFilteredEvents.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsByDeviceIDsDeviceIDs_QNAME, ArrayOfguid.class, GetFilteredEvents.class, value);
     }
 
     /**
@@ -15625,7 +13159,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs", scope = GetFilteredEvents.class)
     public JAXBElement<ArrayOfguid> createGetFilteredEventsSubjectIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetFilteredEvents.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetFilteredEvents.class, value);
     }
 
     /**
@@ -15638,7 +13172,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs2", scope = GetFilteredEvents.class)
     public JAXBElement<ArrayOfguid> createGetFilteredEventsSubjectIDs2(ArrayOfguid value) {
-        return new JAXBElement<>(_GetFilteredEventsSubjectIDs2_QNAME, ArrayOfguid.class, GetFilteredEvents.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetFilteredEventsSubjectIDs2_QNAME, ArrayOfguid.class, GetFilteredEvents.class, value);
     }
 
     /**
@@ -15651,7 +13185,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "isShowRemovedEmployes", scope = GetFilteredEvents.class)
     public JAXBElement<Boolean> createGetFilteredEventsIsShowRemovedEmployes(Boolean value) {
-        return new JAXBElement<>(_GetFilteredEventsIsShowRemovedEmployes_QNAME, Boolean.class, GetFilteredEvents.class, value);
+        return new JAXBElement<Boolean>(_GetFilteredEventsIsShowRemovedEmployes_QNAME, Boolean.class, GetFilteredEvents.class, value);
     }
 
     /**
@@ -15664,7 +13198,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFilteredEventsResult", scope = GetFilteredEventsResponse.class)
     public JAXBElement<LogData> createGetFilteredEventsResponseGetFilteredEventsResult(LogData value) {
-        return new JAXBElement<>(_GetFilteredEventsResponseGetFilteredEventsResult_QNAME, LogData.class, GetFilteredEventsResponse.class, value);
+        return new JAXBElement<LogData>(_GetFilteredEventsResponseGetFilteredEventsResult_QNAME, LogData.class, GetFilteredEventsResponse.class, value);
     }
 
     /**
@@ -15677,7 +13211,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgTypes", scope = GetLastEventByDeviceIDs.class)
     public JAXBElement<ArrayOfLogMsgType> createGetLastEventByDeviceIDsMsgTypes(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetLastEventByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetLastEventByDeviceIDs.class, value);
     }
 
     /**
@@ -15690,7 +13224,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgSubTypes", scope = GetLastEventByDeviceIDs.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetLastEventByDeviceIDsMsgSubTypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetLastEventByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetLastEventByDeviceIDs.class, value);
     }
 
     /**
@@ -15703,7 +13237,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "deviceIDs", scope = GetLastEventByDeviceIDs.class)
     public JAXBElement<ArrayOfguid> createGetLastEventByDeviceIDsDeviceIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsByDeviceIDsDeviceIDs_QNAME, ArrayOfguid.class, GetLastEventByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsByDeviceIDsDeviceIDs_QNAME, ArrayOfguid.class, GetLastEventByDeviceIDs.class, value);
     }
 
     /**
@@ -15716,7 +13250,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs", scope = GetLastEventByDeviceIDs.class)
     public JAXBElement<ArrayOfguid> createGetLastEventByDeviceIDsSubjectIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetLastEventByDeviceIDs.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetLastEventByDeviceIDs.class, value);
     }
 
     /**
@@ -15729,7 +13263,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLastEventByDeviceIDsResult", scope = GetLastEventByDeviceIDsResponse.class)
     public JAXBElement<LogData> createGetLastEventByDeviceIDsResponseGetLastEventByDeviceIDsResult(LogData value) {
-        return new JAXBElement<>(_GetLastEventByDeviceIDsResponseGetLastEventByDeviceIDsResult_QNAME, LogData.class, GetLastEventByDeviceIDsResponse.class, value);
+        return new JAXBElement<LogData>(_GetLastEventByDeviceIDsResponseGetLastEventByDeviceIDsResult_QNAME, LogData.class, GetLastEventByDeviceIDsResponse.class, value);
     }
 
     /**
@@ -15742,7 +13276,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgTypes", scope = GetEventsByDeviceTypes.class)
     public JAXBElement<ArrayOfLogMsgType> createGetEventsByDeviceTypesMsgTypes(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetEventsByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetEventsByDeviceTypes.class, value);
     }
 
     /**
@@ -15755,7 +13289,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgSubTypes", scope = GetEventsByDeviceTypes.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetEventsByDeviceTypesMsgSubTypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetEventsByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetEventsByDeviceTypes.class, value);
     }
 
     /**
@@ -15768,7 +13302,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "deviceTypes", scope = GetEventsByDeviceTypes.class)
     public JAXBElement<ArrayOfstring> createGetEventsByDeviceTypesDeviceTypes(ArrayOfstring value) {
-        return new JAXBElement<>(_GetEventsByDeviceTypesDeviceTypes_QNAME, ArrayOfstring.class, GetEventsByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfstring>(_GetEventsByDeviceTypesDeviceTypes_QNAME, ArrayOfstring.class, GetEventsByDeviceTypes.class, value);
     }
 
     /**
@@ -15781,7 +13315,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs", scope = GetEventsByDeviceTypes.class)
     public JAXBElement<ArrayOfguid> createGetEventsByDeviceTypesSubjectIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetEventsByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetEventsByDeviceTypes.class, value);
     }
 
     /**
@@ -15794,7 +13328,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEventsByDeviceTypesResult", scope = GetEventsByDeviceTypesResponse.class)
     public JAXBElement<LogData> createGetEventsByDeviceTypesResponseGetEventsByDeviceTypesResult(LogData value) {
-        return new JAXBElement<>(_GetEventsByDeviceTypesResponseGetEventsByDeviceTypesResult_QNAME, LogData.class, GetEventsByDeviceTypesResponse.class, value);
+        return new JAXBElement<LogData>(_GetEventsByDeviceTypesResponseGetEventsByDeviceTypesResult_QNAME, LogData.class, GetEventsByDeviceTypesResponse.class, value);
     }
 
     /**
@@ -15807,7 +13341,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgTypes", scope = GetLastEventByDeviceTypes.class)
     public JAXBElement<ArrayOfLogMsgType> createGetLastEventByDeviceTypesMsgTypes(ArrayOfLogMsgType value) {
-        return new JAXBElement<>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetLastEventByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfLogMsgType>(_GetEventsMsgTypes_QNAME, ArrayOfLogMsgType.class, GetLastEventByDeviceTypes.class, value);
     }
 
     /**
@@ -15820,7 +13354,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "msgSubTypes", scope = GetLastEventByDeviceTypes.class)
     public JAXBElement<ArrayOfLogMsgSubType> createGetLastEventByDeviceTypesMsgSubTypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetLastEventByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_GetEventsMsgSubTypes_QNAME, ArrayOfLogMsgSubType.class, GetLastEventByDeviceTypes.class, value);
     }
 
     /**
@@ -15833,7 +13367,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "deviceTypes", scope = GetLastEventByDeviceTypes.class)
     public JAXBElement<ArrayOfstring> createGetLastEventByDeviceTypesDeviceTypes(ArrayOfstring value) {
-        return new JAXBElement<>(_GetEventsByDeviceTypesDeviceTypes_QNAME, ArrayOfstring.class, GetLastEventByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfstring>(_GetEventsByDeviceTypesDeviceTypes_QNAME, ArrayOfstring.class, GetLastEventByDeviceTypes.class, value);
     }
 
     /**
@@ -15846,7 +13380,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subjectIDs", scope = GetLastEventByDeviceTypes.class)
     public JAXBElement<ArrayOfguid> createGetLastEventByDeviceTypesSubjectIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetLastEventByDeviceTypes.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetEventsSubjectIDs_QNAME, ArrayOfguid.class, GetLastEventByDeviceTypes.class, value);
     }
 
     /**
@@ -15859,7 +13393,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetLastEventByDeviceTypesResult", scope = GetLastEventByDeviceTypesResponse.class)
     public JAXBElement<LogData> createGetLastEventByDeviceTypesResponseGetLastEventByDeviceTypesResult(LogData value) {
-        return new JAXBElement<>(_GetLastEventByDeviceTypesResponseGetLastEventByDeviceTypesResult_QNAME, LogData.class, GetLastEventByDeviceTypesResponse.class, value);
+        return new JAXBElement<LogData>(_GetLastEventByDeviceTypesResponseGetLastEventByDeviceTypesResult_QNAME, LogData.class, GetLastEventByDeviceTypesResponse.class, value);
     }
 
     /**
@@ -15872,7 +13406,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "cellDrivesIds", scope = GetPOBCell2DriverRelations.class)
     public JAXBElement<ArrayOfguid> createGetPOBCell2DriverRelationsCellDrivesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetPOBCell2DriverRelationsCellDrivesIds_QNAME, ArrayOfguid.class, GetPOBCell2DriverRelations.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetPOBCell2DriverRelationsCellDrivesIds_QNAME, ArrayOfguid.class, GetPOBCell2DriverRelations.class, value);
     }
 
     /**
@@ -15885,7 +13419,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPOBCell2DriverRelationsResult", scope = GetPOBCell2DriverRelationsResponse.class)
     public JAXBElement<ArrayOfPOBRelation> createGetPOBCell2DriverRelationsResponseGetPOBCell2DriverRelationsResult(ArrayOfPOBRelation value) {
-        return new JAXBElement<>(_GetPOBCell2DriverRelationsResponseGetPOBCell2DriverRelationsResult_QNAME, ArrayOfPOBRelation.class, GetPOBCell2DriverRelationsResponse.class, value);
+        return new JAXBElement<ArrayOfPOBRelation>(_GetPOBCell2DriverRelationsResponseGetPOBCell2DriverRelationsResult_QNAME, ArrayOfPOBRelation.class, GetPOBCell2DriverRelationsResponse.class, value);
     }
 
     /**
@@ -15898,7 +13432,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "providerId", scope = CheckEbsBiometricStatus.class)
     public JAXBElement<String> createCheckEbsBiometricStatusProviderId(String value) {
-        return new JAXBElement<>(_CheckEbsBiometricStatusProviderId_QNAME, String.class, CheckEbsBiometricStatus.class, value);
+        return new JAXBElement<String>(_CheckEbsBiometricStatusProviderId_QNAME, String.class, CheckEbsBiometricStatus.class, value);
     }
 
     /**
@@ -15911,7 +13445,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "providerPersonId", scope = CheckEbsBiometricStatus.class)
     public JAXBElement<String> createCheckEbsBiometricStatusProviderPersonId(String value) {
-        return new JAXBElement<>(_CheckEbsBiometricStatusProviderPersonId_QNAME, String.class, CheckEbsBiometricStatus.class, value);
+        return new JAXBElement<String>(_CheckEbsBiometricStatusProviderPersonId_QNAME, String.class, CheckEbsBiometricStatus.class, value);
     }
 
     /**
@@ -15924,7 +13458,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "CheckEbsBiometricStatusResult", scope = CheckEbsBiometricStatusResponse.class)
     public JAXBElement<EbsBiometricStatusResult> createCheckEbsBiometricStatusResponseCheckEbsBiometricStatusResult(EbsBiometricStatusResult value) {
-        return new JAXBElement<>(_CheckEbsBiometricStatusResponseCheckEbsBiometricStatusResult_QNAME, EbsBiometricStatusResult.class, CheckEbsBiometricStatusResponse.class, value);
+        return new JAXBElement<EbsBiometricStatusResult>(_CheckEbsBiometricStatusResponseCheckEbsBiometricStatusResult_QNAME, EbsBiometricStatusResult.class, CheckEbsBiometricStatusResponse.class, value);
     }
 
     /**
@@ -15937,7 +13471,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIds", scope = GetRelayBlocksStatus.class)
     public JAXBElement<ArrayOfguid> createGetRelayBlocksStatusDriverIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, GetRelayBlocksStatus.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, GetRelayBlocksStatus.class, value);
     }
 
     /**
@@ -15950,7 +13484,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetRelayBlocksStatusResult", scope = GetRelayBlocksStatusResponse.class)
     public JAXBElement<ArrayOfRelayBlockStatus> createGetRelayBlocksStatusResponseGetRelayBlocksStatusResult(ArrayOfRelayBlockStatus value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusResponseGetRelayBlocksStatusResult_QNAME, ArrayOfRelayBlockStatus.class, GetRelayBlocksStatusResponse.class, value);
+        return new JAXBElement<ArrayOfRelayBlockStatus>(_GetRelayBlocksStatusResponseGetRelayBlocksStatusResult_QNAME, ArrayOfRelayBlockStatus.class, GetRelayBlocksStatusResponse.class, value);
     }
 
     /**
@@ -15963,7 +13497,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUserResult", scope = GetUserResponse.class)
     public JAXBElement<LUser> createGetUserResponseGetUserResult(LUser value) {
-        return new JAXBElement<>(_GetUserResponseGetUserResult_QNAME, LUser.class, GetUserResponse.class, value);
+        return new JAXBElement<LUser>(_GetUserResponseGetUserResult_QNAME, LUser.class, GetUserResponse.class, value);
     }
 
     /**
@@ -15976,7 +13510,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = GetOperator.class)
     public JAXBElement<String> createGetOperatorLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, GetOperator.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, GetOperator.class, value);
     }
 
     /**
@@ -15989,7 +13523,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetOperatorResult", scope = GetOperatorResponse.class)
     public JAXBElement<LUser> createGetOperatorResponseGetOperatorResult(LUser value) {
-        return new JAXBElement<>(_GetOperatorResponseGetOperatorResult_QNAME, LUser.class, GetOperatorResponse.class, value);
+        return new JAXBElement<LUser>(_GetOperatorResponseGetOperatorResult_QNAME, LUser.class, GetOperatorResponse.class, value);
     }
 
     /**
@@ -16002,7 +13536,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUsersResult", scope = GetUsersResponse.class)
     public JAXBElement<LUsersData> createGetUsersResponseGetUsersResult(LUsersData value) {
-        return new JAXBElement<>(_GetUsersResponseGetUsersResult_QNAME, LUsersData.class, GetUsersResponse.class, value);
+        return new JAXBElement<LUsersData>(_GetUsersResponseGetUsersResult_QNAME, LUsersData.class, GetUsersResponse.class, value);
     }
 
     /**
@@ -16015,7 +13549,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUserGroupResult", scope = GetUserGroupResponse.class)
     public JAXBElement<LUserGroup> createGetUserGroupResponseGetUserGroupResult(LUserGroup value) {
-        return new JAXBElement<>(_GetUserGroupResponseGetUserGroupResult_QNAME, LUserGroup.class, GetUserGroupResponse.class, value);
+        return new JAXBElement<LUserGroup>(_GetUserGroupResponseGetUserGroupResult_QNAME, LUserGroup.class, GetUserGroupResponse.class, value);
     }
 
     /**
@@ -16028,7 +13562,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUserGroupsResult", scope = GetUserGroupsResponse.class)
     public JAXBElement<LUserGroupsData> createGetUserGroupsResponseGetUserGroupsResult(LUserGroupsData value) {
-        return new JAXBElement<>(_GetUserGroupsResponseGetUserGroupsResult_QNAME, LUserGroupsData.class, GetUserGroupsResponse.class, value);
+        return new JAXBElement<LUserGroupsData>(_GetUserGroupsResponseGetUserGroupsResult_QNAME, LUserGroupsData.class, GetUserGroupsResponse.class, value);
     }
 
     /**
@@ -16041,7 +13575,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUserGroupsByUserIDResult", scope = GetUserGroupsByUserIDResponse.class)
     public JAXBElement<LUserGroupsData> createGetUserGroupsByUserIDResponseGetUserGroupsByUserIDResult(LUserGroupsData value) {
-        return new JAXBElement<>(_GetUserGroupsByUserIDResponseGetUserGroupsByUserIDResult_QNAME, LUserGroupsData.class, GetUserGroupsByUserIDResponse.class, value);
+        return new JAXBElement<LUserGroupsData>(_GetUserGroupsByUserIDResponseGetUserGroupsByUserIDResult_QNAME, LUserGroupsData.class, GetUserGroupsByUserIDResponse.class, value);
     }
 
     /**
@@ -16054,7 +13588,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetUsersByUserGroupIDResult", scope = GetUsersByUserGroupIDResponse.class)
     public JAXBElement<LUsersData> createGetUsersByUserGroupIDResponseGetUsersByUserGroupIDResult(LUsersData value) {
-        return new JAXBElement<>(_GetUsersByUserGroupIDResponseGetUsersByUserGroupIDResult_QNAME, LUsersData.class, GetUsersByUserGroupIDResponse.class, value);
+        return new JAXBElement<LUsersData>(_GetUsersByUserGroupIDResponseGetUsersByUserGroupIDResult_QNAME, LUsersData.class, GetUsersByUserGroupIDResponse.class, value);
     }
 
     /**
@@ -16067,7 +13601,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetClaimResult", scope = GetClaimResponse.class)
     public JAXBElement<ClaimInfo> createGetClaimResponseGetClaimResult(ClaimInfo value) {
-        return new JAXBElement<>(_GetClaimResponseGetClaimResult_QNAME, ClaimInfo.class, GetClaimResponse.class, value);
+        return new JAXBElement<ClaimInfo>(_GetClaimResponseGetClaimResult_QNAME, ClaimInfo.class, GetClaimResponse.class, value);
     }
 
     /**
@@ -16080,7 +13614,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetClaimsForUserGroupResult", scope = GetClaimsForUserGroupResponse.class)
     public JAXBElement<ArrayOfClaimInfo> createGetClaimsForUserGroupResponseGetClaimsForUserGroupResult(ArrayOfClaimInfo value) {
-        return new JAXBElement<>(_GetClaimsForUserGroupResponseGetClaimsForUserGroupResult_QNAME, ArrayOfClaimInfo.class, GetClaimsForUserGroupResponse.class, value);
+        return new JAXBElement<ArrayOfClaimInfo>(_GetClaimsForUserGroupResponseGetClaimsForUserGroupResult_QNAME, ArrayOfClaimInfo.class, GetClaimsForUserGroupResponse.class, value);
     }
 
     /**
@@ -16093,7 +13627,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetClaimsForUserByUserIdResult", scope = GetClaimsForUserByUserIdResponse.class)
     public JAXBElement<ArrayOfClaimInfo> createGetClaimsForUserByUserIdResponseGetClaimsForUserByUserIdResult(ArrayOfClaimInfo value) {
-        return new JAXBElement<>(_GetClaimsForUserByUserIdResponseGetClaimsForUserByUserIdResult_QNAME, ArrayOfClaimInfo.class, GetClaimsForUserByUserIdResponse.class, value);
+        return new JAXBElement<ArrayOfClaimInfo>(_GetClaimsForUserByUserIdResponseGetClaimsForUserByUserIdResult_QNAME, ArrayOfClaimInfo.class, GetClaimsForUserByUserIdResponse.class, value);
     }
 
     /**
@@ -16106,7 +13640,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = GetClaimsForUserByUserLogin.class)
     public JAXBElement<String> createGetClaimsForUserByUserLoginLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, GetClaimsForUserByUserLogin.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, GetClaimsForUserByUserLogin.class, value);
     }
 
     /**
@@ -16119,7 +13653,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetClaimsForUserByUserLoginResult", scope = GetClaimsForUserByUserLoginResponse.class)
     public JAXBElement<ArrayOfClaimInfo> createGetClaimsForUserByUserLoginResponseGetClaimsForUserByUserLoginResult(ArrayOfClaimInfo value) {
-        return new JAXBElement<>(_GetClaimsForUserByUserLoginResponseGetClaimsForUserByUserLoginResult_QNAME, ArrayOfClaimInfo.class, GetClaimsForUserByUserLoginResponse.class, value);
+        return new JAXBElement<ArrayOfClaimInfo>(_GetClaimsForUserByUserLoginResponseGetClaimsForUserByUserLoginResult_QNAME, ArrayOfClaimInfo.class, GetClaimsForUserByUserLoginResponse.class, value);
     }
 
     /**
@@ -16132,7 +13666,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsDaySchedulesResult", scope = GetAcsDaySchedulesResponse.class)
     public JAXBElement<ArrayOfAcsDaySchedule> createGetAcsDaySchedulesResponseGetAcsDaySchedulesResult(ArrayOfAcsDaySchedule value) {
-        return new JAXBElement<>(_GetAcsDaySchedulesResponseGetAcsDaySchedulesResult_QNAME, ArrayOfAcsDaySchedule.class, GetAcsDaySchedulesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsDaySchedule>(_GetAcsDaySchedulesResponseGetAcsDaySchedulesResult_QNAME, ArrayOfAcsDaySchedule.class, GetAcsDaySchedulesResponse.class, value);
     }
 
     /**
@@ -16145,7 +13679,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsDaySchedulesByOwnerResult", scope = GetAcsDaySchedulesByOwnerResponse.class)
     public JAXBElement<ArrayOfAcsDaySchedule> createGetAcsDaySchedulesByOwnerResponseGetAcsDaySchedulesByOwnerResult(ArrayOfAcsDaySchedule value) {
-        return new JAXBElement<>(_GetAcsDaySchedulesByOwnerResponseGetAcsDaySchedulesByOwnerResult_QNAME, ArrayOfAcsDaySchedule.class, GetAcsDaySchedulesByOwnerResponse.class, value);
+        return new JAXBElement<ArrayOfAcsDaySchedule>(_GetAcsDaySchedulesByOwnerResponseGetAcsDaySchedulesByOwnerResult_QNAME, ArrayOfAcsDaySchedule.class, GetAcsDaySchedulesByOwnerResponse.class, value);
     }
 
     /**
@@ -16158,7 +13692,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsDayScheduleResult", scope = GetAcsDayScheduleResponse.class)
     public JAXBElement<AcsDaySchedule> createGetAcsDayScheduleResponseGetAcsDayScheduleResult(AcsDaySchedule value) {
-        return new JAXBElement<>(_GetAcsDayScheduleResponseGetAcsDayScheduleResult_QNAME, AcsDaySchedule.class, GetAcsDayScheduleResponse.class, value);
+        return new JAXBElement<AcsDaySchedule>(_GetAcsDayScheduleResponseGetAcsDayScheduleResult_QNAME, AcsDaySchedule.class, GetAcsDayScheduleResponse.class, value);
     }
 
     /**
@@ -16171,7 +13705,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsDayScheduleByOwnerResult", scope = GetAcsDayScheduleByOwnerResponse.class)
     public JAXBElement<AcsDaySchedule> createGetAcsDayScheduleByOwnerResponseGetAcsDayScheduleByOwnerResult(AcsDaySchedule value) {
-        return new JAXBElement<>(_GetAcsDayScheduleByOwnerResponseGetAcsDayScheduleByOwnerResult_QNAME, AcsDaySchedule.class, GetAcsDayScheduleByOwnerResponse.class, value);
+        return new JAXBElement<AcsDaySchedule>(_GetAcsDayScheduleByOwnerResponseGetAcsDayScheduleByOwnerResult_QNAME, AcsDaySchedule.class, GetAcsDayScheduleByOwnerResponse.class, value);
     }
 
     /**
@@ -16184,7 +13718,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsMultiDaySchedulesResult", scope = GetAcsMultiDaySchedulesResponse.class)
     public JAXBElement<ArrayOfAcsMultiDaySchedule> createGetAcsMultiDaySchedulesResponseGetAcsMultiDaySchedulesResult(ArrayOfAcsMultiDaySchedule value) {
-        return new JAXBElement<>(_GetAcsMultiDaySchedulesResponseGetAcsMultiDaySchedulesResult_QNAME, ArrayOfAcsMultiDaySchedule.class, GetAcsMultiDaySchedulesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsMultiDaySchedule>(_GetAcsMultiDaySchedulesResponseGetAcsMultiDaySchedulesResult_QNAME, ArrayOfAcsMultiDaySchedule.class, GetAcsMultiDaySchedulesResponse.class, value);
     }
 
     /**
@@ -16197,7 +13731,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsMultiDayScheduleResult", scope = GetAcsMultiDayScheduleResponse.class)
     public JAXBElement<AcsMultiDaySchedule> createGetAcsMultiDayScheduleResponseGetAcsMultiDayScheduleResult(AcsMultiDaySchedule value) {
-        return new JAXBElement<>(_GetAcsMultiDayScheduleResponseGetAcsMultiDayScheduleResult_QNAME, AcsMultiDaySchedule.class, GetAcsMultiDayScheduleResponse.class, value);
+        return new JAXBElement<AcsMultiDaySchedule>(_GetAcsMultiDayScheduleResponseGetAcsMultiDayScheduleResult_QNAME, AcsMultiDaySchedule.class, GetAcsMultiDayScheduleResponse.class, value);
     }
 
     /**
@@ -16210,7 +13744,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsWeekSlimSchedulesResult", scope = GetAcsWeekSlimSchedulesResponse.class)
     public JAXBElement<ArrayOfAcsWeekScheduleSlim> createGetAcsWeekSlimSchedulesResponseGetAcsWeekSlimSchedulesResult(ArrayOfAcsWeekScheduleSlim value) {
-        return new JAXBElement<>(_GetAcsWeekSlimSchedulesResponseGetAcsWeekSlimSchedulesResult_QNAME, ArrayOfAcsWeekScheduleSlim.class, GetAcsWeekSlimSchedulesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsWeekScheduleSlim>(_GetAcsWeekSlimSchedulesResponseGetAcsWeekSlimSchedulesResult_QNAME, ArrayOfAcsWeekScheduleSlim.class, GetAcsWeekSlimSchedulesResponse.class, value);
     }
 
     /**
@@ -16223,7 +13757,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsWeekFullSchedulesResult", scope = GetAcsWeekFullSchedulesResponse.class)
     public JAXBElement<ArrayOfAcsWeekScheduleFull> createGetAcsWeekFullSchedulesResponseGetAcsWeekFullSchedulesResult(ArrayOfAcsWeekScheduleFull value) {
-        return new JAXBElement<>(_GetAcsWeekFullSchedulesResponseGetAcsWeekFullSchedulesResult_QNAME, ArrayOfAcsWeekScheduleFull.class, GetAcsWeekFullSchedulesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsWeekScheduleFull>(_GetAcsWeekFullSchedulesResponseGetAcsWeekFullSchedulesResult_QNAME, ArrayOfAcsWeekScheduleFull.class, GetAcsWeekFullSchedulesResponse.class, value);
     }
 
     /**
@@ -16236,7 +13770,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsWeekScheduleResult", scope = GetAcsWeekScheduleResponse.class)
     public JAXBElement<AcsWeekScheduleFull> createGetAcsWeekScheduleResponseGetAcsWeekScheduleResult(AcsWeekScheduleFull value) {
-        return new JAXBElement<>(_GetAcsWeekScheduleResponseGetAcsWeekScheduleResult_QNAME, AcsWeekScheduleFull.class, GetAcsWeekScheduleResponse.class, value);
+        return new JAXBElement<AcsWeekScheduleFull>(_GetAcsWeekScheduleResponseGetAcsWeekScheduleResult_QNAME, AcsWeekScheduleFull.class, GetAcsWeekScheduleResponse.class, value);
     }
 
     /**
@@ -16249,7 +13783,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsCustomDaysResult", scope = GetAcsCustomDaysResponse.class)
     public JAXBElement<ArrayOfAcsCustomDay> createGetAcsCustomDaysResponseGetAcsCustomDaysResult(ArrayOfAcsCustomDay value) {
-        return new JAXBElement<>(_GetAcsCustomDaysResponseGetAcsCustomDaysResult_QNAME, ArrayOfAcsCustomDay.class, GetAcsCustomDaysResponse.class, value);
+        return new JAXBElement<ArrayOfAcsCustomDay>(_GetAcsCustomDaysResponseGetAcsCustomDaysResult_QNAME, ArrayOfAcsCustomDay.class, GetAcsCustomDaysResponse.class, value);
     }
 
     /**
@@ -16262,7 +13796,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsCustomDayResult", scope = GetAcsCustomDayResponse.class)
     public JAXBElement<AcsCustomDay> createGetAcsCustomDayResponseGetAcsCustomDayResult(AcsCustomDay value) {
-        return new JAXBElement<>(_GetAcsCustomDayResponseGetAcsCustomDayResult_QNAME, AcsCustomDay.class, GetAcsCustomDayResponse.class, value);
+        return new JAXBElement<AcsCustomDay>(_GetAcsCustomDayResponseGetAcsCustomDayResult_QNAME, AcsCustomDay.class, GetAcsCustomDayResponse.class, value);
     }
 
     /**
@@ -16275,7 +13809,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsWorkDaysWithTransferResult", scope = GetAcsWorkDaysWithTransferResponse.class)
     public JAXBElement<ArrayOfAcsWorkDayWithTransfer> createGetAcsWorkDaysWithTransferResponseGetAcsWorkDaysWithTransferResult(ArrayOfAcsWorkDayWithTransfer value) {
-        return new JAXBElement<>(_GetAcsWorkDaysWithTransferResponseGetAcsWorkDaysWithTransferResult_QNAME, ArrayOfAcsWorkDayWithTransfer.class, GetAcsWorkDaysWithTransferResponse.class, value);
+        return new JAXBElement<ArrayOfAcsWorkDayWithTransfer>(_GetAcsWorkDaysWithTransferResponseGetAcsWorkDaysWithTransferResult_QNAME, ArrayOfAcsWorkDayWithTransfer.class, GetAcsWorkDaysWithTransferResponse.class, value);
     }
 
     /**
@@ -16288,7 +13822,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsWorkDayWithTransferResult", scope = GetAcsWorkDayWithTransferResponse.class)
     public JAXBElement<AcsWorkDayWithTransfer> createGetAcsWorkDayWithTransferResponseGetAcsWorkDayWithTransferResult(AcsWorkDayWithTransfer value) {
-        return new JAXBElement<>(_GetAcsWorkDayWithTransferResponseGetAcsWorkDayWithTransferResult_QNAME, AcsWorkDayWithTransfer.class, GetAcsWorkDayWithTransferResponse.class, value);
+        return new JAXBElement<AcsWorkDayWithTransfer>(_GetAcsWorkDayWithTransferResponseGetAcsWorkDayWithTransferResult_QNAME, AcsWorkDayWithTransfer.class, GetAcsWorkDayWithTransferResponse.class, value);
     }
 
     /**
@@ -16301,7 +13835,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDictionaryElementResult", scope = GetDictionaryElementResponse.class)
     public JAXBElement<DictionaryElementInfo> createGetDictionaryElementResponseGetDictionaryElementResult(DictionaryElementInfo value) {
-        return new JAXBElement<>(_GetDictionaryElementResponseGetDictionaryElementResult_QNAME, DictionaryElementInfo.class, GetDictionaryElementResponse.class, value);
+        return new JAXBElement<DictionaryElementInfo>(_GetDictionaryElementResponseGetDictionaryElementResult_QNAME, DictionaryElementInfo.class, GetDictionaryElementResponse.class, value);
     }
 
     /**
@@ -16314,7 +13848,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDictionaryElementsResult", scope = GetDictionaryElementsResponse.class)
     public JAXBElement<DictionaryElementsInfoData> createGetDictionaryElementsResponseGetDictionaryElementsResult(DictionaryElementsInfoData value) {
-        return new JAXBElement<>(_GetDictionaryElementsResponseGetDictionaryElementsResult_QNAME, DictionaryElementsInfoData.class, GetDictionaryElementsResponse.class, value);
+        return new JAXBElement<DictionaryElementsInfoData>(_GetDictionaryElementsResponseGetDictionaryElementsResult_QNAME, DictionaryElementsInfoData.class, GetDictionaryElementsResponse.class, value);
     }
 
     /**
@@ -16327,7 +13861,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = GetDictionaryElementsWithFilter.class)
     public JAXBElement<DictionaryElementsFilter> createGetDictionaryElementsWithFilterFilter(DictionaryElementsFilter value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, DictionaryElementsFilter.class, GetDictionaryElementsWithFilter.class, value);
+        return new JAXBElement<DictionaryElementsFilter>(_GetEmployeePageForAlcoGroupFilter_QNAME, DictionaryElementsFilter.class, GetDictionaryElementsWithFilter.class, value);
     }
 
     /**
@@ -16340,7 +13874,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetDictionaryElementsWithFilterResult", scope = GetDictionaryElementsWithFilterResponse.class)
     public JAXBElement<DictionaryElementsInfoData> createGetDictionaryElementsWithFilterResponseGetDictionaryElementsWithFilterResult(DictionaryElementsInfoData value) {
-        return new JAXBElement<>(_GetDictionaryElementsWithFilterResponseGetDictionaryElementsWithFilterResult_QNAME, DictionaryElementsInfoData.class, GetDictionaryElementsWithFilterResponse.class, value);
+        return new JAXBElement<DictionaryElementsInfoData>(_GetDictionaryElementsWithFilterResponseGetDictionaryElementsWithFilterResult_QNAME, DictionaryElementsInfoData.class, GetDictionaryElementsWithFilterResponse.class, value);
     }
 
     /**
@@ -16353,7 +13887,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetCardTypeResult", scope = GetCardTypeResponse.class)
     public JAXBElement<CardTypeInfo> createGetCardTypeResponseGetCardTypeResult(CardTypeInfo value) {
-        return new JAXBElement<>(_GetCardTypeResponseGetCardTypeResult_QNAME, CardTypeInfo.class, GetCardTypeResponse.class, value);
+        return new JAXBElement<CardTypeInfo>(_GetCardTypeResponseGetCardTypeResult_QNAME, CardTypeInfo.class, GetCardTypeResponse.class, value);
     }
 
     /**
@@ -16366,7 +13900,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAllBranchResult", scope = GetAllBranchResponse.class)
     public JAXBElement<BranchData> createGetAllBranchResponseGetAllBranchResult(BranchData value) {
-        return new JAXBElement<>(_GetAllBranchResponseGetAllBranchResult_QNAME, BranchData.class, GetAllBranchResponse.class, value);
+        return new JAXBElement<BranchData>(_GetAllBranchResponseGetAllBranchResult_QNAME, BranchData.class, GetAllBranchResponse.class, value);
     }
 
     /**
@@ -16379,7 +13913,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetBranchResult", scope = GetBranchResponse.class)
     public JAXBElement<BranchInfo> createGetBranchResponseGetBranchResult(BranchInfo value) {
-        return new JAXBElement<>(_GetBranchResponseGetBranchResult_QNAME, BranchInfo.class, GetBranchResponse.class, value);
+        return new JAXBElement<BranchInfo>(_GetBranchResponseGetBranchResult_QNAME, BranchInfo.class, GetBranchResponse.class, value);
     }
 
     /**
@@ -16392,7 +13926,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = GetIncidents.class)
     public JAXBElement<IncidentsFilter> createGetIncidentsFilter(IncidentsFilter value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, IncidentsFilter.class, GetIncidents.class, value);
+        return new JAXBElement<IncidentsFilter>(_GetEmployeePageForAlcoGroupFilter_QNAME, IncidentsFilter.class, GetIncidents.class, value);
     }
 
     /**
@@ -16405,7 +13939,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIncidentsResult", scope = GetIncidentsResponse.class)
     public JAXBElement<IncidentsInfoData> createGetIncidentsResponseGetIncidentsResult(IncidentsInfoData value) {
-        return new JAXBElement<>(_GetIncidentsResponseGetIncidentsResult_QNAME, IncidentsInfoData.class, GetIncidentsResponse.class, value);
+        return new JAXBElement<IncidentsInfoData>(_GetIncidentsResponseGetIncidentsResult_QNAME, IncidentsInfoData.class, GetIncidentsResponse.class, value);
     }
 
     /**
@@ -16418,7 +13952,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIncidentResult", scope = GetIncidentResponse.class)
     public JAXBElement<IncidentElementFullInfo> createGetIncidentResponseGetIncidentResult(IncidentElementFullInfo value) {
-        return new JAXBElement<>(_GetIncidentResponseGetIncidentResult_QNAME, IncidentElementFullInfo.class, GetIncidentResponse.class, value);
+        return new JAXBElement<IncidentElementFullInfo>(_GetIncidentResponseGetIncidentResult_QNAME, IncidentElementFullInfo.class, GetIncidentResponse.class, value);
     }
 
     /**
@@ -16431,7 +13965,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = SearchFirebirdIncidents.class)
     public JAXBElement<ViolatorFilter> createSearchFirebirdIncidentsFilter(ViolatorFilter value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, ViolatorFilter.class, SearchFirebirdIncidents.class, value);
+        return new JAXBElement<ViolatorFilter>(_GetEmployeePageForAlcoGroupFilter_QNAME, ViolatorFilter.class, SearchFirebirdIncidents.class, value);
     }
 
     /**
@@ -16444,7 +13978,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SearchFirebirdIncidentsResult", scope = SearchFirebirdIncidentsResponse.class)
     public JAXBElement<ArrayOfFirebirdIncidentEventsResult> createSearchFirebirdIncidentsResponseSearchFirebirdIncidentsResult(ArrayOfFirebirdIncidentEventsResult value) {
-        return new JAXBElement<>(_SearchFirebirdIncidentsResponseSearchFirebirdIncidentsResult_QNAME, ArrayOfFirebirdIncidentEventsResult.class, SearchFirebirdIncidentsResponse.class, value);
+        return new JAXBElement<ArrayOfFirebirdIncidentEventsResult>(_SearchFirebirdIncidentsResponseSearchFirebirdIncidentsResult_QNAME, ArrayOfFirebirdIncidentEventsResult.class, SearchFirebirdIncidentsResponse.class, value);
     }
 
     /**
@@ -16457,7 +13991,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "violatorFilter", scope = FindViolationByEmployee.class)
     public JAXBElement<ViolatorFilter> createFindViolationByEmployeeViolatorFilter(ViolatorFilter value) {
-        return new JAXBElement<>(_FindViolationByEmployeeViolatorFilter_QNAME, ViolatorFilter.class, FindViolationByEmployee.class, value);
+        return new JAXBElement<ViolatorFilter>(_FindViolationByEmployeeViolatorFilter_QNAME, ViolatorFilter.class, FindViolationByEmployee.class, value);
     }
 
     /**
@@ -16470,7 +14004,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindViolationByEmployeeResult", scope = FindViolationByEmployeeResponse.class)
     public JAXBElement<ArrayOfViolation> createFindViolationByEmployeeResponseFindViolationByEmployeeResult(ArrayOfViolation value) {
-        return new JAXBElement<>(_FindViolationByEmployeeResponseFindViolationByEmployeeResult_QNAME, ArrayOfViolation.class, FindViolationByEmployeeResponse.class, value);
+        return new JAXBElement<ArrayOfViolation>(_FindViolationByEmployeeResponseFindViolationByEmployeeResult_QNAME, ArrayOfViolation.class, FindViolationByEmployeeResponse.class, value);
     }
 
     /**
@@ -16483,7 +14017,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIncidentTemplatesResult", scope = GetIncidentTemplatesResponse.class)
     public JAXBElement<ArrayOfIncidentTemplateInfo> createGetIncidentTemplatesResponseGetIncidentTemplatesResult(ArrayOfIncidentTemplateInfo value) {
-        return new JAXBElement<>(_GetIncidentTemplatesResponseGetIncidentTemplatesResult_QNAME, ArrayOfIncidentTemplateInfo.class, GetIncidentTemplatesResponse.class, value);
+        return new JAXBElement<ArrayOfIncidentTemplateInfo>(_GetIncidentTemplatesResponseGetIncidentTemplatesResult_QNAME, ArrayOfIncidentTemplateInfo.class, GetIncidentTemplatesResponse.class, value);
     }
 
     /**
@@ -16496,7 +14030,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetOrganizationForEmployeeResult", scope = GetOrganizationForEmployeeResponse.class)
     public JAXBElement<ArrayOfDictionaryElementInfo> createGetOrganizationForEmployeeResponseGetOrganizationForEmployeeResult(ArrayOfDictionaryElementInfo value) {
-        return new JAXBElement<>(_GetOrganizationForEmployeeResponseGetOrganizationForEmployeeResult_QNAME, ArrayOfDictionaryElementInfo.class, GetOrganizationForEmployeeResponse.class, value);
+        return new JAXBElement<ArrayOfDictionaryElementInfo>(_GetOrganizationForEmployeeResponseGetOrganizationForEmployeeResult_QNAME, ArrayOfDictionaryElementInfo.class, GetOrganizationForEmployeeResponse.class, value);
     }
 
     /**
@@ -16509,7 +14043,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetSubdivisionsForEmployeeResult", scope = GetSubdivisionsForEmployeeResponse.class)
     public JAXBElement<ArrayOfDictionaryElementInfo> createGetSubdivisionsForEmployeeResponseGetSubdivisionsForEmployeeResult(ArrayOfDictionaryElementInfo value) {
-        return new JAXBElement<>(_GetSubdivisionsForEmployeeResponseGetSubdivisionsForEmployeeResult_QNAME, ArrayOfDictionaryElementInfo.class, GetSubdivisionsForEmployeeResponse.class, value);
+        return new JAXBElement<ArrayOfDictionaryElementInfo>(_GetSubdivisionsForEmployeeResponseGetSubdivisionsForEmployeeResult_QNAME, ArrayOfDictionaryElementInfo.class, GetSubdivisionsForEmployeeResponse.class, value);
     }
 
     /**
@@ -16522,7 +14056,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetOrganizationAssignmentsForEmployeeResult", scope = GetOrganizationAssignmentsForEmployeeResponse.class)
     public JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull> createGetOrganizationAssignmentsForEmployeeResponseGetOrganizationAssignmentsForEmployeeResult(ArrayOfEmployee2OrganizationAssignmentFull value) {
-        return new JAXBElement<>(_GetOrganizationAssignmentsForEmployeeResponseGetOrganizationAssignmentsForEmployeeResult_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, GetOrganizationAssignmentsForEmployeeResponse.class, value);
+        return new JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull>(_GetOrganizationAssignmentsForEmployeeResponseGetOrganizationAssignmentsForEmployeeResult_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, GetOrganizationAssignmentsForEmployeeResponse.class, value);
     }
 
     /**
@@ -16535,7 +14069,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResult", scope = GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse.class)
     public JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull> createGetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponseGetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResult(ArrayOfEmployee2OrganizationAssignmentFull value) {
-        return new JAXBElement<>(_GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponseGetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResult_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull>(_GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponseGetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResult_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, GetOrganizationAssignmentsForEmployeeIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -16548,7 +14082,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetOrganizationForVehicleResult", scope = GetOrganizationForVehicleResponse.class)
     public JAXBElement<ArrayOfDictionaryElementInfo> createGetOrganizationForVehicleResponseGetOrganizationForVehicleResult(ArrayOfDictionaryElementInfo value) {
-        return new JAXBElement<>(_GetOrganizationForVehicleResponseGetOrganizationForVehicleResult_QNAME, ArrayOfDictionaryElementInfo.class, GetOrganizationForVehicleResponse.class, value);
+        return new JAXBElement<ArrayOfDictionaryElementInfo>(_GetOrganizationForVehicleResponseGetOrganizationForVehicleResult_QNAME, ArrayOfDictionaryElementInfo.class, GetOrganizationForVehicleResponse.class, value);
     }
 
     /**
@@ -16561,7 +14095,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetSubdivisionsForVehicleResult", scope = GetSubdivisionsForVehicleResponse.class)
     public JAXBElement<ArrayOfDictionaryElementInfo> createGetSubdivisionsForVehicleResponseGetSubdivisionsForVehicleResult(ArrayOfDictionaryElementInfo value) {
-        return new JAXBElement<>(_GetSubdivisionsForVehicleResponseGetSubdivisionsForVehicleResult_QNAME, ArrayOfDictionaryElementInfo.class, GetSubdivisionsForVehicleResponse.class, value);
+        return new JAXBElement<ArrayOfDictionaryElementInfo>(_GetSubdivisionsForVehicleResponseGetSubdivisionsForVehicleResult_QNAME, ArrayOfDictionaryElementInfo.class, GetSubdivisionsForVehicleResponse.class, value);
     }
 
     /**
@@ -16574,7 +14108,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetOrganizationAssignmentsForVehicleResult", scope = GetOrganizationAssignmentsForVehicleResponse.class)
     public JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull> createGetOrganizationAssignmentsForVehicleResponseGetOrganizationAssignmentsForVehicleResult(ArrayOfEmployee2OrganizationAssignmentFull value) {
-        return new JAXBElement<>(_GetOrganizationAssignmentsForVehicleResponseGetOrganizationAssignmentsForVehicleResult_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, GetOrganizationAssignmentsForVehicleResponse.class, value);
+        return new JAXBElement<ArrayOfEmployee2OrganizationAssignmentFull>(_GetOrganizationAssignmentsForVehicleResponseGetOrganizationAssignmentsForVehicleResult_QNAME, ArrayOfEmployee2OrganizationAssignmentFull.class, GetOrganizationAssignmentsForVehicleResponse.class, value);
     }
 
     /**
@@ -16587,7 +14121,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetCardTypesResult", scope = GetCardTypesResponse.class)
     public JAXBElement<CardTypesInfoData> createGetCardTypesResponseGetCardTypesResult(CardTypesInfoData value) {
-        return new JAXBElement<>(_GetCardTypesResponseGetCardTypesResult_QNAME, CardTypesInfoData.class, GetCardTypesResponse.class, value);
+        return new JAXBElement<CardTypesInfoData>(_GetCardTypesResponseGetCardTypesResult_QNAME, CardTypesInfoData.class, GetCardTypesResponse.class, value);
     }
 
     /**
@@ -16600,7 +14134,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeePositionResult", scope = GetEmployeePositionResponse.class)
     public JAXBElement<LEmployeePositionInfo> createGetEmployeePositionResponseGetEmployeePositionResult(LEmployeePositionInfo value) {
-        return new JAXBElement<>(_GetEmployeePositionResponseGetEmployeePositionResult_QNAME, LEmployeePositionInfo.class, GetEmployeePositionResponse.class, value);
+        return new JAXBElement<LEmployeePositionInfo>(_GetEmployeePositionResponseGetEmployeePositionResult_QNAME, LEmployeePositionInfo.class, GetEmployeePositionResponse.class, value);
     }
 
     /**
@@ -16613,7 +14147,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeePositionsResult", scope = GetEmployeePositionsResponse.class)
     public JAXBElement<LEmployeePositionsData> createGetEmployeePositionsResponseGetEmployeePositionsResult(LEmployeePositionsData value) {
-        return new JAXBElement<>(_GetEmployeePositionsResponseGetEmployeePositionsResult_QNAME, LEmployeePositionsData.class, GetEmployeePositionsResponse.class, value);
+        return new JAXBElement<LEmployeePositionsData>(_GetEmployeePositionsResponseGetEmployeePositionsResult_QNAME, LEmployeePositionsData.class, GetEmployeePositionsResponse.class, value);
     }
 
     /**
@@ -16626,7 +14160,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeePositionsForIncidentResult", scope = GetEmployeePositionsForIncidentResponse.class)
     public JAXBElement<LEmployeePositionsData> createGetEmployeePositionsForIncidentResponseGetEmployeePositionsForIncidentResult(LEmployeePositionsData value) {
-        return new JAXBElement<>(_GetEmployeePositionsForIncidentResponseGetEmployeePositionsForIncidentResult_QNAME, LEmployeePositionsData.class, GetEmployeePositionsForIncidentResponse.class, value);
+        return new JAXBElement<LEmployeePositionsData>(_GetEmployeePositionsForIncidentResponseGetEmployeePositionsForIncidentResult_QNAME, LEmployeePositionsData.class, GetEmployeePositionsForIncidentResponse.class, value);
     }
 
     /**
@@ -16639,7 +14173,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeGroupsFullResult", scope = GetAcsEmployeeGroupsFullResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeGroup> createGetAcsEmployeeGroupsFullResponseGetAcsEmployeeGroupsFullResult(ArrayOfAcsEmployeeGroup value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupsFullResponseGetAcsEmployeeGroupsFullResult_QNAME, ArrayOfAcsEmployeeGroup.class, GetAcsEmployeeGroupsFullResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroup>(_GetAcsEmployeeGroupsFullResponseGetAcsEmployeeGroupsFullResult_QNAME, ArrayOfAcsEmployeeGroup.class, GetAcsEmployeeGroupsFullResponse.class, value);
     }
 
     /**
@@ -16652,7 +14186,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeGroupsResult", scope = GetAcsEmployeeGroupsResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeGroup> createGetAcsEmployeeGroupsResponseGetAcsEmployeeGroupsResult(ArrayOfAcsEmployeeGroup value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupsResponseGetAcsEmployeeGroupsResult_QNAME, ArrayOfAcsEmployeeGroup.class, GetAcsEmployeeGroupsResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroup>(_GetAcsEmployeeGroupsResponseGetAcsEmployeeGroupsResult_QNAME, ArrayOfAcsEmployeeGroup.class, GetAcsEmployeeGroupsResponse.class, value);
     }
 
     /**
@@ -16665,7 +14199,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetViolatorAcsEmployeeGroupResult", scope = GetViolatorAcsEmployeeGroupResponse.class)
     public JAXBElement<AcsEmployeeGroup> createGetViolatorAcsEmployeeGroupResponseGetViolatorAcsEmployeeGroupResult(AcsEmployeeGroup value) {
-        return new JAXBElement<>(_GetViolatorAcsEmployeeGroupResponseGetViolatorAcsEmployeeGroupResult_QNAME, AcsEmployeeGroup.class, GetViolatorAcsEmployeeGroupResponse.class, value);
+        return new JAXBElement<AcsEmployeeGroup>(_GetViolatorAcsEmployeeGroupResponseGetViolatorAcsEmployeeGroupResult_QNAME, AcsEmployeeGroup.class, GetViolatorAcsEmployeeGroupResponse.class, value);
     }
 
     /**
@@ -16678,7 +14212,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagsIds", scope = GetAcsEmployeeGroupsByTags.class)
     public JAXBElement<ArrayOfguid> createGetAcsEmployeeGroupsByTagsTagsIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupsByTagsTagsIds_QNAME, ArrayOfguid.class, GetAcsEmployeeGroupsByTags.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsEmployeeGroupsByTagsTagsIds_QNAME, ArrayOfguid.class, GetAcsEmployeeGroupsByTags.class, value);
     }
 
     /**
@@ -16691,7 +14225,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeGroupsByTagsResult", scope = GetAcsEmployeeGroupsByTagsResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeGroup> createGetAcsEmployeeGroupsByTagsResponseGetAcsEmployeeGroupsByTagsResult(ArrayOfAcsEmployeeGroup value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupsByTagsResponseGetAcsEmployeeGroupsByTagsResult_QNAME, ArrayOfAcsEmployeeGroup.class, GetAcsEmployeeGroupsByTagsResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroup>(_GetAcsEmployeeGroupsByTagsResponseGetAcsEmployeeGroupsByTagsResult_QNAME, ArrayOfAcsEmployeeGroup.class, GetAcsEmployeeGroupsByTagsResponse.class, value);
     }
 
     /**
@@ -16704,7 +14238,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeGroupResult", scope = GetAcsEmployeeGroupResponse.class)
     public JAXBElement<AcsEmployeeGroup> createGetAcsEmployeeGroupResponseGetAcsEmployeeGroupResult(AcsEmployeeGroup value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupResponseGetAcsEmployeeGroupResult_QNAME, AcsEmployeeGroup.class, GetAcsEmployeeGroupResponse.class, value);
+        return new JAXBElement<AcsEmployeeGroup>(_GetAcsEmployeeGroupResponseGetAcsEmployeeGroupResult_QNAME, AcsEmployeeGroup.class, GetAcsEmployeeGroupResponse.class, value);
     }
 
     /**
@@ -16717,7 +14251,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeGroupsForReportParametersResult", scope = GetAcsEmployeeGroupsForReportParametersResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> createGetAcsEmployeeGroupsForReportParametersResponseGetAcsEmployeeGroupsForReportParametersResult(ArrayOfAcsEmployeeGroupReportInfo value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupsForReportParametersResponseGetAcsEmployeeGroupsForReportParametersResult_QNAME, ArrayOfAcsEmployeeGroupReportInfo.class, GetAcsEmployeeGroupsForReportParametersResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroupReportInfo>(_GetAcsEmployeeGroupsForReportParametersResponseGetAcsEmployeeGroupsForReportParametersResult_QNAME, ArrayOfAcsEmployeeGroupReportInfo.class, GetAcsEmployeeGroupsForReportParametersResponse.class, value);
     }
 
     /**
@@ -16730,7 +14264,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeGroupsForReactionEventResult", scope = GetAcsEmployeeGroupsForReactionEventResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo> createGetAcsEmployeeGroupsForReactionEventResponseGetAcsEmployeeGroupsForReactionEventResult(ArrayOfAcsEmployeeGroupReactionInfo value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupsForReactionEventResponseGetAcsEmployeeGroupsForReactionEventResult_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, GetAcsEmployeeGroupsForReactionEventResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo>(_GetAcsEmployeeGroupsForReactionEventResponseGetAcsEmployeeGroupsForReactionEventResult_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, GetAcsEmployeeGroupsForReactionEventResponse.class, value);
     }
 
     /**
@@ -16743,7 +14277,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeGroupsForReactionActionResult", scope = GetAcsEmployeeGroupsForReactionActionResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo> createGetAcsEmployeeGroupsForReactionActionResponseGetAcsEmployeeGroupsForReactionActionResult(ArrayOfAcsEmployeeGroupReactionInfo value) {
-        return new JAXBElement<>(_GetAcsEmployeeGroupsForReactionActionResponseGetAcsEmployeeGroupsForReactionActionResult_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, GetAcsEmployeeGroupsForReactionActionResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo>(_GetAcsEmployeeGroupsForReactionActionResponseGetAcsEmployeeGroupsForReactionActionResult_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, GetAcsEmployeeGroupsForReactionActionResponse.class, value);
     }
 
     /**
@@ -16756,7 +14290,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeesByGroupResult", scope = GetAcsEmployeesByGroupResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeSlim> createGetAcsEmployeesByGroupResponseGetAcsEmployeesByGroupResult(ArrayOfAcsEmployeeSlim value) {
-        return new JAXBElement<>(_GetAcsEmployeesByGroupResponseGetAcsEmployeesByGroupResult_QNAME, ArrayOfAcsEmployeeSlim.class, GetAcsEmployeesByGroupResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeSlim>(_GetAcsEmployeesByGroupResponseGetAcsEmployeesByGroupResult_QNAME, ArrayOfAcsEmployeeSlim.class, GetAcsEmployeesByGroupResponse.class, value);
     }
 
     /**
@@ -16769,7 +14303,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "securityGroupIds", scope = GetAcsEmployees.class)
     public JAXBElement<ArrayOfguid> createGetAcsEmployeesSecurityGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsEmployeesSecurityGroupIds_QNAME, ArrayOfguid.class, GetAcsEmployees.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsEmployeesSecurityGroupIds_QNAME, ArrayOfguid.class, GetAcsEmployees.class, value);
     }
 
     /**
@@ -16782,7 +14316,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = GetAcsEmployees.class)
     public JAXBElement<String> createGetAcsEmployeesFilter(String value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, String.class, GetAcsEmployees.class, value);
+        return new JAXBElement<String>(_GetEmployeePageForAlcoGroupFilter_QNAME, String.class, GetAcsEmployees.class, value);
     }
 
     /**
@@ -16795,7 +14329,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeesResult", scope = GetAcsEmployeesResponse.class)
     public JAXBElement<EmployeesInfoData2> createGetAcsEmployeesResponseGetAcsEmployeesResult(EmployeesInfoData2 value) {
-        return new JAXBElement<>(_GetAcsEmployeesResponseGetAcsEmployeesResult_QNAME, EmployeesInfoData2 .class, GetAcsEmployeesResponse.class, value);
+        return new JAXBElement<EmployeesInfoData2>(_GetAcsEmployeesResponseGetAcsEmployeesResult_QNAME, EmployeesInfoData2 .class, GetAcsEmployeesResponse.class, value);
     }
 
     /**
@@ -16808,7 +14342,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeFaceByIdResult", scope = GetEmployeeFaceByIdResponse.class)
     public JAXBElement<AcsEmployeeFaceVectorFull> createGetEmployeeFaceByIdResponseGetEmployeeFaceByIdResult(AcsEmployeeFaceVectorFull value) {
-        return new JAXBElement<>(_GetEmployeeFaceByIdResponseGetEmployeeFaceByIdResult_QNAME, AcsEmployeeFaceVectorFull.class, GetEmployeeFaceByIdResponse.class, value);
+        return new JAXBElement<AcsEmployeeFaceVectorFull>(_GetEmployeeFaceByIdResponseGetEmployeeFaceByIdResult_QNAME, AcsEmployeeFaceVectorFull.class, GetEmployeeFaceByIdResponse.class, value);
     }
 
     /**
@@ -16821,7 +14355,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeFacesResult", scope = GetEmployeeFacesResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeFaceVector> createGetEmployeeFacesResponseGetEmployeeFacesResult(ArrayOfAcsEmployeeFaceVector value) {
-        return new JAXBElement<>(_GetEmployeeFacesResponseGetEmployeeFacesResult_QNAME, ArrayOfAcsEmployeeFaceVector.class, GetEmployeeFacesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFaceVector>(_GetEmployeeFacesResponseGetEmployeeFacesResult_QNAME, ArrayOfAcsEmployeeFaceVector.class, GetEmployeeFacesResponse.class, value);
     }
 
     /**
@@ -16834,7 +14368,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeFacesIncludeRemovedEmployeesResult", scope = GetEmployeeFacesIncludeRemovedEmployeesResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeFaceVector> createGetEmployeeFacesIncludeRemovedEmployeesResponseGetEmployeeFacesIncludeRemovedEmployeesResult(ArrayOfAcsEmployeeFaceVector value) {
-        return new JAXBElement<>(_GetEmployeeFacesIncludeRemovedEmployeesResponseGetEmployeeFacesIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsEmployeeFaceVector.class, GetEmployeeFacesIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFaceVector>(_GetEmployeeFacesIncludeRemovedEmployeesResponseGetEmployeeFacesIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsEmployeeFaceVector.class, GetEmployeeFacesIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -16847,7 +14381,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeeFacesFullResult", scope = GetEmployeeFacesFullResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeFaceVectorFull> createGetEmployeeFacesFullResponseGetEmployeeFacesFullResult(ArrayOfAcsEmployeeFaceVectorFull value) {
-        return new JAXBElement<>(_GetEmployeeFacesFullResponseGetEmployeeFacesFullResult_QNAME, ArrayOfAcsEmployeeFaceVectorFull.class, GetEmployeeFacesFullResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFaceVectorFull>(_GetEmployeeFacesFullResponseGetEmployeeFacesFullResult_QNAME, ArrayOfAcsEmployeeFaceVectorFull.class, GetEmployeeFacesFullResponse.class, value);
     }
 
     /**
@@ -16860,7 +14394,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupIds", scope = GetAcsEmployeesByGroups.class)
     public JAXBElement<ArrayOfguid> createGetAcsEmployeesByGroupsGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsEmployeesByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsEmployeesByGroups.class, value);
     }
 
     /**
@@ -16873,7 +14407,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeesByGroupsResult", scope = GetAcsEmployeesByGroupsResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeSlim> createGetAcsEmployeesByGroupsResponseGetAcsEmployeesByGroupsResult(ArrayOfAcsEmployeeSlim value) {
-        return new JAXBElement<>(_GetAcsEmployeesByGroupsResponseGetAcsEmployeesByGroupsResult_QNAME, ArrayOfAcsEmployeeSlim.class, GetAcsEmployeesByGroupsResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeSlim>(_GetAcsEmployeesByGroupsResponseGetAcsEmployeesByGroupsResult_QNAME, ArrayOfAcsEmployeeSlim.class, GetAcsEmployeesByGroupsResponse.class, value);
     }
 
     /**
@@ -16886,7 +14420,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupIds", scope = GetListAcsEmployeesByGroup.class)
     public JAXBElement<ArrayOfguid> createGetListAcsEmployeesByGroupGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetListAcsEmployeesByGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetListAcsEmployeesByGroup.class, value);
     }
 
     /**
@@ -16899,7 +14433,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "foundEmployeeId", scope = GetListAcsEmployeesByGroup.class)
     public JAXBElement<String> createGetListAcsEmployeesByGroupFoundEmployeeId(String value) {
-        return new JAXBElement<>(_GetListAcsEmployeesByGroupFoundEmployeeId_QNAME, String.class, GetListAcsEmployeesByGroup.class, value);
+        return new JAXBElement<String>(_GetListAcsEmployeesByGroupFoundEmployeeId_QNAME, String.class, GetListAcsEmployeesByGroup.class, value);
     }
 
     /**
@@ -16912,7 +14446,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetListAcsEmployeesByGroupResult", scope = GetListAcsEmployeesByGroupResponse.class)
     public JAXBElement<EmployeesInfoData> createGetListAcsEmployeesByGroupResponseGetListAcsEmployeesByGroupResult(EmployeesInfoData value) {
-        return new JAXBElement<>(_GetListAcsEmployeesByGroupResponseGetListAcsEmployeesByGroupResult_QNAME, EmployeesInfoData.class, GetListAcsEmployeesByGroupResponse.class, value);
+        return new JAXBElement<EmployeesInfoData>(_GetListAcsEmployeesByGroupResponseGetListAcsEmployeesByGroupResult_QNAME, EmployeesInfoData.class, GetListAcsEmployeesByGroupResponse.class, value);
     }
 
     /**
@@ -16925,7 +14459,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupIds", scope = SearchEmployee.class)
     public JAXBElement<ArrayOfguid> createSearchEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, SearchEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, SearchEmployee.class, value);
     }
 
     /**
@@ -16938,7 +14472,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = SearchEmployee.class)
     public JAXBElement<EmployeesFilter> createSearchEmployeeFilter(EmployeesFilter value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, EmployeesFilter.class, SearchEmployee.class, value);
+        return new JAXBElement<EmployeesFilter>(_GetEmployeePageForAlcoGroupFilter_QNAME, EmployeesFilter.class, SearchEmployee.class, value);
     }
 
     /**
@@ -16951,7 +14485,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupIds", scope = GetPageFilteredEmployeesByGroup.class)
     public JAXBElement<ArrayOfguid> createGetPageFilteredEmployeesByGroupGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetPageFilteredEmployeesByGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetPageFilteredEmployeesByGroup.class, value);
     }
 
     /**
@@ -16964,7 +14498,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = GetPageFilteredEmployeesByGroup.class)
     public JAXBElement<EmployeesFilter> createGetPageFilteredEmployeesByGroupFilter(EmployeesFilter value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, EmployeesFilter.class, GetPageFilteredEmployeesByGroup.class, value);
+        return new JAXBElement<EmployeesFilter>(_GetEmployeePageForAlcoGroupFilter_QNAME, EmployeesFilter.class, GetPageFilteredEmployeesByGroup.class, value);
     }
 
     /**
@@ -16977,7 +14511,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "showColumn", scope = GetPageFilteredEmployeesByGroup.class)
     public JAXBElement<EmployeeShowColumn> createGetPageFilteredEmployeesByGroupShowColumn(EmployeeShowColumn value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupShowColumn_QNAME, EmployeeShowColumn.class, GetPageFilteredEmployeesByGroup.class, value);
+        return new JAXBElement<EmployeeShowColumn>(_GetEmployeePageForAlcoGroupShowColumn_QNAME, EmployeeShowColumn.class, GetPageFilteredEmployeesByGroup.class, value);
     }
 
     /**
@@ -16990,7 +14524,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPageFilteredEmployeesByGroupResult", scope = GetPageFilteredEmployeesByGroupResponse.class)
     public JAXBElement<EmployeesInfoData> createGetPageFilteredEmployeesByGroupResponseGetPageFilteredEmployeesByGroupResult(EmployeesInfoData value) {
-        return new JAXBElement<>(_GetPageFilteredEmployeesByGroupResponseGetPageFilteredEmployeesByGroupResult_QNAME, EmployeesInfoData.class, GetPageFilteredEmployeesByGroupResponse.class, value);
+        return new JAXBElement<EmployeesInfoData>(_GetPageFilteredEmployeesByGroupResponseGetPageFilteredEmployeesByGroupResult_QNAME, EmployeesInfoData.class, GetPageFilteredEmployeesByGroupResponse.class, value);
     }
 
     /**
@@ -17003,7 +14537,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "filter", scope = GetPageFilterredIncidents.class)
     public JAXBElement<IncidentsFilter> createGetPageFilterredIncidentsFilter(IncidentsFilter value) {
-        return new JAXBElement<>(_GetEmployeePageForAlcoGroupFilter_QNAME, IncidentsFilter.class, GetPageFilterredIncidents.class, value);
+        return new JAXBElement<IncidentsFilter>(_GetEmployeePageForAlcoGroupFilter_QNAME, IncidentsFilter.class, GetPageFilterredIncidents.class, value);
     }
 
     /**
@@ -17016,7 +14550,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetPageFilterredIncidentsResult", scope = GetPageFilterredIncidentsResponse.class)
     public JAXBElement<IncidentsInfoData> createGetPageFilterredIncidentsResponseGetPageFilterredIncidentsResult(IncidentsInfoData value) {
-        return new JAXBElement<>(_GetPageFilterredIncidentsResponseGetPageFilterredIncidentsResult_QNAME, IncidentsInfoData.class, GetPageFilterredIncidentsResponse.class, value);
+        return new JAXBElement<IncidentsInfoData>(_GetPageFilterredIncidentsResponseGetPageFilterredIncidentsResult_QNAME, IncidentsInfoData.class, GetPageFilterredIncidentsResponse.class, value);
     }
 
     /**
@@ -17029,7 +14563,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupIds", scope = GetAcsEmployeesGuidsByGroups.class)
     public JAXBElement<ArrayOfguid> createGetAcsEmployeesGuidsByGroupsGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsEmployeesGuidsByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsVehiclesByGroupGroupIds_QNAME, ArrayOfguid.class, GetAcsEmployeesGuidsByGroups.class, value);
     }
 
     /**
@@ -17042,7 +14576,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeesGuidsByGroupsResult", scope = GetAcsEmployeesGuidsByGroupsResponse.class)
     public JAXBElement<ArrayOfguid> createGetAcsEmployeesGuidsByGroupsResponseGetAcsEmployeesGuidsByGroupsResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsEmployeesGuidsByGroupsResponseGetAcsEmployeesGuidsByGroupsResult_QNAME, ArrayOfguid.class, GetAcsEmployeesGuidsByGroupsResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsEmployeesGuidsByGroupsResponseGetAcsEmployeesGuidsByGroupsResult_QNAME, ArrayOfguid.class, GetAcsEmployeesGuidsByGroupsResponse.class, value);
     }
 
     /**
@@ -17055,7 +14589,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeResult", scope = GetAcsEmployeeResponse.class)
     public JAXBElement<AcsEmployeeFull> createGetAcsEmployeeResponseGetAcsEmployeeResult(AcsEmployeeFull value) {
-        return new JAXBElement<>(_GetAcsEmployeeResponseGetAcsEmployeeResult_QNAME, AcsEmployeeFull.class, GetAcsEmployeeResponse.class, value);
+        return new JAXBElement<AcsEmployeeFull>(_GetAcsEmployeeResponseGetAcsEmployeeResult_QNAME, AcsEmployeeFull.class, GetAcsEmployeeResponse.class, value);
     }
 
     /**
@@ -17068,7 +14602,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeForRemoteTerminalResult", scope = GetAcsEmployeeForRemoteTerminalResponse.class)
     public JAXBElement<EmployeeInfo> createGetAcsEmployeeForRemoteTerminalResponseGetAcsEmployeeForRemoteTerminalResult(EmployeeInfo value) {
-        return new JAXBElement<>(_GetAcsEmployeeForRemoteTerminalResponseGetAcsEmployeeForRemoteTerminalResult_QNAME, EmployeeInfo.class, GetAcsEmployeeForRemoteTerminalResponse.class, value);
+        return new JAXBElement<EmployeeInfo>(_GetAcsEmployeeForRemoteTerminalResponseGetAcsEmployeeForRemoteTerminalResult_QNAME, EmployeeInfo.class, GetAcsEmployeeForRemoteTerminalResponse.class, value);
     }
 
     /**
@@ -17081,7 +14615,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = GeEmployeesView.class)
     public JAXBElement<ArrayOfguid> createGeEmployeesViewIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, GeEmployeesView.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, GeEmployeesView.class, value);
     }
 
     /**
@@ -17094,7 +14628,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GeEmployeesViewResult", scope = GeEmployeesViewResponse.class)
     public JAXBElement<GeEmployeesViewResponse.GeEmployeesViewResult> createGeEmployeesViewResponseGeEmployeesViewResult(GeEmployeesViewResponse.GeEmployeesViewResult value) {
-        return new JAXBElement<>(_GeEmployeesViewResponseGeEmployeesViewResult_QNAME, GeEmployeesViewResponse.GeEmployeesViewResult.class, GeEmployeesViewResponse.class, value);
+        return new JAXBElement<GeEmployeesViewResponse.GeEmployeesViewResult>(_GeEmployeesViewResponseGeEmployeesViewResult_QNAME, GeEmployeesViewResponse.GeEmployeesViewResult.class, GeEmployeesViewResponse.class, value);
     }
 
     /**
@@ -17107,7 +14641,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GeEmployeesViewMetadataResult", scope = GeEmployeesViewMetadataResponse.class)
     public JAXBElement<ArrayOfEmployeeViewFieldMetadata> createGeEmployeesViewMetadataResponseGeEmployeesViewMetadataResult(ArrayOfEmployeeViewFieldMetadata value) {
-        return new JAXBElement<>(_GeEmployeesViewMetadataResponseGeEmployeesViewMetadataResult_QNAME, ArrayOfEmployeeViewFieldMetadata.class, GeEmployeesViewMetadataResponse.class, value);
+        return new JAXBElement<ArrayOfEmployeeViewFieldMetadata>(_GeEmployeesViewMetadataResponseGeEmployeesViewMetadataResult_QNAME, ArrayOfEmployeeViewFieldMetadata.class, GeEmployeesViewMetadataResponse.class, value);
     }
 
     /**
@@ -17120,7 +14654,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tableNumbers", scope = GetAcsEmployeesByTableNumbers.class)
     public JAXBElement<ArrayOfint> createGetAcsEmployeesByTableNumbersTableNumbers(ArrayOfint value) {
-        return new JAXBElement<>(_GetAcsEmployeesByTableNumbersTableNumbers_QNAME, ArrayOfint.class, GetAcsEmployeesByTableNumbers.class, value);
+        return new JAXBElement<ArrayOfint>(_GetAcsEmployeesByTableNumbersTableNumbers_QNAME, ArrayOfint.class, GetAcsEmployeesByTableNumbers.class, value);
     }
 
     /**
@@ -17133,7 +14667,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeesByTableNumbersResult", scope = GetAcsEmployeesByTableNumbersResponse.class)
     public JAXBElement<ArrayOfAcsEmployeeFull> createGetAcsEmployeesByTableNumbersResponseGetAcsEmployeesByTableNumbersResult(ArrayOfAcsEmployeeFull value) {
-        return new JAXBElement<>(_GetAcsEmployeesByTableNumbersResponseGetAcsEmployeesByTableNumbersResult_QNAME, ArrayOfAcsEmployeeFull.class, GetAcsEmployeesByTableNumbersResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFull>(_GetAcsEmployeesByTableNumbersResponseGetAcsEmployeesByTableNumbersResult_QNAME, ArrayOfAcsEmployeeFull.class, GetAcsEmployeesByTableNumbersResponse.class, value);
     }
 
     /**
@@ -17146,7 +14680,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tableNumbers", scope = GetAcsEmployeeIDsByTableNumbers.class)
     public JAXBElement<ArrayOfint> createGetAcsEmployeeIDsByTableNumbersTableNumbers(ArrayOfint value) {
-        return new JAXBElement<>(_GetAcsEmployeesByTableNumbersTableNumbers_QNAME, ArrayOfint.class, GetAcsEmployeeIDsByTableNumbers.class, value);
+        return new JAXBElement<ArrayOfint>(_GetAcsEmployeesByTableNumbersTableNumbers_QNAME, ArrayOfint.class, GetAcsEmployeeIDsByTableNumbers.class, value);
     }
 
     /**
@@ -17159,7 +14693,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeeIDsByTableNumbersResult", scope = GetAcsEmployeeIDsByTableNumbersResponse.class)
     public JAXBElement<ArrayOfguid> createGetAcsEmployeeIDsByTableNumbersResponseGetAcsEmployeeIDsByTableNumbersResult(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAcsEmployeeIDsByTableNumbersResponseGetAcsEmployeeIDsByTableNumbersResult_QNAME, ArrayOfguid.class, GetAcsEmployeeIDsByTableNumbersResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAcsEmployeeIDsByTableNumbersResponseGetAcsEmployeeIDsByTableNumbersResult_QNAME, ArrayOfguid.class, GetAcsEmployeeIDsByTableNumbersResponse.class, value);
     }
 
     /**
@@ -17172,7 +14706,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeesDocumentsResult", scope = GetAcsEmployeesDocumentsResponse.class)
     public JAXBElement<AcsEmployeeDocumentsData> createGetAcsEmployeesDocumentsResponseGetAcsEmployeesDocumentsResult(AcsEmployeeDocumentsData value) {
-        return new JAXBElement<>(_GetAcsEmployeesDocumentsResponseGetAcsEmployeesDocumentsResult_QNAME, AcsEmployeeDocumentsData.class, GetAcsEmployeesDocumentsResponse.class, value);
+        return new JAXBElement<AcsEmployeeDocumentsData>(_GetAcsEmployeesDocumentsResponseGetAcsEmployeesDocumentsResult_QNAME, AcsEmployeeDocumentsData.class, GetAcsEmployeesDocumentsResponse.class, value);
     }
 
     /**
@@ -17185,7 +14719,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeePhotoInfosResult", scope = GetAcsEmployeePhotoInfosResponse.class)
     public JAXBElement<ArrayOfAcsEmployeePhotosInfo> createGetAcsEmployeePhotoInfosResponseGetAcsEmployeePhotoInfosResult(ArrayOfAcsEmployeePhotosInfo value) {
-        return new JAXBElement<>(_GetAcsEmployeePhotoInfosResponseGetAcsEmployeePhotoInfosResult_QNAME, ArrayOfAcsEmployeePhotosInfo.class, GetAcsEmployeePhotoInfosResponse.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeePhotosInfo>(_GetAcsEmployeePhotoInfosResponseGetAcsEmployeePhotoInfosResult_QNAME, ArrayOfAcsEmployeePhotosInfo.class, GetAcsEmployeePhotoInfosResponse.class, value);
     }
 
     /**
@@ -17198,7 +14732,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeePhotoResult", scope = GetAcsEmployeePhotoResponse.class)
     public JAXBElement<byte[]> createGetAcsEmployeePhotoResponseGetAcsEmployeePhotoResult(byte[] value) {
-        return new JAXBElement<>(_GetAcsEmployeePhotoResponseGetAcsEmployeePhotoResult_QNAME, byte[].class, GetAcsEmployeePhotoResponse.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_GetAcsEmployeePhotoResponseGetAcsEmployeePhotoResult_QNAME, byte[].class, GetAcsEmployeePhotoResponse.class, ((byte[]) value));
     }
 
     /**
@@ -17211,7 +14745,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsEmployeePhotoByTypeResult", scope = GetAcsEmployeePhotoByTypeResponse.class)
     public JAXBElement<byte[]> createGetAcsEmployeePhotoByTypeResponseGetAcsEmployeePhotoByTypeResult(byte[] value) {
-        return new JAXBElement<>(_GetAcsEmployeePhotoByTypeResponseGetAcsEmployeePhotoByTypeResult_QNAME, byte[].class, GetAcsEmployeePhotoByTypeResponse.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_GetAcsEmployeePhotoByTypeResponseGetAcsEmployeePhotoByTypeResult_QNAME, byte[].class, GetAcsEmployeePhotoByTypeResponse.class, ((byte[]) value));
     }
 
     /**
@@ -17224,7 +14758,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeesByAccessLevelResult", scope = GetEmployeesByAccessLevelResponse.class)
     public JAXBElement<ArrayOfEmployeeShortInfo> createGetEmployeesByAccessLevelResponseGetEmployeesByAccessLevelResult(ArrayOfEmployeeShortInfo value) {
-        return new JAXBElement<>(_GetEmployeesByAccessLevelResponseGetEmployeesByAccessLevelResult_QNAME, ArrayOfEmployeeShortInfo.class, GetEmployeesByAccessLevelResponse.class, value);
+        return new JAXBElement<ArrayOfEmployeeShortInfo>(_GetEmployeesByAccessLevelResponseGetEmployeesByAccessLevelResult_QNAME, ArrayOfEmployeeShortInfo.class, GetEmployeesByAccessLevelResponse.class, value);
     }
 
     /**
@@ -17237,7 +14771,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAcsKeysForEmployeeResult", scope = GetAcsKeysForEmployeeResponse.class)
     public JAXBElement<ArrayOfAcsKeyInfo> createGetAcsKeysForEmployeeResponseGetAcsKeysForEmployeeResult(ArrayOfAcsKeyInfo value) {
-        return new JAXBElement<>(_GetAcsKeysForEmployeeResponseGetAcsKeysForEmployeeResult_QNAME, ArrayOfAcsKeyInfo.class, GetAcsKeysForEmployeeResponse.class, value);
+        return new JAXBElement<ArrayOfAcsKeyInfo>(_GetAcsKeysForEmployeeResponseGetAcsKeysForEmployeeResult_QNAME, ArrayOfAcsKeyInfo.class, GetAcsKeysForEmployeeResponse.class, value);
     }
 
     /**
@@ -17250,7 +14784,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "moficationDateTime", scope = GetEmployeesByCardType.class)
     public JAXBElement<XMLGregorianCalendar> createGetEmployeesByCardTypeMoficationDateTime(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_GetEmployeesByCardTypeMoficationDateTime_QNAME, XMLGregorianCalendar.class, GetEmployeesByCardType.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_GetEmployeesByCardTypeMoficationDateTime_QNAME, XMLGregorianCalendar.class, GetEmployeesByCardType.class, value);
     }
 
     /**
@@ -17263,7 +14797,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeesByCardTypeResult", scope = GetEmployeesByCardTypeResponse.class)
     public JAXBElement<ArrayOfEmployeeModificationInfo> createGetEmployeesByCardTypeResponseGetEmployeesByCardTypeResult(ArrayOfEmployeeModificationInfo value) {
-        return new JAXBElement<>(_GetEmployeesByCardTypeResponseGetEmployeesByCardTypeResult_QNAME, ArrayOfEmployeeModificationInfo.class, GetEmployeesByCardTypeResponse.class, value);
+        return new JAXBElement<ArrayOfEmployeeModificationInfo>(_GetEmployeesByCardTypeResponseGetEmployeesByCardTypeResult_QNAME, ArrayOfEmployeeModificationInfo.class, GetEmployeesByCardTypeResponse.class, value);
     }
 
     /**
@@ -17276,7 +14810,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAssignedAcsKeyByKeyNumberResult", scope = GetAssignedAcsKeyByKeyNumberResponse.class)
     public JAXBElement<AcsKeyInfo> createGetAssignedAcsKeyByKeyNumberResponseGetAssignedAcsKeyByKeyNumberResult(AcsKeyInfo value) {
-        return new JAXBElement<>(_GetAssignedAcsKeyByKeyNumberResponseGetAssignedAcsKeyByKeyNumberResult_QNAME, AcsKeyInfo.class, GetAssignedAcsKeyByKeyNumberResponse.class, value);
+        return new JAXBElement<AcsKeyInfo>(_GetAssignedAcsKeyByKeyNumberResponseGetAssignedAcsKeyByKeyNumberResult_QNAME, AcsKeyInfo.class, GetAssignedAcsKeyByKeyNumberResponse.class, value);
     }
 
     /**
@@ -17289,7 +14823,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetNotificationResult", scope = GetNotificationResponse.class)
     public JAXBElement<NotificationInfo> createGetNotificationResponseGetNotificationResult(NotificationInfo value) {
-        return new JAXBElement<>(_GetNotificationResponseGetNotificationResult_QNAME, NotificationInfo.class, GetNotificationResponse.class, value);
+        return new JAXBElement<NotificationInfo>(_GetNotificationResponseGetNotificationResult_QNAME, NotificationInfo.class, GetNotificationResponse.class, value);
     }
 
     /**
@@ -17302,7 +14836,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "operation", scope = Process.class)
     public JAXBElement<Operation> createProcessOperation(Operation value) {
-        return new JAXBElement<>(_ProcessOperation_QNAME, Operation.class, Process.class, value);
+        return new JAXBElement<Operation>(_ProcessOperation_QNAME, Operation.class, Process.class, value);
     }
 
     /**
@@ -17315,7 +14849,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = RemoveEmployeeGroupsFromReportParameters.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeeGroupsFromReportParametersEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeGroupsFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeGroupsFromReportParameters.class, value);
     }
 
     /**
@@ -17328,7 +14862,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = RemoveEmployeeFromReportParametersByGroups.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeeFromReportParametersByGroupsEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeFromReportParametersByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeFromReportParametersByGroups.class, value);
     }
 
     /**
@@ -17341,7 +14875,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = AddEmployeesToReportParameters.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToReportParametersEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToReportParameters.class, value);
     }
 
     /**
@@ -17354,7 +14888,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = RemoveEmployeesFromReportParameters.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeesFromReportParametersEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesFromReportParameters.class, value);
     }
 
     /**
@@ -17367,7 +14901,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "alcoGroups", scope = AddWorkZonesToReportParameters.class)
     public JAXBElement<ArrayOfguid> createAddWorkZonesToReportParametersAlcoGroups(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkZonesToReportParametersAlcoGroups_QNAME, ArrayOfguid.class, AddWorkZonesToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkZonesToReportParametersAlcoGroups_QNAME, ArrayOfguid.class, AddWorkZonesToReportParameters.class, value);
     }
 
     /**
@@ -17380,7 +14914,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "alcoGroupIds", scope = RemoveAlcoGroupsFromReportParameters.class)
     public JAXBElement<ArrayOfguid> createRemoveAlcoGroupsFromReportParametersAlcoGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveAlcoGroupsFromReportParametersAlcoGroupIds_QNAME, ArrayOfguid.class, RemoveAlcoGroupsFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveAlcoGroupsFromReportParametersAlcoGroupIds_QNAME, ArrayOfguid.class, RemoveAlcoGroupsFromReportParameters.class, value);
     }
 
     /**
@@ -17393,7 +14927,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "alcoGroupIds", scope = AddAlcoGroupsToReportParameters.class)
     public JAXBElement<ArrayOfguid> createAddAlcoGroupsToReportParametersAlcoGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveAlcoGroupsFromReportParametersAlcoGroupIds_QNAME, ArrayOfguid.class, AddAlcoGroupsToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveAlcoGroupsFromReportParametersAlcoGroupIds_QNAME, ArrayOfguid.class, AddAlcoGroupsToReportParameters.class, value);
     }
 
     /**
@@ -17406,7 +14940,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "vehicleIds", scope = RemoveWorkZonesFromReportParameters.class)
     public JAXBElement<ArrayOfguid> createRemoveWorkZonesFromReportParametersVehicleIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, RemoveWorkZonesFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, RemoveWorkZonesFromReportParameters.class, value);
     }
 
     /**
@@ -17419,7 +14953,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "vehicleIds", scope = AddVehicleTypesToReportParameters.class)
     public JAXBElement<ArrayOfguid> createAddVehicleTypesToReportParametersVehicleIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, AddVehicleTypesToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, AddVehicleTypesToReportParameters.class, value);
     }
 
     /**
@@ -17432,7 +14966,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "vehicleIds", scope = RemoveVehicleTypesFromReportParameters.class)
     public JAXBElement<ArrayOfguid> createRemoveVehicleTypesFromReportParametersVehicleIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, RemoveVehicleTypesFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, RemoveVehicleTypesFromReportParameters.class, value);
     }
 
     /**
@@ -17445,7 +14979,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "vehicleIds", scope = AddVehiclesToReportParameters.class)
     public JAXBElement<ArrayOfguid> createAddVehiclesToReportParametersVehicleIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, AddVehiclesToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, AddVehiclesToReportParameters.class, value);
     }
 
     /**
@@ -17458,7 +14992,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "vehicleIds", scope = RemoveVehiclesFromReportParameters.class)
     public JAXBElement<ArrayOfguid> createRemoveVehiclesFromReportParametersVehicleIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, RemoveVehiclesFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveWorkZonesFromReportParametersVehicleIds_QNAME, ArrayOfguid.class, RemoveVehiclesFromReportParameters.class, value);
     }
 
     /**
@@ -17471,7 +15005,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddReactionEvent.class)
     public JAXBElement<ReactionEventSaveData> createAddReactionEventData(ReactionEventSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionEventSaveData.class, AddReactionEvent.class, value);
+        return new JAXBElement<ReactionEventSaveData>(_AddReactionEventData_QNAME, ReactionEventSaveData.class, AddReactionEvent.class, value);
     }
 
     /**
@@ -17484,7 +15018,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReactionEventCommonData.class)
     public JAXBElement<ReactionEventSaveData> createSaveReactionEventCommonDataData(ReactionEventSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionEventSaveData.class, SaveReactionEventCommonData.class, value);
+        return new JAXBElement<ReactionEventSaveData>(_AddReactionEventData_QNAME, ReactionEventSaveData.class, SaveReactionEventCommonData.class, value);
     }
 
     /**
@@ -17497,7 +15031,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "eventIds", scope = RemoveReactionEvents.class)
     public JAXBElement<ArrayOfguid> createRemoveReactionEventsEventIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveReactionEventsEventIds_QNAME, ArrayOfguid.class, RemoveReactionEvents.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveReactionEventsEventIds_QNAME, ArrayOfguid.class, RemoveReactionEvents.class, value);
     }
 
     /**
@@ -17510,7 +15044,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = AddEmployeesToReactionEvent.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToReactionEventEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionEvent.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionEvent.class, value);
     }
 
     /**
@@ -17523,7 +15057,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = RemoveEmployeesFromReactionEvent.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeesFromReactionEventEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesFromReactionEvent.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesFromReactionEvent.class, value);
     }
 
     /**
@@ -17536,7 +15070,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = AddEmployeeGroupsToReactionEvent.class)
     public JAXBElement<ArrayOfguid> createAddEmployeeGroupsToReactionEventEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeeGroupsToReactionEvent.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeeGroupsToReactionEvent.class, value);
     }
 
     /**
@@ -17549,7 +15083,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = AddEmployeesToReactionEventByGroups.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToReactionEventByGroupsEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionEventByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionEventByGroups.class, value);
     }
 
     /**
@@ -17562,7 +15096,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = RemoveEmployeeGroupsFromReactionEvent.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeeGroupsFromReactionEventEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeGroupsFromReactionEvent.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeGroupsFromReactionEvent.class, value);
     }
 
     /**
@@ -17575,7 +15109,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = RemoveEmployeeFromReactionEventByGroups.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeeFromReactionEventByGroupsEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeFromReactionEventByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeFromReactionEventByGroups.class, value);
     }
 
     /**
@@ -17588,7 +15122,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIds", scope = AddDriversToReactionEvent.class)
     public JAXBElement<ArrayOfguid> createAddDriversToReactionEventDriverIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, AddDriversToReactionEvent.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, AddDriversToReactionEvent.class, value);
     }
 
     /**
@@ -17601,7 +15135,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIds", scope = RemoveDriversFromReactionEvent.class)
     public JAXBElement<ArrayOfguid> createRemoveDriversFromReactionEventDriverIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, RemoveDriversFromReactionEvent.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, RemoveDriversFromReactionEvent.class, value);
     }
 
     /**
@@ -17614,7 +15148,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subtypes", scope = AddLogMessageSubtypesToReactionEvent.class)
     public JAXBElement<ArrayOfLogMsgSubType> createAddLogMessageSubtypesToReactionEventSubtypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, AddLogMessageSubtypesToReactionEvent.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, AddLogMessageSubtypesToReactionEvent.class, value);
     }
 
     /**
@@ -17627,7 +15161,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subtypes", scope = RemoveLogMessageSubtypesFromReactionEvent.class)
     public JAXBElement<ArrayOfLogMsgSubType> createRemoveLogMessageSubtypesFromReactionEventSubtypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, RemoveLogMessageSubtypesFromReactionEvent.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, RemoveLogMessageSubtypesFromReactionEvent.class, value);
     }
 
     /**
@@ -17640,7 +15174,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subtypes", scope = AddSwitchedOffLogMessageSubtypesToWorkplace.class)
     public JAXBElement<ArrayOfLogMsgSubType> createAddSwitchedOffLogMessageSubtypesToWorkplaceSubtypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, AddSwitchedOffLogMessageSubtypesToWorkplace.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, AddSwitchedOffLogMessageSubtypesToWorkplace.class, value);
     }
 
     /**
@@ -17653,7 +15187,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subtypes", scope = RemoveSwitchedOffLogMessageSubtypesFromWorkplace.class)
     public JAXBElement<ArrayOfLogMsgSubType> createRemoveSwitchedOffLogMessageSubtypesFromWorkplaceSubtypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, RemoveSwitchedOffLogMessageSubtypesFromWorkplace.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, RemoveSwitchedOffLogMessageSubtypesFromWorkplace.class, value);
     }
 
     /**
@@ -17666,7 +15200,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "saveData", scope = SetRemoteTerminalSettingsByWorkplaceModuleId.class)
     public JAXBElement<RemoteTerminalSaveData> createSetRemoteTerminalSettingsByWorkplaceModuleIdSaveData(RemoteTerminalSaveData value) {
-        return new JAXBElement<>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, RemoteTerminalSaveData.class, SetRemoteTerminalSettingsByWorkplaceModuleId.class, value);
+        return new JAXBElement<RemoteTerminalSaveData>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, RemoteTerminalSaveData.class, SetRemoteTerminalSettingsByWorkplaceModuleId.class, value);
     }
 
     /**
@@ -17679,7 +15213,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIds", scope = AddSwitchedOffLogDriversToWorkplace.class)
     public JAXBElement<ArrayOfguid> createAddSwitchedOffLogDriversToWorkplaceDriverIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, AddSwitchedOffLogDriversToWorkplace.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, AddSwitchedOffLogDriversToWorkplace.class, value);
     }
 
     /**
@@ -17692,7 +15226,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIds", scope = RemoveSwitchedOffLogDriversFromWorkplace.class)
     public JAXBElement<ArrayOfguid> createRemoveSwitchedOffLogDriversFromWorkplaceDriverIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, RemoveSwitchedOffLogDriversFromWorkplace.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, RemoveSwitchedOffLogDriversFromWorkplace.class, value);
     }
 
     /**
@@ -17705,7 +15239,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReactionEventsFromDevices.class)
     public JAXBElement<ReactionEventsFromDevicesSaveData> createSaveReactionEventsFromDevicesData(ReactionEventsFromDevicesSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionEventsFromDevicesSaveData.class, SaveReactionEventsFromDevices.class, value);
+        return new JAXBElement<ReactionEventsFromDevicesSaveData>(_AddReactionEventData_QNAME, ReactionEventsFromDevicesSaveData.class, SaveReactionEventsFromDevices.class, value);
     }
 
     /**
@@ -17718,7 +15252,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "group", scope = GetViolationPlan.class)
     public JAXBElement<String> createGetViolationPlanGroup(String value) {
-        return new JAXBElement<>(_GetViolationPlanGroup_QNAME, String.class, GetViolationPlan.class, value);
+        return new JAXBElement<String>(_GetViolationPlanGroup_QNAME, String.class, GetViolationPlan.class, value);
     }
 
     /**
@@ -17731,7 +15265,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetViolationPlanResult", scope = GetViolationPlanResponse.class)
     public JAXBElement<ArrayOfPlanModel> createGetViolationPlanResponseGetViolationPlanResult(ArrayOfPlanModel value) {
-        return new JAXBElement<>(_GetViolationPlanResponseGetViolationPlanResult_QNAME, ArrayOfPlanModel.class, GetViolationPlanResponse.class, value);
+        return new JAXBElement<ArrayOfPlanModel>(_GetViolationPlanResponseGetViolationPlanResult_QNAME, ArrayOfPlanModel.class, GetViolationPlanResponse.class, value);
     }
 
     /**
@@ -17744,7 +15278,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "group", scope = SetViolationPlan.class)
     public JAXBElement<String> createSetViolationPlanGroup(String value) {
-        return new JAXBElement<>(_GetViolationPlanGroup_QNAME, String.class, SetViolationPlan.class, value);
+        return new JAXBElement<String>(_GetViolationPlanGroup_QNAME, String.class, SetViolationPlan.class, value);
     }
 
     /**
@@ -17757,7 +15291,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "plan", scope = SetViolationPlan.class)
     public JAXBElement<ArrayOfPlanModel> createSetViolationPlanPlan(ArrayOfPlanModel value) {
-        return new JAXBElement<>(_SetViolationPlanPlan_QNAME, ArrayOfPlanModel.class, SetViolationPlan.class, value);
+        return new JAXBElement<ArrayOfPlanModel>(_SetViolationPlanPlan_QNAME, ArrayOfPlanModel.class, SetViolationPlan.class, value);
     }
 
     /**
@@ -17770,7 +15304,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddBranch.class)
     public JAXBElement<String> createAddBranchName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddBranch.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddBranch.class, value);
     }
 
     /**
@@ -17783,7 +15317,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = AddBranch.class)
     public JAXBElement<String> createAddBranchDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, AddBranch.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, AddBranch.class, value);
     }
 
     /**
@@ -17796,7 +15330,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddBranchResult", scope = AddBranchResponse.class)
     public JAXBElement<BranchInfo> createAddBranchResponseAddBranchResult(BranchInfo value) {
-        return new JAXBElement<>(_AddBranchResponseAddBranchResult_QNAME, BranchInfo.class, AddBranchResponse.class, value);
+        return new JAXBElement<BranchInfo>(_AddBranchResponseAddBranchResult_QNAME, BranchInfo.class, AddBranchResponse.class, value);
     }
 
     /**
@@ -17809,7 +15343,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveBranch.class)
     public JAXBElement<String> createSaveBranchName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveBranch.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveBranch.class, value);
     }
 
     /**
@@ -17822,7 +15356,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = SaveBranch.class)
     public JAXBElement<String> createSaveBranchDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, SaveBranch.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, SaveBranch.class, value);
     }
 
     /**
@@ -17835,7 +15369,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddWorkZone.class)
     public JAXBElement<WorkZoneSlimSaveData> createAddWorkZoneData(WorkZoneSlimSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkZoneSlimSaveData.class, AddWorkZone.class, value);
+        return new JAXBElement<WorkZoneSlimSaveData>(_AddReactionEventData_QNAME, WorkZoneSlimSaveData.class, AddWorkZone.class, value);
     }
 
     /**
@@ -17848,7 +15382,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddWorkZoneResult", scope = AddWorkZoneResponse.class)
     public JAXBElement<WorkZoneSlimInfo> createAddWorkZoneResponseAddWorkZoneResult(WorkZoneSlimInfo value) {
-        return new JAXBElement<>(_AddWorkZoneResponseAddWorkZoneResult_QNAME, WorkZoneSlimInfo.class, AddWorkZoneResponse.class, value);
+        return new JAXBElement<WorkZoneSlimInfo>(_AddWorkZoneResponseAddWorkZoneResult_QNAME, WorkZoneSlimInfo.class, AddWorkZoneResponse.class, value);
     }
 
     /**
@@ -17861,7 +15395,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveWorkZones.class)
     public JAXBElement<ArrayOfguid> createRemoveWorkZonesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveWorkZones.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveWorkZones.class, value);
     }
 
     /**
@@ -17874,7 +15408,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveWorkZone.class)
     public JAXBElement<WorkZoneSlimSaveData> createSaveWorkZoneData(WorkZoneSlimSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkZoneSlimSaveData.class, SaveWorkZone.class, value);
+        return new JAXBElement<WorkZoneSlimSaveData>(_AddReactionEventData_QNAME, WorkZoneSlimSaveData.class, SaveWorkZone.class, value);
     }
 
     /**
@@ -17887,7 +15421,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddWorkZonesAccessPoint.class)
     public JAXBElement<WorkZonesAccessPointSaveData> createAddWorkZonesAccessPointData(WorkZonesAccessPointSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkZonesAccessPointSaveData.class, AddWorkZonesAccessPoint.class, value);
+        return new JAXBElement<WorkZonesAccessPointSaveData>(_AddReactionEventData_QNAME, WorkZonesAccessPointSaveData.class, AddWorkZonesAccessPoint.class, value);
     }
 
     /**
@@ -17900,7 +15434,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddWorkZonesAccessPointResult", scope = AddWorkZonesAccessPointResponse.class)
     public JAXBElement<WorkZonesAccessPointSlimInfo> createAddWorkZonesAccessPointResponseAddWorkZonesAccessPointResult(WorkZonesAccessPointSlimInfo value) {
-        return new JAXBElement<>(_AddWorkZonesAccessPointResponseAddWorkZonesAccessPointResult_QNAME, WorkZonesAccessPointSlimInfo.class, AddWorkZonesAccessPointResponse.class, value);
+        return new JAXBElement<WorkZonesAccessPointSlimInfo>(_AddWorkZonesAccessPointResponseAddWorkZonesAccessPointResult_QNAME, WorkZonesAccessPointSlimInfo.class, AddWorkZonesAccessPointResponse.class, value);
     }
 
     /**
@@ -17913,7 +15447,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveWorkZonesAccessPoint.class)
     public JAXBElement<WorkZonesAccessPointSaveData> createSaveWorkZonesAccessPointData(WorkZonesAccessPointSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkZonesAccessPointSaveData.class, SaveWorkZonesAccessPoint.class, value);
+        return new JAXBElement<WorkZonesAccessPointSaveData>(_AddReactionEventData_QNAME, WorkZonesAccessPointSaveData.class, SaveWorkZonesAccessPoint.class, value);
     }
 
     /**
@@ -17926,7 +15460,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "contextId", scope = ClearPhotoState.class)
     public JAXBElement<String> createClearPhotoStateContextId(String value) {
-        return new JAXBElement<>(_ClearPhotoStateContextId_QNAME, String.class, ClearPhotoState.class, value);
+        return new JAXBElement<String>(_ClearPhotoStateContextId_QNAME, String.class, ClearPhotoState.class, value);
     }
 
     /**
@@ -17939,7 +15473,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "address", scope = SyncFaceX.class)
     public JAXBElement<String> createSyncFaceXAddress(String value) {
-        return new JAXBElement<>(_SyncFaceXAddress_QNAME, String.class, SyncFaceX.class, value);
+        return new JAXBElement<String>(_SyncFaceXAddress_QNAME, String.class, SyncFaceX.class, value);
     }
 
     /**
@@ -17952,7 +15486,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "address", scope = ClearFaceX.class)
     public JAXBElement<String> createClearFaceXAddress(String value) {
-        return new JAXBElement<>(_SyncFaceXAddress_QNAME, String.class, ClearFaceX.class, value);
+        return new JAXBElement<String>(_SyncFaceXAddress_QNAME, String.class, ClearFaceX.class, value);
     }
 
     /**
@@ -17965,7 +15499,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveISSIIDKs.class)
     public JAXBElement<ArrayOfguid> createRemoveISSIIDKsIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveISSIIDKs.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveISSIIDKs.class, value);
     }
 
     /**
@@ -17978,7 +15512,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveISSRecognition.class)
     public JAXBElement<ArrayOfguid> createRemoveISSRecognitionIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveISSRecognition.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveISSRecognition.class, value);
     }
 
     /**
@@ -17991,7 +15525,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveISSDrivers.class)
     public JAXBElement<ArrayOfint> createRemoveISSDriversIds(ArrayOfint value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfint.class, RemoveISSDrivers.class, value);
+        return new JAXBElement<ArrayOfint>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfint.class, RemoveISSDrivers.class, value);
     }
 
     /**
@@ -18004,7 +15538,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveISSIIDK.class)
     public JAXBElement<ISSIIDKSaveData> createSaveISSIIDKData(ISSIIDKSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSIIDKSaveData.class, SaveISSIIDK.class, value);
+        return new JAXBElement<ISSIIDKSaveData>(_AddReactionEventData_QNAME, ISSIIDKSaveData.class, SaveISSIIDK.class, value);
     }
 
     /**
@@ -18017,7 +15551,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveISSRecognition.class)
     public JAXBElement<ISSRecognitionSaveData> createSaveISSRecognitionData(ISSRecognitionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSRecognitionSaveData.class, SaveISSRecognition.class, value);
+        return new JAXBElement<ISSRecognitionSaveData>(_AddReactionEventData_QNAME, ISSRecognitionSaveData.class, SaveISSRecognition.class, value);
     }
 
     /**
@@ -18030,7 +15564,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveISSDriver.class)
     public JAXBElement<ISSDriverSaveData> createSaveISSDriverData(ISSDriverSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSDriverSaveData.class, SaveISSDriver.class, value);
+        return new JAXBElement<ISSDriverSaveData>(_AddReactionEventData_QNAME, ISSDriverSaveData.class, SaveISSDriver.class, value);
     }
 
     /**
@@ -18043,7 +15577,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddISSIIDK.class)
     public JAXBElement<ISSIIDKSaveData> createAddISSIIDKData(ISSIIDKSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSIIDKSaveData.class, AddISSIIDK.class, value);
+        return new JAXBElement<ISSIIDKSaveData>(_AddReactionEventData_QNAME, ISSIIDKSaveData.class, AddISSIIDK.class, value);
     }
 
     /**
@@ -18056,7 +15590,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "Add_ISS_IIDKResult", scope = AddISSIIDKResponse.class)
     public JAXBElement<ISSIIDKSlimInfo> createAddISSIIDKResponseAddISSIIDKResult(ISSIIDKSlimInfo value) {
-        return new JAXBElement<>(_AddISSIIDKResponseAddISSIIDKResult_QNAME, ISSIIDKSlimInfo.class, AddISSIIDKResponse.class, value);
+        return new JAXBElement<ISSIIDKSlimInfo>(_AddISSIIDKResponseAddISSIIDKResult_QNAME, ISSIIDKSlimInfo.class, AddISSIIDKResponse.class, value);
     }
 
     /**
@@ -18069,7 +15603,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddISSRecognition.class)
     public JAXBElement<ISSRecognitionSaveData> createAddISSRecognitionData(ISSRecognitionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSRecognitionSaveData.class, AddISSRecognition.class, value);
+        return new JAXBElement<ISSRecognitionSaveData>(_AddReactionEventData_QNAME, ISSRecognitionSaveData.class, AddISSRecognition.class, value);
     }
 
     /**
@@ -18082,7 +15616,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "Add_ISS_RecognitionResult", scope = AddISSRecognitionResponse.class)
     public JAXBElement<ISSRecognitionSlimInfo> createAddISSRecognitionResponseAddISSRecognitionResult(ISSRecognitionSlimInfo value) {
-        return new JAXBElement<>(_AddISSRecognitionResponseAddISSRecognitionResult_QNAME, ISSRecognitionSlimInfo.class, AddISSRecognitionResponse.class, value);
+        return new JAXBElement<ISSRecognitionSlimInfo>(_AddISSRecognitionResponseAddISSRecognitionResult_QNAME, ISSRecognitionSlimInfo.class, AddISSRecognitionResponse.class, value);
     }
 
     /**
@@ -18095,7 +15629,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddISSDriver.class)
     public JAXBElement<ISSDriverSaveData> createAddISSDriverData(ISSDriverSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSDriverSaveData.class, AddISSDriver.class, value);
+        return new JAXBElement<ISSDriverSaveData>(_AddReactionEventData_QNAME, ISSDriverSaveData.class, AddISSDriver.class, value);
     }
 
     /**
@@ -18108,7 +15642,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "Add_ISS_DriverResult", scope = AddISSDriverResponse.class)
     public JAXBElement<ISSDriverSlimInfo> createAddISSDriverResponseAddISSDriverResult(ISSDriverSlimInfo value) {
-        return new JAXBElement<>(_AddISSDriverResponseAddISSDriverResult_QNAME, ISSDriverSlimInfo.class, AddISSDriverResponse.class, value);
+        return new JAXBElement<ISSDriverSlimInfo>(_AddISSDriverResponseAddISSDriverResult_QNAME, ISSDriverSlimInfo.class, AddISSDriverResponse.class, value);
     }
 
     /**
@@ -18121,7 +15655,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetSecureOSCamerasResult", scope = GetSecureOSCamerasResponse.class)
     public JAXBElement<ArrayOfArrayOfKeyValueOfstringstring> createGetSecureOSCamerasResponseGetSecureOSCamerasResult(ArrayOfArrayOfKeyValueOfstringstring value) {
-        return new JAXBElement<>(_GetSecureOSCamerasResponseGetSecureOSCamerasResult_QNAME, ArrayOfArrayOfKeyValueOfstringstring.class, GetSecureOSCamerasResponse.class, value);
+        return new JAXBElement<ArrayOfArrayOfKeyValueOfstringstring>(_GetSecureOSCamerasResponseGetSecureOSCamerasResult_QNAME, ArrayOfArrayOfKeyValueOfstringstring.class, GetSecureOSCamerasResponse.class, value);
     }
 
     /**
@@ -18134,7 +15668,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddISSDriverEventPlayback.class)
     public JAXBElement<ISSDriverEventPlaybackSaveData> createAddISSDriverEventPlaybackData(ISSDriverEventPlaybackSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSDriverEventPlaybackSaveData.class, AddISSDriverEventPlayback.class, value);
+        return new JAXBElement<ISSDriverEventPlaybackSaveData>(_AddReactionEventData_QNAME, ISSDriverEventPlaybackSaveData.class, AddISSDriverEventPlayback.class, value);
     }
 
     /**
@@ -18147,7 +15681,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = RemoveISSDriverEventPlayback.class)
     public JAXBElement<ISSDriverEventPlaybackSlimInfo> createRemoveISSDriverEventPlaybackData(ISSDriverEventPlaybackSlimInfo value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ISSDriverEventPlaybackSlimInfo.class, RemoveISSDriverEventPlayback.class, value);
+        return new JAXBElement<ISSDriverEventPlaybackSlimInfo>(_AddReactionEventData_QNAME, ISSDriverEventPlaybackSlimInfo.class, RemoveISSDriverEventPlayback.class, value);
     }
 
     /**
@@ -18160,7 +15694,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ip", scope = LoadPanasonicConfiguration.class)
     public JAXBElement<String> createLoadPanasonicConfigurationIp(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadPanasonicConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadPanasonicConfiguration.class, value);
     }
 
     /**
@@ -18173,7 +15707,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = LoadPanasonicConfiguration.class)
     public JAXBElement<String> createLoadPanasonicConfigurationLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, LoadPanasonicConfiguration.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, LoadPanasonicConfiguration.class, value);
     }
 
     /**
@@ -18186,7 +15720,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadPanasonicConfiguration.class)
     public JAXBElement<String> createLoadPanasonicConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadPanasonicConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadPanasonicConfiguration.class, value);
     }
 
     /**
@@ -18199,7 +15733,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadPanasonicConfigurationResult", scope = LoadPanasonicConfigurationResponse.class)
     public JAXBElement<PanasonicCameraCollectionResult> createLoadPanasonicConfigurationResponseLoadPanasonicConfigurationResult(PanasonicCameraCollectionResult value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationResponseLoadPanasonicConfigurationResult_QNAME, PanasonicCameraCollectionResult.class, LoadPanasonicConfigurationResponse.class, value);
+        return new JAXBElement<PanasonicCameraCollectionResult>(_LoadPanasonicConfigurationResponseLoadPanasonicConfigurationResult_QNAME, PanasonicCameraCollectionResult.class, LoadPanasonicConfigurationResponse.class, value);
     }
 
     /**
@@ -18212,7 +15746,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "resources", scope = UpdateBasIpDrivers.class)
     public JAXBElement<ArrayOfLResourcePropertyValues> createUpdateBasIpDriversResources(ArrayOfLResourcePropertyValues value) {
-        return new JAXBElement<>(_UpdateBasIpDriversResources_QNAME, ArrayOfLResourcePropertyValues.class, UpdateBasIpDrivers.class, value);
+        return new JAXBElement<ArrayOfLResourcePropertyValues>(_UpdateBasIpDriversResources_QNAME, ArrayOfLResourcePropertyValues.class, UpdateBasIpDrivers.class, value);
     }
 
     /**
@@ -18225,7 +15759,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "UpdateBasIpDriversResult", scope = UpdateBasIpDriversResponse.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createUpdateBasIpDriversResponseUpdateBasIpDriversResult(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_UpdateBasIpDriversResponseUpdateBasIpDriversResult_QNAME, ArrayOfLDriverFullInfo.class, UpdateBasIpDriversResponse.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_UpdateBasIpDriversResponseUpdateBasIpDriversResult_QNAME, ArrayOfLDriverFullInfo.class, UpdateBasIpDriversResponse.class, value);
     }
 
     /**
@@ -18238,7 +15772,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ip", scope = LoadNTechLabRecognitionServiceConfiguration.class)
     public JAXBElement<String> createLoadNTechLabRecognitionServiceConfigurationIp(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadNTechLabRecognitionServiceConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadNTechLabRecognitionServiceConfiguration.class, value);
     }
 
     /**
@@ -18251,7 +15785,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = LoadNTechLabRecognitionServiceConfiguration.class)
     public JAXBElement<String> createLoadNTechLabRecognitionServiceConfigurationLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, LoadNTechLabRecognitionServiceConfiguration.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, LoadNTechLabRecognitionServiceConfiguration.class, value);
     }
 
     /**
@@ -18264,7 +15798,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadNTechLabRecognitionServiceConfiguration.class)
     public JAXBElement<String> createLoadNTechLabRecognitionServiceConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadNTechLabRecognitionServiceConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadNTechLabRecognitionServiceConfiguration.class, value);
     }
 
     /**
@@ -18277,7 +15811,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadNTechLabRecognitionServiceConfigurationResult", scope = LoadNTechLabRecognitionServiceConfigurationResponse.class)
     public JAXBElement<NTechLabRecognitionServiceResult> createLoadNTechLabRecognitionServiceConfigurationResponseLoadNTechLabRecognitionServiceConfigurationResult(NTechLabRecognitionServiceResult value) {
-        return new JAXBElement<>(_LoadNTechLabRecognitionServiceConfigurationResponseLoadNTechLabRecognitionServiceConfigurationResult_QNAME, NTechLabRecognitionServiceResult.class, LoadNTechLabRecognitionServiceConfigurationResponse.class, value);
+        return new JAXBElement<NTechLabRecognitionServiceResult>(_LoadNTechLabRecognitionServiceConfigurationResponseLoadNTechLabRecognitionServiceConfigurationResult_QNAME, NTechLabRecognitionServiceResult.class, LoadNTechLabRecognitionServiceConfigurationResponse.class, value);
     }
 
     /**
@@ -18290,7 +15824,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ip", scope = LoadKeyKeeperServiceConfiguration.class)
     public JAXBElement<String> createLoadKeyKeeperServiceConfigurationIp(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadKeyKeeperServiceConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadKeyKeeperServiceConfiguration.class, value);
     }
 
     /**
@@ -18303,7 +15837,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = LoadKeyKeeperServiceConfiguration.class)
     public JAXBElement<String> createLoadKeyKeeperServiceConfigurationLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, LoadKeyKeeperServiceConfiguration.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, LoadKeyKeeperServiceConfiguration.class, value);
     }
 
     /**
@@ -18316,7 +15850,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadKeyKeeperServiceConfiguration.class)
     public JAXBElement<String> createLoadKeyKeeperServiceConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadKeyKeeperServiceConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadKeyKeeperServiceConfiguration.class, value);
     }
 
     /**
@@ -18329,7 +15863,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadKeyKeeperServiceConfigurationResult", scope = LoadKeyKeeperServiceConfigurationResponse.class)
     public JAXBElement<KeyKeeperControllerResult> createLoadKeyKeeperServiceConfigurationResponseLoadKeyKeeperServiceConfigurationResult(KeyKeeperControllerResult value) {
-        return new JAXBElement<>(_LoadKeyKeeperServiceConfigurationResponseLoadKeyKeeperServiceConfigurationResult_QNAME, KeyKeeperControllerResult.class, LoadKeyKeeperServiceConfigurationResponse.class, value);
+        return new JAXBElement<KeyKeeperControllerResult>(_LoadKeyKeeperServiceConfigurationResponseLoadKeyKeeperServiceConfigurationResult_QNAME, KeyKeeperControllerResult.class, LoadKeyKeeperServiceConfigurationResponse.class, value);
     }
 
     /**
@@ -18342,7 +15876,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetKeyKeeperSlotsStatusResult", scope = GetKeyKeeperSlotsStatusResponse.class)
     public JAXBElement<CabinetStatus> createGetKeyKeeperSlotsStatusResponseGetKeyKeeperSlotsStatusResult(CabinetStatus value) {
-        return new JAXBElement<>(_GetKeyKeeperSlotsStatusResponseGetKeyKeeperSlotsStatusResult_QNAME, CabinetStatus.class, GetKeyKeeperSlotsStatusResponse.class, value);
+        return new JAXBElement<CabinetStatus>(_GetKeyKeeperSlotsStatusResponseGetKeyKeeperSlotsStatusResult_QNAME, CabinetStatus.class, GetKeyKeeperSlotsStatusResponse.class, value);
     }
 
     /**
@@ -18355,7 +15889,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetKeyLocationResult", scope = GetKeyLocationResponse.class)
     public JAXBElement<RoomKeyInfo> createGetKeyLocationResponseGetKeyLocationResult(RoomKeyInfo value) {
-        return new JAXBElement<>(_GetKeyLocationResponseGetKeyLocationResult_QNAME, RoomKeyInfo.class, GetKeyLocationResponse.class, value);
+        return new JAXBElement<RoomKeyInfo>(_GetKeyLocationResponseGetKeyLocationResult_QNAME, RoomKeyInfo.class, GetKeyLocationResponse.class, value);
     }
 
     /**
@@ -18368,7 +15902,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "keyInfo", scope = OpenKeyKeeperDoorAndTakeKey.class)
     public JAXBElement<RoomKeyInfo> createOpenKeyKeeperDoorAndTakeKeyKeyInfo(RoomKeyInfo value) {
-        return new JAXBElement<>(_OpenKeyKeeperDoorAndTakeKeyKeyInfo_QNAME, RoomKeyInfo.class, OpenKeyKeeperDoorAndTakeKey.class, value);
+        return new JAXBElement<RoomKeyInfo>(_OpenKeyKeeperDoorAndTakeKeyKeyInfo_QNAME, RoomKeyInfo.class, OpenKeyKeeperDoorAndTakeKey.class, value);
     }
 
     /**
@@ -18381,7 +15915,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "OpenKeyKeeperDoorAndTakeKeyResult", scope = OpenKeyKeeperDoorAndTakeKeyResponse.class)
     public JAXBElement<KeyKeeperCommandResult> createOpenKeyKeeperDoorAndTakeKeyResponseOpenKeyKeeperDoorAndTakeKeyResult(KeyKeeperCommandResult value) {
-        return new JAXBElement<>(_OpenKeyKeeperDoorAndTakeKeyResponseOpenKeyKeeperDoorAndTakeKeyResult_QNAME, KeyKeeperCommandResult.class, OpenKeyKeeperDoorAndTakeKeyResponse.class, value);
+        return new JAXBElement<KeyKeeperCommandResult>(_OpenKeyKeeperDoorAndTakeKeyResponseOpenKeyKeeperDoorAndTakeKeyResult_QNAME, KeyKeeperCommandResult.class, OpenKeyKeeperDoorAndTakeKeyResponse.class, value);
     }
 
     /**
@@ -18394,7 +15928,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "OpenKeyKeeperDoorResult", scope = OpenKeyKeeperDoorResponse.class)
     public JAXBElement<KeyKeeperCommandResult> createOpenKeyKeeperDoorResponseOpenKeyKeeperDoorResult(KeyKeeperCommandResult value) {
-        return new JAXBElement<>(_OpenKeyKeeperDoorResponseOpenKeyKeeperDoorResult_QNAME, KeyKeeperCommandResult.class, OpenKeyKeeperDoorResponse.class, value);
+        return new JAXBElement<KeyKeeperCommandResult>(_OpenKeyKeeperDoorResponseOpenKeyKeeperDoorResult_QNAME, KeyKeeperCommandResult.class, OpenKeyKeeperDoorResponse.class, value);
     }
 
     /**
@@ -18407,7 +15941,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "OpenCellCommandResult", scope = OpenCellCommandResponse.class)
     public JAXBElement<KeyKeeperCommandResult> createOpenCellCommandResponseOpenCellCommandResult(KeyKeeperCommandResult value) {
-        return new JAXBElement<>(_OpenCellCommandResponseOpenCellCommandResult_QNAME, KeyKeeperCommandResult.class, OpenCellCommandResponse.class, value);
+        return new JAXBElement<KeyKeeperCommandResult>(_OpenCellCommandResponseOpenCellCommandResult_QNAME, KeyKeeperCommandResult.class, OpenCellCommandResponse.class, value);
     }
 
     /**
@@ -18420,7 +15954,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ip", scope = LoadNUUOConfiguration.class)
     public JAXBElement<String> createLoadNUUOConfigurationIp(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadNUUOConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadNUUOConfiguration.class, value);
     }
 
     /**
@@ -18433,7 +15967,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = LoadNUUOConfiguration.class)
     public JAXBElement<String> createLoadNUUOConfigurationLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, LoadNUUOConfiguration.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, LoadNUUOConfiguration.class, value);
     }
 
     /**
@@ -18446,7 +15980,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadNUUOConfiguration.class)
     public JAXBElement<String> createLoadNUUOConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadNUUOConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadNUUOConfiguration.class, value);
     }
 
     /**
@@ -18459,7 +15993,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadNUUOConfigurationResult", scope = LoadNUUOConfigurationResponse.class)
     public JAXBElement<NUUOArchiveServerCollectionResult> createLoadNUUOConfigurationResponseLoadNUUOConfigurationResult(NUUOArchiveServerCollectionResult value) {
-        return new JAXBElement<>(_LoadNUUOConfigurationResponseLoadNUUOConfigurationResult_QNAME, NUUOArchiveServerCollectionResult.class, LoadNUUOConfigurationResponse.class, value);
+        return new JAXBElement<NUUOArchiveServerCollectionResult>(_LoadNUUOConfigurationResponseLoadNUUOConfigurationResult_QNAME, NUUOArchiveServerCollectionResult.class, LoadNUUOConfigurationResponse.class, value);
     }
 
     /**
@@ -18472,7 +16006,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ip", scope = LoadTrassirConfiguration.class)
     public JAXBElement<String> createLoadTrassirConfigurationIp(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadTrassirConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadTrassirConfiguration.class, value);
     }
 
     /**
@@ -18485,7 +16019,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = LoadTrassirConfiguration.class)
     public JAXBElement<String> createLoadTrassirConfigurationLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, LoadTrassirConfiguration.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, LoadTrassirConfiguration.class, value);
     }
 
     /**
@@ -18498,7 +16032,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadTrassirConfiguration.class)
     public JAXBElement<String> createLoadTrassirConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadTrassirConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadTrassirConfiguration.class, value);
     }
 
     /**
@@ -18511,7 +16045,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "passwordSDK", scope = LoadTrassirConfiguration.class)
     public JAXBElement<String> createLoadTrassirConfigurationPasswordSDK(String value) {
-        return new JAXBElement<>(_LoadTrassirConfigurationPasswordSDK_QNAME, String.class, LoadTrassirConfiguration.class, value);
+        return new JAXBElement<String>(_LoadTrassirConfigurationPasswordSDK_QNAME, String.class, LoadTrassirConfiguration.class, value);
     }
 
     /**
@@ -18524,7 +16058,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadTrassirConfigurationResult", scope = LoadTrassirConfigurationResponse.class)
     public JAXBElement<TrassirIntegrationResult> createLoadTrassirConfigurationResponseLoadTrassirConfigurationResult(TrassirIntegrationResult value) {
-        return new JAXBElement<>(_LoadTrassirConfigurationResponseLoadTrassirConfigurationResult_QNAME, TrassirIntegrationResult.class, LoadTrassirConfigurationResponse.class, value);
+        return new JAXBElement<TrassirIntegrationResult>(_LoadTrassirConfigurationResponseLoadTrassirConfigurationResult_QNAME, TrassirIntegrationResult.class, LoadTrassirConfigurationResponse.class, value);
     }
 
     /**
@@ -18537,7 +16071,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ip", scope = LoadIdisConfiguration.class)
     public JAXBElement<String> createLoadIdisConfigurationIp(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadIdisConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationIp_QNAME, String.class, LoadIdisConfiguration.class, value);
     }
 
     /**
@@ -18550,7 +16084,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = LoadIdisConfiguration.class)
     public JAXBElement<String> createLoadIdisConfigurationLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, LoadIdisConfiguration.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, LoadIdisConfiguration.class, value);
     }
 
     /**
@@ -18563,7 +16097,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadIdisConfiguration.class)
     public JAXBElement<String> createLoadIdisConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadIdisConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadIdisConfiguration.class, value);
     }
 
     /**
@@ -18576,7 +16110,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadIdisConfigurationResult", scope = LoadIdisConfigurationResponse.class)
     public JAXBElement<IdisConfiguration> createLoadIdisConfigurationResponseLoadIdisConfigurationResult(IdisConfiguration value) {
-        return new JAXBElement<>(_LoadIdisConfigurationResponseLoadIdisConfigurationResult_QNAME, IdisConfiguration.class, LoadIdisConfigurationResponse.class, value);
+        return new JAXBElement<IdisConfiguration>(_LoadIdisConfigurationResponseLoadIdisConfigurationResult_QNAME, IdisConfiguration.class, LoadIdisConfigurationResponse.class, value);
     }
 
     /**
@@ -18589,7 +16123,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "serverName", scope = LoadServerConfiguration.class)
     public JAXBElement<String> createLoadServerConfigurationServerName(String value) {
-        return new JAXBElement<>(_LoadServerConfigurationServerName_QNAME, String.class, LoadServerConfiguration.class, value);
+        return new JAXBElement<String>(_LoadServerConfigurationServerName_QNAME, String.class, LoadServerConfiguration.class, value);
     }
 
     /**
@@ -18602,7 +16136,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadServerConfiguration.class)
     public JAXBElement<String> createLoadServerConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadServerConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadServerConfiguration.class, value);
     }
 
     /**
@@ -18615,7 +16149,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadServerConfigurationResult", scope = LoadServerConfigurationResponse.class)
     public JAXBElement<IvideonCameraCollectionResult> createLoadServerConfigurationResponseLoadServerConfigurationResult(IvideonCameraCollectionResult value) {
-        return new JAXBElement<>(_LoadServerConfigurationResponseLoadServerConfigurationResult_QNAME, IvideonCameraCollectionResult.class, LoadServerConfigurationResponse.class, value);
+        return new JAXBElement<IvideonCameraCollectionResult>(_LoadServerConfigurationResponseLoadServerConfigurationResult_QNAME, IvideonCameraCollectionResult.class, LoadServerConfigurationResponse.class, value);
     }
 
     /**
@@ -18628,7 +16162,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = LoadPersonalCabinetConfiguration.class)
     public JAXBElement<String> createLoadPersonalCabinetConfigurationLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, LoadPersonalCabinetConfiguration.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, LoadPersonalCabinetConfiguration.class, value);
     }
 
     /**
@@ -18641,7 +16175,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = LoadPersonalCabinetConfiguration.class)
     public JAXBElement<String> createLoadPersonalCabinetConfigurationPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadPersonalCabinetConfiguration.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, LoadPersonalCabinetConfiguration.class, value);
     }
 
     /**
@@ -18654,7 +16188,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "LoadPersonalCabinetConfigurationResult", scope = LoadPersonalCabinetConfigurationResponse.class)
     public JAXBElement<IvideonRemoteServerCollectionResult> createLoadPersonalCabinetConfigurationResponseLoadPersonalCabinetConfigurationResult(IvideonRemoteServerCollectionResult value) {
-        return new JAXBElement<>(_LoadPersonalCabinetConfigurationResponseLoadPersonalCabinetConfigurationResult_QNAME, IvideonRemoteServerCollectionResult.class, LoadPersonalCabinetConfigurationResponse.class, value);
+        return new JAXBElement<IvideonRemoteServerCollectionResult>(_LoadPersonalCabinetConfigurationResponseLoadPersonalCabinetConfigurationResult_QNAME, IvideonRemoteServerCollectionResult.class, LoadPersonalCabinetConfigurationResponse.class, value);
     }
 
     /**
@@ -18667,7 +16201,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "BroadcastFindBasIpDevicesResult", scope = BroadcastFindBasIpDevicesResponse.class)
     public JAXBElement<FindBasIpIntercomResult> createBroadcastFindBasIpDevicesResponseBroadcastFindBasIpDevicesResult(FindBasIpIntercomResult value) {
-        return new JAXBElement<>(_BroadcastFindBasIpDevicesResponseBroadcastFindBasIpDevicesResult_QNAME, FindBasIpIntercomResult.class, BroadcastFindBasIpDevicesResponse.class, value);
+        return new JAXBElement<FindBasIpIntercomResult>(_BroadcastFindBasIpDevicesResponseBroadcastFindBasIpDevicesResult_QNAME, FindBasIpIntercomResult.class, BroadcastFindBasIpDevicesResponse.class, value);
     }
 
     /**
@@ -18680,7 +16214,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "BroadcastFindLPRCamerasResult", scope = BroadcastFindLPRCamerasResponse.class)
     public JAXBElement<FindLPRCameraResult> createBroadcastFindLPRCamerasResponseBroadcastFindLPRCamerasResult(FindLPRCameraResult value) {
-        return new JAXBElement<>(_BroadcastFindLPRCamerasResponseBroadcastFindLPRCamerasResult_QNAME, FindLPRCameraResult.class, BroadcastFindLPRCamerasResponse.class, value);
+        return new JAXBElement<FindLPRCameraResult>(_BroadcastFindLPRCamerasResponseBroadcastFindLPRCamerasResult_QNAME, FindLPRCameraResult.class, BroadcastFindLPRCamerasResponse.class, value);
     }
 
     /**
@@ -18693,7 +16227,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindUsbCanConvertersResult", scope = FindUsbCanConvertersResponse.class)
     public JAXBElement<FindConvertersResult> createFindUsbCanConvertersResponseFindUsbCanConvertersResult(FindConvertersResult value) {
-        return new JAXBElement<>(_FindUsbCanConvertersResponseFindUsbCanConvertersResult_QNAME, FindConvertersResult.class, FindUsbCanConvertersResponse.class, value);
+        return new JAXBElement<FindConvertersResult>(_FindUsbCanConvertersResponseFindUsbCanConvertersResult_QNAME, FindConvertersResult.class, FindUsbCanConvertersResponse.class, value);
     }
 
     /**
@@ -18706,7 +16240,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "BroadcastFindLanConvertersResult", scope = BroadcastFindLanConvertersResponse.class)
     public JAXBElement<ArrayOfLanCanConverter> createBroadcastFindLanConvertersResponseBroadcastFindLanConvertersResult(ArrayOfLanCanConverter value) {
-        return new JAXBElement<>(_BroadcastFindLanConvertersResponseBroadcastFindLanConvertersResult_QNAME, ArrayOfLanCanConverter.class, BroadcastFindLanConvertersResponse.class, value);
+        return new JAXBElement<ArrayOfLanCanConverter>(_BroadcastFindLanConvertersResponseBroadcastFindLanConvertersResult_QNAME, ArrayOfLanCanConverter.class, BroadcastFindLanConvertersResponse.class, value);
     }
 
     /**
@@ -18719,7 +16253,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "address", scope = FindLanConverter.class)
     public JAXBElement<IPAddress> createFindLanConverterAddress(IPAddress value) {
-        return new JAXBElement<>(_SyncFaceXAddress_QNAME, IPAddress.class, FindLanConverter.class, value);
+        return new JAXBElement<IPAddress>(_SyncFaceXAddress_QNAME, IPAddress.class, FindLanConverter.class, value);
     }
 
     /**
@@ -18732,7 +16266,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindLanConverterResult", scope = FindLanConverterResponse.class)
     public JAXBElement<LanCanConverter> createFindLanConverterResponseFindLanConverterResult(LanCanConverter value) {
-        return new JAXBElement<>(_FindLanConverterResponseFindLanConverterResult_QNAME, LanCanConverter.class, FindLanConverterResponse.class, value);
+        return new JAXBElement<LanCanConverter>(_FindLanConverterResponseFindLanConverterResult_QNAME, LanCanConverter.class, FindLanConverterResponse.class, value);
     }
 
     /**
@@ -18745,7 +16279,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "address", scope = FindLanConverter2 .class)
     public JAXBElement<String> createFindLanConverter2Address(String value) {
-        return new JAXBElement<>(_SyncFaceXAddress_QNAME, String.class, FindLanConverter2 .class, value);
+        return new JAXBElement<String>(_SyncFaceXAddress_QNAME, String.class, FindLanConverter2 .class, value);
     }
 
     /**
@@ -18758,7 +16292,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindLanConverter2Result", scope = FindLanConverter2Response.class)
     public JAXBElement<LanCanConverter> createFindLanConverter2ResponseFindLanConverter2Result(LanCanConverter value) {
-        return new JAXBElement<>(_FindLanConverter2ResponseFindLanConverter2Result_QNAME, LanCanConverter.class, FindLanConverter2Response.class, value);
+        return new JAXBElement<LanCanConverter>(_FindLanConverter2ResponseFindLanConverter2Result_QNAME, LanCanConverter.class, FindLanConverter2Response.class, value);
     }
 
     /**
@@ -18771,7 +16305,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "converters", scope = FindCanControllersViaCanConverter.class)
     public JAXBElement<ArrayOfCanConverterAddress> createFindCanControllersViaCanConverterConverters(ArrayOfCanConverterAddress value) {
-        return new JAXBElement<>(_FindCanControllersViaCanConverterConverters_QNAME, ArrayOfCanConverterAddress.class, FindCanControllersViaCanConverter.class, value);
+        return new JAXBElement<ArrayOfCanConverterAddress>(_FindCanControllersViaCanConverterConverters_QNAME, ArrayOfCanConverterAddress.class, FindCanControllersViaCanConverter.class, value);
     }
 
     /**
@@ -18784,7 +16318,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "FindCanControllersViaCanConverterResult", scope = FindCanControllersViaCanConverterResponse.class)
     public JAXBElement<FindControllersResult> createFindCanControllersViaCanConverterResponseFindCanControllersViaCanConverterResult(FindControllersResult value) {
-        return new JAXBElement<>(_FindCanControllersViaCanConverterResponseFindCanControllersViaCanConverterResult_QNAME, FindControllersResult.class, FindCanControllersViaCanConverterResponse.class, value);
+        return new JAXBElement<FindControllersResult>(_FindCanControllersViaCanConverterResponseFindCanControllersViaCanConverterResult_QNAME, FindControllersResult.class, FindCanControllersViaCanConverterResponse.class, value);
     }
 
     /**
@@ -18797,7 +16331,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "devices", scope = SetDevicesAddressBySidViaCanConverter.class)
     public JAXBElement<ArrayOfCanDeviceNetConfig> createSetDevicesAddressBySidViaCanConverterDevices(ArrayOfCanDeviceNetConfig value) {
-        return new JAXBElement<>(_SetDevicesAddressBySidViaCanConverterDevices_QNAME, ArrayOfCanDeviceNetConfig.class, SetDevicesAddressBySidViaCanConverter.class, value);
+        return new JAXBElement<ArrayOfCanDeviceNetConfig>(_SetDevicesAddressBySidViaCanConverterDevices_QNAME, ArrayOfCanDeviceNetConfig.class, SetDevicesAddressBySidViaCanConverter.class, value);
     }
 
     /**
@@ -18810,7 +16344,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SetDevicesAddressBySidViaCanConverterResult", scope = SetDevicesAddressBySidViaCanConverterResponse.class)
     public JAXBElement<SetDevicesAddressBySidResult> createSetDevicesAddressBySidViaCanConverterResponseSetDevicesAddressBySidViaCanConverterResult(SetDevicesAddressBySidResult value) {
-        return new JAXBElement<>(_SetDevicesAddressBySidViaCanConverterResponseSetDevicesAddressBySidViaCanConverterResult_QNAME, SetDevicesAddressBySidResult.class, SetDevicesAddressBySidViaCanConverterResponse.class, value);
+        return new JAXBElement<SetDevicesAddressBySidResult>(_SetDevicesAddressBySidViaCanConverterResponseSetDevicesAddressBySidViaCanConverterResult_QNAME, SetDevicesAddressBySidResult.class, SetDevicesAddressBySidViaCanConverterResponse.class, value);
     }
 
     /**
@@ -18823,7 +16357,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "newConfiguration", scope = SetNetworkConfigurationToDevice.class)
     public JAXBElement<NetConfiguration> createSetNetworkConfigurationToDeviceNewConfiguration(NetConfiguration value) {
-        return new JAXBElement<>(_SetNetworkConfigurationToDeviceNewConfiguration_QNAME, NetConfiguration.class, SetNetworkConfigurationToDevice.class, value);
+        return new JAXBElement<NetConfiguration>(_SetNetworkConfigurationToDeviceNewConfiguration_QNAME, NetConfiguration.class, SetNetworkConfigurationToDevice.class, value);
     }
 
     /**
@@ -18836,7 +16370,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "address", scope = SetNetworkConfigurationToDevice.class)
     public JAXBElement<IPAddress> createSetNetworkConfigurationToDeviceAddress(IPAddress value) {
-        return new JAXBElement<>(_SyncFaceXAddress_QNAME, IPAddress.class, SetNetworkConfigurationToDevice.class, value);
+        return new JAXBElement<IPAddress>(_SyncFaceXAddress_QNAME, IPAddress.class, SetNetworkConfigurationToDevice.class, value);
     }
 
     /**
@@ -18849,7 +16383,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "devices", scope = GetControllerConfigurationsViaCanConverter.class)
     public JAXBElement<ArrayOfCanDeviceNetConfig> createGetControllerConfigurationsViaCanConverterDevices(ArrayOfCanDeviceNetConfig value) {
-        return new JAXBElement<>(_SetDevicesAddressBySidViaCanConverterDevices_QNAME, ArrayOfCanDeviceNetConfig.class, GetControllerConfigurationsViaCanConverter.class, value);
+        return new JAXBElement<ArrayOfCanDeviceNetConfig>(_SetDevicesAddressBySidViaCanConverterDevices_QNAME, ArrayOfCanDeviceNetConfig.class, GetControllerConfigurationsViaCanConverter.class, value);
     }
 
     /**
@@ -18862,7 +16396,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetControllerConfigurationsViaCanConverterResult", scope = GetControllerConfigurationsViaCanConverterResponse.class)
     public JAXBElement<GetControllerConfigurationsResult> createGetControllerConfigurationsViaCanConverterResponseGetControllerConfigurationsViaCanConverterResult(GetControllerConfigurationsResult value) {
-        return new JAXBElement<>(_GetControllerConfigurationsViaCanConverterResponseGetControllerConfigurationsViaCanConverterResult_QNAME, GetControllerConfigurationsResult.class, GetControllerConfigurationsViaCanConverterResponse.class, value);
+        return new JAXBElement<GetControllerConfigurationsResult>(_GetControllerConfigurationsViaCanConverterResponseGetControllerConfigurationsViaCanConverterResult_QNAME, GetControllerConfigurationsResult.class, GetControllerConfigurationsViaCanConverterResponse.class, value);
     }
 
     /**
@@ -18875,7 +16409,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "saveData", scope = AddNestedCell.class)
     public JAXBElement<ArrayOfScreenCellSaveData> createAddNestedCellSaveData(ArrayOfScreenCellSaveData value) {
-        return new JAXBElement<>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, ArrayOfScreenCellSaveData.class, AddNestedCell.class, value);
+        return new JAXBElement<ArrayOfScreenCellSaveData>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, ArrayOfScreenCellSaveData.class, AddNestedCell.class, value);
     }
 
     /**
@@ -18888,7 +16422,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddNestedCellResult", scope = AddNestedCellResponse.class)
     public JAXBElement<ArrayOfguid> createAddNestedCellResponseAddNestedCellResult(ArrayOfguid value) {
-        return new JAXBElement<>(_AddNestedCellResponseAddNestedCellResult_QNAME, ArrayOfguid.class, AddNestedCellResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddNestedCellResponseAddNestedCellResult_QNAME, ArrayOfguid.class, AddNestedCellResponse.class, value);
     }
 
     /**
@@ -18901,7 +16435,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "saveData", scope = SaveCell.class)
     public JAXBElement<ArrayOfScreenCellInfo> createSaveCellSaveData(ArrayOfScreenCellInfo value) {
-        return new JAXBElement<>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, ArrayOfScreenCellInfo.class, SaveCell.class, value);
+        return new JAXBElement<ArrayOfScreenCellInfo>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, ArrayOfScreenCellInfo.class, SaveCell.class, value);
     }
 
     /**
@@ -18914,7 +16448,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "cellIds", scope = RemoveCell.class)
     public JAXBElement<ArrayOfguid> createRemoveCellCellIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveCellCellIds_QNAME, ArrayOfguid.class, RemoveCell.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveCellCellIds_QNAME, ArrayOfguid.class, RemoveCell.class, value);
     }
 
     /**
@@ -18927,7 +16461,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "saveData", scope = SaveScreen.class)
     public JAXBElement<ScreenLayoutSaveData> createSaveScreenSaveData(ScreenLayoutSaveData value) {
-        return new JAXBElement<>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, ScreenLayoutSaveData.class, SaveScreen.class, value);
+        return new JAXBElement<ScreenLayoutSaveData>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, ScreenLayoutSaveData.class, SaveScreen.class, value);
     }
 
     /**
@@ -18940,7 +16474,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetScreenCellContentToPhotoIdentification.class)
     public JAXBElement<CellContentFotoIdentificationSaveData> createSetScreenCellContentToPhotoIdentificationData(CellContentFotoIdentificationSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, CellContentFotoIdentificationSaveData.class, SetScreenCellContentToPhotoIdentification.class, value);
+        return new JAXBElement<CellContentFotoIdentificationSaveData>(_AddReactionEventData_QNAME, CellContentFotoIdentificationSaveData.class, SetScreenCellContentToPhotoIdentification.class, value);
     }
 
     /**
@@ -18953,7 +16487,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetScreenCellContentToCamera.class)
     public JAXBElement<CellContentCameraSaveData> createSetScreenCellContentToCameraData(CellContentCameraSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, CellContentCameraSaveData.class, SetScreenCellContentToCamera.class, value);
+        return new JAXBElement<CellContentCameraSaveData>(_AddReactionEventData_QNAME, CellContentCameraSaveData.class, SetScreenCellContentToCamera.class, value);
     }
 
     /**
@@ -18966,7 +16500,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetScreenCellContentToPassInfo.class)
     public JAXBElement<CellContentPassInfoSaveData> createSetScreenCellContentToPassInfoData(CellContentPassInfoSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, CellContentPassInfoSaveData.class, SetScreenCellContentToPassInfo.class, value);
+        return new JAXBElement<CellContentPassInfoSaveData>(_AddReactionEventData_QNAME, CellContentPassInfoSaveData.class, SetScreenCellContentToPassInfo.class, value);
     }
 
     /**
@@ -18979,7 +16513,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddEmailAddress.class)
     public JAXBElement<EmailAddressSaveData> createAddEmailAddressData(EmailAddressSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, EmailAddressSaveData.class, AddEmailAddress.class, value);
+        return new JAXBElement<EmailAddressSaveData>(_AddReactionEventData_QNAME, EmailAddressSaveData.class, AddEmailAddress.class, value);
     }
 
     /**
@@ -18992,7 +16526,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveEmailAddress.class)
     public JAXBElement<EmailAddressSaveData> createSaveEmailAddressData(EmailAddressSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, EmailAddressSaveData.class, SaveEmailAddress.class, value);
+        return new JAXBElement<EmailAddressSaveData>(_AddReactionEventData_QNAME, EmailAddressSaveData.class, SaveEmailAddress.class, value);
     }
 
     /**
@@ -19005,7 +16539,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveEmailAddress.class)
     public JAXBElement<ArrayOfguid> createRemoveEmailAddressIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveEmailAddress.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveEmailAddress.class, value);
     }
 
     /**
@@ -19018,7 +16552,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddPhoneNumber.class)
     public JAXBElement<PhoneNumberSaveData> createAddPhoneNumberData(PhoneNumberSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, PhoneNumberSaveData.class, AddPhoneNumber.class, value);
+        return new JAXBElement<PhoneNumberSaveData>(_AddReactionEventData_QNAME, PhoneNumberSaveData.class, AddPhoneNumber.class, value);
     }
 
     /**
@@ -19031,7 +16565,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SavePhoneNumber.class)
     public JAXBElement<PhoneNumberSaveData> createSavePhoneNumberData(PhoneNumberSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, PhoneNumberSaveData.class, SavePhoneNumber.class, value);
+        return new JAXBElement<PhoneNumberSaveData>(_AddReactionEventData_QNAME, PhoneNumberSaveData.class, SavePhoneNumber.class, value);
     }
 
     /**
@@ -19044,7 +16578,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemovePhoneNumbers.class)
     public JAXBElement<ArrayOfguid> createRemovePhoneNumbersIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemovePhoneNumbers.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemovePhoneNumbers.class, value);
     }
 
     /**
@@ -19057,7 +16591,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddEmailDistributionAddress.class)
     public JAXBElement<EmailDistributionAddressSaveData> createAddEmailDistributionAddressData(EmailDistributionAddressSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, EmailDistributionAddressSaveData.class, AddEmailDistributionAddress.class, value);
+        return new JAXBElement<EmailDistributionAddressSaveData>(_AddReactionEventData_QNAME, EmailDistributionAddressSaveData.class, AddEmailDistributionAddress.class, value);
     }
 
     /**
@@ -19070,7 +16604,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveEmailDistributionAddress.class)
     public JAXBElement<EmailDistributionAddressSaveData> createSaveEmailDistributionAddressData(EmailDistributionAddressSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, EmailDistributionAddressSaveData.class, SaveEmailDistributionAddress.class, value);
+        return new JAXBElement<EmailDistributionAddressSaveData>(_AddReactionEventData_QNAME, EmailDistributionAddressSaveData.class, SaveEmailDistributionAddress.class, value);
     }
 
     /**
@@ -19083,7 +16617,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveEmailDistributionAddresses.class)
     public JAXBElement<ArrayOfguid> createRemoveEmailDistributionAddressesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveEmailDistributionAddresses.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveEmailDistributionAddresses.class, value);
     }
 
     /**
@@ -19096,7 +16630,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SetFilterTagsForResource.class)
     public JAXBElement<ArrayOfguid> createSetFilterTagsForResourceTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SetFilterTagsForResource.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SetFilterTagsForResource.class, value);
     }
 
     /**
@@ -19109,7 +16643,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SetTagsForResource.class)
     public JAXBElement<ArrayOfguid> createSetTagsForResourceTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SetTagsForResource.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SetTagsForResource.class, value);
     }
 
     /**
@@ -19122,7 +16656,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "firstCameras", scope = SetAccessPoint2CameraChain.class)
     public JAXBElement<ArrayOfAccessPoint2CameraChain> createSetAccessPoint2CameraChainFirstCameras(ArrayOfAccessPoint2CameraChain value) {
-        return new JAXBElement<>(_SetAccessPoint2CameraChainFirstCameras_QNAME, ArrayOfAccessPoint2CameraChain.class, SetAccessPoint2CameraChain.class, value);
+        return new JAXBElement<ArrayOfAccessPoint2CameraChain>(_SetAccessPoint2CameraChainFirstCameras_QNAME, ArrayOfAccessPoint2CameraChain.class, SetAccessPoint2CameraChain.class, value);
     }
 
     /**
@@ -19135,7 +16669,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SetAccessPoint2CameraChainResult", scope = SetAccessPoint2CameraChainResponse.class)
     public JAXBElement<AccessPoint2CameraChainResult> createSetAccessPoint2CameraChainResponseSetAccessPoint2CameraChainResult(AccessPoint2CameraChainResult value) {
-        return new JAXBElement<>(_SetAccessPoint2CameraChainResponseSetAccessPoint2CameraChainResult_QNAME, AccessPoint2CameraChainResult.class, SetAccessPoint2CameraChainResponse.class, value);
+        return new JAXBElement<AccessPoint2CameraChainResult>(_SetAccessPoint2CameraChainResponseSetAccessPoint2CameraChainResult_QNAME, AccessPoint2CameraChainResult.class, SetAccessPoint2CameraChainResponse.class, value);
     }
 
     /**
@@ -19148,7 +16682,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetPOBCell2DriverRelation.class)
     public JAXBElement<POBRelation> createSetPOBCell2DriverRelationData(POBRelation value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, POBRelation.class, SetPOBCell2DriverRelation.class, value);
+        return new JAXBElement<POBRelation>(_AddReactionEventData_QNAME, POBRelation.class, SetPOBCell2DriverRelation.class, value);
     }
 
     /**
@@ -19161,7 +16695,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = RemovePOBCell2DriverRelation.class)
     public JAXBElement<POBRelation> createRemovePOBCell2DriverRelationData(POBRelation value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, POBRelation.class, RemovePOBCell2DriverRelation.class, value);
+        return new JAXBElement<POBRelation>(_AddReactionEventData_QNAME, POBRelation.class, RemovePOBCell2DriverRelation.class, value);
     }
 
     /**
@@ -19174,7 +16708,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddFolder.class)
     public JAXBElement<FolderSaveData> createAddFolderData(FolderSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, FolderSaveData.class, AddFolder.class, value);
+        return new JAXBElement<FolderSaveData>(_AddReactionEventData_QNAME, FolderSaveData.class, AddFolder.class, value);
     }
 
     /**
@@ -19187,7 +16721,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddFolderResult", scope = AddFolderResponse.class)
     public JAXBElement<FolderInfo> createAddFolderResponseAddFolderResult(FolderInfo value) {
-        return new JAXBElement<>(_AddFolderResponseAddFolderResult_QNAME, FolderInfo.class, AddFolderResponse.class, value);
+        return new JAXBElement<FolderInfo>(_AddFolderResponseAddFolderResult_QNAME, FolderInfo.class, AddFolderResponse.class, value);
     }
 
     /**
@@ -19200,7 +16734,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveFolder.class)
     public JAXBElement<FolderSaveData> createSaveFolderData(FolderSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, FolderSaveData.class, SaveFolder.class, value);
+        return new JAXBElement<FolderSaveData>(_AddReactionEventData_QNAME, FolderSaveData.class, SaveFolder.class, value);
     }
 
     /**
@@ -19213,7 +16747,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SaveFolderResult", scope = SaveFolderResponse.class)
     public JAXBElement<FolderInfo> createSaveFolderResponseSaveFolderResult(FolderInfo value) {
-        return new JAXBElement<>(_SaveFolderResponseSaveFolderResult_QNAME, FolderInfo.class, SaveFolderResponse.class, value);
+        return new JAXBElement<FolderInfo>(_SaveFolderResponseSaveFolderResult_QNAME, FolderInfo.class, SaveFolderResponse.class, value);
     }
 
     /**
@@ -19226,7 +16760,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "parentId", scope = MoveFolder.class)
     public JAXBElement<String> createMoveFolderParentId(String value) {
-        return new JAXBElement<>(_MoveFolderParentId_QNAME, String.class, MoveFolder.class, value);
+        return new JAXBElement<String>(_MoveFolderParentId_QNAME, String.class, MoveFolder.class, value);
     }
 
     /**
@@ -19239,7 +16773,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "beforeFolderId", scope = MoveFolder.class)
     public JAXBElement<String> createMoveFolderBeforeFolderId(String value) {
-        return new JAXBElement<>(_MoveFolderBeforeFolderId_QNAME, String.class, MoveFolder.class, value);
+        return new JAXBElement<String>(_MoveFolderBeforeFolderId_QNAME, String.class, MoveFolder.class, value);
     }
 
     /**
@@ -19252,7 +16786,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "afterFolderId", scope = MoveFolder.class)
     public JAXBElement<String> createMoveFolderAfterFolderId(String value) {
-        return new JAXBElement<>(_MoveFolderAfterFolderId_QNAME, String.class, MoveFolder.class, value);
+        return new JAXBElement<String>(_MoveFolderAfterFolderId_QNAME, String.class, MoveFolder.class, value);
     }
 
     /**
@@ -19265,7 +16799,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "MoveFolderResult", scope = MoveFolderResponse.class)
     public JAXBElement<FolderInfo> createMoveFolderResponseMoveFolderResult(FolderInfo value) {
-        return new JAXBElement<>(_MoveFolderResponseMoveFolderResult_QNAME, FolderInfo.class, MoveFolderResponse.class, value);
+        return new JAXBElement<FolderInfo>(_MoveFolderResponseMoveFolderResult_QNAME, FolderInfo.class, MoveFolderResponse.class, value);
     }
 
     /**
@@ -19278,7 +16812,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "folderID", scope = SetAccessLevelToFolder.class)
     public JAXBElement<String> createSetAccessLevelToFolderFolderID(String value) {
-        return new JAXBElement<>(_SetAccessLevelToFolderFolderID_QNAME, String.class, SetAccessLevelToFolder.class, value);
+        return new JAXBElement<String>(_SetAccessLevelToFolderFolderID_QNAME, String.class, SetAccessLevelToFolder.class, value);
     }
 
     /**
@@ -19291,7 +16825,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddFavoriteFolder.class)
     public JAXBElement<FavoriteFolderSaveData> createAddFavoriteFolderData(FavoriteFolderSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, FavoriteFolderSaveData.class, AddFavoriteFolder.class, value);
+        return new JAXBElement<FavoriteFolderSaveData>(_AddReactionEventData_QNAME, FavoriteFolderSaveData.class, AddFavoriteFolder.class, value);
     }
 
     /**
@@ -19304,7 +16838,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddFavoriteFolderResult", scope = AddFavoriteFolderResponse.class)
     public JAXBElement<FavoriteFolderInfo> createAddFavoriteFolderResponseAddFavoriteFolderResult(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_AddFavoriteFolderResponseAddFavoriteFolderResult_QNAME, FavoriteFolderInfo.class, AddFavoriteFolderResponse.class, value);
+        return new JAXBElement<FavoriteFolderInfo>(_AddFavoriteFolderResponseAddFavoriteFolderResult_QNAME, FavoriteFolderInfo.class, AddFavoriteFolderResponse.class, value);
     }
 
     /**
@@ -19317,7 +16851,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddFavoriteFolderByWorplace.class)
     public JAXBElement<FavoriteFolderSaveData> createAddFavoriteFolderByWorplaceData(FavoriteFolderSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, FavoriteFolderSaveData.class, AddFavoriteFolderByWorplace.class, value);
+        return new JAXBElement<FavoriteFolderSaveData>(_AddReactionEventData_QNAME, FavoriteFolderSaveData.class, AddFavoriteFolderByWorplace.class, value);
     }
 
     /**
@@ -19330,7 +16864,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddFavoriteFolderByWorplaceResult", scope = AddFavoriteFolderByWorplaceResponse.class)
     public JAXBElement<FavoriteFolderInfo> createAddFavoriteFolderByWorplaceResponseAddFavoriteFolderByWorplaceResult(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_AddFavoriteFolderByWorplaceResponseAddFavoriteFolderByWorplaceResult_QNAME, FavoriteFolderInfo.class, AddFavoriteFolderByWorplaceResponse.class, value);
+        return new JAXBElement<FavoriteFolderInfo>(_AddFavoriteFolderByWorplaceResponseAddFavoriteFolderByWorplaceResult_QNAME, FavoriteFolderInfo.class, AddFavoriteFolderByWorplaceResponse.class, value);
     }
 
     /**
@@ -19343,7 +16877,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveFavoriteFolder.class)
     public JAXBElement<FavoriteFolderSaveData> createSaveFavoriteFolderData(FavoriteFolderSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, FavoriteFolderSaveData.class, SaveFavoriteFolder.class, value);
+        return new JAXBElement<FavoriteFolderSaveData>(_AddReactionEventData_QNAME, FavoriteFolderSaveData.class, SaveFavoriteFolder.class, value);
     }
 
     /**
@@ -19356,7 +16890,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SaveFavoriteFolderResult", scope = SaveFavoriteFolderResponse.class)
     public JAXBElement<FavoriteFolderInfo> createSaveFavoriteFolderResponseSaveFavoriteFolderResult(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_SaveFavoriteFolderResponseSaveFavoriteFolderResult_QNAME, FavoriteFolderInfo.class, SaveFavoriteFolderResponse.class, value);
+        return new JAXBElement<FavoriteFolderInfo>(_SaveFavoriteFolderResponseSaveFavoriteFolderResult_QNAME, FavoriteFolderInfo.class, SaveFavoriteFolderResponse.class, value);
     }
 
     /**
@@ -19369,7 +16903,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "parentId", scope = MoveFavoriteFolder.class)
     public JAXBElement<String> createMoveFavoriteFolderParentId(String value) {
-        return new JAXBElement<>(_MoveFolderParentId_QNAME, String.class, MoveFavoriteFolder.class, value);
+        return new JAXBElement<String>(_MoveFolderParentId_QNAME, String.class, MoveFavoriteFolder.class, value);
     }
 
     /**
@@ -19382,7 +16916,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "beforeFolderId", scope = MoveFavoriteFolder.class)
     public JAXBElement<String> createMoveFavoriteFolderBeforeFolderId(String value) {
-        return new JAXBElement<>(_MoveFolderBeforeFolderId_QNAME, String.class, MoveFavoriteFolder.class, value);
+        return new JAXBElement<String>(_MoveFolderBeforeFolderId_QNAME, String.class, MoveFavoriteFolder.class, value);
     }
 
     /**
@@ -19395,7 +16929,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "afterFolderId", scope = MoveFavoriteFolder.class)
     public JAXBElement<String> createMoveFavoriteFolderAfterFolderId(String value) {
-        return new JAXBElement<>(_MoveFolderAfterFolderId_QNAME, String.class, MoveFavoriteFolder.class, value);
+        return new JAXBElement<String>(_MoveFolderAfterFolderId_QNAME, String.class, MoveFavoriteFolder.class, value);
     }
 
     /**
@@ -19408,7 +16942,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "MoveFavoriteFolderResult", scope = MoveFavoriteFolderResponse.class)
     public JAXBElement<FavoriteFolderInfo> createMoveFavoriteFolderResponseMoveFavoriteFolderResult(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_MoveFavoriteFolderResponseMoveFavoriteFolderResult_QNAME, FavoriteFolderInfo.class, MoveFavoriteFolderResponse.class, value);
+        return new JAXBElement<FavoriteFolderInfo>(_MoveFavoriteFolderResponseMoveFavoriteFolderResult_QNAME, FavoriteFolderInfo.class, MoveFavoriteFolderResponse.class, value);
     }
 
     /**
@@ -19421,7 +16955,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "parentId", scope = MoveFavoriteFolderByWorkplace.class)
     public JAXBElement<String> createMoveFavoriteFolderByWorkplaceParentId(String value) {
-        return new JAXBElement<>(_MoveFolderParentId_QNAME, String.class, MoveFavoriteFolderByWorkplace.class, value);
+        return new JAXBElement<String>(_MoveFolderParentId_QNAME, String.class, MoveFavoriteFolderByWorkplace.class, value);
     }
 
     /**
@@ -19434,7 +16968,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "beforeFolderId", scope = MoveFavoriteFolderByWorkplace.class)
     public JAXBElement<String> createMoveFavoriteFolderByWorkplaceBeforeFolderId(String value) {
-        return new JAXBElement<>(_MoveFolderBeforeFolderId_QNAME, String.class, MoveFavoriteFolderByWorkplace.class, value);
+        return new JAXBElement<String>(_MoveFolderBeforeFolderId_QNAME, String.class, MoveFavoriteFolderByWorkplace.class, value);
     }
 
     /**
@@ -19447,7 +16981,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "afterFolderId", scope = MoveFavoriteFolderByWorkplace.class)
     public JAXBElement<String> createMoveFavoriteFolderByWorkplaceAfterFolderId(String value) {
-        return new JAXBElement<>(_MoveFolderAfterFolderId_QNAME, String.class, MoveFavoriteFolderByWorkplace.class, value);
+        return new JAXBElement<String>(_MoveFolderAfterFolderId_QNAME, String.class, MoveFavoriteFolderByWorkplace.class, value);
     }
 
     /**
@@ -19460,7 +16994,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "MoveFavoriteFolderByWorkplaceResult", scope = MoveFavoriteFolderByWorkplaceResponse.class)
     public JAXBElement<FavoriteFolderInfo> createMoveFavoriteFolderByWorkplaceResponseMoveFavoriteFolderByWorkplaceResult(FavoriteFolderInfo value) {
-        return new JAXBElement<>(_MoveFavoriteFolderByWorkplaceResponseMoveFavoriteFolderByWorkplaceResult_QNAME, FavoriteFolderInfo.class, MoveFavoriteFolderByWorkplaceResponse.class, value);
+        return new JAXBElement<FavoriteFolderInfo>(_MoveFavoriteFolderByWorkplaceResponseMoveFavoriteFolderByWorkplaceResult_QNAME, FavoriteFolderInfo.class, MoveFavoriteFolderByWorkplaceResponse.class, value);
     }
 
     /**
@@ -19473,7 +17007,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SetEmployeeGroupToFavoriteFolder.class)
     public JAXBElement<String> createSetEmployeeGroupToFavoriteFolderName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SetEmployeeGroupToFavoriteFolder.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SetEmployeeGroupToFavoriteFolder.class, value);
     }
 
     /**
@@ -19486,7 +17020,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "path", scope = SetEmployeeGroupToFavoriteFolder.class)
     public JAXBElement<String> createSetEmployeeGroupToFavoriteFolderPath(String value) {
-        return new JAXBElement<>(_SetEmployeeGroupToFavoriteFolderPath_QNAME, String.class, SetEmployeeGroupToFavoriteFolder.class, value);
+        return new JAXBElement<String>(_SetEmployeeGroupToFavoriteFolderPath_QNAME, String.class, SetEmployeeGroupToFavoriteFolder.class, value);
     }
 
     /**
@@ -19499,7 +17033,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SetEmployeeGroupToFavoriteFolderByWorkplace.class)
     public JAXBElement<String> createSetEmployeeGroupToFavoriteFolderByWorkplaceName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SetEmployeeGroupToFavoriteFolderByWorkplace.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SetEmployeeGroupToFavoriteFolderByWorkplace.class, value);
     }
 
     /**
@@ -19512,7 +17046,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "path", scope = SetEmployeeGroupToFavoriteFolderByWorkplace.class)
     public JAXBElement<String> createSetEmployeeGroupToFavoriteFolderByWorkplacePath(String value) {
-        return new JAXBElement<>(_SetEmployeeGroupToFavoriteFolderPath_QNAME, String.class, SetEmployeeGroupToFavoriteFolderByWorkplace.class, value);
+        return new JAXBElement<String>(_SetEmployeeGroupToFavoriteFolderPath_QNAME, String.class, SetEmployeeGroupToFavoriteFolderByWorkplace.class, value);
     }
 
     /**
@@ -19525,7 +17059,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddTag.class)
     public JAXBElement<TagSaveData> createAddTagData(TagSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, TagSaveData.class, AddTag.class, value);
+        return new JAXBElement<TagSaveData>(_AddReactionEventData_QNAME, TagSaveData.class, AddTag.class, value);
     }
 
     /**
@@ -19538,7 +17072,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveTag.class)
     public JAXBElement<TagSaveData> createSaveTagData(TagSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, TagSaveData.class, SaveTag.class, value);
+        return new JAXBElement<TagSaveData>(_AddReactionEventData_QNAME, TagSaveData.class, SaveTag.class, value);
     }
 
     /**
@@ -19551,7 +17085,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddFilterTag.class)
     public JAXBElement<FilterTagSaveData> createAddFilterTagData(FilterTagSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, FilterTagSaveData.class, AddFilterTag.class, value);
+        return new JAXBElement<FilterTagSaveData>(_AddReactionEventData_QNAME, FilterTagSaveData.class, AddFilterTag.class, value);
     }
 
     /**
@@ -19564,7 +17098,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveFilterTag.class)
     public JAXBElement<FilterTagSaveData> createSaveFilterTagData(FilterTagSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, FilterTagSaveData.class, SaveFilterTag.class, value);
+        return new JAXBElement<FilterTagSaveData>(_AddReactionEventData_QNAME, FilterTagSaveData.class, SaveFilterTag.class, value);
     }
 
     /**
@@ -19577,7 +17111,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddUserPass.class)
     public JAXBElement<UserPassSlimSaveData> createAddUserPassData(UserPassSlimSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, UserPassSlimSaveData.class, AddUserPass.class, value);
+        return new JAXBElement<UserPassSlimSaveData>(_AddReactionEventData_QNAME, UserPassSlimSaveData.class, AddUserPass.class, value);
     }
 
     /**
@@ -19590,7 +17124,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveUserPass.class)
     public JAXBElement<UserPassSlimSaveData> createSaveUserPassData(UserPassSlimSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, UserPassSlimSaveData.class, SaveUserPass.class, value);
+        return new JAXBElement<UserPassSlimSaveData>(_AddReactionEventData_QNAME, UserPassSlimSaveData.class, SaveUserPass.class, value);
     }
 
     /**
@@ -19603,7 +17137,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveUserPassFull.class)
     public JAXBElement<UserPassFullSaveData> createSaveUserPassFullData(UserPassFullSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, UserPassFullSaveData.class, SaveUserPassFull.class, value);
+        return new JAXBElement<UserPassFullSaveData>(_AddReactionEventData_QNAME, UserPassFullSaveData.class, SaveUserPassFull.class, value);
     }
 
     /**
@@ -19616,7 +17150,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetUserPassEditor.class)
     public JAXBElement<UserPassEditorData> createSetUserPassEditorData(UserPassEditorData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, UserPassEditorData.class, SetUserPassEditor.class, value);
+        return new JAXBElement<UserPassEditorData>(_AddReactionEventData_QNAME, UserPassEditorData.class, SetUserPassEditor.class, value);
     }
 
     /**
@@ -19629,7 +17163,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddReaction.class)
     public JAXBElement<ReactionSaveData> createAddReactionData(ReactionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionSaveData.class, AddReaction.class, value);
+        return new JAXBElement<ReactionSaveData>(_AddReactionEventData_QNAME, ReactionSaveData.class, AddReaction.class, value);
     }
 
     /**
@@ -19642,7 +17176,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReaction.class)
     public JAXBElement<ReactionSaveData> createSaveReactionData(ReactionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionSaveData.class, SaveReaction.class, value);
+        return new JAXBElement<ReactionSaveData>(_AddReactionEventData_QNAME, ReactionSaveData.class, SaveReaction.class, value);
     }
 
     /**
@@ -19655,7 +17189,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddReactionAction.class)
     public JAXBElement<ReactionActionSaveData> createAddReactionActionData(ReactionActionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionActionSaveData.class, AddReactionAction.class, value);
+        return new JAXBElement<ReactionActionSaveData>(_AddReactionEventData_QNAME, ReactionActionSaveData.class, AddReactionAction.class, value);
     }
 
     /**
@@ -19668,7 +17202,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReactionActionCommonData.class)
     public JAXBElement<ReactionActionSaveData> createSaveReactionActionCommonDataData(ReactionActionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionActionSaveData.class, SaveReactionActionCommonData.class, value);
+        return new JAXBElement<ReactionActionSaveData>(_AddReactionEventData_QNAME, ReactionActionSaveData.class, SaveReactionActionCommonData.class, value);
     }
 
     /**
@@ -19681,7 +17215,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "actionIds", scope = RemoveReactionActions.class)
     public JAXBElement<ArrayOfguid> createRemoveReactionActionsActionIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveReactionActionsActionIds_QNAME, ArrayOfguid.class, RemoveReactionActions.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveReactionActionsActionIds_QNAME, ArrayOfguid.class, RemoveReactionActions.class, value);
     }
 
     /**
@@ -19694,7 +17228,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = AddEmployeesToReactionAction.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToReactionActionEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionAction.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionAction.class, value);
     }
 
     /**
@@ -19707,7 +17241,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = RemoveEmployeesFromReactionAction.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeesFromReactionActionEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesFromReactionAction.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesFromReactionAction.class, value);
     }
 
     /**
@@ -19720,7 +17254,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = AddEmployeeGroupsToReactionAction.class)
     public JAXBElement<ArrayOfguid> createAddEmployeeGroupsToReactionActionEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeeGroupsToReactionAction.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeeGroupsToReactionAction.class, value);
     }
 
     /**
@@ -19733,7 +17267,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = AddEmployeesToReactionActionByGroups.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToReactionActionByGroupsEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionActionByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeesToReactionActionByGroups.class, value);
     }
 
     /**
@@ -19746,7 +17280,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = RemoveEmployeeGroupsFromReactionAction.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeeGroupsFromReactionActionEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeGroupsFromReactionAction.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeGroupsFromReactionAction.class, value);
     }
 
     /**
@@ -19759,7 +17293,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = RemoveEmployeeFromReactionActionByGroups.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeeFromReactionActionByGroupsEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeFromReactionActionByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, RemoveEmployeeFromReactionActionByGroups.class, value);
     }
 
     /**
@@ -19772,7 +17306,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReactionSendSMSAction.class)
     public JAXBElement<ReactionSendSMSActionSaveData> createSaveReactionSendSMSActionData(ReactionSendSMSActionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionSendSMSActionSaveData.class, SaveReactionSendSMSAction.class, value);
+        return new JAXBElement<ReactionSendSMSActionSaveData>(_AddReactionEventData_QNAME, ReactionSendSMSActionSaveData.class, SaveReactionSendSMSAction.class, value);
     }
 
     /**
@@ -19785,7 +17319,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReactionSendEmailAction.class)
     public JAXBElement<ReactionSendEmailActionSaveData> createSaveReactionSendEmailActionData(ReactionSendEmailActionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionSendEmailActionSaveData.class, SaveReactionSendEmailAction.class, value);
+        return new JAXBElement<ReactionSendEmailActionSaveData>(_AddReactionEventData_QNAME, ReactionSendEmailActionSaveData.class, SaveReactionSendEmailAction.class, value);
     }
 
     /**
@@ -19798,7 +17332,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReactionExecuteProgramAction.class)
     public JAXBElement<ReactionExecuteProgramActionSaveData> createSaveReactionExecuteProgramActionData(ReactionExecuteProgramActionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionExecuteProgramActionSaveData.class, SaveReactionExecuteProgramAction.class, value);
+        return new JAXBElement<ReactionExecuteProgramActionSaveData>(_AddReactionEventData_QNAME, ReactionExecuteProgramActionSaveData.class, SaveReactionExecuteProgramAction.class, value);
     }
 
     /**
@@ -19811,7 +17345,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReactionRecordVideoAction.class)
     public JAXBElement<ReactionRecordVideoActionSaveData> createSaveReactionRecordVideoActionData(ReactionRecordVideoActionSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReactionRecordVideoActionSaveData.class, SaveReactionRecordVideoAction.class, value);
+        return new JAXBElement<ReactionRecordVideoActionSaveData>(_AddReactionEventData_QNAME, ReactionRecordVideoActionSaveData.class, SaveReactionRecordVideoAction.class, value);
     }
 
     /**
@@ -19824,7 +17358,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddReport.class)
     public JAXBElement<ReportSaveData> createAddReportData(ReportSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReportSaveData.class, AddReport.class, value);
+        return new JAXBElement<ReportSaveData>(_AddReactionEventData_QNAME, ReportSaveData.class, AddReport.class, value);
     }
 
     /**
@@ -19837,7 +17371,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = AddReport.class)
     public JAXBElement<ArrayOfguid> createAddReportTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddReport.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddReport.class, value);
     }
 
     /**
@@ -19850,7 +17384,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveReport.class)
     public JAXBElement<ReportSaveData> createSaveReportData(ReportSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ReportSaveData.class, SaveReport.class, value);
+        return new JAXBElement<ReportSaveData>(_AddReactionEventData_QNAME, ReportSaveData.class, SaveReport.class, value);
     }
 
     /**
@@ -19863,7 +17397,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SaveReport.class)
     public JAXBElement<ArrayOfguid> createSaveReportTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveReport.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveReport.class, value);
     }
 
     /**
@@ -19876,7 +17410,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIds", scope = RemoveDriversFromReportParameters.class)
     public JAXBElement<ArrayOfguid> createRemoveDriversFromReportParametersDriverIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, RemoveDriversFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, RemoveDriversFromReportParameters.class, value);
     }
 
     /**
@@ -19889,7 +17423,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIds", scope = AddDriversToReportParameters.class)
     public JAXBElement<ArrayOfguid> createAddDriversToReportParametersDriverIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, AddDriversToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetRelayBlocksStatusDriverIds_QNAME, ArrayOfguid.class, AddDriversToReportParameters.class, value);
     }
 
     /**
@@ -19902,7 +17436,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subtypes", scope = RemoveLogMessageSubtypesFromReportParameters.class)
     public JAXBElement<ArrayOfLogMsgSubType> createRemoveLogMessageSubtypesFromReportParametersSubtypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, RemoveLogMessageSubtypesFromReportParameters.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, RemoveLogMessageSubtypesFromReportParameters.class, value);
     }
 
     /**
@@ -19915,7 +17449,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "subtypes", scope = AddLogMessageSubtypesToReportParameters.class)
     public JAXBElement<ArrayOfLogMsgSubType> createAddLogMessageSubtypesToReportParametersSubtypes(ArrayOfLogMsgSubType value) {
-        return new JAXBElement<>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, AddLogMessageSubtypesToReportParameters.class, value);
+        return new JAXBElement<ArrayOfLogMsgSubType>(_AddLogMessageSubtypesToReactionEventSubtypes_QNAME, ArrayOfLogMsgSubType.class, AddLogMessageSubtypesToReportParameters.class, value);
     }
 
     /**
@@ -19928,7 +17462,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = AddEmployeeGroupsToReportParameters.class)
     public JAXBElement<ArrayOfguid> createAddEmployeeGroupsToReportParametersEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeeGroupsToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeeGroupsToReportParameters.class, value);
     }
 
     /**
@@ -19941,7 +17475,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeGroupIds", scope = AddEmployeesToReportParametersByGroups.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToReportParametersByGroupsEmployeeGroupIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeesToReportParametersByGroups.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveEmployeeGroupsFromReportParametersEmployeeGroupIds_QNAME, ArrayOfguid.class, AddEmployeesToReportParametersByGroups.class, value);
     }
 
     /**
@@ -19954,7 +17488,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeTabNumersIds", scope = AddEmployeesToReportParametersByTabNumbers.class)
     public JAXBElement<ArrayOfint> createAddEmployeesToReportParametersByTabNumbersEmployeeTabNumersIds(ArrayOfint value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersByTabNumbersEmployeeTabNumersIds_QNAME, ArrayOfint.class, AddEmployeesToReportParametersByTabNumbers.class, value);
+        return new JAXBElement<ArrayOfint>(_AddEmployeesToReportParametersByTabNumbersEmployeeTabNumersIds_QNAME, ArrayOfint.class, AddEmployeesToReportParametersByTabNumbers.class, value);
     }
 
     /**
@@ -19967,7 +17501,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = DeleteFields.class)
     public JAXBElement<ArrayOfguid> createDeleteFieldsIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, DeleteFields.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, DeleteFields.class, value);
     }
 
     /**
@@ -19980,7 +17514,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "photoOrder", scope = AddPhotoOrder.class)
     public JAXBElement<PhotoOrder> createAddPhotoOrderPhotoOrder(PhotoOrder value) {
-        return new JAXBElement<>(_AddPhotoOrderPhotoOrder_QNAME, PhotoOrder.class, AddPhotoOrder.class, value);
+        return new JAXBElement<PhotoOrder>(_AddPhotoOrderPhotoOrder_QNAME, PhotoOrder.class, AddPhotoOrder.class, value);
     }
 
     /**
@@ -19993,7 +17527,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "photoOrder", scope = SavePhotoOrder.class)
     public JAXBElement<PhotoOrder> createSavePhotoOrderPhotoOrder(PhotoOrder value) {
-        return new JAXBElement<>(_AddPhotoOrderPhotoOrder_QNAME, PhotoOrder.class, SavePhotoOrder.class, value);
+        return new JAXBElement<PhotoOrder>(_AddPhotoOrderPhotoOrder_QNAME, PhotoOrder.class, SavePhotoOrder.class, value);
     }
 
     /**
@@ -20006,7 +17540,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = DeletePhotoFields.class)
     public JAXBElement<ArrayOfguid> createDeletePhotoFieldsIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, DeletePhotoFields.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, DeletePhotoFields.class, value);
     }
 
     /**
@@ -20019,7 +17553,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "deletedElements", scope = SaveAcsBoxAccessElements.class)
     public JAXBElement<ArrayOfguid> createSaveAcsBoxAccessElementsDeletedElements(ArrayOfguid value) {
-        return new JAXBElement<>(_SaveAcsBoxAccessElementsDeletedElements_QNAME, ArrayOfguid.class, SaveAcsBoxAccessElements.class, value);
+        return new JAXBElement<ArrayOfguid>(_SaveAcsBoxAccessElementsDeletedElements_QNAME, ArrayOfguid.class, SaveAcsBoxAccessElements.class, value);
     }
 
     /**
@@ -20032,7 +17566,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "editedElements", scope = SaveAcsBoxAccessElements.class)
     public JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> createSaveAcsBoxAccessElementsEditedElements(ArrayOfAcsBoxAccessLevelElementSlimInfo value) {
-        return new JAXBElement<>(_SaveAcsBoxAccessElementsEditedElements_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, SaveAcsBoxAccessElements.class, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo>(_SaveAcsBoxAccessElementsEditedElements_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, SaveAcsBoxAccessElements.class, value);
     }
 
     /**
@@ -20045,7 +17579,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "addedElements", scope = SaveAcsBoxAccessElements.class)
     public JAXBElement<ArrayOfAcsBoxAccessElementSaveInfo> createSaveAcsBoxAccessElementsAddedElements(ArrayOfAcsBoxAccessElementSaveInfo value) {
-        return new JAXBElement<>(_SaveAcsBoxAccessElementsAddedElements_QNAME, ArrayOfAcsBoxAccessElementSaveInfo.class, SaveAcsBoxAccessElements.class, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessElementSaveInfo>(_SaveAcsBoxAccessElementsAddedElements_QNAME, ArrayOfAcsBoxAccessElementSaveInfo.class, SaveAcsBoxAccessElements.class, value);
     }
 
     /**
@@ -20058,7 +17592,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SaveAcsBoxAccessElementsResult", scope = SaveAcsBoxAccessElementsResponse.class)
     public JAXBElement<TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH> createSaveAcsBoxAccessElementsResponseSaveAcsBoxAccessElementsResult(TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH value) {
-        return new JAXBElement<>(_SaveAcsBoxAccessElementsResponseSaveAcsBoxAccessElementsResult_QNAME, TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH.class, SaveAcsBoxAccessElementsResponse.class, value);
+        return new JAXBElement<TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH>(_SaveAcsBoxAccessElementsResponseSaveAcsBoxAccessElementsResult_QNAME, TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH.class, SaveAcsBoxAccessElementsResponse.class, value);
     }
 
     /**
@@ -20071,7 +17605,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddAcsBoxAccessLevel.class)
     public JAXBElement<AcsBoxAccessLevelSaveData> createAddAcsBoxAccessLevelData(AcsBoxAccessLevelSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsBoxAccessLevelSaveData.class, AddAcsBoxAccessLevel.class, value);
+        return new JAXBElement<AcsBoxAccessLevelSaveData>(_AddReactionEventData_QNAME, AcsBoxAccessLevelSaveData.class, AddAcsBoxAccessLevel.class, value);
     }
 
     /**
@@ -20084,7 +17618,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = AddAcsBoxAccessLevel.class)
     public JAXBElement<ArrayOfguid> createAddAcsBoxAccessLevelTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsBoxAccessLevel.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsBoxAccessLevel.class, value);
     }
 
     /**
@@ -20097,7 +17631,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsBoxAccessLevelResult", scope = AddAcsBoxAccessLevelResponse.class)
     public JAXBElement<AcsBoxAccessLevelSlimInfo> createAddAcsBoxAccessLevelResponseAddAcsBoxAccessLevelResult(AcsBoxAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_AddAcsBoxAccessLevelResponseAddAcsBoxAccessLevelResult_QNAME, AcsBoxAccessLevelSlimInfo.class, AddAcsBoxAccessLevelResponse.class, value);
+        return new JAXBElement<AcsBoxAccessLevelSlimInfo>(_AddAcsBoxAccessLevelResponseAddAcsBoxAccessLevelResult_QNAME, AcsBoxAccessLevelSlimInfo.class, AddAcsBoxAccessLevelResponse.class, value);
     }
 
     /**
@@ -20110,7 +17644,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveAcsBoxAccessLevel.class)
     public JAXBElement<AcsBoxAccessLevelSaveData> createSaveAcsBoxAccessLevelData(AcsBoxAccessLevelSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsBoxAccessLevelSaveData.class, SaveAcsBoxAccessLevel.class, value);
+        return new JAXBElement<AcsBoxAccessLevelSaveData>(_AddReactionEventData_QNAME, AcsBoxAccessLevelSaveData.class, SaveAcsBoxAccessLevel.class, value);
     }
 
     /**
@@ -20123,7 +17657,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SaveAcsBoxAccessLevel.class)
     public JAXBElement<ArrayOfguid> createSaveAcsBoxAccessLevelTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsBoxAccessLevel.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsBoxAccessLevel.class, value);
     }
 
     /**
@@ -20136,7 +17670,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessElementIds", scope = RemoveAcsBoxAccessLevel.class)
     public JAXBElement<ArrayOfguid> createRemoveAcsBoxAccessLevelAccessElementIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveAcsBoxAccessLevelAccessElementIds_QNAME, ArrayOfguid.class, RemoveAcsBoxAccessLevel.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveAcsBoxAccessLevelAccessElementIds_QNAME, ArrayOfguid.class, RemoveAcsBoxAccessLevel.class, value);
     }
 
     /**
@@ -20149,7 +17683,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddAcsAccessLevel.class)
     public JAXBElement<AcsAccessLevelSaveData> createAddAcsAccessLevelData(AcsAccessLevelSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsAccessLevelSaveData.class, AddAcsAccessLevel.class, value);
+        return new JAXBElement<AcsAccessLevelSaveData>(_AddReactionEventData_QNAME, AcsAccessLevelSaveData.class, AddAcsAccessLevel.class, value);
     }
 
     /**
@@ -20162,7 +17696,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = AddAcsAccessLevel.class)
     public JAXBElement<ArrayOfguid> createAddAcsAccessLevelTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsAccessLevel.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsAccessLevel.class, value);
     }
 
     /**
@@ -20175,7 +17709,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsAccessLevelResult", scope = AddAcsAccessLevelResponse.class)
     public JAXBElement<AcsAccessLevelSlimInfo> createAddAcsAccessLevelResponseAddAcsAccessLevelResult(AcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_AddAcsAccessLevelResponseAddAcsAccessLevelResult_QNAME, AcsAccessLevelSlimInfo.class, AddAcsAccessLevelResponse.class, value);
+        return new JAXBElement<AcsAccessLevelSlimInfo>(_AddAcsAccessLevelResponseAddAcsAccessLevelResult_QNAME, AcsAccessLevelSlimInfo.class, AddAcsAccessLevelResponse.class, value);
     }
 
     /**
@@ -20188,7 +17722,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddAlcoGroup.class)
     public JAXBElement<AcsAlcoGroupSaveData> createAddAlcoGroupData(AcsAlcoGroupSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsAlcoGroupSaveData.class, AddAlcoGroup.class, value);
+        return new JAXBElement<AcsAlcoGroupSaveData>(_AddReactionEventData_QNAME, AcsAlcoGroupSaveData.class, AddAlcoGroup.class, value);
     }
 
     /**
@@ -20201,7 +17735,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAlcoGroupResult", scope = AddAlcoGroupResponse.class)
     public JAXBElement<AcsAlcoGroupSlimInfo> createAddAlcoGroupResponseAddAlcoGroupResult(AcsAlcoGroupSlimInfo value) {
-        return new JAXBElement<>(_AddAlcoGroupResponseAddAlcoGroupResult_QNAME, AcsAlcoGroupSlimInfo.class, AddAlcoGroupResponse.class, value);
+        return new JAXBElement<AcsAlcoGroupSlimInfo>(_AddAlcoGroupResponseAddAlcoGroupResult_QNAME, AcsAlcoGroupSlimInfo.class, AddAlcoGroupResponse.class, value);
     }
 
     /**
@@ -20214,7 +17748,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = AlcoGroupChangePriority.class)
     public JAXBElement<ArrayOfguid> createAlcoGroupChangePriorityIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, AlcoGroupChangePriority.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, AlcoGroupChangePriority.class, value);
     }
 
     /**
@@ -20227,7 +17761,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveAlcoGroup.class)
     public JAXBElement<AcsAlcoGroupSaveData> createSaveAlcoGroupData(AcsAlcoGroupSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsAlcoGroupSaveData.class, SaveAlcoGroup.class, value);
+        return new JAXBElement<AcsAlcoGroupSaveData>(_AddReactionEventData_QNAME, AcsAlcoGroupSaveData.class, SaveAlcoGroup.class, value);
     }
 
     /**
@@ -20240,7 +17774,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeesIds", scope = SetEmployees2AlcoGroup.class)
     public JAXBElement<ArrayOfguid> createSetEmployees2AlcoGroupEmployeesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_SetEmployees2AlcoGroupEmployeesIds_QNAME, ArrayOfguid.class, SetEmployees2AlcoGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetEmployees2AlcoGroupEmployeesIds_QNAME, ArrayOfguid.class, SetEmployees2AlcoGroup.class, value);
     }
 
     /**
@@ -20253,7 +17787,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "deletedEmployeesIds", scope = SetEmployees2AlcoGroup.class)
     public JAXBElement<ArrayOfguid> createSetEmployees2AlcoGroupDeletedEmployeesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_SetEmployees2AlcoGroupDeletedEmployeesIds_QNAME, ArrayOfguid.class, SetEmployees2AlcoGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetEmployees2AlcoGroupDeletedEmployeesIds_QNAME, ArrayOfguid.class, SetEmployees2AlcoGroup.class, value);
     }
 
     /**
@@ -20266,7 +17800,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "positionIds", scope = AddEmployeePositionsToAlcoGroup.class)
     public JAXBElement<ArrayOfguid> createAddEmployeePositionsToAlcoGroupPositionIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeePositionsToAlcoGroupPositionIds_QNAME, ArrayOfguid.class, AddEmployeePositionsToAlcoGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeePositionsToAlcoGroupPositionIds_QNAME, ArrayOfguid.class, AddEmployeePositionsToAlcoGroup.class, value);
     }
 
     /**
@@ -20279,7 +17813,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddEmployeePositionsToAlcoGroupResult", scope = AddEmployeePositionsToAlcoGroupResponse.class)
     public JAXBElement<ChangeDataResult> createAddEmployeePositionsToAlcoGroupResponseAddEmployeePositionsToAlcoGroupResult(ChangeDataResult value) {
-        return new JAXBElement<>(_AddEmployeePositionsToAlcoGroupResponseAddEmployeePositionsToAlcoGroupResult_QNAME, ChangeDataResult.class, AddEmployeePositionsToAlcoGroupResponse.class, value);
+        return new JAXBElement<ChangeDataResult>(_AddEmployeePositionsToAlcoGroupResponseAddEmployeePositionsToAlcoGroupResult_QNAME, ChangeDataResult.class, AddEmployeePositionsToAlcoGroupResponse.class, value);
     }
 
     /**
@@ -20292,7 +17826,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "codes", scope = SetPositionCodesToAlcoGroup.class)
     public JAXBElement<ArrayOfstring> createSetPositionCodesToAlcoGroupCodes(ArrayOfstring value) {
-        return new JAXBElement<>(_SetPositionCodesToAlcoGroupCodes_QNAME, ArrayOfstring.class, SetPositionCodesToAlcoGroup.class, value);
+        return new JAXBElement<ArrayOfstring>(_SetPositionCodesToAlcoGroupCodes_QNAME, ArrayOfstring.class, SetPositionCodesToAlcoGroup.class, value);
     }
 
     /**
@@ -20305,7 +17839,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SetPositionCodesToAlcoGroupResult", scope = SetPositionCodesToAlcoGroupResponse.class)
     public JAXBElement<ChangePositionCodesResult> createSetPositionCodesToAlcoGroupResponseSetPositionCodesToAlcoGroupResult(ChangePositionCodesResult value) {
-        return new JAXBElement<>(_SetPositionCodesToAlcoGroupResponseSetPositionCodesToAlcoGroupResult_QNAME, ChangePositionCodesResult.class, SetPositionCodesToAlcoGroupResponse.class, value);
+        return new JAXBElement<ChangePositionCodesResult>(_SetPositionCodesToAlcoGroupResponseSetPositionCodesToAlcoGroupResult_QNAME, ChangePositionCodesResult.class, SetPositionCodesToAlcoGroupResponse.class, value);
     }
 
     /**
@@ -20318,7 +17852,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "perms", scope = SetBiometricPermissions.class)
     public JAXBElement<ArrayOfCardTypeBiometricPermission> createSetBiometricPermissionsPerms(ArrayOfCardTypeBiometricPermission value) {
-        return new JAXBElement<>(_SetBiometricPermissionsPerms_QNAME, ArrayOfCardTypeBiometricPermission.class, SetBiometricPermissions.class, value);
+        return new JAXBElement<ArrayOfCardTypeBiometricPermission>(_SetBiometricPermissionsPerms_QNAME, ArrayOfCardTypeBiometricPermission.class, SetBiometricPermissions.class, value);
     }
 
     /**
@@ -20331,7 +17865,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groups", scope = AddEmployeeGroupsToAlcoGroup.class)
     public JAXBElement<ArrayOfEmployeeGroupForAlcoGroup> createAddEmployeeGroupsToAlcoGroupGroups(ArrayOfEmployeeGroupForAlcoGroup value) {
-        return new JAXBElement<>(_AddEmployeeGroupsToAlcoGroupGroups_QNAME, ArrayOfEmployeeGroupForAlcoGroup.class, AddEmployeeGroupsToAlcoGroup.class, value);
+        return new JAXBElement<ArrayOfEmployeeGroupForAlcoGroup>(_AddEmployeeGroupsToAlcoGroupGroups_QNAME, ArrayOfEmployeeGroupForAlcoGroup.class, AddEmployeeGroupsToAlcoGroup.class, value);
     }
 
     /**
@@ -20344,7 +17878,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddEmployeeGroupsToAlcoGroupResult", scope = AddEmployeeGroupsToAlcoGroupResponse.class)
     public JAXBElement<ChangeDataResult> createAddEmployeeGroupsToAlcoGroupResponseAddEmployeeGroupsToAlcoGroupResult(ChangeDataResult value) {
-        return new JAXBElement<>(_AddEmployeeGroupsToAlcoGroupResponseAddEmployeeGroupsToAlcoGroupResult_QNAME, ChangeDataResult.class, AddEmployeeGroupsToAlcoGroupResponse.class, value);
+        return new JAXBElement<ChangeDataResult>(_AddEmployeeGroupsToAlcoGroupResponseAddEmployeeGroupsToAlcoGroupResult_QNAME, ChangeDataResult.class, AddEmployeeGroupsToAlcoGroupResponse.class, value);
     }
 
     /**
@@ -20357,7 +17891,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveAcsAccessLevel.class)
     public JAXBElement<AcsAccessLevelSaveData> createSaveAcsAccessLevelData(AcsAccessLevelSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsAccessLevelSaveData.class, SaveAcsAccessLevel.class, value);
+        return new JAXBElement<AcsAccessLevelSaveData>(_AddReactionEventData_QNAME, AcsAccessLevelSaveData.class, SaveAcsAccessLevel.class, value);
     }
 
     /**
@@ -20370,7 +17904,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SaveAcsAccessLevel.class)
     public JAXBElement<ArrayOfguid> createSaveAcsAccessLevelTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsAccessLevel.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsAccessLevel.class, value);
     }
 
     /**
@@ -20383,7 +17917,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessPointIds", scope = RemoveAcsAccessLevel.class)
     public JAXBElement<ArrayOfguid> createRemoveAcsAccessLevelAccessPointIds(ArrayOfguid value) {
-        return new JAXBElement<>(_RemoveAcsAccessLevelAccessPointIds_QNAME, ArrayOfguid.class, RemoveAcsAccessLevel.class, value);
+        return new JAXBElement<ArrayOfguid>(_RemoveAcsAccessLevelAccessPointIds_QNAME, ArrayOfguid.class, RemoveAcsAccessLevel.class, value);
     }
 
     /**
@@ -20396,7 +17930,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddAcsAccessPoint.class)
     public JAXBElement<AcsAccessPointSaveData> createAddAcsAccessPointData(AcsAccessPointSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsAccessPointSaveData.class, AddAcsAccessPoint.class, value);
+        return new JAXBElement<AcsAccessPointSaveData>(_AddReactionEventData_QNAME, AcsAccessPointSaveData.class, AddAcsAccessPoint.class, value);
     }
 
     /**
@@ -20409,7 +17943,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsAccessPointResult", scope = AddAcsAccessPointResponse.class)
     public JAXBElement<AcsAccessPointSlimInfo> createAddAcsAccessPointResponseAddAcsAccessPointResult(AcsAccessPointSlimInfo value) {
-        return new JAXBElement<>(_AddAcsAccessPointResponseAddAcsAccessPointResult_QNAME, AcsAccessPointSlimInfo.class, AddAcsAccessPointResponse.class, value);
+        return new JAXBElement<AcsAccessPointSlimInfo>(_AddAcsAccessPointResponseAddAcsAccessPointResult_QNAME, AcsAccessPointSlimInfo.class, AddAcsAccessPointResponse.class, value);
     }
 
     /**
@@ -20422,7 +17956,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveAcsAccessPoint.class)
     public JAXBElement<AcsAccessPointSaveData> createSaveAcsAccessPointData(AcsAccessPointSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsAccessPointSaveData.class, SaveAcsAccessPoint.class, value);
+        return new JAXBElement<AcsAccessPointSaveData>(_AddReactionEventData_QNAME, AcsAccessPointSaveData.class, SaveAcsAccessPoint.class, value);
     }
 
     /**
@@ -20435,7 +17969,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = ReplaceAccessPointDriver.class)
     public JAXBElement<AcsAccessPointSaveData> createReplaceAccessPointDriverData(AcsAccessPointSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsAccessPointSaveData.class, ReplaceAccessPointDriver.class, value);
+        return new JAXBElement<AcsAccessPointSaveData>(_AddReactionEventData_QNAME, AcsAccessPointSaveData.class, ReplaceAccessPointDriver.class, value);
     }
 
     /**
@@ -20448,7 +17982,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ReplaceAccessPointDriverResult", scope = ReplaceAccessPointDriverResponse.class)
     public JAXBElement<AcsAccessPointSlimInfo> createReplaceAccessPointDriverResponseReplaceAccessPointDriverResult(AcsAccessPointSlimInfo value) {
-        return new JAXBElement<>(_ReplaceAccessPointDriverResponseReplaceAccessPointDriverResult_QNAME, AcsAccessPointSlimInfo.class, ReplaceAccessPointDriverResponse.class, value);
+        return new JAXBElement<AcsAccessPointSlimInfo>(_ReplaceAccessPointDriverResponseReplaceAccessPointDriverResult_QNAME, AcsAccessPointSlimInfo.class, ReplaceAccessPointDriverResponse.class, value);
     }
 
     /**
@@ -20461,7 +17995,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = AddEmployeesToSecurityGroup.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToSecurityGroupEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToSecurityGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, AddEmployeesToSecurityGroup.class, value);
     }
 
     /**
@@ -20474,7 +18008,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddEmployeesToSecurityGroupResult", scope = AddEmployeesToSecurityGroupResponse.class)
     public JAXBElement<ArrayOfguid> createAddEmployeesToSecurityGroupResponseAddEmployeesToSecurityGroupResult(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToSecurityGroupResponseAddEmployeesToSecurityGroupResult_QNAME, ArrayOfguid.class, AddEmployeesToSecurityGroupResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToSecurityGroupResponseAddEmployeesToSecurityGroupResult_QNAME, ArrayOfguid.class, AddEmployeesToSecurityGroupResponse.class, value);
     }
 
     /**
@@ -20487,7 +18021,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "CheckRezeredHotKeysResult", scope = CheckRezeredHotKeysResponse.class)
     public JAXBElement<RezervedHotKeys> createCheckRezeredHotKeysResponseCheckRezeredHotKeysResult(RezervedHotKeys value) {
-        return new JAXBElement<>(_CheckRezeredHotKeysResponseCheckRezeredHotKeysResult_QNAME, RezervedHotKeys.class, CheckRezeredHotKeysResponse.class, value);
+        return new JAXBElement<RezervedHotKeys>(_CheckRezeredHotKeysResponseCheckRezeredHotKeysResult_QNAME, RezervedHotKeys.class, CheckRezeredHotKeysResponse.class, value);
     }
 
     /**
@@ -20500,7 +18034,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeeIds", scope = RemoveEmployeesToSecurityGroup.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeesToSecurityGroupEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesToSecurityGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddEmployeesToReportParametersEmployeeIds_QNAME, ArrayOfguid.class, RemoveEmployeesToSecurityGroup.class, value);
     }
 
     /**
@@ -20513,7 +18047,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelInfo", scope = AddAccessLevelsToEmployeeWithPeriod.class)
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createAddAccessLevelsToEmployeeWithPeriodAccessLevelInfo(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToEmployeeWithPeriod.class, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToEmployeeWithPeriod.class, value);
     }
 
     /**
@@ -20526,7 +18060,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelInfo", scope = AddAccessLevelsToEmployeeGroupWithPeriod.class)
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createAddAccessLevelsToEmployeeGroupWithPeriodAccessLevelInfo(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToEmployeeGroupWithPeriod.class, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToEmployeeGroupWithPeriod.class, value);
     }
 
     /**
@@ -20539,7 +18073,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelIDs", scope = AddAccessLevelsToEmployee.class)
     public JAXBElement<ArrayOfguid> createAddAccessLevelsToEmployeeAccessLevelIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, AddAccessLevelsToEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, AddAccessLevelsToEmployee.class, value);
     }
 
     /**
@@ -20552,7 +18086,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelIDs", scope = AddAccessLevelsToEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createAddAccessLevelsToEmployeeGroupAccessLevelIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, AddAccessLevelsToEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, AddAccessLevelsToEmployeeGroup.class, value);
     }
 
     /**
@@ -20565,7 +18099,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelInfo", scope = RemoveAccessLevelsFromEmployeeForce.class)
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createRemoveAccessLevelsFromEmployeeForceAccessLevelInfo(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, RemoveAccessLevelsFromEmployeeForce.class, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, RemoveAccessLevelsFromEmployeeForce.class, value);
     }
 
     /**
@@ -20578,7 +18112,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelInfo", scope = AddAccessLevelsToEmployeeForce.class)
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createAddAccessLevelsToEmployeeForceAccessLevelInfo(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToEmployeeForce.class, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToEmployeeForce.class, value);
     }
 
     /**
@@ -20591,7 +18125,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelIDs", scope = RemoveAccessLevelFromEmployee.class)
     public JAXBElement<ArrayOfguid> createRemoveAccessLevelFromEmployeeAccessLevelIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, RemoveAccessLevelFromEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, RemoveAccessLevelFromEmployee.class, value);
     }
 
     /**
@@ -20604,7 +18138,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelIDs", scope = RemoveAccessLevelFromEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createRemoveAccessLevelFromEmployeeGroupAccessLevelIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, RemoveAccessLevelFromEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, RemoveAccessLevelFromEmployeeGroup.class, value);
     }
 
     /**
@@ -20617,7 +18151,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAccessLevelsByEmployeeIDResult", scope = GetAccessLevelsByEmployeeIDResponse.class)
     public JAXBElement<LAccessLevelsData> createGetAccessLevelsByEmployeeIDResponseGetAccessLevelsByEmployeeIDResult(LAccessLevelsData value) {
-        return new JAXBElement<>(_GetAccessLevelsByEmployeeIDResponseGetAccessLevelsByEmployeeIDResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByEmployeeIDResponse.class, value);
+        return new JAXBElement<LAccessLevelsData>(_GetAccessLevelsByEmployeeIDResponseGetAccessLevelsByEmployeeIDResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByEmployeeIDResponse.class, value);
     }
 
     /**
@@ -20630,7 +18164,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResult", scope = GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse.class)
     public JAXBElement<LAccessLevelsData> createGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponseGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResult(LAccessLevelsData value) {
-        return new JAXBElement<>(_GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponseGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<LAccessLevelsData>(_GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponseGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByEmployeeIDIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -20643,7 +18177,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAccessLevelsByDriverIDResult", scope = GetAccessLevelsByDriverIDResponse.class)
     public JAXBElement<ArrayOfAcsAccessLevelSimpleInfo> createGetAccessLevelsByDriverIDResponseGetAccessLevelsByDriverIDResult(ArrayOfAcsAccessLevelSimpleInfo value) {
-        return new JAXBElement<>(_GetAccessLevelsByDriverIDResponseGetAccessLevelsByDriverIDResult_QNAME, ArrayOfAcsAccessLevelSimpleInfo.class, GetAccessLevelsByDriverIDResponse.class, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSimpleInfo>(_GetAccessLevelsByDriverIDResponseGetAccessLevelsByDriverIDResult_QNAME, ArrayOfAcsAccessLevelSimpleInfo.class, GetAccessLevelsByDriverIDResponse.class, value);
     }
 
     /**
@@ -20656,7 +18190,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetBiometricPermissionsResult", scope = GetBiometricPermissionsResponse.class)
     public JAXBElement<ArrayOfCardTypeBiometricPermission> createGetBiometricPermissionsResponseGetBiometricPermissionsResult(ArrayOfCardTypeBiometricPermission value) {
-        return new JAXBElement<>(_GetBiometricPermissionsResponseGetBiometricPermissionsResult_QNAME, ArrayOfCardTypeBiometricPermission.class, GetBiometricPermissionsResponse.class, value);
+        return new JAXBElement<ArrayOfCardTypeBiometricPermission>(_GetBiometricPermissionsResponseGetBiometricPermissionsResult_QNAME, ArrayOfCardTypeBiometricPermission.class, GetBiometricPermissionsResponse.class, value);
     }
 
     /**
@@ -20669,7 +18203,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAccessLevelsByEmployeeGroupIDResult", scope = GetAccessLevelsByEmployeeGroupIDResponse.class)
     public JAXBElement<LAccessLevelsData> createGetAccessLevelsByEmployeeGroupIDResponseGetAccessLevelsByEmployeeGroupIDResult(LAccessLevelsData value) {
-        return new JAXBElement<>(_GetAccessLevelsByEmployeeGroupIDResponseGetAccessLevelsByEmployeeGroupIDResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByEmployeeGroupIDResponse.class, value);
+        return new JAXBElement<LAccessLevelsData>(_GetAccessLevelsByEmployeeGroupIDResponseGetAccessLevelsByEmployeeGroupIDResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByEmployeeGroupIDResponse.class, value);
     }
 
     /**
@@ -20682,7 +18216,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAllAccessLevelsByEmployeeGroupIDResult", scope = GetAllAccessLevelsByEmployeeGroupIDResponse.class)
     public JAXBElement<LAccessLevelsData> createGetAllAccessLevelsByEmployeeGroupIDResponseGetAllAccessLevelsByEmployeeGroupIDResult(LAccessLevelsData value) {
-        return new JAXBElement<>(_GetAllAccessLevelsByEmployeeGroupIDResponseGetAllAccessLevelsByEmployeeGroupIDResult_QNAME, LAccessLevelsData.class, GetAllAccessLevelsByEmployeeGroupIDResponse.class, value);
+        return new JAXBElement<LAccessLevelsData>(_GetAllAccessLevelsByEmployeeGroupIDResponseGetAllAccessLevelsByEmployeeGroupIDResult_QNAME, LAccessLevelsData.class, GetAllAccessLevelsByEmployeeGroupIDResponse.class, value);
     }
 
     /**
@@ -20695,7 +18229,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelInfo", scope = AddAccessLevelsToVehicleWithPeriod.class)
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createAddAccessLevelsToVehicleWithPeriodAccessLevelInfo(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToVehicleWithPeriod.class, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToVehicleWithPeriod.class, value);
     }
 
     /**
@@ -20708,7 +18242,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelIDs", scope = AddAccessLevelsToVehicle.class)
     public JAXBElement<ArrayOfguid> createAddAccessLevelsToVehicleAccessLevelIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, AddAccessLevelsToVehicle.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, AddAccessLevelsToVehicle.class, value);
     }
 
     /**
@@ -20721,7 +18255,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelInfo", scope = RemoveAccessLevelsFromVehicleForce.class)
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createRemoveAccessLevelsFromVehicleForceAccessLevelInfo(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, RemoveAccessLevelsFromVehicleForce.class, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, RemoveAccessLevelsFromVehicleForce.class, value);
     }
 
     /**
@@ -20734,7 +18268,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelInfo", scope = AddAccessLevelsToVehicleForce.class)
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createAddAccessLevelsToVehicleForceAccessLevelInfo(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToVehicleForce.class, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_AddAccessLevelsToEmployeeWithPeriodAccessLevelInfo_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, AddAccessLevelsToVehicleForce.class, value);
     }
 
     /**
@@ -20747,7 +18281,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "accessLevelIDs", scope = RemoveAccessLevelFromVehicle.class)
     public JAXBElement<ArrayOfguid> createRemoveAccessLevelFromVehicleAccessLevelIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, RemoveAccessLevelFromVehicle.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddAccessLevelsToEmployeeAccessLevelIDs_QNAME, ArrayOfguid.class, RemoveAccessLevelFromVehicle.class, value);
     }
 
     /**
@@ -20760,7 +18294,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAccessLevelsByVehicleIDResult", scope = GetAccessLevelsByVehicleIDResponse.class)
     public JAXBElement<LAccessLevelsData> createGetAccessLevelsByVehicleIDResponseGetAccessLevelsByVehicleIDResult(LAccessLevelsData value) {
-        return new JAXBElement<>(_GetAccessLevelsByVehicleIDResponseGetAccessLevelsByVehicleIDResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByVehicleIDResponse.class, value);
+        return new JAXBElement<LAccessLevelsData>(_GetAccessLevelsByVehicleIDResponseGetAccessLevelsByVehicleIDResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByVehicleIDResponse.class, value);
     }
 
     /**
@@ -20773,7 +18307,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResult", scope = GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse.class)
     public JAXBElement<LAccessLevelsData> createGetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponseGetAccessLevelsByVehicleIDIncludeRemovedVehiclesResult(LAccessLevelsData value) {
-        return new JAXBElement<>(_GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponseGetAccessLevelsByVehicleIDIncludeRemovedVehiclesResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse.class, value);
+        return new JAXBElement<LAccessLevelsData>(_GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponseGetAccessLevelsByVehicleIDIncludeRemovedVehiclesResult_QNAME, LAccessLevelsData.class, GetAccessLevelsByVehicleIDIncludeRemovedVehiclesResponse.class, value);
     }
 
     /**
@@ -20786,7 +18320,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetKeysChangesResult", scope = GetKeysChangesResponse.class)
     public JAXBElement<LChangedKeys> createGetKeysChangesResponseGetKeysChangesResult(LChangedKeys value) {
-        return new JAXBElement<>(_GetKeysChangesResponseGetKeysChangesResult_QNAME, LChangedKeys.class, GetKeysChangesResponse.class, value);
+        return new JAXBElement<LChangedKeys>(_GetKeysChangesResponseGetKeysChangesResult_QNAME, LChangedKeys.class, GetKeysChangesResponse.class, value);
     }
 
     /**
@@ -20799,7 +18333,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverType", scope = ProcessOnChangeDriver.class)
     public JAXBElement<String> createProcessOnChangeDriverDriverType(String value) {
-        return new JAXBElement<>(_GetDriversByTypeDriverType_QNAME, String.class, ProcessOnChangeDriver.class, value);
+        return new JAXBElement<String>(_GetDriversByTypeDriverType_QNAME, String.class, ProcessOnChangeDriver.class, value);
     }
 
     /**
@@ -20812,7 +18346,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIDs", scope = ProcessSyncDriver.class)
     public JAXBElement<ArrayOfguid> createProcessSyncDriverDriverIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_ProcessSyncDriverDriverIDs_QNAME, ArrayOfguid.class, ProcessSyncDriver.class, value);
+        return new JAXBElement<ArrayOfguid>(_ProcessSyncDriverDriverIDs_QNAME, ArrayOfguid.class, ProcessSyncDriver.class, value);
     }
 
     /**
@@ -20825,7 +18359,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverIDs", scope = ProcessSyncDriverLight.class)
     public JAXBElement<ArrayOfguid> createProcessSyncDriverLightDriverIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_ProcessSyncDriverDriverIDs_QNAME, ArrayOfguid.class, ProcessSyncDriverLight.class, value);
+        return new JAXBElement<ArrayOfguid>(_ProcessSyncDriverDriverIDs_QNAME, ArrayOfguid.class, ProcessSyncDriverLight.class, value);
     }
 
     /**
@@ -20838,7 +18372,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetCustomizableDaysChangesResult", scope = GetCustomizableDaysChangesResponse.class)
     public JAXBElement<LChangedCustomizableDays> createGetCustomizableDaysChangesResponseGetCustomizableDaysChangesResult(LChangedCustomizableDays value) {
-        return new JAXBElement<>(_GetCustomizableDaysChangesResponseGetCustomizableDaysChangesResult_QNAME, LChangedCustomizableDays.class, GetCustomizableDaysChangesResponse.class, value);
+        return new JAXBElement<LChangedCustomizableDays>(_GetCustomizableDaysChangesResponseGetCustomizableDaysChangesResult_QNAME, LChangedCustomizableDays.class, GetCustomizableDaysChangesResponse.class, value);
     }
 
     /**
@@ -20851,7 +18385,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = Import.class)
     public JAXBElement<byte[]> createImportData(byte[] value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, byte[].class, Import.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AddReactionEventData_QNAME, byte[].class, Import.class, ((byte[]) value));
     }
 
     /**
@@ -20864,7 +18398,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driversTreeInfo", scope = UpdateDeviceDrivers.class)
     public JAXBElement<ArrayOfDeviceDriverInfo> createUpdateDeviceDriversDriversTreeInfo(ArrayOfDeviceDriverInfo value) {
-        return new JAXBElement<>(_UpdateDeviceDriversDriversTreeInfo_QNAME, ArrayOfDeviceDriverInfo.class, UpdateDeviceDrivers.class, value);
+        return new JAXBElement<ArrayOfDeviceDriverInfo>(_UpdateDeviceDriversDriversTreeInfo_QNAME, ArrayOfDeviceDriverInfo.class, UpdateDeviceDrivers.class, value);
     }
 
     /**
@@ -20877,7 +18411,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "UpdateDeviceDriversResult", scope = UpdateDeviceDriversResponse.class)
     public JAXBElement<ArrayOfDeviceDriverInfo> createUpdateDeviceDriversResponseUpdateDeviceDriversResult(ArrayOfDeviceDriverInfo value) {
-        return new JAXBElement<>(_UpdateDeviceDriversResponseUpdateDeviceDriversResult_QNAME, ArrayOfDeviceDriverInfo.class, UpdateDeviceDriversResponse.class, value);
+        return new JAXBElement<ArrayOfDeviceDriverInfo>(_UpdateDeviceDriversResponseUpdateDeviceDriversResult_QNAME, ArrayOfDeviceDriverInfo.class, UpdateDeviceDriversResponse.class, value);
     }
 
     /**
@@ -20890,7 +18424,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddWorkplace.class)
     public JAXBElement<WorkplaceSaveData> createAddWorkplaceData(WorkplaceSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkplaceSaveData.class, AddWorkplace.class, value);
+        return new JAXBElement<WorkplaceSaveData>(_AddReactionEventData_QNAME, WorkplaceSaveData.class, AddWorkplace.class, value);
     }
 
     /**
@@ -20903,7 +18437,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddWorkplaceResult", scope = AddWorkplaceResponse.class)
     public JAXBElement<WorkplaceInfo> createAddWorkplaceResponseAddWorkplaceResult(WorkplaceInfo value) {
-        return new JAXBElement<>(_AddWorkplaceResponseAddWorkplaceResult_QNAME, WorkplaceInfo.class, AddWorkplaceResponse.class, value);
+        return new JAXBElement<WorkplaceInfo>(_AddWorkplaceResponseAddWorkplaceResult_QNAME, WorkplaceInfo.class, AddWorkplaceResponse.class, value);
     }
 
     /**
@@ -20916,7 +18450,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveWorkplace.class)
     public JAXBElement<WorkplaceSaveData> createSaveWorkplaceData(WorkplaceSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkplaceSaveData.class, SaveWorkplace.class, value);
+        return new JAXBElement<WorkplaceSaveData>(_AddReactionEventData_QNAME, WorkplaceSaveData.class, SaveWorkplace.class, value);
     }
 
     /**
@@ -20929,7 +18463,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddWorkplaceModule.class)
     public JAXBElement<WorkplaceModuleSaveData> createAddWorkplaceModuleData(WorkplaceModuleSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkplaceModuleSaveData.class, AddWorkplaceModule.class, value);
+        return new JAXBElement<WorkplaceModuleSaveData>(_AddReactionEventData_QNAME, WorkplaceModuleSaveData.class, AddWorkplaceModule.class, value);
     }
 
     /**
@@ -20942,7 +18476,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddWorkplaceModuleResult", scope = AddWorkplaceModuleResponse.class)
     public JAXBElement<WorkplaceModuleInfo> createAddWorkplaceModuleResponseAddWorkplaceModuleResult(WorkplaceModuleInfo value) {
-        return new JAXBElement<>(_AddWorkplaceModuleResponseAddWorkplaceModuleResult_QNAME, WorkplaceModuleInfo.class, AddWorkplaceModuleResponse.class, value);
+        return new JAXBElement<WorkplaceModuleInfo>(_AddWorkplaceModuleResponseAddWorkplaceModuleResult_QNAME, WorkplaceModuleInfo.class, AddWorkplaceModuleResponse.class, value);
     }
 
     /**
@@ -20955,7 +18489,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveWorkplaceModule.class)
     public JAXBElement<WorkplaceModuleSaveData> createSaveWorkplaceModuleData(WorkplaceModuleSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkplaceModuleSaveData.class, SaveWorkplaceModule.class, value);
+        return new JAXBElement<WorkplaceModuleSaveData>(_AddReactionEventData_QNAME, WorkplaceModuleSaveData.class, SaveWorkplaceModule.class, value);
     }
 
     /**
@@ -20968,7 +18502,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddRootMap.class)
     public JAXBElement<MapSaveData> createAddRootMapData(MapSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, MapSaveData.class, AddRootMap.class, value);
+        return new JAXBElement<MapSaveData>(_AddReactionEventData_QNAME, MapSaveData.class, AddRootMap.class, value);
     }
 
     /**
@@ -20981,7 +18515,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddRootMapResult", scope = AddRootMapResponse.class)
     public JAXBElement<MapInfo> createAddRootMapResponseAddRootMapResult(MapInfo value) {
-        return new JAXBElement<>(_AddRootMapResponseAddRootMapResult_QNAME, MapInfo.class, AddRootMapResponse.class, value);
+        return new JAXBElement<MapInfo>(_AddRootMapResponseAddRootMapResult_QNAME, MapInfo.class, AddRootMapResponse.class, value);
     }
 
     /**
@@ -20994,7 +18528,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddMap.class)
     public JAXBElement<MapSaveData> createAddMapData(MapSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, MapSaveData.class, AddMap.class, value);
+        return new JAXBElement<MapSaveData>(_AddReactionEventData_QNAME, MapSaveData.class, AddMap.class, value);
     }
 
     /**
@@ -21007,7 +18541,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddMapResult", scope = AddMapResponse.class)
     public JAXBElement<MapInfo> createAddMapResponseAddMapResult(MapInfo value) {
-        return new JAXBElement<>(_AddMapResponseAddMapResult_QNAME, MapInfo.class, AddMapResponse.class, value);
+        return new JAXBElement<MapInfo>(_AddMapResponseAddMapResult_QNAME, MapInfo.class, AddMapResponse.class, value);
     }
 
     /**
@@ -21020,7 +18554,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveMap.class)
     public JAXBElement<MapSaveData> createSaveMapData(MapSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, MapSaveData.class, SaveMap.class, value);
+        return new JAXBElement<MapSaveData>(_AddReactionEventData_QNAME, MapSaveData.class, SaveMap.class, value);
     }
 
     /**
@@ -21033,7 +18567,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "image", scope = SetMapImage.class)
     public JAXBElement<byte[]> createSetMapImageImage(byte[] value) {
-        return new JAXBElement<>(_SetMapImageImage_QNAME, byte[].class, SetMapImage.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_SetMapImageImage_QNAME, byte[].class, SetMapImage.class, ((byte[]) value));
     }
 
     /**
@@ -21046,7 +18580,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddDriverFigureToMap.class)
     public JAXBElement<DriverFigureSaveData> createAddDriverFigureToMapData(DriverFigureSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, DriverFigureSaveData.class, AddDriverFigureToMap.class, value);
+        return new JAXBElement<DriverFigureSaveData>(_AddReactionEventData_QNAME, DriverFigureSaveData.class, AddDriverFigureToMap.class, value);
     }
 
     /**
@@ -21059,7 +18593,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddDriverFigureToMapResult", scope = AddDriverFigureToMapResponse.class)
     public JAXBElement<DriverFigureInfo> createAddDriverFigureToMapResponseAddDriverFigureToMapResult(DriverFigureInfo value) {
-        return new JAXBElement<>(_AddDriverFigureToMapResponseAddDriverFigureToMapResult_QNAME, DriverFigureInfo.class, AddDriverFigureToMapResponse.class, value);
+        return new JAXBElement<DriverFigureInfo>(_AddDriverFigureToMapResponseAddDriverFigureToMapResult_QNAME, DriverFigureInfo.class, AddDriverFigureToMapResponse.class, value);
     }
 
     /**
@@ -21072,7 +18606,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = UpdateDriverFigureOnTheMap.class)
     public JAXBElement<DriverFigureSaveData> createUpdateDriverFigureOnTheMapData(DriverFigureSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, DriverFigureSaveData.class, UpdateDriverFigureOnTheMap.class, value);
+        return new JAXBElement<DriverFigureSaveData>(_AddReactionEventData_QNAME, DriverFigureSaveData.class, UpdateDriverFigureOnTheMap.class, value);
     }
 
     /**
@@ -21085,7 +18619,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetAcsConfiguratorSettingsByWorkplaceModule.class)
     public JAXBElement<AcsConfiguratorSaveData> createSetAcsConfiguratorSettingsByWorkplaceModuleData(AcsConfiguratorSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsConfiguratorSaveData.class, SetAcsConfiguratorSettingsByWorkplaceModule.class, value);
+        return new JAXBElement<AcsConfiguratorSaveData>(_AddReactionEventData_QNAME, AcsConfiguratorSaveData.class, SetAcsConfiguratorSettingsByWorkplaceModule.class, value);
     }
 
     /**
@@ -21098,7 +18632,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetReportingServicesUrlResult", scope = GetReportingServicesUrlResponse.class)
     public JAXBElement<ReportingServicesData> createGetReportingServicesUrlResponseGetReportingServicesUrlResult(ReportingServicesData value) {
-        return new JAXBElement<>(_GetReportingServicesUrlResponseGetReportingServicesUrlResult_QNAME, ReportingServicesData.class, GetReportingServicesUrlResponse.class, value);
+        return new JAXBElement<ReportingServicesData>(_GetReportingServicesUrlResponseGetReportingServicesUrlResult_QNAME, ReportingServicesData.class, GetReportingServicesUrlResponse.class, value);
     }
 
     /**
@@ -21111,7 +18645,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "incidentTypeIds", scope = SetIncidentTypeToReportParameters.class)
     public JAXBElement<ArrayOfguid> createSetIncidentTypeToReportParametersIncidentTypeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_SetIncidentTypeToReportParametersIncidentTypeIds_QNAME, ArrayOfguid.class, SetIncidentTypeToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetIncidentTypeToReportParametersIncidentTypeIds_QNAME, ArrayOfguid.class, SetIncidentTypeToReportParameters.class, value);
     }
 
     /**
@@ -21124,7 +18658,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "branchesIds", scope = SetBranchToReportParameters.class)
     public JAXBElement<ArrayOfguid> createSetBranchToReportParametersBranchesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_SetBranchToReportParametersBranchesIds_QNAME, ArrayOfguid.class, SetBranchToReportParameters.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetBranchToReportParametersBranchesIds_QNAME, ArrayOfguid.class, SetBranchToReportParameters.class, value);
     }
 
     /**
@@ -21137,7 +18671,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIncidentArchiveReportResult", scope = GetIncidentArchiveReportResponse.class)
     public JAXBElement<byte[]> createGetIncidentArchiveReportResponseGetIncidentArchiveReportResult(byte[] value) {
-        return new JAXBElement<>(_GetIncidentArchiveReportResponseGetIncidentArchiveReportResult_QNAME, byte[].class, GetIncidentArchiveReportResponse.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_GetIncidentArchiveReportResponseGetIncidentArchiveReportResult_QNAME, byte[].class, GetIncidentArchiveReportResponse.class, ((byte[]) value));
     }
 
     /**
@@ -21150,7 +18684,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "incidentStatisticData", scope = GetIncidentStatisticReport.class)
     public JAXBElement<IncidentStatisticData> createGetIncidentStatisticReportIncidentStatisticData(IncidentStatisticData value) {
-        return new JAXBElement<>(_GetIncidentStatisticReportIncidentStatisticData_QNAME, IncidentStatisticData.class, GetIncidentStatisticReport.class, value);
+        return new JAXBElement<IncidentStatisticData>(_GetIncidentStatisticReportIncidentStatisticData_QNAME, IncidentStatisticData.class, GetIncidentStatisticReport.class, value);
     }
 
     /**
@@ -21163,7 +18697,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIncidentStatisticReportResult", scope = GetIncidentStatisticReportResponse.class)
     public JAXBElement<byte[]> createGetIncidentStatisticReportResponseGetIncidentStatisticReportResult(byte[] value) {
-        return new JAXBElement<>(_GetIncidentStatisticReportResponseGetIncidentStatisticReportResult_QNAME, byte[].class, GetIncidentStatisticReportResponse.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_GetIncidentStatisticReportResponseGetIncidentStatisticReportResult_QNAME, byte[].class, GetIncidentStatisticReportResponse.class, ((byte[]) value));
     }
 
     /**
@@ -21176,7 +18710,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "incidentStatisticData", scope = GetIncidentStatisticReportByWeek.class)
     public JAXBElement<IncidentStatisticData> createGetIncidentStatisticReportByWeekIncidentStatisticData(IncidentStatisticData value) {
-        return new JAXBElement<>(_GetIncidentStatisticReportIncidentStatisticData_QNAME, IncidentStatisticData.class, GetIncidentStatisticReportByWeek.class, value);
+        return new JAXBElement<IncidentStatisticData>(_GetIncidentStatisticReportIncidentStatisticData_QNAME, IncidentStatisticData.class, GetIncidentStatisticReportByWeek.class, value);
     }
 
     /**
@@ -21189,7 +18723,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetIncidentStatisticReportByWeekResult", scope = GetIncidentStatisticReportByWeekResponse.class)
     public JAXBElement<byte[]> createGetIncidentStatisticReportByWeekResponseGetIncidentStatisticReportByWeekResult(byte[] value) {
-        return new JAXBElement<>(_GetIncidentStatisticReportByWeekResponseGetIncidentStatisticReportByWeekResult_QNAME, byte[].class, GetIncidentStatisticReportByWeekResponse.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_GetIncidentStatisticReportByWeekResponseGetIncidentStatisticReportByWeekResult_QNAME, byte[].class, GetIncidentStatisticReportByWeekResponse.class, ((byte[]) value));
     }
 
     /**
@@ -21202,7 +18736,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workScheduleIDs", scope = AddWorkSchedulesToEmployee.class)
     public JAXBElement<ArrayOfguid> createAddWorkSchedulesToEmployeeWorkScheduleIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, AddWorkSchedulesToEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, AddWorkSchedulesToEmployee.class, value);
     }
 
     /**
@@ -21215,7 +18749,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workScheduleIDs", scope = AddWorkSchedulesToEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createAddWorkSchedulesToEmployeeGroupWorkScheduleIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, AddWorkSchedulesToEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, AddWorkSchedulesToEmployeeGroup.class, value);
     }
 
     /**
@@ -21228,7 +18762,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workScheduleIDs", scope = RemoveWorkSchedulesFromEmployee.class)
     public JAXBElement<ArrayOfguid> createRemoveWorkSchedulesFromEmployeeWorkScheduleIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, RemoveWorkSchedulesFromEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, RemoveWorkSchedulesFromEmployee.class, value);
     }
 
     /**
@@ -21241,7 +18775,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workScheduleIDs", scope = RemoveWorkSchedulesFromEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createRemoveWorkSchedulesFromEmployeeGroupWorkScheduleIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, RemoveWorkSchedulesFromEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkSchedulesToEmployeeWorkScheduleIDs_QNAME, ArrayOfguid.class, RemoveWorkSchedulesFromEmployeeGroup.class, value);
     }
 
     /**
@@ -21254,7 +18788,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workZoneIDs", scope = AddWorkZonesToEmployee.class)
     public JAXBElement<ArrayOfguid> createAddWorkZonesToEmployeeWorkZoneIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, AddWorkZonesToEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, AddWorkZonesToEmployee.class, value);
     }
 
     /**
@@ -21267,7 +18801,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workZoneIDs", scope = AddWorkZonesToEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createAddWorkZonesToEmployeeGroupWorkZoneIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, AddWorkZonesToEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, AddWorkZonesToEmployeeGroup.class, value);
     }
 
     /**
@@ -21280,7 +18814,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workZoneIDs", scope = RemoveWorkZoneFromEmployee.class)
     public JAXBElement<ArrayOfguid> createRemoveWorkZoneFromEmployeeWorkZoneIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, RemoveWorkZoneFromEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, RemoveWorkZoneFromEmployee.class, value);
     }
 
     /**
@@ -21293,7 +18827,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "workZoneIDs", scope = RemoveWorkZoneFromEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createRemoveWorkZoneFromEmployeeGroupWorkZoneIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, RemoveWorkZoneFromEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddWorkZonesToEmployeeWorkZoneIDs_QNAME, ArrayOfguid.class, RemoveWorkZoneFromEmployeeGroup.class, value);
     }
 
     /**
@@ -21306,7 +18840,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddDayType.class)
     public JAXBElement<DayTypeSaveData> createAddDayTypeData(DayTypeSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, DayTypeSaveData.class, AddDayType.class, value);
+        return new JAXBElement<DayTypeSaveData>(_AddReactionEventData_QNAME, DayTypeSaveData.class, AddDayType.class, value);
     }
 
     /**
@@ -21319,7 +18853,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddDayTypeResult", scope = AddDayTypeResponse.class)
     public JAXBElement<DayTypeSlimInfo> createAddDayTypeResponseAddDayTypeResult(DayTypeSlimInfo value) {
-        return new JAXBElement<>(_AddDayTypeResponseAddDayTypeResult_QNAME, DayTypeSlimInfo.class, AddDayTypeResponse.class, value);
+        return new JAXBElement<DayTypeSlimInfo>(_AddDayTypeResponseAddDayTypeResult_QNAME, DayTypeSlimInfo.class, AddDayTypeResponse.class, value);
     }
 
     /**
@@ -21332,7 +18866,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveWorkTimtable.class)
     public JAXBElement<ArrayOfWorkTimetableSlimInfo> createSaveWorkTimtableData(ArrayOfWorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, SaveWorkTimtable.class, value);
+        return new JAXBElement<ArrayOfWorkTimetableSlimInfo>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, SaveWorkTimtable.class, value);
     }
 
     /**
@@ -21345,7 +18879,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveEmployeeTimtable.class)
     public JAXBElement<ArrayOfWorkTimetableSlimInfo> createSaveEmployeeTimtableData(ArrayOfWorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, SaveEmployeeTimtable.class, value);
+        return new JAXBElement<ArrayOfWorkTimetableSlimInfo>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, SaveEmployeeTimtable.class, value);
     }
 
     /**
@@ -21358,7 +18892,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveDayType.class)
     public JAXBElement<DayTypeSaveData> createSaveDayTypeData(DayTypeSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, DayTypeSaveData.class, SaveDayType.class, value);
+        return new JAXBElement<DayTypeSaveData>(_AddReactionEventData_QNAME, DayTypeSaveData.class, SaveDayType.class, value);
     }
 
     /**
@@ -21371,7 +18905,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveDayTypes.class)
     public JAXBElement<ArrayOfguid> createRemoveDayTypesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveDayTypes.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveDayTypes.class, value);
     }
 
     /**
@@ -21384,7 +18918,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "dates", scope = DeleteEmployeeTimetable.class)
     public JAXBElement<ArrayOfdateTime> createDeleteEmployeeTimetableDates(ArrayOfdateTime value) {
-        return new JAXBElement<>(_DeleteEmployeeTimetableDates_QNAME, ArrayOfdateTime.class, DeleteEmployeeTimetable.class, value);
+        return new JAXBElement<ArrayOfdateTime>(_DeleteEmployeeTimetableDates_QNAME, ArrayOfdateTime.class, DeleteEmployeeTimetable.class, value);
     }
 
     /**
@@ -21397,7 +18931,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = UpdateWorkTimeTable.class)
     public JAXBElement<ArrayOfWorkTimetableSlimInfo> createUpdateWorkTimeTableData(ArrayOfWorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, UpdateWorkTimeTable.class, value);
+        return new JAXBElement<ArrayOfWorkTimetableSlimInfo>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, UpdateWorkTimeTable.class, value);
     }
 
     /**
@@ -21410,7 +18944,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = UpdateEmployeeTimeTable.class)
     public JAXBElement<ArrayOfWorkTimetableSlimInfo> createUpdateEmployeeTimeTableData(ArrayOfWorkTimetableSlimInfo value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, UpdateEmployeeTimeTable.class, value);
+        return new JAXBElement<ArrayOfWorkTimetableSlimInfo>(_AddReactionEventData_QNAME, ArrayOfWorkTimetableSlimInfo.class, UpdateEmployeeTimeTable.class, value);
     }
 
     /**
@@ -21423,7 +18957,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddWorkSchedule.class)
     public JAXBElement<WorkScheduleSlimSaveData> createAddWorkScheduleData(WorkScheduleSlimSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkScheduleSlimSaveData.class, AddWorkSchedule.class, value);
+        return new JAXBElement<WorkScheduleSlimSaveData>(_AddReactionEventData_QNAME, WorkScheduleSlimSaveData.class, AddWorkSchedule.class, value);
     }
 
     /**
@@ -21436,7 +18970,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddWorkScheduleResult", scope = AddWorkScheduleResponse.class)
     public JAXBElement<WorkScheduleSlimInfo> createAddWorkScheduleResponseAddWorkScheduleResult(WorkScheduleSlimInfo value) {
-        return new JAXBElement<>(_AddWorkScheduleResponseAddWorkScheduleResult_QNAME, WorkScheduleSlimInfo.class, AddWorkScheduleResponse.class, value);
+        return new JAXBElement<WorkScheduleSlimInfo>(_AddWorkScheduleResponseAddWorkScheduleResult_QNAME, WorkScheduleSlimInfo.class, AddWorkScheduleResponse.class, value);
     }
 
     /**
@@ -21449,7 +18983,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveWorkSchedule.class)
     public JAXBElement<WorkScheduleSlimSaveData> createSaveWorkScheduleData(WorkScheduleSlimSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, WorkScheduleSlimSaveData.class, SaveWorkSchedule.class, value);
+        return new JAXBElement<WorkScheduleSlimSaveData>(_AddReactionEventData_QNAME, WorkScheduleSlimSaveData.class, SaveWorkSchedule.class, value);
     }
 
     /**
@@ -21462,7 +18996,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveWorkSchedules.class)
     public JAXBElement<ArrayOfguid> createRemoveWorkSchedulesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveWorkSchedules.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveWorkSchedules.class, value);
     }
 
     /**
@@ -21475,7 +19009,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "claim", scope = GetTagsByClaim.class)
     public JAXBElement<String> createGetTagsByClaimClaim(String value) {
-        return new JAXBElement<>(_GetTagsByClaimClaim_QNAME, String.class, GetTagsByClaim.class, value);
+        return new JAXBElement<String>(_GetTagsByClaimClaim_QNAME, String.class, GetTagsByClaim.class, value);
     }
 
     /**
@@ -21488,7 +19022,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetTagsByClaimResult", scope = GetTagsByClaimResponse.class)
     public JAXBElement<ArrayOfTagFullInfo> createGetTagsByClaimResponseGetTagsByClaimResult(ArrayOfTagFullInfo value) {
-        return new JAXBElement<>(_GetTagsByClaimResponseGetTagsByClaimResult_QNAME, ArrayOfTagFullInfo.class, GetTagsByClaimResponse.class, value);
+        return new JAXBElement<ArrayOfTagFullInfo>(_GetTagsByClaimResponseGetTagsByClaimResult_QNAME, ArrayOfTagFullInfo.class, GetTagsByClaimResponse.class, value);
     }
 
     /**
@@ -21501,7 +19035,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetVariable.class)
     public JAXBElement<VariableInfo> createSetVariableData(VariableInfo value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, VariableInfo.class, SetVariable.class, value);
+        return new JAXBElement<VariableInfo>(_AddReactionEventData_QNAME, VariableInfo.class, SetVariable.class, value);
     }
 
     /**
@@ -21514,7 +19048,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "gatewayUrl", scope = AddNetwork.class)
     public JAXBElement<String> createAddNetworkGatewayUrl(String value) {
-        return new JAXBElement<>(_AddNetworkGatewayUrl_QNAME, String.class, AddNetwork.class, value);
+        return new JAXBElement<String>(_AddNetworkGatewayUrl_QNAME, String.class, AddNetwork.class, value);
     }
 
     /**
@@ -21527,7 +19061,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "url", scope = AddLocalServer.class)
     public JAXBElement<String> createAddLocalServerUrl(String value) {
-        return new JAXBElement<>(_AddLocalServerUrl_QNAME, String.class, AddLocalServer.class, value);
+        return new JAXBElement<String>(_AddLocalServerUrl_QNAME, String.class, AddLocalServer.class, value);
     }
 
     /**
@@ -21540,7 +19074,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "url", scope = AddServer.class)
     public JAXBElement<String> createAddServerUrl(String value) {
-        return new JAXBElement<>(_AddLocalServerUrl_QNAME, String.class, AddServer.class, value);
+        return new JAXBElement<String>(_AddLocalServerUrl_QNAME, String.class, AddServer.class, value);
     }
 
     /**
@@ -21553,7 +19087,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverType", scope = AddRootDriverProps.class)
     public JAXBElement<String> createAddRootDriverPropsDriverType(String value) {
-        return new JAXBElement<>(_GetDriversByTypeDriverType_QNAME, String.class, AddRootDriverProps.class, value);
+        return new JAXBElement<String>(_GetDriversByTypeDriverType_QNAME, String.class, AddRootDriverProps.class, value);
     }
 
     /**
@@ -21566,7 +19100,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "properties", scope = AddRootDriverProps.class)
     public JAXBElement<ArrayOfLPropertyValue> createAddRootDriverPropsProperties(ArrayOfLPropertyValue value) {
-        return new JAXBElement<>(_AddRootDriverPropsProperties_QNAME, ArrayOfLPropertyValue.class, AddRootDriverProps.class, value);
+        return new JAXBElement<ArrayOfLPropertyValue>(_AddRootDriverPropsProperties_QNAME, ArrayOfLPropertyValue.class, AddRootDriverProps.class, value);
     }
 
     /**
@@ -21579,7 +19113,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "parentPropertyName", scope = AddDriverProps.class)
     public JAXBElement<String> createAddDriverPropsParentPropertyName(String value) {
-        return new JAXBElement<>(_AddDriverPropsParentPropertyName_QNAME, String.class, AddDriverProps.class, value);
+        return new JAXBElement<String>(_AddDriverPropsParentPropertyName_QNAME, String.class, AddDriverProps.class, value);
     }
 
     /**
@@ -21592,7 +19126,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverType", scope = AddDriverProps.class)
     public JAXBElement<String> createAddDriverPropsDriverType(String value) {
-        return new JAXBElement<>(_GetDriversByTypeDriverType_QNAME, String.class, AddDriverProps.class, value);
+        return new JAXBElement<String>(_GetDriversByTypeDriverType_QNAME, String.class, AddDriverProps.class, value);
     }
 
     /**
@@ -21605,7 +19139,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "properties", scope = AddDriverProps.class)
     public JAXBElement<ArrayOfLPropertyValue> createAddDriverPropsProperties(ArrayOfLPropertyValue value) {
-        return new JAXBElement<>(_AddRootDriverPropsProperties_QNAME, ArrayOfLPropertyValue.class, AddDriverProps.class, value);
+        return new JAXBElement<ArrayOfLPropertyValue>(_AddRootDriverPropsProperties_QNAME, ArrayOfLPropertyValue.class, AddDriverProps.class, value);
     }
 
     /**
@@ -21618,7 +19152,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "RemoveDriverResult", scope = RemoveDriverResponse.class)
     public JAXBElement<LDriverFullInfo> createRemoveDriverResponseRemoveDriverResult(LDriverFullInfo value) {
-        return new JAXBElement<>(_RemoveDriverResponseRemoveDriverResult_QNAME, LDriverFullInfo.class, RemoveDriverResponse.class, value);
+        return new JAXBElement<LDriverFullInfo>(_RemoveDriverResponseRemoveDriverResult_QNAME, LDriverFullInfo.class, RemoveDriverResponse.class, value);
     }
 
     /**
@@ -21631,7 +19165,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "propertyName", scope = SetProperty.class)
     public JAXBElement<String> createSetPropertyPropertyName(String value) {
-        return new JAXBElement<>(_SetPropertyPropertyName_QNAME, String.class, SetProperty.class, value);
+        return new JAXBElement<String>(_SetPropertyPropertyName_QNAME, String.class, SetProperty.class, value);
     }
 
     /**
@@ -21644,7 +19178,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "propertyValue", scope = SetProperty.class)
     public JAXBElement<String> createSetPropertyPropertyValue(String value) {
-        return new JAXBElement<>(_SetPropertyPropertyValue_QNAME, String.class, SetProperty.class, value);
+        return new JAXBElement<String>(_SetPropertyPropertyValue_QNAME, String.class, SetProperty.class, value);
     }
 
     /**
@@ -21657,7 +19191,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "resources", scope = SetPropertyValues.class)
     public JAXBElement<ArrayOfLResourcePropertyValues> createSetPropertyValuesResources(ArrayOfLResourcePropertyValues value) {
-        return new JAXBElement<>(_UpdateBasIpDriversResources_QNAME, ArrayOfLResourcePropertyValues.class, SetPropertyValues.class, value);
+        return new JAXBElement<ArrayOfLResourcePropertyValues>(_UpdateBasIpDriversResources_QNAME, ArrayOfLResourcePropertyValues.class, SetPropertyValues.class, value);
     }
 
     /**
@@ -21670,7 +19204,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = AddUser.class)
     public JAXBElement<String> createAddUserLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, AddUser.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, AddUser.class, value);
     }
 
     /**
@@ -21683,7 +19217,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "passsword", scope = AddUser.class)
     public JAXBElement<String> createAddUserPasssword(String value) {
-        return new JAXBElement<>(_AddUserPasssword_QNAME, String.class, AddUser.class, value);
+        return new JAXBElement<String>(_AddUserPasssword_QNAME, String.class, AddUser.class, value);
     }
 
     /**
@@ -21696,7 +19230,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "fullName", scope = AddUser.class)
     public JAXBElement<String> createAddUserFullName(String value) {
-        return new JAXBElement<>(_AddUserFullName_QNAME, String.class, AddUser.class, value);
+        return new JAXBElement<String>(_AddUserFullName_QNAME, String.class, AddUser.class, value);
     }
 
     /**
@@ -21709,7 +19243,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = AddUser.class)
     public JAXBElement<String> createAddUserDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, AddUser.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, AddUser.class, value);
     }
 
     /**
@@ -21722,7 +19256,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddUserResult", scope = AddUserResponse.class)
     public JAXBElement<LUser> createAddUserResponseAddUserResult(LUser value) {
-        return new JAXBElement<>(_AddUserResponseAddUserResult_QNAME, LUser.class, AddUserResponse.class, value);
+        return new JAXBElement<LUser>(_AddUserResponseAddUserResult_QNAME, LUser.class, AddUserResponse.class, value);
     }
 
     /**
@@ -21735,7 +19269,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "login", scope = SaveUser.class)
     public JAXBElement<String> createSaveUserLogin(String value) {
-        return new JAXBElement<>(_GetOperatorLogin_QNAME, String.class, SaveUser.class, value);
+        return new JAXBElement<String>(_GetOperatorLogin_QNAME, String.class, SaveUser.class, value);
     }
 
     /**
@@ -21748,7 +19282,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "password", scope = SaveUser.class)
     public JAXBElement<String> createSaveUserPassword(String value) {
-        return new JAXBElement<>(_LoadPanasonicConfigurationPassword_QNAME, String.class, SaveUser.class, value);
+        return new JAXBElement<String>(_LoadPanasonicConfigurationPassword_QNAME, String.class, SaveUser.class, value);
     }
 
     /**
@@ -21761,7 +19295,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "fullName", scope = SaveUser.class)
     public JAXBElement<String> createSaveUserFullName(String value) {
-        return new JAXBElement<>(_AddUserFullName_QNAME, String.class, SaveUser.class, value);
+        return new JAXBElement<String>(_AddUserFullName_QNAME, String.class, SaveUser.class, value);
     }
 
     /**
@@ -21774,7 +19308,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = SaveUser.class)
     public JAXBElement<String> createSaveUserDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, SaveUser.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, SaveUser.class, value);
     }
 
     /**
@@ -21787,7 +19321,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddUserGroup.class)
     public JAXBElement<String> createAddUserGroupName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddUserGroup.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddUserGroup.class, value);
     }
 
     /**
@@ -21800,7 +19334,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = AddUserGroup.class)
     public JAXBElement<String> createAddUserGroupDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, AddUserGroup.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, AddUserGroup.class, value);
     }
 
     /**
@@ -21813,7 +19347,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddUserGroupResult", scope = AddUserGroupResponse.class)
     public JAXBElement<LUserGroup> createAddUserGroupResponseAddUserGroupResult(LUserGroup value) {
-        return new JAXBElement<>(_AddUserGroupResponseAddUserGroupResult_QNAME, LUserGroup.class, AddUserGroupResponse.class, value);
+        return new JAXBElement<LUserGroup>(_AddUserGroupResponseAddUserGroupResult_QNAME, LUserGroup.class, AddUserGroupResponse.class, value);
     }
 
     /**
@@ -21826,7 +19360,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveUserGroup.class)
     public JAXBElement<String> createSaveUserGroupName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveUserGroup.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveUserGroup.class, value);
     }
 
     /**
@@ -21839,7 +19373,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = SaveUserGroup.class)
     public JAXBElement<String> createSaveUserGroupDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, SaveUserGroup.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, SaveUserGroup.class, value);
     }
 
     /**
@@ -21852,7 +19386,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "userIDs", scope = AddUsersToUserGroup.class)
     public JAXBElement<ArrayOfguid> createAddUsersToUserGroupUserIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddUsersToUserGroupUserIDs_QNAME, ArrayOfguid.class, AddUsersToUserGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddUsersToUserGroupUserIDs_QNAME, ArrayOfguid.class, AddUsersToUserGroup.class, value);
     }
 
     /**
@@ -21865,7 +19399,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "userIDs", scope = RemoveUsersFromUserGroup.class)
     public JAXBElement<ArrayOfguid> createRemoveUsersFromUserGroupUserIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddUsersToUserGroupUserIDs_QNAME, ArrayOfguid.class, RemoveUsersFromUserGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddUsersToUserGroupUserIDs_QNAME, ArrayOfguid.class, RemoveUsersFromUserGroup.class, value);
     }
 
     /**
@@ -21878,7 +19412,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "userGroupIDs", scope = AddUserGroupsToUser.class)
     public JAXBElement<ArrayOfguid> createAddUserGroupsToUserUserGroupIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddUserGroupsToUserUserGroupIDs_QNAME, ArrayOfguid.class, AddUserGroupsToUser.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddUserGroupsToUserUserGroupIDs_QNAME, ArrayOfguid.class, AddUserGroupsToUser.class, value);
     }
 
     /**
@@ -21891,7 +19425,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "userGroupIDs", scope = RemoveUserGroupsFromUser.class)
     public JAXBElement<ArrayOfguid> createRemoveUserGroupsFromUserUserGroupIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_AddUserGroupsToUserUserGroupIDs_QNAME, ArrayOfguid.class, RemoveUserGroupsFromUser.class, value);
+        return new JAXBElement<ArrayOfguid>(_AddUserGroupsToUserUserGroupIDs_QNAME, ArrayOfguid.class, RemoveUserGroupsFromUser.class, value);
     }
 
     /**
@@ -21904,7 +19438,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddClaim.class)
     public JAXBElement<ClaimSaveData> createAddClaimData(ClaimSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ClaimSaveData.class, AddClaim.class, value);
+        return new JAXBElement<ClaimSaveData>(_AddReactionEventData_QNAME, ClaimSaveData.class, AddClaim.class, value);
     }
 
     /**
@@ -21917,7 +19451,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsDaySchedule.class)
     public JAXBElement<String> createAddAcsDayScheduleName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsDaySchedule.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsDaySchedule.class, value);
     }
 
     /**
@@ -21930,7 +19464,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = AddAcsDaySchedule.class)
     public JAXBElement<String> createAddAcsDayScheduleComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsDaySchedule.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsDaySchedule.class, value);
     }
 
     /**
@@ -21943,7 +19477,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "dayIntervals", scope = AddAcsDaySchedule.class)
     public JAXBElement<RGDayIntervals> createAddAcsDayScheduleDayIntervals(RGDayIntervals value) {
-        return new JAXBElement<>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, AddAcsDaySchedule.class, value);
+        return new JAXBElement<RGDayIntervals>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, AddAcsDaySchedule.class, value);
     }
 
     /**
@@ -21956,7 +19490,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsDayScheduleResult", scope = AddAcsDayScheduleResponse.class)
     public JAXBElement<AcsDaySchedule> createAddAcsDayScheduleResponseAddAcsDayScheduleResult(AcsDaySchedule value) {
-        return new JAXBElement<>(_AddAcsDayScheduleResponseAddAcsDayScheduleResult_QNAME, AcsDaySchedule.class, AddAcsDayScheduleResponse.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AddAcsDayScheduleResponseAddAcsDayScheduleResult_QNAME, AcsDaySchedule.class, AddAcsDayScheduleResponse.class, value);
     }
 
     /**
@@ -21969,7 +19503,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsDayScheduleForOwner.class)
     public JAXBElement<String> createAddAcsDayScheduleForOwnerName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsDayScheduleForOwner.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsDayScheduleForOwner.class, value);
     }
 
     /**
@@ -21982,7 +19516,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = AddAcsDayScheduleForOwner.class)
     public JAXBElement<String> createAddAcsDayScheduleForOwnerComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsDayScheduleForOwner.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsDayScheduleForOwner.class, value);
     }
 
     /**
@@ -21995,7 +19529,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "dayIntervals", scope = AddAcsDayScheduleForOwner.class)
     public JAXBElement<RGDayIntervals> createAddAcsDayScheduleForOwnerDayIntervals(RGDayIntervals value) {
-        return new JAXBElement<>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, AddAcsDayScheduleForOwner.class, value);
+        return new JAXBElement<RGDayIntervals>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, AddAcsDayScheduleForOwner.class, value);
     }
 
     /**
@@ -22008,7 +19542,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsDayScheduleForOwnerResult", scope = AddAcsDayScheduleForOwnerResponse.class)
     public JAXBElement<AcsDaySchedule> createAddAcsDayScheduleForOwnerResponseAddAcsDayScheduleForOwnerResult(AcsDaySchedule value) {
-        return new JAXBElement<>(_AddAcsDayScheduleForOwnerResponseAddAcsDayScheduleForOwnerResult_QNAME, AcsDaySchedule.class, AddAcsDayScheduleForOwnerResponse.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AddAcsDayScheduleForOwnerResponseAddAcsDayScheduleForOwnerResult_QNAME, AcsDaySchedule.class, AddAcsDayScheduleForOwnerResponse.class, value);
     }
 
     /**
@@ -22021,7 +19555,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsDaySchedule.class)
     public JAXBElement<String> createSaveAcsDayScheduleName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsDaySchedule.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsDaySchedule.class, value);
     }
 
     /**
@@ -22034,7 +19568,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = SaveAcsDaySchedule.class)
     public JAXBElement<String> createSaveAcsDayScheduleComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsDaySchedule.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsDaySchedule.class, value);
     }
 
     /**
@@ -22047,7 +19581,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "dayIntervals", scope = SaveAcsDaySchedule.class)
     public JAXBElement<RGDayIntervals> createSaveAcsDayScheduleDayIntervals(RGDayIntervals value) {
-        return new JAXBElement<>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, SaveAcsDaySchedule.class, value);
+        return new JAXBElement<RGDayIntervals>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, SaveAcsDaySchedule.class, value);
     }
 
     /**
@@ -22060,7 +19594,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsDayScheduleForOwner.class)
     public JAXBElement<String> createSaveAcsDayScheduleForOwnerName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsDayScheduleForOwner.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsDayScheduleForOwner.class, value);
     }
 
     /**
@@ -22073,7 +19607,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = SaveAcsDayScheduleForOwner.class)
     public JAXBElement<String> createSaveAcsDayScheduleForOwnerComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsDayScheduleForOwner.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsDayScheduleForOwner.class, value);
     }
 
     /**
@@ -22086,7 +19620,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "dayIntervals", scope = SaveAcsDayScheduleForOwner.class)
     public JAXBElement<RGDayIntervals> createSaveAcsDayScheduleForOwnerDayIntervals(RGDayIntervals value) {
-        return new JAXBElement<>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, SaveAcsDayScheduleForOwner.class, value);
+        return new JAXBElement<RGDayIntervals>(_AddAcsDayScheduleDayIntervals_QNAME, RGDayIntervals.class, SaveAcsDayScheduleForOwner.class, value);
     }
 
     /**
@@ -22099,7 +19633,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsMultiDaySchedule.class)
     public JAXBElement<String> createAddAcsMultiDayScheduleName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsMultiDaySchedule.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsMultiDaySchedule.class, value);
     }
 
     /**
@@ -22112,7 +19646,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = AddAcsMultiDaySchedule.class)
     public JAXBElement<String> createAddAcsMultiDayScheduleComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsMultiDaySchedule.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsMultiDaySchedule.class, value);
     }
 
     /**
@@ -22125,7 +19659,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "dayIntervals", scope = AddAcsMultiDaySchedule.class)
     public JAXBElement<ArrayOfRGDayIntervals> createAddAcsMultiDayScheduleDayIntervals(ArrayOfRGDayIntervals value) {
-        return new JAXBElement<>(_AddAcsDayScheduleDayIntervals_QNAME, ArrayOfRGDayIntervals.class, AddAcsMultiDaySchedule.class, value);
+        return new JAXBElement<ArrayOfRGDayIntervals>(_AddAcsDayScheduleDayIntervals_QNAME, ArrayOfRGDayIntervals.class, AddAcsMultiDaySchedule.class, value);
     }
 
     /**
@@ -22138,7 +19672,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsMultiDayScheduleResult", scope = AddAcsMultiDayScheduleResponse.class)
     public JAXBElement<AcsMultiDaySchedule> createAddAcsMultiDayScheduleResponseAddAcsMultiDayScheduleResult(AcsMultiDaySchedule value) {
-        return new JAXBElement<>(_AddAcsMultiDayScheduleResponseAddAcsMultiDayScheduleResult_QNAME, AcsMultiDaySchedule.class, AddAcsMultiDayScheduleResponse.class, value);
+        return new JAXBElement<AcsMultiDaySchedule>(_AddAcsMultiDayScheduleResponseAddAcsMultiDayScheduleResult_QNAME, AcsMultiDaySchedule.class, AddAcsMultiDayScheduleResponse.class, value);
     }
 
     /**
@@ -22151,7 +19685,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsMultiDaySchedule.class)
     public JAXBElement<String> createSaveAcsMultiDayScheduleName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsMultiDaySchedule.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsMultiDaySchedule.class, value);
     }
 
     /**
@@ -22164,7 +19698,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = SaveAcsMultiDaySchedule.class)
     public JAXBElement<String> createSaveAcsMultiDayScheduleComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsMultiDaySchedule.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsMultiDaySchedule.class, value);
     }
 
     /**
@@ -22177,7 +19711,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "dayIntervals", scope = SaveAcsMultiDaySchedule.class)
     public JAXBElement<ArrayOfRGDayIntervals> createSaveAcsMultiDayScheduleDayIntervals(ArrayOfRGDayIntervals value) {
-        return new JAXBElement<>(_AddAcsDayScheduleDayIntervals_QNAME, ArrayOfRGDayIntervals.class, SaveAcsMultiDaySchedule.class, value);
+        return new JAXBElement<ArrayOfRGDayIntervals>(_AddAcsDayScheduleDayIntervals_QNAME, ArrayOfRGDayIntervals.class, SaveAcsMultiDaySchedule.class, value);
     }
 
     /**
@@ -22190,7 +19724,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsWeekSchedule.class)
     public JAXBElement<String> createAddAcsWeekScheduleName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsWeekSchedule.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsWeekSchedule.class, value);
     }
 
     /**
@@ -22203,7 +19737,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = AddAcsWeekSchedule.class)
     public JAXBElement<String> createAddAcsWeekScheduleComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsWeekSchedule.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsWeekSchedule.class, value);
     }
 
     /**
@@ -22216,7 +19750,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "weeks", scope = AddAcsWeekSchedule.class)
     public JAXBElement<ArrayOfAcsWeekSlim> createAddAcsWeekScheduleWeeks(ArrayOfAcsWeekSlim value) {
-        return new JAXBElement<>(_AddAcsWeekScheduleWeeks_QNAME, ArrayOfAcsWeekSlim.class, AddAcsWeekSchedule.class, value);
+        return new JAXBElement<ArrayOfAcsWeekSlim>(_AddAcsWeekScheduleWeeks_QNAME, ArrayOfAcsWeekSlim.class, AddAcsWeekSchedule.class, value);
     }
 
     /**
@@ -22229,7 +19763,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsWeekScheduleResult", scope = AddAcsWeekScheduleResponse.class)
     public JAXBElement<AcsWeekScheduleFull> createAddAcsWeekScheduleResponseAddAcsWeekScheduleResult(AcsWeekScheduleFull value) {
-        return new JAXBElement<>(_AddAcsWeekScheduleResponseAddAcsWeekScheduleResult_QNAME, AcsWeekScheduleFull.class, AddAcsWeekScheduleResponse.class, value);
+        return new JAXBElement<AcsWeekScheduleFull>(_AddAcsWeekScheduleResponseAddAcsWeekScheduleResult_QNAME, AcsWeekScheduleFull.class, AddAcsWeekScheduleResponse.class, value);
     }
 
     /**
@@ -22242,7 +19776,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsWeekSchedule.class)
     public JAXBElement<String> createSaveAcsWeekScheduleName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsWeekSchedule.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsWeekSchedule.class, value);
     }
 
     /**
@@ -22255,7 +19789,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = SaveAcsWeekSchedule.class)
     public JAXBElement<String> createSaveAcsWeekScheduleComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsWeekSchedule.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsWeekSchedule.class, value);
     }
 
     /**
@@ -22268,7 +19802,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "weeks", scope = SaveAcsWeekSchedule.class)
     public JAXBElement<ArrayOfAcsWeekSlim> createSaveAcsWeekScheduleWeeks(ArrayOfAcsWeekSlim value) {
-        return new JAXBElement<>(_AddAcsWeekScheduleWeeks_QNAME, ArrayOfAcsWeekSlim.class, SaveAcsWeekSchedule.class, value);
+        return new JAXBElement<ArrayOfAcsWeekSlim>(_AddAcsWeekScheduleWeeks_QNAME, ArrayOfAcsWeekSlim.class, SaveAcsWeekSchedule.class, value);
     }
 
     /**
@@ -22281,7 +19815,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsCustomDay.class)
     public JAXBElement<String> createAddAcsCustomDayName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsCustomDay.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsCustomDay.class, value);
     }
 
     /**
@@ -22294,7 +19828,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsCustomDayResult", scope = AddAcsCustomDayResponse.class)
     public JAXBElement<AcsCustomDay> createAddAcsCustomDayResponseAddAcsCustomDayResult(AcsCustomDay value) {
-        return new JAXBElement<>(_AddAcsCustomDayResponseAddAcsCustomDayResult_QNAME, AcsCustomDay.class, AddAcsCustomDayResponse.class, value);
+        return new JAXBElement<AcsCustomDay>(_AddAcsCustomDayResponseAddAcsCustomDayResult_QNAME, AcsCustomDay.class, AddAcsCustomDayResponse.class, value);
     }
 
     /**
@@ -22307,7 +19841,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsCustomDay.class)
     public JAXBElement<String> createSaveAcsCustomDayName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsCustomDay.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsCustomDay.class, value);
     }
 
     /**
@@ -22320,7 +19854,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsWorkDayWithTransfer.class)
     public JAXBElement<String> createAddAcsWorkDayWithTransferName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsWorkDayWithTransfer.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsWorkDayWithTransfer.class, value);
     }
 
     /**
@@ -22333,7 +19867,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsWorkDayWithTransferResult", scope = AddAcsWorkDayWithTransferResponse.class)
     public JAXBElement<AcsWorkDayWithTransfer> createAddAcsWorkDayWithTransferResponseAddAcsWorkDayWithTransferResult(AcsWorkDayWithTransfer value) {
-        return new JAXBElement<>(_AddAcsWorkDayWithTransferResponseAddAcsWorkDayWithTransferResult_QNAME, AcsWorkDayWithTransfer.class, AddAcsWorkDayWithTransferResponse.class, value);
+        return new JAXBElement<AcsWorkDayWithTransfer>(_AddAcsWorkDayWithTransferResponseAddAcsWorkDayWithTransferResult_QNAME, AcsWorkDayWithTransfer.class, AddAcsWorkDayWithTransferResponse.class, value);
     }
 
     /**
@@ -22346,7 +19880,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsWorkDayWithTransfer.class)
     public JAXBElement<String> createSaveAcsWorkDayWithTransferName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsWorkDayWithTransfer.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsWorkDayWithTransfer.class, value);
     }
 
     /**
@@ -22359,7 +19893,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddEmployeePosition.class)
     public JAXBElement<String> createAddEmployeePositionName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddEmployeePosition.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddEmployeePosition.class, value);
     }
 
     /**
@@ -22372,7 +19906,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = AddEmployeePosition.class)
     public JAXBElement<String> createAddEmployeePositionDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, AddEmployeePosition.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, AddEmployeePosition.class, value);
     }
 
     /**
@@ -22385,7 +19919,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "code", scope = AddEmployeePosition.class)
     public JAXBElement<String> createAddEmployeePositionCode(String value) {
-        return new JAXBElement<>(_AddEmployeePositionCode_QNAME, String.class, AddEmployeePosition.class, value);
+        return new JAXBElement<String>(_AddEmployeePositionCode_QNAME, String.class, AddEmployeePosition.class, value);
     }
 
     /**
@@ -22398,7 +19932,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddEmployeePositionResult", scope = AddEmployeePositionResponse.class)
     public JAXBElement<LEmployeePositionInfo> createAddEmployeePositionResponseAddEmployeePositionResult(LEmployeePositionInfo value) {
-        return new JAXBElement<>(_AddEmployeePositionResponseAddEmployeePositionResult_QNAME, LEmployeePositionInfo.class, AddEmployeePositionResponse.class, value);
+        return new JAXBElement<LEmployeePositionInfo>(_AddEmployeePositionResponseAddEmployeePositionResult_QNAME, LEmployeePositionInfo.class, AddEmployeePositionResponse.class, value);
     }
 
     /**
@@ -22411,7 +19945,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddEmployeePositionForIncident.class)
     public JAXBElement<String> createAddEmployeePositionForIncidentName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddEmployeePositionForIncident.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddEmployeePositionForIncident.class, value);
     }
 
     /**
@@ -22424,7 +19958,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = AddEmployeePositionForIncident.class)
     public JAXBElement<String> createAddEmployeePositionForIncidentDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, AddEmployeePositionForIncident.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, AddEmployeePositionForIncident.class, value);
     }
 
     /**
@@ -22437,7 +19971,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "code", scope = AddEmployeePositionForIncident.class)
     public JAXBElement<String> createAddEmployeePositionForIncidentCode(String value) {
-        return new JAXBElement<>(_AddEmployeePositionCode_QNAME, String.class, AddEmployeePositionForIncident.class, value);
+        return new JAXBElement<String>(_AddEmployeePositionCode_QNAME, String.class, AddEmployeePositionForIncident.class, value);
     }
 
     /**
@@ -22450,7 +19984,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddEmployeePositionForIncidentResult", scope = AddEmployeePositionForIncidentResponse.class)
     public JAXBElement<LEmployeePositionInfo> createAddEmployeePositionForIncidentResponseAddEmployeePositionForIncidentResult(LEmployeePositionInfo value) {
-        return new JAXBElement<>(_AddEmployeePositionForIncidentResponseAddEmployeePositionForIncidentResult_QNAME, LEmployeePositionInfo.class, AddEmployeePositionForIncidentResponse.class, value);
+        return new JAXBElement<LEmployeePositionInfo>(_AddEmployeePositionForIncidentResponseAddEmployeePositionForIncidentResult_QNAME, LEmployeePositionInfo.class, AddEmployeePositionForIncidentResponse.class, value);
     }
 
     /**
@@ -22463,7 +19997,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveEmployeePosition.class)
     public JAXBElement<String> createSaveEmployeePositionName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveEmployeePosition.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveEmployeePosition.class, value);
     }
 
     /**
@@ -22476,7 +20010,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = SaveEmployeePosition.class)
     public JAXBElement<String> createSaveEmployeePositionDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, SaveEmployeePosition.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, SaveEmployeePosition.class, value);
     }
 
     /**
@@ -22489,7 +20023,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "code", scope = SaveEmployeePosition.class)
     public JAXBElement<String> createSaveEmployeePositionCode(String value) {
-        return new JAXBElement<>(_AddEmployeePositionCode_QNAME, String.class, SaveEmployeePosition.class, value);
+        return new JAXBElement<String>(_AddEmployeePositionCode_QNAME, String.class, SaveEmployeePosition.class, value);
     }
 
     /**
@@ -22502,7 +20036,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveEmployeePositionForIncident.class)
     public JAXBElement<String> createSaveEmployeePositionForIncidentName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveEmployeePositionForIncident.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveEmployeePositionForIncident.class, value);
     }
 
     /**
@@ -22515,7 +20049,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = SaveEmployeePositionForIncident.class)
     public JAXBElement<String> createSaveEmployeePositionForIncidentDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, SaveEmployeePositionForIncident.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, SaveEmployeePositionForIncident.class, value);
     }
 
     /**
@@ -22528,7 +20062,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "code", scope = SaveEmployeePositionForIncident.class)
     public JAXBElement<String> createSaveEmployeePositionForIncidentCode(String value) {
-        return new JAXBElement<>(_AddEmployeePositionCode_QNAME, String.class, SaveEmployeePositionForIncident.class, value);
+        return new JAXBElement<String>(_AddEmployeePositionCode_QNAME, String.class, SaveEmployeePositionForIncident.class, value);
     }
 
     /**
@@ -22541,7 +20075,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "info", scope = AddIncidentTemplate.class)
     public JAXBElement<IncidentTemplateSaveData> createAddIncidentTemplateInfo(IncidentTemplateSaveData value) {
-        return new JAXBElement<>(_AddIncidentTemplateInfo_QNAME, IncidentTemplateSaveData.class, AddIncidentTemplate.class, value);
+        return new JAXBElement<IncidentTemplateSaveData>(_AddIncidentTemplateInfo_QNAME, IncidentTemplateSaveData.class, AddIncidentTemplate.class, value);
     }
 
     /**
@@ -22554,7 +20088,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddIncidentTemplateResult", scope = AddIncidentTemplateResponse.class)
     public JAXBElement<IncidentTemplateInfo> createAddIncidentTemplateResponseAddIncidentTemplateResult(IncidentTemplateInfo value) {
-        return new JAXBElement<>(_AddIncidentTemplateResponseAddIncidentTemplateResult_QNAME, IncidentTemplateInfo.class, AddIncidentTemplateResponse.class, value);
+        return new JAXBElement<IncidentTemplateInfo>(_AddIncidentTemplateResponseAddIncidentTemplateResult_QNAME, IncidentTemplateInfo.class, AddIncidentTemplateResponse.class, value);
     }
 
     /**
@@ -22567,7 +20101,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "info", scope = SaveIncidentTemplate.class)
     public JAXBElement<IncidentTemplateSaveData> createSaveIncidentTemplateInfo(IncidentTemplateSaveData value) {
-        return new JAXBElement<>(_AddIncidentTemplateInfo_QNAME, IncidentTemplateSaveData.class, SaveIncidentTemplate.class, value);
+        return new JAXBElement<IncidentTemplateSaveData>(_AddIncidentTemplateInfo_QNAME, IncidentTemplateSaveData.class, SaveIncidentTemplate.class, value);
     }
 
     /**
@@ -22580,7 +20114,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveIncidentTemplate.class)
     public JAXBElement<ArrayOfguid> createRemoveIncidentTemplateIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveIncidentTemplate.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveIncidentTemplate.class, value);
     }
 
     /**
@@ -22593,7 +20127,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "info", scope = AddIncident.class)
     public JAXBElement<IncidentSaveInfo> createAddIncidentInfo(IncidentSaveInfo value) {
-        return new JAXBElement<>(_AddIncidentTemplateInfo_QNAME, IncidentSaveInfo.class, AddIncident.class, value);
+        return new JAXBElement<IncidentSaveInfo>(_AddIncidentTemplateInfo_QNAME, IncidentSaveInfo.class, AddIncident.class, value);
     }
 
     /**
@@ -22606,7 +20140,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddIncidentResult", scope = AddIncidentResponse.class)
     public JAXBElement<IncidentElementFullInfo> createAddIncidentResponseAddIncidentResult(IncidentElementFullInfo value) {
-        return new JAXBElement<>(_AddIncidentResponseAddIncidentResult_QNAME, IncidentElementFullInfo.class, AddIncidentResponse.class, value);
+        return new JAXBElement<IncidentElementFullInfo>(_AddIncidentResponseAddIncidentResult_QNAME, IncidentElementFullInfo.class, AddIncidentResponse.class, value);
     }
 
     /**
@@ -22619,7 +20153,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "info", scope = SaveIncident.class)
     public JAXBElement<IncidentSaveInfo> createSaveIncidentInfo(IncidentSaveInfo value) {
-        return new JAXBElement<>(_AddIncidentTemplateInfo_QNAME, IncidentSaveInfo.class, SaveIncident.class, value);
+        return new JAXBElement<IncidentSaveInfo>(_AddIncidentTemplateInfo_QNAME, IncidentSaveInfo.class, SaveIncident.class, value);
     }
 
     /**
@@ -22632,7 +20166,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveIncidents.class)
     public JAXBElement<ArrayOfguid> createRemoveIncidentsIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveIncidents.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveIncidents.class, value);
     }
 
     /**
@@ -22645,7 +20179,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "info", scope = AddDictionaryElement.class)
     public JAXBElement<DictionaryElementSaveInfo> createAddDictionaryElementInfo(DictionaryElementSaveInfo value) {
-        return new JAXBElement<>(_AddIncidentTemplateInfo_QNAME, DictionaryElementSaveInfo.class, AddDictionaryElement.class, value);
+        return new JAXBElement<DictionaryElementSaveInfo>(_AddIncidentTemplateInfo_QNAME, DictionaryElementSaveInfo.class, AddDictionaryElement.class, value);
     }
 
     /**
@@ -22658,7 +20192,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddDictionaryElementResult", scope = AddDictionaryElementResponse.class)
     public JAXBElement<DictionaryElementInfo> createAddDictionaryElementResponseAddDictionaryElementResult(DictionaryElementInfo value) {
-        return new JAXBElement<>(_AddDictionaryElementResponseAddDictionaryElementResult_QNAME, DictionaryElementInfo.class, AddDictionaryElementResponse.class, value);
+        return new JAXBElement<DictionaryElementInfo>(_AddDictionaryElementResponseAddDictionaryElementResult_QNAME, DictionaryElementInfo.class, AddDictionaryElementResponse.class, value);
     }
 
     /**
@@ -22671,7 +20205,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "info", scope = SaveDictionaryElement.class)
     public JAXBElement<DictionaryElementSaveInfo> createSaveDictionaryElementInfo(DictionaryElementSaveInfo value) {
-        return new JAXBElement<>(_AddIncidentTemplateInfo_QNAME, DictionaryElementSaveInfo.class, SaveDictionaryElement.class, value);
+        return new JAXBElement<DictionaryElementSaveInfo>(_AddIncidentTemplateInfo_QNAME, DictionaryElementSaveInfo.class, SaveDictionaryElement.class, value);
     }
 
     /**
@@ -22684,7 +20218,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "id", scope = RemoveDectionaryElement.class)
     public JAXBElement<ArrayOfguid> createRemoveDectionaryElementId(ArrayOfguid value) {
-        return new JAXBElement<>(_PutNotifyId_QNAME, ArrayOfguid.class, RemoveDectionaryElement.class, value);
+        return new JAXBElement<ArrayOfguid>(_PutNotifyId_QNAME, ArrayOfguid.class, RemoveDectionaryElement.class, value);
     }
 
     /**
@@ -22697,7 +20231,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "organizationAssignments", scope = SetOrganization2EmployeeChain.class)
     public JAXBElement<ArrayOfEmployee2OrganizationAssignment> createSetOrganization2EmployeeChainOrganizationAssignments(ArrayOfEmployee2OrganizationAssignment value) {
-        return new JAXBElement<>(_SetOrganization2EmployeeChainOrganizationAssignments_QNAME, ArrayOfEmployee2OrganizationAssignment.class, SetOrganization2EmployeeChain.class, value);
+        return new JAXBElement<ArrayOfEmployee2OrganizationAssignment>(_SetOrganization2EmployeeChainOrganizationAssignments_QNAME, ArrayOfEmployee2OrganizationAssignment.class, SetOrganization2EmployeeChain.class, value);
     }
 
     /**
@@ -22710,7 +20244,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "organizationAssignments", scope = SetOrganization2VehicleChain.class)
     public JAXBElement<ArrayOfEmployee2OrganizationAssignment> createSetOrganization2VehicleChainOrganizationAssignments(ArrayOfEmployee2OrganizationAssignment value) {
-        return new JAXBElement<>(_SetOrganization2EmployeeChainOrganizationAssignments_QNAME, ArrayOfEmployee2OrganizationAssignment.class, SetOrganization2VehicleChain.class, value);
+        return new JAXBElement<ArrayOfEmployee2OrganizationAssignment>(_SetOrganization2EmployeeChainOrganizationAssignments_QNAME, ArrayOfEmployee2OrganizationAssignment.class, SetOrganization2VehicleChain.class, value);
     }
 
     /**
@@ -22723,7 +20257,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddCardType.class)
     public JAXBElement<String> createAddCardTypeName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddCardType.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddCardType.class, value);
     }
 
     /**
@@ -22736,7 +20270,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = AddCardType.class)
     public JAXBElement<String> createAddCardTypeDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, AddCardType.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, AddCardType.class, value);
     }
 
     /**
@@ -22749,7 +20283,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddCardTypeResult", scope = AddCardTypeResponse.class)
     public JAXBElement<CardTypeInfo> createAddCardTypeResponseAddCardTypeResult(CardTypeInfo value) {
-        return new JAXBElement<>(_AddCardTypeResponseAddCardTypeResult_QNAME, CardTypeInfo.class, AddCardTypeResponse.class, value);
+        return new JAXBElement<CardTypeInfo>(_AddCardTypeResponseAddCardTypeResult_QNAME, CardTypeInfo.class, AddCardTypeResponse.class, value);
     }
 
     /**
@@ -22762,7 +20296,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveCardType.class)
     public JAXBElement<String> createSaveCardTypeName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveCardType.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveCardType.class, value);
     }
 
     /**
@@ -22775,7 +20309,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "description", scope = SaveCardType.class)
     public JAXBElement<String> createSaveCardTypeDescription(String value) {
-        return new JAXBElement<>(_AddBranchDescription_QNAME, String.class, SaveCardType.class, value);
+        return new JAXBElement<String>(_AddBranchDescription_QNAME, String.class, SaveCardType.class, value);
     }
 
     /**
@@ -22788,7 +20322,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddMifareProfile.class)
     public JAXBElement<MifareProfileSaveData> createAddMifareProfileData(MifareProfileSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, MifareProfileSaveData.class, AddMifareProfile.class, value);
+        return new JAXBElement<MifareProfileSaveData>(_AddReactionEventData_QNAME, MifareProfileSaveData.class, AddMifareProfile.class, value);
     }
 
     /**
@@ -22801,7 +20335,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = AddMifareProfile.class)
     public JAXBElement<ArrayOfguid> createAddMifareProfileTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddMifareProfile.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddMifareProfile.class, value);
     }
 
     /**
@@ -22814,7 +20348,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddMifareProfileResult", scope = AddMifareProfileResponse.class)
     public JAXBElement<MifareProfileInfo> createAddMifareProfileResponseAddMifareProfileResult(MifareProfileInfo value) {
-        return new JAXBElement<>(_AddMifareProfileResponseAddMifareProfileResult_QNAME, MifareProfileInfo.class, AddMifareProfileResponse.class, value);
+        return new JAXBElement<MifareProfileInfo>(_AddMifareProfileResponseAddMifareProfileResult_QNAME, MifareProfileInfo.class, AddMifareProfileResponse.class, value);
     }
 
     /**
@@ -22827,7 +20361,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveMifareProfile.class)
     public JAXBElement<MifareProfileFullSaveData> createSaveMifareProfileData(MifareProfileFullSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, MifareProfileFullSaveData.class, SaveMifareProfile.class, value);
+        return new JAXBElement<MifareProfileFullSaveData>(_AddReactionEventData_QNAME, MifareProfileFullSaveData.class, SaveMifareProfile.class, value);
     }
 
     /**
@@ -22840,7 +20374,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SaveMifareProfile.class)
     public JAXBElement<ArrayOfguid> createSaveMifareProfileTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveMifareProfile.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveMifareProfile.class, value);
     }
 
     /**
@@ -22853,7 +20387,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "SaveMifareProfileResult", scope = SaveMifareProfileResponse.class)
     public JAXBElement<ArrayOfguid> createSaveMifareProfileResponseSaveMifareProfileResult(ArrayOfguid value) {
-        return new JAXBElement<>(_SaveMifareProfileResponseSaveMifareProfileResult_QNAME, ArrayOfguid.class, SaveMifareProfileResponse.class, value);
+        return new JAXBElement<ArrayOfguid>(_SaveMifareProfileResponseSaveMifareProfileResult_QNAME, ArrayOfguid.class, SaveMifareProfileResponse.class, value);
     }
 
     /**
@@ -22866,7 +20400,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetUidsKeys.class)
     public JAXBElement<ArrayOfUidKeyInfo> createSetUidsKeysData(ArrayOfUidKeyInfo value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ArrayOfUidKeyInfo.class, SetUidsKeys.class, value);
+        return new JAXBElement<ArrayOfUidKeyInfo>(_AddReactionEventData_QNAME, ArrayOfUidKeyInfo.class, SetUidsKeys.class, value);
     }
 
     /**
@@ -22879,7 +20413,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "parentId", scope = AddAcsEmployeeGroup.class)
     public JAXBElement<String> createAddAcsEmployeeGroupParentId(String value) {
-        return new JAXBElement<>(_MoveFolderParentId_QNAME, String.class, AddAcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_MoveFolderParentId_QNAME, String.class, AddAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22892,7 +20426,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsEmployeeGroup.class)
     public JAXBElement<String> createAddAcsEmployeeGroupName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22905,7 +20439,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = AddAcsEmployeeGroup.class)
     public JAXBElement<String> createAddAcsEmployeeGroupComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22918,7 +20452,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = AddAcsEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createAddAcsEmployeeGroupTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22931,7 +20465,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupCode", scope = AddAcsEmployeeGroup.class)
     public JAXBElement<String> createAddAcsEmployeeGroupGroupCode(String value) {
-        return new JAXBElement<>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, AddAcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, AddAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22944,7 +20478,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsEmployeeGroupResult", scope = AddAcsEmployeeGroupResponse.class)
     public JAXBElement<AcsEmployeeGroup> createAddAcsEmployeeGroupResponseAddAcsEmployeeGroupResult(AcsEmployeeGroup value) {
-        return new JAXBElement<>(_AddAcsEmployeeGroupResponseAddAcsEmployeeGroupResult_QNAME, AcsEmployeeGroup.class, AddAcsEmployeeGroupResponse.class, value);
+        return new JAXBElement<AcsEmployeeGroup>(_AddAcsEmployeeGroupResponseAddAcsEmployeeGroupResult_QNAME, AcsEmployeeGroup.class, AddAcsEmployeeGroupResponse.class, value);
     }
 
     /**
@@ -22957,7 +20491,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsEmployeeGroup.class)
     public JAXBElement<String> createSaveAcsEmployeeGroupName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22970,7 +20504,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = SaveAcsEmployeeGroup.class)
     public JAXBElement<String> createSaveAcsEmployeeGroupComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22983,7 +20517,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SaveAcsEmployeeGroup.class)
     public JAXBElement<ArrayOfguid> createSaveAcsEmployeeGroupTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -22996,7 +20530,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupCode", scope = SaveAcsEmployeeGroup.class)
     public JAXBElement<String> createSaveAcsEmployeeGroupGroupCode(String value) {
-        return new JAXBElement<>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, SaveAcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, SaveAcsEmployeeGroup.class, value);
     }
 
     /**
@@ -23009,7 +20543,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "parentId", scope = AddAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<String> createAddAcsEmployeeGroupWithGroupTypeParentId(String value) {
-        return new JAXBElement<>(_MoveFolderParentId_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<String>(_MoveFolderParentId_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23022,7 +20556,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = AddAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<String> createAddAcsEmployeeGroupWithGroupTypeName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23035,7 +20569,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = AddAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<String> createAddAcsEmployeeGroupWithGroupTypeComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23048,7 +20582,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = AddAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<ArrayOfguid> createAddAcsEmployeeGroupWithGroupTypeTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, AddAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23061,7 +20595,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupCode", scope = AddAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<String> createAddAcsEmployeeGroupWithGroupTypeGroupCode(String value) {
-        return new JAXBElement<>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<String>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, AddAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23074,7 +20608,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsEmployeeGroupWithGroupTypeResult", scope = AddAcsEmployeeGroupWithGroupTypeResponse.class)
     public JAXBElement<AcsEmployeeGroup> createAddAcsEmployeeGroupWithGroupTypeResponseAddAcsEmployeeGroupWithGroupTypeResult(AcsEmployeeGroup value) {
-        return new JAXBElement<>(_AddAcsEmployeeGroupWithGroupTypeResponseAddAcsEmployeeGroupWithGroupTypeResult_QNAME, AcsEmployeeGroup.class, AddAcsEmployeeGroupWithGroupTypeResponse.class, value);
+        return new JAXBElement<AcsEmployeeGroup>(_AddAcsEmployeeGroupWithGroupTypeResponseAddAcsEmployeeGroupWithGroupTypeResult_QNAME, AcsEmployeeGroup.class, AddAcsEmployeeGroupWithGroupTypeResponse.class, value);
     }
 
     /**
@@ -23087,7 +20621,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "name", scope = SaveAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<String> createSaveAcsEmployeeGroupWithGroupTypeName(String value) {
-        return new JAXBElement<>(_FindGroupsName_QNAME, String.class, SaveAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<String>(_FindGroupsName_QNAME, String.class, SaveAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23100,7 +20634,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "comment", scope = SaveAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<String> createSaveAcsEmployeeGroupWithGroupTypeComment(String value) {
-        return new JAXBElement<>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<String>(_AddAcsDayScheduleComment_QNAME, String.class, SaveAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23113,7 +20647,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "tagIDs", scope = SaveAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<ArrayOfguid> createSaveAcsEmployeeGroupWithGroupTypeTagIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<ArrayOfguid>(_SetFilterTagsForResourceTagIDs_QNAME, ArrayOfguid.class, SaveAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23126,7 +20660,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "groupCode", scope = SaveAcsEmployeeGroupWithGroupType.class)
     public JAXBElement<String> createSaveAcsEmployeeGroupWithGroupTypeGroupCode(String value) {
-        return new JAXBElement<>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, SaveAcsEmployeeGroupWithGroupType.class, value);
+        return new JAXBElement<String>(_AddAcsEmployeeGroupGroupCode_QNAME, String.class, SaveAcsEmployeeGroupWithGroupType.class, value);
     }
 
     /**
@@ -23139,7 +20673,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddAcsEmployee.class)
     public JAXBElement<AcsEmployeeSaveData> createAddAcsEmployeeData(AcsEmployeeSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsEmployeeSaveData.class, AddAcsEmployee.class, value);
+        return new JAXBElement<AcsEmployeeSaveData>(_AddReactionEventData_QNAME, AcsEmployeeSaveData.class, AddAcsEmployee.class, value);
     }
 
     /**
@@ -23152,7 +20686,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsEmployeeResult", scope = AddAcsEmployeeResponse.class)
     public JAXBElement<AcsEmployeeSlim> createAddAcsEmployeeResponseAddAcsEmployeeResult(AcsEmployeeSlim value) {
-        return new JAXBElement<>(_AddAcsEmployeeResponseAddAcsEmployeeResult_QNAME, AcsEmployeeSlim.class, AddAcsEmployeeResponse.class, value);
+        return new JAXBElement<AcsEmployeeSlim>(_AddAcsEmployeeResponseAddAcsEmployeeResult_QNAME, AcsEmployeeSlim.class, AddAcsEmployeeResponse.class, value);
     }
 
     /**
@@ -23165,7 +20699,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "employeesIDs", scope = MoveEmployeesToGroup.class)
     public JAXBElement<ArrayOfguid> createMoveEmployeesToGroupEmployeesIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_MoveEmployeesToGroupEmployeesIDs_QNAME, ArrayOfguid.class, MoveEmployeesToGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_MoveEmployeesToGroupEmployeesIDs_QNAME, ArrayOfguid.class, MoveEmployeesToGroup.class, value);
     }
 
     /**
@@ -23178,7 +20712,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "searchString", scope = GetFilteredEmployees.class)
     public JAXBElement<String> createGetFilteredEmployeesSearchString(String value) {
-        return new JAXBElement<>(_GeFilteredtDriversSearchString_QNAME, String.class, GetFilteredEmployees.class, value);
+        return new JAXBElement<String>(_GeFilteredtDriversSearchString_QNAME, String.class, GetFilteredEmployees.class, value);
     }
 
     /**
@@ -23191,7 +20725,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetFilteredEmployeesResult", scope = GetFilteredEmployeesResponse.class)
     public JAXBElement<EmployeesData> createGetFilteredEmployeesResponseGetFilteredEmployeesResult(EmployeesData value) {
-        return new JAXBElement<>(_GetFilteredEmployeesResponseGetFilteredEmployeesResult_QNAME, EmployeesData.class, GetFilteredEmployeesResponse.class, value);
+        return new JAXBElement<EmployeesData>(_GetFilteredEmployeesResponseGetFilteredEmployeesResult_QNAME, EmployeesData.class, GetFilteredEmployeesResponse.class, value);
     }
 
     /**
@@ -23204,7 +20738,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveAcsEmployee.class)
     public JAXBElement<AcsEmployeeSaveData> createSaveAcsEmployeeData(AcsEmployeeSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsEmployeeSaveData.class, SaveAcsEmployee.class, value);
+        return new JAXBElement<AcsEmployeeSaveData>(_AddReactionEventData_QNAME, AcsEmployeeSaveData.class, SaveAcsEmployee.class, value);
     }
 
     /**
@@ -23217,7 +20751,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveAcsEmployeesDocuments.class)
     public JAXBElement<AcsEmployeeDocumentsSaveData> createSaveAcsEmployeesDocumentsData(AcsEmployeeDocumentsSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsEmployeeDocumentsSaveData.class, SaveAcsEmployeesDocuments.class, value);
+        return new JAXBElement<AcsEmployeeDocumentsSaveData>(_AddReactionEventData_QNAME, AcsEmployeeDocumentsSaveData.class, SaveAcsEmployeesDocuments.class, value);
     }
 
     /**
@@ -23230,7 +20764,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetEmployeeFaces.class)
     public JAXBElement<ArrayOfAcsEmployeeFaceVectorSaveData> createSetEmployeeFacesData(ArrayOfAcsEmployeeFaceVectorSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, ArrayOfAcsEmployeeFaceVectorSaveData.class, SetEmployeeFaces.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFaceVectorSaveData>(_AddReactionEventData_QNAME, ArrayOfAcsEmployeeFaceVectorSaveData.class, SetEmployeeFaces.class, value);
     }
 
     /**
@@ -23243,7 +20777,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = LockAcsEmployee.class)
     public JAXBElement<ArrayOfguid> createLockAcsEmployeeIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, LockAcsEmployee.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, LockAcsEmployee.class, value);
     }
 
     /**
@@ -23256,7 +20790,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "saveData", scope = AddEmployeeSchedule.class)
     public JAXBElement<AcsEmployeeScheduleSaveData> createAddEmployeeScheduleSaveData(AcsEmployeeScheduleSaveData value) {
-        return new JAXBElement<>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, AcsEmployeeScheduleSaveData.class, AddEmployeeSchedule.class, value);
+        return new JAXBElement<AcsEmployeeScheduleSaveData>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, AcsEmployeeScheduleSaveData.class, AddEmployeeSchedule.class, value);
     }
 
     /**
@@ -23269,7 +20803,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddEmployeeScheduleResult", scope = AddEmployeeScheduleResponse.class)
     public JAXBElement<AcsEmployeeSchedule> createAddEmployeeScheduleResponseAddEmployeeScheduleResult(AcsEmployeeSchedule value) {
-        return new JAXBElement<>(_AddEmployeeScheduleResponseAddEmployeeScheduleResult_QNAME, AcsEmployeeSchedule.class, AddEmployeeScheduleResponse.class, value);
+        return new JAXBElement<AcsEmployeeSchedule>(_AddEmployeeScheduleResponseAddEmployeeScheduleResult_QNAME, AcsEmployeeSchedule.class, AddEmployeeScheduleResponse.class, value);
     }
 
     /**
@@ -23282,7 +20816,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveEmployeeSchedule.class)
     public JAXBElement<AcsEmployeeScheduleSaveData> createSaveEmployeeScheduleData(AcsEmployeeScheduleSaveData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsEmployeeScheduleSaveData.class, SaveEmployeeSchedule.class, value);
+        return new JAXBElement<AcsEmployeeScheduleSaveData>(_AddReactionEventData_QNAME, AcsEmployeeScheduleSaveData.class, SaveEmployeeSchedule.class, value);
     }
 
     /**
@@ -23295,7 +20829,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveEmployeeSchedule.class)
     public JAXBElement<ArrayOfguid> createRemoveEmployeeScheduleIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveEmployeeSchedule.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveEmployeeSchedule.class, value);
     }
 
     /**
@@ -23308,7 +20842,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetAcsEmployeePhoto.class)
     public JAXBElement<byte[]> createSetAcsEmployeePhotoData(byte[] value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, byte[].class, SetAcsEmployeePhoto.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AddReactionEventData_QNAME, byte[].class, SetAcsEmployeePhoto.class, ((byte[]) value));
     }
 
     /**
@@ -23321,7 +20855,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SetAcsEmployeePhotoByType.class)
     public JAXBElement<byte[]> createSetAcsEmployeePhotoByTypeData(byte[] value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, byte[].class, SetAcsEmployeePhotoByType.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AddReactionEventData_QNAME, byte[].class, SetAcsEmployeePhotoByType.class, ((byte[]) value));
     }
 
     /**
@@ -23334,7 +20868,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "keyData", scope = AssignAcsKeyForEmployee.class)
     public JAXBElement<AcsKeySaveData> createAssignAcsKeyForEmployeeKeyData(AcsKeySaveData value) {
-        return new JAXBElement<>(_AssignAcsKeyForEmployeeKeyData_QNAME, AcsKeySaveData.class, AssignAcsKeyForEmployee.class, value);
+        return new JAXBElement<AcsKeySaveData>(_AssignAcsKeyForEmployeeKeyData_QNAME, AcsKeySaveData.class, AssignAcsKeyForEmployee.class, value);
     }
 
     /**
@@ -23347,7 +20881,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AssignAcsKeyForEmployeeResult", scope = AssignAcsKeyForEmployeeResponse.class)
     public JAXBElement<AcsKeyInfo> createAssignAcsKeyForEmployeeResponseAssignAcsKeyForEmployeeResult(AcsKeyInfo value) {
-        return new JAXBElement<>(_AssignAcsKeyForEmployeeResponseAssignAcsKeyForEmployeeResult_QNAME, AcsKeyInfo.class, AssignAcsKeyForEmployeeResponse.class, value);
+        return new JAXBElement<AcsKeyInfo>(_AssignAcsKeyForEmployeeResponseAssignAcsKeyForEmployeeResult_QNAME, AcsKeyInfo.class, AssignAcsKeyForEmployeeResponse.class, value);
     }
 
     /**
@@ -23360,7 +20894,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "endDate", scope = UpdateAcsKeyEndTime.class)
     public JAXBElement<XMLGregorianCalendar> createUpdateAcsKeyEndTimeEndDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_UpdateAcsKeyEndTimeEndDate_QNAME, XMLGregorianCalendar.class, UpdateAcsKeyEndTime.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_UpdateAcsKeyEndTimeEndDate_QNAME, XMLGregorianCalendar.class, UpdateAcsKeyEndTime.class, value);
     }
 
     /**
@@ -23373,7 +20907,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "keyData", scope = ForceAssignAcsKeyForEmployee.class)
     public JAXBElement<AcsKeySaveData> createForceAssignAcsKeyForEmployeeKeyData(AcsKeySaveData value) {
-        return new JAXBElement<>(_AssignAcsKeyForEmployeeKeyData_QNAME, AcsKeySaveData.class, ForceAssignAcsKeyForEmployee.class, value);
+        return new JAXBElement<AcsKeySaveData>(_AssignAcsKeyForEmployeeKeyData_QNAME, AcsKeySaveData.class, ForceAssignAcsKeyForEmployee.class, value);
     }
 
     /**
@@ -23386,7 +20920,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ForceAssignAcsKeyForEmployeeResult", scope = ForceAssignAcsKeyForEmployeeResponse.class)
     public JAXBElement<AcsKeyInfo> createForceAssignAcsKeyForEmployeeResponseForceAssignAcsKeyForEmployeeResult(AcsKeyInfo value) {
-        return new JAXBElement<>(_ForceAssignAcsKeyForEmployeeResponseForceAssignAcsKeyForEmployeeResult_QNAME, AcsKeyInfo.class, ForceAssignAcsKeyForEmployeeResponse.class, value);
+        return new JAXBElement<AcsKeyInfo>(_ForceAssignAcsKeyForEmployeeResponseForceAssignAcsKeyForEmployeeResult_QNAME, AcsKeyInfo.class, ForceAssignAcsKeyForEmployeeResponse.class, value);
     }
 
     /**
@@ -23399,7 +20933,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "saveData", scope = AddAccessPoint2CameraChain.class)
     public JAXBElement<AccessPoint2CameraSaveData> createAddAccessPoint2CameraChainSaveData(AccessPoint2CameraSaveData value) {
-        return new JAXBElement<>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, AccessPoint2CameraSaveData.class, AddAccessPoint2CameraChain.class, value);
+        return new JAXBElement<AccessPoint2CameraSaveData>(_SetVisitorsScoreboardSettingsByWorkplaceModuleIdSaveData_QNAME, AccessPoint2CameraSaveData.class, AddAccessPoint2CameraChain.class, value);
     }
 
     /**
@@ -23412,7 +20946,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAccessPoint2CameraChainResult", scope = AddAccessPoint2CameraChainResponse.class)
     public JAXBElement<AccessPoint2CameraChain> createAddAccessPoint2CameraChainResponseAddAccessPoint2CameraChainResult(AccessPoint2CameraChain value) {
-        return new JAXBElement<>(_AddAccessPoint2CameraChainResponseAddAccessPoint2CameraChainResult_QNAME, AccessPoint2CameraChain.class, AddAccessPoint2CameraChainResponse.class, value);
+        return new JAXBElement<AccessPoint2CameraChain>(_AddAccessPoint2CameraChainResponseAddAccessPoint2CameraChainResult_QNAME, AccessPoint2CameraChain.class, AddAccessPoint2CameraChainResponse.class, value);
     }
 
     /**
@@ -23425,7 +20959,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = RemoveAccessPoint2CameraChain.class)
     public JAXBElement<ArrayOfguid> createRemoveAccessPoint2CameraChainIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveAccessPoint2CameraChain.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, RemoveAccessPoint2CameraChain.class, value);
     }
 
     /**
@@ -23438,7 +20972,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "driverId", scope = GetAccessPoint2CameraForAccessPoint.class)
     public JAXBElement<ArrayOfguid> createGetAccessPoint2CameraForAccessPointDriverId(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAccessPoint2CameraForAccessPointDriverId_QNAME, ArrayOfguid.class, GetAccessPoint2CameraForAccessPoint.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAccessPoint2CameraForAccessPointDriverId_QNAME, ArrayOfguid.class, GetAccessPoint2CameraForAccessPoint.class, value);
     }
 
     /**
@@ -23451,7 +20985,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetAccessPoint2CameraForAccessPointResult", scope = GetAccessPoint2CameraForAccessPointResponse.class)
     public JAXBElement<ArrayOfAccessPoint2CameraChain> createGetAccessPoint2CameraForAccessPointResponseGetAccessPoint2CameraForAccessPointResult(ArrayOfAccessPoint2CameraChain value) {
-        return new JAXBElement<>(_GetAccessPoint2CameraForAccessPointResponseGetAccessPoint2CameraForAccessPointResult_QNAME, ArrayOfAccessPoint2CameraChain.class, GetAccessPoint2CameraForAccessPointResponse.class, value);
+        return new JAXBElement<ArrayOfAccessPoint2CameraChain>(_GetAccessPoint2CameraForAccessPointResponseGetAccessPoint2CameraForAccessPointResult_QNAME, ArrayOfAccessPoint2CameraChain.class, GetAccessPoint2CameraForAccessPointResponse.class, value);
     }
 
     /**
@@ -23464,7 +20998,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = AddAcsVehicle.class)
     public JAXBElement<AcsVehicleSavedData> createAddAcsVehicleData(AcsVehicleSavedData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsVehicleSavedData.class, AddAcsVehicle.class, value);
+        return new JAXBElement<AcsVehicleSavedData>(_AddReactionEventData_QNAME, AcsVehicleSavedData.class, AddAcsVehicle.class, value);
     }
 
     /**
@@ -23477,7 +21011,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddAcsVehicleResult", scope = AddAcsVehicleResponse.class)
     public JAXBElement<AcsVehicle> createAddAcsVehicleResponseAddAcsVehicleResult(AcsVehicle value) {
-        return new JAXBElement<>(_AddAcsVehicleResponseAddAcsVehicleResult_QNAME, AcsVehicle.class, AddAcsVehicleResponse.class, value);
+        return new JAXBElement<AcsVehicle>(_AddAcsVehicleResponseAddAcsVehicleResult_QNAME, AcsVehicle.class, AddAcsVehicleResponse.class, value);
     }
 
     /**
@@ -23490,7 +21024,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "data", scope = SaveAcsVehicle.class)
     public JAXBElement<AcsVehicleSavedData> createSaveAcsVehicleData(AcsVehicleSavedData value) {
-        return new JAXBElement<>(_AddReactionEventData_QNAME, AcsVehicleSavedData.class, SaveAcsVehicle.class, value);
+        return new JAXBElement<AcsVehicleSavedData>(_AddReactionEventData_QNAME, AcsVehicleSavedData.class, SaveAcsVehicle.class, value);
     }
 
     /**
@@ -23503,7 +21037,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "VehiclesIDs", scope = MoveVehiclesToGroup.class)
     public JAXBElement<ArrayOfguid> createMoveVehiclesToGroupVehiclesIDs(ArrayOfguid value) {
-        return new JAXBElement<>(_MoveVehiclesToGroupVehiclesIDs_QNAME, ArrayOfguid.class, MoveVehiclesToGroup.class, value);
+        return new JAXBElement<ArrayOfguid>(_MoveVehiclesToGroupVehiclesIDs_QNAME, ArrayOfguid.class, MoveVehiclesToGroup.class, value);
     }
 
     /**
@@ -23516,7 +21050,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "vehicles", scope = AddEmployee2VehicleChain.class)
     public JAXBElement<ArrayOfEmployeesVehicle> createAddEmployee2VehicleChainVehicles(ArrayOfEmployeesVehicle value) {
-        return new JAXBElement<>(_AddEmployee2VehicleChainVehicles_QNAME, ArrayOfEmployeesVehicle.class, AddEmployee2VehicleChain.class, value);
+        return new JAXBElement<ArrayOfEmployeesVehicle>(_AddEmployee2VehicleChainVehicles_QNAME, ArrayOfEmployeesVehicle.class, AddEmployee2VehicleChain.class, value);
     }
 
     /**
@@ -23529,7 +21063,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "AddEmployee2VehicleChainResult", scope = AddEmployee2VehicleChainResponse.class)
     public JAXBElement<TupleOfArrayOfguidArrayOfguid0DMmj3Sh> createAddEmployee2VehicleChainResponseAddEmployee2VehicleChainResult(TupleOfArrayOfguidArrayOfguid0DMmj3Sh value) {
-        return new JAXBElement<>(_AddEmployee2VehicleChainResponseAddEmployee2VehicleChainResult_QNAME, TupleOfArrayOfguidArrayOfguid0DMmj3Sh.class, AddEmployee2VehicleChainResponse.class, value);
+        return new JAXBElement<TupleOfArrayOfguidArrayOfguid0DMmj3Sh>(_AddEmployee2VehicleChainResponseAddEmployee2VehicleChainResult_QNAME, TupleOfArrayOfguidArrayOfguid0DMmj3Sh.class, AddEmployee2VehicleChainResponse.class, value);
     }
 
     /**
@@ -23542,7 +21076,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "ids", scope = LockAcsVehicles.class)
     public JAXBElement<ArrayOfguid> createLockAcsVehiclesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, LockAcsVehicles.class, value);
+        return new JAXBElement<ArrayOfguid>(_GetAlcoGroupsSlimInfoIds_QNAME, ArrayOfguid.class, LockAcsVehicles.class, value);
     }
 
     /**
@@ -23555,7 +21089,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetVehicleForEmployeeResult", scope = GetVehicleForEmployeeResponse.class)
     public JAXBElement<ArrayOfAcsVehicle> createGetVehicleForEmployeeResponseGetVehicleForEmployeeResult(ArrayOfAcsVehicle value) {
-        return new JAXBElement<>(_GetVehicleForEmployeeResponseGetVehicleForEmployeeResult_QNAME, ArrayOfAcsVehicle.class, GetVehicleForEmployeeResponse.class, value);
+        return new JAXBElement<ArrayOfAcsVehicle>(_GetVehicleForEmployeeResponseGetVehicleForEmployeeResult_QNAME, ArrayOfAcsVehicle.class, GetVehicleForEmployeeResponse.class, value);
     }
 
     /**
@@ -23568,7 +21102,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetVehicleForEmployeeIncludeRemovedEmployeesResult", scope = GetVehicleForEmployeeIncludeRemovedEmployeesResponse.class)
     public JAXBElement<ArrayOfAcsVehicle> createGetVehicleForEmployeeIncludeRemovedEmployeesResponseGetVehicleForEmployeeIncludeRemovedEmployeesResult(ArrayOfAcsVehicle value) {
-        return new JAXBElement<>(_GetVehicleForEmployeeIncludeRemovedEmployeesResponseGetVehicleForEmployeeIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsVehicle.class, GetVehicleForEmployeeIncludeRemovedEmployeesResponse.class, value);
+        return new JAXBElement<ArrayOfAcsVehicle>(_GetVehicleForEmployeeIncludeRemovedEmployeesResponseGetVehicleForEmployeeIncludeRemovedEmployeesResult_QNAME, ArrayOfAcsVehicle.class, GetVehicleForEmployeeIncludeRemovedEmployeesResponse.class, value);
     }
 
     /**
@@ -23581,7 +21115,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "GetEmployeesForVehicleResult", scope = GetEmployeesForVehicleResponse.class)
     public JAXBElement<ArrayOfAttachedEmployeesForVehicle> createGetEmployeesForVehicleResponseGetEmployeesForVehicleResult(ArrayOfAttachedEmployeesForVehicle value) {
-        return new JAXBElement<>(_GetEmployeesForVehicleResponseGetEmployeesForVehicleResult_QNAME, ArrayOfAttachedEmployeesForVehicle.class, GetEmployeesForVehicleResponse.class, value);
+        return new JAXBElement<ArrayOfAttachedEmployeesForVehicle>(_GetEmployeesForVehicleResponseGetEmployeesForVehicleResult_QNAME, ArrayOfAttachedEmployeesForVehicle.class, GetEmployeesForVehicleResponse.class, value);
     }
 
     /**
@@ -23594,7 +21128,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "message", scope = AddLogMessageForAccessPoint.class)
     public JAXBElement<String> createAddLogMessageForAccessPointMessage(String value) {
-        return new JAXBElement<>(_SendEmailMessage_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
+        return new JAXBElement<String>(_SendEmailMessage_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
     }
 
     /**
@@ -23607,7 +21141,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "details", scope = AddLogMessageForAccessPoint.class)
     public JAXBElement<String> createAddLogMessageForAccessPointDetails(String value) {
-        return new JAXBElement<>(_AddLogMessageForAccessPointDetails_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
+        return new JAXBElement<String>(_AddLogMessageForAccessPointDetails_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
     }
 
     /**
@@ -23620,7 +21154,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "operatorID", scope = AddLogMessageForAccessPoint.class)
     public JAXBElement<String> createAddLogMessageForAccessPointOperatorID(String value) {
-        return new JAXBElement<>(_AddLogMessageForAccessPointOperatorID_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
+        return new JAXBElement<String>(_AddLogMessageForAccessPointOperatorID_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
     }
 
     /**
@@ -23633,7 +21167,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "vehicleID", scope = AddLogMessageForAccessPoint.class)
     public JAXBElement<String> createAddLogMessageForAccessPointVehicleID(String value) {
-        return new JAXBElement<>(_AddLogMessageForAccessPointVehicleID_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
+        return new JAXBElement<String>(_AddLogMessageForAccessPointVehicleID_QNAME, String.class, AddLogMessageForAccessPoint.class, value);
     }
 
     /**
@@ -23646,7 +21180,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "value", scope = SetAdditionalDateTimeValue.class)
     public JAXBElement<XMLGregorianCalendar> createSetAdditionalDateTimeValueValue(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_SetAdditionalDateTimeValueValue_QNAME, XMLGregorianCalendar.class, SetAdditionalDateTimeValue.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_SetAdditionalDateTimeValueValue_QNAME, XMLGregorianCalendar.class, SetAdditionalDateTimeValue.class, value);
     }
 
     /**
@@ -23659,7 +21193,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "value", scope = SetAdditionalIntValue.class)
     public JAXBElement<Integer> createSetAdditionalIntValueValue(Integer value) {
-        return new JAXBElement<>(_SetAdditionalDateTimeValueValue_QNAME, Integer.class, SetAdditionalIntValue.class, value);
+        return new JAXBElement<Integer>(_SetAdditionalDateTimeValueValue_QNAME, Integer.class, SetAdditionalIntValue.class, value);
     }
 
     /**
@@ -23672,7 +21206,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "value", scope = SetAdditionalDoubleValue.class)
     public JAXBElement<Double> createSetAdditionalDoubleValueValue(Double value) {
-        return new JAXBElement<>(_SetAdditionalDateTimeValueValue_QNAME, Double.class, SetAdditionalDoubleValue.class, value);
+        return new JAXBElement<Double>(_SetAdditionalDateTimeValueValue_QNAME, Double.class, SetAdditionalDoubleValue.class, value);
     }
 
     /**
@@ -23685,7 +21219,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "value", scope = SetAdditionalColorValue.class)
     public JAXBElement<byte[]> createSetAdditionalColorValueValue(byte[] value) {
-        return new JAXBElement<>(_SetAdditionalDateTimeValueValue_QNAME, byte[].class, SetAdditionalColorValue.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_SetAdditionalDateTimeValueValue_QNAME, byte[].class, SetAdditionalColorValue.class, ((byte[]) value));
     }
 
     /**
@@ -23698,7 +21232,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "value", scope = SetAdditionalListValue.class)
     public JAXBElement<ListItem> createSetAdditionalListValueValue(ListItem value) {
-        return new JAXBElement<>(_SetAdditionalDateTimeValueValue_QNAME, ListItem.class, SetAdditionalListValue.class, value);
+        return new JAXBElement<ListItem>(_SetAdditionalDateTimeValueValue_QNAME, ListItem.class, SetAdditionalListValue.class, value);
     }
 
     /**
@@ -23711,7 +21245,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "value", scope = SetAdditionalStringValue.class)
     public JAXBElement<String> createSetAdditionalStringValueValue(String value) {
-        return new JAXBElement<>(_SetAdditionalDateTimeValueValue_QNAME, String.class, SetAdditionalStringValue.class, value);
+        return new JAXBElement<String>(_SetAdditionalDateTimeValueValue_QNAME, String.class, SetAdditionalStringValue.class, value);
     }
 
     /**
@@ -23724,7 +21258,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "addDateTimeInfos", scope = SetAdditionalFieldsVlaues.class)
     public JAXBElement<ArrayOfAddDateTimeInfo> createSetAdditionalFieldsVlauesAddDateTimeInfos(ArrayOfAddDateTimeInfo value) {
-        return new JAXBElement<>(_SetAdditionalFieldsVlauesAddDateTimeInfos_QNAME, ArrayOfAddDateTimeInfo.class, SetAdditionalFieldsVlaues.class, value);
+        return new JAXBElement<ArrayOfAddDateTimeInfo>(_SetAdditionalFieldsVlauesAddDateTimeInfos_QNAME, ArrayOfAddDateTimeInfo.class, SetAdditionalFieldsVlaues.class, value);
     }
 
     /**
@@ -23737,7 +21271,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "addDoubleInfo", scope = SetAdditionalFieldsVlaues.class)
     public JAXBElement<ArrayOfAddDoubleInfo> createSetAdditionalFieldsVlauesAddDoubleInfo(ArrayOfAddDoubleInfo value) {
-        return new JAXBElement<>(_SetAdditionalFieldsVlauesAddDoubleInfo_QNAME, ArrayOfAddDoubleInfo.class, SetAdditionalFieldsVlaues.class, value);
+        return new JAXBElement<ArrayOfAddDoubleInfo>(_SetAdditionalFieldsVlauesAddDoubleInfo_QNAME, ArrayOfAddDoubleInfo.class, SetAdditionalFieldsVlaues.class, value);
     }
 
     /**
@@ -23750,7 +21284,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "addIntInfos", scope = SetAdditionalFieldsVlaues.class)
     public JAXBElement<ArrayOfAddIntInfo> createSetAdditionalFieldsVlauesAddIntInfos(ArrayOfAddIntInfo value) {
-        return new JAXBElement<>(_SetAdditionalFieldsVlauesAddIntInfos_QNAME, ArrayOfAddIntInfo.class, SetAdditionalFieldsVlaues.class, value);
+        return new JAXBElement<ArrayOfAddIntInfo>(_SetAdditionalFieldsVlauesAddIntInfos_QNAME, ArrayOfAddIntInfo.class, SetAdditionalFieldsVlaues.class, value);
     }
 
     /**
@@ -23763,7 +21297,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "addStringInfos", scope = SetAdditionalFieldsVlaues.class)
     public JAXBElement<ArrayOfAddStringInfo> createSetAdditionalFieldsVlauesAddStringInfos(ArrayOfAddStringInfo value) {
-        return new JAXBElement<>(_SetAdditionalFieldsVlauesAddStringInfos_QNAME, ArrayOfAddStringInfo.class, SetAdditionalFieldsVlaues.class, value);
+        return new JAXBElement<ArrayOfAddStringInfo>(_SetAdditionalFieldsVlauesAddStringInfos_QNAME, ArrayOfAddStringInfo.class, SetAdditionalFieldsVlaues.class, value);
     }
 
     /**
@@ -23776,7 +21310,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "addColorInfo", scope = SetAdditionalFieldsVlaues.class)
     public JAXBElement<ArrayOfAddColorInfo> createSetAdditionalFieldsVlauesAddColorInfo(ArrayOfAddColorInfo value) {
-        return new JAXBElement<>(_SetAdditionalFieldsVlauesAddColorInfo_QNAME, ArrayOfAddColorInfo.class, SetAdditionalFieldsVlaues.class, value);
+        return new JAXBElement<ArrayOfAddColorInfo>(_SetAdditionalFieldsVlauesAddColorInfo_QNAME, ArrayOfAddColorInfo.class, SetAdditionalFieldsVlaues.class, value);
     }
 
     /**
@@ -23789,7 +21323,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "addListInfo", scope = SetAdditionalFieldsVlaues.class)
     public JAXBElement<ArrayOfAddListInfo> createSetAdditionalFieldsVlauesAddListInfo(ArrayOfAddListInfo value) {
-        return new JAXBElement<>(_SetAdditionalFieldsVlauesAddListInfo_QNAME, ArrayOfAddListInfo.class, SetAdditionalFieldsVlaues.class, value);
+        return new JAXBElement<ArrayOfAddListInfo>(_SetAdditionalFieldsVlauesAddListInfo_QNAME, ArrayOfAddListInfo.class, SetAdditionalFieldsVlaues.class, value);
     }
 
     /**
@@ -23802,7 +21336,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "field", scope = AddField.class)
     public JAXBElement<AdditionalFieldBase> createAddFieldField(AdditionalFieldBase value) {
-        return new JAXBElement<>(_AddFieldField_QNAME, AdditionalFieldBase.class, AddField.class, value);
+        return new JAXBElement<AdditionalFieldBase>(_AddFieldField_QNAME, AdditionalFieldBase.class, AddField.class, value);
     }
 
     /**
@@ -23815,7 +21349,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://www.rusguardsecurity.ru", name = "field", scope = SaveField.class)
     public JAXBElement<AdditionalFieldBase> createSaveFieldField(AdditionalFieldBase value) {
-        return new JAXBElement<>(_AddFieldField_QNAME, AdditionalFieldBase.class, SaveField.class, value);
+        return new JAXBElement<AdditionalFieldBase>(_AddFieldField_QNAME, AdditionalFieldBase.class, SaveField.class, value);
     }
 
 }

@@ -1,10 +1,10 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs;
 
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.annotation.XmlEnum;
-import jakarta.xml.bind.annotation.XmlEnumValue;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.annotation.Generated;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,37 +13,37 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>Java class for EmployeeSortedColumn</p>.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.</p>
- * <pre>{@code
- * <simpleType name="EmployeeSortedColumn">
- *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     <enumeration value="None"/>
- *     <enumeration value="FullName"/>
- *     <enumeration value="LastName"/>
- *     <enumeration value="FirstName"/>
- *     <enumeration value="SecondName"/>
- *     <enumeration value="TabNumber"/>
- *     <enumeration value="Position"/>
- *     <enumeration value="Satatus"/>
- *     <enumeration value="FirstKey"/>
- *     <enumeration value="SecondKey"/>
- *     <enumeration value="AccessLevel"/>
- *     <enumeration value="WorkSchedule"/>
- *     <enumeration value="WorkZone"/>
- *     <enumeration value="IsPhotoAny"/>
- *     <enumeration value="GroupPath"/>
- *     <enumeration value="ModificationDateTime"/>
- *     <enumeration value="CreationDateTime"/>
- *     <enumeration value="RowNumberKey"/>
- *     <enumeration value="AllKeys"/>
- *     <enumeration value="IsVehicleAny"/>
- *   </restriction>
- * </simpleType>
- * }</pre>
+ * <pre>
+ * &lt;simpleType name="EmployeeSortedColumn"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *     &lt;enumeration value="FullName"/&gt;
+ *     &lt;enumeration value="LastName"/&gt;
+ *     &lt;enumeration value="FirstName"/&gt;
+ *     &lt;enumeration value="SecondName"/&gt;
+ *     &lt;enumeration value="TabNumber"/&gt;
+ *     &lt;enumeration value="Position"/&gt;
+ *     &lt;enumeration value="Satatus"/&gt;
+ *     &lt;enumeration value="FirstKey"/&gt;
+ *     &lt;enumeration value="SecondKey"/&gt;
+ *     &lt;enumeration value="AccessLevel"/&gt;
+ *     &lt;enumeration value="WorkSchedule"/&gt;
+ *     &lt;enumeration value="WorkZone"/&gt;
+ *     &lt;enumeration value="IsPhotoAny"/&gt;
+ *     &lt;enumeration value="GroupPath"/&gt;
+ *     &lt;enumeration value="ModificationDateTime"/&gt;
+ *     &lt;enumeration value="CreationDateTime"/&gt;
+ *     &lt;enumeration value="RowNumberKey"/&gt;
+ *     &lt;enumeration value="AllKeys"/&gt;
+ *     &lt;enumeration value="IsVehicleAny"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "EmployeeSortedColumn", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public enum EmployeeSortedColumn {
 
     @XmlEnumValue("None")

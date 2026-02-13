@@ -1,8 +1,9 @@
 package com.rusguard.schema;
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
+//import jakarta.validation.constraints.Email;
+//import jakarta.validation.constraints.Pattern;
+//import jakarta.validation.constraints.Size;
+import javax.validation.constraints.*;
 // DTO класс для запроса
 @Schema(description = "Запрос на сохранение/обновление данных сотрудника СКУД")
 public class SaveAcsEmployeeRequest {

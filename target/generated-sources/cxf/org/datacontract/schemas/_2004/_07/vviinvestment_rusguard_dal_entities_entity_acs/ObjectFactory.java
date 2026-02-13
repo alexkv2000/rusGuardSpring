@@ -1,14 +1,14 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.ArrayOfVariableInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.ArrayOfWorkScheduleSlimInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity.ArrayOfWorkZoneSlimInfo;
@@ -21,7 +21,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -32,7 +32,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _SearchCondition_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", "SearchCondition");
@@ -334,8 +334,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsKeyInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsKeyInfo }
      */
     public ArrayOfAcsKeyInfo createArrayOfAcsKeyInfo() {
         return new ArrayOfAcsKeyInfo();
@@ -344,8 +342,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SearchCondition }
      * 
-     * @return
-     *     the new instance of {@link SearchCondition }
      */
     public SearchCondition createSearchCondition() {
         return new SearchCondition();
@@ -354,8 +350,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployee }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployee }
      */
     public ArrayOfAcsEmployee createArrayOfAcsEmployee() {
         return new ArrayOfAcsEmployee();
@@ -364,8 +358,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsVehicleSearched }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsVehicleSearched }
      */
     public ArrayOfAcsVehicleSearched createArrayOfAcsVehicleSearched() {
         return new ArrayOfAcsVehicleSearched();
@@ -374,8 +366,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsVehicle }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsVehicle }
      */
     public ArrayOfAcsVehicle createArrayOfAcsVehicle() {
         return new ArrayOfAcsVehicle();
@@ -384,8 +374,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsVehicle }
      * 
-     * @return
-     *     the new instance of {@link AcsVehicle }
      */
     public AcsVehicle createAcsVehicle() {
         return new AcsVehicle();
@@ -394,8 +382,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsBoxAccessLevelElementSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsBoxAccessLevelElementSlimInfo }
      */
     public ArrayOfAcsBoxAccessLevelElementSlimInfo createArrayOfAcsBoxAccessLevelElementSlimInfo() {
         return new ArrayOfAcsBoxAccessLevelElementSlimInfo();
@@ -404,8 +390,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsBoxAccessLevelSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsBoxAccessLevelSlimInfo }
      */
     public ArrayOfAcsBoxAccessLevelSlimInfo createArrayOfAcsBoxAccessLevelSlimInfo() {
         return new ArrayOfAcsBoxAccessLevelSlimInfo();
@@ -414,8 +398,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsAccessLevelSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsAccessLevelSlimInfo }
      */
     public ArrayOfAcsAccessLevelSlimInfo createArrayOfAcsAccessLevelSlimInfo() {
         return new ArrayOfAcsAccessLevelSlimInfo();
@@ -424,8 +406,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsAlcoGroupSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsAlcoGroupSlimInfo }
      */
     public ArrayOfAcsAlcoGroupSlimInfo createArrayOfAcsAlcoGroupSlimInfo() {
         return new ArrayOfAcsAlcoGroupSlimInfo();
@@ -434,8 +414,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeeGroupForAlcoGroupFull }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeeGroupForAlcoGroupFull }
      */
     public ArrayOfEmployeeGroupForAlcoGroupFull createArrayOfEmployeeGroupForAlcoGroupFull() {
         return new ArrayOfEmployeeGroupForAlcoGroupFull();
@@ -444,8 +422,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeesInfoData }
      * 
-     * @return
-     *     the new instance of {@link EmployeesInfoData }
      */
     public EmployeesInfoData createEmployeesInfoData() {
         return new EmployeesInfoData();
@@ -454,8 +430,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeesFilter }
      * 
-     * @return
-     *     the new instance of {@link EmployeesFilter }
      */
     public EmployeesFilter createEmployeesFilter() {
         return new EmployeesFilter();
@@ -464,8 +438,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeShowColumn }
      * 
-     * @return
-     *     the new instance of {@link EmployeeShowColumn }
      */
     public EmployeeShowColumn createEmployeeShowColumn() {
         return new EmployeeShowColumn();
@@ -474,8 +446,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeSchedule }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeSchedule }
      */
     public ArrayOfAcsEmployeeSchedule createArrayOfAcsEmployeeSchedule() {
         return new ArrayOfAcsEmployeeSchedule();
@@ -484,8 +454,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsDaySchedule }
      */
     public ArrayOfAcsDaySchedule createArrayOfAcsDaySchedule() {
         return new ArrayOfAcsDaySchedule();
@@ -494,8 +462,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link AcsDaySchedule }
      */
     public AcsDaySchedule createAcsDaySchedule() {
         return new AcsDaySchedule();
@@ -504,8 +470,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsMultiDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsMultiDaySchedule }
      */
     public ArrayOfAcsMultiDaySchedule createArrayOfAcsMultiDaySchedule() {
         return new ArrayOfAcsMultiDaySchedule();
@@ -514,8 +478,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsMultiDaySchedule }
      * 
-     * @return
-     *     the new instance of {@link AcsMultiDaySchedule }
      */
     public AcsMultiDaySchedule createAcsMultiDaySchedule() {
         return new AcsMultiDaySchedule();
@@ -524,8 +486,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsWeekScheduleSlim }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsWeekScheduleSlim }
      */
     public ArrayOfAcsWeekScheduleSlim createArrayOfAcsWeekScheduleSlim() {
         return new ArrayOfAcsWeekScheduleSlim();
@@ -534,8 +494,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsWeekScheduleFull }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsWeekScheduleFull }
      */
     public ArrayOfAcsWeekScheduleFull createArrayOfAcsWeekScheduleFull() {
         return new ArrayOfAcsWeekScheduleFull();
@@ -544,8 +502,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsWeekScheduleFull }
      * 
-     * @return
-     *     the new instance of {@link AcsWeekScheduleFull }
      */
     public AcsWeekScheduleFull createAcsWeekScheduleFull() {
         return new AcsWeekScheduleFull();
@@ -554,8 +510,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsCustomDay }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsCustomDay }
      */
     public ArrayOfAcsCustomDay createArrayOfAcsCustomDay() {
         return new ArrayOfAcsCustomDay();
@@ -564,8 +518,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsCustomDay }
      * 
-     * @return
-     *     the new instance of {@link AcsCustomDay }
      */
     public AcsCustomDay createAcsCustomDay() {
         return new AcsCustomDay();
@@ -574,8 +526,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsWorkDayWithTransfer }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsWorkDayWithTransfer }
      */
     public ArrayOfAcsWorkDayWithTransfer createArrayOfAcsWorkDayWithTransfer() {
         return new ArrayOfAcsWorkDayWithTransfer();
@@ -584,8 +534,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsWorkDayWithTransfer }
      * 
-     * @return
-     *     the new instance of {@link AcsWorkDayWithTransfer }
      */
     public AcsWorkDayWithTransfer createAcsWorkDayWithTransfer() {
         return new AcsWorkDayWithTransfer();
@@ -594,8 +542,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeGroup }
      */
     public ArrayOfAcsEmployeeGroup createArrayOfAcsEmployeeGroup() {
         return new ArrayOfAcsEmployeeGroup();
@@ -604,8 +550,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeGroup }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeGroup }
      */
     public AcsEmployeeGroup createAcsEmployeeGroup() {
         return new AcsEmployeeGroup();
@@ -614,8 +558,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeGroupReportInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeGroupReportInfo }
      */
     public ArrayOfAcsEmployeeGroupReportInfo createArrayOfAcsEmployeeGroupReportInfo() {
         return new ArrayOfAcsEmployeeGroupReportInfo();
@@ -624,8 +566,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeGroupReactionInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeGroupReactionInfo }
      */
     public ArrayOfAcsEmployeeGroupReactionInfo createArrayOfAcsEmployeeGroupReactionInfo() {
         return new ArrayOfAcsEmployeeGroupReactionInfo();
@@ -634,8 +574,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeSlim }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeSlim }
      */
     public ArrayOfAcsEmployeeSlim createArrayOfAcsEmployeeSlim() {
         return new ArrayOfAcsEmployeeSlim();
@@ -644,8 +582,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeesInfoData2 }
      * 
-     * @return
-     *     the new instance of {@link EmployeesInfoData2 }
      */
     public EmployeesInfoData2 createEmployeesInfoData2() {
         return new EmployeesInfoData2();
@@ -654,8 +590,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeFaceVectorFull }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeFaceVectorFull }
      */
     public AcsEmployeeFaceVectorFull createAcsEmployeeFaceVectorFull() {
         return new AcsEmployeeFaceVectorFull();
@@ -664,8 +598,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeFaceVector }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeFaceVector }
      */
     public ArrayOfAcsEmployeeFaceVector createArrayOfAcsEmployeeFaceVector() {
         return new ArrayOfAcsEmployeeFaceVector();
@@ -674,8 +606,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeFaceVectorFull }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeFaceVectorFull }
      */
     public ArrayOfAcsEmployeeFaceVectorFull createArrayOfAcsEmployeeFaceVectorFull() {
         return new ArrayOfAcsEmployeeFaceVectorFull();
@@ -684,8 +614,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeFull }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeFull }
      */
     public AcsEmployeeFull createAcsEmployeeFull() {
         return new AcsEmployeeFull();
@@ -694,8 +622,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeInfo }
      * 
-     * @return
-     *     the new instance of {@link EmployeeInfo }
      */
     public EmployeeInfo createEmployeeInfo() {
         return new EmployeeInfo();
@@ -704,8 +630,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeeViewFieldMetadata }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeeViewFieldMetadata }
      */
     public ArrayOfEmployeeViewFieldMetadata createArrayOfEmployeeViewFieldMetadata() {
         return new ArrayOfEmployeeViewFieldMetadata();
@@ -714,8 +638,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeFull }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeFull }
      */
     public ArrayOfAcsEmployeeFull createArrayOfAcsEmployeeFull() {
         return new ArrayOfAcsEmployeeFull();
@@ -724,8 +646,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeDocumentsData }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeDocumentsData }
      */
     public AcsEmployeeDocumentsData createAcsEmployeeDocumentsData() {
         return new AcsEmployeeDocumentsData();
@@ -734,8 +654,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeePhotosInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeePhotosInfo }
      */
     public ArrayOfAcsEmployeePhotosInfo createArrayOfAcsEmployeePhotosInfo() {
         return new ArrayOfAcsEmployeePhotosInfo();
@@ -744,8 +662,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeeShortInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeeShortInfo }
      */
     public ArrayOfEmployeeShortInfo createArrayOfEmployeeShortInfo() {
         return new ArrayOfEmployeeShortInfo();
@@ -754,8 +670,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeeModificationInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeeModificationInfo }
      */
     public ArrayOfEmployeeModificationInfo createArrayOfEmployeeModificationInfo() {
         return new ArrayOfEmployeeModificationInfo();
@@ -764,8 +678,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsKeyInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsKeyInfo }
      */
     public AcsKeyInfo createAcsKeyInfo() {
         return new AcsKeyInfo();
@@ -774,8 +686,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsBoxAccessElementSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsBoxAccessElementSaveInfo }
      */
     public ArrayOfAcsBoxAccessElementSaveInfo createArrayOfAcsBoxAccessElementSaveInfo() {
         return new ArrayOfAcsBoxAccessElementSaveInfo();
@@ -784,8 +694,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsBoxAccessLevelSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsBoxAccessLevelSaveData }
      */
     public AcsBoxAccessLevelSaveData createAcsBoxAccessLevelSaveData() {
         return new AcsBoxAccessLevelSaveData();
@@ -794,8 +702,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsBoxAccessLevelSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsBoxAccessLevelSlimInfo }
      */
     public AcsBoxAccessLevelSlimInfo createAcsBoxAccessLevelSlimInfo() {
         return new AcsBoxAccessLevelSlimInfo();
@@ -804,8 +710,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsAccessLevelSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsAccessLevelSaveData }
      */
     public AcsAccessLevelSaveData createAcsAccessLevelSaveData() {
         return new AcsAccessLevelSaveData();
@@ -814,8 +718,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsAccessLevelSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsAccessLevelSlimInfo }
      */
     public AcsAccessLevelSlimInfo createAcsAccessLevelSlimInfo() {
         return new AcsAccessLevelSlimInfo();
@@ -824,8 +726,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsAlcoGroupSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsAlcoGroupSaveData }
      */
     public AcsAlcoGroupSaveData createAcsAlcoGroupSaveData() {
         return new AcsAlcoGroupSaveData();
@@ -834,8 +734,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsAlcoGroupSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsAlcoGroupSlimInfo }
      */
     public AcsAlcoGroupSlimInfo createAcsAlcoGroupSlimInfo() {
         return new AcsAlcoGroupSlimInfo();
@@ -844,8 +742,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ChangeDataResult }
      * 
-     * @return
-     *     the new instance of {@link ChangeDataResult }
      */
     public ChangeDataResult createChangeDataResult() {
         return new ChangeDataResult();
@@ -854,8 +750,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ChangePositionCodesResult }
      * 
-     * @return
-     *     the new instance of {@link ChangePositionCodesResult }
      */
     public ChangePositionCodesResult createChangePositionCodesResult() {
         return new ChangePositionCodesResult();
@@ -864,8 +758,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeeGroupForAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeeGroupForAlcoGroup }
      */
     public ArrayOfEmployeeGroupForAlcoGroup createArrayOfEmployeeGroupForAlcoGroup() {
         return new ArrayOfEmployeeGroupForAlcoGroup();
@@ -874,8 +766,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LAccessLevelsData }
      * 
-     * @return
-     *     the new instance of {@link LAccessLevelsData }
      */
     public LAccessLevelsData createLAccessLevelsData() {
         return new LAccessLevelsData();
@@ -884,8 +774,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsAccessLevelSimpleInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsAccessLevelSimpleInfo }
      */
     public ArrayOfAcsAccessLevelSimpleInfo createArrayOfAcsAccessLevelSimpleInfo() {
         return new ArrayOfAcsAccessLevelSimpleInfo();
@@ -894,8 +782,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RGDayIntervals }
      * 
-     * @return
-     *     the new instance of {@link RGDayIntervals }
      */
     public RGDayIntervals createRGDayIntervals() {
         return new RGDayIntervals();
@@ -904,8 +790,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRGDayIntervals }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfRGDayIntervals }
      */
     public ArrayOfRGDayIntervals createArrayOfRGDayIntervals() {
         return new ArrayOfRGDayIntervals();
@@ -914,8 +798,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsWeekSlim }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsWeekSlim }
      */
     public ArrayOfAcsWeekSlim createArrayOfAcsWeekSlim() {
         return new ArrayOfAcsWeekSlim();
@@ -924,8 +806,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeSaveData }
      */
     public AcsEmployeeSaveData createAcsEmployeeSaveData() {
         return new AcsEmployeeSaveData();
@@ -934,8 +814,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeSlim }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeSlim }
      */
     public AcsEmployeeSlim createAcsEmployeeSlim() {
         return new AcsEmployeeSlim();
@@ -944,8 +822,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeesData }
      * 
-     * @return
-     *     the new instance of {@link EmployeesData }
      */
     public EmployeesData createEmployeesData() {
         return new EmployeesData();
@@ -954,8 +830,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeDocumentsSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeDocumentsSaveData }
      */
     public AcsEmployeeDocumentsSaveData createAcsEmployeeDocumentsSaveData() {
         return new AcsEmployeeDocumentsSaveData();
@@ -964,8 +838,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeFaceVectorSaveData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeFaceVectorSaveData }
      */
     public ArrayOfAcsEmployeeFaceVectorSaveData createArrayOfAcsEmployeeFaceVectorSaveData() {
         return new ArrayOfAcsEmployeeFaceVectorSaveData();
@@ -974,8 +846,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeScheduleSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeScheduleSaveData }
      */
     public AcsEmployeeScheduleSaveData createAcsEmployeeScheduleSaveData() {
         return new AcsEmployeeScheduleSaveData();
@@ -984,8 +854,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeSchedule }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeSchedule }
      */
     public AcsEmployeeSchedule createAcsEmployeeSchedule() {
         return new AcsEmployeeSchedule();
@@ -994,8 +862,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsKeySaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsKeySaveData }
      */
     public AcsKeySaveData createAcsKeySaveData() {
         return new AcsKeySaveData();
@@ -1004,8 +870,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsVehicleSavedData }
      * 
-     * @return
-     *     the new instance of {@link AcsVehicleSavedData }
      */
     public AcsVehicleSavedData createAcsVehicleSavedData() {
         return new AcsVehicleSavedData();
@@ -1014,8 +878,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeesVehicle }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeesVehicle }
      */
     public ArrayOfEmployeesVehicle createArrayOfEmployeesVehicle() {
         return new ArrayOfEmployeesVehicle();
@@ -1024,8 +886,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAttachedEmployeesForVehicle }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAttachedEmployeesForVehicle }
      */
     public ArrayOfAttachedEmployeesForVehicle createArrayOfAttachedEmployeesForVehicle() {
         return new ArrayOfAttachedEmployeesForVehicle();
@@ -1034,8 +894,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployee }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployee }
      */
     public AcsEmployee createAcsEmployee() {
         return new AcsEmployee();
@@ -1044,8 +902,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeSlimBase }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeSlimBase }
      */
     public AcsEmployeeSlimBase createAcsEmployeeSlimBase() {
         return new AcsEmployeeSlimBase();
@@ -1054,8 +910,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeGroupReactionInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeGroupReactionInfo }
      */
     public AcsEmployeeGroupReactionInfo createAcsEmployeeGroupReactionInfo() {
         return new AcsEmployeeGroupReactionInfo();
@@ -1064,8 +918,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeGroupReportInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeGroupReportInfo }
      */
     public AcsEmployeeGroupReportInfo createAcsEmployeeGroupReportInfo() {
         return new AcsEmployeeGroupReportInfo();
@@ -1074,8 +926,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeFullBase }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeFullBase }
      */
     public AcsEmployeeFullBase createAcsEmployeeFullBase() {
         return new AcsEmployeeFullBase();
@@ -1084,8 +934,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsEmployeeInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsEmployeeInfo }
      */
     public ArrayOfAcsEmployeeInfo createArrayOfAcsEmployeeInfo() {
         return new ArrayOfAcsEmployeeInfo();
@@ -1094,8 +942,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeInfo }
      */
     public AcsEmployeeInfo createAcsEmployeeInfo() {
         return new AcsEmployeeInfo();
@@ -1104,8 +950,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeFaceVector }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeFaceVector }
      */
     public AcsEmployeeFaceVector createAcsEmployeeFaceVector() {
         return new AcsEmployeeFaceVector();
@@ -1114,8 +958,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeViewFieldMetadata }
      * 
-     * @return
-     *     the new instance of {@link EmployeeViewFieldMetadata }
      */
     public EmployeeViewFieldMetadata createEmployeeViewFieldMetadata() {
         return new EmployeeViewFieldMetadata();
@@ -1124,8 +966,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BaseViewFieldMetadata }
      * 
-     * @return
-     *     the new instance of {@link BaseViewFieldMetadata }
      */
     public BaseViewFieldMetadata createBaseViewFieldMetadata() {
         return new BaseViewFieldMetadata();
@@ -1134,8 +974,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeePhotosInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeePhotosInfo }
      */
     public AcsEmployeePhotosInfo createAcsEmployeePhotosInfo() {
         return new AcsEmployeePhotosInfo();
@@ -1144,8 +982,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAscEmployeePhotoModificationDateTimeInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAscEmployeePhotoModificationDateTimeInfo }
      */
     public ArrayOfAscEmployeePhotoModificationDateTimeInfo createArrayOfAscEmployeePhotoModificationDateTimeInfo() {
         return new ArrayOfAscEmployeePhotoModificationDateTimeInfo();
@@ -1154,8 +990,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AscEmployeePhotoModificationDateTimeInfo }
      * 
-     * @return
-     *     the new instance of {@link AscEmployeePhotoModificationDateTimeInfo }
      */
     public AscEmployeePhotoModificationDateTimeInfo createAscEmployeePhotoModificationDateTimeInfo() {
         return new AscEmployeePhotoModificationDateTimeInfo();
@@ -1164,8 +998,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeShortInfo }
      * 
-     * @return
-     *     the new instance of {@link EmployeeShortInfo }
      */
     public EmployeeShortInfo createEmployeeShortInfo() {
         return new EmployeeShortInfo();
@@ -1174,8 +1006,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeModificationInfo }
      * 
-     * @return
-     *     the new instance of {@link EmployeeModificationInfo }
      */
     public EmployeeModificationInfo createEmployeeModificationInfo() {
         return new EmployeeModificationInfo();
@@ -1184,8 +1014,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfEmployeeCurentInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfEmployeeCurentInfo }
      */
     public ArrayOfEmployeeCurentInfo createArrayOfEmployeeCurentInfo() {
         return new ArrayOfEmployeeCurentInfo();
@@ -1194,8 +1022,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeCurentInfo }
      * 
-     * @return
-     *     the new instance of {@link EmployeeCurentInfo }
      */
     public EmployeeCurentInfo createEmployeeCurentInfo() {
         return new EmployeeCurentInfo();
@@ -1204,8 +1030,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsEmployeeFaceVectorSaveData }
      * 
-     * @return
-     *     the new instance of {@link AcsEmployeeFaceVectorSaveData }
      */
     public AcsEmployeeFaceVectorSaveData createAcsEmployeeFaceVectorSaveData() {
         return new AcsEmployeeFaceVectorSaveData();
@@ -1214,8 +1038,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AttachedEmployeesForVehicle }
      * 
-     * @return
-     *     the new instance of {@link AttachedEmployeesForVehicle }
      */
     public AttachedEmployeesForVehicle createAttachedEmployeesForVehicle() {
         return new AttachedEmployeesForVehicle();
@@ -1224,8 +1046,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeGroupForAlcoGroupFull }
      * 
-     * @return
-     *     the new instance of {@link EmployeeGroupForAlcoGroupFull }
      */
     public EmployeeGroupForAlcoGroupFull createEmployeeGroupForAlcoGroupFull() {
         return new EmployeeGroupForAlcoGroupFull();
@@ -1234,8 +1054,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeeGroupForAlcoGroup }
      * 
-     * @return
-     *     the new instance of {@link EmployeeGroupForAlcoGroup }
      */
     public EmployeeGroupForAlcoGroup createEmployeeGroupForAlcoGroup() {
         return new EmployeeGroupForAlcoGroup();
@@ -1244,8 +1062,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsBoxAccessLevelElementSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsBoxAccessLevelElementSlimInfo }
      */
     public AcsBoxAccessLevelElementSlimInfo createAcsBoxAccessLevelElementSlimInfo() {
         return new AcsBoxAccessLevelElementSlimInfo();
@@ -1254,8 +1070,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsBoxAccessElementSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsBoxAccessElementSaveInfo }
      */
     public AcsBoxAccessElementSaveInfo createAcsBoxAccessElementSaveInfo() {
         return new AcsBoxAccessElementSaveInfo();
@@ -1264,8 +1078,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsAccessLevelSlimBase }
      * 
-     * @return
-     *     the new instance of {@link AcsAccessLevelSlimBase }
      */
     public AcsAccessLevelSlimBase createAcsAccessLevelSlimBase() {
         return new AcsAccessLevelSlimBase();
@@ -1274,8 +1086,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsAccessLevelSimpleInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsAccessLevelSimpleInfo }
      */
     public AcsAccessLevelSimpleInfo createAcsAccessLevelSimpleInfo() {
         return new AcsAccessLevelSimpleInfo();
@@ -1284,8 +1094,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsScheduleSlimInfo }
      * 
-     * @return
-     *     the new instance of {@link AcsScheduleSlimInfo }
      */
     public AcsScheduleSlimInfo createAcsScheduleSlimInfo() {
         return new AcsScheduleSlimInfo();
@@ -1294,8 +1102,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsScheduleBase }
      * 
-     * @return
-     *     the new instance of {@link AcsScheduleBase }
      */
     public AcsScheduleBase createAcsScheduleBase() {
         return new AcsScheduleBase();
@@ -1304,8 +1110,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRGTimeInterval }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfRGTimeInterval }
      */
     public ArrayOfRGTimeInterval createArrayOfRGTimeInterval() {
         return new ArrayOfRGTimeInterval();
@@ -1314,8 +1118,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RGTimeInterval }
      * 
-     * @return
-     *     the new instance of {@link RGTimeInterval }
      */
     public RGTimeInterval createRGTimeInterval() {
         return new RGTimeInterval();
@@ -1324,8 +1126,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsWeekScheduleSlim }
      * 
-     * @return
-     *     the new instance of {@link AcsWeekScheduleSlim }
      */
     public AcsWeekScheduleSlim createAcsWeekScheduleSlim() {
         return new AcsWeekScheduleSlim();
@@ -1334,8 +1134,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsWeekSlim }
      * 
-     * @return
-     *     the new instance of {@link AcsWeekSlim }
      */
     public AcsWeekSlim createAcsWeekSlim() {
         return new AcsWeekSlim();
@@ -1344,8 +1142,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfAcsWeekFull }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfAcsWeekFull }
      */
     public ArrayOfAcsWeekFull createArrayOfAcsWeekFull() {
         return new ArrayOfAcsWeekFull();
@@ -1354,8 +1150,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsWeekFull }
      * 
-     * @return
-     *     the new instance of {@link AcsWeekFull }
      */
     public AcsWeekFull createAcsWeekFull() {
         return new AcsWeekFull();
@@ -1364,8 +1158,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsCustomizableDayBase }
      * 
-     * @return
-     *     the new instance of {@link AcsCustomizableDayBase }
      */
     public AcsCustomizableDayBase createAcsCustomizableDayBase() {
         return new AcsCustomizableDayBase();
@@ -1374,8 +1166,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AcsVehicleSearched }
      * 
-     * @return
-     *     the new instance of {@link AcsVehicleSearched }
      */
     public AcsVehicleSearched createAcsVehicleSearched() {
         return new AcsVehicleSearched();
@@ -1384,8 +1174,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link EmployeesVehicle }
      * 
-     * @return
-     *     the new instance of {@link EmployeesVehicle }
      */
     public EmployeesVehicle createEmployeesVehicle() {
         return new EmployeesVehicle();
@@ -1401,7 +1189,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SearchCondition")
     public JAXBElement<SearchCondition> createSearchCondition(SearchCondition value) {
-        return new JAXBElement<>(_SearchCondition_QNAME, SearchCondition.class, null, value);
+        return new JAXBElement<SearchCondition>(_SearchCondition_QNAME, SearchCondition.class, null, value);
     }
 
     /**
@@ -1414,7 +1202,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeSortedColumn")
     public JAXBElement<EmployeeSortedColumn> createEmployeeSortedColumn(EmployeeSortedColumn value) {
-        return new JAXBElement<>(_EmployeeSortedColumn_QNAME, EmployeeSortedColumn.class, null, value);
+        return new JAXBElement<EmployeeSortedColumn>(_EmployeeSortedColumn_QNAME, EmployeeSortedColumn.class, null, value);
     }
 
     /**
@@ -1427,7 +1215,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SearchWay")
     public JAXBElement<SearchWay> createSearchWay(SearchWay value) {
-        return new JAXBElement<>(_SearchWay_QNAME, SearchWay.class, null, value);
+        return new JAXBElement<SearchWay>(_SearchWay_QNAME, SearchWay.class, null, value);
     }
 
     /**
@@ -1440,7 +1228,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployee")
     public JAXBElement<ArrayOfAcsEmployee> createArrayOfAcsEmployee(ArrayOfAcsEmployee value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployee_QNAME, ArrayOfAcsEmployee.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployee>(_ArrayOfAcsEmployee_QNAME, ArrayOfAcsEmployee.class, null, value);
     }
 
     /**
@@ -1453,7 +1241,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployee")
     public JAXBElement<AcsEmployee> createAcsEmployee(AcsEmployee value) {
-        return new JAXBElement<>(_AcsEmployee_QNAME, AcsEmployee.class, null, value);
+        return new JAXBElement<AcsEmployee>(_AcsEmployee_QNAME, AcsEmployee.class, null, value);
     }
 
     /**
@@ -1466,7 +1254,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "GroupTypeSearch")
     public JAXBElement<GroupTypeSearch> createGroupTypeSearch(GroupTypeSearch value) {
-        return new JAXBElement<>(_GroupTypeSearch_QNAME, GroupTypeSearch.class, null, value);
+        return new JAXBElement<GroupTypeSearch>(_GroupTypeSearch_QNAME, GroupTypeSearch.class, null, value);
     }
 
     /**
@@ -1479,7 +1267,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "VehicleTypeSearch")
     public JAXBElement<VehicleTypeSearch> createVehicleTypeSearch(VehicleTypeSearch value) {
-        return new JAXBElement<>(_VehicleTypeSearch_QNAME, VehicleTypeSearch.class, null, value);
+        return new JAXBElement<VehicleTypeSearch>(_VehicleTypeSearch_QNAME, VehicleTypeSearch.class, null, value);
     }
 
     /**
@@ -1492,7 +1280,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeesInfoData")
     public JAXBElement<EmployeesInfoData> createEmployeesInfoData(EmployeesInfoData value) {
-        return new JAXBElement<>(_EmployeesInfoData_QNAME, EmployeesInfoData.class, null, value);
+        return new JAXBElement<EmployeesInfoData>(_EmployeesInfoData_QNAME, EmployeesInfoData.class, null, value);
     }
 
     /**
@@ -1505,7 +1293,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeSlim")
     public JAXBElement<ArrayOfAcsEmployeeSlim> createArrayOfAcsEmployeeSlim(ArrayOfAcsEmployeeSlim value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeSlim_QNAME, ArrayOfAcsEmployeeSlim.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeSlim>(_ArrayOfAcsEmployeeSlim_QNAME, ArrayOfAcsEmployeeSlim.class, null, value);
     }
 
     /**
@@ -1518,7 +1306,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeSlim")
     public JAXBElement<AcsEmployeeSlim> createAcsEmployeeSlim(AcsEmployeeSlim value) {
-        return new JAXBElement<>(_AcsEmployeeSlim_QNAME, AcsEmployeeSlim.class, null, value);
+        return new JAXBElement<AcsEmployeeSlim>(_AcsEmployeeSlim_QNAME, AcsEmployeeSlim.class, null, value);
     }
 
     /**
@@ -1531,7 +1319,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeSlimBase")
     public JAXBElement<AcsEmployeeSlimBase> createAcsEmployeeSlimBase(AcsEmployeeSlimBase value) {
-        return new JAXBElement<>(_AcsEmployeeSlimBase_QNAME, AcsEmployeeSlimBase.class, null, value);
+        return new JAXBElement<AcsEmployeeSlimBase>(_AcsEmployeeSlimBase_QNAME, AcsEmployeeSlimBase.class, null, value);
     }
 
     /**
@@ -1544,7 +1332,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeesFilter")
     public JAXBElement<EmployeesFilter> createEmployeesFilter(EmployeesFilter value) {
-        return new JAXBElement<>(_EmployeesFilter_QNAME, EmployeesFilter.class, null, value);
+        return new JAXBElement<EmployeesFilter>(_EmployeesFilter_QNAME, EmployeesFilter.class, null, value);
     }
 
     /**
@@ -1557,7 +1345,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeShowColumn")
     public JAXBElement<EmployeeShowColumn> createEmployeeShowColumn(EmployeeShowColumn value) {
-        return new JAXBElement<>(_EmployeeShowColumn_QNAME, EmployeeShowColumn.class, null, value);
+        return new JAXBElement<EmployeeShowColumn>(_EmployeeShowColumn_QNAME, EmployeeShowColumn.class, null, value);
     }
 
     /**
@@ -1570,7 +1358,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DocumentType")
     public JAXBElement<DocumentType> createDocumentType(DocumentType value) {
-        return new JAXBElement<>(_DocumentType_QNAME, DocumentType.class, null, value);
+        return new JAXBElement<DocumentType>(_DocumentType_QNAME, DocumentType.class, null, value);
     }
 
     /**
@@ -1583,7 +1371,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeSchedule")
     public JAXBElement<ArrayOfAcsEmployeeSchedule> createArrayOfAcsEmployeeSchedule(ArrayOfAcsEmployeeSchedule value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeSchedule_QNAME, ArrayOfAcsEmployeeSchedule.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeSchedule>(_ArrayOfAcsEmployeeSchedule_QNAME, ArrayOfAcsEmployeeSchedule.class, null, value);
     }
 
     /**
@@ -1596,7 +1384,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeSchedule")
     public JAXBElement<AcsEmployeeSchedule> createAcsEmployeeSchedule(AcsEmployeeSchedule value) {
-        return new JAXBElement<>(_AcsEmployeeSchedule_QNAME, AcsEmployeeSchedule.class, null, value);
+        return new JAXBElement<AcsEmployeeSchedule>(_AcsEmployeeSchedule_QNAME, AcsEmployeeSchedule.class, null, value);
     }
 
     /**
@@ -1609,7 +1397,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeScheduleSaveData")
     public JAXBElement<AcsEmployeeScheduleSaveData> createAcsEmployeeScheduleSaveData(AcsEmployeeScheduleSaveData value) {
-        return new JAXBElement<>(_AcsEmployeeScheduleSaveData_QNAME, AcsEmployeeScheduleSaveData.class, null, value);
+        return new JAXBElement<AcsEmployeeScheduleSaveData>(_AcsEmployeeScheduleSaveData_QNAME, AcsEmployeeScheduleSaveData.class, null, value);
     }
 
     /**
@@ -1622,7 +1410,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeGroup")
     public JAXBElement<ArrayOfAcsEmployeeGroup> createArrayOfAcsEmployeeGroup(ArrayOfAcsEmployeeGroup value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeGroup_QNAME, ArrayOfAcsEmployeeGroup.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroup>(_ArrayOfAcsEmployeeGroup_QNAME, ArrayOfAcsEmployeeGroup.class, null, value);
     }
 
     /**
@@ -1635,7 +1423,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeGroup")
     public JAXBElement<AcsEmployeeGroup> createAcsEmployeeGroup(AcsEmployeeGroup value) {
-        return new JAXBElement<>(_AcsEmployeeGroup_QNAME, AcsEmployeeGroup.class, null, value);
+        return new JAXBElement<AcsEmployeeGroup>(_AcsEmployeeGroup_QNAME, AcsEmployeeGroup.class, null, value);
     }
 
     /**
@@ -1648,7 +1436,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroupType")
     public JAXBElement<EmployeeGroupType> createEmployeeGroupType(EmployeeGroupType value) {
-        return new JAXBElement<>(_EmployeeGroupType_QNAME, EmployeeGroupType.class, null, value);
+        return new JAXBElement<EmployeeGroupType>(_EmployeeGroupType_QNAME, EmployeeGroupType.class, null, value);
     }
 
     /**
@@ -1661,7 +1449,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeGroupReactionInfo")
     public JAXBElement<AcsEmployeeGroupReactionInfo> createAcsEmployeeGroupReactionInfo(AcsEmployeeGroupReactionInfo value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReactionInfo_QNAME, AcsEmployeeGroupReactionInfo.class, null, value);
+        return new JAXBElement<AcsEmployeeGroupReactionInfo>(_AcsEmployeeGroupReactionInfo_QNAME, AcsEmployeeGroupReactionInfo.class, null, value);
     }
 
     /**
@@ -1674,7 +1462,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeGroupReactionInfo")
     public JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo> createArrayOfAcsEmployeeGroupReactionInfo(ArrayOfAcsEmployeeGroupReactionInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeGroupReactionInfo_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo>(_ArrayOfAcsEmployeeGroupReactionInfo_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, null, value);
     }
 
     /**
@@ -1687,7 +1475,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeGroupReportInfo")
     public JAXBElement<AcsEmployeeGroupReportInfo> createAcsEmployeeGroupReportInfo(AcsEmployeeGroupReportInfo value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReportInfo_QNAME, AcsEmployeeGroupReportInfo.class, null, value);
+        return new JAXBElement<AcsEmployeeGroupReportInfo>(_AcsEmployeeGroupReportInfo_QNAME, AcsEmployeeGroupReportInfo.class, null, value);
     }
 
     /**
@@ -1700,7 +1488,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeGroupReportInfo")
     public JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> createArrayOfAcsEmployeeGroupReportInfo(ArrayOfAcsEmployeeGroupReportInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeGroupReportInfo_QNAME, ArrayOfAcsEmployeeGroupReportInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroupReportInfo>(_ArrayOfAcsEmployeeGroupReportInfo_QNAME, ArrayOfAcsEmployeeGroupReportInfo.class, null, value);
     }
 
     /**
@@ -1713,7 +1501,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeDocumentsData")
     public JAXBElement<AcsEmployeeDocumentsData> createAcsEmployeeDocumentsData(AcsEmployeeDocumentsData value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsData_QNAME, AcsEmployeeDocumentsData.class, null, value);
+        return new JAXBElement<AcsEmployeeDocumentsData>(_AcsEmployeeDocumentsData_QNAME, AcsEmployeeDocumentsData.class, null, value);
     }
 
     /**
@@ -1726,7 +1514,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeDocumentsSaveData")
     public JAXBElement<AcsEmployeeDocumentsSaveData> createAcsEmployeeDocumentsSaveData(AcsEmployeeDocumentsSaveData value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveData_QNAME, AcsEmployeeDocumentsSaveData.class, null, value);
+        return new JAXBElement<AcsEmployeeDocumentsSaveData>(_AcsEmployeeDocumentsSaveData_QNAME, AcsEmployeeDocumentsSaveData.class, null, value);
     }
 
     /**
@@ -1739,7 +1527,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeFull")
     public JAXBElement<AcsEmployeeFull> createAcsEmployeeFull(AcsEmployeeFull value) {
-        return new JAXBElement<>(_AcsEmployeeFull_QNAME, AcsEmployeeFull.class, null, value);
+        return new JAXBElement<AcsEmployeeFull>(_AcsEmployeeFull_QNAME, AcsEmployeeFull.class, null, value);
     }
 
     /**
@@ -1752,7 +1540,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeFullBase")
     public JAXBElement<AcsEmployeeFullBase> createAcsEmployeeFullBase(AcsEmployeeFullBase value) {
-        return new JAXBElement<>(_AcsEmployeeFullBase_QNAME, AcsEmployeeFullBase.class, null, value);
+        return new JAXBElement<AcsEmployeeFullBase>(_AcsEmployeeFullBase_QNAME, AcsEmployeeFullBase.class, null, value);
     }
 
     /**
@@ -1765,7 +1553,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeesInfoData2")
     public JAXBElement<EmployeesInfoData2> createEmployeesInfoData2(EmployeesInfoData2 value) {
-        return new JAXBElement<>(_EmployeesInfoData2_QNAME, EmployeesInfoData2 .class, null, value);
+        return new JAXBElement<EmployeesInfoData2>(_EmployeesInfoData2_QNAME, EmployeesInfoData2 .class, null, value);
     }
 
     /**
@@ -1778,7 +1566,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeInfo")
     public JAXBElement<ArrayOfAcsEmployeeInfo> createArrayOfAcsEmployeeInfo(ArrayOfAcsEmployeeInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeInfo_QNAME, ArrayOfAcsEmployeeInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeInfo>(_ArrayOfAcsEmployeeInfo_QNAME, ArrayOfAcsEmployeeInfo.class, null, value);
     }
 
     /**
@@ -1791,7 +1579,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeInfo")
     public JAXBElement<AcsEmployeeInfo> createAcsEmployeeInfo(AcsEmployeeInfo value) {
-        return new JAXBElement<>(_AcsEmployeeInfo_QNAME, AcsEmployeeInfo.class, null, value);
+        return new JAXBElement<AcsEmployeeInfo>(_AcsEmployeeInfo_QNAME, AcsEmployeeInfo.class, null, value);
     }
 
     /**
@@ -1804,7 +1592,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeFaceVectorFull")
     public JAXBElement<AcsEmployeeFaceVectorFull> createAcsEmployeeFaceVectorFull(AcsEmployeeFaceVectorFull value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorFull_QNAME, AcsEmployeeFaceVectorFull.class, null, value);
+        return new JAXBElement<AcsEmployeeFaceVectorFull>(_AcsEmployeeFaceVectorFull_QNAME, AcsEmployeeFaceVectorFull.class, null, value);
     }
 
     /**
@@ -1817,7 +1605,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeFaceVector")
     public JAXBElement<AcsEmployeeFaceVector> createAcsEmployeeFaceVector(AcsEmployeeFaceVector value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVector_QNAME, AcsEmployeeFaceVector.class, null, value);
+        return new JAXBElement<AcsEmployeeFaceVector>(_AcsEmployeeFaceVector_QNAME, AcsEmployeeFaceVector.class, null, value);
     }
 
     /**
@@ -1830,7 +1618,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FaceSourceType")
     public JAXBElement<FaceSourceType> createFaceSourceType(FaceSourceType value) {
-        return new JAXBElement<>(_FaceSourceType_QNAME, FaceSourceType.class, null, value);
+        return new JAXBElement<FaceSourceType>(_FaceSourceType_QNAME, FaceSourceType.class, null, value);
     }
 
     /**
@@ -1843,7 +1631,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeFaceVector")
     public JAXBElement<ArrayOfAcsEmployeeFaceVector> createArrayOfAcsEmployeeFaceVector(ArrayOfAcsEmployeeFaceVector value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeFaceVector_QNAME, ArrayOfAcsEmployeeFaceVector.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFaceVector>(_ArrayOfAcsEmployeeFaceVector_QNAME, ArrayOfAcsEmployeeFaceVector.class, null, value);
     }
 
     /**
@@ -1856,7 +1644,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeFaceVectorFull")
     public JAXBElement<ArrayOfAcsEmployeeFaceVectorFull> createArrayOfAcsEmployeeFaceVectorFull(ArrayOfAcsEmployeeFaceVectorFull value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeFaceVectorFull_QNAME, ArrayOfAcsEmployeeFaceVectorFull.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFaceVectorFull>(_ArrayOfAcsEmployeeFaceVectorFull_QNAME, ArrayOfAcsEmployeeFaceVectorFull.class, null, value);
     }
 
     /**
@@ -1869,7 +1657,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeInfo")
     public JAXBElement<EmployeeInfo> createEmployeeInfo(EmployeeInfo value) {
-        return new JAXBElement<>(_EmployeeInfo_QNAME, EmployeeInfo.class, null, value);
+        return new JAXBElement<EmployeeInfo>(_EmployeeInfo_QNAME, EmployeeInfo.class, null, value);
     }
 
     /**
@@ -1882,7 +1670,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfEmployeeViewFieldMetadata")
     public JAXBElement<ArrayOfEmployeeViewFieldMetadata> createArrayOfEmployeeViewFieldMetadata(ArrayOfEmployeeViewFieldMetadata value) {
-        return new JAXBElement<>(_ArrayOfEmployeeViewFieldMetadata_QNAME, ArrayOfEmployeeViewFieldMetadata.class, null, value);
+        return new JAXBElement<ArrayOfEmployeeViewFieldMetadata>(_ArrayOfEmployeeViewFieldMetadata_QNAME, ArrayOfEmployeeViewFieldMetadata.class, null, value);
     }
 
     /**
@@ -1895,7 +1683,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeViewFieldMetadata")
     public JAXBElement<EmployeeViewFieldMetadata> createEmployeeViewFieldMetadata(EmployeeViewFieldMetadata value) {
-        return new JAXBElement<>(_EmployeeViewFieldMetadata_QNAME, EmployeeViewFieldMetadata.class, null, value);
+        return new JAXBElement<EmployeeViewFieldMetadata>(_EmployeeViewFieldMetadata_QNAME, EmployeeViewFieldMetadata.class, null, value);
     }
 
     /**
@@ -1908,7 +1696,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "BaseViewFieldMetadata")
     public JAXBElement<BaseViewFieldMetadata> createBaseViewFieldMetadata(BaseViewFieldMetadata value) {
-        return new JAXBElement<>(_BaseViewFieldMetadata_QNAME, BaseViewFieldMetadata.class, null, value);
+        return new JAXBElement<BaseViewFieldMetadata>(_BaseViewFieldMetadata_QNAME, BaseViewFieldMetadata.class, null, value);
     }
 
     /**
@@ -1921,7 +1709,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeFull")
     public JAXBElement<ArrayOfAcsEmployeeFull> createArrayOfAcsEmployeeFull(ArrayOfAcsEmployeeFull value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeFull_QNAME, ArrayOfAcsEmployeeFull.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFull>(_ArrayOfAcsEmployeeFull_QNAME, ArrayOfAcsEmployeeFull.class, null, value);
     }
 
     /**
@@ -1934,7 +1722,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeePhotosInfo")
     public JAXBElement<ArrayOfAcsEmployeePhotosInfo> createArrayOfAcsEmployeePhotosInfo(ArrayOfAcsEmployeePhotosInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeePhotosInfo_QNAME, ArrayOfAcsEmployeePhotosInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeePhotosInfo>(_ArrayOfAcsEmployeePhotosInfo_QNAME, ArrayOfAcsEmployeePhotosInfo.class, null, value);
     }
 
     /**
@@ -1947,7 +1735,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeePhotosInfo")
     public JAXBElement<AcsEmployeePhotosInfo> createAcsEmployeePhotosInfo(AcsEmployeePhotosInfo value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfo_QNAME, AcsEmployeePhotosInfo.class, null, value);
+        return new JAXBElement<AcsEmployeePhotosInfo>(_AcsEmployeePhotosInfo_QNAME, AcsEmployeePhotosInfo.class, null, value);
     }
 
     /**
@@ -1960,7 +1748,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAscEmployeePhotoModificationDateTimeInfo")
     public JAXBElement<ArrayOfAscEmployeePhotoModificationDateTimeInfo> createArrayOfAscEmployeePhotoModificationDateTimeInfo(ArrayOfAscEmployeePhotoModificationDateTimeInfo value) {
-        return new JAXBElement<>(_ArrayOfAscEmployeePhotoModificationDateTimeInfo_QNAME, ArrayOfAscEmployeePhotoModificationDateTimeInfo.class, null, value);
+        return new JAXBElement<ArrayOfAscEmployeePhotoModificationDateTimeInfo>(_ArrayOfAscEmployeePhotoModificationDateTimeInfo_QNAME, ArrayOfAscEmployeePhotoModificationDateTimeInfo.class, null, value);
     }
 
     /**
@@ -1973,7 +1761,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AscEmployeePhotoModificationDateTimeInfo")
     public JAXBElement<AscEmployeePhotoModificationDateTimeInfo> createAscEmployeePhotoModificationDateTimeInfo(AscEmployeePhotoModificationDateTimeInfo value) {
-        return new JAXBElement<>(_AscEmployeePhotoModificationDateTimeInfo_QNAME, AscEmployeePhotoModificationDateTimeInfo.class, null, value);
+        return new JAXBElement<AscEmployeePhotoModificationDateTimeInfo>(_AscEmployeePhotoModificationDateTimeInfo_QNAME, AscEmployeePhotoModificationDateTimeInfo.class, null, value);
     }
 
     /**
@@ -1986,7 +1774,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeImageType")
     public JAXBElement<EmployeeImageType> createEmployeeImageType(EmployeeImageType value) {
-        return new JAXBElement<>(_EmployeeImageType_QNAME, EmployeeImageType.class, null, value);
+        return new JAXBElement<EmployeeImageType>(_EmployeeImageType_QNAME, EmployeeImageType.class, null, value);
     }
 
     /**
@@ -1999,7 +1787,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfEmployeeShortInfo")
     public JAXBElement<ArrayOfEmployeeShortInfo> createArrayOfEmployeeShortInfo(ArrayOfEmployeeShortInfo value) {
-        return new JAXBElement<>(_ArrayOfEmployeeShortInfo_QNAME, ArrayOfEmployeeShortInfo.class, null, value);
+        return new JAXBElement<ArrayOfEmployeeShortInfo>(_ArrayOfEmployeeShortInfo_QNAME, ArrayOfEmployeeShortInfo.class, null, value);
     }
 
     /**
@@ -2012,7 +1800,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeShortInfo")
     public JAXBElement<EmployeeShortInfo> createEmployeeShortInfo(EmployeeShortInfo value) {
-        return new JAXBElement<>(_EmployeeShortInfo_QNAME, EmployeeShortInfo.class, null, value);
+        return new JAXBElement<EmployeeShortInfo>(_EmployeeShortInfo_QNAME, EmployeeShortInfo.class, null, value);
     }
 
     /**
@@ -2025,7 +1813,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfEmployeeModificationInfo")
     public JAXBElement<ArrayOfEmployeeModificationInfo> createArrayOfEmployeeModificationInfo(ArrayOfEmployeeModificationInfo value) {
-        return new JAXBElement<>(_ArrayOfEmployeeModificationInfo_QNAME, ArrayOfEmployeeModificationInfo.class, null, value);
+        return new JAXBElement<ArrayOfEmployeeModificationInfo>(_ArrayOfEmployeeModificationInfo_QNAME, ArrayOfEmployeeModificationInfo.class, null, value);
     }
 
     /**
@@ -2038,7 +1826,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeModificationInfo")
     public JAXBElement<EmployeeModificationInfo> createEmployeeModificationInfo(EmployeeModificationInfo value) {
-        return new JAXBElement<>(_EmployeeModificationInfo_QNAME, EmployeeModificationInfo.class, null, value);
+        return new JAXBElement<EmployeeModificationInfo>(_EmployeeModificationInfo_QNAME, EmployeeModificationInfo.class, null, value);
     }
 
     /**
@@ -2051,7 +1839,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeSaveData")
     public JAXBElement<AcsEmployeeSaveData> createAcsEmployeeSaveData(AcsEmployeeSaveData value) {
-        return new JAXBElement<>(_AcsEmployeeSaveData_QNAME, AcsEmployeeSaveData.class, null, value);
+        return new JAXBElement<AcsEmployeeSaveData>(_AcsEmployeeSaveData_QNAME, AcsEmployeeSaveData.class, null, value);
     }
 
     /**
@@ -2064,7 +1852,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeesSortedColumn")
     public JAXBElement<EmployeesSortedColumn> createEmployeesSortedColumn(EmployeesSortedColumn value) {
-        return new JAXBElement<>(_EmployeesSortedColumn_QNAME, EmployeesSortedColumn.class, null, value);
+        return new JAXBElement<EmployeesSortedColumn>(_EmployeesSortedColumn_QNAME, EmployeesSortedColumn.class, null, value);
     }
 
     /**
@@ -2077,7 +1865,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeesData")
     public JAXBElement<EmployeesData> createEmployeesData(EmployeesData value) {
-        return new JAXBElement<>(_EmployeesData_QNAME, EmployeesData.class, null, value);
+        return new JAXBElement<EmployeesData>(_EmployeesData_QNAME, EmployeesData.class, null, value);
     }
 
     /**
@@ -2090,7 +1878,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfEmployeeCurentInfo")
     public JAXBElement<ArrayOfEmployeeCurentInfo> createArrayOfEmployeeCurentInfo(ArrayOfEmployeeCurentInfo value) {
-        return new JAXBElement<>(_ArrayOfEmployeeCurentInfo_QNAME, ArrayOfEmployeeCurentInfo.class, null, value);
+        return new JAXBElement<ArrayOfEmployeeCurentInfo>(_ArrayOfEmployeeCurentInfo_QNAME, ArrayOfEmployeeCurentInfo.class, null, value);
     }
 
     /**
@@ -2103,7 +1891,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeCurentInfo")
     public JAXBElement<EmployeeCurentInfo> createEmployeeCurentInfo(EmployeeCurentInfo value) {
-        return new JAXBElement<>(_EmployeeCurentInfo_QNAME, EmployeeCurentInfo.class, null, value);
+        return new JAXBElement<EmployeeCurentInfo>(_EmployeeCurentInfo_QNAME, EmployeeCurentInfo.class, null, value);
     }
 
     /**
@@ -2116,7 +1904,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAcsEmployeeFaceVectorSaveData")
     public JAXBElement<ArrayOfAcsEmployeeFaceVectorSaveData> createArrayOfAcsEmployeeFaceVectorSaveData(ArrayOfAcsEmployeeFaceVectorSaveData value) {
-        return new JAXBElement<>(_ArrayOfAcsEmployeeFaceVectorSaveData_QNAME, ArrayOfAcsEmployeeFaceVectorSaveData.class, null, value);
+        return new JAXBElement<ArrayOfAcsEmployeeFaceVectorSaveData>(_ArrayOfAcsEmployeeFaceVectorSaveData_QNAME, ArrayOfAcsEmployeeFaceVectorSaveData.class, null, value);
     }
 
     /**
@@ -2129,7 +1917,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AcsEmployeeFaceVectorSaveData")
     public JAXBElement<AcsEmployeeFaceVectorSaveData> createAcsEmployeeFaceVectorSaveData(AcsEmployeeFaceVectorSaveData value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorSaveData_QNAME, AcsEmployeeFaceVectorSaveData.class, null, value);
+        return new JAXBElement<AcsEmployeeFaceVectorSaveData>(_AcsEmployeeFaceVectorSaveData_QNAME, AcsEmployeeFaceVectorSaveData.class, null, value);
     }
 
     /**
@@ -2142,7 +1930,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ArrayOfAttachedEmployeesForVehicle")
     public JAXBElement<ArrayOfAttachedEmployeesForVehicle> createArrayOfAttachedEmployeesForVehicle(ArrayOfAttachedEmployeesForVehicle value) {
-        return new JAXBElement<>(_ArrayOfAttachedEmployeesForVehicle_QNAME, ArrayOfAttachedEmployeesForVehicle.class, null, value);
+        return new JAXBElement<ArrayOfAttachedEmployeesForVehicle>(_ArrayOfAttachedEmployeesForVehicle_QNAME, ArrayOfAttachedEmployeesForVehicle.class, null, value);
     }
 
     /**
@@ -2155,7 +1943,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AttachedEmployeesForVehicle")
     public JAXBElement<AttachedEmployeesForVehicle> createAttachedEmployeesForVehicle(AttachedEmployeesForVehicle value) {
-        return new JAXBElement<>(_AttachedEmployeesForVehicle_QNAME, AttachedEmployeesForVehicle.class, null, value);
+        return new JAXBElement<AttachedEmployeesForVehicle>(_AttachedEmployeesForVehicle_QNAME, AttachedEmployeesForVehicle.class, null, value);
     }
 
     /**
@@ -2168,7 +1956,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "AssignmentFilter")
     public JAXBElement<AssignmentFilter> createAssignmentFilter(AssignmentFilter value) {
-        return new JAXBElement<>(_AssignmentFilter_QNAME, AssignmentFilter.class, null, value);
+        return new JAXBElement<AssignmentFilter>(_AssignmentFilter_QNAME, AssignmentFilter.class, null, value);
     }
 
     /**
@@ -2181,7 +1969,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "EmployeeAssignmentType")
     public JAXBElement<EmployeeAssignmentType> createEmployeeAssignmentType(EmployeeAssignmentType value) {
-        return new JAXBElement<>(_EmployeeAssignmentType_QNAME, EmployeeAssignmentType.class, null, value);
+        return new JAXBElement<EmployeeAssignmentType>(_EmployeeAssignmentType_QNAME, EmployeeAssignmentType.class, null, value);
     }
 
     /**
@@ -2194,7 +1982,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "ArrayOfAcsAlcoGroupSlimInfo")
     public JAXBElement<ArrayOfAcsAlcoGroupSlimInfo> createArrayOfAcsAlcoGroupSlimInfo(ArrayOfAcsAlcoGroupSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsAlcoGroupSlimInfo_QNAME, ArrayOfAcsAlcoGroupSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsAlcoGroupSlimInfo>(_ArrayOfAcsAlcoGroupSlimInfo_QNAME, ArrayOfAcsAlcoGroupSlimInfo.class, null, value);
     }
 
     /**
@@ -2207,7 +1995,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "AcsAlcoGroupSlimInfo")
     public JAXBElement<AcsAlcoGroupSlimInfo> createAcsAlcoGroupSlimInfo(AcsAlcoGroupSlimInfo value) {
-        return new JAXBElement<>(_AcsAlcoGroupSlimInfo_QNAME, AcsAlcoGroupSlimInfo.class, null, value);
+        return new JAXBElement<AcsAlcoGroupSlimInfo>(_AcsAlcoGroupSlimInfo_QNAME, AcsAlcoGroupSlimInfo.class, null, value);
     }
 
     /**
@@ -2220,7 +2008,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "AcsAlcoGroupSaveData")
     public JAXBElement<AcsAlcoGroupSaveData> createAcsAlcoGroupSaveData(AcsAlcoGroupSaveData value) {
-        return new JAXBElement<>(_AcsAlcoGroupSaveData_QNAME, AcsAlcoGroupSaveData.class, null, value);
+        return new JAXBElement<AcsAlcoGroupSaveData>(_AcsAlcoGroupSaveData_QNAME, AcsAlcoGroupSaveData.class, null, value);
     }
 
     /**
@@ -2233,7 +2021,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "ArrayOfEmployeeGroupForAlcoGroupFull")
     public JAXBElement<ArrayOfEmployeeGroupForAlcoGroupFull> createArrayOfEmployeeGroupForAlcoGroupFull(ArrayOfEmployeeGroupForAlcoGroupFull value) {
-        return new JAXBElement<>(_ArrayOfEmployeeGroupForAlcoGroupFull_QNAME, ArrayOfEmployeeGroupForAlcoGroupFull.class, null, value);
+        return new JAXBElement<ArrayOfEmployeeGroupForAlcoGroupFull>(_ArrayOfEmployeeGroupForAlcoGroupFull_QNAME, ArrayOfEmployeeGroupForAlcoGroupFull.class, null, value);
     }
 
     /**
@@ -2246,7 +2034,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "EmployeeGroupForAlcoGroupFull")
     public JAXBElement<EmployeeGroupForAlcoGroupFull> createEmployeeGroupForAlcoGroupFull(EmployeeGroupForAlcoGroupFull value) {
-        return new JAXBElement<>(_EmployeeGroupForAlcoGroupFull_QNAME, EmployeeGroupForAlcoGroupFull.class, null, value);
+        return new JAXBElement<EmployeeGroupForAlcoGroupFull>(_EmployeeGroupForAlcoGroupFull_QNAME, EmployeeGroupForAlcoGroupFull.class, null, value);
     }
 
     /**
@@ -2259,7 +2047,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "EmployeeGroupForAlcoGroup")
     public JAXBElement<EmployeeGroupForAlcoGroup> createEmployeeGroupForAlcoGroup(EmployeeGroupForAlcoGroup value) {
-        return new JAXBElement<>(_EmployeeGroupForAlcoGroup_QNAME, EmployeeGroupForAlcoGroup.class, null, value);
+        return new JAXBElement<EmployeeGroupForAlcoGroup>(_EmployeeGroupForAlcoGroup_QNAME, EmployeeGroupForAlcoGroup.class, null, value);
     }
 
     /**
@@ -2272,7 +2060,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "ChangeDataResult")
     public JAXBElement<ChangeDataResult> createChangeDataResult(ChangeDataResult value) {
-        return new JAXBElement<>(_ChangeDataResult_QNAME, ChangeDataResult.class, null, value);
+        return new JAXBElement<ChangeDataResult>(_ChangeDataResult_QNAME, ChangeDataResult.class, null, value);
     }
 
     /**
@@ -2285,7 +2073,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "ChangePositionCodesResult")
     public JAXBElement<ChangePositionCodesResult> createChangePositionCodesResult(ChangePositionCodesResult value) {
-        return new JAXBElement<>(_ChangePositionCodesResult_QNAME, ChangePositionCodesResult.class, null, value);
+        return new JAXBElement<ChangePositionCodesResult>(_ChangePositionCodesResult_QNAME, ChangePositionCodesResult.class, null, value);
     }
 
     /**
@@ -2298,7 +2086,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "ArrayOfEmployeeGroupForAlcoGroup")
     public JAXBElement<ArrayOfEmployeeGroupForAlcoGroup> createArrayOfEmployeeGroupForAlcoGroup(ArrayOfEmployeeGroupForAlcoGroup value) {
-        return new JAXBElement<>(_ArrayOfEmployeeGroupForAlcoGroup_QNAME, ArrayOfEmployeeGroupForAlcoGroup.class, null, value);
+        return new JAXBElement<ArrayOfEmployeeGroupForAlcoGroup>(_ArrayOfEmployeeGroupForAlcoGroup_QNAME, ArrayOfEmployeeGroupForAlcoGroup.class, null, value);
     }
 
     /**
@@ -2311,7 +2099,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "ArrayOfAcsBoxAccessLevelElementSlimInfo")
     public JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> createArrayOfAcsBoxAccessLevelElementSlimInfo(ArrayOfAcsBoxAccessLevelElementSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsBoxAccessLevelElementSlimInfo_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo>(_ArrayOfAcsBoxAccessLevelElementSlimInfo_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, null, value);
     }
 
     /**
@@ -2324,7 +2112,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "AcsBoxAccessLevelElementSlimInfo")
     public JAXBElement<AcsBoxAccessLevelElementSlimInfo> createAcsBoxAccessLevelElementSlimInfo(AcsBoxAccessLevelElementSlimInfo value) {
-        return new JAXBElement<>(_AcsBoxAccessLevelElementSlimInfo_QNAME, AcsBoxAccessLevelElementSlimInfo.class, null, value);
+        return new JAXBElement<AcsBoxAccessLevelElementSlimInfo>(_AcsBoxAccessLevelElementSlimInfo_QNAME, AcsBoxAccessLevelElementSlimInfo.class, null, value);
     }
 
     /**
@@ -2337,7 +2125,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "AcsBoxAccessElementSaveInfo")
     public JAXBElement<AcsBoxAccessElementSaveInfo> createAcsBoxAccessElementSaveInfo(AcsBoxAccessElementSaveInfo value) {
-        return new JAXBElement<>(_AcsBoxAccessElementSaveInfo_QNAME, AcsBoxAccessElementSaveInfo.class, null, value);
+        return new JAXBElement<AcsBoxAccessElementSaveInfo>(_AcsBoxAccessElementSaveInfo_QNAME, AcsBoxAccessElementSaveInfo.class, null, value);
     }
 
     /**
@@ -2350,7 +2138,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "ArrayOfAcsBoxAccessLevelSlimInfo")
     public JAXBElement<ArrayOfAcsBoxAccessLevelSlimInfo> createArrayOfAcsBoxAccessLevelSlimInfo(ArrayOfAcsBoxAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsBoxAccessLevelSlimInfo_QNAME, ArrayOfAcsBoxAccessLevelSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessLevelSlimInfo>(_ArrayOfAcsBoxAccessLevelSlimInfo_QNAME, ArrayOfAcsBoxAccessLevelSlimInfo.class, null, value);
     }
 
     /**
@@ -2363,7 +2151,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "AcsBoxAccessLevelSlimInfo")
     public JAXBElement<AcsBoxAccessLevelSlimInfo> createAcsBoxAccessLevelSlimInfo(AcsBoxAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_AcsBoxAccessLevelSlimInfo_QNAME, AcsBoxAccessLevelSlimInfo.class, null, value);
+        return new JAXBElement<AcsBoxAccessLevelSlimInfo>(_AcsBoxAccessLevelSlimInfo_QNAME, AcsBoxAccessLevelSlimInfo.class, null, value);
     }
 
     /**
@@ -2376,7 +2164,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "AcsBoxAccessLevelSaveData")
     public JAXBElement<AcsBoxAccessLevelSaveData> createAcsBoxAccessLevelSaveData(AcsBoxAccessLevelSaveData value) {
-        return new JAXBElement<>(_AcsBoxAccessLevelSaveData_QNAME, AcsBoxAccessLevelSaveData.class, null, value);
+        return new JAXBElement<AcsBoxAccessLevelSaveData>(_AcsBoxAccessLevelSaveData_QNAME, AcsBoxAccessLevelSaveData.class, null, value);
     }
 
     /**
@@ -2389,7 +2177,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "BoxAccessLevelMode")
     public JAXBElement<BoxAccessLevelMode> createBoxAccessLevelMode(BoxAccessLevelMode value) {
-        return new JAXBElement<>(_BoxAccessLevelMode_QNAME, BoxAccessLevelMode.class, null, value);
+        return new JAXBElement<BoxAccessLevelMode>(_BoxAccessLevelMode_QNAME, BoxAccessLevelMode.class, null, value);
     }
 
     /**
@@ -2402,7 +2190,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "ArrayOfAcsBoxAccessElementSaveInfo")
     public JAXBElement<ArrayOfAcsBoxAccessElementSaveInfo> createArrayOfAcsBoxAccessElementSaveInfo(ArrayOfAcsBoxAccessElementSaveInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsBoxAccessElementSaveInfo_QNAME, ArrayOfAcsBoxAccessElementSaveInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessElementSaveInfo>(_ArrayOfAcsBoxAccessElementSaveInfo_QNAME, ArrayOfAcsBoxAccessElementSaveInfo.class, null, value);
     }
 
     /**
@@ -2415,7 +2203,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "ArrayOfAcsAccessLevelSlimInfo")
     public JAXBElement<ArrayOfAcsAccessLevelSlimInfo> createArrayOfAcsAccessLevelSlimInfo(ArrayOfAcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsAccessLevelSlimInfo_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSlimInfo>(_ArrayOfAcsAccessLevelSlimInfo_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, null, value);
     }
 
     /**
@@ -2428,7 +2216,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "AcsAccessLevelSlimInfo")
     public JAXBElement<AcsAccessLevelSlimInfo> createAcsAccessLevelSlimInfo(AcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_AcsAccessLevelSlimInfo_QNAME, AcsAccessLevelSlimInfo.class, null, value);
+        return new JAXBElement<AcsAccessLevelSlimInfo>(_AcsAccessLevelSlimInfo_QNAME, AcsAccessLevelSlimInfo.class, null, value);
     }
 
     /**
@@ -2441,7 +2229,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "AcsAccessLevelSaveData")
     public JAXBElement<AcsAccessLevelSaveData> createAcsAccessLevelSaveData(AcsAccessLevelSaveData value) {
-        return new JAXBElement<>(_AcsAccessLevelSaveData_QNAME, AcsAccessLevelSaveData.class, null, value);
+        return new JAXBElement<AcsAccessLevelSaveData>(_AcsAccessLevelSaveData_QNAME, AcsAccessLevelSaveData.class, null, value);
     }
 
     /**
@@ -2454,7 +2242,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "AcsAccessLevelSlimBase")
     public JAXBElement<AcsAccessLevelSlimBase> createAcsAccessLevelSlimBase(AcsAccessLevelSlimBase value) {
-        return new JAXBElement<>(_AcsAccessLevelSlimBase_QNAME, AcsAccessLevelSlimBase.class, null, value);
+        return new JAXBElement<AcsAccessLevelSlimBase>(_AcsAccessLevelSlimBase_QNAME, AcsAccessLevelSlimBase.class, null, value);
     }
 
     /**
@@ -2467,7 +2255,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "AccessLevelSortedColumn")
     public JAXBElement<AccessLevelSortedColumn> createAccessLevelSortedColumn(AccessLevelSortedColumn value) {
-        return new JAXBElement<>(_AccessLevelSortedColumn_QNAME, AccessLevelSortedColumn.class, null, value);
+        return new JAXBElement<AccessLevelSortedColumn>(_AccessLevelSortedColumn_QNAME, AccessLevelSortedColumn.class, null, value);
     }
 
     /**
@@ -2480,7 +2268,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "AccessLevelsOwner")
     public JAXBElement<AccessLevelsOwner> createAccessLevelsOwner(AccessLevelsOwner value) {
-        return new JAXBElement<>(_AccessLevelsOwner_QNAME, AccessLevelsOwner.class, null, value);
+        return new JAXBElement<AccessLevelsOwner>(_AccessLevelsOwner_QNAME, AccessLevelsOwner.class, null, value);
     }
 
     /**
@@ -2493,7 +2281,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "LAccessLevelsData")
     public JAXBElement<LAccessLevelsData> createLAccessLevelsData(LAccessLevelsData value) {
-        return new JAXBElement<>(_LAccessLevelsData_QNAME, LAccessLevelsData.class, null, value);
+        return new JAXBElement<LAccessLevelsData>(_LAccessLevelsData_QNAME, LAccessLevelsData.class, null, value);
     }
 
     /**
@@ -2506,7 +2294,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "ArrayOfAcsAccessLevelSimpleInfo")
     public JAXBElement<ArrayOfAcsAccessLevelSimpleInfo> createArrayOfAcsAccessLevelSimpleInfo(ArrayOfAcsAccessLevelSimpleInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsAccessLevelSimpleInfo_QNAME, ArrayOfAcsAccessLevelSimpleInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSimpleInfo>(_ArrayOfAcsAccessLevelSimpleInfo_QNAME, ArrayOfAcsAccessLevelSimpleInfo.class, null, value);
     }
 
     /**
@@ -2519,7 +2307,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "AcsAccessLevelSimpleInfo")
     public JAXBElement<AcsAccessLevelSimpleInfo> createAcsAccessLevelSimpleInfo(AcsAccessLevelSimpleInfo value) {
-        return new JAXBElement<>(_AcsAccessLevelSimpleInfo_QNAME, AcsAccessLevelSimpleInfo.class, null, value);
+        return new JAXBElement<AcsAccessLevelSimpleInfo>(_AcsAccessLevelSimpleInfo_QNAME, AcsAccessLevelSimpleInfo.class, null, value);
     }
 
     /**
@@ -2532,7 +2320,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "ArrayOfAcsKeyInfo")
     public JAXBElement<ArrayOfAcsKeyInfo> createArrayOfAcsKeyInfo(ArrayOfAcsKeyInfo value) {
-        return new JAXBElement<>(_ArrayOfAcsKeyInfo_QNAME, ArrayOfAcsKeyInfo.class, null, value);
+        return new JAXBElement<ArrayOfAcsKeyInfo>(_ArrayOfAcsKeyInfo_QNAME, ArrayOfAcsKeyInfo.class, null, value);
     }
 
     /**
@@ -2545,7 +2333,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "AcsKeyInfo")
     public JAXBElement<AcsKeyInfo> createAcsKeyInfo(AcsKeyInfo value) {
-        return new JAXBElement<>(_AcsKeyInfo_QNAME, AcsKeyInfo.class, null, value);
+        return new JAXBElement<AcsKeyInfo>(_AcsKeyInfo_QNAME, AcsKeyInfo.class, null, value);
     }
 
     /**
@@ -2558,7 +2346,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "AcsKeySaveData")
     public JAXBElement<AcsKeySaveData> createAcsKeySaveData(AcsKeySaveData value) {
-        return new JAXBElement<>(_AcsKeySaveData_QNAME, AcsKeySaveData.class, null, value);
+        return new JAXBElement<AcsKeySaveData>(_AcsKeySaveData_QNAME, AcsKeySaveData.class, null, value);
     }
 
     /**
@@ -2571,7 +2359,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsScheduleSlimInfo")
     public JAXBElement<AcsScheduleSlimInfo> createAcsScheduleSlimInfo(AcsScheduleSlimInfo value) {
-        return new JAXBElement<>(_AcsScheduleSlimInfo_QNAME, AcsScheduleSlimInfo.class, null, value);
+        return new JAXBElement<AcsScheduleSlimInfo>(_AcsScheduleSlimInfo_QNAME, AcsScheduleSlimInfo.class, null, value);
     }
 
     /**
@@ -2584,7 +2372,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsScheduleType")
     public JAXBElement<AcsScheduleType> createAcsScheduleType(AcsScheduleType value) {
-        return new JAXBElement<>(_AcsScheduleType_QNAME, AcsScheduleType.class, null, value);
+        return new JAXBElement<AcsScheduleType>(_AcsScheduleType_QNAME, AcsScheduleType.class, null, value);
     }
 
     /**
@@ -2597,7 +2385,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsDaySchedule")
     public JAXBElement<ArrayOfAcsDaySchedule> createArrayOfAcsDaySchedule(ArrayOfAcsDaySchedule value) {
-        return new JAXBElement<>(_ArrayOfAcsDaySchedule_QNAME, ArrayOfAcsDaySchedule.class, null, value);
+        return new JAXBElement<ArrayOfAcsDaySchedule>(_ArrayOfAcsDaySchedule_QNAME, ArrayOfAcsDaySchedule.class, null, value);
     }
 
     /**
@@ -2610,7 +2398,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsDaySchedule")
     public JAXBElement<AcsDaySchedule> createAcsDaySchedule(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsDaySchedule_QNAME, AcsDaySchedule.class, null, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsDaySchedule_QNAME, AcsDaySchedule.class, null, value);
     }
 
     /**
@@ -2623,7 +2411,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsScheduleBase")
     public JAXBElement<AcsScheduleBase> createAcsScheduleBase(AcsScheduleBase value) {
-        return new JAXBElement<>(_AcsScheduleBase_QNAME, AcsScheduleBase.class, null, value);
+        return new JAXBElement<AcsScheduleBase>(_AcsScheduleBase_QNAME, AcsScheduleBase.class, null, value);
     }
 
     /**
@@ -2636,7 +2424,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsScheduleBuiltInType")
     public JAXBElement<AcsScheduleBuiltInType> createAcsScheduleBuiltInType(AcsScheduleBuiltInType value) {
-        return new JAXBElement<>(_AcsScheduleBuiltInType_QNAME, AcsScheduleBuiltInType.class, null, value);
+        return new JAXBElement<AcsScheduleBuiltInType>(_AcsScheduleBuiltInType_QNAME, AcsScheduleBuiltInType.class, null, value);
     }
 
     /**
@@ -2649,7 +2437,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "RGDayIntervals")
     public JAXBElement<RGDayIntervals> createRGDayIntervals(RGDayIntervals value) {
-        return new JAXBElement<>(_RGDayIntervals_QNAME, RGDayIntervals.class, null, value);
+        return new JAXBElement<RGDayIntervals>(_RGDayIntervals_QNAME, RGDayIntervals.class, null, value);
     }
 
     /**
@@ -2662,7 +2450,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfRGTimeInterval")
     public JAXBElement<ArrayOfRGTimeInterval> createArrayOfRGTimeInterval(ArrayOfRGTimeInterval value) {
-        return new JAXBElement<>(_ArrayOfRGTimeInterval_QNAME, ArrayOfRGTimeInterval.class, null, value);
+        return new JAXBElement<ArrayOfRGTimeInterval>(_ArrayOfRGTimeInterval_QNAME, ArrayOfRGTimeInterval.class, null, value);
     }
 
     /**
@@ -2675,7 +2463,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "RGTimeInterval")
     public JAXBElement<RGTimeInterval> createRGTimeInterval(RGTimeInterval value) {
-        return new JAXBElement<>(_RGTimeInterval_QNAME, RGTimeInterval.class, null, value);
+        return new JAXBElement<RGTimeInterval>(_RGTimeInterval_QNAME, RGTimeInterval.class, null, value);
     }
 
     /**
@@ -2688,7 +2476,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsTimeIntervalType")
     public JAXBElement<AcsTimeIntervalType> createAcsTimeIntervalType(AcsTimeIntervalType value) {
-        return new JAXBElement<>(_AcsTimeIntervalType_QNAME, AcsTimeIntervalType.class, null, value);
+        return new JAXBElement<AcsTimeIntervalType>(_AcsTimeIntervalType_QNAME, AcsTimeIntervalType.class, null, value);
     }
 
     /**
@@ -2701,7 +2489,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsScheduleOwnerType")
     public JAXBElement<AcsScheduleOwnerType> createAcsScheduleOwnerType(AcsScheduleOwnerType value) {
-        return new JAXBElement<>(_AcsScheduleOwnerType_QNAME, AcsScheduleOwnerType.class, null, value);
+        return new JAXBElement<AcsScheduleOwnerType>(_AcsScheduleOwnerType_QNAME, AcsScheduleOwnerType.class, null, value);
     }
 
     /**
@@ -2714,7 +2502,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsMultiDaySchedule")
     public JAXBElement<ArrayOfAcsMultiDaySchedule> createArrayOfAcsMultiDaySchedule(ArrayOfAcsMultiDaySchedule value) {
-        return new JAXBElement<>(_ArrayOfAcsMultiDaySchedule_QNAME, ArrayOfAcsMultiDaySchedule.class, null, value);
+        return new JAXBElement<ArrayOfAcsMultiDaySchedule>(_ArrayOfAcsMultiDaySchedule_QNAME, ArrayOfAcsMultiDaySchedule.class, null, value);
     }
 
     /**
@@ -2727,7 +2515,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsMultiDaySchedule")
     public JAXBElement<AcsMultiDaySchedule> createAcsMultiDaySchedule(AcsMultiDaySchedule value) {
-        return new JAXBElement<>(_AcsMultiDaySchedule_QNAME, AcsMultiDaySchedule.class, null, value);
+        return new JAXBElement<AcsMultiDaySchedule>(_AcsMultiDaySchedule_QNAME, AcsMultiDaySchedule.class, null, value);
     }
 
     /**
@@ -2740,7 +2528,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfRGDayIntervals")
     public JAXBElement<ArrayOfRGDayIntervals> createArrayOfRGDayIntervals(ArrayOfRGDayIntervals value) {
-        return new JAXBElement<>(_ArrayOfRGDayIntervals_QNAME, ArrayOfRGDayIntervals.class, null, value);
+        return new JAXBElement<ArrayOfRGDayIntervals>(_ArrayOfRGDayIntervals_QNAME, ArrayOfRGDayIntervals.class, null, value);
     }
 
     /**
@@ -2753,7 +2541,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsWeekScheduleSlim")
     public JAXBElement<ArrayOfAcsWeekScheduleSlim> createArrayOfAcsWeekScheduleSlim(ArrayOfAcsWeekScheduleSlim value) {
-        return new JAXBElement<>(_ArrayOfAcsWeekScheduleSlim_QNAME, ArrayOfAcsWeekScheduleSlim.class, null, value);
+        return new JAXBElement<ArrayOfAcsWeekScheduleSlim>(_ArrayOfAcsWeekScheduleSlim_QNAME, ArrayOfAcsWeekScheduleSlim.class, null, value);
     }
 
     /**
@@ -2766,7 +2554,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsWeekScheduleSlim")
     public JAXBElement<AcsWeekScheduleSlim> createAcsWeekScheduleSlim(AcsWeekScheduleSlim value) {
-        return new JAXBElement<>(_AcsWeekScheduleSlim_QNAME, AcsWeekScheduleSlim.class, null, value);
+        return new JAXBElement<AcsWeekScheduleSlim>(_AcsWeekScheduleSlim_QNAME, AcsWeekScheduleSlim.class, null, value);
     }
 
     /**
@@ -2779,7 +2567,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsWeekSlim")
     public JAXBElement<ArrayOfAcsWeekSlim> createArrayOfAcsWeekSlim(ArrayOfAcsWeekSlim value) {
-        return new JAXBElement<>(_ArrayOfAcsWeekSlim_QNAME, ArrayOfAcsWeekSlim.class, null, value);
+        return new JAXBElement<ArrayOfAcsWeekSlim>(_ArrayOfAcsWeekSlim_QNAME, ArrayOfAcsWeekSlim.class, null, value);
     }
 
     /**
@@ -2792,7 +2580,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsWeekSlim")
     public JAXBElement<AcsWeekSlim> createAcsWeekSlim(AcsWeekSlim value) {
-        return new JAXBElement<>(_AcsWeekSlim_QNAME, AcsWeekSlim.class, null, value);
+        return new JAXBElement<AcsWeekSlim>(_AcsWeekSlim_QNAME, AcsWeekSlim.class, null, value);
     }
 
     /**
@@ -2805,7 +2593,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsWeekScheduleFull")
     public JAXBElement<ArrayOfAcsWeekScheduleFull> createArrayOfAcsWeekScheduleFull(ArrayOfAcsWeekScheduleFull value) {
-        return new JAXBElement<>(_ArrayOfAcsWeekScheduleFull_QNAME, ArrayOfAcsWeekScheduleFull.class, null, value);
+        return new JAXBElement<ArrayOfAcsWeekScheduleFull>(_ArrayOfAcsWeekScheduleFull_QNAME, ArrayOfAcsWeekScheduleFull.class, null, value);
     }
 
     /**
@@ -2818,7 +2606,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsWeekScheduleFull")
     public JAXBElement<AcsWeekScheduleFull> createAcsWeekScheduleFull(AcsWeekScheduleFull value) {
-        return new JAXBElement<>(_AcsWeekScheduleFull_QNAME, AcsWeekScheduleFull.class, null, value);
+        return new JAXBElement<AcsWeekScheduleFull>(_AcsWeekScheduleFull_QNAME, AcsWeekScheduleFull.class, null, value);
     }
 
     /**
@@ -2831,7 +2619,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsWeekFull")
     public JAXBElement<ArrayOfAcsWeekFull> createArrayOfAcsWeekFull(ArrayOfAcsWeekFull value) {
-        return new JAXBElement<>(_ArrayOfAcsWeekFull_QNAME, ArrayOfAcsWeekFull.class, null, value);
+        return new JAXBElement<ArrayOfAcsWeekFull>(_ArrayOfAcsWeekFull_QNAME, ArrayOfAcsWeekFull.class, null, value);
     }
 
     /**
@@ -2844,7 +2632,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsWeekFull")
     public JAXBElement<AcsWeekFull> createAcsWeekFull(AcsWeekFull value) {
-        return new JAXBElement<>(_AcsWeekFull_QNAME, AcsWeekFull.class, null, value);
+        return new JAXBElement<AcsWeekFull>(_AcsWeekFull_QNAME, AcsWeekFull.class, null, value);
     }
 
     /**
@@ -2857,7 +2645,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsCustomDay")
     public JAXBElement<ArrayOfAcsCustomDay> createArrayOfAcsCustomDay(ArrayOfAcsCustomDay value) {
-        return new JAXBElement<>(_ArrayOfAcsCustomDay_QNAME, ArrayOfAcsCustomDay.class, null, value);
+        return new JAXBElement<ArrayOfAcsCustomDay>(_ArrayOfAcsCustomDay_QNAME, ArrayOfAcsCustomDay.class, null, value);
     }
 
     /**
@@ -2870,7 +2658,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsCustomDay")
     public JAXBElement<AcsCustomDay> createAcsCustomDay(AcsCustomDay value) {
-        return new JAXBElement<>(_AcsCustomDay_QNAME, AcsCustomDay.class, null, value);
+        return new JAXBElement<AcsCustomDay>(_AcsCustomDay_QNAME, AcsCustomDay.class, null, value);
     }
 
     /**
@@ -2883,7 +2671,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsCustomizableDayBase")
     public JAXBElement<AcsCustomizableDayBase> createAcsCustomizableDayBase(AcsCustomizableDayBase value) {
-        return new JAXBElement<>(_AcsCustomizableDayBase_QNAME, AcsCustomizableDayBase.class, null, value);
+        return new JAXBElement<AcsCustomizableDayBase>(_AcsCustomizableDayBase_QNAME, AcsCustomizableDayBase.class, null, value);
     }
 
     /**
@@ -2896,7 +2684,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsCustomizableDayType")
     public JAXBElement<AcsCustomizableDayType> createAcsCustomizableDayType(AcsCustomizableDayType value) {
-        return new JAXBElement<>(_AcsCustomizableDayType_QNAME, AcsCustomizableDayType.class, null, value);
+        return new JAXBElement<AcsCustomizableDayType>(_AcsCustomizableDayType_QNAME, AcsCustomizableDayType.class, null, value);
     }
 
     /**
@@ -2909,7 +2697,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "ArrayOfAcsWorkDayWithTransfer")
     public JAXBElement<ArrayOfAcsWorkDayWithTransfer> createArrayOfAcsWorkDayWithTransfer(ArrayOfAcsWorkDayWithTransfer value) {
-        return new JAXBElement<>(_ArrayOfAcsWorkDayWithTransfer_QNAME, ArrayOfAcsWorkDayWithTransfer.class, null, value);
+        return new JAXBElement<ArrayOfAcsWorkDayWithTransfer>(_ArrayOfAcsWorkDayWithTransfer_QNAME, ArrayOfAcsWorkDayWithTransfer.class, null, value);
     }
 
     /**
@@ -2922,7 +2710,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "AcsWorkDayWithTransfer")
     public JAXBElement<AcsWorkDayWithTransfer> createAcsWorkDayWithTransfer(AcsWorkDayWithTransfer value) {
-        return new JAXBElement<>(_AcsWorkDayWithTransfer_QNAME, AcsWorkDayWithTransfer.class, null, value);
+        return new JAXBElement<AcsWorkDayWithTransfer>(_AcsWorkDayWithTransfer_QNAME, AcsWorkDayWithTransfer.class, null, value);
     }
 
     /**
@@ -2935,7 +2723,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "VehicleSortColumn")
     public JAXBElement<VehicleSortColumn> createVehicleSortColumn(VehicleSortColumn value) {
-        return new JAXBElement<>(_VehicleSortColumn_QNAME, VehicleSortColumn.class, null, value);
+        return new JAXBElement<VehicleSortColumn>(_VehicleSortColumn_QNAME, VehicleSortColumn.class, null, value);
     }
 
     /**
@@ -2948,7 +2736,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "ArrayOfAcsVehicleSearched")
     public JAXBElement<ArrayOfAcsVehicleSearched> createArrayOfAcsVehicleSearched(ArrayOfAcsVehicleSearched value) {
-        return new JAXBElement<>(_ArrayOfAcsVehicleSearched_QNAME, ArrayOfAcsVehicleSearched.class, null, value);
+        return new JAXBElement<ArrayOfAcsVehicleSearched>(_ArrayOfAcsVehicleSearched_QNAME, ArrayOfAcsVehicleSearched.class, null, value);
     }
 
     /**
@@ -2961,7 +2749,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "AcsVehicleSearched")
     public JAXBElement<AcsVehicleSearched> createAcsVehicleSearched(AcsVehicleSearched value) {
-        return new JAXBElement<>(_AcsVehicleSearched_QNAME, AcsVehicleSearched.class, null, value);
+        return new JAXBElement<AcsVehicleSearched>(_AcsVehicleSearched_QNAME, AcsVehicleSearched.class, null, value);
     }
 
     /**
@@ -2974,7 +2762,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "ArrayOfAcsVehicle")
     public JAXBElement<ArrayOfAcsVehicle> createArrayOfAcsVehicle(ArrayOfAcsVehicle value) {
-        return new JAXBElement<>(_ArrayOfAcsVehicle_QNAME, ArrayOfAcsVehicle.class, null, value);
+        return new JAXBElement<ArrayOfAcsVehicle>(_ArrayOfAcsVehicle_QNAME, ArrayOfAcsVehicle.class, null, value);
     }
 
     /**
@@ -2987,7 +2775,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "AcsVehicle")
     public JAXBElement<AcsVehicle> createAcsVehicle(AcsVehicle value) {
-        return new JAXBElement<>(_AcsVehicle_QNAME, AcsVehicle.class, null, value);
+        return new JAXBElement<AcsVehicle>(_AcsVehicle_QNAME, AcsVehicle.class, null, value);
     }
 
     /**
@@ -3000,7 +2788,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "AcsVehicleSavedData")
     public JAXBElement<AcsVehicleSavedData> createAcsVehicleSavedData(AcsVehicleSavedData value) {
-        return new JAXBElement<>(_AcsVehicleSavedData_QNAME, AcsVehicleSavedData.class, null, value);
+        return new JAXBElement<AcsVehicleSavedData>(_AcsVehicleSavedData_QNAME, AcsVehicleSavedData.class, null, value);
     }
 
     /**
@@ -3013,7 +2801,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "ArrayOfEmployeesVehicle")
     public JAXBElement<ArrayOfEmployeesVehicle> createArrayOfEmployeesVehicle(ArrayOfEmployeesVehicle value) {
-        return new JAXBElement<>(_ArrayOfEmployeesVehicle_QNAME, ArrayOfEmployeesVehicle.class, null, value);
+        return new JAXBElement<ArrayOfEmployeesVehicle>(_ArrayOfEmployeesVehicle_QNAME, ArrayOfEmployeesVehicle.class, null, value);
     }
 
     /**
@@ -3026,7 +2814,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "EmployeesVehicle")
     public JAXBElement<EmployeesVehicle> createEmployeesVehicle(EmployeesVehicle value) {
-        return new JAXBElement<>(_EmployeesVehicle_QNAME, EmployeesVehicle.class, null, value);
+        return new JAXBElement<EmployeesVehicle>(_EmployeesVehicle_QNAME, EmployeesVehicle.class, null, value);
     }
 
     /**
@@ -3039,7 +2827,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "EndDateTime", scope = EmployeesVehicle.class)
     public JAXBElement<XMLGregorianCalendar> createEmployeesVehicleEndDateTime(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_EmployeesVehicleEndDateTime_QNAME, XMLGregorianCalendar.class, EmployeesVehicle.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_EmployeesVehicleEndDateTime_QNAME, XMLGregorianCalendar.class, EmployeesVehicle.class, value);
     }
 
     /**
@@ -3052,7 +2840,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "StartDateTime", scope = EmployeesVehicle.class)
     public JAXBElement<XMLGregorianCalendar> createEmployeesVehicleStartDateTime(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_EmployeesVehicleStartDateTime_QNAME, XMLGregorianCalendar.class, EmployeesVehicle.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_EmployeesVehicleStartDateTime_QNAME, XMLGregorianCalendar.class, EmployeesVehicle.class, value);
     }
 
     /**
@@ -3065,7 +2853,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Name", scope = AcsCustomizableDayBase.class)
     public JAXBElement<String> createAcsCustomizableDayBaseName(String value) {
-        return new JAXBElement<>(_AcsCustomizableDayBaseName_QNAME, String.class, AcsCustomizableDayBase.class, value);
+        return new JAXBElement<String>(_AcsCustomizableDayBaseName_QNAME, String.class, AcsCustomizableDayBase.class, value);
     }
 
     /**
@@ -3078,7 +2866,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Friday", scope = AcsWeekFull.class)
     public JAXBElement<AcsDaySchedule> createAcsWeekFullFriday(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsWeekFullFriday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsWeekFullFriday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
     }
 
     /**
@@ -3091,7 +2879,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Monday", scope = AcsWeekFull.class)
     public JAXBElement<AcsDaySchedule> createAcsWeekFullMonday(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsWeekFullMonday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsWeekFullMonday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
     }
 
     /**
@@ -3104,7 +2892,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Saturday", scope = AcsWeekFull.class)
     public JAXBElement<AcsDaySchedule> createAcsWeekFullSaturday(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsWeekFullSaturday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsWeekFullSaturday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
     }
 
     /**
@@ -3117,7 +2905,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Sunday", scope = AcsWeekFull.class)
     public JAXBElement<AcsDaySchedule> createAcsWeekFullSunday(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsWeekFullSunday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsWeekFullSunday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
     }
 
     /**
@@ -3130,7 +2918,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Thursday", scope = AcsWeekFull.class)
     public JAXBElement<AcsDaySchedule> createAcsWeekFullThursday(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsWeekFullThursday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsWeekFullThursday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
     }
 
     /**
@@ -3143,7 +2931,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Tuesday", scope = AcsWeekFull.class)
     public JAXBElement<AcsDaySchedule> createAcsWeekFullTuesday(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsWeekFullTuesday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsWeekFullTuesday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
     }
 
     /**
@@ -3156,7 +2944,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Wednesday", scope = AcsWeekFull.class)
     public JAXBElement<AcsDaySchedule> createAcsWeekFullWednesday(AcsDaySchedule value) {
-        return new JAXBElement<>(_AcsWeekFullWednesday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
+        return new JAXBElement<AcsDaySchedule>(_AcsWeekFullWednesday_QNAME, AcsDaySchedule.class, AcsWeekFull.class, value);
     }
 
     /**
@@ -3169,7 +2957,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Comment", scope = AcsScheduleBase.class)
     public JAXBElement<String> createAcsScheduleBaseComment(String value) {
-        return new JAXBElement<>(_AcsScheduleBaseComment_QNAME, String.class, AcsScheduleBase.class, value);
+        return new JAXBElement<String>(_AcsScheduleBaseComment_QNAME, String.class, AcsScheduleBase.class, value);
     }
 
     /**
@@ -3182,7 +2970,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Name", scope = AcsScheduleBase.class)
     public JAXBElement<String> createAcsScheduleBaseName(String value) {
-        return new JAXBElement<>(_AcsCustomizableDayBaseName_QNAME, String.class, AcsScheduleBase.class, value);
+        return new JAXBElement<String>(_AcsCustomizableDayBaseName_QNAME, String.class, AcsScheduleBase.class, value);
     }
 
     /**
@@ -3195,7 +2983,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Weeks", scope = AcsWeekScheduleSlim.class)
     public JAXBElement<ArrayOfAcsWeekSlim> createAcsWeekScheduleSlimWeeks(ArrayOfAcsWeekSlim value) {
-        return new JAXBElement<>(_AcsWeekScheduleSlimWeeks_QNAME, ArrayOfAcsWeekSlim.class, AcsWeekScheduleSlim.class, value);
+        return new JAXBElement<ArrayOfAcsWeekSlim>(_AcsWeekScheduleSlimWeeks_QNAME, ArrayOfAcsWeekSlim.class, AcsWeekScheduleSlim.class, value);
     }
 
     /**
@@ -3208,7 +2996,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Name", scope = AcsScheduleSlimInfo.class)
     public JAXBElement<String> createAcsScheduleSlimInfoName(String value) {
-        return new JAXBElement<>(_AcsCustomizableDayBaseName_QNAME, String.class, AcsScheduleSlimInfo.class, value);
+        return new JAXBElement<String>(_AcsCustomizableDayBaseName_QNAME, String.class, AcsScheduleSlimInfo.class, value);
     }
 
     /**
@@ -3221,7 +3009,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "Name", scope = AcsAccessLevelSlimBase.class)
     public JAXBElement<String> createAcsAccessLevelSlimBaseName(String value) {
-        return new JAXBElement<>(_AcsAccessLevelSlimBaseName_QNAME, String.class, AcsAccessLevelSlimBase.class, value);
+        return new JAXBElement<String>(_AcsAccessLevelSlimBaseName_QNAME, String.class, AcsAccessLevelSlimBase.class, value);
     }
 
     /**
@@ -3234,7 +3022,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "Name", scope = AcsBoxAccessElementSaveInfo.class)
     public JAXBElement<String> createAcsBoxAccessElementSaveInfoName(String value) {
-        return new JAXBElement<>(_AcsBoxAccessElementSaveInfoName_QNAME, String.class, AcsBoxAccessElementSaveInfo.class, value);
+        return new JAXBElement<String>(_AcsBoxAccessElementSaveInfoName_QNAME, String.class, AcsBoxAccessElementSaveInfo.class, value);
     }
 
     /**
@@ -3247,7 +3035,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "Name", scope = EmployeeGroupForAlcoGroupFull.class)
     public JAXBElement<String> createEmployeeGroupForAlcoGroupFullName(String value) {
-        return new JAXBElement<>(_EmployeeGroupForAlcoGroupFullName_QNAME, String.class, EmployeeGroupForAlcoGroupFull.class, value);
+        return new JAXBElement<String>(_EmployeeGroupForAlcoGroupFullName_QNAME, String.class, EmployeeGroupForAlcoGroupFull.class, value);
     }
 
     /**
@@ -3260,7 +3048,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "BeginDateTime", scope = AttachedEmployeesForVehicle.class)
     public JAXBElement<XMLGregorianCalendar> createAttachedEmployeesForVehicleBeginDateTime(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AttachedEmployeesForVehicleBeginDateTime_QNAME, XMLGregorianCalendar.class, AttachedEmployeesForVehicle.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AttachedEmployeesForVehicleBeginDateTime_QNAME, XMLGregorianCalendar.class, AttachedEmployeesForVehicle.class, value);
     }
 
     /**
@@ -3273,7 +3061,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Employee", scope = AttachedEmployeesForVehicle.class)
     public JAXBElement<AcsEmployeeFull> createAttachedEmployeesForVehicleEmployee(AcsEmployeeFull value) {
-        return new JAXBElement<>(_AttachedEmployeesForVehicleEmployee_QNAME, AcsEmployeeFull.class, AttachedEmployeesForVehicle.class, value);
+        return new JAXBElement<AcsEmployeeFull>(_AttachedEmployeesForVehicleEmployee_QNAME, AcsEmployeeFull.class, AttachedEmployeesForVehicle.class, value);
     }
 
     /**
@@ -3286,7 +3074,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EndDateTime", scope = AttachedEmployeesForVehicle.class)
     public JAXBElement<XMLGregorianCalendar> createAttachedEmployeesForVehicleEndDateTime(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AttachedEmployeesForVehicleEndDateTime_QNAME, XMLGregorianCalendar.class, AttachedEmployeesForVehicle.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AttachedEmployeesForVehicleEndDateTime_QNAME, XMLGregorianCalendar.class, AttachedEmployeesForVehicle.class, value);
     }
 
     /**
@@ -3299,7 +3087,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ID", scope = AcsEmployeeFaceVector.class)
     public JAXBElement<String> createAcsEmployeeFaceVectorID(String value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorID_QNAME, String.class, AcsEmployeeFaceVector.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFaceVectorID_QNAME, String.class, AcsEmployeeFaceVector.class, value);
     }
 
     /**
@@ -3312,7 +3100,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Name", scope = AcsEmployeeFaceVector.class)
     public JAXBElement<String> createAcsEmployeeFaceVectorName(String value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorName_QNAME, String.class, AcsEmployeeFaceVector.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFaceVectorName_QNAME, String.class, AcsEmployeeFaceVector.class, value);
     }
 
     /**
@@ -3325,7 +3113,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SourceName", scope = AcsEmployeeFaceVector.class)
     public JAXBElement<String> createAcsEmployeeFaceVectorSourceName(String value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorSourceName_QNAME, String.class, AcsEmployeeFaceVector.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFaceVectorSourceName_QNAME, String.class, AcsEmployeeFaceVector.class, value);
     }
 
     /**
@@ -3338,7 +3126,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SourcePath", scope = AcsEmployeeFaceVector.class)
     public JAXBElement<String> createAcsEmployeeFaceVectorSourcePath(String value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorSourcePath_QNAME, String.class, AcsEmployeeFaceVector.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFaceVectorSourcePath_QNAME, String.class, AcsEmployeeFaceVector.class, value);
     }
 
     /**
@@ -3351,7 +3139,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FaceVector", scope = AcsEmployeeFaceVectorFull.class)
     public JAXBElement<byte[]> createAcsEmployeeFaceVectorFullFaceVector(byte[] value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorFullFaceVector_QNAME, byte[].class, AcsEmployeeFaceVectorFull.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsEmployeeFaceVectorFullFaceVector_QNAME, byte[].class, AcsEmployeeFaceVectorFull.class, ((byte[]) value));
     }
 
     /**
@@ -3364,7 +3152,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Image", scope = AcsEmployeeFaceVectorFull.class)
     public JAXBElement<byte[]> createAcsEmployeeFaceVectorFullImage(byte[] value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorFullImage_QNAME, byte[].class, AcsEmployeeFaceVectorFull.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsEmployeeFaceVectorFullImage_QNAME, byte[].class, AcsEmployeeFaceVectorFull.class, ((byte[]) value));
     }
 
     /**
@@ -3377,7 +3165,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Info", scope = AcsEmployeeFaceVectorFull.class)
     public JAXBElement<String> createAcsEmployeeFaceVectorFullInfo(String value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorFullInfo_QNAME, String.class, AcsEmployeeFaceVectorFull.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFaceVectorFullInfo_QNAME, String.class, AcsEmployeeFaceVectorFull.class, value);
     }
 
     /**
@@ -3390,7 +3178,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroup", scope = EmployeeCurentInfo.class)
     public JAXBElement<String> createEmployeeCurentInfoEmployeeGroup(String value) {
-        return new JAXBElement<>(_EmployeeCurentInfoEmployeeGroup_QNAME, String.class, EmployeeCurentInfo.class, value);
+        return new JAXBElement<String>(_EmployeeCurentInfoEmployeeGroup_QNAME, String.class, EmployeeCurentInfo.class, value);
     }
 
     /**
@@ -3403,7 +3191,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FIO", scope = EmployeeCurentInfo.class)
     public JAXBElement<String> createEmployeeCurentInfoFIO(String value) {
-        return new JAXBElement<>(_EmployeeCurentInfoFIO_QNAME, String.class, EmployeeCurentInfo.class, value);
+        return new JAXBElement<String>(_EmployeeCurentInfoFIO_QNAME, String.class, EmployeeCurentInfo.class, value);
     }
 
     /**
@@ -3416,7 +3204,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Position", scope = EmployeeCurentInfo.class)
     public JAXBElement<String> createEmployeeCurentInfoPosition(String value) {
-        return new JAXBElement<>(_EmployeeCurentInfoPosition_QNAME, String.class, EmployeeCurentInfo.class, value);
+        return new JAXBElement<String>(_EmployeeCurentInfoPosition_QNAME, String.class, EmployeeCurentInfo.class, value);
     }
 
     /**
@@ -3429,7 +3217,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "TabNumber", scope = EmployeeCurentInfo.class)
     public JAXBElement<Integer> createEmployeeCurentInfoTabNumber(Integer value) {
-        return new JAXBElement<>(_EmployeeCurentInfoTabNumber_QNAME, Integer.class, EmployeeCurentInfo.class, value);
+        return new JAXBElement<Integer>(_EmployeeCurentInfoTabNumber_QNAME, Integer.class, EmployeeCurentInfo.class, value);
     }
 
     /**
@@ -3442,7 +3230,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroup", scope = EmployeeShortInfo.class)
     public JAXBElement<String> createEmployeeShortInfoEmployeeGroup(String value) {
-        return new JAXBElement<>(_EmployeeCurentInfoEmployeeGroup_QNAME, String.class, EmployeeShortInfo.class, value);
+        return new JAXBElement<String>(_EmployeeCurentInfoEmployeeGroup_QNAME, String.class, EmployeeShortInfo.class, value);
     }
 
     /**
@@ -3455,7 +3243,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FIO", scope = EmployeeShortInfo.class)
     public JAXBElement<String> createEmployeeShortInfoFIO(String value) {
-        return new JAXBElement<>(_EmployeeCurentInfoFIO_QNAME, String.class, EmployeeShortInfo.class, value);
+        return new JAXBElement<String>(_EmployeeCurentInfoFIO_QNAME, String.class, EmployeeShortInfo.class, value);
     }
 
     /**
@@ -3468,7 +3256,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FirstName", scope = AcsEmployeePhotosInfo.class)
     public JAXBElement<String> createAcsEmployeePhotosInfoFirstName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoFirstName_QNAME, String.class, AcsEmployeePhotosInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoFirstName_QNAME, String.class, AcsEmployeePhotosInfo.class, value);
     }
 
     /**
@@ -3481,7 +3269,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "LastName", scope = AcsEmployeePhotosInfo.class)
     public JAXBElement<String> createAcsEmployeePhotosInfoLastName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoLastName_QNAME, String.class, AcsEmployeePhotosInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoLastName_QNAME, String.class, AcsEmployeePhotosInfo.class, value);
     }
 
     /**
@@ -3494,7 +3282,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Photos", scope = AcsEmployeePhotosInfo.class)
     public JAXBElement<ArrayOfAscEmployeePhotoModificationDateTimeInfo> createAcsEmployeePhotosInfoPhotos(ArrayOfAscEmployeePhotoModificationDateTimeInfo value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoPhotos_QNAME, ArrayOfAscEmployeePhotoModificationDateTimeInfo.class, AcsEmployeePhotosInfo.class, value);
+        return new JAXBElement<ArrayOfAscEmployeePhotoModificationDateTimeInfo>(_AcsEmployeePhotosInfoPhotos_QNAME, ArrayOfAscEmployeePhotoModificationDateTimeInfo.class, AcsEmployeePhotosInfo.class, value);
     }
 
     /**
@@ -3507,7 +3295,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SecondName", scope = AcsEmployeePhotosInfo.class)
     public JAXBElement<String> createAcsEmployeePhotosInfoSecondName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoSecondName_QNAME, String.class, AcsEmployeePhotosInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoSecondName_QNAME, String.class, AcsEmployeePhotosInfo.class, value);
     }
 
     /**
@@ -3520,7 +3308,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FieldName", scope = BaseViewFieldMetadata.class)
     public JAXBElement<String> createBaseViewFieldMetadataFieldName(String value) {
-        return new JAXBElement<>(_BaseViewFieldMetadataFieldName_QNAME, String.class, BaseViewFieldMetadata.class, value);
+        return new JAXBElement<String>(_BaseViewFieldMetadataFieldName_QNAME, String.class, BaseViewFieldMetadata.class, value);
     }
 
     /**
@@ -3533,7 +3321,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FieldType", scope = BaseViewFieldMetadata.class)
     public JAXBElement<String> createBaseViewFieldMetadataFieldType(String value) {
-        return new JAXBElement<>(_BaseViewFieldMetadataFieldType_QNAME, String.class, BaseViewFieldMetadata.class, value);
+        return new JAXBElement<String>(_BaseViewFieldMetadataFieldType_QNAME, String.class, BaseViewFieldMetadata.class, value);
     }
 
     /**
@@ -3546,7 +3334,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Comment", scope = AcsEmployeeSlimBase.class)
     public JAXBElement<String> createAcsEmployeeSlimBaseComment(String value) {
-        return new JAXBElement<>(_AcsEmployeeSlimBaseComment_QNAME, String.class, AcsEmployeeSlimBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeSlimBaseComment_QNAME, String.class, AcsEmployeeSlimBase.class, value);
     }
 
     /**
@@ -3559,7 +3347,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FirstName", scope = AcsEmployeeSlimBase.class)
     public JAXBElement<String> createAcsEmployeeSlimBaseFirstName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoFirstName_QNAME, String.class, AcsEmployeeSlimBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoFirstName_QNAME, String.class, AcsEmployeeSlimBase.class, value);
     }
 
     /**
@@ -3572,7 +3360,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "LastName", scope = AcsEmployeeSlimBase.class)
     public JAXBElement<String> createAcsEmployeeSlimBaseLastName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoLastName_QNAME, String.class, AcsEmployeeSlimBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoLastName_QNAME, String.class, AcsEmployeeSlimBase.class, value);
     }
 
     /**
@@ -3585,7 +3373,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Number", scope = AcsEmployeeSlimBase.class)
     public JAXBElement<Integer> createAcsEmployeeSlimBaseNumber(Integer value) {
-        return new JAXBElement<>(_AcsEmployeeSlimBaseNumber_QNAME, Integer.class, AcsEmployeeSlimBase.class, value);
+        return new JAXBElement<Integer>(_AcsEmployeeSlimBaseNumber_QNAME, Integer.class, AcsEmployeeSlimBase.class, value);
     }
 
     /**
@@ -3598,7 +3386,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SecondName", scope = AcsEmployeeSlimBase.class)
     public JAXBElement<String> createAcsEmployeeSlimBaseSecondName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoSecondName_QNAME, String.class, AcsEmployeeSlimBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoSecondName_QNAME, String.class, AcsEmployeeSlimBase.class, value);
     }
 
     /**
@@ -3611,7 +3399,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "GroupCode", scope = AcsEmployeeInfo.class)
     public JAXBElement<String> createAcsEmployeeInfoGroupCode(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoGroupCode_QNAME, String.class, AcsEmployeeInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoGroupCode_QNAME, String.class, AcsEmployeeInfo.class, value);
     }
 
     /**
@@ -3624,7 +3412,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "GroupName", scope = AcsEmployeeInfo.class)
     public JAXBElement<String> createAcsEmployeeInfoGroupName(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoGroupName_QNAME, String.class, AcsEmployeeInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoGroupName_QNAME, String.class, AcsEmployeeInfo.class, value);
     }
 
     /**
@@ -3637,7 +3425,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "GroupPath", scope = AcsEmployeeInfo.class)
     public JAXBElement<String> createAcsEmployeeInfoGroupPath(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoGroupPath_QNAME, String.class, AcsEmployeeInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoGroupPath_QNAME, String.class, AcsEmployeeInfo.class, value);
     }
 
     /**
@@ -3650,7 +3438,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PositionCode", scope = AcsEmployeeInfo.class)
     public JAXBElement<String> createAcsEmployeeInfoPositionCode(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoPositionCode_QNAME, String.class, AcsEmployeeInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoPositionCode_QNAME, String.class, AcsEmployeeInfo.class, value);
     }
 
     /**
@@ -3663,7 +3451,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PositionName", scope = AcsEmployeeInfo.class)
     public JAXBElement<String> createAcsEmployeeInfoPositionName(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoPositionName_QNAME, String.class, AcsEmployeeInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoPositionName_QNAME, String.class, AcsEmployeeInfo.class, value);
     }
 
     /**
@@ -3676,7 +3464,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SecurityGroupName", scope = AcsEmployeeInfo.class)
     public JAXBElement<String> createAcsEmployeeInfoSecurityGroupName(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoSecurityGroupName_QNAME, String.class, AcsEmployeeInfo.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoSecurityGroupName_QNAME, String.class, AcsEmployeeInfo.class, value);
     }
 
     /**
@@ -3689,7 +3477,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Authority", scope = AcsEmployeeFullBase.class)
     public JAXBElement<String> createAcsEmployeeFullBaseAuthority(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBaseAuthority_QNAME, String.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBaseAuthority_QNAME, String.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3702,7 +3490,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DateOfIssue", scope = AcsEmployeeFullBase.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeFullBaseDateOfIssue(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeFullBaseDateOfIssue_QNAME, XMLGregorianCalendar.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeFullBaseDateOfIssue_QNAME, XMLGregorianCalendar.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3715,7 +3503,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PINCode", scope = AcsEmployeeFullBase.class)
     public JAXBElement<Long> createAcsEmployeeFullBasePINCode(Long value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePINCode_QNAME, Long.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<Long>(_AcsEmployeeFullBasePINCode_QNAME, Long.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3728,7 +3516,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PINCodeDescription", scope = AcsEmployeeFullBase.class)
     public JAXBElement<String> createAcsEmployeeFullBasePINCodeDescription(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePINCodeDescription_QNAME, String.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBasePINCodeDescription_QNAME, String.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3741,7 +3529,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PINCodeUnderPressure", scope = AcsEmployeeFullBase.class)
     public JAXBElement<Long> createAcsEmployeeFullBasePINCodeUnderPressure(Long value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePINCodeUnderPressure_QNAME, Long.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<Long>(_AcsEmployeeFullBasePINCodeUnderPressure_QNAME, Long.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3754,7 +3542,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PINCodeUnderPressureDescription", scope = AcsEmployeeFullBase.class)
     public JAXBElement<String> createAcsEmployeeFullBasePINCodeUnderPressureDescription(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePINCodeUnderPressureDescription_QNAME, String.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBasePINCodeUnderPressureDescription_QNAME, String.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3767,7 +3555,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportIssue", scope = AcsEmployeeFullBase.class)
     public JAXBElement<String> createAcsEmployeeFullBasePassportIssue(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePassportIssue_QNAME, String.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBasePassportIssue_QNAME, String.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3780,7 +3568,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportNumber", scope = AcsEmployeeFullBase.class)
     public JAXBElement<String> createAcsEmployeeFullBasePassportNumber(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePassportNumber_QNAME, String.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBasePassportNumber_QNAME, String.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3793,7 +3581,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "RegistrationAddress", scope = AcsEmployeeFullBase.class)
     public JAXBElement<String> createAcsEmployeeFullBaseRegistrationAddress(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBaseRegistrationAddress_QNAME, String.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBaseRegistrationAddress_QNAME, String.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3806,7 +3594,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ResidentialAddress", scope = AcsEmployeeFullBase.class)
     public JAXBElement<String> createAcsEmployeeFullBaseResidentialAddress(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBaseResidentialAddress_QNAME, String.class, AcsEmployeeFullBase.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBaseResidentialAddress_QNAME, String.class, AcsEmployeeFullBase.class, value);
     }
 
     /**
@@ -3819,7 +3607,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Comment", scope = AcsEmployeeGroup.class)
     public JAXBElement<String> createAcsEmployeeGroupComment(String value) {
-        return new JAXBElement<>(_AcsEmployeeSlimBaseComment_QNAME, String.class, AcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AcsEmployeeSlimBaseComment_QNAME, String.class, AcsEmployeeGroup.class, value);
     }
 
     /**
@@ -3832,7 +3620,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroups", scope = AcsEmployeeGroup.class)
     public JAXBElement<ArrayOfAcsEmployeeGroup> createAcsEmployeeGroupEmployeeGroups(ArrayOfAcsEmployeeGroup value) {
-        return new JAXBElement<>(_AcsEmployeeGroupEmployeeGroups_QNAME, ArrayOfAcsEmployeeGroup.class, AcsEmployeeGroup.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroup>(_AcsEmployeeGroupEmployeeGroups_QNAME, ArrayOfAcsEmployeeGroup.class, AcsEmployeeGroup.class, value);
     }
 
     /**
@@ -3845,7 +3633,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FavoriteName", scope = AcsEmployeeGroup.class)
     public JAXBElement<String> createAcsEmployeeGroupFavoriteName(String value) {
-        return new JAXBElement<>(_AcsEmployeeGroupFavoriteName_QNAME, String.class, AcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AcsEmployeeGroupFavoriteName_QNAME, String.class, AcsEmployeeGroup.class, value);
     }
 
     /**
@@ -3858,7 +3646,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FavoritePath", scope = AcsEmployeeGroup.class)
     public JAXBElement<String> createAcsEmployeeGroupFavoritePath(String value) {
-        return new JAXBElement<>(_AcsEmployeeGroupFavoritePath_QNAME, String.class, AcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AcsEmployeeGroupFavoritePath_QNAME, String.class, AcsEmployeeGroup.class, value);
     }
 
     /**
@@ -3871,7 +3659,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "GroupCode", scope = AcsEmployeeGroup.class)
     public JAXBElement<String> createAcsEmployeeGroupGroupCode(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoGroupCode_QNAME, String.class, AcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoGroupCode_QNAME, String.class, AcsEmployeeGroup.class, value);
     }
 
     /**
@@ -3884,7 +3672,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Name", scope = AcsEmployeeGroup.class)
     public JAXBElement<String> createAcsEmployeeGroupName(String value) {
-        return new JAXBElement<>(_AcsEmployeeFaceVectorName_QNAME, String.class, AcsEmployeeGroup.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFaceVectorName_QNAME, String.class, AcsEmployeeGroup.class, value);
     }
 
     /**
@@ -3897,7 +3685,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroups2", scope = AcsEmployeeGroupReportInfo.class)
     public JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> createAcsEmployeeGroupReportInfoEmployeeGroups2(ArrayOfAcsEmployeeGroupReportInfo value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReportInfoEmployeeGroups2_QNAME, ArrayOfAcsEmployeeGroupReportInfo.class, AcsEmployeeGroupReportInfo.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroupReportInfo>(_AcsEmployeeGroupReportInfoEmployeeGroups2_QNAME, ArrayOfAcsEmployeeGroupReportInfo.class, AcsEmployeeGroupReportInfo.class, value);
     }
 
     /**
@@ -3910,7 +3698,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeesFromGroupsGuids", scope = AcsEmployeeGroupReportInfo.class)
     public JAXBElement<ArrayOfguid> createAcsEmployeeGroupReportInfoEmployeesFromGroupsGuids(ArrayOfguid value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReportInfoEmployeesFromGroupsGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReportInfo.class, value);
+        return new JAXBElement<ArrayOfguid>(_AcsEmployeeGroupReportInfoEmployeesFromGroupsGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReportInfo.class, value);
     }
 
     /**
@@ -3923,7 +3711,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SelectedEmployeesGuids", scope = AcsEmployeeGroupReportInfo.class)
     public JAXBElement<ArrayOfguid> createAcsEmployeeGroupReportInfoSelectedEmployeesGuids(ArrayOfguid value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReportInfoSelectedEmployeesGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReportInfo.class, value);
+        return new JAXBElement<ArrayOfguid>(_AcsEmployeeGroupReportInfoSelectedEmployeesGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReportInfo.class, value);
     }
 
     /**
@@ -3936,7 +3724,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroups1", scope = AcsEmployeeGroupReactionInfo.class)
     public JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo> createAcsEmployeeGroupReactionInfoEmployeeGroups1(ArrayOfAcsEmployeeGroupReactionInfo value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReactionInfoEmployeeGroups1_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, AcsEmployeeGroupReactionInfo.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeGroupReactionInfo>(_AcsEmployeeGroupReactionInfoEmployeeGroups1_QNAME, ArrayOfAcsEmployeeGroupReactionInfo.class, AcsEmployeeGroupReactionInfo.class, value);
     }
 
     /**
@@ -3949,7 +3737,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeesFromGroupsGuids", scope = AcsEmployeeGroupReactionInfo.class)
     public JAXBElement<ArrayOfguid> createAcsEmployeeGroupReactionInfoEmployeesFromGroupsGuids(ArrayOfguid value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReportInfoEmployeesFromGroupsGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReactionInfo.class, value);
+        return new JAXBElement<ArrayOfguid>(_AcsEmployeeGroupReportInfoEmployeesFromGroupsGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReactionInfo.class, value);
     }
 
     /**
@@ -3962,7 +3750,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SelectedEmployeesGuids", scope = AcsEmployeeGroupReactionInfo.class)
     public JAXBElement<ArrayOfguid> createAcsEmployeeGroupReactionInfoSelectedEmployeesGuids(ArrayOfguid value) {
-        return new JAXBElement<>(_AcsEmployeeGroupReportInfoSelectedEmployeesGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReactionInfo.class, value);
+        return new JAXBElement<ArrayOfguid>(_AcsEmployeeGroupReportInfoSelectedEmployeesGuids_QNAME, ArrayOfguid.class, AcsEmployeeGroupReactionInfo.class, value);
     }
 
     /**
@@ -3975,7 +3763,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "Brand", scope = AcsVehicleSavedData.class)
     public JAXBElement<String> createAcsVehicleSavedDataBrand(String value) {
-        return new JAXBElement<>(_AcsVehicleSavedDataBrand_QNAME, String.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<String>(_AcsVehicleSavedDataBrand_QNAME, String.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -3988,7 +3776,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "Color", scope = AcsVehicleSavedData.class)
     public JAXBElement<String> createAcsVehicleSavedDataColor(String value) {
-        return new JAXBElement<>(_AcsVehicleSavedDataColor_QNAME, String.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<String>(_AcsVehicleSavedDataColor_QNAME, String.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4001,7 +3789,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "Comment", scope = AcsVehicleSavedData.class)
     public JAXBElement<String> createAcsVehicleSavedDataComment(String value) {
-        return new JAXBElement<>(_AcsVehicleSavedDataComment_QNAME, String.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<String>(_AcsVehicleSavedDataComment_QNAME, String.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4014,7 +3802,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "EndDateTime", scope = AcsVehicleSavedData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsVehicleSavedDataEndDateTime(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_EmployeesVehicleEndDateTime_QNAME, XMLGregorianCalendar.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_EmployeesVehicleEndDateTime_QNAME, XMLGregorianCalendar.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4027,7 +3815,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "Name", scope = AcsVehicleSavedData.class)
     public JAXBElement<String> createAcsVehicleSavedDataName(String value) {
-        return new JAXBElement<>(_AcsVehicleSavedDataName_QNAME, String.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<String>(_AcsVehicleSavedDataName_QNAME, String.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4040,7 +3828,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "RegistrationNumber", scope = AcsVehicleSavedData.class)
     public JAXBElement<String> createAcsVehicleSavedDataRegistrationNumber(String value) {
-        return new JAXBElement<>(_AcsVehicleSavedDataRegistrationNumber_QNAME, String.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<String>(_AcsVehicleSavedDataRegistrationNumber_QNAME, String.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4053,7 +3841,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "StartDateTime", scope = AcsVehicleSavedData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsVehicleSavedDataStartDateTime(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_EmployeesVehicleStartDateTime_QNAME, XMLGregorianCalendar.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_EmployeesVehicleStartDateTime_QNAME, XMLGregorianCalendar.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4066,7 +3854,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "VehicleType", scope = AcsVehicleSavedData.class)
     public JAXBElement<DictionaryElementInfo> createAcsVehicleSavedDataVehicleType(DictionaryElementInfo value) {
-        return new JAXBElement<>(_AcsVehicleSavedDataVehicleType_QNAME, DictionaryElementInfo.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<DictionaryElementInfo>(_AcsVehicleSavedDataVehicleType_QNAME, DictionaryElementInfo.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4079,7 +3867,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "VehicleTypeID", scope = AcsVehicleSavedData.class)
     public JAXBElement<String> createAcsVehicleSavedDataVehicleTypeID(String value) {
-        return new JAXBElement<>(_AcsVehicleSavedDataVehicleTypeID_QNAME, String.class, AcsVehicleSavedData.class, value);
+        return new JAXBElement<String>(_AcsVehicleSavedDataVehicleTypeID_QNAME, String.class, AcsVehicleSavedData.class, value);
     }
 
     /**
@@ -4092,7 +3880,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "CardTypeID", scope = AcsKeySaveData.class)
     public JAXBElement<String> createAcsKeySaveDataCardTypeID(String value) {
-        return new JAXBElement<>(_AcsKeySaveDataCardTypeID_QNAME, String.class, AcsKeySaveData.class, value);
+        return new JAXBElement<String>(_AcsKeySaveDataCardTypeID_QNAME, String.class, AcsKeySaveData.class, value);
     }
 
     /**
@@ -4105,7 +3893,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "CardTypeName", scope = AcsKeySaveData.class)
     public JAXBElement<String> createAcsKeySaveDataCardTypeName(String value) {
-        return new JAXBElement<>(_AcsKeySaveDataCardTypeName_QNAME, String.class, AcsKeySaveData.class, value);
+        return new JAXBElement<String>(_AcsKeySaveDataCardTypeName_QNAME, String.class, AcsKeySaveData.class, value);
     }
 
     /**
@@ -4118,7 +3906,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Description", scope = AcsKeySaveData.class)
     public JAXBElement<String> createAcsKeySaveDataDescription(String value) {
-        return new JAXBElement<>(_AcsKeySaveDataDescription_QNAME, String.class, AcsKeySaveData.class, value);
+        return new JAXBElement<String>(_AcsKeySaveDataDescription_QNAME, String.class, AcsKeySaveData.class, value);
     }
 
     /**
@@ -4131,7 +3919,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "EndDate", scope = AcsKeySaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsKeySaveDataEndDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsKeySaveDataEndDate_QNAME, XMLGregorianCalendar.class, AcsKeySaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsKeySaveDataEndDate_QNAME, XMLGregorianCalendar.class, AcsKeySaveData.class, value);
     }
 
     /**
@@ -4144,7 +3932,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger1_Image", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger1Image(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger1Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger1Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4157,7 +3945,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger1_Template", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger1Template(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger1Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger1Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4170,7 +3958,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger2_Image", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger2Image(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger2Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger2Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4183,7 +3971,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger2_Template", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger2Template(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger2Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger2Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4196,7 +3984,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger3_Image", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger3Image(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger3Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger3Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4209,7 +3997,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger3_Template", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger3Template(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger3Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger3Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4222,7 +4010,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger4_Image", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger4Image(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger4Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger4Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4235,7 +4023,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger4_Template", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger4Template(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger4Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger4Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4248,7 +4036,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger5_Image", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger5Image(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger5Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger5Image_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4261,7 +4049,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Finger5_Template", scope = AcsKeySaveData.class)
     public JAXBElement<byte[]> createAcsKeySaveDataFinger5Template(byte[] value) {
-        return new JAXBElement<>(_AcsKeySaveDataFinger5Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_AcsKeySaveDataFinger5Template_QNAME, byte[].class, AcsKeySaveData.class, ((byte[]) value));
     }
 
     /**
@@ -4274,7 +4062,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "Name", scope = AcsKeySaveData.class)
     public JAXBElement<String> createAcsKeySaveDataName(String value) {
-        return new JAXBElement<>(_AcsKeySaveDataName_QNAME, String.class, AcsKeySaveData.class, value);
+        return new JAXBElement<String>(_AcsKeySaveDataName_QNAME, String.class, AcsKeySaveData.class, value);
     }
 
     /**
@@ -4287,7 +4075,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "StartDate", scope = AcsKeySaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsKeySaveDataStartDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsKeySaveDataStartDate_QNAME, XMLGregorianCalendar.class, AcsKeySaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsKeySaveDataStartDate_QNAME, XMLGregorianCalendar.class, AcsKeySaveData.class, value);
     }
 
     /**
@@ -4300,7 +4088,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Description", scope = AcsEmployeeScheduleSaveData.class)
     public JAXBElement<String> createAcsEmployeeScheduleSaveDataDescription(String value) {
-        return new JAXBElement<>(_AcsEmployeeScheduleSaveDataDescription_QNAME, String.class, AcsEmployeeScheduleSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeScheduleSaveDataDescription_QNAME, String.class, AcsEmployeeScheduleSaveData.class, value);
     }
 
     /**
@@ -4313,7 +4101,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverDateOfBirth", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeDocumentsSaveDataDriverDateOfBirth(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverDateOfBirth_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeDocumentsSaveDataDriverDateOfBirth_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4326,7 +4114,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverDateOfExpiry", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeDocumentsSaveDataDriverDateOfExpiry(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverDateOfExpiry_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeDocumentsSaveDataDriverDateOfExpiry_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4339,7 +4127,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverDateOfIssue", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeDocumentsSaveDataDriverDateOfIssue(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverDateOfIssue_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeDocumentsSaveDataDriverDateOfIssue_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4352,7 +4140,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverFirstName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataDriverFirstName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverFirstName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataDriverFirstName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4365,7 +4153,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverLastName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataDriverLastName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverLastName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataDriverLastName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4378,7 +4166,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverMiddleName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataDriverMiddleName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverMiddleName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataDriverMiddleName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4391,7 +4179,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverNumber", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataDriverNumber(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverNumber_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataDriverNumber_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4404,7 +4192,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverPlaceOfBirth", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataDriverPlaceOfBirth(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverPlaceOfBirth_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataDriverPlaceOfBirth_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4417,7 +4205,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DriverSeries", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataDriverSeries(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataDriverSeries_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataDriverSeries_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4430,7 +4218,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportCodeOfIssuingState", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportCodeOfIssuingState(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportCodeOfIssuingState_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportCodeOfIssuingState_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4443,7 +4231,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportDateOfBirth", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeDocumentsSaveDataForeignPassportDateOfBirth(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportDateOfBirth_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeDocumentsSaveDataForeignPassportDateOfBirth_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4456,7 +4244,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportDateOfExpiry", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeDocumentsSaveDataForeignPassportDateOfExpiry(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportDateOfExpiry_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeDocumentsSaveDataForeignPassportDateOfExpiry_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4469,7 +4257,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportFirstName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportFirstName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportFirstName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportFirstName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4482,7 +4270,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportLastName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportLastName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportLastName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportLastName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4495,7 +4283,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportMRZ", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportMRZ(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportMRZ_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportMRZ_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4508,7 +4296,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportMiddleName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportMiddleName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportMiddleName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportMiddleName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4521,7 +4309,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportNationality", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportNationality(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportNationality_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportNationality_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4534,7 +4322,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportNumber", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportNumber(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportNumber_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportNumber_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4547,7 +4335,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportPersonalCode", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportPersonalCode(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportPersonalCode_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportPersonalCode_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4560,7 +4348,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "ForeignPassportSex", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataForeignPassportSex(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataForeignPassportSex_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataForeignPassportSex_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4573,7 +4361,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportDateOfBirth", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeDocumentsSaveDataPassportDateOfBirth(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportDateOfBirth_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeDocumentsSaveDataPassportDateOfBirth_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4586,7 +4374,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportDateOfIssue", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<XMLGregorianCalendar> createAcsEmployeeDocumentsSaveDataPassportDateOfIssue(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportDateOfIssue_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsEmployeeDocumentsSaveDataPassportDateOfIssue_QNAME, XMLGregorianCalendar.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4599,7 +4387,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportDepartmentCode", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportDepartmentCode(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportDepartmentCode_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportDepartmentCode_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4612,7 +4400,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportFirstName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportFirstName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportFirstName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportFirstName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4625,7 +4413,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportIssue", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportIssue(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePassportIssue_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBasePassportIssue_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4638,7 +4426,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportLastName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportLastName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportLastName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportLastName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4651,7 +4439,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportMiddleName", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportMiddleName(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportMiddleName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportMiddleName_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4664,7 +4452,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportNumber", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportNumber(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePassportNumber_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBasePassportNumber_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4677,7 +4465,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportPlaceOfBirth", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportPlaceOfBirth(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportPlaceOfBirth_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportPlaceOfBirth_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4690,7 +4478,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportRegistrationAddress", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportRegistrationAddress(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportRegistrationAddress_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportRegistrationAddress_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4703,7 +4491,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportSeries", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportSeries(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportSeries_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportSeries_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4716,7 +4504,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportSex", scope = AcsEmployeeDocumentsSaveData.class)
     public JAXBElement<String> createAcsEmployeeDocumentsSaveDataPassportSex(String value) {
-        return new JAXBElement<>(_AcsEmployeeDocumentsSaveDataPassportSex_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeDocumentsSaveDataPassportSex_QNAME, String.class, AcsEmployeeDocumentsSaveData.class, value);
     }
 
     /**
@@ -4729,7 +4517,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Employees", scope = EmployeesData.class)
     public JAXBElement<ArrayOfEmployeeCurentInfo> createEmployeesDataEmployees(ArrayOfEmployeeCurentInfo value) {
-        return new JAXBElement<>(_EmployeesDataEmployees_QNAME, ArrayOfEmployeeCurentInfo.class, EmployeesData.class, value);
+        return new JAXBElement<ArrayOfEmployeeCurentInfo>(_EmployeesDataEmployees_QNAME, ArrayOfEmployeeCurentInfo.class, EmployeesData.class, value);
     }
 
     /**
@@ -4742,7 +4530,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AccessLevels", scope = AcsEmployeeSlim.class)
     public JAXBElement<ArrayOfAcsAccessLevelSlimInfo> createAcsEmployeeSlimAccessLevels(ArrayOfAcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_AcsEmployeeSlimAccessLevels_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSlimInfo>(_AcsEmployeeSlimAccessLevels_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4755,7 +4543,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroupPath", scope = AcsEmployeeSlim.class)
     public JAXBElement<String> createAcsEmployeeSlimEmployeeGroupPath(String value) {
-        return new JAXBElement<>(_AcsEmployeeSlimEmployeeGroupPath_QNAME, String.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<String>(_AcsEmployeeSlimEmployeeGroupPath_QNAME, String.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4768,7 +4556,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "GroupCode", scope = AcsEmployeeSlim.class)
     public JAXBElement<String> createAcsEmployeeSlimGroupCode(String value) {
-        return new JAXBElement<>(_AcsEmployeeInfoGroupCode_QNAME, String.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<String>(_AcsEmployeeInfoGroupCode_QNAME, String.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4781,7 +4569,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Keys", scope = AcsEmployeeSlim.class)
     public JAXBElement<ArrayOfAcsKeyInfo> createAcsEmployeeSlimKeys(ArrayOfAcsKeyInfo value) {
-        return new JAXBElement<>(_AcsEmployeeSlimKeys_QNAME, ArrayOfAcsKeyInfo.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<ArrayOfAcsKeyInfo>(_AcsEmployeeSlimKeys_QNAME, ArrayOfAcsKeyInfo.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4794,7 +4582,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Position", scope = AcsEmployeeSlim.class)
     public JAXBElement<LEmployeePositionInfo> createAcsEmployeeSlimPosition(LEmployeePositionInfo value) {
-        return new JAXBElement<>(_EmployeeCurentInfoPosition_QNAME, LEmployeePositionInfo.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<LEmployeePositionInfo>(_EmployeeCurentInfoPosition_QNAME, LEmployeePositionInfo.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4807,7 +4595,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "RowNumber", scope = AcsEmployeeSlim.class)
     public JAXBElement<Long> createAcsEmployeeSlimRowNumber(Long value) {
-        return new JAXBElement<>(_AcsEmployeeSlimRowNumber_QNAME, Long.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<Long>(_AcsEmployeeSlimRowNumber_QNAME, Long.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4820,7 +4608,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "WorkSchedules", scope = AcsEmployeeSlim.class)
     public JAXBElement<ArrayOfWorkScheduleSlimInfo> createAcsEmployeeSlimWorkSchedules(ArrayOfWorkScheduleSlimInfo value) {
-        return new JAXBElement<>(_AcsEmployeeSlimWorkSchedules_QNAME, ArrayOfWorkScheduleSlimInfo.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<ArrayOfWorkScheduleSlimInfo>(_AcsEmployeeSlimWorkSchedules_QNAME, ArrayOfWorkScheduleSlimInfo.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4833,7 +4621,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "WorkZones", scope = AcsEmployeeSlim.class)
     public JAXBElement<ArrayOfWorkZoneSlimInfo> createAcsEmployeeSlimWorkZones(ArrayOfWorkZoneSlimInfo value) {
-        return new JAXBElement<>(_AcsEmployeeSlimWorkZones_QNAME, ArrayOfWorkZoneSlimInfo.class, AcsEmployeeSlim.class, value);
+        return new JAXBElement<ArrayOfWorkZoneSlimInfo>(_AcsEmployeeSlimWorkZones_QNAME, ArrayOfWorkZoneSlimInfo.class, AcsEmployeeSlim.class, value);
     }
 
     /**
@@ -4846,7 +4634,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeePositionID", scope = AcsEmployeeSaveData.class)
     public JAXBElement<String> createAcsEmployeeSaveDataEmployeePositionID(String value) {
-        return new JAXBElement<>(_AcsEmployeeSaveDataEmployeePositionID_QNAME, String.class, AcsEmployeeSaveData.class, value);
+        return new JAXBElement<String>(_AcsEmployeeSaveDataEmployeePositionID_QNAME, String.class, AcsEmployeeSaveData.class, value);
     }
 
     /**
@@ -4859,7 +4647,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "TimeIntervals", scope = RGDayIntervals.class)
     public JAXBElement<ArrayOfRGTimeInterval> createRGDayIntervalsTimeIntervals(ArrayOfRGTimeInterval value) {
-        return new JAXBElement<>(_RGDayIntervalsTimeIntervals_QNAME, ArrayOfRGTimeInterval.class, RGDayIntervals.class, value);
+        return new JAXBElement<ArrayOfRGTimeInterval>(_RGDayIntervalsTimeIntervals_QNAME, ArrayOfRGTimeInterval.class, RGDayIntervals.class, value);
     }
 
     /**
@@ -4872,7 +4660,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "AccessLevelsSlimInfo", scope = LAccessLevelsData.class)
     public JAXBElement<ArrayOfAcsAccessLevelSlimInfo> createLAccessLevelsDataAccessLevelsSlimInfo(ArrayOfAcsAccessLevelSlimInfo value) {
-        return new JAXBElement<>(_LAccessLevelsDataAccessLevelsSlimInfo_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, LAccessLevelsData.class, value);
+        return new JAXBElement<ArrayOfAcsAccessLevelSlimInfo>(_LAccessLevelsDataAccessLevelsSlimInfo_QNAME, ArrayOfAcsAccessLevelSlimInfo.class, LAccessLevelsData.class, value);
     }
 
     /**
@@ -4885,7 +4673,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "AddedEntities", scope = ChangePositionCodesResult.class)
     public JAXBElement<ArrayOfstring> createChangePositionCodesResultAddedEntities(ArrayOfstring value) {
-        return new JAXBElement<>(_ChangePositionCodesResultAddedEntities_QNAME, ArrayOfstring.class, ChangePositionCodesResult.class, value);
+        return new JAXBElement<ArrayOfstring>(_ChangePositionCodesResultAddedEntities_QNAME, ArrayOfstring.class, ChangePositionCodesResult.class, value);
     }
 
     /**
@@ -4898,7 +4686,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "DeletedEntities", scope = ChangePositionCodesResult.class)
     public JAXBElement<ArrayOfstring> createChangePositionCodesResultDeletedEntities(ArrayOfstring value) {
-        return new JAXBElement<>(_ChangePositionCodesResultDeletedEntities_QNAME, ArrayOfstring.class, ChangePositionCodesResult.class, value);
+        return new JAXBElement<ArrayOfstring>(_ChangePositionCodesResultDeletedEntities_QNAME, ArrayOfstring.class, ChangePositionCodesResult.class, value);
     }
 
     /**
@@ -4911,7 +4699,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "AddedEntities", scope = ChangeDataResult.class)
     public JAXBElement<ArrayOfguid> createChangeDataResultAddedEntities(ArrayOfguid value) {
-        return new JAXBElement<>(_ChangePositionCodesResultAddedEntities_QNAME, ArrayOfguid.class, ChangeDataResult.class, value);
+        return new JAXBElement<ArrayOfguid>(_ChangePositionCodesResultAddedEntities_QNAME, ArrayOfguid.class, ChangeDataResult.class, value);
     }
 
     /**
@@ -4924,7 +4712,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "DeletedEntities", scope = ChangeDataResult.class)
     public JAXBElement<ArrayOfguid> createChangeDataResultDeletedEntities(ArrayOfguid value) {
-        return new JAXBElement<>(_ChangePositionCodesResultDeletedEntities_QNAME, ArrayOfguid.class, ChangeDataResult.class, value);
+        return new JAXBElement<ArrayOfguid>(_ChangePositionCodesResultDeletedEntities_QNAME, ArrayOfguid.class, ChangeDataResult.class, value);
     }
 
     /**
@@ -4937,7 +4725,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "Description", scope = AcsAlcoGroupSaveData.class)
     public JAXBElement<String> createAcsAlcoGroupSaveDataDescription(String value) {
-        return new JAXBElement<>(_AcsAlcoGroupSaveDataDescription_QNAME, String.class, AcsAlcoGroupSaveData.class, value);
+        return new JAXBElement<String>(_AcsAlcoGroupSaveDataDescription_QNAME, String.class, AcsAlcoGroupSaveData.class, value);
     }
 
     /**
@@ -4950,7 +4738,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "MaxCheckPerDay", scope = AcsAlcoGroupSaveData.class)
     public JAXBElement<Integer> createAcsAlcoGroupSaveDataMaxCheckPerDay(Integer value) {
-        return new JAXBElement<>(_AcsAlcoGroupSaveDataMaxCheckPerDay_QNAME, Integer.class, AcsAlcoGroupSaveData.class, value);
+        return new JAXBElement<Integer>(_AcsAlcoGroupSaveDataMaxCheckPerDay_QNAME, Integer.class, AcsAlcoGroupSaveData.class, value);
     }
 
     /**
@@ -4963,7 +4751,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", name = "Name", scope = AcsAlcoGroupSaveData.class)
     public JAXBElement<String> createAcsAlcoGroupSaveDataName(String value) {
-        return new JAXBElement<>(_EmployeeGroupForAlcoGroupFullName_QNAME, String.class, AcsAlcoGroupSaveData.class, value);
+        return new JAXBElement<String>(_EmployeeGroupForAlcoGroupFullName_QNAME, String.class, AcsAlcoGroupSaveData.class, value);
     }
 
     /**
@@ -4976,7 +4764,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "Description", scope = AcsAccessLevelSaveData.class)
     public JAXBElement<String> createAcsAccessLevelSaveDataDescription(String value) {
-        return new JAXBElement<>(_AcsAccessLevelSaveDataDescription_QNAME, String.class, AcsAccessLevelSaveData.class, value);
+        return new JAXBElement<String>(_AcsAccessLevelSaveDataDescription_QNAME, String.class, AcsAccessLevelSaveData.class, value);
     }
 
     /**
@@ -4989,7 +4777,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "EndDate", scope = AcsAccessLevelSlimInfo.class)
     public JAXBElement<XMLGregorianCalendar> createAcsAccessLevelSlimInfoEndDate(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_AcsAccessLevelSlimInfoEndDate_QNAME, XMLGregorianCalendar.class, AcsAccessLevelSlimInfo.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_AcsAccessLevelSlimInfoEndDate_QNAME, XMLGregorianCalendar.class, AcsAccessLevelSlimInfo.class, value);
     }
 
     /**
@@ -5002,7 +4790,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "Folder", scope = AcsAccessLevelSlimInfo.class)
     public JAXBElement<FolderInfo> createAcsAccessLevelSlimInfoFolder(FolderInfo value) {
-        return new JAXBElement<>(_AcsAccessLevelSlimInfoFolder_QNAME, FolderInfo.class, AcsAccessLevelSlimInfo.class, value);
+        return new JAXBElement<FolderInfo>(_AcsAccessLevelSlimInfoFolder_QNAME, FolderInfo.class, AcsAccessLevelSlimInfo.class, value);
     }
 
     /**
@@ -5015,7 +4803,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", name = "ReadRightDisabled", scope = AcsAccessLevelSlimInfo.class)
     public JAXBElement<Boolean> createAcsAccessLevelSlimInfoReadRightDisabled(Boolean value) {
-        return new JAXBElement<>(_AcsAccessLevelSlimInfoReadRightDisabled_QNAME, Boolean.class, AcsAccessLevelSlimInfo.class, value);
+        return new JAXBElement<Boolean>(_AcsAccessLevelSlimInfoReadRightDisabled_QNAME, Boolean.class, AcsAccessLevelSlimInfo.class, value);
     }
 
     /**
@@ -5028,7 +4816,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "Description", scope = AcsBoxAccessLevelSaveData.class)
     public JAXBElement<String> createAcsBoxAccessLevelSaveDataDescription(String value) {
-        return new JAXBElement<>(_AcsBoxAccessLevelSaveDataDescription_QNAME, String.class, AcsBoxAccessLevelSaveData.class, value);
+        return new JAXBElement<String>(_AcsBoxAccessLevelSaveDataDescription_QNAME, String.class, AcsBoxAccessLevelSaveData.class, value);
     }
 
     /**
@@ -5041,7 +4829,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "Name", scope = AcsBoxAccessLevelSaveData.class)
     public JAXBElement<String> createAcsBoxAccessLevelSaveDataName(String value) {
-        return new JAXBElement<>(_AcsBoxAccessElementSaveInfoName_QNAME, String.class, AcsBoxAccessLevelSaveData.class, value);
+        return new JAXBElement<String>(_AcsBoxAccessElementSaveInfoName_QNAME, String.class, AcsBoxAccessLevelSaveData.class, value);
     }
 
     /**
@@ -5054,7 +4842,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.BoxAccessLevel", name = "BoxAccessElements", scope = AcsBoxAccessLevelSlimInfo.class)
     public JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> createAcsBoxAccessLevelSlimInfoBoxAccessElements(ArrayOfAcsBoxAccessLevelElementSlimInfo value) {
-        return new JAXBElement<>(_AcsBoxAccessLevelSlimInfoBoxAccessElements_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, AcsBoxAccessLevelSlimInfo.class, value);
+        return new JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo>(_AcsBoxAccessLevelSlimInfoBoxAccessElements_QNAME, ArrayOfAcsBoxAccessLevelElementSlimInfo.class, AcsBoxAccessLevelSlimInfo.class, value);
     }
 
     /**
@@ -5067,7 +4855,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AcsKeys", name = "AcsEmployeeId", scope = AcsKeyInfo.class)
     public JAXBElement<String> createAcsKeyInfoAcsEmployeeId(String value) {
-        return new JAXBElement<>(_AcsKeyInfoAcsEmployeeId_QNAME, String.class, AcsKeyInfo.class, value);
+        return new JAXBElement<String>(_AcsKeyInfoAcsEmployeeId_QNAME, String.class, AcsKeyInfo.class, value);
     }
 
     /**
@@ -5080,7 +4868,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Fields", scope = EmployeeInfo.class)
     public JAXBElement<ArrayOfVariableInfo> createEmployeeInfoFields(ArrayOfVariableInfo value) {
-        return new JAXBElement<>(_EmployeeInfoFields_QNAME, ArrayOfVariableInfo.class, EmployeeInfo.class, value);
+        return new JAXBElement<ArrayOfVariableInfo>(_EmployeeInfoFields_QNAME, ArrayOfVariableInfo.class, EmployeeInfo.class, value);
     }
 
     /**
@@ -5093,7 +4881,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Photo", scope = EmployeeInfo.class)
     public JAXBElement<byte[]> createEmployeeInfoPhoto(byte[] value) {
-        return new JAXBElement<>(_EmployeeInfoPhoto_QNAME, byte[].class, EmployeeInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_EmployeeInfoPhoto_QNAME, byte[].class, EmployeeInfo.class, ((byte[]) value));
     }
 
     /**
@@ -5106,7 +4894,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "EmployeeGroupPath", scope = AcsEmployeeFull.class)
     public JAXBElement<String> createAcsEmployeeFullEmployeeGroupPath(String value) {
-        return new JAXBElement<>(_AcsEmployeeSlimEmployeeGroupPath_QNAME, String.class, AcsEmployeeFull.class, value);
+        return new JAXBElement<String>(_AcsEmployeeSlimEmployeeGroupPath_QNAME, String.class, AcsEmployeeFull.class, value);
     }
 
     /**
@@ -5119,7 +4907,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Position", scope = AcsEmployeeFull.class)
     public JAXBElement<LEmployeePositionInfo> createAcsEmployeeFullPosition(LEmployeePositionInfo value) {
-        return new JAXBElement<>(_EmployeeCurentInfoPosition_QNAME, LEmployeePositionInfo.class, AcsEmployeeFull.class, value);
+        return new JAXBElement<LEmployeePositionInfo>(_EmployeeCurentInfoPosition_QNAME, LEmployeePositionInfo.class, AcsEmployeeFull.class, value);
     }
 
     /**
@@ -5132,7 +4920,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Employees", scope = EmployeesInfoData2 .class)
     public JAXBElement<ArrayOfAcsEmployeeInfo> createEmployeesInfoData2Employees(ArrayOfAcsEmployeeInfo value) {
-        return new JAXBElement<>(_EmployeesDataEmployees_QNAME, ArrayOfAcsEmployeeInfo.class, EmployeesInfoData2 .class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeInfo>(_EmployeesDataEmployees_QNAME, ArrayOfAcsEmployeeInfo.class, EmployeesInfoData2 .class, value);
     }
 
     /**
@@ -5145,7 +4933,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "Weeks", scope = AcsWeekScheduleFull.class)
     public JAXBElement<ArrayOfAcsWeekFull> createAcsWeekScheduleFullWeeks(ArrayOfAcsWeekFull value) {
-        return new JAXBElement<>(_AcsWeekScheduleSlimWeeks_QNAME, ArrayOfAcsWeekFull.class, AcsWeekScheduleFull.class, value);
+        return new JAXBElement<ArrayOfAcsWeekFull>(_AcsWeekScheduleSlimWeeks_QNAME, ArrayOfAcsWeekFull.class, AcsWeekScheduleFull.class, value);
     }
 
     /**
@@ -5158,7 +4946,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "DayIntervals", scope = AcsMultiDaySchedule.class)
     public JAXBElement<ArrayOfRGDayIntervals> createAcsMultiDayScheduleDayIntervals(ArrayOfRGDayIntervals value) {
-        return new JAXBElement<>(_AcsMultiDayScheduleDayIntervals_QNAME, ArrayOfRGDayIntervals.class, AcsMultiDaySchedule.class, value);
+        return new JAXBElement<ArrayOfRGDayIntervals>(_AcsMultiDayScheduleDayIntervals_QNAME, ArrayOfRGDayIntervals.class, AcsMultiDaySchedule.class, value);
     }
 
     /**
@@ -5171,7 +4959,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", name = "DayIntervals", scope = AcsDaySchedule.class)
     public JAXBElement<RGDayIntervals> createAcsDayScheduleDayIntervals(RGDayIntervals value) {
-        return new JAXBElement<>(_AcsMultiDayScheduleDayIntervals_QNAME, RGDayIntervals.class, AcsDaySchedule.class, value);
+        return new JAXBElement<RGDayIntervals>(_AcsMultiDayScheduleDayIntervals_QNAME, RGDayIntervals.class, AcsDaySchedule.class, value);
     }
 
     /**
@@ -5184,7 +4972,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AccessLevelsIds", scope = EmployeesFilter.class)
     public JAXBElement<ArrayOfguid> createEmployeesFilterAccessLevelsIds(ArrayOfguid value) {
-        return new JAXBElement<>(_EmployeesFilterAccessLevelsIds_QNAME, ArrayOfguid.class, EmployeesFilter.class, value);
+        return new JAXBElement<ArrayOfguid>(_EmployeesFilterAccessLevelsIds_QNAME, ArrayOfguid.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5197,7 +4985,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "CardTypesIds", scope = EmployeesFilter.class)
     public JAXBElement<ArrayOfguid> createEmployeesFilterCardTypesIds(ArrayOfguid value) {
-        return new JAXBElement<>(_EmployeesFilterCardTypesIds_QNAME, ArrayOfguid.class, EmployeesFilter.class, value);
+        return new JAXBElement<ArrayOfguid>(_EmployeesFilterCardTypesIds_QNAME, ArrayOfguid.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5210,7 +4998,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FirstNameContains", scope = EmployeesFilter.class)
     public JAXBElement<String> createEmployeesFilterFirstNameContains(String value) {
-        return new JAXBElement<>(_EmployeesFilterFirstNameContains_QNAME, String.class, EmployeesFilter.class, value);
+        return new JAXBElement<String>(_EmployeesFilterFirstNameContains_QNAME, String.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5223,7 +5011,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "IsKeySiteCode", scope = EmployeesFilter.class)
     public JAXBElement<Boolean> createEmployeesFilterIsKeySiteCode(Boolean value) {
-        return new JAXBElement<>(_EmployeesFilterIsKeySiteCode_QNAME, Boolean.class, EmployeesFilter.class, value);
+        return new JAXBElement<Boolean>(_EmployeesFilterIsKeySiteCode_QNAME, Boolean.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5236,7 +5024,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "KeyAfterSiteCode", scope = EmployeesFilter.class)
     public JAXBElement<Short> createEmployeesFilterKeyAfterSiteCode(Short value) {
-        return new JAXBElement<>(_EmployeesFilterKeyAfterSiteCode_QNAME, Short.class, EmployeesFilter.class, value);
+        return new JAXBElement<Short>(_EmployeesFilterKeyAfterSiteCode_QNAME, Short.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5249,7 +5037,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "KeyCommentContains", scope = EmployeesFilter.class)
     public JAXBElement<String> createEmployeesFilterKeyCommentContains(String value) {
-        return new JAXBElement<>(_EmployeesFilterKeyCommentContains_QNAME, String.class, EmployeesFilter.class, value);
+        return new JAXBElement<String>(_EmployeesFilterKeyCommentContains_QNAME, String.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5262,7 +5050,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "KeyNumber", scope = EmployeesFilter.class)
     public JAXBElement<Long> createEmployeesFilterKeyNumber(Long value) {
-        return new JAXBElement<>(_EmployeesFilterKeyNumber_QNAME, Long.class, EmployeesFilter.class, value);
+        return new JAXBElement<Long>(_EmployeesFilterKeyNumber_QNAME, Long.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5275,7 +5063,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "KeySiteCode", scope = EmployeesFilter.class)
     public JAXBElement<Integer> createEmployeesFilterKeySiteCode(Integer value) {
-        return new JAXBElement<>(_EmployeesFilterKeySiteCode_QNAME, Integer.class, EmployeesFilter.class, value);
+        return new JAXBElement<Integer>(_EmployeesFilterKeySiteCode_QNAME, Integer.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5288,7 +5076,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "LastNameContains", scope = EmployeesFilter.class)
     public JAXBElement<String> createEmployeesFilterLastNameContains(String value) {
-        return new JAXBElement<>(_EmployeesFilterLastNameContains_QNAME, String.class, EmployeesFilter.class, value);
+        return new JAXBElement<String>(_EmployeesFilterLastNameContains_QNAME, String.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5301,7 +5089,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SecondNameContains", scope = EmployeesFilter.class)
     public JAXBElement<String> createEmployeesFilterSecondNameContains(String value) {
-        return new JAXBElement<>(_EmployeesFilterSecondNameContains_QNAME, String.class, EmployeesFilter.class, value);
+        return new JAXBElement<String>(_EmployeesFilterSecondNameContains_QNAME, String.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5314,7 +5102,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "TabNumberContains", scope = EmployeesFilter.class)
     public JAXBElement<String> createEmployeesFilterTabNumberContains(String value) {
-        return new JAXBElement<>(_EmployeesFilterTabNumberContains_QNAME, String.class, EmployeesFilter.class, value);
+        return new JAXBElement<String>(_EmployeesFilterTabNumberContains_QNAME, String.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5327,7 +5115,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "TabNumberEquals", scope = EmployeesFilter.class)
     public JAXBElement<String> createEmployeesFilterTabNumberEquals(String value) {
-        return new JAXBElement<>(_EmployeesFilterTabNumberEquals_QNAME, String.class, EmployeesFilter.class, value);
+        return new JAXBElement<String>(_EmployeesFilterTabNumberEquals_QNAME, String.class, EmployeesFilter.class, value);
     }
 
     /**
@@ -5340,7 +5128,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Employees", scope = EmployeesInfoData.class)
     public JAXBElement<ArrayOfAcsEmployeeSlim> createEmployeesInfoDataEmployees(ArrayOfAcsEmployeeSlim value) {
-        return new JAXBElement<>(_EmployeesDataEmployees_QNAME, ArrayOfAcsEmployeeSlim.class, EmployeesInfoData.class, value);
+        return new JAXBElement<ArrayOfAcsEmployeeSlim>(_EmployeesDataEmployees_QNAME, ArrayOfAcsEmployeeSlim.class, EmployeesInfoData.class, value);
     }
 
     /**
@@ -5353,7 +5141,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Vehicle", name = "GroupPath", scope = AcsVehicle.class)
     public JAXBElement<String> createAcsVehicleGroupPath(String value) {
-        return new JAXBElement<>(_AcsVehicleGroupPath_QNAME, String.class, AcsVehicle.class, value);
+        return new JAXBElement<String>(_AcsVehicleGroupPath_QNAME, String.class, AcsVehicle.class, value);
     }
 
     /**
@@ -5366,7 +5154,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AddField", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionAddField(String value) {
-        return new JAXBElement<>(_SearchConditionAddField_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionAddField_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5379,7 +5167,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AdditionalFieldID", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionAdditionalFieldID(String value) {
-        return new JAXBElement<>(_SearchConditionAdditionalFieldID_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionAdditionalFieldID_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5392,7 +5180,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "AlcoGroupID", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionAlcoGroupID(String value) {
-        return new JAXBElement<>(_SearchConditionAlcoGroupID_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionAlcoGroupID_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5405,7 +5193,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Birthday", scope = SearchCondition.class)
     public JAXBElement<XMLGregorianCalendar> createSearchConditionBirthday(XMLGregorianCalendar value) {
-        return new JAXBElement<>(_SearchConditionBirthday_QNAME, XMLGregorianCalendar.class, SearchCondition.class, value);
+        return new JAXBElement<XMLGregorianCalendar>(_SearchConditionBirthday_QNAME, XMLGregorianCalendar.class, SearchCondition.class, value);
     }
 
     /**
@@ -5418,7 +5206,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "DrivingLicenseNumber", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionDrivingLicenseNumber(String value) {
-        return new JAXBElement<>(_SearchConditionDrivingLicenseNumber_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionDrivingLicenseNumber_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5431,7 +5219,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Email", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionEmail(String value) {
-        return new JAXBElement<>(_SearchConditionEmail_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionEmail_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5444,7 +5232,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "FirstName", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionFirstName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoFirstName_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoFirstName_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5457,7 +5245,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "GroupID", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionGroupID(String value) {
-        return new JAXBElement<>(_SearchConditionGroupID_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionGroupID_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5470,7 +5258,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "InternationalPassportNumber", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionInternationalPassportNumber(String value) {
-        return new JAXBElement<>(_SearchConditionInternationalPassportNumber_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionInternationalPassportNumber_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5483,7 +5271,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "KeyDescription", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionKeyDescription(String value) {
-        return new JAXBElement<>(_SearchConditionKeyDescription_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionKeyDescription_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5496,7 +5284,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "KeyNumber", scope = SearchCondition.class)
     public JAXBElement<Long> createSearchConditionKeyNumber(Long value) {
-        return new JAXBElement<>(_EmployeesFilterKeyNumber_QNAME, Long.class, SearchCondition.class, value);
+        return new JAXBElement<Long>(_EmployeesFilterKeyNumber_QNAME, Long.class, SearchCondition.class, value);
     }
 
     /**
@@ -5509,7 +5297,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "LastName", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionLastName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoLastName_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoLastName_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5522,7 +5310,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "PassportNumber", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionPassportNumber(String value) {
-        return new JAXBElement<>(_AcsEmployeeFullBasePassportNumber_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_AcsEmployeeFullBasePassportNumber_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5535,7 +5323,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "Phone", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionPhone(String value) {
-        return new JAXBElement<>(_SearchConditionPhone_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_SearchConditionPhone_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5548,7 +5336,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "SecondName", scope = SearchCondition.class)
     public JAXBElement<String> createSearchConditionSecondName(String value) {
-        return new JAXBElement<>(_AcsEmployeePhotosInfoSecondName_QNAME, String.class, SearchCondition.class, value);
+        return new JAXBElement<String>(_AcsEmployeePhotosInfoSecondName_QNAME, String.class, SearchCondition.class, value);
     }
 
     /**
@@ -5561,7 +5349,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", name = "TableNumber", scope = SearchCondition.class)
     public JAXBElement<Integer> createSearchConditionTableNumber(Integer value) {
-        return new JAXBElement<>(_SearchConditionTableNumber_QNAME, Integer.class, SearchCondition.class, value);
+        return new JAXBElement<Integer>(_SearchConditionTableNumber_QNAME, Integer.class, SearchCondition.class, value);
     }
 
 }

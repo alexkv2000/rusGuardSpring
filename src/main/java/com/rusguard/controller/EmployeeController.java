@@ -1,13 +1,14 @@
 package com.rusguard.controller;
 
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
-import com.rusguard.client.ILNetworkConfigurationService;
+import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfint;
 import com.rusguard.client.ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage;
 import com.rusguard.schema.AccessLevelIdsRequest;
 import com.rusguard.schema.SaveAcsEmployeeRequest;
 import com.rusguard.service.EmployeeService;
 
 
+import com.rusguard.service.impl.EmployeeServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -17,19 +18,26 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.validation.Valid;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.SortOrder;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AccessLevelSortedColumn;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AccessLevelsOwner;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsAccessLevelSlimInfo;
-import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.LAccessLevelsData;
+//import jakarta.validation.Valid;
+import org.checkerframework.checker.units.qual.K;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.AcsEmployeeFull;
+import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.ArrayOfAcsEmployeeFull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import waffle.servlet.WindowsPrincipal;
+import waffle.windows.auth.impl.WindowsAccountImpl;
 
+import javax.validation.Valid;
+import java.lang.reflect.Field;
+import java.security.Principal;
 import java.util.*;
+import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("/api/rusguard/Employee")
@@ -40,12 +48,15 @@ import java.util.*;
 @SecurityRequirement(name = "bearerAuth")
 @Validated
 public class EmployeeController {
-
+    @Value("${app.security.allowed-users:}")
+    private String allowedUsersConfig;
+    @Value("${app.security.allowed-admin:}")
+    private String allowedAdminConfig;
     @Autowired
     private EmployeeService employeeService;
 
     /**
-     * Получение списка уровней доступа
+     * Получение списка уровней доступа только для АДМИНА
      *
      * @return Список доступных уровней доступа
      */
@@ -94,6 +105,10 @@ public class EmployeeController {
     @GetMapping("/getAccessLevels")
     public ResponseEntity<List<Map<String, Object>>> getAccessLevelsSlim() {
         List<Map<String, Object>> mapresult = new ArrayList<>();
+        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+        if (accessIsLock(allowedAdminConfig, currentUser)) {
+            return ResponseEntity.ok(mapresult);
+        }
         employeeService.getAccessLevelsSlim()
                 .forEach(
                         tt -> {
@@ -111,7 +126,7 @@ public class EmployeeController {
     }
 
     /**
-     * Получение списка уровней доступа сотрудника
+     * Получение списка уровней доступа сотрудника только для АДМИНА
      *
      * @param idEmployee ID сотрудника
      * @return Список доступных уровней доступа сотрудника
@@ -164,6 +179,10 @@ public class EmployeeController {
     )
                                                                                  String idEmployee) throws ILNetworkConfigurationServiceGetAccessLevelsByEmployeeIDIncludeRemovedEmployeesDataNotFoundExceptionFaultFaultMessage {
         List<Map<String, Object>> mapresult = new ArrayList<>();
+        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+        if (accessIsLock(allowedAdminConfig, currentUser)) {
+            return ResponseEntity.ok(mapresult);
+        }
         ResponseEntity<List<Map<String, Object>>> map = employeeService.getAccessLevelsByEmployeeID(idEmployee);
         for (int i = 0; i < Objects.requireNonNull(map.getBody()).size(); i++) {
             mapresult.add(map.getBody().get(i));
@@ -172,7 +191,7 @@ public class EmployeeController {
     }
 
     /**
-     * Блокировка/разблокировка сотрудника
+     * Блокировка/разблокировка сотрудника только для АДМИНА
      *
      * @param idEmployee ID сотрудника
      * @param flagLock   true - заблокировать, false - разблокировать
@@ -226,13 +245,13 @@ public class EmployeeController {
     @PostMapping(value = "/lockEmployee",
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> lockEmployee(@Parameter(
-                                                                    description = "Уникальный идентификатор сотрудника",
-                                                                    required = true,
-                                                                    example = "a38abfd9-d277-43fb-b719-618c7c91e7a1",
-                                                                    schema = @Schema(
-                                                                            pattern = "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
-                                                                    )
-                                                            )
+            description = "Уникальный идентификатор сотрудника",
+            required = true,
+            example = "a38abfd9-d277-43fb-b719-618c7c91e7a1",
+            schema = @Schema(
+                    pattern = "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+            )
+    )
                                                             @RequestParam(required = false) String idEmployee,
 
                                                             @Parameter(
@@ -241,14 +260,18 @@ public class EmployeeController {
                                                                     example = "true"
                                                             )
                                                             @RequestParam(required = false) boolean flagLock) {
-        Map<String, Object> result;
+        Map<String, Object> result = null;
+        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+        if (accessIsLock(allowedAdminConfig, currentUser)) {
+            return ResponseEntity.ok(result);
+        }
         result = employeeService.lockAcsEmployee(idEmployee, flagLock);
 
         return ResponseEntity.ok(result);
     }
 
     /**
-     * Установка уровней доступа для сотрудника
+     * Установка уровней доступа для сотрудника только для АДМИНА
      *
      * @param employeeID             ID сотрудника
      * @param request                Список ID уровней доступа
@@ -274,10 +297,10 @@ public class EmployeeController {
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> setAccessLevelEmployee(@Parameter(
-                                                                              description = "ID сотрудника",
-                                                                              required = true,
-                                                                              example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
-                                                                      )
+            description = "ID сотрудника",
+            required = true,
+            example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
+    )
                                                                       @RequestParam String employeeID,
 
                                                                       @io.swagger.v3.oas.annotations.parameters.RequestBody(
@@ -318,7 +341,19 @@ public class EmployeeController {
                 request.getGuid().forEach(accessLevelIDs.getGuid()::add);
             }
 
-            Map<String, Object> result = employeeService.setUseEmployeeParentAccessLevel(
+            Map<String, Object> result = null;
+            Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+            if (auth == null || !auth.isAuthenticated()) {
+                return ResponseEntity.badRequest().build();
+            }
+            String currentUser = auth.getName();
+
+            if (accessIsLock(allowedAdminConfig, currentUser)) {
+                return ResponseEntity.badRequest().build();
+            }
+
+            result = employeeService.setUseEmployeeParentAccessLevel(
                     employeeID, accessLevelIDs, isUseParentAccessLevel);
 
             return ResponseEntity.ok(result);
@@ -330,7 +365,7 @@ public class EmployeeController {
     }
 
     /**
-     * Установка уровней доступа для сотрудника
+     * Установка уровней доступа для сотрудника только для АДМИНА
      *
      * @param idEmployee ID сотрудника
      * @param flag       Использовать уровни блокировки сотрудника
@@ -343,6 +378,10 @@ public class EmployeeController {
     @PostMapping("/setLocked")
     public ResponseEntity<Map<String, Object>> setAccessLevelEmployee(@RequestParam String idEmployee, @RequestParam boolean flag) {
         try {
+            String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+            if (accessIsLock(allowedAdminConfig, currentUser)) {
+                return ResponseEntity.badRequest().build();
+            }
             employeeService.setEmployeeLocked(idEmployee, flag);
             return ResponseEntity.ok().build();
         } catch (Exception e) {
@@ -351,7 +390,7 @@ public class EmployeeController {
     }
 
     /**
-     * Поиск сотрудников по ФИО
+     * Поиск сотрудников по ФИО только для АДМИНА
      *
      * @param lastName   Фамилия
      * @param firstName  Имя
@@ -373,9 +412,9 @@ public class EmployeeController {
     @GetMapping(value = "/getByFIO",
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> getByFIO(@Parameter(
-                                                                description = "Фамилия сотрудника",
-                                                                example = "Иванов"
-                                                        )
+            description = "Фамилия сотрудника",
+            example = "Иванов"
+    )
                                                         @RequestParam(required = false) String lastName,
 
                                                         @Parameter(
@@ -404,7 +443,12 @@ public class EmployeeController {
         params.put("isLock", String.valueOf(isLock));
 
         // Call the service method with the parameters
-        Map<String, Object> result = employeeService.getEmployeeByFIO(params);
+        Map<String, Object> result = null;
+        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+        if (accessIsLock(allowedAdminConfig, currentUser)) {
+            return ResponseEntity.ok(result);
+        }
+        result = employeeService.getEmployeeByFIO(params);
         return ResponseEntity.ok(result);
     }
 
@@ -433,8 +477,12 @@ public class EmployeeController {
             example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
     )
                                                        @RequestParam(required = false) String idEmployee) {
-        Map<String, Object> result = employeeService.getEmployeeById(idEmployee.toUpperCase());
-
+        Map<String, Object> result = null;
+        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+        if (accessIsLock(allowedUsersConfig, currentUser)) {
+            return ResponseEntity.ok(result);
+        }
+        result = employeeService.getEmployeeById(idEmployee.toUpperCase());
 
         return ResponseEntity.ok(result);
     }
@@ -450,9 +498,21 @@ public class EmployeeController {
     @ApiResponse(responseCode = "200", description = "Успешное выполнение запроса")
     @GetMapping("/getByGroupID")
     public ResponseEntity<Map<String, Object>> getByGroupID(@RequestParam(required = false) String idGroup) {
-        Map<String, Object> result = employeeService.getEmployeesByGroupID(idGroup.toUpperCase());
+        Map<String, Object> result = null; //TODO создать пустую карточку для отображения если (allowedUsersConfig=WindowsAccountImpl.getCurrentUsername())
+        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+        if (accessIsLock(allowedUsersConfig, currentUser)) {
+            return ResponseEntity.ok(result);
+        }
+        result = employeeService.getEmployeesByGroupID(idGroup.toUpperCase());
         return ResponseEntity.ok(result);
     }
+
+    public static boolean accessIsLock(String accessUsers, String currentUser) {
+        return Arrays.stream(accessUsers.toUpperCase().split(","))
+                .map(String::trim) // Убираем пробелы вокруг имен ( " IvanovII" -> "IvanovII" )
+                .noneMatch(allowedUser -> allowedUser.equalsIgnoreCase(currentUser));
+    }
+
 
     /**
      * Поиск сотрудника по табельному номеру
@@ -465,12 +525,17 @@ public class EmployeeController {
     @ApiResponse(responseCode = "200", description = "Успешное выполнение запроса")
     @GetMapping("/getByTabelNumber")
     public ResponseEntity<Map<String, Object>> getByTabelNumber(@RequestParam(required = false) String tabelNumber) {
-        Map<String, Object> result = employeeService.GetEmployeesByTabelNumber(tabelNumber);
+        Map<String, Object> result = null;
+//        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+//        if (accessIsLock(allowedUsersConfig, currentUser)) {
+//            return ResponseEntity.ok(result);
+//        }
+        result = employeeService.GetEmployeesByTabelNumber(tabelNumber);
         return ResponseEntity.ok(result);
     }
 
     /**
-     * Поиск проходов сотрудника по ID сотрудника
+     * Поиск проходов сотрудника по ID сотрудника только для АДМИНА
      *
      * @param idEmployee   ID сотрудника
      * @param dataPassages Дата проходка сотрудника
@@ -490,10 +555,10 @@ public class EmployeeController {
             produces = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<Map<String, Object>> getPassagesByDate(@Parameter(
-                                                                         description = "ID сотрудника",
-                                                                         required = true,
-                                                                         example = "C675452F-6881-426D-99A7-D7AF2FC6B943"
-                                                                 )
+            description = "ID сотрудника",
+            required = true,
+            example = "C675452F-6881-426D-99A7-D7AF2FC6B943"
+    )
                                                                  @RequestParam(required = false) String idEmployee,
 
                                                                  @Parameter(
@@ -501,13 +566,23 @@ public class EmployeeController {
                                                                          required = true,
                                                                          example = "30-01-2026"
                                                                  )
-                                                                 @RequestParam(required = false) String dataPassages) {
-        Map<String, Object> result = employeeService.getEmployeePassagesByDate(idEmployee.toUpperCase(), dataPassages);
+                                                                 @RequestParam(required = false) String dataPassages) throws NoSuchFieldException {
+        Map<String, Object> result = null;
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+        if (auth == null || !auth.isAuthenticated()) {
+            return ResponseEntity.badRequest().build();
+        }
+        String currentUser = auth.getName();
+        if (accessIsLock(allowedAdminConfig, currentUser)) {
+            return ResponseEntity.badRequest().build();
+        }
+        result = employeeService.getEmployeePassagesByDate(idEmployee.toUpperCase(), dataPassages);
         return ResponseEntity.ok(result);
     }
 
     /**
-     * Добавление email сотруднику
+     * Добавление email сотруднику только для АДМИНА
      *
      * @param idEmployee  ID сотрудника
      * @param email       Адрес электронной почты
@@ -521,6 +596,10 @@ public class EmployeeController {
     @PostMapping("/addEmail")
     public ResponseEntity<Map<String, Object>> addEmail(@RequestParam(required = false) String idEmployee, @RequestParam(required = false) String email, @RequestParam(required = false) String description) {
         try {
+            String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+            if (accessIsLock(allowedAdminConfig, currentUser)) {
+                return ResponseEntity.ok(null);
+            }
             employeeService.addEmailEmployee(idEmployee, email, description);
             return ResponseEntity.ok().build();
         } catch (Exception e) {
@@ -529,7 +608,7 @@ public class EmployeeController {
     }
 
     /**
-     * Добавление сотрудника в справочник
+     * Добавление сотрудника в справочник только для АДМИНА
      *
      * @param lastname         Фамилия
      * @param firstname        Имя
@@ -564,6 +643,10 @@ public class EmployeeController {
             @RequestParam(required = false) String EmailDescription
     ) {
         try {
+            String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+            if (accessIsLock(allowedAdminConfig, currentUser)) {
+                return ResponseEntity.ok(null);
+            }
             Integer intTabelNumber = Integer.valueOf(tabelNumber);
             employeeService.addEmployee(firstname, lastname, secondname, intTabelNumber, position, positionGroup, Comment, AdressReg, PassportIISUE, PassportNumber, Email, EmailDescription);
             return ResponseEntity.ok().build();
@@ -573,7 +656,7 @@ public class EmployeeController {
     }
 
     /**
-     * Сохраняет информацию сотрудника
+     * Сохраняет информацию сотрудника только для АДМИНА
      *
      * @param idEmployee ID сотрудника
      * @param request    структура JSON ({
@@ -595,6 +678,7 @@ public class EmployeeController {
      *                   })
      * @return Результат операции
      */
+    //TODO добавить проверку WindowsAccountImpl.getCurrentUsername()
     @Operation(
             summary = "Сохранение данных сотрудника СКУД",
             description = "Обновляет или создает данные сотрудника в системе контроля доступа",
@@ -629,9 +713,9 @@ public class EmployeeController {
             consumes = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<Map<String, Object>> saveAcsEmployee(@Parameter(
-                                                                       description = "ID сотрудника (можно передать в теле запроса)",
-                                                                       example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
-                                                               )
+            description = "ID сотрудника (можно передать в теле запроса)",
+            example = "a38abfd9-d277-43fb-b719-618c7c91e7a1"
+    )
                                                                @RequestParam(required = false) String idEmployee,
 
                                                                @io.swagger.v3.oas.annotations.parameters.RequestBody(
@@ -668,7 +752,19 @@ public class EmployeeController {
         try {
             // Вызов сервиса с передачей DTO
 //            Map<String, Object> result = employeeService.saveAcsEmployee(idEmployee, request);
-            Map<String, Object> result = employeeService.saveAcsEmployee(idEmployee, request);
+            Map<String, Object> result = null;
+            Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+            if (auth == null || !auth.isAuthenticated()) {
+                return ResponseEntity.badRequest().build();
+            }
+            String currentUser = auth.getName();
+
+            if (accessIsLock(allowedAdminConfig, currentUser)) {
+                return ResponseEntity.badRequest().build();
+            }
+
+            result = employeeService.saveAcsEmployee(idEmployee, request);
 
             // Проверяем статус операции
             if ("success".equals(result.get("status"))) {
@@ -706,12 +802,24 @@ public class EmployeeController {
             produces = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<Map<String, Object>> getEmployeeGroups() {
-        Map<String, Object> result = employeeService.GetEmployeeGroup().getBody();
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+        if (auth == null || !auth.isAuthenticated()) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        Map<String, Object> result = null;
+//        String currentUser = WindowsAccountImpl.getCurrentUsername().toUpperCase();
+        String currentUser = auth.getName();
+        if (accessIsLock(allowedUsersConfig, currentUser)) {
+            return ResponseEntity.badRequest().build();
+        }
+        result = employeeService.GetEmployeeGroup().getBody();
         return ResponseEntity.ok(result);
     }
 
     /**
-     * Получение дерева должностей сотрудников
+     * Получение дерева должностей сотрудников только для АДМИНА
      *
      * @return Иерархическая структура должностей сотрудников
      */
@@ -728,9 +836,40 @@ public class EmployeeController {
             produces = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<Map<String, Object>> getPositionCodes() {
-        Map<String, Object> result = employeeService.GetPositionCodes().getBody();
+        Map<String, Object> result = null;
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+        if (auth == null || !auth.isAuthenticated()) {
+            return ResponseEntity.badRequest().build();
+        }
+        String currentUser = auth.getName();
+
+        if (accessIsLock(allowedAdminConfig, currentUser)) {
+            return ResponseEntity.ok(result);
+        }
+        result = employeeService.GetPositionCodes().getBody();
         return ResponseEntity.ok(result);
     }
+    @GetMapping("/api/whoami")
+    public String whoAmI() {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
+        if (auth == null || !auth.isAuthenticated()) {
+            return "Пользователь не определен";
+        }
+
+
+        String username = auth.getName(); // Вернет DOMAIN\User
+
+        // Проверка ролей (групп AD), если они были настроены в Waffle
+        boolean isAdmin = auth.getAuthorities().stream()
+                .anyMatch(a -> a.getAuthority().equals("ROLE_ADMINS")); // Имя группы AD с префиксом ROLE_
+
+        if (isAdmin) {
+            return "Привет, Админ " + username;
+        }
+
+        return "Привет, пользователь " + username;
+    }
 
 }

@@ -1,13 +1,13 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_net_services;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.ArrayOfAccessPoint2CameraChain;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.ArrayOfLDriverAdded;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.ArrayOfLNetworkAdded;
@@ -21,7 +21,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ar
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.vviinvestment_rusguard_net_services package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -32,7 +32,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ar
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _LNetworkChanges_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", "LNetworkChanges");
@@ -87,8 +87,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LNetworkChanges }
      * 
-     * @return
-     *     the new instance of {@link LNetworkChanges }
      */
     public LNetworkChanges createLNetworkChanges() {
         return new LNetworkChanges();
@@ -97,8 +95,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Operation }
      * 
-     * @return
-     *     the new instance of {@link Operation }
      */
     public Operation createOperation() {
         return new Operation();
@@ -107,8 +103,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLResourcePropertyValues }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLResourcePropertyValues }
      */
     public ArrayOfLResourcePropertyValues createArrayOfLResourcePropertyValues() {
         return new ArrayOfLResourcePropertyValues();
@@ -117,8 +111,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfDeviceDriverInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfDeviceDriverInfo }
      */
     public ArrayOfDeviceDriverInfo createArrayOfDeviceDriverInfo() {
         return new ArrayOfDeviceDriverInfo();
@@ -127,8 +119,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLPropertyValue }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLPropertyValue }
      */
     public ArrayOfLPropertyValue createArrayOfLPropertyValue() {
         return new ArrayOfLPropertyValue();
@@ -137,8 +127,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLLinkChanged }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLLinkChanged }
      */
     public ArrayOfLLinkChanged createArrayOfLLinkChanged() {
         return new ArrayOfLLinkChanged();
@@ -147,8 +135,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LLinkChanged }
      * 
-     * @return
-     *     the new instance of {@link LLinkChanged }
      */
     public LLinkChanged createLLinkChanged() {
         return new LLinkChanged();
@@ -157,8 +143,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeviceOperation }
      * 
-     * @return
-     *     the new instance of {@link DeviceOperation }
      */
     public DeviceOperation createDeviceOperation() {
         return new DeviceOperation();
@@ -167,8 +151,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeviceCallMethodOperation }
      * 
-     * @return
-     *     the new instance of {@link DeviceCallMethodOperation }
      */
     public DeviceCallMethodOperation createDeviceCallMethodOperation() {
         return new DeviceCallMethodOperation();
@@ -177,8 +159,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LResourcePropertyValues }
      * 
-     * @return
-     *     the new instance of {@link LResourcePropertyValues }
      */
     public LResourcePropertyValues createLResourcePropertyValues() {
         return new LResourcePropertyValues();
@@ -187,8 +167,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link DeviceDriverInfo }
      * 
-     * @return
-     *     the new instance of {@link DeviceDriverInfo }
      */
     public DeviceDriverInfo createDeviceDriverInfo() {
         return new DeviceDriverInfo();
@@ -197,8 +175,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPropertyValue }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfPropertyValue }
      */
     public ArrayOfPropertyValue createArrayOfPropertyValue() {
         return new ArrayOfPropertyValue();
@@ -207,8 +183,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PropertyValue }
      * 
-     * @return
-     *     the new instance of {@link PropertyValue }
      */
     public PropertyValue createPropertyValue() {
         return new PropertyValue();
@@ -217,8 +191,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LPropertyValue }
      * 
-     * @return
-     *     the new instance of {@link LPropertyValue }
      */
     public LPropertyValue createLPropertyValue() {
         return new LPropertyValue();
@@ -234,7 +206,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "LNetworkChanges")
     public JAXBElement<LNetworkChanges> createLNetworkChanges(LNetworkChanges value) {
-        return new JAXBElement<>(_LNetworkChanges_QNAME, LNetworkChanges.class, null, value);
+        return new JAXBElement<LNetworkChanges>(_LNetworkChanges_QNAME, LNetworkChanges.class, null, value);
     }
 
     /**
@@ -247,7 +219,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ArrayOfLLinkChanged")
     public JAXBElement<ArrayOfLLinkChanged> createArrayOfLLinkChanged(ArrayOfLLinkChanged value) {
-        return new JAXBElement<>(_ArrayOfLLinkChanged_QNAME, ArrayOfLLinkChanged.class, null, value);
+        return new JAXBElement<ArrayOfLLinkChanged>(_ArrayOfLLinkChanged_QNAME, ArrayOfLLinkChanged.class, null, value);
     }
 
     /**
@@ -260,7 +232,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "LLinkChanged")
     public JAXBElement<LLinkChanged> createLLinkChanged(LLinkChanged value) {
-        return new JAXBElement<>(_LLinkChanged_QNAME, LLinkChanged.class, null, value);
+        return new JAXBElement<LLinkChanged>(_LLinkChanged_QNAME, LLinkChanged.class, null, value);
     }
 
     /**
@@ -273,7 +245,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Operation")
     public JAXBElement<Operation> createOperation(Operation value) {
-        return new JAXBElement<>(_Operation_QNAME, Operation.class, null, value);
+        return new JAXBElement<Operation>(_Operation_QNAME, Operation.class, null, value);
     }
 
     /**
@@ -286,7 +258,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "DeviceOperation")
     public JAXBElement<DeviceOperation> createDeviceOperation(DeviceOperation value) {
-        return new JAXBElement<>(_DeviceOperation_QNAME, DeviceOperation.class, null, value);
+        return new JAXBElement<DeviceOperation>(_DeviceOperation_QNAME, DeviceOperation.class, null, value);
     }
 
     /**
@@ -299,7 +271,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "DeviceCallMethodOperation")
     public JAXBElement<DeviceCallMethodOperation> createDeviceCallMethodOperation(DeviceCallMethodOperation value) {
-        return new JAXBElement<>(_DeviceCallMethodOperation_QNAME, DeviceCallMethodOperation.class, null, value);
+        return new JAXBElement<DeviceCallMethodOperation>(_DeviceCallMethodOperation_QNAME, DeviceCallMethodOperation.class, null, value);
     }
 
     /**
@@ -312,7 +284,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ArrayOfLResourcePropertyValues")
     public JAXBElement<ArrayOfLResourcePropertyValues> createArrayOfLResourcePropertyValues(ArrayOfLResourcePropertyValues value) {
-        return new JAXBElement<>(_ArrayOfLResourcePropertyValues_QNAME, ArrayOfLResourcePropertyValues.class, null, value);
+        return new JAXBElement<ArrayOfLResourcePropertyValues>(_ArrayOfLResourcePropertyValues_QNAME, ArrayOfLResourcePropertyValues.class, null, value);
     }
 
     /**
@@ -325,7 +297,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "LResourcePropertyValues")
     public JAXBElement<LResourcePropertyValues> createLResourcePropertyValues(LResourcePropertyValues value) {
-        return new JAXBElement<>(_LResourcePropertyValues_QNAME, LResourcePropertyValues.class, null, value);
+        return new JAXBElement<LResourcePropertyValues>(_LResourcePropertyValues_QNAME, LResourcePropertyValues.class, null, value);
     }
 
     /**
@@ -338,7 +310,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ArrayOfLPropertyValue")
     public JAXBElement<ArrayOfLPropertyValue> createArrayOfLPropertyValue(ArrayOfLPropertyValue value) {
-        return new JAXBElement<>(_ArrayOfLPropertyValue_QNAME, ArrayOfLPropertyValue.class, null, value);
+        return new JAXBElement<ArrayOfLPropertyValue>(_ArrayOfLPropertyValue_QNAME, ArrayOfLPropertyValue.class, null, value);
     }
 
     /**
@@ -351,7 +323,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ArrayOfDeviceDriverInfo")
     public JAXBElement<ArrayOfDeviceDriverInfo> createArrayOfDeviceDriverInfo(ArrayOfDeviceDriverInfo value) {
-        return new JAXBElement<>(_ArrayOfDeviceDriverInfo_QNAME, ArrayOfDeviceDriverInfo.class, null, value);
+        return new JAXBElement<ArrayOfDeviceDriverInfo>(_ArrayOfDeviceDriverInfo_QNAME, ArrayOfDeviceDriverInfo.class, null, value);
     }
 
     /**
@@ -364,7 +336,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "DeviceDriverInfo")
     public JAXBElement<DeviceDriverInfo> createDeviceDriverInfo(DeviceDriverInfo value) {
-        return new JAXBElement<>(_DeviceDriverInfo_QNAME, DeviceDriverInfo.class, null, value);
+        return new JAXBElement<DeviceDriverInfo>(_DeviceDriverInfo_QNAME, DeviceDriverInfo.class, null, value);
     }
 
     /**
@@ -377,7 +349,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ArrayOfPropertyValue")
     public JAXBElement<ArrayOfPropertyValue> createArrayOfPropertyValue(ArrayOfPropertyValue value) {
-        return new JAXBElement<>(_ArrayOfPropertyValue_QNAME, ArrayOfPropertyValue.class, null, value);
+        return new JAXBElement<ArrayOfPropertyValue>(_ArrayOfPropertyValue_QNAME, ArrayOfPropertyValue.class, null, value);
     }
 
     /**
@@ -390,7 +362,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "PropertyValue")
     public JAXBElement<PropertyValue> createPropertyValue(PropertyValue value) {
-        return new JAXBElement<>(_PropertyValue_QNAME, PropertyValue.class, null, value);
+        return new JAXBElement<PropertyValue>(_PropertyValue_QNAME, PropertyValue.class, null, value);
     }
 
     /**
@@ -403,7 +375,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "StateType")
     public JAXBElement<StateType> createStateType(StateType value) {
-        return new JAXBElement<>(_StateType_QNAME, StateType.class, null, value);
+        return new JAXBElement<StateType>(_StateType_QNAME, StateType.class, null, value);
     }
 
     /**
@@ -416,7 +388,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Name", scope = LPropertyValue.class)
     public JAXBElement<String> createLPropertyValueName(String value) {
-        return new JAXBElement<>(_LPropertyValueName_QNAME, String.class, LPropertyValue.class, value);
+        return new JAXBElement<String>(_LPropertyValueName_QNAME, String.class, LPropertyValue.class, value);
     }
 
     /**
@@ -429,7 +401,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Value", scope = LPropertyValue.class)
     public JAXBElement<String> createLPropertyValueValue(String value) {
-        return new JAXBElement<>(_LPropertyValueValue_QNAME, String.class, LPropertyValue.class, value);
+        return new JAXBElement<String>(_LPropertyValueValue_QNAME, String.class, LPropertyValue.class, value);
     }
 
     /**
@@ -442,7 +414,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "IsDirty", scope = PropertyValue.class)
     public JAXBElement<Boolean> createPropertyValueIsDirty(Boolean value) {
-        return new JAXBElement<>(_PropertyValueIsDirty_QNAME, Boolean.class, PropertyValue.class, value);
+        return new JAXBElement<Boolean>(_PropertyValueIsDirty_QNAME, Boolean.class, PropertyValue.class, value);
     }
 
     /**
@@ -455,7 +427,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Name", scope = PropertyValue.class)
     public JAXBElement<String> createPropertyValueName(String value) {
-        return new JAXBElement<>(_LPropertyValueName_QNAME, String.class, PropertyValue.class, value);
+        return new JAXBElement<String>(_LPropertyValueName_QNAME, String.class, PropertyValue.class, value);
     }
 
     /**
@@ -468,7 +440,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Value", scope = PropertyValue.class)
     public JAXBElement<String> createPropertyValueValue(String value) {
-        return new JAXBElement<>(_LPropertyValueValue_QNAME, String.class, PropertyValue.class, value);
+        return new JAXBElement<String>(_LPropertyValueValue_QNAME, String.class, PropertyValue.class, value);
     }
 
     /**
@@ -481,7 +453,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ArrayChilds", scope = DeviceDriverInfo.class)
     public JAXBElement<ArrayOfDeviceDriverInfo> createDeviceDriverInfoArrayChilds(ArrayOfDeviceDriverInfo value) {
-        return new JAXBElement<>(_DeviceDriverInfoArrayChilds_QNAME, ArrayOfDeviceDriverInfo.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<ArrayOfDeviceDriverInfo>(_DeviceDriverInfoArrayChilds_QNAME, ArrayOfDeviceDriverInfo.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -494,7 +466,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ArrayProperties", scope = DeviceDriverInfo.class)
     public JAXBElement<ArrayOfPropertyValue> createDeviceDriverInfoArrayProperties(ArrayOfPropertyValue value) {
-        return new JAXBElement<>(_DeviceDriverInfoArrayProperties_QNAME, ArrayOfPropertyValue.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<ArrayOfPropertyValue>(_DeviceDriverInfoArrayProperties_QNAME, ArrayOfPropertyValue.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -507,7 +479,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Cameras", scope = DeviceDriverInfo.class)
     public JAXBElement<ArrayOfAccessPoint2CameraChain> createDeviceDriverInfoCameras(ArrayOfAccessPoint2CameraChain value) {
-        return new JAXBElement<>(_DeviceDriverInfoCameras_QNAME, ArrayOfAccessPoint2CameraChain.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<ArrayOfAccessPoint2CameraChain>(_DeviceDriverInfoCameras_QNAME, ArrayOfAccessPoint2CameraChain.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -520,7 +492,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ChangeVersion", scope = DeviceDriverInfo.class)
     public JAXBElement<Long> createDeviceDriverInfoChangeVersion(Long value) {
-        return new JAXBElement<>(_DeviceDriverInfoChangeVersion_QNAME, Long.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<Long>(_DeviceDriverInfoChangeVersion_QNAME, Long.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -533,7 +505,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "DeviceServerId", scope = DeviceDriverInfo.class)
     public JAXBElement<String> createDeviceDriverInfoDeviceServerId(String value) {
-        return new JAXBElement<>(_DeviceDriverInfoDeviceServerId_QNAME, String.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<String>(_DeviceDriverInfoDeviceServerId_QNAME, String.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -546,7 +518,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "DirtyArrayProperties", scope = DeviceDriverInfo.class)
     public JAXBElement<ArrayOfPropertyValue> createDeviceDriverInfoDirtyArrayProperties(ArrayOfPropertyValue value) {
-        return new JAXBElement<>(_DeviceDriverInfoDirtyArrayProperties_QNAME, ArrayOfPropertyValue.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<ArrayOfPropertyValue>(_DeviceDriverInfoDirtyArrayProperties_QNAME, ArrayOfPropertyValue.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -559,7 +531,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "DriverType", scope = DeviceDriverInfo.class)
     public JAXBElement<String> createDeviceDriverInfoDriverType(String value) {
-        return new JAXBElement<>(_DeviceDriverInfoDriverType_QNAME, String.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<String>(_DeviceDriverInfoDriverType_QNAME, String.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -572,7 +544,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "FilterTagIds", scope = DeviceDriverInfo.class)
     public JAXBElement<ArrayOfguid> createDeviceDriverInfoFilterTagIds(ArrayOfguid value) {
-        return new JAXBElement<>(_DeviceDriverInfoFilterTagIds_QNAME, ArrayOfguid.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<ArrayOfguid>(_DeviceDriverInfoFilterTagIds_QNAME, ArrayOfguid.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -585,7 +557,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ID", scope = DeviceDriverInfo.class)
     public JAXBElement<String> createDeviceDriverInfoID(String value) {
-        return new JAXBElement<>(_DeviceDriverInfoID_QNAME, String.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<String>(_DeviceDriverInfoID_QNAME, String.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -598,7 +570,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Name", scope = DeviceDriverInfo.class)
     public JAXBElement<String> createDeviceDriverInfoName(String value) {
-        return new JAXBElement<>(_LPropertyValueName_QNAME, String.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<String>(_LPropertyValueName_QNAME, String.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -611,7 +583,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ParentPropertyName", scope = DeviceDriverInfo.class)
     public JAXBElement<String> createDeviceDriverInfoParentPropertyName(String value) {
-        return new JAXBElement<>(_DeviceDriverInfoParentPropertyName_QNAME, String.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<String>(_DeviceDriverInfoParentPropertyName_QNAME, String.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -624,7 +596,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "TagIds", scope = DeviceDriverInfo.class)
     public JAXBElement<ArrayOfguid> createDeviceDriverInfoTagIds(ArrayOfguid value) {
-        return new JAXBElement<>(_DeviceDriverInfoTagIds_QNAME, ArrayOfguid.class, DeviceDriverInfo.class, value);
+        return new JAXBElement<ArrayOfguid>(_DeviceDriverInfoTagIds_QNAME, ArrayOfguid.class, DeviceDriverInfo.class, value);
     }
 
     /**
@@ -637,7 +609,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Properties", scope = LResourcePropertyValues.class)
     public JAXBElement<ArrayOfLPropertyValue> createLResourcePropertyValuesProperties(ArrayOfLPropertyValue value) {
-        return new JAXBElement<>(_LResourcePropertyValuesProperties_QNAME, ArrayOfLPropertyValue.class, LResourcePropertyValues.class, value);
+        return new JAXBElement<ArrayOfLPropertyValue>(_LResourcePropertyValuesProperties_QNAME, ArrayOfLPropertyValue.class, LResourcePropertyValues.class, value);
     }
 
     /**
@@ -650,7 +622,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Path", scope = Operation.class)
     public JAXBElement<ArrayOfguid> createOperationPath(ArrayOfguid value) {
-        return new JAXBElement<>(_OperationPath_QNAME, ArrayOfguid.class, Operation.class, value);
+        return new JAXBElement<ArrayOfguid>(_OperationPath_QNAME, ArrayOfguid.class, Operation.class, value);
     }
 
     /**
@@ -663,7 +635,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "UserID", scope = Operation.class)
     public JAXBElement<String> createOperationUserID(String value) {
-        return new JAXBElement<>(_OperationUserID_QNAME, String.class, Operation.class, value);
+        return new JAXBElement<String>(_OperationUserID_QNAME, String.class, Operation.class, value);
     }
 
     /**
@@ -676,7 +648,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "LogMessageId", scope = DeviceCallMethodOperation.class)
     public JAXBElement<Long> createDeviceCallMethodOperationLogMessageId(Long value) {
-        return new JAXBElement<>(_DeviceCallMethodOperationLogMessageId_QNAME, Long.class, DeviceCallMethodOperation.class, value);
+        return new JAXBElement<Long>(_DeviceCallMethodOperationLogMessageId_QNAME, Long.class, DeviceCallMethodOperation.class, value);
     }
 
     /**
@@ -689,7 +661,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "MethodArgs", scope = DeviceCallMethodOperation.class)
     public JAXBElement<ArrayOfstring> createDeviceCallMethodOperationMethodArgs(ArrayOfstring value) {
-        return new JAXBElement<>(_DeviceCallMethodOperationMethodArgs_QNAME, ArrayOfstring.class, DeviceCallMethodOperation.class, value);
+        return new JAXBElement<ArrayOfstring>(_DeviceCallMethodOperationMethodArgs_QNAME, ArrayOfstring.class, DeviceCallMethodOperation.class, value);
     }
 
     /**
@@ -702,7 +674,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "MethodName", scope = DeviceCallMethodOperation.class)
     public JAXBElement<String> createDeviceCallMethodOperationMethodName(String value) {
-        return new JAXBElement<>(_DeviceCallMethodOperationMethodName_QNAME, String.class, DeviceCallMethodOperation.class, value);
+        return new JAXBElement<String>(_DeviceCallMethodOperationMethodName_QNAME, String.class, DeviceCallMethodOperation.class, value);
     }
 
     /**
@@ -715,7 +687,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "DriversAdded", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLDriverAdded> createLNetworkChangesDriversAdded(ArrayOfLDriverAdded value) {
-        return new JAXBElement<>(_LNetworkChangesDriversAdded_QNAME, ArrayOfLDriverAdded.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLDriverAdded>(_LNetworkChangesDriversAdded_QNAME, ArrayOfLDriverAdded.class, LNetworkChanges.class, value);
     }
 
     /**
@@ -728,7 +700,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "LinkChanges", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLLinkChanged> createLNetworkChangesLinkChanges(ArrayOfLLinkChanged value) {
-        return new JAXBElement<>(_LNetworkChangesLinkChanges_QNAME, ArrayOfLLinkChanged.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLLinkChanged>(_LNetworkChangesLinkChanges_QNAME, ArrayOfLLinkChanged.class, LNetworkChanges.class, value);
     }
 
     /**
@@ -741,7 +713,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "NetworksAdded", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLNetworkAdded> createLNetworkChangesNetworksAdded(ArrayOfLNetworkAdded value) {
-        return new JAXBElement<>(_LNetworkChangesNetworksAdded_QNAME, ArrayOfLNetworkAdded.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLNetworkAdded>(_LNetworkChangesNetworksAdded_QNAME, ArrayOfLNetworkAdded.class, LNetworkChanges.class, value);
     }
 
     /**
@@ -754,7 +726,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "OperationResults", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLOperationResult> createLNetworkChangesOperationResults(ArrayOfLOperationResult value) {
-        return new JAXBElement<>(_LNetworkChangesOperationResults_QNAME, ArrayOfLOperationResult.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLOperationResult>(_LNetworkChangesOperationResults_QNAME, ArrayOfLOperationResult.class, LNetworkChanges.class, value);
     }
 
     /**
@@ -767,7 +739,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "Properties", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLResourceProperty> createLNetworkChangesProperties(ArrayOfLResourceProperty value) {
-        return new JAXBElement<>(_LResourcePropertyValuesProperties_QNAME, ArrayOfLResourceProperty.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLResourceProperty>(_LResourcePropertyValuesProperties_QNAME, ArrayOfLResourceProperty.class, LNetworkChanges.class, value);
     }
 
     /**
@@ -780,7 +752,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ResourcesRemoved", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLResourceInfo> createLNetworkChangesResourcesRemoved(ArrayOfLResourceInfo value) {
-        return new JAXBElement<>(_LNetworkChangesResourcesRemoved_QNAME, ArrayOfLResourceInfo.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLResourceInfo>(_LNetworkChangesResourcesRemoved_QNAME, ArrayOfLResourceInfo.class, LNetworkChanges.class, value);
     }
 
     /**
@@ -793,7 +765,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "ServersAdded", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLServerAdded> createLNetworkChangesServersAdded(ArrayOfLServerAdded value) {
-        return new JAXBElement<>(_LNetworkChangesServersAdded_QNAME, ArrayOfLServerAdded.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLServerAdded>(_LNetworkChangesServersAdded_QNAME, ArrayOfLServerAdded.class, LNetworkChanges.class, value);
     }
 
     /**
@@ -806,7 +778,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", name = "States", scope = LNetworkChanges.class)
     public JAXBElement<ArrayOfLResourceProperty> createLNetworkChangesStates(ArrayOfLResourceProperty value) {
-        return new JAXBElement<>(_LNetworkChangesStates_QNAME, ArrayOfLResourceProperty.class, LNetworkChanges.class, value);
+        return new JAXBElement<ArrayOfLResourceProperty>(_LNetworkChangesStates_QNAME, ArrayOfLResourceProperty.class, LNetworkChanges.class, value);
     }
 
 }

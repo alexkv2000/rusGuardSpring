@@ -1,10 +1,10 @@
 
 package org.datacontract.schemas._2004._07.system_net;
 
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.annotation.XmlEnum;
-import jakarta.xml.bind.annotation.XmlEnumValue;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.annotation.Generated;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,48 +13,48 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>Java class for AddressFamily</p>.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.</p>
- * <pre>{@code
- * <simpleType name="AddressFamily">
- *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     <enumeration value="Unknown"/>
- *     <enumeration value="Unspecified"/>
- *     <enumeration value="Unix"/>
- *     <enumeration value="InterNetwork"/>
- *     <enumeration value="ImpLink"/>
- *     <enumeration value="Pup"/>
- *     <enumeration value="Chaos"/>
- *     <enumeration value="NS"/>
- *     <enumeration value="Ipx"/>
- *     <enumeration value="Iso"/>
- *     <enumeration value="Osi"/>
- *     <enumeration value="Ecma"/>
- *     <enumeration value="DataKit"/>
- *     <enumeration value="Ccitt"/>
- *     <enumeration value="Sna"/>
- *     <enumeration value="DecNet"/>
- *     <enumeration value="DataLink"/>
- *     <enumeration value="Lat"/>
- *     <enumeration value="HyperChannel"/>
- *     <enumeration value="AppleTalk"/>
- *     <enumeration value="NetBios"/>
- *     <enumeration value="VoiceView"/>
- *     <enumeration value="FireFox"/>
- *     <enumeration value="Banyan"/>
- *     <enumeration value="Atm"/>
- *     <enumeration value="InterNetworkV6"/>
- *     <enumeration value="Cluster"/>
- *     <enumeration value="Ieee12844"/>
- *     <enumeration value="Irda"/>
- *     <enumeration value="NetworkDesigners"/>
- *     <enumeration value="Max"/>
- *   </restriction>
- * </simpleType>
- * }</pre>
+ * <pre>
+ * &lt;simpleType name="AddressFamily"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Unspecified"/&gt;
+ *     &lt;enumeration value="Unix"/&gt;
+ *     &lt;enumeration value="InterNetwork"/&gt;
+ *     &lt;enumeration value="ImpLink"/&gt;
+ *     &lt;enumeration value="Pup"/&gt;
+ *     &lt;enumeration value="Chaos"/&gt;
+ *     &lt;enumeration value="NS"/&gt;
+ *     &lt;enumeration value="Ipx"/&gt;
+ *     &lt;enumeration value="Iso"/&gt;
+ *     &lt;enumeration value="Osi"/&gt;
+ *     &lt;enumeration value="Ecma"/&gt;
+ *     &lt;enumeration value="DataKit"/&gt;
+ *     &lt;enumeration value="Ccitt"/&gt;
+ *     &lt;enumeration value="Sna"/&gt;
+ *     &lt;enumeration value="DecNet"/&gt;
+ *     &lt;enumeration value="DataLink"/&gt;
+ *     &lt;enumeration value="Lat"/&gt;
+ *     &lt;enumeration value="HyperChannel"/&gt;
+ *     &lt;enumeration value="AppleTalk"/&gt;
+ *     &lt;enumeration value="NetBios"/&gt;
+ *     &lt;enumeration value="VoiceView"/&gt;
+ *     &lt;enumeration value="FireFox"/&gt;
+ *     &lt;enumeration value="Banyan"/&gt;
+ *     &lt;enumeration value="Atm"/&gt;
+ *     &lt;enumeration value="InterNetworkV6"/&gt;
+ *     &lt;enumeration value="Cluster"/&gt;
+ *     &lt;enumeration value="Ieee12844"/&gt;
+ *     &lt;enumeration value="Irda"/&gt;
+ *     &lt;enumeration value="NetworkDesigners"/&gt;
+ *     &lt;enumeration value="Max"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "AddressFamily", namespace = "http://schemas.datacontract.org/2004/07/System.Net.Sockets")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public enum AddressFamily {
 
     @XmlEnumValue("Unknown")

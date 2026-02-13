@@ -1,10 +1,10 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity;
 
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.annotation.XmlEnum;
-import jakarta.xml.bind.annotation.XmlEnumValue;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.annotation.Generated;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,30 +13,30 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>Java class for IncidentSortedColumn</p>.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.</p>
- * <pre>{@code
- * <simpleType name="IncidentSortedColumn">
- *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     <enumeration value="None"/>
- *     <enumeration value="DateTime"/>
- *     <enumeration value="Date"/>
- *     <enumeration value="Time"/>
- *     <enumeration value="IsIncludeToReport"/>
- *     <enumeration value="SignificanceName"/>
- *     <enumeration value="DocumentNumber"/>
- *     <enumeration value="DocumentTypeName"/>
- *     <enumeration value="SecurityGroupName"/>
- *     <enumeration value="BranchName"/>
- *     <enumeration value="Location"/>
- *     <enumeration value="LocationClarification"/>
- *     <enumeration value="EmployeeFullName"/>
- *   </restriction>
- * </simpleType>
- * }</pre>
+ * <pre>
+ * &lt;simpleType name="IncidentSortedColumn"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *     &lt;enumeration value="DateTime"/&gt;
+ *     &lt;enumeration value="Date"/&gt;
+ *     &lt;enumeration value="Time"/&gt;
+ *     &lt;enumeration value="IsIncludeToReport"/&gt;
+ *     &lt;enumeration value="SignificanceName"/&gt;
+ *     &lt;enumeration value="DocumentNumber"/&gt;
+ *     &lt;enumeration value="DocumentTypeName"/&gt;
+ *     &lt;enumeration value="SecurityGroupName"/&gt;
+ *     &lt;enumeration value="BranchName"/&gt;
+ *     &lt;enumeration value="Location"/&gt;
+ *     &lt;enumeration value="LocationClarification"/&gt;
+ *     &lt;enumeration value="EmployeeFullName"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "IncidentSortedColumn", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public enum IncidentSortedColumn {
 
     @XmlEnumValue("None")

@@ -2,8 +2,8 @@ package com.rusguard.schema;
 
 import java.util.List;
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.NotEmpty;
-
+//import jakarta.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotEmpty;
 @Schema(description = "Запрос на установку уровней доступа сотруднику")
 public class AccessLevelIdsRequest {
     @Schema(

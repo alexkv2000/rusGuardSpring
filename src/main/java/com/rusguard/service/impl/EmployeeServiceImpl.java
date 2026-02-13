@@ -2,14 +2,15 @@ package com.rusguard.service.impl;
 
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfint;
+import com.rusguard.controller.EmployeeController;
 import com.rusguard.schema.EmployeeGroupTreeDto;
 import com.rusguard.schema.SaveAcsEmployeeRequest;
 import com.rusguard.service.EmployeeGroupTree;
 import com.rusguard.service.EmployeeService;
 
 
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.ws.BindingProvider;
+import javax.xml.bind.JAXBElement;
+import javax.xml.ws.BindingProvider;
 
 import org.apache.cxf.configuration.jsse.TLSClientParameters;
 import org.apache.cxf.endpoint.Client;
@@ -26,8 +27,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs.*;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs_accesslevels.AcsAccessPointDriverInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_acs_accesslevels.ArrayOfAcsAccessPointDriverInfo;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import com.rusguard.client.*;
 import org.tempuri.LNetworkService;
@@ -55,6 +59,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import static com.rusguard.controller.EmployeeController.accessIsLock;
+
 // Импортируем сгенерированный интерфейс
 
 /**
@@ -70,6 +76,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     // Статические прокси-объекты
     private static ILNetworkService networkService;
     private static ILNetworkConfigurationService networkCnfgService;
+    @Value("${app.security.allowed-admin:}")
+    private String allowedAdminConfig;
 
     // Статический блок инициализации для однократной инициализации сервисов
     static {
@@ -879,7 +887,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return response;
     }
-
     @Override
     public Map<String, Object> getEmployeePassagesByDate(String IDEmployees, String dataPassages) {     //Проходы пользователя на дату формат -"MM-dd-yyyy"
         Map<String, Object> response = new LinkedHashMap<>();
@@ -1360,7 +1367,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 data.setNumber(numberElement);
             } else {
                 assert currentEmployee != null;
-//TODO проверить если в текушем объекте пусто!
+//TODO проверить если в текущем объекте пусто!
                 data.setNumber(currentEmployee.getNumber());
             }
             AcsEmployeeSaveData fullEmployee = new AcsEmployeeSaveData(); // Создаём объект данных сотрудника
@@ -2117,7 +2124,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     public ResponseEntity<List<Map<String, Object>>> getAccessLevelsByEmployeeID(String idEmployee) {
         List<Map<String, Object>> result = new ArrayList<>();
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
+        if (auth == null || !auth.isAuthenticated()) {
+            return ResponseEntity.badRequest().build();
+        }
+        String currentUser = auth.getName();
+
+        if (accessIsLock(allowedAdminConfig, currentUser)) {
+            return ResponseEntity.badRequest().build();
+        }
         try {
             // Параметры для вызова метода
             AccessLevelSortedColumn sortedColumn = AccessLevelSortedColumn.NAME;

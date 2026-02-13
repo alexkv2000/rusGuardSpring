@@ -1,12 +1,12 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_driver;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.ArrayOfLDriverFullInfo;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.LDriverFullInfo;
 
@@ -15,7 +15,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.LD
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_driver package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -26,7 +26,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.LD
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _ArrayOfRelayBlockStatus_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", "ArrayOfRelayBlockStatus");
@@ -170,8 +170,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfRelayBlockStatus }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfRelayBlockStatus }
      */
     public ArrayOfRelayBlockStatus createArrayOfRelayBlockStatus() {
         return new ArrayOfRelayBlockStatus();
@@ -180,8 +178,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PanasonicCameraCollectionResult }
      * 
-     * @return
-     *     the new instance of {@link PanasonicCameraCollectionResult }
      */
     public PanasonicCameraCollectionResult createPanasonicCameraCollectionResult() {
         return new PanasonicCameraCollectionResult();
@@ -190,8 +186,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NTechLabRecognitionServiceResult }
      * 
-     * @return
-     *     the new instance of {@link NTechLabRecognitionServiceResult }
      */
     public NTechLabRecognitionServiceResult createNTechLabRecognitionServiceResult() {
         return new NTechLabRecognitionServiceResult();
@@ -200,8 +194,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KeyKeeperControllerResult }
      * 
-     * @return
-     *     the new instance of {@link KeyKeeperControllerResult }
      */
     public KeyKeeperControllerResult createKeyKeeperControllerResult() {
         return new KeyKeeperControllerResult();
@@ -210,8 +202,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CabinetStatus }
      * 
-     * @return
-     *     the new instance of {@link CabinetStatus }
      */
     public CabinetStatus createCabinetStatus() {
         return new CabinetStatus();
@@ -220,8 +210,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RoomKeyInfo }
      * 
-     * @return
-     *     the new instance of {@link RoomKeyInfo }
      */
     public RoomKeyInfo createRoomKeyInfo() {
         return new RoomKeyInfo();
@@ -230,8 +218,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KeyKeeperCommandResult }
      * 
-     * @return
-     *     the new instance of {@link KeyKeeperCommandResult }
      */
     public KeyKeeperCommandResult createKeyKeeperCommandResult() {
         return new KeyKeeperCommandResult();
@@ -240,8 +226,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NUUOArchiveServerCollectionResult }
      * 
-     * @return
-     *     the new instance of {@link NUUOArchiveServerCollectionResult }
      */
     public NUUOArchiveServerCollectionResult createNUUOArchiveServerCollectionResult() {
         return new NUUOArchiveServerCollectionResult();
@@ -250,8 +234,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TrassirIntegrationResult }
      * 
-     * @return
-     *     the new instance of {@link TrassirIntegrationResult }
      */
     public TrassirIntegrationResult createTrassirIntegrationResult() {
         return new TrassirIntegrationResult();
@@ -260,8 +242,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IdisConfiguration }
      * 
-     * @return
-     *     the new instance of {@link IdisConfiguration }
      */
     public IdisConfiguration createIdisConfiguration() {
         return new IdisConfiguration();
@@ -270,8 +250,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IvideonCameraCollectionResult }
      * 
-     * @return
-     *     the new instance of {@link IvideonCameraCollectionResult }
      */
     public IvideonCameraCollectionResult createIvideonCameraCollectionResult() {
         return new IvideonCameraCollectionResult();
@@ -280,8 +258,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IvideonRemoteServerCollectionResult }
      * 
-     * @return
-     *     the new instance of {@link IvideonRemoteServerCollectionResult }
      */
     public IvideonRemoteServerCollectionResult createIvideonRemoteServerCollectionResult() {
         return new IvideonRemoteServerCollectionResult();
@@ -290,8 +266,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindBasIpIntercomResult }
      * 
-     * @return
-     *     the new instance of {@link FindBasIpIntercomResult }
      */
     public FindBasIpIntercomResult createFindBasIpIntercomResult() {
         return new FindBasIpIntercomResult();
@@ -300,8 +274,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindLPRCameraResult }
      * 
-     * @return
-     *     the new instance of {@link FindLPRCameraResult }
      */
     public FindLPRCameraResult createFindLPRCameraResult() {
         return new FindLPRCameraResult();
@@ -310,8 +282,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindConvertersResult }
      * 
-     * @return
-     *     the new instance of {@link FindConvertersResult }
      */
     public FindConvertersResult createFindConvertersResult() {
         return new FindConvertersResult();
@@ -320,8 +290,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLanCanConverter }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLanCanConverter }
      */
     public ArrayOfLanCanConverter createArrayOfLanCanConverter() {
         return new ArrayOfLanCanConverter();
@@ -330,8 +298,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LanCanConverter }
      * 
-     * @return
-     *     the new instance of {@link LanCanConverter }
      */
     public LanCanConverter createLanCanConverter() {
         return new LanCanConverter();
@@ -340,8 +306,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfCanConverterAddress }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfCanConverterAddress }
      */
     public ArrayOfCanConverterAddress createArrayOfCanConverterAddress() {
         return new ArrayOfCanConverterAddress();
@@ -350,8 +314,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindControllersResult }
      * 
-     * @return
-     *     the new instance of {@link FindControllersResult }
      */
     public FindControllersResult createFindControllersResult() {
         return new FindControllersResult();
@@ -360,8 +322,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfCanDeviceNetConfig }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfCanDeviceNetConfig }
      */
     public ArrayOfCanDeviceNetConfig createArrayOfCanDeviceNetConfig() {
         return new ArrayOfCanDeviceNetConfig();
@@ -370,8 +330,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetDevicesAddressBySidResult }
      * 
-     * @return
-     *     the new instance of {@link SetDevicesAddressBySidResult }
      */
     public SetDevicesAddressBySidResult createSetDevicesAddressBySidResult() {
         return new SetDevicesAddressBySidResult();
@@ -380,8 +338,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetControllerConfigurationsResult }
      * 
-     * @return
-     *     the new instance of {@link GetControllerConfigurationsResult }
      */
     public GetControllerConfigurationsResult createGetControllerConfigurationsResult() {
         return new GetControllerConfigurationsResult();
@@ -390,8 +346,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RelayBlockStatus }
      * 
-     * @return
-     *     the new instance of {@link RelayBlockStatus }
      */
     public RelayBlockStatus createRelayBlockStatus() {
         return new RelayBlockStatus();
@@ -400,8 +354,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfCellInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfCellInfo }
      */
     public ArrayOfCellInfo createArrayOfCellInfo() {
         return new ArrayOfCellInfo();
@@ -410,8 +362,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CellInfo }
      * 
-     * @return
-     *     the new instance of {@link CellInfo }
      */
     public CellInfo createCellInfo() {
         return new CellInfo();
@@ -420,8 +370,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KeyKeeperConfiguration }
      * 
-     * @return
-     *     the new instance of {@link KeyKeeperConfiguration }
      */
     public KeyKeeperConfiguration createKeyKeeperConfiguration() {
         return new KeyKeeperConfiguration();
@@ -430,8 +378,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfKeyKeeperCabinet }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfKeyKeeperCabinet }
      */
     public ArrayOfKeyKeeperCabinet createArrayOfKeyKeeperCabinet() {
         return new ArrayOfKeyKeeperCabinet();
@@ -440,8 +386,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KeyKeeperCabinet }
      * 
-     * @return
-     *     the new instance of {@link KeyKeeperCabinet }
      */
     public KeyKeeperCabinet createKeyKeeperCabinet() {
         return new KeyKeeperCabinet();
@@ -450,8 +394,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfKeyKeeperPort }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfKeyKeeperPort }
      */
     public ArrayOfKeyKeeperPort createArrayOfKeyKeeperPort() {
         return new ArrayOfKeyKeeperPort();
@@ -460,8 +402,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KeyKeeperPort }
      * 
-     * @return
-     *     the new instance of {@link KeyKeeperPort }
      */
     public KeyKeeperPort createKeyKeeperPort() {
         return new KeyKeeperPort();
@@ -470,8 +410,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfSlotInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfSlotInfo }
      */
     public ArrayOfSlotInfo createArrayOfSlotInfo() {
         return new ArrayOfSlotInfo();
@@ -480,8 +418,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SlotInfo }
      * 
-     * @return
-     *     the new instance of {@link SlotInfo }
      */
     public SlotInfo createSlotInfo() {
         return new SlotInfo();
@@ -490,8 +426,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfBasIpIntercomInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfBasIpIntercomInfo }
      */
     public ArrayOfBasIpIntercomInfo createArrayOfBasIpIntercomInfo() {
         return new ArrayOfBasIpIntercomInfo();
@@ -500,8 +434,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BasIpIntercomInfo }
      * 
-     * @return
-     *     the new instance of {@link BasIpIntercomInfo }
      */
     public BasIpIntercomInfo createBasIpIntercomInfo() {
         return new BasIpIntercomInfo();
@@ -510,8 +442,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfNTechLabCameraInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfNTechLabCameraInfo }
      */
     public ArrayOfNTechLabCameraInfo createArrayOfNTechLabCameraInfo() {
         return new ArrayOfNTechLabCameraInfo();
@@ -520,8 +450,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NTechLabCameraInfo }
      * 
-     * @return
-     *     the new instance of {@link NTechLabCameraInfo }
      */
     public NTechLabCameraInfo createNTechLabCameraInfo() {
         return new NTechLabCameraInfo();
@@ -530,8 +458,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfNTechLabDossierListInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfNTechLabDossierListInfo }
      */
     public ArrayOfNTechLabDossierListInfo createArrayOfNTechLabDossierListInfo() {
         return new ArrayOfNTechLabDossierListInfo();
@@ -540,8 +466,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NTechLabDossierListInfo }
      * 
-     * @return
-     *     the new instance of {@link NTechLabDossierListInfo }
      */
     public NTechLabDossierListInfo createNTechLabDossierListInfo() {
         return new NTechLabDossierListInfo();
@@ -550,8 +474,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfNUUOArchiveServer }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfNUUOArchiveServer }
      */
     public ArrayOfNUUOArchiveServer createArrayOfNUUOArchiveServer() {
         return new ArrayOfNUUOArchiveServer();
@@ -560,8 +482,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NUUOArchiveServer }
      * 
-     * @return
-     *     the new instance of {@link NUUOArchiveServer }
      */
     public NUUOArchiveServer createNUUOArchiveServer() {
         return new NUUOArchiveServer();
@@ -570,8 +490,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfNUUOVideoRecorder }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfNUUOVideoRecorder }
      */
     public ArrayOfNUUOVideoRecorder createArrayOfNUUOVideoRecorder() {
         return new ArrayOfNUUOVideoRecorder();
@@ -580,8 +498,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NUUOVideoRecorder }
      * 
-     * @return
-     *     the new instance of {@link NUUOVideoRecorder }
      */
     public NUUOVideoRecorder createNUUOVideoRecorder() {
         return new NUUOVideoRecorder();
@@ -590,8 +506,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfNUUOCamera }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfNUUOCamera }
      */
     public ArrayOfNUUOCamera createArrayOfNUUOCamera() {
         return new ArrayOfNUUOCamera();
@@ -600,8 +514,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NUUOCamera }
      * 
-     * @return
-     *     the new instance of {@link NUUOCamera }
      */
     public NUUOCamera createNUUOCamera() {
         return new NUUOCamera();
@@ -610,8 +522,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfTrassirServerInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfTrassirServerInfo }
      */
     public ArrayOfTrassirServerInfo createArrayOfTrassirServerInfo() {
         return new ArrayOfTrassirServerInfo();
@@ -620,8 +530,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TrassirServerInfo }
      * 
-     * @return
-     *     the new instance of {@link TrassirServerInfo }
      */
     public TrassirServerInfo createTrassirServerInfo() {
         return new TrassirServerInfo();
@@ -630,8 +538,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfTrassirChannelInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfTrassirChannelInfo }
      */
     public ArrayOfTrassirChannelInfo createArrayOfTrassirChannelInfo() {
         return new ArrayOfTrassirChannelInfo();
@@ -640,8 +546,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TrassirChannelInfo }
      * 
-     * @return
-     *     the new instance of {@link TrassirChannelInfo }
      */
     public TrassirChannelInfo createTrassirChannelInfo() {
         return new TrassirChannelInfo();
@@ -650,8 +554,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfLPRCameraInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfLPRCameraInfo }
      */
     public ArrayOfLPRCameraInfo createArrayOfLPRCameraInfo() {
         return new ArrayOfLPRCameraInfo();
@@ -660,8 +562,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LPRCameraInfo }
      * 
-     * @return
-     *     the new instance of {@link LPRCameraInfo }
      */
     public LPRCameraInfo createLPRCameraInfo() {
         return new LPRCameraInfo();
@@ -670,8 +570,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CanConverterAddress }
      * 
-     * @return
-     *     the new instance of {@link CanConverterAddress }
      */
     public CanConverterAddress createCanConverterAddress() {
         return new CanConverterAddress();
@@ -680,8 +578,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UsbCanConverterAddress }
      * 
-     * @return
-     *     the new instance of {@link UsbCanConverterAddress }
      */
     public UsbCanConverterAddress createUsbCanConverterAddress() {
         return new UsbCanConverterAddress();
@@ -690,8 +586,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfCanDeviceInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfCanDeviceInfo }
      */
     public ArrayOfCanDeviceInfo createArrayOfCanDeviceInfo() {
         return new ArrayOfCanDeviceInfo();
@@ -700,8 +594,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CanDeviceInfo }
      * 
-     * @return
-     *     the new instance of {@link CanDeviceInfo }
      */
     public CanDeviceInfo createCanDeviceInfo() {
         return new CanDeviceInfo();
@@ -710,8 +602,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CanDeviceNetConfig }
      * 
-     * @return
-     *     the new instance of {@link CanDeviceNetConfig }
      */
     public CanDeviceNetConfig createCanDeviceNetConfig() {
         return new CanDeviceNetConfig();
@@ -720,8 +610,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfFindControllersResultFailedConverterInfo }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfFindControllersResultFailedConverterInfo }
      */
     public ArrayOfFindControllersResultFailedConverterInfo createArrayOfFindControllersResultFailedConverterInfo() {
         return new ArrayOfFindControllersResultFailedConverterInfo();
@@ -730,8 +618,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link FindControllersResultFailedConverterInfo }
      * 
-     * @return
-     *     the new instance of {@link FindControllersResultFailedConverterInfo }
      */
     public FindControllersResultFailedConverterInfo createFindControllersResultFailedConverterInfo() {
         return new FindControllersResultFailedConverterInfo();
@@ -740,8 +626,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfSetDevicesAddressBySidResultFailedAddress }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfSetDevicesAddressBySidResultFailedAddress }
      */
     public ArrayOfSetDevicesAddressBySidResultFailedAddress createArrayOfSetDevicesAddressBySidResultFailedAddress() {
         return new ArrayOfSetDevicesAddressBySidResultFailedAddress();
@@ -750,8 +634,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SetDevicesAddressBySidResultFailedAddress }
      * 
-     * @return
-     *     the new instance of {@link SetDevicesAddressBySidResultFailedAddress }
      */
     public SetDevicesAddressBySidResultFailedAddress createSetDevicesAddressBySidResultFailedAddress() {
         return new SetDevicesAddressBySidResultFailedAddress();
@@ -760,8 +642,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfGetControllerConfigurationsResultConfig }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfGetControllerConfigurationsResultConfig }
      */
     public ArrayOfGetControllerConfigurationsResultConfig createArrayOfGetControllerConfigurationsResultConfig() {
         return new ArrayOfGetControllerConfigurationsResultConfig();
@@ -770,8 +650,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetControllerConfigurationsResultConfig }
      * 
-     * @return
-     *     the new instance of {@link GetControllerConfigurationsResultConfig }
      */
     public GetControllerConfigurationsResultConfig createGetControllerConfigurationsResultConfig() {
         return new GetControllerConfigurationsResultConfig();
@@ -780,8 +658,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfGetControllerConfigurationsResultFailedConfig }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfGetControllerConfigurationsResultFailedConfig }
      */
     public ArrayOfGetControllerConfigurationsResultFailedConfig createArrayOfGetControllerConfigurationsResultFailedConfig() {
         return new ArrayOfGetControllerConfigurationsResultFailedConfig();
@@ -790,8 +666,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link GetControllerConfigurationsResultFailedConfig }
      * 
-     * @return
-     *     the new instance of {@link GetControllerConfigurationsResultFailedConfig }
      */
     public GetControllerConfigurationsResultFailedConfig createGetControllerConfigurationsResultFailedConfig() {
         return new GetControllerConfigurationsResultFailedConfig();
@@ -800,8 +674,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LanCanConverterAddress }
      * 
-     * @return
-     *     the new instance of {@link LanCanConverterAddress }
      */
     public LanCanConverterAddress createLanCanConverterAddress() {
         return new LanCanConverterAddress();
@@ -817,7 +689,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "ArrayOfRelayBlockStatus")
     public JAXBElement<ArrayOfRelayBlockStatus> createArrayOfRelayBlockStatus(ArrayOfRelayBlockStatus value) {
-        return new JAXBElement<>(_ArrayOfRelayBlockStatus_QNAME, ArrayOfRelayBlockStatus.class, null, value);
+        return new JAXBElement<ArrayOfRelayBlockStatus>(_ArrayOfRelayBlockStatus_QNAME, ArrayOfRelayBlockStatus.class, null, value);
     }
 
     /**
@@ -830,7 +702,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "RelayBlockStatus")
     public JAXBElement<RelayBlockStatus> createRelayBlockStatus(RelayBlockStatus value) {
-        return new JAXBElement<>(_RelayBlockStatus_QNAME, RelayBlockStatus.class, null, value);
+        return new JAXBElement<RelayBlockStatus>(_RelayBlockStatus_QNAME, RelayBlockStatus.class, null, value);
     }
 
     /**
@@ -843,7 +715,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "ArrayOfCellInfo")
     public JAXBElement<ArrayOfCellInfo> createArrayOfCellInfo(ArrayOfCellInfo value) {
-        return new JAXBElement<>(_ArrayOfCellInfo_QNAME, ArrayOfCellInfo.class, null, value);
+        return new JAXBElement<ArrayOfCellInfo>(_ArrayOfCellInfo_QNAME, ArrayOfCellInfo.class, null, value);
     }
 
     /**
@@ -856,7 +728,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "CellInfo")
     public JAXBElement<CellInfo> createCellInfo(CellInfo value) {
-        return new JAXBElement<>(_CellInfo_QNAME, CellInfo.class, null, value);
+        return new JAXBElement<CellInfo>(_CellInfo_QNAME, CellInfo.class, null, value);
     }
 
     /**
@@ -869,7 +741,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyKeeperControllerResult")
     public JAXBElement<KeyKeeperControllerResult> createKeyKeeperControllerResult(KeyKeeperControllerResult value) {
-        return new JAXBElement<>(_KeyKeeperControllerResult_QNAME, KeyKeeperControllerResult.class, null, value);
+        return new JAXBElement<KeyKeeperControllerResult>(_KeyKeeperControllerResult_QNAME, KeyKeeperControllerResult.class, null, value);
     }
 
     /**
@@ -882,7 +754,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyKeeperConfiguration")
     public JAXBElement<KeyKeeperConfiguration> createKeyKeeperConfiguration(KeyKeeperConfiguration value) {
-        return new JAXBElement<>(_KeyKeeperConfiguration_QNAME, KeyKeeperConfiguration.class, null, value);
+        return new JAXBElement<KeyKeeperConfiguration>(_KeyKeeperConfiguration_QNAME, KeyKeeperConfiguration.class, null, value);
     }
 
     /**
@@ -895,7 +767,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "ArrayOfKeyKeeperCabinet")
     public JAXBElement<ArrayOfKeyKeeperCabinet> createArrayOfKeyKeeperCabinet(ArrayOfKeyKeeperCabinet value) {
-        return new JAXBElement<>(_ArrayOfKeyKeeperCabinet_QNAME, ArrayOfKeyKeeperCabinet.class, null, value);
+        return new JAXBElement<ArrayOfKeyKeeperCabinet>(_ArrayOfKeyKeeperCabinet_QNAME, ArrayOfKeyKeeperCabinet.class, null, value);
     }
 
     /**
@@ -908,7 +780,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyKeeperCabinet")
     public JAXBElement<KeyKeeperCabinet> createKeyKeeperCabinet(KeyKeeperCabinet value) {
-        return new JAXBElement<>(_KeyKeeperCabinet_QNAME, KeyKeeperCabinet.class, null, value);
+        return new JAXBElement<KeyKeeperCabinet>(_KeyKeeperCabinet_QNAME, KeyKeeperCabinet.class, null, value);
     }
 
     /**
@@ -921,7 +793,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "ArrayOfKeyKeeperPort")
     public JAXBElement<ArrayOfKeyKeeperPort> createArrayOfKeyKeeperPort(ArrayOfKeyKeeperPort value) {
-        return new JAXBElement<>(_ArrayOfKeyKeeperPort_QNAME, ArrayOfKeyKeeperPort.class, null, value);
+        return new JAXBElement<ArrayOfKeyKeeperPort>(_ArrayOfKeyKeeperPort_QNAME, ArrayOfKeyKeeperPort.class, null, value);
     }
 
     /**
@@ -934,7 +806,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyKeeperPort")
     public JAXBElement<KeyKeeperPort> createKeyKeeperPort(KeyKeeperPort value) {
-        return new JAXBElement<>(_KeyKeeperPort_QNAME, KeyKeeperPort.class, null, value);
+        return new JAXBElement<KeyKeeperPort>(_KeyKeeperPort_QNAME, KeyKeeperPort.class, null, value);
     }
 
     /**
@@ -947,7 +819,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "CabinetStatus")
     public JAXBElement<CabinetStatus> createCabinetStatus(CabinetStatus value) {
-        return new JAXBElement<>(_CabinetStatus_QNAME, CabinetStatus.class, null, value);
+        return new JAXBElement<CabinetStatus>(_CabinetStatus_QNAME, CabinetStatus.class, null, value);
     }
 
     /**
@@ -960,7 +832,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "ArrayOfSlotInfo")
     public JAXBElement<ArrayOfSlotInfo> createArrayOfSlotInfo(ArrayOfSlotInfo value) {
-        return new JAXBElement<>(_ArrayOfSlotInfo_QNAME, ArrayOfSlotInfo.class, null, value);
+        return new JAXBElement<ArrayOfSlotInfo>(_ArrayOfSlotInfo_QNAME, ArrayOfSlotInfo.class, null, value);
     }
 
     /**
@@ -973,7 +845,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "SlotInfo")
     public JAXBElement<SlotInfo> createSlotInfo(SlotInfo value) {
-        return new JAXBElement<>(_SlotInfo_QNAME, SlotInfo.class, null, value);
+        return new JAXBElement<SlotInfo>(_SlotInfo_QNAME, SlotInfo.class, null, value);
     }
 
     /**
@@ -986,7 +858,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "RoomKeyInfo")
     public JAXBElement<RoomKeyInfo> createRoomKeyInfo(RoomKeyInfo value) {
-        return new JAXBElement<>(_RoomKeyInfo_QNAME, RoomKeyInfo.class, null, value);
+        return new JAXBElement<RoomKeyInfo>(_RoomKeyInfo_QNAME, RoomKeyInfo.class, null, value);
     }
 
     /**
@@ -999,7 +871,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyKeeperCommandResult")
     public JAXBElement<KeyKeeperCommandResult> createKeyKeeperCommandResult(KeyKeeperCommandResult value) {
-        return new JAXBElement<>(_KeyKeeperCommandResult_QNAME, KeyKeeperCommandResult.class, null, value);
+        return new JAXBElement<KeyKeeperCommandResult>(_KeyKeeperCommandResult_QNAME, KeyKeeperCommandResult.class, null, value);
     }
 
     /**
@@ -1012,7 +884,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Panasonic", name = "PanasonicCameraCollectionResult")
     public JAXBElement<PanasonicCameraCollectionResult> createPanasonicCameraCollectionResult(PanasonicCameraCollectionResult value) {
-        return new JAXBElement<>(_PanasonicCameraCollectionResult_QNAME, PanasonicCameraCollectionResult.class, null, value);
+        return new JAXBElement<PanasonicCameraCollectionResult>(_PanasonicCameraCollectionResult_QNAME, PanasonicCameraCollectionResult.class, null, value);
     }
 
     /**
@@ -1025,7 +897,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.BasIp", name = "BasIPVersion")
     public JAXBElement<BasIPVersion> createBasIPVersion(BasIPVersion value) {
-        return new JAXBElement<>(_BasIPVersion_QNAME, BasIPVersion.class, null, value);
+        return new JAXBElement<BasIPVersion>(_BasIPVersion_QNAME, BasIPVersion.class, null, value);
     }
 
     /**
@@ -1038,7 +910,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.BasIp", name = "FindBasIpIntercomResult")
     public JAXBElement<FindBasIpIntercomResult> createFindBasIpIntercomResult(FindBasIpIntercomResult value) {
-        return new JAXBElement<>(_FindBasIpIntercomResult_QNAME, FindBasIpIntercomResult.class, null, value);
+        return new JAXBElement<FindBasIpIntercomResult>(_FindBasIpIntercomResult_QNAME, FindBasIpIntercomResult.class, null, value);
     }
 
     /**
@@ -1051,7 +923,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.BasIp", name = "ArrayOfBasIpIntercomInfo")
     public JAXBElement<ArrayOfBasIpIntercomInfo> createArrayOfBasIpIntercomInfo(ArrayOfBasIpIntercomInfo value) {
-        return new JAXBElement<>(_ArrayOfBasIpIntercomInfo_QNAME, ArrayOfBasIpIntercomInfo.class, null, value);
+        return new JAXBElement<ArrayOfBasIpIntercomInfo>(_ArrayOfBasIpIntercomInfo_QNAME, ArrayOfBasIpIntercomInfo.class, null, value);
     }
 
     /**
@@ -1064,7 +936,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.BasIp", name = "BasIpIntercomInfo")
     public JAXBElement<BasIpIntercomInfo> createBasIpIntercomInfo(BasIpIntercomInfo value) {
-        return new JAXBElement<>(_BasIpIntercomInfo_QNAME, BasIpIntercomInfo.class, null, value);
+        return new JAXBElement<BasIpIntercomInfo>(_BasIpIntercomInfo_QNAME, BasIpIntercomInfo.class, null, value);
     }
 
     /**
@@ -1077,7 +949,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "NTechLabRecognitionServiceResult")
     public JAXBElement<NTechLabRecognitionServiceResult> createNTechLabRecognitionServiceResult(NTechLabRecognitionServiceResult value) {
-        return new JAXBElement<>(_NTechLabRecognitionServiceResult_QNAME, NTechLabRecognitionServiceResult.class, null, value);
+        return new JAXBElement<NTechLabRecognitionServiceResult>(_NTechLabRecognitionServiceResult_QNAME, NTechLabRecognitionServiceResult.class, null, value);
     }
 
     /**
@@ -1090,7 +962,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "ArrayOfNTechLabCameraInfo")
     public JAXBElement<ArrayOfNTechLabCameraInfo> createArrayOfNTechLabCameraInfo(ArrayOfNTechLabCameraInfo value) {
-        return new JAXBElement<>(_ArrayOfNTechLabCameraInfo_QNAME, ArrayOfNTechLabCameraInfo.class, null, value);
+        return new JAXBElement<ArrayOfNTechLabCameraInfo>(_ArrayOfNTechLabCameraInfo_QNAME, ArrayOfNTechLabCameraInfo.class, null, value);
     }
 
     /**
@@ -1103,7 +975,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "NTechLabCameraInfo")
     public JAXBElement<NTechLabCameraInfo> createNTechLabCameraInfo(NTechLabCameraInfo value) {
-        return new JAXBElement<>(_NTechLabCameraInfo_QNAME, NTechLabCameraInfo.class, null, value);
+        return new JAXBElement<NTechLabCameraInfo>(_NTechLabCameraInfo_QNAME, NTechLabCameraInfo.class, null, value);
     }
 
     /**
@@ -1116,7 +988,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "ArrayOfNTechLabDossierListInfo")
     public JAXBElement<ArrayOfNTechLabDossierListInfo> createArrayOfNTechLabDossierListInfo(ArrayOfNTechLabDossierListInfo value) {
-        return new JAXBElement<>(_ArrayOfNTechLabDossierListInfo_QNAME, ArrayOfNTechLabDossierListInfo.class, null, value);
+        return new JAXBElement<ArrayOfNTechLabDossierListInfo>(_ArrayOfNTechLabDossierListInfo_QNAME, ArrayOfNTechLabDossierListInfo.class, null, value);
     }
 
     /**
@@ -1129,7 +1001,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "NTechLabDossierListInfo")
     public JAXBElement<NTechLabDossierListInfo> createNTechLabDossierListInfo(NTechLabDossierListInfo value) {
-        return new JAXBElement<>(_NTechLabDossierListInfo_QNAME, NTechLabDossierListInfo.class, null, value);
+        return new JAXBElement<NTechLabDossierListInfo>(_NTechLabDossierListInfo_QNAME, NTechLabDossierListInfo.class, null, value);
     }
 
     /**
@@ -1142,7 +1014,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "NTechLabConfigSyncState")
     public JAXBElement<NTechLabConfigSyncState> createNTechLabConfigSyncState(NTechLabConfigSyncState value) {
-        return new JAXBElement<>(_NTechLabConfigSyncState_QNAME, NTechLabConfigSyncState.class, null, value);
+        return new JAXBElement<NTechLabConfigSyncState>(_NTechLabConfigSyncState_QNAME, NTechLabConfigSyncState.class, null, value);
     }
 
     /**
@@ -1155,7 +1027,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "NUUOArchiveServerCollectionResult")
     public JAXBElement<NUUOArchiveServerCollectionResult> createNUUOArchiveServerCollectionResult(NUUOArchiveServerCollectionResult value) {
-        return new JAXBElement<>(_NUUOArchiveServerCollectionResult_QNAME, NUUOArchiveServerCollectionResult.class, null, value);
+        return new JAXBElement<NUUOArchiveServerCollectionResult>(_NUUOArchiveServerCollectionResult_QNAME, NUUOArchiveServerCollectionResult.class, null, value);
     }
 
     /**
@@ -1168,7 +1040,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "ArrayOfNUUOArchiveServer")
     public JAXBElement<ArrayOfNUUOArchiveServer> createArrayOfNUUOArchiveServer(ArrayOfNUUOArchiveServer value) {
-        return new JAXBElement<>(_ArrayOfNUUOArchiveServer_QNAME, ArrayOfNUUOArchiveServer.class, null, value);
+        return new JAXBElement<ArrayOfNUUOArchiveServer>(_ArrayOfNUUOArchiveServer_QNAME, ArrayOfNUUOArchiveServer.class, null, value);
     }
 
     /**
@@ -1181,7 +1053,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "NUUOArchiveServer")
     public JAXBElement<NUUOArchiveServer> createNUUOArchiveServer(NUUOArchiveServer value) {
-        return new JAXBElement<>(_NUUOArchiveServer_QNAME, NUUOArchiveServer.class, null, value);
+        return new JAXBElement<NUUOArchiveServer>(_NUUOArchiveServer_QNAME, NUUOArchiveServer.class, null, value);
     }
 
     /**
@@ -1194,7 +1066,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "ArrayOfNUUOVideoRecorder")
     public JAXBElement<ArrayOfNUUOVideoRecorder> createArrayOfNUUOVideoRecorder(ArrayOfNUUOVideoRecorder value) {
-        return new JAXBElement<>(_ArrayOfNUUOVideoRecorder_QNAME, ArrayOfNUUOVideoRecorder.class, null, value);
+        return new JAXBElement<ArrayOfNUUOVideoRecorder>(_ArrayOfNUUOVideoRecorder_QNAME, ArrayOfNUUOVideoRecorder.class, null, value);
     }
 
     /**
@@ -1207,7 +1079,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "NUUOVideoRecorder")
     public JAXBElement<NUUOVideoRecorder> createNUUOVideoRecorder(NUUOVideoRecorder value) {
-        return new JAXBElement<>(_NUUOVideoRecorder_QNAME, NUUOVideoRecorder.class, null, value);
+        return new JAXBElement<NUUOVideoRecorder>(_NUUOVideoRecorder_QNAME, NUUOVideoRecorder.class, null, value);
     }
 
     /**
@@ -1220,7 +1092,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "ArrayOfNUUOCamera")
     public JAXBElement<ArrayOfNUUOCamera> createArrayOfNUUOCamera(ArrayOfNUUOCamera value) {
-        return new JAXBElement<>(_ArrayOfNUUOCamera_QNAME, ArrayOfNUUOCamera.class, null, value);
+        return new JAXBElement<ArrayOfNUUOCamera>(_ArrayOfNUUOCamera_QNAME, ArrayOfNUUOCamera.class, null, value);
     }
 
     /**
@@ -1233,7 +1105,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "NUUOCamera")
     public JAXBElement<NUUOCamera> createNUUOCamera(NUUOCamera value) {
-        return new JAXBElement<>(_NUUOCamera_QNAME, NUUOCamera.class, null, value);
+        return new JAXBElement<NUUOCamera>(_NUUOCamera_QNAME, NUUOCamera.class, null, value);
     }
 
     /**
@@ -1246,7 +1118,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "TrassirIntegrationResult")
     public JAXBElement<TrassirIntegrationResult> createTrassirIntegrationResult(TrassirIntegrationResult value) {
-        return new JAXBElement<>(_TrassirIntegrationResult_QNAME, TrassirIntegrationResult.class, null, value);
+        return new JAXBElement<TrassirIntegrationResult>(_TrassirIntegrationResult_QNAME, TrassirIntegrationResult.class, null, value);
     }
 
     /**
@@ -1259,7 +1131,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "ArrayOfTrassirServerInfo")
     public JAXBElement<ArrayOfTrassirServerInfo> createArrayOfTrassirServerInfo(ArrayOfTrassirServerInfo value) {
-        return new JAXBElement<>(_ArrayOfTrassirServerInfo_QNAME, ArrayOfTrassirServerInfo.class, null, value);
+        return new JAXBElement<ArrayOfTrassirServerInfo>(_ArrayOfTrassirServerInfo_QNAME, ArrayOfTrassirServerInfo.class, null, value);
     }
 
     /**
@@ -1272,7 +1144,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "TrassirServerInfo")
     public JAXBElement<TrassirServerInfo> createTrassirServerInfo(TrassirServerInfo value) {
-        return new JAXBElement<>(_TrassirServerInfo_QNAME, TrassirServerInfo.class, null, value);
+        return new JAXBElement<TrassirServerInfo>(_TrassirServerInfo_QNAME, TrassirServerInfo.class, null, value);
     }
 
     /**
@@ -1285,7 +1157,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "ArrayOfTrassirChannelInfo")
     public JAXBElement<ArrayOfTrassirChannelInfo> createArrayOfTrassirChannelInfo(ArrayOfTrassirChannelInfo value) {
-        return new JAXBElement<>(_ArrayOfTrassirChannelInfo_QNAME, ArrayOfTrassirChannelInfo.class, null, value);
+        return new JAXBElement<ArrayOfTrassirChannelInfo>(_ArrayOfTrassirChannelInfo_QNAME, ArrayOfTrassirChannelInfo.class, null, value);
     }
 
     /**
@@ -1298,7 +1170,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "TrassirChannelInfo")
     public JAXBElement<TrassirChannelInfo> createTrassirChannelInfo(TrassirChannelInfo value) {
-        return new JAXBElement<>(_TrassirChannelInfo_QNAME, TrassirChannelInfo.class, null, value);
+        return new JAXBElement<TrassirChannelInfo>(_TrassirChannelInfo_QNAME, TrassirChannelInfo.class, null, value);
     }
 
     /**
@@ -1311,7 +1183,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Idis", name = "IdisConfiguration")
     public JAXBElement<IdisConfiguration> createIdisConfiguration(IdisConfiguration value) {
-        return new JAXBElement<>(_IdisConfiguration_QNAME, IdisConfiguration.class, null, value);
+        return new JAXBElement<IdisConfiguration>(_IdisConfiguration_QNAME, IdisConfiguration.class, null, value);
     }
 
     /**
@@ -1324,7 +1196,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Ivideon", name = "IvideonCameraCollectionResult")
     public JAXBElement<IvideonCameraCollectionResult> createIvideonCameraCollectionResult(IvideonCameraCollectionResult value) {
-        return new JAXBElement<>(_IvideonCameraCollectionResult_QNAME, IvideonCameraCollectionResult.class, null, value);
+        return new JAXBElement<IvideonCameraCollectionResult>(_IvideonCameraCollectionResult_QNAME, IvideonCameraCollectionResult.class, null, value);
     }
 
     /**
@@ -1337,7 +1209,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Ivideon", name = "IvideonRemoteServerCollectionResult")
     public JAXBElement<IvideonRemoteServerCollectionResult> createIvideonRemoteServerCollectionResult(IvideonRemoteServerCollectionResult value) {
-        return new JAXBElement<>(_IvideonRemoteServerCollectionResult_QNAME, IvideonRemoteServerCollectionResult.class, null, value);
+        return new JAXBElement<IvideonRemoteServerCollectionResult>(_IvideonRemoteServerCollectionResult_QNAME, IvideonRemoteServerCollectionResult.class, null, value);
     }
 
     /**
@@ -1350,7 +1222,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.LPRCamera", name = "FindLPRCameraResult")
     public JAXBElement<FindLPRCameraResult> createFindLPRCameraResult(FindLPRCameraResult value) {
-        return new JAXBElement<>(_FindLPRCameraResult_QNAME, FindLPRCameraResult.class, null, value);
+        return new JAXBElement<FindLPRCameraResult>(_FindLPRCameraResult_QNAME, FindLPRCameraResult.class, null, value);
     }
 
     /**
@@ -1363,7 +1235,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.LPRCamera", name = "ArrayOfLPRCameraInfo")
     public JAXBElement<ArrayOfLPRCameraInfo> createArrayOfLPRCameraInfo(ArrayOfLPRCameraInfo value) {
-        return new JAXBElement<>(_ArrayOfLPRCameraInfo_QNAME, ArrayOfLPRCameraInfo.class, null, value);
+        return new JAXBElement<ArrayOfLPRCameraInfo>(_ArrayOfLPRCameraInfo_QNAME, ArrayOfLPRCameraInfo.class, null, value);
     }
 
     /**
@@ -1376,7 +1248,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.LPRCamera", name = "LPRCameraInfo")
     public JAXBElement<LPRCameraInfo> createLPRCameraInfo(LPRCameraInfo value) {
-        return new JAXBElement<>(_LPRCameraInfo_QNAME, LPRCameraInfo.class, null, value);
+        return new JAXBElement<LPRCameraInfo>(_LPRCameraInfo_QNAME, LPRCameraInfo.class, null, value);
     }
 
     /**
@@ -1389,7 +1261,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "FindConvertersResult")
     public JAXBElement<FindConvertersResult> createFindConvertersResult(FindConvertersResult value) {
-        return new JAXBElement<>(_FindConvertersResult_QNAME, FindConvertersResult.class, null, value);
+        return new JAXBElement<FindConvertersResult>(_FindConvertersResult_QNAME, FindConvertersResult.class, null, value);
     }
 
     /**
@@ -1402,7 +1274,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfCanConverterAddress")
     public JAXBElement<ArrayOfCanConverterAddress> createArrayOfCanConverterAddress(ArrayOfCanConverterAddress value) {
-        return new JAXBElement<>(_ArrayOfCanConverterAddress_QNAME, ArrayOfCanConverterAddress.class, null, value);
+        return new JAXBElement<ArrayOfCanConverterAddress>(_ArrayOfCanConverterAddress_QNAME, ArrayOfCanConverterAddress.class, null, value);
     }
 
     /**
@@ -1415,7 +1287,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "CanConverterAddress")
     public JAXBElement<CanConverterAddress> createCanConverterAddress(CanConverterAddress value) {
-        return new JAXBElement<>(_CanConverterAddress_QNAME, CanConverterAddress.class, null, value);
+        return new JAXBElement<CanConverterAddress>(_CanConverterAddress_QNAME, CanConverterAddress.class, null, value);
     }
 
     /**
@@ -1428,7 +1300,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "CanConverterAddress.TagEnum")
     public JAXBElement<CanConverterAddressTagEnum> createCanConverterAddressTagEnum(CanConverterAddressTagEnum value) {
-        return new JAXBElement<>(_CanConverterAddressTagEnum_QNAME, CanConverterAddressTagEnum.class, null, value);
+        return new JAXBElement<CanConverterAddressTagEnum>(_CanConverterAddressTagEnum_QNAME, CanConverterAddressTagEnum.class, null, value);
     }
 
     /**
@@ -1441,7 +1313,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "UsbCanConverterAddress")
     public JAXBElement<UsbCanConverterAddress> createUsbCanConverterAddress(UsbCanConverterAddress value) {
-        return new JAXBElement<>(_UsbCanConverterAddress_QNAME, UsbCanConverterAddress.class, null, value);
+        return new JAXBElement<UsbCanConverterAddress>(_UsbCanConverterAddress_QNAME, UsbCanConverterAddress.class, null, value);
     }
 
     /**
@@ -1454,7 +1326,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfLanCanConverter")
     public JAXBElement<ArrayOfLanCanConverter> createArrayOfLanCanConverter(ArrayOfLanCanConverter value) {
-        return new JAXBElement<>(_ArrayOfLanCanConverter_QNAME, ArrayOfLanCanConverter.class, null, value);
+        return new JAXBElement<ArrayOfLanCanConverter>(_ArrayOfLanCanConverter_QNAME, ArrayOfLanCanConverter.class, null, value);
     }
 
     /**
@@ -1467,7 +1339,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "LanCanConverter")
     public JAXBElement<LanCanConverter> createLanCanConverter(LanCanConverter value) {
-        return new JAXBElement<>(_LanCanConverter_QNAME, LanCanConverter.class, null, value);
+        return new JAXBElement<LanCanConverter>(_LanCanConverter_QNAME, LanCanConverter.class, null, value);
     }
 
     /**
@@ -1480,7 +1352,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "FindControllersResult")
     public JAXBElement<FindControllersResult> createFindControllersResult(FindControllersResult value) {
-        return new JAXBElement<>(_FindControllersResult_QNAME, FindControllersResult.class, null, value);
+        return new JAXBElement<FindControllersResult>(_FindControllersResult_QNAME, FindControllersResult.class, null, value);
     }
 
     /**
@@ -1493,7 +1365,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfCanDeviceInfo")
     public JAXBElement<ArrayOfCanDeviceInfo> createArrayOfCanDeviceInfo(ArrayOfCanDeviceInfo value) {
-        return new JAXBElement<>(_ArrayOfCanDeviceInfo_QNAME, ArrayOfCanDeviceInfo.class, null, value);
+        return new JAXBElement<ArrayOfCanDeviceInfo>(_ArrayOfCanDeviceInfo_QNAME, ArrayOfCanDeviceInfo.class, null, value);
     }
 
     /**
@@ -1506,7 +1378,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "CanDeviceInfo")
     public JAXBElement<CanDeviceInfo> createCanDeviceInfo(CanDeviceInfo value) {
-        return new JAXBElement<>(_CanDeviceInfo_QNAME, CanDeviceInfo.class, null, value);
+        return new JAXBElement<CanDeviceInfo>(_CanDeviceInfo_QNAME, CanDeviceInfo.class, null, value);
     }
 
     /**
@@ -1519,7 +1391,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "CanDeviceNetConfig")
     public JAXBElement<CanDeviceNetConfig> createCanDeviceNetConfig(CanDeviceNetConfig value) {
-        return new JAXBElement<>(_CanDeviceNetConfig_QNAME, CanDeviceNetConfig.class, null, value);
+        return new JAXBElement<CanDeviceNetConfig>(_CanDeviceNetConfig_QNAME, CanDeviceNetConfig.class, null, value);
     }
 
     /**
@@ -1532,7 +1404,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfFindControllersResult.FailedConverterInfo")
     public JAXBElement<ArrayOfFindControllersResultFailedConverterInfo> createArrayOfFindControllersResultFailedConverterInfo(ArrayOfFindControllersResultFailedConverterInfo value) {
-        return new JAXBElement<>(_ArrayOfFindControllersResultFailedConverterInfo_QNAME, ArrayOfFindControllersResultFailedConverterInfo.class, null, value);
+        return new JAXBElement<ArrayOfFindControllersResultFailedConverterInfo>(_ArrayOfFindControllersResultFailedConverterInfo_QNAME, ArrayOfFindControllersResultFailedConverterInfo.class, null, value);
     }
 
     /**
@@ -1545,7 +1417,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "FindControllersResult.FailedConverterInfo")
     public JAXBElement<FindControllersResultFailedConverterInfo> createFindControllersResultFailedConverterInfo(FindControllersResultFailedConverterInfo value) {
-        return new JAXBElement<>(_FindControllersResultFailedConverterInfo_QNAME, FindControllersResultFailedConverterInfo.class, null, value);
+        return new JAXBElement<FindControllersResultFailedConverterInfo>(_FindControllersResultFailedConverterInfo_QNAME, FindControllersResultFailedConverterInfo.class, null, value);
     }
 
     /**
@@ -1558,7 +1430,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfCanDeviceNetConfig")
     public JAXBElement<ArrayOfCanDeviceNetConfig> createArrayOfCanDeviceNetConfig(ArrayOfCanDeviceNetConfig value) {
-        return new JAXBElement<>(_ArrayOfCanDeviceNetConfig_QNAME, ArrayOfCanDeviceNetConfig.class, null, value);
+        return new JAXBElement<ArrayOfCanDeviceNetConfig>(_ArrayOfCanDeviceNetConfig_QNAME, ArrayOfCanDeviceNetConfig.class, null, value);
     }
 
     /**
@@ -1571,7 +1443,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "SetDevicesAddressBySidResult")
     public JAXBElement<SetDevicesAddressBySidResult> createSetDevicesAddressBySidResult(SetDevicesAddressBySidResult value) {
-        return new JAXBElement<>(_SetDevicesAddressBySidResult_QNAME, SetDevicesAddressBySidResult.class, null, value);
+        return new JAXBElement<SetDevicesAddressBySidResult>(_SetDevicesAddressBySidResult_QNAME, SetDevicesAddressBySidResult.class, null, value);
     }
 
     /**
@@ -1584,7 +1456,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfSetDevicesAddressBySidResult.FailedAddress")
     public JAXBElement<ArrayOfSetDevicesAddressBySidResultFailedAddress> createArrayOfSetDevicesAddressBySidResultFailedAddress(ArrayOfSetDevicesAddressBySidResultFailedAddress value) {
-        return new JAXBElement<>(_ArrayOfSetDevicesAddressBySidResultFailedAddress_QNAME, ArrayOfSetDevicesAddressBySidResultFailedAddress.class, null, value);
+        return new JAXBElement<ArrayOfSetDevicesAddressBySidResultFailedAddress>(_ArrayOfSetDevicesAddressBySidResultFailedAddress_QNAME, ArrayOfSetDevicesAddressBySidResultFailedAddress.class, null, value);
     }
 
     /**
@@ -1597,7 +1469,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "SetDevicesAddressBySidResult.FailedAddress")
     public JAXBElement<SetDevicesAddressBySidResultFailedAddress> createSetDevicesAddressBySidResultFailedAddress(SetDevicesAddressBySidResultFailedAddress value) {
-        return new JAXBElement<>(_SetDevicesAddressBySidResultFailedAddress_QNAME, SetDevicesAddressBySidResultFailedAddress.class, null, value);
+        return new JAXBElement<SetDevicesAddressBySidResultFailedAddress>(_SetDevicesAddressBySidResultFailedAddress_QNAME, SetDevicesAddressBySidResultFailedAddress.class, null, value);
     }
 
     /**
@@ -1610,7 +1482,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "GetControllerConfigurationsResult")
     public JAXBElement<GetControllerConfigurationsResult> createGetControllerConfigurationsResult(GetControllerConfigurationsResult value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResult_QNAME, GetControllerConfigurationsResult.class, null, value);
+        return new JAXBElement<GetControllerConfigurationsResult>(_GetControllerConfigurationsResult_QNAME, GetControllerConfigurationsResult.class, null, value);
     }
 
     /**
@@ -1623,7 +1495,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfGetControllerConfigurationsResult.Config")
     public JAXBElement<ArrayOfGetControllerConfigurationsResultConfig> createArrayOfGetControllerConfigurationsResultConfig(ArrayOfGetControllerConfigurationsResultConfig value) {
-        return new JAXBElement<>(_ArrayOfGetControllerConfigurationsResultConfig_QNAME, ArrayOfGetControllerConfigurationsResultConfig.class, null, value);
+        return new JAXBElement<ArrayOfGetControllerConfigurationsResultConfig>(_ArrayOfGetControllerConfigurationsResultConfig_QNAME, ArrayOfGetControllerConfigurationsResultConfig.class, null, value);
     }
 
     /**
@@ -1636,7 +1508,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "GetControllerConfigurationsResult.Config")
     public JAXBElement<GetControllerConfigurationsResultConfig> createGetControllerConfigurationsResultConfig(GetControllerConfigurationsResultConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultConfig_QNAME, GetControllerConfigurationsResultConfig.class, null, value);
+        return new JAXBElement<GetControllerConfigurationsResultConfig>(_GetControllerConfigurationsResultConfig_QNAME, GetControllerConfigurationsResultConfig.class, null, value);
     }
 
     /**
@@ -1649,7 +1521,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ArrayOfGetControllerConfigurationsResult.FailedConfig")
     public JAXBElement<ArrayOfGetControllerConfigurationsResultFailedConfig> createArrayOfGetControllerConfigurationsResultFailedConfig(ArrayOfGetControllerConfigurationsResultFailedConfig value) {
-        return new JAXBElement<>(_ArrayOfGetControllerConfigurationsResultFailedConfig_QNAME, ArrayOfGetControllerConfigurationsResultFailedConfig.class, null, value);
+        return new JAXBElement<ArrayOfGetControllerConfigurationsResultFailedConfig>(_ArrayOfGetControllerConfigurationsResultFailedConfig_QNAME, ArrayOfGetControllerConfigurationsResultFailedConfig.class, null, value);
     }
 
     /**
@@ -1662,7 +1534,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "GetControllerConfigurationsResult.FailedConfig")
     public JAXBElement<GetControllerConfigurationsResultFailedConfig> createGetControllerConfigurationsResultFailedConfig(GetControllerConfigurationsResultFailedConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfig_QNAME, GetControllerConfigurationsResultFailedConfig.class, null, value);
+        return new JAXBElement<GetControllerConfigurationsResultFailedConfig>(_GetControllerConfigurationsResultFailedConfig_QNAME, GetControllerConfigurationsResultFailedConfig.class, null, value);
     }
 
     /**
@@ -1675,7 +1547,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "IpAddress", scope = LanCanConverterAddress.class)
     public JAXBElement<String> createLanCanConverterAddressIpAddress(String value) {
-        return new JAXBElement<>(_LanCanConverterAddressIpAddress_QNAME, String.class, LanCanConverterAddress.class, value);
+        return new JAXBElement<String>(_LanCanConverterAddressIpAddress_QNAME, String.class, LanCanConverterAddress.class, value);
     }
 
     /**
@@ -1688,7 +1560,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Error", scope = GetControllerConfigurationsResultFailedConfig.class)
     public JAXBElement<String> createGetControllerConfigurationsResultFailedConfigError(String value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, GetControllerConfigurationsResultFailedConfig.class, value);
+        return new JAXBElement<String>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, GetControllerConfigurationsResultFailedConfig.class, value);
     }
 
     /**
@@ -1701,7 +1573,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "NetConfig", scope = GetControllerConfigurationsResultFailedConfig.class)
     public JAXBElement<CanDeviceNetConfig> createGetControllerConfigurationsResultFailedConfigNetConfig(CanDeviceNetConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, GetControllerConfigurationsResultFailedConfig.class, value);
+        return new JAXBElement<CanDeviceNetConfig>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, GetControllerConfigurationsResultFailedConfig.class, value);
     }
 
     /**
@@ -1714,7 +1586,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Configuration", scope = GetControllerConfigurationsResultConfig.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createGetControllerConfigurationsResultConfigConfiguration(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultConfigConfiguration_QNAME, ArrayOfLDriverFullInfo.class, GetControllerConfigurationsResultConfig.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_GetControllerConfigurationsResultConfigConfiguration_QNAME, ArrayOfLDriverFullInfo.class, GetControllerConfigurationsResultConfig.class, value);
     }
 
     /**
@@ -1727,7 +1599,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "NetConfig", scope = GetControllerConfigurationsResultConfig.class)
     public JAXBElement<CanDeviceNetConfig> createGetControllerConfigurationsResultConfigNetConfig(CanDeviceNetConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, GetControllerConfigurationsResultConfig.class, value);
+        return new JAXBElement<CanDeviceNetConfig>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, GetControllerConfigurationsResultConfig.class, value);
     }
 
     /**
@@ -1740,7 +1612,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Error", scope = SetDevicesAddressBySidResultFailedAddress.class)
     public JAXBElement<String> createSetDevicesAddressBySidResultFailedAddressError(String value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, SetDevicesAddressBySidResultFailedAddress.class, value);
+        return new JAXBElement<String>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, SetDevicesAddressBySidResultFailedAddress.class, value);
     }
 
     /**
@@ -1753,7 +1625,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "NetConfig", scope = SetDevicesAddressBySidResultFailedAddress.class)
     public JAXBElement<CanDeviceNetConfig> createSetDevicesAddressBySidResultFailedAddressNetConfig(CanDeviceNetConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, SetDevicesAddressBySidResultFailedAddress.class, value);
+        return new JAXBElement<CanDeviceNetConfig>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, SetDevicesAddressBySidResultFailedAddress.class, value);
     }
 
     /**
@@ -1766,7 +1638,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ConverterAddress", scope = FindControllersResultFailedConverterInfo.class)
     public JAXBElement<CanConverterAddress> createFindControllersResultFailedConverterInfoConverterAddress(CanConverterAddress value) {
-        return new JAXBElement<>(_FindControllersResultFailedConverterInfoConverterAddress_QNAME, CanConverterAddress.class, FindControllersResultFailedConverterInfo.class, value);
+        return new JAXBElement<CanConverterAddress>(_FindControllersResultFailedConverterInfoConverterAddress_QNAME, CanConverterAddress.class, FindControllersResultFailedConverterInfo.class, value);
     }
 
     /**
@@ -1779,7 +1651,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Error", scope = FindControllersResultFailedConverterInfo.class)
     public JAXBElement<String> createFindControllersResultFailedConverterInfoError(String value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, FindControllersResultFailedConverterInfo.class, value);
+        return new JAXBElement<String>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, FindControllersResultFailedConverterInfo.class, value);
     }
 
     /**
@@ -1792,7 +1664,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "ConverterAddress", scope = CanDeviceNetConfig.class)
     public JAXBElement<CanConverterAddress> createCanDeviceNetConfigConverterAddress(CanConverterAddress value) {
-        return new JAXBElement<>(_FindControllersResultFailedConverterInfoConverterAddress_QNAME, CanConverterAddress.class, CanDeviceNetConfig.class, value);
+        return new JAXBElement<CanConverterAddress>(_FindControllersResultFailedConverterInfoConverterAddress_QNAME, CanConverterAddress.class, CanDeviceNetConfig.class, value);
     }
 
     /**
@@ -1805,7 +1677,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "DriverFullInfo", scope = CanDeviceNetConfig.class)
     public JAXBElement<LDriverFullInfo> createCanDeviceNetConfigDriverFullInfo(LDriverFullInfo value) {
-        return new JAXBElement<>(_CanDeviceNetConfigDriverFullInfo_QNAME, LDriverFullInfo.class, CanDeviceNetConfig.class, value);
+        return new JAXBElement<LDriverFullInfo>(_CanDeviceNetConfigDriverFullInfo_QNAME, LDriverFullInfo.class, CanDeviceNetConfig.class, value);
     }
 
     /**
@@ -1818,7 +1690,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "HardwareType", scope = CanDeviceNetConfig.class)
     public JAXBElement<String> createCanDeviceNetConfigHardwareType(String value) {
-        return new JAXBElement<>(_CanDeviceNetConfigHardwareType_QNAME, String.class, CanDeviceNetConfig.class, value);
+        return new JAXBElement<String>(_CanDeviceNetConfigHardwareType_QNAME, String.class, CanDeviceNetConfig.class, value);
     }
 
     /**
@@ -1831,7 +1703,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Error", scope = CanDeviceInfo.class)
     public JAXBElement<String> createCanDeviceInfoError(String value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, CanDeviceInfo.class, value);
+        return new JAXBElement<String>(_GetControllerConfigurationsResultFailedConfigError_QNAME, String.class, CanDeviceInfo.class, value);
     }
 
     /**
@@ -1844,7 +1716,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Name", scope = CanDeviceInfo.class)
     public JAXBElement<String> createCanDeviceInfoName(String value) {
-        return new JAXBElement<>(_CanDeviceInfoName_QNAME, String.class, CanDeviceInfo.class, value);
+        return new JAXBElement<String>(_CanDeviceInfoName_QNAME, String.class, CanDeviceInfo.class, value);
     }
 
     /**
@@ -1857,7 +1729,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "NetConfig", scope = CanDeviceInfo.class)
     public JAXBElement<CanDeviceNetConfig> createCanDeviceInfoNetConfig(CanDeviceNetConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, CanDeviceInfo.class, value);
+        return new JAXBElement<CanDeviceNetConfig>(_GetControllerConfigurationsResultFailedConfigNetConfig_QNAME, CanDeviceNetConfig.class, CanDeviceInfo.class, value);
     }
 
     /**
@@ -1870,7 +1742,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "SerialNumber", scope = UsbCanConverterAddress.class)
     public JAXBElement<String> createUsbCanConverterAddressSerialNumber(String value) {
-        return new JAXBElement<>(_UsbCanConverterAddressSerialNumber_QNAME, String.class, UsbCanConverterAddress.class, value);
+        return new JAXBElement<String>(_UsbCanConverterAddressSerialNumber_QNAME, String.class, UsbCanConverterAddress.class, value);
     }
 
     /**
@@ -1883,7 +1755,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Vendor", scope = UsbCanConverterAddress.class)
     public JAXBElement<String> createUsbCanConverterAddressVendor(String value) {
-        return new JAXBElement<>(_UsbCanConverterAddressVendor_QNAME, String.class, UsbCanConverterAddress.class, value);
+        return new JAXBElement<String>(_UsbCanConverterAddressVendor_QNAME, String.class, UsbCanConverterAddress.class, value);
     }
 
     /**
@@ -1896,7 +1768,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "LanCanConverterAddress", scope = CanConverterAddress.class)
     public JAXBElement<LanCanConverterAddress> createCanConverterAddressLanCanConverterAddress(LanCanConverterAddress value) {
-        return new JAXBElement<>(_CanConverterAddressLanCanConverterAddress_QNAME, LanCanConverterAddress.class, CanConverterAddress.class, value);
+        return new JAXBElement<LanCanConverterAddress>(_CanConverterAddressLanCanConverterAddress_QNAME, LanCanConverterAddress.class, CanConverterAddress.class, value);
     }
 
     /**
@@ -1909,7 +1781,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "UsbCanConverterAddress", scope = CanConverterAddress.class)
     public JAXBElement<UsbCanConverterAddress> createCanConverterAddressUsbCanConverterAddress(UsbCanConverterAddress value) {
-        return new JAXBElement<>(_UsbCanConverterAddress_QNAME, UsbCanConverterAddress.class, CanConverterAddress.class, value);
+        return new JAXBElement<UsbCanConverterAddress>(_UsbCanConverterAddress_QNAME, UsbCanConverterAddress.class, CanConverterAddress.class, value);
     }
 
     /**
@@ -1922,7 +1794,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.LPRCamera", name = "IPAddress", scope = LPRCameraInfo.class)
     public JAXBElement<String> createLPRCameraInfoIPAddress(String value) {
-        return new JAXBElement<>(_LPRCameraInfoIPAddress_QNAME, String.class, LPRCameraInfo.class, value);
+        return new JAXBElement<String>(_LPRCameraInfoIPAddress_QNAME, String.class, LPRCameraInfo.class, value);
     }
 
     /**
@@ -1935,7 +1807,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.LPRCamera", name = "MacAddress", scope = LPRCameraInfo.class)
     public JAXBElement<String> createLPRCameraInfoMacAddress(String value) {
-        return new JAXBElement<>(_LPRCameraInfoMacAddress_QNAME, String.class, LPRCameraInfo.class, value);
+        return new JAXBElement<String>(_LPRCameraInfoMacAddress_QNAME, String.class, LPRCameraInfo.class, value);
     }
 
     /**
@@ -1948,7 +1820,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "Name", scope = TrassirChannelInfo.class)
     public JAXBElement<String> createTrassirChannelInfoName(String value) {
-        return new JAXBElement<>(_TrassirChannelInfoName_QNAME, String.class, TrassirChannelInfo.class, value);
+        return new JAXBElement<String>(_TrassirChannelInfoName_QNAME, String.class, TrassirChannelInfo.class, value);
     }
 
     /**
@@ -1961,7 +1833,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "TrassirID", scope = TrassirChannelInfo.class)
     public JAXBElement<String> createTrassirChannelInfoTrassirID(String value) {
-        return new JAXBElement<>(_TrassirChannelInfoTrassirID_QNAME, String.class, TrassirChannelInfo.class, value);
+        return new JAXBElement<String>(_TrassirChannelInfoTrassirID_QNAME, String.class, TrassirChannelInfo.class, value);
     }
 
     /**
@@ -1974,7 +1846,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "Channels", scope = TrassirServerInfo.class)
     public JAXBElement<ArrayOfTrassirChannelInfo> createTrassirServerInfoChannels(ArrayOfTrassirChannelInfo value) {
-        return new JAXBElement<>(_TrassirServerInfoChannels_QNAME, ArrayOfTrassirChannelInfo.class, TrassirServerInfo.class, value);
+        return new JAXBElement<ArrayOfTrassirChannelInfo>(_TrassirServerInfoChannels_QNAME, ArrayOfTrassirChannelInfo.class, TrassirServerInfo.class, value);
     }
 
     /**
@@ -1987,7 +1859,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "Name", scope = TrassirServerInfo.class)
     public JAXBElement<String> createTrassirServerInfoName(String value) {
-        return new JAXBElement<>(_TrassirChannelInfoName_QNAME, String.class, TrassirServerInfo.class, value);
+        return new JAXBElement<String>(_TrassirChannelInfoName_QNAME, String.class, TrassirServerInfo.class, value);
     }
 
     /**
@@ -2000,7 +1872,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "TrassirID", scope = TrassirServerInfo.class)
     public JAXBElement<String> createTrassirServerInfoTrassirID(String value) {
-        return new JAXBElement<>(_TrassirChannelInfoTrassirID_QNAME, String.class, TrassirServerInfo.class, value);
+        return new JAXBElement<String>(_TrassirChannelInfoTrassirID_QNAME, String.class, TrassirServerInfo.class, value);
     }
 
     /**
@@ -2013,7 +1885,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "Description", scope = NUUOCamera.class)
     public JAXBElement<String> createNUUOCameraDescription(String value) {
-        return new JAXBElement<>(_NUUOCameraDescription_QNAME, String.class, NUUOCamera.class, value);
+        return new JAXBElement<String>(_NUUOCameraDescription_QNAME, String.class, NUUOCamera.class, value);
     }
 
     /**
@@ -2026,7 +1898,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "Name", scope = NUUOCamera.class)
     public JAXBElement<String> createNUUOCameraName(String value) {
-        return new JAXBElement<>(_NUUOCameraName_QNAME, String.class, NUUOCamera.class, value);
+        return new JAXBElement<String>(_NUUOCameraName_QNAME, String.class, NUUOCamera.class, value);
     }
 
     /**
@@ -2039,7 +1911,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "Cameras", scope = NUUOVideoRecorder.class)
     public JAXBElement<ArrayOfNUUOCamera> createNUUOVideoRecorderCameras(ArrayOfNUUOCamera value) {
-        return new JAXBElement<>(_NUUOVideoRecorderCameras_QNAME, ArrayOfNUUOCamera.class, NUUOVideoRecorder.class, value);
+        return new JAXBElement<ArrayOfNUUOCamera>(_NUUOVideoRecorderCameras_QNAME, ArrayOfNUUOCamera.class, NUUOVideoRecorder.class, value);
     }
 
     /**
@@ -2052,7 +1924,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "Description", scope = NUUOVideoRecorder.class)
     public JAXBElement<String> createNUUOVideoRecorderDescription(String value) {
-        return new JAXBElement<>(_NUUOCameraDescription_QNAME, String.class, NUUOVideoRecorder.class, value);
+        return new JAXBElement<String>(_NUUOCameraDescription_QNAME, String.class, NUUOVideoRecorder.class, value);
     }
 
     /**
@@ -2065,7 +1937,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "Name", scope = NUUOVideoRecorder.class)
     public JAXBElement<String> createNUUOVideoRecorderName(String value) {
-        return new JAXBElement<>(_NUUOCameraName_QNAME, String.class, NUUOVideoRecorder.class, value);
+        return new JAXBElement<String>(_NUUOCameraName_QNAME, String.class, NUUOVideoRecorder.class, value);
     }
 
     /**
@@ -2078,7 +1950,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "Name", scope = NUUOArchiveServer.class)
     public JAXBElement<String> createNUUOArchiveServerName(String value) {
-        return new JAXBElement<>(_NUUOCameraName_QNAME, String.class, NUUOArchiveServer.class, value);
+        return new JAXBElement<String>(_NUUOCameraName_QNAME, String.class, NUUOArchiveServer.class, value);
     }
 
     /**
@@ -2091,7 +1963,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "VideoRecorders", scope = NUUOArchiveServer.class)
     public JAXBElement<ArrayOfNUUOVideoRecorder> createNUUOArchiveServerVideoRecorders(ArrayOfNUUOVideoRecorder value) {
-        return new JAXBElement<>(_NUUOArchiveServerVideoRecorders_QNAME, ArrayOfNUUOVideoRecorder.class, NUUOArchiveServer.class, value);
+        return new JAXBElement<ArrayOfNUUOVideoRecorder>(_NUUOArchiveServerVideoRecorders_QNAME, ArrayOfNUUOVideoRecorder.class, NUUOArchiveServer.class, value);
     }
 
     /**
@@ -2104,7 +1976,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "Comment", scope = NTechLabDossierListInfo.class)
     public JAXBElement<String> createNTechLabDossierListInfoComment(String value) {
-        return new JAXBElement<>(_NTechLabDossierListInfoComment_QNAME, String.class, NTechLabDossierListInfo.class, value);
+        return new JAXBElement<String>(_NTechLabDossierListInfoComment_QNAME, String.class, NTechLabDossierListInfo.class, value);
     }
 
     /**
@@ -2117,7 +1989,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "Name", scope = NTechLabDossierListInfo.class)
     public JAXBElement<String> createNTechLabDossierListInfoName(String value) {
-        return new JAXBElement<>(_NTechLabDossierListInfoName_QNAME, String.class, NTechLabDossierListInfo.class, value);
+        return new JAXBElement<String>(_NTechLabDossierListInfoName_QNAME, String.class, NTechLabDossierListInfo.class, value);
     }
 
     /**
@@ -2130,7 +2002,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "Comment", scope = NTechLabCameraInfo.class)
     public JAXBElement<String> createNTechLabCameraInfoComment(String value) {
-        return new JAXBElement<>(_NTechLabDossierListInfoComment_QNAME, String.class, NTechLabCameraInfo.class, value);
+        return new JAXBElement<String>(_NTechLabDossierListInfoComment_QNAME, String.class, NTechLabCameraInfo.class, value);
     }
 
     /**
@@ -2143,7 +2015,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "Name", scope = NTechLabCameraInfo.class)
     public JAXBElement<String> createNTechLabCameraInfoName(String value) {
-        return new JAXBElement<>(_NTechLabDossierListInfoName_QNAME, String.class, NTechLabCameraInfo.class, value);
+        return new JAXBElement<String>(_NTechLabDossierListInfoName_QNAME, String.class, NTechLabCameraInfo.class, value);
     }
 
     /**
@@ -2156,7 +2028,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "Url", scope = NTechLabCameraInfo.class)
     public JAXBElement<String> createNTechLabCameraInfoUrl(String value) {
-        return new JAXBElement<>(_NTechLabCameraInfoUrl_QNAME, String.class, NTechLabCameraInfo.class, value);
+        return new JAXBElement<String>(_NTechLabCameraInfoUrl_QNAME, String.class, NTechLabCameraInfo.class, value);
     }
 
     /**
@@ -2169,7 +2041,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.BasIp", name = "IpAddress", scope = BasIpIntercomInfo.class)
     public JAXBElement<String> createBasIpIntercomInfoIpAddress(String value) {
-        return new JAXBElement<>(_BasIpIntercomInfoIpAddress_QNAME, String.class, BasIpIntercomInfo.class, value);
+        return new JAXBElement<String>(_BasIpIntercomInfoIpAddress_QNAME, String.class, BasIpIntercomInfo.class, value);
     }
 
     /**
@@ -2182,7 +2054,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyName", scope = SlotInfo.class)
     public JAXBElement<String> createSlotInfoKeyName(String value) {
-        return new JAXBElement<>(_SlotInfoKeyName_QNAME, String.class, SlotInfo.class, value);
+        return new JAXBElement<String>(_SlotInfoKeyName_QNAME, String.class, SlotInfo.class, value);
     }
 
     /**
@@ -2195,7 +2067,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyCabinetId", scope = KeyKeeperPort.class)
     public JAXBElement<Long> createKeyKeeperPortKeyCabinetId(Long value) {
-        return new JAXBElement<>(_KeyKeeperPortKeyCabinetId_QNAME, Long.class, KeyKeeperPort.class, value);
+        return new JAXBElement<Long>(_KeyKeeperPortKeyCabinetId_QNAME, Long.class, KeyKeeperPort.class, value);
     }
 
     /**
@@ -2208,7 +2080,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "Name", scope = KeyKeeperPort.class)
     public JAXBElement<String> createKeyKeeperPortName(String value) {
-        return new JAXBElement<>(_KeyKeeperPortName_QNAME, String.class, KeyKeeperPort.class, value);
+        return new JAXBElement<String>(_KeyKeeperPortName_QNAME, String.class, KeyKeeperPort.class, value);
     }
 
     /**
@@ -2221,7 +2093,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "PoBoxId", scope = KeyKeeperPort.class)
     public JAXBElement<Long> createKeyKeeperPortPoBoxId(Long value) {
-        return new JAXBElement<>(_KeyKeeperPortPoBoxId_QNAME, Long.class, KeyKeeperPort.class, value);
+        return new JAXBElement<Long>(_KeyKeeperPortPoBoxId_QNAME, Long.class, KeyKeeperPort.class, value);
     }
 
     /**
@@ -2234,7 +2106,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "Comment", scope = KeyKeeperCabinet.class)
     public JAXBElement<String> createKeyKeeperCabinetComment(String value) {
-        return new JAXBElement<>(_KeyKeeperCabinetComment_QNAME, String.class, KeyKeeperCabinet.class, value);
+        return new JAXBElement<String>(_KeyKeeperCabinetComment_QNAME, String.class, KeyKeeperCabinet.class, value);
     }
 
     /**
@@ -2247,7 +2119,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "ExternalID", scope = KeyKeeperCabinet.class)
     public JAXBElement<String> createKeyKeeperCabinetExternalID(String value) {
-        return new JAXBElement<>(_KeyKeeperCabinetExternalID_QNAME, String.class, KeyKeeperCabinet.class, value);
+        return new JAXBElement<String>(_KeyKeeperCabinetExternalID_QNAME, String.class, KeyKeeperCabinet.class, value);
     }
 
     /**
@@ -2260,7 +2132,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "Name", scope = KeyKeeperCabinet.class)
     public JAXBElement<String> createKeyKeeperCabinetName(String value) {
-        return new JAXBElement<>(_KeyKeeperPortName_QNAME, String.class, KeyKeeperCabinet.class, value);
+        return new JAXBElement<String>(_KeyKeeperPortName_QNAME, String.class, KeyKeeperCabinet.class, value);
     }
 
     /**
@@ -2273,7 +2145,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "NTP1", scope = KeyKeeperConfiguration.class)
     public JAXBElement<String> createKeyKeeperConfigurationNTP1(String value) {
-        return new JAXBElement<>(_KeyKeeperConfigurationNTP1_QNAME, String.class, KeyKeeperConfiguration.class, value);
+        return new JAXBElement<String>(_KeyKeeperConfigurationNTP1_QNAME, String.class, KeyKeeperConfiguration.class, value);
     }
 
     /**
@@ -2286,7 +2158,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "NTP2", scope = KeyKeeperConfiguration.class)
     public JAXBElement<String> createKeyKeeperConfigurationNTP2(String value) {
-        return new JAXBElement<>(_KeyKeeperConfigurationNTP2_QNAME, String.class, KeyKeeperConfiguration.class, value);
+        return new JAXBElement<String>(_KeyKeeperConfigurationNTP2_QNAME, String.class, KeyKeeperConfiguration.class, value);
     }
 
     /**
@@ -2299,7 +2171,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "NTP3", scope = KeyKeeperConfiguration.class)
     public JAXBElement<String> createKeyKeeperConfigurationNTP3(String value) {
-        return new JAXBElement<>(_KeyKeeperConfigurationNTP3_QNAME, String.class, KeyKeeperConfiguration.class, value);
+        return new JAXBElement<String>(_KeyKeeperConfigurationNTP3_QNAME, String.class, KeyKeeperConfiguration.class, value);
     }
 
     /**
@@ -2312,7 +2184,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "TimeZone", scope = KeyKeeperConfiguration.class)
     public JAXBElement<String> createKeyKeeperConfigurationTimeZone(String value) {
-        return new JAXBElement<>(_KeyKeeperConfigurationTimeZone_QNAME, String.class, KeyKeeperConfiguration.class, value);
+        return new JAXBElement<String>(_KeyKeeperConfigurationTimeZone_QNAME, String.class, KeyKeeperConfiguration.class, value);
     }
 
     /**
@@ -2325,7 +2197,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "IsOpened", scope = CellInfo.class)
     public JAXBElement<Boolean> createCellInfoIsOpened(Boolean value) {
-        return new JAXBElement<>(_CellInfoIsOpened_QNAME, Boolean.class, CellInfo.class, value);
+        return new JAXBElement<Boolean>(_CellInfoIsOpened_QNAME, Boolean.class, CellInfo.class, value);
     }
 
     /**
@@ -2338,7 +2210,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "Cells", scope = RelayBlockStatus.class)
     public JAXBElement<ArrayOfCellInfo> createRelayBlockStatusCells(ArrayOfCellInfo value) {
-        return new JAXBElement<>(_RelayBlockStatusCells_QNAME, ArrayOfCellInfo.class, RelayBlockStatus.class, value);
+        return new JAXBElement<ArrayOfCellInfo>(_RelayBlockStatusCells_QNAME, ArrayOfCellInfo.class, RelayBlockStatus.class, value);
     }
 
     /**
@@ -2351,7 +2223,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Configurations", scope = GetControllerConfigurationsResult.class)
     public JAXBElement<ArrayOfGetControllerConfigurationsResultConfig> createGetControllerConfigurationsResultConfigurations(ArrayOfGetControllerConfigurationsResultConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultConfigurations_QNAME, ArrayOfGetControllerConfigurationsResultConfig.class, GetControllerConfigurationsResult.class, value);
+        return new JAXBElement<ArrayOfGetControllerConfigurationsResultConfig>(_GetControllerConfigurationsResultConfigurations_QNAME, ArrayOfGetControllerConfigurationsResultConfig.class, GetControllerConfigurationsResult.class, value);
     }
 
     /**
@@ -2364,7 +2236,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "FailedDevices", scope = GetControllerConfigurationsResult.class)
     public JAXBElement<ArrayOfGetControllerConfigurationsResultFailedConfig> createGetControllerConfigurationsResultFailedDevices(ArrayOfGetControllerConfigurationsResultFailedConfig value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedDevices_QNAME, ArrayOfGetControllerConfigurationsResultFailedConfig.class, GetControllerConfigurationsResult.class, value);
+        return new JAXBElement<ArrayOfGetControllerConfigurationsResultFailedConfig>(_GetControllerConfigurationsResultFailedDevices_QNAME, ArrayOfGetControllerConfigurationsResultFailedConfig.class, GetControllerConfigurationsResult.class, value);
     }
 
     /**
@@ -2377,7 +2249,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "FailedDevices", scope = SetDevicesAddressBySidResult.class)
     public JAXBElement<ArrayOfSetDevicesAddressBySidResultFailedAddress> createSetDevicesAddressBySidResultFailedDevices(ArrayOfSetDevicesAddressBySidResultFailedAddress value) {
-        return new JAXBElement<>(_GetControllerConfigurationsResultFailedDevices_QNAME, ArrayOfSetDevicesAddressBySidResultFailedAddress.class, SetDevicesAddressBySidResult.class, value);
+        return new JAXBElement<ArrayOfSetDevicesAddressBySidResultFailedAddress>(_GetControllerConfigurationsResultFailedDevices_QNAME, ArrayOfSetDevicesAddressBySidResultFailedAddress.class, SetDevicesAddressBySidResult.class, value);
     }
 
     /**
@@ -2390,7 +2262,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Controllers", scope = FindControllersResult.class)
     public JAXBElement<ArrayOfCanDeviceInfo> createFindControllersResultControllers(ArrayOfCanDeviceInfo value) {
-        return new JAXBElement<>(_FindControllersResultControllers_QNAME, ArrayOfCanDeviceInfo.class, FindControllersResult.class, value);
+        return new JAXBElement<ArrayOfCanDeviceInfo>(_FindControllersResultControllers_QNAME, ArrayOfCanDeviceInfo.class, FindControllersResult.class, value);
     }
 
     /**
@@ -2403,7 +2275,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "FailedControllers", scope = FindControllersResult.class)
     public JAXBElement<ArrayOfCanDeviceInfo> createFindControllersResultFailedControllers(ArrayOfCanDeviceInfo value) {
-        return new JAXBElement<>(_FindControllersResultFailedControllers_QNAME, ArrayOfCanDeviceInfo.class, FindControllersResult.class, value);
+        return new JAXBElement<ArrayOfCanDeviceInfo>(_FindControllersResultFailedControllers_QNAME, ArrayOfCanDeviceInfo.class, FindControllersResult.class, value);
     }
 
     /**
@@ -2416,7 +2288,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "FailedConverters", scope = FindControllersResult.class)
     public JAXBElement<ArrayOfFindControllersResultFailedConverterInfo> createFindControllersResultFailedConverters(ArrayOfFindControllersResultFailedConverterInfo value) {
-        return new JAXBElement<>(_FindControllersResultFailedConverters_QNAME, ArrayOfFindControllersResultFailedConverterInfo.class, FindControllersResult.class, value);
+        return new JAXBElement<ArrayOfFindControllersResultFailedConverterInfo>(_FindControllersResultFailedConverters_QNAME, ArrayOfFindControllersResultFailedConverterInfo.class, FindControllersResult.class, value);
     }
 
     /**
@@ -2429,7 +2301,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Gateway", scope = LanCanConverter.class)
     public JAXBElement<String> createLanCanConverterGateway(String value) {
-        return new JAXBElement<>(_LanCanConverterGateway_QNAME, String.class, LanCanConverter.class, value);
+        return new JAXBElement<String>(_LanCanConverterGateway_QNAME, String.class, LanCanConverter.class, value);
     }
 
     /**
@@ -2442,7 +2314,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "HardwareType", scope = LanCanConverter.class)
     public JAXBElement<String> createLanCanConverterHardwareType(String value) {
-        return new JAXBElement<>(_CanDeviceNetConfigHardwareType_QNAME, String.class, LanCanConverter.class, value);
+        return new JAXBElement<String>(_CanDeviceNetConfigHardwareType_QNAME, String.class, LanCanConverter.class, value);
     }
 
     /**
@@ -2455,7 +2327,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Mask", scope = LanCanConverter.class)
     public JAXBElement<String> createLanCanConverterMask(String value) {
-        return new JAXBElement<>(_LanCanConverterMask_QNAME, String.class, LanCanConverter.class, value);
+        return new JAXBElement<String>(_LanCanConverterMask_QNAME, String.class, LanCanConverter.class, value);
     }
 
     /**
@@ -2468,7 +2340,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "Converters", scope = FindConvertersResult.class)
     public JAXBElement<ArrayOfCanConverterAddress> createFindConvertersResultConverters(ArrayOfCanConverterAddress value) {
-        return new JAXBElement<>(_FindConvertersResultConverters_QNAME, ArrayOfCanConverterAddress.class, FindConvertersResult.class, value);
+        return new JAXBElement<ArrayOfCanConverterAddress>(_FindConvertersResultConverters_QNAME, ArrayOfCanConverterAddress.class, FindConvertersResult.class, value);
     }
 
     /**
@@ -2481,7 +2353,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", name = "MissingDrivers", scope = FindConvertersResult.class)
     public JAXBElement<ArrayOfstring> createFindConvertersResultMissingDrivers(ArrayOfstring value) {
-        return new JAXBElement<>(_FindConvertersResultMissingDrivers_QNAME, ArrayOfstring.class, FindConvertersResult.class, value);
+        return new JAXBElement<ArrayOfstring>(_FindConvertersResultMissingDrivers_QNAME, ArrayOfstring.class, FindConvertersResult.class, value);
     }
 
     /**
@@ -2494,7 +2366,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.LPRCamera", name = "FoundCameras", scope = FindLPRCameraResult.class)
     public JAXBElement<ArrayOfLPRCameraInfo> createFindLPRCameraResultFoundCameras(ArrayOfLPRCameraInfo value) {
-        return new JAXBElement<>(_FindLPRCameraResultFoundCameras_QNAME, ArrayOfLPRCameraInfo.class, FindLPRCameraResult.class, value);
+        return new JAXBElement<ArrayOfLPRCameraInfo>(_FindLPRCameraResultFoundCameras_QNAME, ArrayOfLPRCameraInfo.class, FindLPRCameraResult.class, value);
     }
 
     /**
@@ -2507,7 +2379,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.BasIp", name = "FoudIntercoms", scope = FindBasIpIntercomResult.class)
     public JAXBElement<ArrayOfBasIpIntercomInfo> createFindBasIpIntercomResultFoudIntercoms(ArrayOfBasIpIntercomInfo value) {
-        return new JAXBElement<>(_FindBasIpIntercomResultFoudIntercoms_QNAME, ArrayOfBasIpIntercomInfo.class, FindBasIpIntercomResult.class, value);
+        return new JAXBElement<ArrayOfBasIpIntercomInfo>(_FindBasIpIntercomResultFoudIntercoms_QNAME, ArrayOfBasIpIntercomInfo.class, FindBasIpIntercomResult.class, value);
     }
 
     /**
@@ -2520,7 +2392,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Ivideon", name = "DriverFullInfo", scope = IvideonRemoteServerCollectionResult.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createIvideonRemoteServerCollectionResultDriverFullInfo(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_IvideonRemoteServerCollectionResultDriverFullInfo_QNAME, ArrayOfLDriverFullInfo.class, IvideonRemoteServerCollectionResult.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_IvideonRemoteServerCollectionResultDriverFullInfo_QNAME, ArrayOfLDriverFullInfo.class, IvideonRemoteServerCollectionResult.class, value);
     }
 
     /**
@@ -2533,7 +2405,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Ivideon", name = "DriverFullInfo", scope = IvideonCameraCollectionResult.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createIvideonCameraCollectionResultDriverFullInfo(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_IvideonRemoteServerCollectionResultDriverFullInfo_QNAME, ArrayOfLDriverFullInfo.class, IvideonCameraCollectionResult.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_IvideonRemoteServerCollectionResultDriverFullInfo_QNAME, ArrayOfLDriverFullInfo.class, IvideonCameraCollectionResult.class, value);
     }
 
     /**
@@ -2546,7 +2418,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Idis", name = "ChannelNames", scope = IdisConfiguration.class)
     public JAXBElement<ArrayOfstring> createIdisConfigurationChannelNames(ArrayOfstring value) {
-        return new JAXBElement<>(_IdisConfigurationChannelNames_QNAME, ArrayOfstring.class, IdisConfiguration.class, value);
+        return new JAXBElement<ArrayOfstring>(_IdisConfigurationChannelNames_QNAME, ArrayOfstring.class, IdisConfiguration.class, value);
     }
 
     /**
@@ -2559,7 +2431,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Idis", name = "ModelName", scope = IdisConfiguration.class)
     public JAXBElement<String> createIdisConfigurationModelName(String value) {
-        return new JAXBElement<>(_IdisConfigurationModelName_QNAME, String.class, IdisConfiguration.class, value);
+        return new JAXBElement<String>(_IdisConfigurationModelName_QNAME, String.class, IdisConfiguration.class, value);
     }
 
     /**
@@ -2572,7 +2444,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Idis", name = "SoftwareVersion", scope = IdisConfiguration.class)
     public JAXBElement<String> createIdisConfigurationSoftwareVersion(String value) {
-        return new JAXBElement<>(_IdisConfigurationSoftwareVersion_QNAME, String.class, IdisConfiguration.class, value);
+        return new JAXBElement<String>(_IdisConfigurationSoftwareVersion_QNAME, String.class, IdisConfiguration.class, value);
     }
 
     /**
@@ -2585,7 +2457,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", name = "Servers", scope = TrassirIntegrationResult.class)
     public JAXBElement<ArrayOfTrassirServerInfo> createTrassirIntegrationResultServers(ArrayOfTrassirServerInfo value) {
-        return new JAXBElement<>(_TrassirIntegrationResultServers_QNAME, ArrayOfTrassirServerInfo.class, TrassirIntegrationResult.class, value);
+        return new JAXBElement<ArrayOfTrassirServerInfo>(_TrassirIntegrationResultServers_QNAME, ArrayOfTrassirServerInfo.class, TrassirIntegrationResult.class, value);
     }
 
     /**
@@ -2598,7 +2470,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NUUO", name = "ArchiveServers", scope = NUUOArchiveServerCollectionResult.class)
     public JAXBElement<ArrayOfNUUOArchiveServer> createNUUOArchiveServerCollectionResultArchiveServers(ArrayOfNUUOArchiveServer value) {
-        return new JAXBElement<>(_NUUOArchiveServerCollectionResultArchiveServers_QNAME, ArrayOfNUUOArchiveServer.class, NUUOArchiveServerCollectionResult.class, value);
+        return new JAXBElement<ArrayOfNUUOArchiveServer>(_NUUOArchiveServerCollectionResultArchiveServers_QNAME, ArrayOfNUUOArchiveServer.class, NUUOArchiveServerCollectionResult.class, value);
     }
 
     /**
@@ -2611,7 +2483,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "Message", scope = KeyKeeperCommandResult.class)
     public JAXBElement<String> createKeyKeeperCommandResultMessage(String value) {
-        return new JAXBElement<>(_KeyKeeperCommandResultMessage_QNAME, String.class, KeyKeeperCommandResult.class, value);
+        return new JAXBElement<String>(_KeyKeeperCommandResultMessage_QNAME, String.class, KeyKeeperCommandResult.class, value);
     }
 
     /**
@@ -2624,7 +2496,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "CabinetID", scope = RoomKeyInfo.class)
     public JAXBElement<String> createRoomKeyInfoCabinetID(String value) {
-        return new JAXBElement<>(_RoomKeyInfoCabinetID_QNAME, String.class, RoomKeyInfo.class, value);
+        return new JAXBElement<String>(_RoomKeyInfoCabinetID_QNAME, String.class, RoomKeyInfo.class, value);
     }
 
     /**
@@ -2637,7 +2509,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "CabinetName", scope = RoomKeyInfo.class)
     public JAXBElement<String> createRoomKeyInfoCabinetName(String value) {
-        return new JAXBElement<>(_RoomKeyInfoCabinetName_QNAME, String.class, RoomKeyInfo.class, value);
+        return new JAXBElement<String>(_RoomKeyInfoCabinetName_QNAME, String.class, RoomKeyInfo.class, value);
     }
 
     /**
@@ -2650,7 +2522,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "ControllerName", scope = RoomKeyInfo.class)
     public JAXBElement<String> createRoomKeyInfoControllerName(String value) {
-        return new JAXBElement<>(_RoomKeyInfoControllerName_QNAME, String.class, RoomKeyInfo.class, value);
+        return new JAXBElement<String>(_RoomKeyInfoControllerName_QNAME, String.class, RoomKeyInfo.class, value);
     }
 
     /**
@@ -2663,7 +2535,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "SlotsStatus", scope = CabinetStatus.class)
     public JAXBElement<ArrayOfSlotInfo> createCabinetStatusSlotsStatus(ArrayOfSlotInfo value) {
-        return new JAXBElement<>(_CabinetStatusSlotsStatus_QNAME, ArrayOfSlotInfo.class, CabinetStatus.class, value);
+        return new JAXBElement<ArrayOfSlotInfo>(_CabinetStatusSlotsStatus_QNAME, ArrayOfSlotInfo.class, CabinetStatus.class, value);
     }
 
     /**
@@ -2676,7 +2548,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "Configuration", scope = KeyKeeperControllerResult.class)
     public JAXBElement<KeyKeeperConfiguration> createKeyKeeperControllerResultConfiguration(KeyKeeperConfiguration value) {
-        return new JAXBElement<>(_KeyKeeperControllerResultConfiguration_QNAME, KeyKeeperConfiguration.class, KeyKeeperControllerResult.class, value);
+        return new JAXBElement<KeyKeeperConfiguration>(_KeyKeeperControllerResultConfiguration_QNAME, KeyKeeperConfiguration.class, KeyKeeperControllerResult.class, value);
     }
 
     /**
@@ -2689,7 +2561,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyKeeperCabinets", scope = KeyKeeperControllerResult.class)
     public JAXBElement<ArrayOfKeyKeeperCabinet> createKeyKeeperControllerResultKeyKeeperCabinets(ArrayOfKeyKeeperCabinet value) {
-        return new JAXBElement<>(_KeyKeeperControllerResultKeyKeeperCabinets_QNAME, ArrayOfKeyKeeperCabinet.class, KeyKeeperControllerResult.class, value);
+        return new JAXBElement<ArrayOfKeyKeeperCabinet>(_KeyKeeperControllerResultKeyKeeperCabinets_QNAME, ArrayOfKeyKeeperCabinet.class, KeyKeeperControllerResult.class, value);
     }
 
     /**
@@ -2702,7 +2574,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", name = "KeyKeeperPorts", scope = KeyKeeperControllerResult.class)
     public JAXBElement<ArrayOfKeyKeeperPort> createKeyKeeperControllerResultKeyKeeperPorts(ArrayOfKeyKeeperPort value) {
-        return new JAXBElement<>(_KeyKeeperControllerResultKeyKeeperPorts_QNAME, ArrayOfKeyKeeperPort.class, KeyKeeperControllerResult.class, value);
+        return new JAXBElement<ArrayOfKeyKeeperPort>(_KeyKeeperControllerResultKeyKeeperPorts_QNAME, ArrayOfKeyKeeperPort.class, KeyKeeperControllerResult.class, value);
     }
 
     /**
@@ -2715,7 +2587,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "Cameras", scope = NTechLabRecognitionServiceResult.class)
     public JAXBElement<ArrayOfNTechLabCameraInfo> createNTechLabRecognitionServiceResultCameras(ArrayOfNTechLabCameraInfo value) {
-        return new JAXBElement<>(_NTechLabRecognitionServiceResultCameras_QNAME, ArrayOfNTechLabCameraInfo.class, NTechLabRecognitionServiceResult.class, value);
+        return new JAXBElement<ArrayOfNTechLabCameraInfo>(_NTechLabRecognitionServiceResultCameras_QNAME, ArrayOfNTechLabCameraInfo.class, NTechLabRecognitionServiceResult.class, value);
     }
 
     /**
@@ -2728,7 +2600,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", name = "DossierLists", scope = NTechLabRecognitionServiceResult.class)
     public JAXBElement<ArrayOfNTechLabDossierListInfo> createNTechLabRecognitionServiceResultDossierLists(ArrayOfNTechLabDossierListInfo value) {
-        return new JAXBElement<>(_NTechLabRecognitionServiceResultDossierLists_QNAME, ArrayOfNTechLabDossierListInfo.class, NTechLabRecognitionServiceResult.class, value);
+        return new JAXBElement<ArrayOfNTechLabDossierListInfo>(_NTechLabRecognitionServiceResultDossierLists_QNAME, ArrayOfNTechLabDossierListInfo.class, NTechLabRecognitionServiceResult.class, value);
     }
 
     /**
@@ -2741,7 +2613,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Panasonic", name = "DriverFullInfo", scope = PanasonicCameraCollectionResult.class)
     public JAXBElement<ArrayOfLDriverFullInfo> createPanasonicCameraCollectionResultDriverFullInfo(ArrayOfLDriverFullInfo value) {
-        return new JAXBElement<>(_PanasonicCameraCollectionResultDriverFullInfo_QNAME, ArrayOfLDriverFullInfo.class, PanasonicCameraCollectionResult.class, value);
+        return new JAXBElement<ArrayOfLDriverFullInfo>(_PanasonicCameraCollectionResultDriverFullInfo_QNAME, ArrayOfLDriverFullInfo.class, PanasonicCameraCollectionResult.class, value);
     }
 
 }

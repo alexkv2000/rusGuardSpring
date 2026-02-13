@@ -1,18 +1,18 @@
 
 package org.datacontract.schemas._2004._07.system_net;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.system_net package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -23,7 +23,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _SocketException_QNAME = new QName("http://schemas.datacontract.org/2004/07/System.Net.Sockets", "SocketException");
@@ -39,8 +39,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SocketException }
      * 
-     * @return
-     *     the new instance of {@link SocketException }
      */
     public SocketException createSocketException() {
         return new SocketException();
@@ -56,7 +54,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System.Net.Sockets", name = "SocketException")
     public JAXBElement<SocketException> createSocketException(SocketException value) {
-        return new JAXBElement<>(_SocketException_QNAME, SocketException.class, null, value);
+        return new JAXBElement<SocketException>(_SocketException_QNAME, SocketException.class, null, value);
     }
 
     /**
@@ -69,7 +67,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System.Net.Sockets", name = "AddressFamily")
     public JAXBElement<AddressFamily> createAddressFamily(AddressFamily value) {
-        return new JAXBElement<>(_AddressFamily_QNAME, AddressFamily.class, null, value);
+        return new JAXBElement<AddressFamily>(_AddressFamily_QNAME, AddressFamily.class, null, value);
     }
 
 }

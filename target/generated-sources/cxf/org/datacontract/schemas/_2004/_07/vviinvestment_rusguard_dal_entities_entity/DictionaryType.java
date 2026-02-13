@@ -1,10 +1,10 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity;
 
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.annotation.XmlEnum;
-import jakarta.xml.bind.annotation.XmlEnumValue;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.annotation.Generated;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,43 +13,43 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>Java class for DictionaryType</p>.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.</p>
- * <pre>{@code
- * <simpleType name="DictionaryType">
- *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     <enumeration value="DocumentType"/>
- *     <enumeration value="Significance"/>
- *     <enumeration value="Position"/>
- *     <enumeration value="Location"/>
- *     <enumeration value="LocationClarification"/>
- *     <enumeration value="SecurityGroup"/>
- *     <enumeration value="IncidentType"/>
- *     <enumeration value="IncidentNature"/>
- *     <enumeration value="TheftMethod"/>
- *     <enumeration value="Organization"/>
- *     <enumeration value="Subdivision"/>
- *     <enumeration value="StatusOfPerson"/>
- *     <enumeration value="Punishment"/>
- *     <enumeration value="Detention"/>
- *     <enumeration value="WhoTransferredWealth"/>
- *     <enumeration value="WhoTransferredDocument"/>
- *     <enumeration value="WhoTransferredDecisionDocument"/>
- *     <enumeration value="PersonalDocumentType"/>
- *     <enumeration value="DecisionDocumentType"/>
- *     <enumeration value="FinalPunishment"/>
- *     <enumeration value="ExtraFinalPunishment"/>
- *     <enumeration value="Measure"/>
- *     <enumeration value="Tangibles"/>
- *     <enumeration value="OrganizationType"/>
- *     <enumeration value="VehicleType"/>
- *     <enumeration value="Branch"/>
- *   </restriction>
- * </simpleType>
- * }</pre>
+ * <pre>
+ * &lt;simpleType name="DictionaryType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="DocumentType"/&gt;
+ *     &lt;enumeration value="Significance"/&gt;
+ *     &lt;enumeration value="Position"/&gt;
+ *     &lt;enumeration value="Location"/&gt;
+ *     &lt;enumeration value="LocationClarification"/&gt;
+ *     &lt;enumeration value="SecurityGroup"/&gt;
+ *     &lt;enumeration value="IncidentType"/&gt;
+ *     &lt;enumeration value="IncidentNature"/&gt;
+ *     &lt;enumeration value="TheftMethod"/&gt;
+ *     &lt;enumeration value="Organization"/&gt;
+ *     &lt;enumeration value="Subdivision"/&gt;
+ *     &lt;enumeration value="StatusOfPerson"/&gt;
+ *     &lt;enumeration value="Punishment"/&gt;
+ *     &lt;enumeration value="Detention"/&gt;
+ *     &lt;enumeration value="WhoTransferredWealth"/&gt;
+ *     &lt;enumeration value="WhoTransferredDocument"/&gt;
+ *     &lt;enumeration value="WhoTransferredDecisionDocument"/&gt;
+ *     &lt;enumeration value="PersonalDocumentType"/&gt;
+ *     &lt;enumeration value="DecisionDocumentType"/&gt;
+ *     &lt;enumeration value="FinalPunishment"/&gt;
+ *     &lt;enumeration value="ExtraFinalPunishment"/&gt;
+ *     &lt;enumeration value="Measure"/&gt;
+ *     &lt;enumeration value="Tangibles"/&gt;
+ *     &lt;enumeration value="OrganizationType"/&gt;
+ *     &lt;enumeration value="VehicleType"/&gt;
+ *     &lt;enumeration value="Branch"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "DictionaryType", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public enum DictionaryType {
 
     @XmlEnumValue("DocumentType")

@@ -1,10 +1,10 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities;
 
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.annotation.XmlEnum;
-import jakarta.xml.bind.annotation.XmlEnumValue;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.annotation.Generated;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,23 +13,23 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>Java class for DeviceStateEnum</p>.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.</p>
- * <pre>{@code
- * <simpleType name="DeviceStateEnum">
- *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     <enumeration value="OK"/>
- *     <enumeration value="Malfunction"/>
- *     <enumeration value="WrongDriverType"/>
- *     <enumeration value="Activating"/>
- *     <enumeration value="Shutdowning"/>
- *     <enumeration value="Shutdowned"/>
- *   </restriction>
- * </simpleType>
- * }</pre>
+ * <pre>
+ * &lt;simpleType name="DeviceStateEnum"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="OK"/&gt;
+ *     &lt;enumeration value="Malfunction"/&gt;
+ *     &lt;enumeration value="WrongDriverType"/&gt;
+ *     &lt;enumeration value="Activating"/&gt;
+ *     &lt;enumeration value="Shutdowning"/&gt;
+ *     &lt;enumeration value="Shutdowned"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "DeviceStateEnum", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public enum DeviceStateEnum {
 
     OK("OK"),

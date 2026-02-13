@@ -1,10 +1,10 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity;
 
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.annotation.XmlEnum;
-import jakarta.xml.bind.annotation.XmlEnumValue;
-import jakarta.xml.bind.annotation.XmlType;
+import javax.annotation.Generated;
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -13,30 +13,30 @@ import jakarta.xml.bind.annotation.XmlType;
  * <p>Java class for WorkplaceModuleType</p>.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.</p>
- * <pre>{@code
- * <simpleType name="WorkplaceModuleType">
- *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     <enumeration value="EquipmentConfigurator"/>
- *     <enumeration value="AcsConfigurator"/>
- *     <enumeration value="WorkstationConfigurator"/>
- *     <enumeration value="SystemConfigurator"/>
- *     <enumeration value="Maps"/>
- *     <enumeration value="Reports"/>
- *     <enumeration value="PhotoIdentification"/>
- *     <enumeration value="Statistics"/>
- *     <enumeration value="VisitorsScoreboard"/>
- *     <enumeration value="Administrator"/>
- *     <enumeration value="Leader"/>
- *     <enumeration value="RemoteTerminal"/>
- *     <enumeration value="Incidents"/>
- *   </restriction>
- * </simpleType>
- * }</pre>
+ * <pre>
+ * &lt;simpleType name="WorkplaceModuleType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="EquipmentConfigurator"/&gt;
+ *     &lt;enumeration value="AcsConfigurator"/&gt;
+ *     &lt;enumeration value="WorkstationConfigurator"/&gt;
+ *     &lt;enumeration value="SystemConfigurator"/&gt;
+ *     &lt;enumeration value="Maps"/&gt;
+ *     &lt;enumeration value="Reports"/&gt;
+ *     &lt;enumeration value="PhotoIdentification"/&gt;
+ *     &lt;enumeration value="Statistics"/&gt;
+ *     &lt;enumeration value="VisitorsScoreboard"/&gt;
+ *     &lt;enumeration value="Administrator"/&gt;
+ *     &lt;enumeration value="Leader"/&gt;
+ *     &lt;enumeration value="RemoteTerminal"/&gt;
+ *     &lt;enumeration value="Incidents"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "WorkplaceModuleType", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public enum WorkplaceModuleType {
 
     @XmlEnumValue("EquipmentConfigurator")

@@ -1,18 +1,18 @@
 
 package org.datacontract.schemas._2004._07.system_runtime;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.system_runtime package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -23,7 +23,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _ExternalException_QNAME = new QName("http://schemas.datacontract.org/2004/07/System.Runtime.InteropServices", "ExternalException");
@@ -38,8 +38,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ExternalException }
      * 
-     * @return
-     *     the new instance of {@link ExternalException }
      */
     public ExternalException createExternalException() {
         return new ExternalException();
@@ -55,7 +53,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System.Runtime.InteropServices", name = "ExternalException")
     public JAXBElement<ExternalException> createExternalException(ExternalException value) {
-        return new JAXBElement<>(_ExternalException_QNAME, ExternalException.class, null, value);
+        return new JAXBElement<ExternalException>(_ExternalException_QNAME, ExternalException.class, null, value);
     }
 
 }

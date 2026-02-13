@@ -1,18 +1,18 @@
 
 package com.microsoft.schemas._2003._10.serialization.arrays;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the com.microsoft.schemas._2003._10.serialization.arrays package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -23,7 +23,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _ArrayOfguid_QNAME = new QName("http://schemas.microsoft.com/2003/10/Serialization/Arrays", "ArrayOfguid");
@@ -44,8 +44,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfKeyValueOfstringstring }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfKeyValueOfstringstring }
      */
     public ArrayOfKeyValueOfstringstring createArrayOfKeyValueOfstringstring() {
         return new ArrayOfKeyValueOfstringstring();
@@ -54,8 +52,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfguid }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfguid }
      */
     public ArrayOfguid createArrayOfguid() {
         return new ArrayOfguid();
@@ -64,8 +60,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfstring }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfstring }
      */
     public ArrayOfstring createArrayOfstring() {
         return new ArrayOfstring();
@@ -74,8 +68,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfint }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfint }
      */
     public ArrayOfint createArrayOfint() {
         return new ArrayOfint();
@@ -84,8 +76,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfArrayOfKeyValueOfstringstring }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfArrayOfKeyValueOfstringstring }
      */
     public ArrayOfArrayOfKeyValueOfstringstring createArrayOfArrayOfKeyValueOfstringstring() {
         return new ArrayOfArrayOfKeyValueOfstringstring();
@@ -94,8 +84,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfunsignedShort }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfunsignedShort }
      */
     public ArrayOfunsignedShort createArrayOfunsignedShort() {
         return new ArrayOfunsignedShort();
@@ -104,8 +92,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfdateTime }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfdateTime }
      */
     public ArrayOfdateTime createArrayOfdateTime() {
         return new ArrayOfdateTime();
@@ -114,8 +100,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfKeyValueOfstringstring.KeyValueOfstringstring }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfKeyValueOfstringstring.KeyValueOfstringstring }
      */
     public ArrayOfKeyValueOfstringstring.KeyValueOfstringstring createArrayOfKeyValueOfstringstringKeyValueOfstringstring() {
         return new ArrayOfKeyValueOfstringstring.KeyValueOfstringstring();
@@ -131,7 +115,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfguid")
     public JAXBElement<ArrayOfguid> createArrayOfguid(ArrayOfguid value) {
-        return new JAXBElement<>(_ArrayOfguid_QNAME, ArrayOfguid.class, null, value);
+        return new JAXBElement<ArrayOfguid>(_ArrayOfguid_QNAME, ArrayOfguid.class, null, value);
     }
 
     /**
@@ -144,7 +128,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfstring")
     public JAXBElement<ArrayOfstring> createArrayOfstring(ArrayOfstring value) {
-        return new JAXBElement<>(_ArrayOfstring_QNAME, ArrayOfstring.class, null, value);
+        return new JAXBElement<ArrayOfstring>(_ArrayOfstring_QNAME, ArrayOfstring.class, null, value);
     }
 
     /**
@@ -157,7 +141,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfint")
     public JAXBElement<ArrayOfint> createArrayOfint(ArrayOfint value) {
-        return new JAXBElement<>(_ArrayOfint_QNAME, ArrayOfint.class, null, value);
+        return new JAXBElement<ArrayOfint>(_ArrayOfint_QNAME, ArrayOfint.class, null, value);
     }
 
     /**
@@ -170,7 +154,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfArrayOfKeyValueOfstringstring")
     public JAXBElement<ArrayOfArrayOfKeyValueOfstringstring> createArrayOfArrayOfKeyValueOfstringstring(ArrayOfArrayOfKeyValueOfstringstring value) {
-        return new JAXBElement<>(_ArrayOfArrayOfKeyValueOfstringstring_QNAME, ArrayOfArrayOfKeyValueOfstringstring.class, null, value);
+        return new JAXBElement<ArrayOfArrayOfKeyValueOfstringstring>(_ArrayOfArrayOfKeyValueOfstringstring_QNAME, ArrayOfArrayOfKeyValueOfstringstring.class, null, value);
     }
 
     /**
@@ -183,7 +167,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfKeyValueOfstringstring")
     public JAXBElement<ArrayOfKeyValueOfstringstring> createArrayOfKeyValueOfstringstring(ArrayOfKeyValueOfstringstring value) {
-        return new JAXBElement<>(_ArrayOfKeyValueOfstringstring_QNAME, ArrayOfKeyValueOfstringstring.class, null, value);
+        return new JAXBElement<ArrayOfKeyValueOfstringstring>(_ArrayOfKeyValueOfstringstring_QNAME, ArrayOfKeyValueOfstringstring.class, null, value);
     }
 
     /**
@@ -196,7 +180,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfunsignedShort")
     public JAXBElement<ArrayOfunsignedShort> createArrayOfunsignedShort(ArrayOfunsignedShort value) {
-        return new JAXBElement<>(_ArrayOfunsignedShort_QNAME, ArrayOfunsignedShort.class, null, value);
+        return new JAXBElement<ArrayOfunsignedShort>(_ArrayOfunsignedShort_QNAME, ArrayOfunsignedShort.class, null, value);
     }
 
     /**
@@ -209,7 +193,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", name = "ArrayOfdateTime")
     public JAXBElement<ArrayOfdateTime> createArrayOfdateTime(ArrayOfdateTime value) {
-        return new JAXBElement<>(_ArrayOfdateTime_QNAME, ArrayOfdateTime.class, null, value);
+        return new JAXBElement<ArrayOfdateTime>(_ArrayOfdateTime_QNAME, ArrayOfdateTime.class, null, value);
     }
 
 }

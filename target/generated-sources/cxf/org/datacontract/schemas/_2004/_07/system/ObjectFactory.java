@@ -1,18 +1,18 @@
 
 package org.datacontract.schemas._2004._07.system;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.system package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -23,7 +23,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _WebException_QNAME = new QName("http://schemas.datacontract.org/2004/07/System.Net", "WebException");
@@ -55,8 +55,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link IPAddress }
      * 
-     * @return
-     *     the new instance of {@link IPAddress }
      */
     public IPAddress createIPAddress() {
         return new IPAddress();
@@ -65,8 +63,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH }
      * 
-     * @return
-     *     the new instance of {@link TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH }
      */
     public TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH createTupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH() {
         return new TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH();
@@ -75,8 +71,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW }
      */
     public ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW createArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW() {
         return new ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW();
@@ -85,8 +79,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TupleOfArrayOfguidArrayOfguid0DMmj3Sh }
      * 
-     * @return
-     *     the new instance of {@link TupleOfArrayOfguidArrayOfguid0DMmj3Sh }
      */
     public TupleOfArrayOfguidArrayOfguid0DMmj3Sh createTupleOfArrayOfguidArrayOfguid0DMmj3Sh() {
         return new TupleOfArrayOfguidArrayOfguid0DMmj3Sh();
@@ -95,8 +87,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link WebException }
      * 
-     * @return
-     *     the new instance of {@link WebException }
      */
     public WebException createWebException() {
         return new WebException();
@@ -105,8 +95,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ApplicationException }
      * 
-     * @return
-     *     the new instance of {@link ApplicationException }
      */
     public ApplicationException createApplicationException() {
         return new ApplicationException();
@@ -115,8 +103,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Exception }
      * 
-     * @return
-     *     the new instance of {@link Exception }
      */
     public Exception createException() {
         return new Exception();
@@ -125,8 +111,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link InvalidOperationException }
      * 
-     * @return
-     *     the new instance of {@link InvalidOperationException }
      */
     public InvalidOperationException createInvalidOperationException() {
         return new InvalidOperationException();
@@ -135,8 +119,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SystemException }
      * 
-     * @return
-     *     the new instance of {@link SystemException }
      */
     public SystemException createSystemException() {
         return new SystemException();
@@ -145,8 +127,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArgumentNullException }
      * 
-     * @return
-     *     the new instance of {@link ArgumentNullException }
      */
     public ArgumentNullException createArgumentNullException() {
         return new ArgumentNullException();
@@ -155,8 +135,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArgumentException }
      * 
-     * @return
-     *     the new instance of {@link ArgumentException }
      */
     public ArgumentException createArgumentException() {
         return new ArgumentException();
@@ -165,8 +143,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NotSupportedException }
      * 
-     * @return
-     *     the new instance of {@link NotSupportedException }
      */
     public NotSupportedException createNotSupportedException() {
         return new NotSupportedException();
@@ -175,8 +151,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArgumentOutOfRangeException }
      * 
-     * @return
-     *     the new instance of {@link ArgumentOutOfRangeException }
      */
     public ArgumentOutOfRangeException createArgumentOutOfRangeException() {
         return new ArgumentOutOfRangeException();
@@ -185,8 +159,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TimeoutException }
      * 
-     * @return
-     *     the new instance of {@link TimeoutException }
      */
     public TimeoutException createTimeoutException() {
         return new TimeoutException();
@@ -195,8 +167,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OperationCanceledException }
      * 
-     * @return
-     *     the new instance of {@link OperationCanceledException }
      */
     public OperationCanceledException createOperationCanceledException() {
         return new OperationCanceledException();
@@ -205,8 +175,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TupleOfguidNullableOfdateTimeGOBf0PnW }
      * 
-     * @return
-     *     the new instance of {@link TupleOfguidNullableOfdateTimeGOBf0PnW }
      */
     public TupleOfguidNullableOfdateTimeGOBf0PnW createTupleOfguidNullableOfdateTimeGOBf0PnW() {
         return new TupleOfguidNullableOfdateTimeGOBf0PnW();
@@ -215,8 +183,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Win32Exception }
      * 
-     * @return
-     *     the new instance of {@link Win32Exception }
      */
     public Win32Exception createWin32Exception() {
         return new Win32Exception();
@@ -232,7 +198,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System.Net", name = "WebException")
     public JAXBElement<WebException> createWebException(WebException value) {
-        return new JAXBElement<>(_WebException_QNAME, WebException.class, null, value);
+        return new JAXBElement<WebException>(_WebException_QNAME, WebException.class, null, value);
     }
 
     /**
@@ -245,7 +211,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System.Net", name = "IPAddress")
     public JAXBElement<IPAddress> createIPAddress(IPAddress value) {
-        return new JAXBElement<>(_IPAddress_QNAME, IPAddress.class, null, value);
+        return new JAXBElement<IPAddress>(_IPAddress_QNAME, IPAddress.class, null, value);
     }
 
     /**
@@ -258,7 +224,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "ApplicationException")
     public JAXBElement<ApplicationException> createApplicationException(ApplicationException value) {
-        return new JAXBElement<>(_ApplicationException_QNAME, ApplicationException.class, null, value);
+        return new JAXBElement<ApplicationException>(_ApplicationException_QNAME, ApplicationException.class, null, value);
     }
 
     /**
@@ -271,7 +237,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "Exception")
     public JAXBElement<Exception> createException(Exception value) {
-        return new JAXBElement<>(_Exception_QNAME, Exception.class, null, value);
+        return new JAXBElement<Exception>(_Exception_QNAME, Exception.class, null, value);
     }
 
     /**
@@ -284,7 +250,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "InvalidOperationException")
     public JAXBElement<InvalidOperationException> createInvalidOperationException(InvalidOperationException value) {
-        return new JAXBElement<>(_InvalidOperationException_QNAME, InvalidOperationException.class, null, value);
+        return new JAXBElement<InvalidOperationException>(_InvalidOperationException_QNAME, InvalidOperationException.class, null, value);
     }
 
     /**
@@ -297,7 +263,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "SystemException")
     public JAXBElement<SystemException> createSystemException(SystemException value) {
-        return new JAXBElement<>(_SystemException_QNAME, SystemException.class, null, value);
+        return new JAXBElement<SystemException>(_SystemException_QNAME, SystemException.class, null, value);
     }
 
     /**
@@ -310,7 +276,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "ArgumentNullException")
     public JAXBElement<ArgumentNullException> createArgumentNullException(ArgumentNullException value) {
-        return new JAXBElement<>(_ArgumentNullException_QNAME, ArgumentNullException.class, null, value);
+        return new JAXBElement<ArgumentNullException>(_ArgumentNullException_QNAME, ArgumentNullException.class, null, value);
     }
 
     /**
@@ -323,7 +289,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "ArgumentException")
     public JAXBElement<ArgumentException> createArgumentException(ArgumentException value) {
-        return new JAXBElement<>(_ArgumentException_QNAME, ArgumentException.class, null, value);
+        return new JAXBElement<ArgumentException>(_ArgumentException_QNAME, ArgumentException.class, null, value);
     }
 
     /**
@@ -336,7 +302,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "NotSupportedException")
     public JAXBElement<NotSupportedException> createNotSupportedException(NotSupportedException value) {
-        return new JAXBElement<>(_NotSupportedException_QNAME, NotSupportedException.class, null, value);
+        return new JAXBElement<NotSupportedException>(_NotSupportedException_QNAME, NotSupportedException.class, null, value);
     }
 
     /**
@@ -349,7 +315,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "ArgumentOutOfRangeException")
     public JAXBElement<ArgumentOutOfRangeException> createArgumentOutOfRangeException(ArgumentOutOfRangeException value) {
-        return new JAXBElement<>(_ArgumentOutOfRangeException_QNAME, ArgumentOutOfRangeException.class, null, value);
+        return new JAXBElement<ArgumentOutOfRangeException>(_ArgumentOutOfRangeException_QNAME, ArgumentOutOfRangeException.class, null, value);
     }
 
     /**
@@ -362,7 +328,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "TimeoutException")
     public JAXBElement<TimeoutException> createTimeoutException(TimeoutException value) {
-        return new JAXBElement<>(_TimeoutException_QNAME, TimeoutException.class, null, value);
+        return new JAXBElement<TimeoutException>(_TimeoutException_QNAME, TimeoutException.class, null, value);
     }
 
     /**
@@ -375,7 +341,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "OperationCanceledException")
     public JAXBElement<OperationCanceledException> createOperationCanceledException(OperationCanceledException value) {
-        return new JAXBElement<>(_OperationCanceledException_QNAME, OperationCanceledException.class, null, value);
+        return new JAXBElement<OperationCanceledException>(_OperationCanceledException_QNAME, OperationCanceledException.class, null, value);
     }
 
     /**
@@ -388,7 +354,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH")
     public JAXBElement<TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH> createTupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH(TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH value) {
-        return new JAXBElement<>(_TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH_QNAME, TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH.class, null, value);
+        return new JAXBElement<TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH>(_TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH_QNAME, TupleOfArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoArrayOfAcsBoxAccessLevelElementSlimInfoZNgA9GgH.class, null, value);
     }
 
     /**
@@ -401,7 +367,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "ArrayOfTupleOfguidNullableOfdateTimeGOBf0pnW")
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> createArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW(ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, null, value);
+        return new JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW>(_ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW_QNAME, ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW.class, null, value);
     }
 
     /**
@@ -414,7 +380,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "TupleOfguidNullableOfdateTimeGOBf0pnW")
     public JAXBElement<TupleOfguidNullableOfdateTimeGOBf0PnW> createTupleOfguidNullableOfdateTimeGOBf0PnW(TupleOfguidNullableOfdateTimeGOBf0PnW value) {
-        return new JAXBElement<>(_TupleOfguidNullableOfdateTimeGOBf0PnW_QNAME, TupleOfguidNullableOfdateTimeGOBf0PnW.class, null, value);
+        return new JAXBElement<TupleOfguidNullableOfdateTimeGOBf0PnW>(_TupleOfguidNullableOfdateTimeGOBf0PnW_QNAME, TupleOfguidNullableOfdateTimeGOBf0PnW.class, null, value);
     }
 
     /**
@@ -427,7 +393,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System", name = "TupleOfArrayOfguidArrayOfguid0dMmj3_Sh")
     public JAXBElement<TupleOfArrayOfguidArrayOfguid0DMmj3Sh> createTupleOfArrayOfguidArrayOfguid0DMmj3Sh(TupleOfArrayOfguidArrayOfguid0DMmj3Sh value) {
-        return new JAXBElement<>(_TupleOfArrayOfguidArrayOfguid0DMmj3Sh_QNAME, TupleOfArrayOfguidArrayOfguid0DMmj3Sh.class, null, value);
+        return new JAXBElement<TupleOfArrayOfguidArrayOfguid0DMmj3Sh>(_TupleOfArrayOfguidArrayOfguid0DMmj3Sh_QNAME, TupleOfArrayOfguidArrayOfguid0DMmj3Sh.class, null, value);
     }
 
     /**
@@ -440,7 +406,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System.ComponentModel", name = "Win32Exception")
     public JAXBElement<Win32Exception> createWin32Exception(Win32Exception value) {
-        return new JAXBElement<>(_Win32Exception_QNAME, Win32Exception.class, null, value);
+        return new JAXBElement<Win32Exception>(_Win32Exception_QNAME, Win32Exception.class, null, value);
     }
 
     /**
@@ -453,7 +419,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/System.Data", name = "SqlDbType")
     public JAXBElement<SqlDbType> createSqlDbType(SqlDbType value) {
-        return new JAXBElement<>(_SqlDbType_QNAME, SqlDbType.class, null, value);
+        return new JAXBElement<SqlDbType>(_SqlDbType_QNAME, SqlDbType.class, null, value);
     }
 
 }

@@ -1,11 +1,11 @@
 
 package org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_screenlayout_cellcontent;
 
+import javax.annotation.Generated;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
-import jakarta.annotation.Generated;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.XmlElementDecl;
-import jakarta.xml.bind.annotation.XmlRegistry;
 import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.AcsAccessPointType;
 
 
@@ -13,7 +13,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ac
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_entity_screenlayout_cellcontent package. 
- * <p>An ObjectFactory allows you to programmatically 
+ * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -24,7 +24,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ac
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.4", date = "2026-02-09T18:27:41+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
 public class ObjectFactory {
 
     private static final QName _ArrayOfPhotoidentificationPersonalData_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", "ArrayOfPhotoidentificationPersonalData");
@@ -70,8 +70,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CellContentFotoIdentificationInfo }
      * 
-     * @return
-     *     the new instance of {@link CellContentFotoIdentificationInfo }
      */
     public CellContentFotoIdentificationInfo createCellContentFotoIdentificationInfo() {
         return new CellContentFotoIdentificationInfo();
@@ -80,8 +78,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CellContentCameraInfo }
      * 
-     * @return
-     *     the new instance of {@link CellContentCameraInfo }
      */
     public CellContentCameraInfo createCellContentCameraInfo() {
         return new CellContentCameraInfo();
@@ -90,8 +86,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CellContentPassInfo }
      * 
-     * @return
-     *     the new instance of {@link CellContentPassInfo }
      */
     public CellContentPassInfo createCellContentPassInfo() {
         return new CellContentPassInfo();
@@ -100,8 +94,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ArrayOfPhotoidentificationPersonalData }
      * 
-     * @return
-     *     the new instance of {@link ArrayOfPhotoidentificationPersonalData }
      */
     public ArrayOfPhotoidentificationPersonalData createArrayOfPhotoidentificationPersonalData() {
         return new ArrayOfPhotoidentificationPersonalData();
@@ -110,8 +102,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CellContentFotoIdentificationSaveData }
      * 
-     * @return
-     *     the new instance of {@link CellContentFotoIdentificationSaveData }
      */
     public CellContentFotoIdentificationSaveData createCellContentFotoIdentificationSaveData() {
         return new CellContentFotoIdentificationSaveData();
@@ -120,8 +110,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CellContentCameraSaveData }
      * 
-     * @return
-     *     the new instance of {@link CellContentCameraSaveData }
      */
     public CellContentCameraSaveData createCellContentCameraSaveData() {
         return new CellContentCameraSaveData();
@@ -130,8 +118,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CellContentPassInfoSaveData }
      * 
-     * @return
-     *     the new instance of {@link CellContentPassInfoSaveData }
      */
     public CellContentPassInfoSaveData createCellContentPassInfoSaveData() {
         return new CellContentPassInfoSaveData();
@@ -140,8 +126,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PhotoidentificationPersonalData }
      * 
-     * @return
-     *     the new instance of {@link PhotoidentificationPersonalData }
      */
     public PhotoidentificationPersonalData createPhotoidentificationPersonalData() {
         return new PhotoidentificationPersonalData();
@@ -150,8 +134,6 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PhotoidentificationPersonalDataSaveInfo }
      * 
-     * @return
-     *     the new instance of {@link PhotoidentificationPersonalDataSaveInfo }
      */
     public PhotoidentificationPersonalDataSaveInfo createPhotoidentificationPersonalDataSaveInfo() {
         return new PhotoidentificationPersonalDataSaveInfo();
@@ -167,7 +149,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "ArrayOfPhotoidentificationPersonalData")
     public JAXBElement<ArrayOfPhotoidentificationPersonalData> createArrayOfPhotoidentificationPersonalData(ArrayOfPhotoidentificationPersonalData value) {
-        return new JAXBElement<>(_ArrayOfPhotoidentificationPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, null, value);
+        return new JAXBElement<ArrayOfPhotoidentificationPersonalData>(_ArrayOfPhotoidentificationPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, null, value);
     }
 
     /**
@@ -180,7 +162,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "PhotoidentificationPersonalData")
     public JAXBElement<PhotoidentificationPersonalData> createPhotoidentificationPersonalData(PhotoidentificationPersonalData value) {
-        return new JAXBElement<>(_PhotoidentificationPersonalData_QNAME, PhotoidentificationPersonalData.class, null, value);
+        return new JAXBElement<PhotoidentificationPersonalData>(_PhotoidentificationPersonalData_QNAME, PhotoidentificationPersonalData.class, null, value);
     }
 
     /**
@@ -193,7 +175,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "PhotoidentificationPersonalDataSaveInfo")
     public JAXBElement<PhotoidentificationPersonalDataSaveInfo> createPhotoidentificationPersonalDataSaveInfo(PhotoidentificationPersonalDataSaveInfo value) {
-        return new JAXBElement<>(_PhotoidentificationPersonalDataSaveInfo_QNAME, PhotoidentificationPersonalDataSaveInfo.class, null, value);
+        return new JAXBElement<PhotoidentificationPersonalDataSaveInfo>(_PhotoidentificationPersonalDataSaveInfo_QNAME, PhotoidentificationPersonalDataSaveInfo.class, null, value);
     }
 
     /**
@@ -206,7 +188,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "CellContentFotoIdentificationInfo")
     public JAXBElement<CellContentFotoIdentificationInfo> createCellContentFotoIdentificationInfo(CellContentFotoIdentificationInfo value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationInfo_QNAME, CellContentFotoIdentificationInfo.class, null, value);
+        return new JAXBElement<CellContentFotoIdentificationInfo>(_CellContentFotoIdentificationInfo_QNAME, CellContentFotoIdentificationInfo.class, null, value);
     }
 
     /**
@@ -219,7 +201,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "CellContentFotoIdentificationSaveData")
     public JAXBElement<CellContentFotoIdentificationSaveData> createCellContentFotoIdentificationSaveData(CellContentFotoIdentificationSaveData value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveData_QNAME, CellContentFotoIdentificationSaveData.class, null, value);
+        return new JAXBElement<CellContentFotoIdentificationSaveData>(_CellContentFotoIdentificationSaveData_QNAME, CellContentFotoIdentificationSaveData.class, null, value);
     }
 
     /**
@@ -232,7 +214,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "ShowPreviousVisitorMode")
     public JAXBElement<ShowPreviousVisitorMode> createShowPreviousVisitorMode(ShowPreviousVisitorMode value) {
-        return new JAXBElement<>(_ShowPreviousVisitorMode_QNAME, ShowPreviousVisitorMode.class, null, value);
+        return new JAXBElement<ShowPreviousVisitorMode>(_ShowPreviousVisitorMode_QNAME, ShowPreviousVisitorMode.class, null, value);
     }
 
     /**
@@ -245,7 +227,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.Camera", name = "CellContentCameraInfo")
     public JAXBElement<CellContentCameraInfo> createCellContentCameraInfo(CellContentCameraInfo value) {
-        return new JAXBElement<>(_CellContentCameraInfo_QNAME, CellContentCameraInfo.class, null, value);
+        return new JAXBElement<CellContentCameraInfo>(_CellContentCameraInfo_QNAME, CellContentCameraInfo.class, null, value);
     }
 
     /**
@@ -258,7 +240,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.Camera", name = "CellContentCameraSaveData")
     public JAXBElement<CellContentCameraSaveData> createCellContentCameraSaveData(CellContentCameraSaveData value) {
-        return new JAXBElement<>(_CellContentCameraSaveData_QNAME, CellContentCameraSaveData.class, null, value);
+        return new JAXBElement<CellContentCameraSaveData>(_CellContentCameraSaveData_QNAME, CellContentCameraSaveData.class, null, value);
     }
 
     /**
@@ -271,7 +253,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PassInfo", name = "CellContentPassInfo")
     public JAXBElement<CellContentPassInfo> createCellContentPassInfo(CellContentPassInfo value) {
-        return new JAXBElement<>(_CellContentPassInfo_QNAME, CellContentPassInfo.class, null, value);
+        return new JAXBElement<CellContentPassInfo>(_CellContentPassInfo_QNAME, CellContentPassInfo.class, null, value);
     }
 
     /**
@@ -284,7 +266,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PassInfo", name = "CellContentPassInfoSaveData")
     public JAXBElement<CellContentPassInfoSaveData> createCellContentPassInfoSaveData(CellContentPassInfoSaveData value) {
-        return new JAXBElement<>(_CellContentPassInfoSaveData_QNAME, CellContentPassInfoSaveData.class, null, value);
+        return new JAXBElement<CellContentPassInfoSaveData>(_CellContentPassInfoSaveData_QNAME, CellContentPassInfoSaveData.class, null, value);
     }
 
     /**
@@ -297,7 +279,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "AdditionalFieldId", scope = PhotoidentificationPersonalDataSaveInfo.class)
     public JAXBElement<String> createPhotoidentificationPersonalDataSaveInfoAdditionalFieldId(String value) {
-        return new JAXBElement<>(_PhotoidentificationPersonalDataSaveInfoAdditionalFieldId_QNAME, String.class, PhotoidentificationPersonalDataSaveInfo.class, value);
+        return new JAXBElement<String>(_PhotoidentificationPersonalDataSaveInfoAdditionalFieldId_QNAME, String.class, PhotoidentificationPersonalDataSaveInfo.class, value);
     }
 
     /**
@@ -310,7 +292,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "AdditionalFieldName", scope = PhotoidentificationPersonalDataSaveInfo.class)
     public JAXBElement<String> createPhotoidentificationPersonalDataSaveInfoAdditionalFieldName(String value) {
-        return new JAXBElement<>(_PhotoidentificationPersonalDataSaveInfoAdditionalFieldName_QNAME, String.class, PhotoidentificationPersonalDataSaveInfo.class, value);
+        return new JAXBElement<String>(_PhotoidentificationPersonalDataSaveInfoAdditionalFieldName_QNAME, String.class, PhotoidentificationPersonalDataSaveInfo.class, value);
     }
 
     /**
@@ -323,7 +305,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "FieldName", scope = PhotoidentificationPersonalDataSaveInfo.class)
     public JAXBElement<String> createPhotoidentificationPersonalDataSaveInfoFieldName(String value) {
-        return new JAXBElement<>(_PhotoidentificationPersonalDataSaveInfoFieldName_QNAME, String.class, PhotoidentificationPersonalDataSaveInfo.class, value);
+        return new JAXBElement<String>(_PhotoidentificationPersonalDataSaveInfoFieldName_QNAME, String.class, PhotoidentificationPersonalDataSaveInfo.class, value);
     }
 
     /**
@@ -336,7 +318,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PassInfo", name = "AccessPointDriverId", scope = CellContentPassInfoSaveData.class)
     public JAXBElement<String> createCellContentPassInfoSaveDataAccessPointDriverId(String value) {
-        return new JAXBElement<>(_CellContentPassInfoSaveDataAccessPointDriverId_QNAME, String.class, CellContentPassInfoSaveData.class, value);
+        return new JAXBElement<String>(_CellContentPassInfoSaveDataAccessPointDriverId_QNAME, String.class, CellContentPassInfoSaveData.class, value);
     }
 
     /**
@@ -349,7 +331,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PassInfo", name = "JsonData", scope = CellContentPassInfoSaveData.class)
     public JAXBElement<String> createCellContentPassInfoSaveDataJsonData(String value) {
-        return new JAXBElement<>(_CellContentPassInfoSaveDataJsonData_QNAME, String.class, CellContentPassInfoSaveData.class, value);
+        return new JAXBElement<String>(_CellContentPassInfoSaveDataJsonData_QNAME, String.class, CellContentPassInfoSaveData.class, value);
     }
 
     /**
@@ -362,7 +344,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.Camera", name = "CameraDriverId", scope = CellContentCameraSaveData.class)
     public JAXBElement<String> createCellContentCameraSaveDataCameraDriverId(String value) {
-        return new JAXBElement<>(_CellContentCameraSaveDataCameraDriverId_QNAME, String.class, CellContentCameraSaveData.class, value);
+        return new JAXBElement<String>(_CellContentCameraSaveDataCameraDriverId_QNAME, String.class, CellContentCameraSaveData.class, value);
     }
 
     /**
@@ -375,7 +357,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "AccessPointDriverId", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<String> createCellContentFotoIdentificationSaveDataAccessPointDriverId(String value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataAccessPointDriverId_QNAME, String.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<String>(_CellContentFotoIdentificationSaveDataAccessPointDriverId_QNAME, String.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -388,7 +370,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "ColorFieldID", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<String> createCellContentFotoIdentificationSaveDataColorFieldID(String value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataColorFieldID_QNAME, String.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<String>(_CellContentFotoIdentificationSaveDataColorFieldID_QNAME, String.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -401,7 +383,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "DecisionHotKey", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<Integer> createCellContentFotoIdentificationSaveDataDecisionHotKey(Integer value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataDecisionHotKey_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<Integer>(_CellContentFotoIdentificationSaveDataDecisionHotKey_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -414,7 +396,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "DecisionHotKeyCancel", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<Integer> createCellContentFotoIdentificationSaveDataDecisionHotKeyCancel(Integer value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataDecisionHotKeyCancel_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<Integer>(_CellContentFotoIdentificationSaveDataDecisionHotKeyCancel_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -427,7 +409,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "DecisionHotKeyModifier", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<Integer> createCellContentFotoIdentificationSaveDataDecisionHotKeyModifier(Integer value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataDecisionHotKeyModifier_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<Integer>(_CellContentFotoIdentificationSaveDataDecisionHotKeyModifier_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -440,7 +422,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "DecisionHotKeyModifierCancel", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<Integer> createCellContentFotoIdentificationSaveDataDecisionHotKeyModifierCancel(Integer value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataDecisionHotKeyModifierCancel_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<Integer>(_CellContentFotoIdentificationSaveDataDecisionHotKeyModifierCancel_QNAME, Integer.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -453,7 +435,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "PersonalData", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<ArrayOfPhotoidentificationPersonalData> createCellContentFotoIdentificationSaveDataPersonalData(ArrayOfPhotoidentificationPersonalData value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<ArrayOfPhotoidentificationPersonalData>(_CellContentFotoIdentificationSaveDataPersonalData_QNAME, ArrayOfPhotoidentificationPersonalData.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -466,7 +448,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "PhotoContentId", scope = CellContentFotoIdentificationSaveData.class)
     public JAXBElement<String> createCellContentFotoIdentificationSaveDataPhotoContentId(String value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationSaveDataPhotoContentId_QNAME, String.class, CellContentFotoIdentificationSaveData.class, value);
+        return new JAXBElement<String>(_CellContentFotoIdentificationSaveDataPhotoContentId_QNAME, String.class, CellContentFotoIdentificationSaveData.class, value);
     }
 
     /**
@@ -479,7 +461,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PassInfo", name = "AccessPointDriverName", scope = CellContentPassInfo.class)
     public JAXBElement<String> createCellContentPassInfoAccessPointDriverName(String value) {
-        return new JAXBElement<>(_CellContentPassInfoAccessPointDriverName_QNAME, String.class, CellContentPassInfo.class, value);
+        return new JAXBElement<String>(_CellContentPassInfoAccessPointDriverName_QNAME, String.class, CellContentPassInfo.class, value);
     }
 
     /**
@@ -492,7 +474,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PassInfo", name = "AcsAccessPointType", scope = CellContentPassInfo.class)
     public JAXBElement<AcsAccessPointType> createCellContentPassInfoAcsAccessPointType(AcsAccessPointType value) {
-        return new JAXBElement<>(_CellContentPassInfoAcsAccessPointType_QNAME, AcsAccessPointType.class, CellContentPassInfo.class, value);
+        return new JAXBElement<AcsAccessPointType>(_CellContentPassInfoAcsAccessPointType_QNAME, AcsAccessPointType.class, CellContentPassInfo.class, value);
     }
 
     /**
@@ -505,7 +487,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.Camera", name = "CameraDriverName", scope = CellContentCameraInfo.class)
     public JAXBElement<String> createCellContentCameraInfoCameraDriverName(String value) {
-        return new JAXBElement<>(_CellContentCameraInfoCameraDriverName_QNAME, String.class, CellContentCameraInfo.class, value);
+        return new JAXBElement<String>(_CellContentCameraInfoCameraDriverName_QNAME, String.class, CellContentCameraInfo.class, value);
     }
 
     /**
@@ -518,7 +500,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "AccessPointDriverName", scope = CellContentFotoIdentificationInfo.class)
     public JAXBElement<String> createCellContentFotoIdentificationInfoAccessPointDriverName(String value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationInfoAccessPointDriverName_QNAME, String.class, CellContentFotoIdentificationInfo.class, value);
+        return new JAXBElement<String>(_CellContentFotoIdentificationInfoAccessPointDriverName_QNAME, String.class, CellContentFotoIdentificationInfo.class, value);
     }
 
     /**
@@ -531,7 +513,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "AcsAccessPointType", scope = CellContentFotoIdentificationInfo.class)
     public JAXBElement<AcsAccessPointType> createCellContentFotoIdentificationInfoAcsAccessPointType(AcsAccessPointType value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationInfoAcsAccessPointType_QNAME, AcsAccessPointType.class, CellContentFotoIdentificationInfo.class, value);
+        return new JAXBElement<AcsAccessPointType>(_CellContentFotoIdentificationInfoAcsAccessPointType_QNAME, AcsAccessPointType.class, CellContentFotoIdentificationInfo.class, value);
     }
 
     /**
@@ -544,7 +526,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "ColorField", scope = CellContentFotoIdentificationInfo.class)
     public JAXBElement<byte[]> createCellContentFotoIdentificationInfoColorField(byte[] value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationInfoColorField_QNAME, byte[].class, CellContentFotoIdentificationInfo.class, ((byte[]) value));
+        return new JAXBElement<byte[]>(_CellContentFotoIdentificationInfoColorField_QNAME, byte[].class, CellContentFotoIdentificationInfo.class, ((byte[]) value));
     }
 
     /**
@@ -557,7 +539,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "ColorFieldName", scope = CellContentFotoIdentificationInfo.class)
     public JAXBElement<String> createCellContentFotoIdentificationInfoColorFieldName(String value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationInfoColorFieldName_QNAME, String.class, CellContentFotoIdentificationInfo.class, value);
+        return new JAXBElement<String>(_CellContentFotoIdentificationInfoColorFieldName_QNAME, String.class, CellContentFotoIdentificationInfo.class, value);
     }
 
     /**
@@ -570,7 +552,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.PhotoIdentification", name = "PhotoNumber", scope = CellContentFotoIdentificationInfo.class)
     public JAXBElement<Integer> createCellContentFotoIdentificationInfoPhotoNumber(Integer value) {
-        return new JAXBElement<>(_CellContentFotoIdentificationInfoPhotoNumber_QNAME, Integer.class, CellContentFotoIdentificationInfo.class, value);
+        return new JAXBElement<Integer>(_CellContentFotoIdentificationInfoPhotoNumber_QNAME, Integer.class, CellContentFotoIdentificationInfo.class, value);
     }
 
 }
