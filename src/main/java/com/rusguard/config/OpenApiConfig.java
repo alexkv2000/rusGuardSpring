@@ -35,7 +35,7 @@ import org.springframework.context.annotation.Description;
                         description = "Локальный сервер разработки"
                 ),
                 @Server(
-                        url = "http://doc-main:8007",
+                        url = "http://172.18.2.198/:8007",
                         description = "Продуктивный сервер DV"
                 )
         }
