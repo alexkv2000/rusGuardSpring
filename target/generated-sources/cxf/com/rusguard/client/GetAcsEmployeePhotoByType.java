@@ -39,18 +39,18 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "imageType"
 })
 @XmlRootElement(name = "GetAcsEmployeePhotoByType", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetAcsEmployeePhotoByType {
 
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected String employeeId;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected Integer photoNumber;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected EmployeeImageType imageType;
 
     /**
@@ -61,7 +61,7 @@ public class GetAcsEmployeePhotoByType {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public String getEmployeeId() {
         return employeeId;
     }
@@ -74,7 +74,7 @@ public class GetAcsEmployeePhotoByType {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setEmployeeId(String value) {
         this.employeeId = value;
     }
@@ -87,7 +87,7 @@ public class GetAcsEmployeePhotoByType {
      *     {@link Integer }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public Integer getPhotoNumber() {
         return photoNumber;
     }
@@ -100,7 +100,7 @@ public class GetAcsEmployeePhotoByType {
      *     {@link Integer }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setPhotoNumber(Integer value) {
         this.photoNumber = value;
     }
@@ -113,7 +113,7 @@ public class GetAcsEmployeePhotoByType {
      *     {@link EmployeeImageType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public EmployeeImageType getImageType() {
         return imageType;
     }
@@ -126,7 +126,7 @@ public class GetAcsEmployeePhotoByType {
      *     {@link EmployeeImageType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setImageType(EmployeeImageType value) {
         this.imageType = value;
     }

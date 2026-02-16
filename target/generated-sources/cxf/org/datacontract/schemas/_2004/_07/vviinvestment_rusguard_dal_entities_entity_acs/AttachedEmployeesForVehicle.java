@@ -37,17 +37,17 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "employee",
     "endDateTime"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class AttachedEmployeesForVehicle {
 
     @XmlElementRef(name = "BeginDateTime", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<XMLGregorianCalendar> beginDateTime;
     @XmlElementRef(name = "Employee", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<AcsEmployeeFull> employee;
     @XmlElementRef(name = "EndDateTime", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<XMLGregorianCalendar> endDateTime;
 
     /**
@@ -58,7 +58,7 @@ public class AttachedEmployeesForVehicle {
      *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<XMLGregorianCalendar> getBeginDateTime() {
         return beginDateTime;
     }
@@ -71,7 +71,7 @@ public class AttachedEmployeesForVehicle {
      *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setBeginDateTime(JAXBElement<XMLGregorianCalendar> value) {
         this.beginDateTime = value;
     }
@@ -84,7 +84,7 @@ public class AttachedEmployeesForVehicle {
      *     {@link JAXBElement }{@code <}{@link AcsEmployeeFull }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<AcsEmployeeFull> getEmployee() {
         return employee;
     }
@@ -97,7 +97,7 @@ public class AttachedEmployeesForVehicle {
      *     {@link JAXBElement }{@code <}{@link AcsEmployeeFull }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setEmployee(JAXBElement<AcsEmployeeFull> value) {
         this.employee = value;
     }
@@ -110,7 +110,7 @@ public class AttachedEmployeesForVehicle {
      *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<XMLGregorianCalendar> getEndDateTime() {
         return endDateTime;
     }
@@ -123,7 +123,7 @@ public class AttachedEmployeesForVehicle {
      *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setEndDateTime(JAXBElement<XMLGregorianCalendar> value) {
         this.endDateTime = value;
     }

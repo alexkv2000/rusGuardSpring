@@ -35,16 +35,16 @@ import javax.xml.bind.annotation.XmlType;
     "cameraDriverName",
     "cellId"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class CellContentCameraInfo
     extends CellContentCameraSaveData
 {
 
     @XmlElementRef(name = "CameraDriverName", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.Camera", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<String> cameraDriverName;
     @XmlElement(name = "CellId", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ScreenLayout.CellContent.Camera")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected String cellId;
 
     /**
@@ -55,7 +55,7 @@ public class CellContentCameraInfo
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<String> getCameraDriverName() {
         return cameraDriverName;
     }
@@ -68,7 +68,7 @@ public class CellContentCameraInfo
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setCameraDriverName(JAXBElement<String> value) {
         this.cameraDriverName = value;
     }
@@ -81,7 +81,7 @@ public class CellContentCameraInfo
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public String getCellId() {
         return cellId;
     }
@@ -94,7 +94,7 @@ public class CellContentCameraInfo
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setCellId(String value) {
         this.cellId = value;
     }

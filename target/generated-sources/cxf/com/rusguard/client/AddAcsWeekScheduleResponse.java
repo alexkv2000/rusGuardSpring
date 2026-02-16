@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "addAcsWeekScheduleResult"
 })
 @XmlRootElement(name = "AddAcsWeekScheduleResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class AddAcsWeekScheduleResponse {
 
     @XmlElementRef(name = "AddAcsWeekScheduleResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<AcsWeekScheduleFull> addAcsWeekScheduleResult;
 
     /**
@@ -50,7 +50,7 @@ public class AddAcsWeekScheduleResponse {
      *     {@link JAXBElement }{@code <}{@link AcsWeekScheduleFull }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<AcsWeekScheduleFull> getAddAcsWeekScheduleResult() {
         return addAcsWeekScheduleResult;
     }
@@ -63,7 +63,7 @@ public class AddAcsWeekScheduleResponse {
      *     {@link JAXBElement }{@code <}{@link AcsWeekScheduleFull }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setAddAcsWeekScheduleResult(JAXBElement<AcsWeekScheduleFull> value) {
         this.addAcsWeekScheduleResult = value;
     }

@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfDataOnPresenceInWorkplace", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", propOrder = {
     "dataOnPresenceInWorkplace"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfDataOnPresenceInWorkplace {
 
     @XmlElement(name = "DataOnPresenceInWorkplace", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<DataOnPresenceInWorkplace> dataOnPresenceInWorkplace;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfDataOnPresenceInWorkplace {
      * @return
      *     The value of the dataOnPresenceInWorkplace property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<DataOnPresenceInWorkplace> getDataOnPresenceInWorkplace() {
         if (dataOnPresenceInWorkplace == null) {
             dataOnPresenceInWorkplace = new ArrayList<DataOnPresenceInWorkplace>();

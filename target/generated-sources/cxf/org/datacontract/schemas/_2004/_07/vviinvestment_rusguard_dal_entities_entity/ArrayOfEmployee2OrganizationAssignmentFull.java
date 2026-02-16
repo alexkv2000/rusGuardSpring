@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfEmployee2OrganizationAssignmentFull", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", propOrder = {
     "employee2OrganizationAssignmentFull"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfEmployee2OrganizationAssignmentFull {
 
     @XmlElement(name = "Employee2OrganizationAssignmentFull", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.IncidentDictionaries", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<Employee2OrganizationAssignmentFull> employee2OrganizationAssignmentFull;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfEmployee2OrganizationAssignmentFull {
      * @return
      *     The value of the employee2OrganizationAssignmentFull property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<Employee2OrganizationAssignmentFull> getEmployee2OrganizationAssignmentFull() {
         if (employee2OrganizationAssignmentFull == null) {
             employee2OrganizationAssignmentFull = new ArrayList<Employee2OrganizationAssignmentFull>();

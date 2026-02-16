@@ -38,14 +38,14 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "tagIDs"
 })
 @XmlRootElement(name = "AddMifareProfile", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class AddMifareProfile {
 
     @XmlElementRef(name = "data", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<MifareProfileSaveData> data;
     @XmlElementRef(name = "tagIDs", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfguid> tagIDs;
 
     /**
@@ -56,7 +56,7 @@ public class AddMifareProfile {
      *     {@link JAXBElement }{@code <}{@link MifareProfileSaveData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<MifareProfileSaveData> getData() {
         return data;
     }
@@ -69,7 +69,7 @@ public class AddMifareProfile {
      *     {@link JAXBElement }{@code <}{@link MifareProfileSaveData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setData(JAXBElement<MifareProfileSaveData> value) {
         this.data = value;
     }
@@ -82,7 +82,7 @@ public class AddMifareProfile {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfguid> getTagIDs() {
         return tagIDs;
     }
@@ -95,7 +95,7 @@ public class AddMifareProfile {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setTagIDs(JAXBElement<ArrayOfguid> value) {
         this.tagIDs = value;
     }

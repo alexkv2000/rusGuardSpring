@@ -42,19 +42,19 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "dayType"
 })
 @XmlRootElement(name = "AddAcsCustomDay", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class AddAcsCustomDay {
 
     @XmlElementRef(name = "name", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<String> name;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected XMLGregorianCalendar date;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected AcsCustomizableDayType dayType;
 
     /**
@@ -65,7 +65,7 @@ public class AddAcsCustomDay {
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<String> getName() {
         return name;
     }
@@ -78,7 +78,7 @@ public class AddAcsCustomDay {
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setName(JAXBElement<String> value) {
         this.name = value;
     }
@@ -91,7 +91,7 @@ public class AddAcsCustomDay {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public XMLGregorianCalendar getDate() {
         return date;
     }
@@ -104,7 +104,7 @@ public class AddAcsCustomDay {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDate(XMLGregorianCalendar value) {
         this.date = value;
     }
@@ -117,7 +117,7 @@ public class AddAcsCustomDay {
      *     {@link AcsCustomizableDayType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public AcsCustomizableDayType getDayType() {
         return dayType;
     }
@@ -130,7 +130,7 @@ public class AddAcsCustomDay {
      *     {@link AcsCustomizableDayType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDayType(AcsCustomizableDayType value) {
         this.dayType = value;
     }

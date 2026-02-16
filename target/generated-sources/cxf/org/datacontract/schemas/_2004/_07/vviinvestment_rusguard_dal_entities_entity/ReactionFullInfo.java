@@ -36,19 +36,19 @@ import javax.xml.bind.annotation.XmlType;
     "description",
     "events"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ReactionFullInfo
     extends ReactionSlimInfo
 {
 
     @XmlElementRef(name = "Actions", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfReactionActionSlimInfo> actions;
     @XmlElementRef(name = "Description", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<String> description;
     @XmlElementRef(name = "Events", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Reaction", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfReactionEventSlimInfo> events;
 
     /**
@@ -59,7 +59,7 @@ public class ReactionFullInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfReactionActionSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfReactionActionSlimInfo> getActions() {
         return actions;
     }
@@ -72,7 +72,7 @@ public class ReactionFullInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfReactionActionSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setActions(JAXBElement<ArrayOfReactionActionSlimInfo> value) {
         this.actions = value;
     }
@@ -85,7 +85,7 @@ public class ReactionFullInfo
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<String> getDescription() {
         return description;
     }
@@ -98,7 +98,7 @@ public class ReactionFullInfo
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDescription(JAXBElement<String> value) {
         this.description = value;
     }
@@ -111,7 +111,7 @@ public class ReactionFullInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfReactionEventSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfReactionEventSlimInfo> getEvents() {
         return events;
     }
@@ -124,7 +124,7 @@ public class ReactionFullInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfReactionEventSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setEvents(JAXBElement<ArrayOfReactionEventSlimInfo> value) {
         this.events = value;
     }

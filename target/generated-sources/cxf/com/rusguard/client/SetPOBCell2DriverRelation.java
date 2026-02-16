@@ -38,14 +38,14 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "overwriteTargetDriver"
 })
 @XmlRootElement(name = "SetPOBCell2DriverRelation", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class SetPOBCell2DriverRelation {
 
     @XmlElementRef(name = "data", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<POBRelation> data;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected Boolean overwriteTargetDriver;
 
     /**
@@ -56,7 +56,7 @@ public class SetPOBCell2DriverRelation {
      *     {@link JAXBElement }{@code <}{@link POBRelation }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<POBRelation> getData() {
         return data;
     }
@@ -69,7 +69,7 @@ public class SetPOBCell2DriverRelation {
      *     {@link JAXBElement }{@code <}{@link POBRelation }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setData(JAXBElement<POBRelation> value) {
         this.data = value;
     }
@@ -82,7 +82,7 @@ public class SetPOBCell2DriverRelation {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public Boolean isOverwriteTargetDriver() {
         return overwriteTargetDriver;
     }
@@ -95,7 +95,7 @@ public class SetPOBCell2DriverRelation {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setOverwriteTargetDriver(Boolean value) {
         this.overwriteTargetDriver = value;
     }

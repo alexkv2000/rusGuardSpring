@@ -32,11 +32,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "TrassirIntegrationResult", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", propOrder = {
     "servers"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class TrassirIntegrationResult {
 
     @XmlElementRef(name = "Servers", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Trassir", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfTrassirServerInfo> servers;
 
     /**
@@ -47,7 +47,7 @@ public class TrassirIntegrationResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfTrassirServerInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfTrassirServerInfo> getServers() {
         return servers;
     }
@@ -60,7 +60,7 @@ public class TrassirIntegrationResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfTrassirServerInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setServers(JAXBElement<ArrayOfTrassirServerInfo> value) {
         this.servers = value;
     }

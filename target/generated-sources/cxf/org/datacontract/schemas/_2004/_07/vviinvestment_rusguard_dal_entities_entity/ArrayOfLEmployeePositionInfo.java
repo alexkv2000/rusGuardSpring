@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfLEmployeePositionInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", propOrder = {
     "lEmployeePositionInfo"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfLEmployeePositionInfo {
 
     @XmlElement(name = "LEmployeePositionInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<LEmployeePositionInfo> lEmployeePositionInfo;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfLEmployeePositionInfo {
      * @return
      *     The value of the lEmployeePositionInfo property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<LEmployeePositionInfo> getLEmployeePositionInfo() {
         if (lEmployeePositionInfo == null) {
             lEmployeePositionInfo = new ArrayList<LEmployeePositionInfo>();

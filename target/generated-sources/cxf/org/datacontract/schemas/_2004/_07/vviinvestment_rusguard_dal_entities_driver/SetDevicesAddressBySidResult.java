@@ -32,11 +32,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "SetDevicesAddressBySidResult", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", propOrder = {
     "failedDevices"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class SetDevicesAddressBySidResult {
 
     @XmlElementRef(name = "FailedDevices", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfSetDevicesAddressBySidResultFailedAddress> failedDevices;
 
     /**
@@ -47,7 +47,7 @@ public class SetDevicesAddressBySidResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfSetDevicesAddressBySidResultFailedAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfSetDevicesAddressBySidResultFailedAddress> getFailedDevices() {
         return failedDevices;
     }
@@ -60,7 +60,7 @@ public class SetDevicesAddressBySidResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfSetDevicesAddressBySidResultFailedAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setFailedDevices(JAXBElement<ArrayOfSetDevicesAddressBySidResultFailedAddress> value) {
         this.failedDevices = value;
     }

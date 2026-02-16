@@ -52,32 +52,32 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ar
     "serversAdded",
     "states"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class LNetworkChanges {
 
     @XmlElementRef(name = "DriversAdded", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLDriverAdded> driversAdded;
     @XmlElementRef(name = "LinkChanges", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLLinkChanged> linkChanges;
     @XmlElementRef(name = "NetworksAdded", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLNetworkAdded> networksAdded;
     @XmlElementRef(name = "OperationResults", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLOperationResult> operationResults;
     @XmlElementRef(name = "Properties", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLResourceProperty> properties;
     @XmlElementRef(name = "ResourcesRemoved", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLResourceInfo> resourcesRemoved;
     @XmlElementRef(name = "ServersAdded", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLServerAdded> serversAdded;
     @XmlElementRef(name = "States", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.Net.Services.Entities", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLResourceProperty> states;
 
     /**
@@ -88,7 +88,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverAdded }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLDriverAdded> getDriversAdded() {
         return driversAdded;
     }
@@ -101,7 +101,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverAdded }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDriversAdded(JAXBElement<ArrayOfLDriverAdded> value) {
         this.driversAdded = value;
     }
@@ -114,7 +114,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLLinkChanged }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLLinkChanged> getLinkChanges() {
         return linkChanges;
     }
@@ -127,7 +127,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLLinkChanged }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setLinkChanges(JAXBElement<ArrayOfLLinkChanged> value) {
         this.linkChanges = value;
     }
@@ -140,7 +140,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLNetworkAdded }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLNetworkAdded> getNetworksAdded() {
         return networksAdded;
     }
@@ -153,7 +153,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLNetworkAdded }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setNetworksAdded(JAXBElement<ArrayOfLNetworkAdded> value) {
         this.networksAdded = value;
     }
@@ -166,7 +166,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLOperationResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLOperationResult> getOperationResults() {
         return operationResults;
     }
@@ -179,7 +179,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLOperationResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setOperationResults(JAXBElement<ArrayOfLOperationResult> value) {
         this.operationResults = value;
     }
@@ -192,7 +192,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLResourceProperty }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLResourceProperty> getProperties() {
         return properties;
     }
@@ -205,7 +205,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLResourceProperty }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setProperties(JAXBElement<ArrayOfLResourceProperty> value) {
         this.properties = value;
     }
@@ -218,7 +218,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLResourceInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLResourceInfo> getResourcesRemoved() {
         return resourcesRemoved;
     }
@@ -231,7 +231,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLResourceInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setResourcesRemoved(JAXBElement<ArrayOfLResourceInfo> value) {
         this.resourcesRemoved = value;
     }
@@ -244,7 +244,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLServerAdded }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLServerAdded> getServersAdded() {
         return serversAdded;
     }
@@ -257,7 +257,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLServerAdded }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setServersAdded(JAXBElement<ArrayOfLServerAdded> value) {
         this.serversAdded = value;
     }
@@ -270,7 +270,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLResourceProperty }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLResourceProperty> getStates() {
         return states;
     }
@@ -283,7 +283,7 @@ public class LNetworkChanges {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLResourceProperty }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setStates(JAXBElement<ArrayOfLResourceProperty> value) {
         this.states = value;
     }

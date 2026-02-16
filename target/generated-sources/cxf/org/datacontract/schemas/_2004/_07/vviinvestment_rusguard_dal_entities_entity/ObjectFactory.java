@@ -40,7 +40,7 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ObjectFactory {
 
     private static final QName _ArrayOfLogMsgSubType_QNAME = new QName("http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Log", "ArrayOfLogMsgSubType");

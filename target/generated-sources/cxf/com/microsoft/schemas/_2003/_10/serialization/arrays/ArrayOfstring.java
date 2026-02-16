@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfstring", namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", propOrder = {
     "string"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfstring {
 
     @XmlElement(namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<String> string;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfstring {
      * @return
      *     The value of the string property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<String> getString() {
         if (string == null) {
             string = new ArrayList<String>();

@@ -33,13 +33,13 @@ import javax.xml.datatype.XMLGregorianCalendar;
 @XmlType(name = "OwnerDateTimeValue", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", propOrder = {
     "value"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class OwnerDateTimeValue
     extends OwnerValueBase
 {
 
     @XmlElementRef(name = "Value", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<XMLGregorianCalendar> value;
 
     /**
@@ -50,7 +50,7 @@ public class OwnerDateTimeValue
      *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<XMLGregorianCalendar> getValue() {
         return value;
     }
@@ -63,7 +63,7 @@ public class OwnerDateTimeValue
      *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setValue(JAXBElement<XMLGregorianCalendar> value) {
         this.value = value;
     }

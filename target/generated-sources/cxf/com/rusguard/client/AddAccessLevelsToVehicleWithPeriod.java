@@ -40,17 +40,17 @@ import org.datacontract.schemas._2004._07.system.ArrayOfTupleOfguidNullableOfdat
     "partOfCreateOperation"
 })
 @XmlRootElement(name = "AddAccessLevelsToVehicleWithPeriod", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class AddAccessLevelsToVehicleWithPeriod {
 
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected String vehicleID;
     @XmlElementRef(name = "accessLevelInfo", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> accessLevelInfo;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected Boolean partOfCreateOperation;
 
     /**
@@ -61,7 +61,7 @@ public class AddAccessLevelsToVehicleWithPeriod {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public String getVehicleID() {
         return vehicleID;
     }
@@ -74,7 +74,7 @@ public class AddAccessLevelsToVehicleWithPeriod {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setVehicleID(String value) {
         this.vehicleID = value;
     }
@@ -87,7 +87,7 @@ public class AddAccessLevelsToVehicleWithPeriod {
      *     {@link JAXBElement }{@code <}{@link ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> getAccessLevelInfo() {
         return accessLevelInfo;
     }
@@ -100,7 +100,7 @@ public class AddAccessLevelsToVehicleWithPeriod {
      *     {@link JAXBElement }{@code <}{@link ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setAccessLevelInfo(JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> value) {
         this.accessLevelInfo = value;
     }
@@ -113,7 +113,7 @@ public class AddAccessLevelsToVehicleWithPeriod {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public Boolean isPartOfCreateOperation() {
         return partOfCreateOperation;
     }
@@ -126,7 +126,7 @@ public class AddAccessLevelsToVehicleWithPeriod {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setPartOfCreateOperation(Boolean value) {
         this.partOfCreateOperation = value;
     }

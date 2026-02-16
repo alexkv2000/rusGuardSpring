@@ -35,11 +35,11 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
     "ids"
 })
 @XmlRootElement(name = "GeEmployeesView", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GeEmployeesView {
 
     @XmlElementRef(name = "ids", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfguid> ids;
 
     /**
@@ -50,7 +50,7 @@ public class GeEmployeesView {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfguid> getIds() {
         return ids;
     }
@@ -63,7 +63,7 @@ public class GeEmployeesView {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIds(JAXBElement<ArrayOfguid> value) {
         this.ids = value;
     }

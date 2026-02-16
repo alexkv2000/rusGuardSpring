@@ -36,17 +36,17 @@ import javax.xml.bind.annotation.XmlType;
     "failedControllers",
     "failedConverters"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class FindControllersResult {
 
     @XmlElementRef(name = "Controllers", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfCanDeviceInfo> controllers;
     @XmlElementRef(name = "FailedControllers", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfCanDeviceInfo> failedControllers;
     @XmlElementRef(name = "FailedConverters", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfFindControllersResultFailedConverterInfo> failedConverters;
 
     /**
@@ -57,7 +57,7 @@ public class FindControllersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfCanDeviceInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfCanDeviceInfo> getControllers() {
         return controllers;
     }
@@ -70,7 +70,7 @@ public class FindControllersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfCanDeviceInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setControllers(JAXBElement<ArrayOfCanDeviceInfo> value) {
         this.controllers = value;
     }
@@ -83,7 +83,7 @@ public class FindControllersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfCanDeviceInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfCanDeviceInfo> getFailedControllers() {
         return failedControllers;
     }
@@ -96,7 +96,7 @@ public class FindControllersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfCanDeviceInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setFailedControllers(JAXBElement<ArrayOfCanDeviceInfo> value) {
         this.failedControllers = value;
     }
@@ -109,7 +109,7 @@ public class FindControllersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfFindControllersResultFailedConverterInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfFindControllersResultFailedConverterInfo> getFailedConverters() {
         return failedConverters;
     }
@@ -122,7 +122,7 @@ public class FindControllersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfFindControllersResultFailedConverterInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setFailedConverters(JAXBElement<ArrayOfFindControllersResultFailedConverterInfo> value) {
         this.failedConverters = value;
     }

@@ -850,7 +850,7 @@ public class EmployeeController {
         result = employeeService.GetPositionCodes().getBody();
         return ResponseEntity.ok(result);
     }
-    @GetMapping("/api/whoami")
+    @GetMapping("/whoami")
     public String whoAmI() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 

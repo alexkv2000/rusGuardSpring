@@ -15,16 +15,16 @@ public class EmployeeGroupTree {
                                                           Set<String> visitedIds) {
 
         if (group == null || group.getID() == null) {
-            System.out.println("Skipping null group or group with null ID");
+//            System.out.println("Skipping null group or group with null ID");
             return null;
         }
 
-        System.out.println("Processing group: " + group.getID() + " - " +
-                (group.getName() != null ? group.getName().getValue() : "No name"));
+//        System.out.println("Processing group: " + group.getID() + " - " +
+//                (group.getName() != null ? group.getName().getValue() : "No name"));
 
         // Проверьте, нет ли циклических ссылок
         if (visitedIds.contains(group.getID())) {
-            System.out.println("Circular reference detected for group: " + group.getID());
+//            System.out.println("Circular reference detected for group: " + group.getID());
             return null;
         }
 
@@ -33,27 +33,27 @@ public class EmployeeGroupTree {
         EmployeeGroupTreeDto dto = new EmployeeGroupTreeDto();
         dto.setId(group.getID());
         dto.setName(group.getName() != null && group.getName().getValue() != null ?
-                group.getName().getValue() : "Без названия");
+                group.getName().getValue() : "закрыт"); //Без названия
 
         // Рекурсивное добавление дочерних элементов
         if (group.getEmployeeGroups() != null &&
                 group.getEmployeeGroups().getValue() != null &&
                 group.getEmployeeGroups().getValue().getAcsEmployeeGroup() != null) {
 
-            System.out.println("Processing children for group: " + group.getID() + " - " +
-                    group.getEmployeeGroups().getValue().getAcsEmployeeGroup().size() + " children");
+//            System.out.println("Processing children for group: " + group.getID() + " - " +
+//                    group.getEmployeeGroups().getValue().getAcsEmployeeGroup().size() + " children");
 
             for (AcsEmployeeGroup childGroup : group.getEmployeeGroups().getValue().getAcsEmployeeGroup()) {
                 if (childGroup != null && childGroup.getID() != null) {
-                    System.out.println("  Found child group: " + childGroup.getID() +
-                            (childGroup.getName() != null ? " - " + childGroup.getName().getValue() : ""));
+//                    System.out.println("  Found child group: " + childGroup.getID() +
+//                            (childGroup.getName() != null ? " - " + childGroup.getName().getValue() : ""));
 
                     // Попытка найти на карте полную дочернюю группу
                     AcsEmployeeGroup fullChildGroup = groupsMap.get(childGroup.getID());
 
                     // Если вы не нашли его на карте, используйте дочернюю группу напрямую (это может быть частичный объект).
                     if (fullChildGroup == null) {
-                        System.out.println("  Using partial child group (not found in groupsMap)");
+//                        System.out.println("  Using partial child group (not found in groupsMap)");
                         fullChildGroup = childGroup;
                     }
 
@@ -63,8 +63,8 @@ public class EmployeeGroupTree {
                     if (childDto != null
                             && childDto.getName() != null && !childDto.getName().trim().toLowerCase().startsWith("закрыт")) { //Убрать "Закрыт'ые" группы
                         dto.addChild(childDto);
-                        System.out.println("  Successfully added child: " + childDto.getId() +
-                                " to group: " + group.getID());
+//                        System.out.println("  Successfully added child: " + childDto.getId() +
+//                                " to group: " + group.getID());
                     }
                 }
             }

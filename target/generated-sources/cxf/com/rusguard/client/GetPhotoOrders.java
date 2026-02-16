@@ -35,12 +35,12 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "ownerType"
 })
 @XmlRootElement(name = "GetPhotoOrders", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetPhotoOrders {
 
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected PhotoOwnerType ownerType;
 
     /**
@@ -51,7 +51,7 @@ public class GetPhotoOrders {
      *     {@link PhotoOwnerType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public PhotoOwnerType getOwnerType() {
         return ownerType;
     }
@@ -64,7 +64,7 @@ public class GetPhotoOrders {
      *     {@link PhotoOwnerType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setOwnerType(PhotoOwnerType value) {
         this.ownerType = value;
     }

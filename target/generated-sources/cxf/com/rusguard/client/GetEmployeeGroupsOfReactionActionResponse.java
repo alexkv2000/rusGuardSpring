@@ -35,11 +35,11 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
     "getEmployeeGroupsOfReactionActionResult"
 })
 @XmlRootElement(name = "GetEmployeeGroupsOfReactionActionResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetEmployeeGroupsOfReactionActionResponse {
 
     @XmlElementRef(name = "GetEmployeeGroupsOfReactionActionResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfguid> getEmployeeGroupsOfReactionActionResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetEmployeeGroupsOfReactionActionResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfguid> getGetEmployeeGroupsOfReactionActionResult() {
         return getEmployeeGroupsOfReactionActionResult;
     }
@@ -63,7 +63,7 @@ public class GetEmployeeGroupsOfReactionActionResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetEmployeeGroupsOfReactionActionResult(JAXBElement<ArrayOfguid> value) {
         this.getEmployeeGroupsOfReactionActionResult = value;
     }

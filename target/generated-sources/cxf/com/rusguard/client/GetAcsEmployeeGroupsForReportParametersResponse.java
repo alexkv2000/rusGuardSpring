@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "getAcsEmployeeGroupsForReportParametersResult"
 })
 @XmlRootElement(name = "GetAcsEmployeeGroupsForReportParametersResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetAcsEmployeeGroupsForReportParametersResponse {
 
     @XmlElementRef(name = "GetAcsEmployeeGroupsForReportParametersResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> getAcsEmployeeGroupsForReportParametersResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetAcsEmployeeGroupsForReportParametersResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsEmployeeGroupReportInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> getGetAcsEmployeeGroupsForReportParametersResult() {
         return getAcsEmployeeGroupsForReportParametersResult;
     }
@@ -63,7 +63,7 @@ public class GetAcsEmployeeGroupsForReportParametersResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsEmployeeGroupReportInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetAcsEmployeeGroupsForReportParametersResult(JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> value) {
         this.getAcsEmployeeGroupsForReportParametersResult = value;
     }

@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "getAdditionalFieldsValueForOwnersResult"
 })
 @XmlRootElement(name = "GetAdditionalFieldsValueForOwnersResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetAdditionalFieldsValueForOwnersResponse {
 
     @XmlElementRef(name = "GetAdditionalFieldsValueForOwnersResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfOwnerAdditionalFieldsValue> getAdditionalFieldsValueForOwnersResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetAdditionalFieldsValueForOwnersResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfOwnerAdditionalFieldsValue }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfOwnerAdditionalFieldsValue> getGetAdditionalFieldsValueForOwnersResult() {
         return getAdditionalFieldsValueForOwnersResult;
     }
@@ -63,7 +63,7 @@ public class GetAdditionalFieldsValueForOwnersResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfOwnerAdditionalFieldsValue }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetAdditionalFieldsValueForOwnersResult(JAXBElement<ArrayOfOwnerAdditionalFieldsValue> value) {
         this.getAdditionalFieldsValueForOwnersResult = value;
     }

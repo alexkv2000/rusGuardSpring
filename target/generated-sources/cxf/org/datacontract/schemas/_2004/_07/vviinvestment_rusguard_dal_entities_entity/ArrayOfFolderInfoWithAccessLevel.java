@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfFolderInfoWithAccessLevel", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", propOrder = {
     "folderInfoWithAccessLevel"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfFolderInfoWithAccessLevel {
 
     @XmlElement(name = "FolderInfoWithAccessLevel", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Folder", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<FolderInfoWithAccessLevel> folderInfoWithAccessLevel;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfFolderInfoWithAccessLevel {
      * @return
      *     The value of the folderInfoWithAccessLevel property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<FolderInfoWithAccessLevel> getFolderInfoWithAccessLevel() {
         if (folderInfoWithAccessLevel == null) {
             folderInfoWithAccessLevel = new ArrayList<FolderInfoWithAccessLevel>();

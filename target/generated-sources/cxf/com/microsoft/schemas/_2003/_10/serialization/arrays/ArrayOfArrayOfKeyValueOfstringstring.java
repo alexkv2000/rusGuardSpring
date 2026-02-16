@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfArrayOfKeyValueOfstringstring", namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", propOrder = {
     "arrayOfKeyValueOfstringstring"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfArrayOfKeyValueOfstringstring {
 
     @XmlElement(name = "ArrayOfKeyValueOfstringstring", namespace = "http://schemas.microsoft.com/2003/10/Serialization/Arrays", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<ArrayOfKeyValueOfstringstring> arrayOfKeyValueOfstringstring;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfArrayOfKeyValueOfstringstring {
      * @return
      *     The value of the arrayOfKeyValueOfstringstring property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<ArrayOfKeyValueOfstringstring> getArrayOfKeyValueOfstringstring() {
         if (arrayOfKeyValueOfstringstring == null) {
             arrayOfKeyValueOfstringstring = new ArrayList<ArrayOfKeyValueOfstringstring>();

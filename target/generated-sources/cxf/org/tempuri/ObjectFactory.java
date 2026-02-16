@@ -31,7 +31,7 @@ import org.datacontract.schemas._2004._07.rusguard.ViolationType;
  * 
  */
 @XmlRegistry
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ObjectFactory {
 
     private static final QName _GetDepartmentTreeDepartmentId_QNAME = new QName("http://tempuri.org/", "departmentId");

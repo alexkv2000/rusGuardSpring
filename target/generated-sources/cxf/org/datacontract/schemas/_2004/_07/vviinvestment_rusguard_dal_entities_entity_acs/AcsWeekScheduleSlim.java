@@ -32,13 +32,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "AcsWeekScheduleSlim", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", propOrder = {
     "weeks"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class AcsWeekScheduleSlim
     extends AcsScheduleBase
 {
 
     @XmlElementRef(name = "Weeks", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfAcsWeekSlim> weeks;
 
     /**
@@ -49,7 +49,7 @@ public class AcsWeekScheduleSlim
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsWeekSlim }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfAcsWeekSlim> getWeeks() {
         return weeks;
     }
@@ -62,7 +62,7 @@ public class AcsWeekScheduleSlim
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsWeekSlim }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setWeeks(JAXBElement<ArrayOfAcsWeekSlim> value) {
         this.weeks = value;
     }

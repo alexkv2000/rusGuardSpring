@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
     "getSystematicViolationResult"
 })
 @XmlRootElement(name = "GetSystematicViolationResponse", namespace = "http://tempuri.org/")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetSystematicViolationResponse {
 
     @XmlElement(name = "GetSystematicViolationResult", namespace = "http://tempuri.org/")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected Double getSystematicViolationResult;
 
     /**
@@ -48,7 +48,7 @@ public class GetSystematicViolationResponse {
      *     {@link Double }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public Double getGetSystematicViolationResult() {
         return getSystematicViolationResult;
     }
@@ -61,7 +61,7 @@ public class GetSystematicViolationResponse {
      *     {@link Double }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetSystematicViolationResult(Double value) {
         this.getSystematicViolationResult = value;
     }

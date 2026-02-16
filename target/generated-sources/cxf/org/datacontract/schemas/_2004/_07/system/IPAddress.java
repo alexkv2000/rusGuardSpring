@@ -42,31 +42,31 @@ import org.datacontract.schemas._2004._07.system_net.AddressFamily;
     "mNumbers",
     "mScopeId"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class IPAddress {
 
     @XmlElement(name = "m_Address", namespace = "http://schemas.datacontract.org/2004/07/System.Net")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected long mAddress;
     @XmlElement(name = "m_Family", namespace = "http://schemas.datacontract.org/2004/07/System.Net", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected AddressFamily mFamily;
     @XmlElement(name = "m_HashCode", namespace = "http://schemas.datacontract.org/2004/07/System.Net")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected int mHashCode;
     @XmlElement(name = "m_Numbers", namespace = "http://schemas.datacontract.org/2004/07/System.Net", required = true, nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected ArrayOfunsignedShort mNumbers;
     @XmlElement(name = "m_ScopeId", namespace = "http://schemas.datacontract.org/2004/07/System.Net")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected long mScopeId;
 
     /**
      * Gets the value of the mAddress property.
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public long getMAddress() {
         return mAddress;
     }
@@ -75,7 +75,7 @@ public class IPAddress {
      * Sets the value of the mAddress property.
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMAddress(long value) {
         this.mAddress = value;
     }
@@ -88,7 +88,7 @@ public class IPAddress {
      *     {@link AddressFamily }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public AddressFamily getMFamily() {
         return mFamily;
     }
@@ -101,7 +101,7 @@ public class IPAddress {
      *     {@link AddressFamily }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMFamily(AddressFamily value) {
         this.mFamily = value;
     }
@@ -110,7 +110,7 @@ public class IPAddress {
      * Gets the value of the mHashCode property.
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public int getMHashCode() {
         return mHashCode;
     }
@@ -119,7 +119,7 @@ public class IPAddress {
      * Sets the value of the mHashCode property.
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMHashCode(int value) {
         this.mHashCode = value;
     }
@@ -132,7 +132,7 @@ public class IPAddress {
      *     {@link ArrayOfunsignedShort }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public ArrayOfunsignedShort getMNumbers() {
         return mNumbers;
     }
@@ -145,7 +145,7 @@ public class IPAddress {
      *     {@link ArrayOfunsignedShort }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMNumbers(ArrayOfunsignedShort value) {
         this.mNumbers = value;
     }
@@ -154,7 +154,7 @@ public class IPAddress {
      * Gets the value of the mScopeId property.
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public long getMScopeId() {
         return mScopeId;
     }
@@ -163,7 +163,7 @@ public class IPAddress {
      * Sets the value of the mScopeId property.
      * 
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMScopeId(long value) {
         this.mScopeId = value;
     }

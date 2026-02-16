@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfDataForViolator", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", propOrder = {
     "dataForViolator"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfDataForViolator {
 
     @XmlElement(name = "DataForViolator", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<DataForViolator> dataForViolator;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfDataForViolator {
      * @return
      *     The value of the dataForViolator property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<DataForViolator> getDataForViolator() {
         if (dataForViolator == null) {
             dataForViolator = new ArrayList<DataForViolator>();

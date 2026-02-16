@@ -92,90 +92,90 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "vehicleControllerIdentification",
     "weekSchedule"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class DriverSettings {
 
     @XmlElementRef(name = "Antipassback", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> antipassback;
     @XmlElementRef(name = "CardPlusAlcoFrame", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> cardPlusAlcoFrame;
     @XmlElementRef(name = "CardPlusFace", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> cardPlusFace;
     @XmlElementRef(name = "CardPlusVehicle", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> cardPlusVehicle;
     @XmlList
     @XmlElement(name = "ControllerIdentification", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<String> controllerIdentification;
     @XmlElementRef(name = "DailyAlcoholTestConfirmation", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> dailyAlcoholTestConfirmation;
     @XmlElementRef(name = "DaySchedule", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<AcsDaySchedule> daySchedule;
     @XmlElementRef(name = "DoorRelays", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<DoorRelays> doorRelays;
     @XmlList
     @XmlElement(name = "IdentificationType", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<String> identificationType;
     @XmlElementRef(name = "IsConfirmingKey", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> isConfirmingKey;
     @XmlElementRef(name = "IsGuardOffModeOn", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> isGuardOffModeOn;
     @XmlElementRef(name = "IsGuardOnModeOn", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> isGuardOnModeOn;
     @XmlElementRef(name = "IsLockModeOn", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> isLockModeOn;
     @XmlElementRef(name = "IsMultiIdentification", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> isMultiIdentification;
     @XmlElementRef(name = "IsOpenForALongTimeModeOn", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> isOpenForALongTimeModeOn;
     @XmlList
     @XmlElement(name = "MainIdentification", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<String> mainIdentification;
     @XmlElementRef(name = "MultiDaySchedule", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<AcsMultiDaySchedule> multiDaySchedule;
     @XmlElementRef(name = "OrderedServerIdentification", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfServerIdentificationType> orderedServerIdentification;
     @XmlElement(name = "PassageByRuleOfTwoPersonsMode", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected PassageByRuleOfTwoPersonsMode passageByRuleOfTwoPersonsMode;
     @XmlElement(name = "ScheduleType", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected AcsScheduleType scheduleType;
     @XmlElementRef(name = "ServerVehicleIdentification", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<String> serverVehicleIdentification;
     @XmlElementRef(name = "UseHolidaysAndTransfers", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<Boolean> useHolidaysAndTransfers;
     @XmlElement(name = "VehicleAssignmentCheckMode", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected VehicleAssignmentCheckMode vehicleAssignmentCheckMode;
     @XmlList
     @XmlElement(name = "VehicleControllerIdentification", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<String> vehicleControllerIdentification;
     @XmlElementRef(name = "WeekSchedule", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.StorageState", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<AcsWeekScheduleFull> weekSchedule;
 
     /**
@@ -186,7 +186,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getAntipassback() {
         return antipassback;
     }
@@ -199,7 +199,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setAntipassback(JAXBElement<Boolean> value) {
         this.antipassback = value;
     }
@@ -212,7 +212,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getCardPlusAlcoFrame() {
         return cardPlusAlcoFrame;
     }
@@ -225,7 +225,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setCardPlusAlcoFrame(JAXBElement<Boolean> value) {
         this.cardPlusAlcoFrame = value;
     }
@@ -238,7 +238,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getCardPlusFace() {
         return cardPlusFace;
     }
@@ -251,7 +251,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setCardPlusFace(JAXBElement<Boolean> value) {
         this.cardPlusFace = value;
     }
@@ -264,7 +264,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getCardPlusVehicle() {
         return cardPlusVehicle;
     }
@@ -277,7 +277,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setCardPlusVehicle(JAXBElement<Boolean> value) {
         this.cardPlusVehicle = value;
     }
@@ -307,7 +307,7 @@ public class DriverSettings {
      * @return
      *     The value of the controllerIdentification property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<String> getControllerIdentification() {
         if (controllerIdentification == null) {
             controllerIdentification = new ArrayList<String>();
@@ -323,7 +323,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getDailyAlcoholTestConfirmation() {
         return dailyAlcoholTestConfirmation;
     }
@@ -336,7 +336,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDailyAlcoholTestConfirmation(JAXBElement<Boolean> value) {
         this.dailyAlcoholTestConfirmation = value;
     }
@@ -349,7 +349,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link AcsDaySchedule }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<AcsDaySchedule> getDaySchedule() {
         return daySchedule;
     }
@@ -362,7 +362,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link AcsDaySchedule }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDaySchedule(JAXBElement<AcsDaySchedule> value) {
         this.daySchedule = value;
     }
@@ -375,7 +375,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link DoorRelays }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<DoorRelays> getDoorRelays() {
         return doorRelays;
     }
@@ -388,7 +388,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link DoorRelays }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDoorRelays(JAXBElement<DoorRelays> value) {
         this.doorRelays = value;
     }
@@ -418,7 +418,7 @@ public class DriverSettings {
      * @return
      *     The value of the identificationType property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<String> getIdentificationType() {
         if (identificationType == null) {
             identificationType = new ArrayList<String>();
@@ -434,7 +434,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getIsConfirmingKey() {
         return isConfirmingKey;
     }
@@ -447,7 +447,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIsConfirmingKey(JAXBElement<Boolean> value) {
         this.isConfirmingKey = value;
     }
@@ -460,7 +460,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getIsGuardOffModeOn() {
         return isGuardOffModeOn;
     }
@@ -473,7 +473,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIsGuardOffModeOn(JAXBElement<Boolean> value) {
         this.isGuardOffModeOn = value;
     }
@@ -486,7 +486,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getIsGuardOnModeOn() {
         return isGuardOnModeOn;
     }
@@ -499,7 +499,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIsGuardOnModeOn(JAXBElement<Boolean> value) {
         this.isGuardOnModeOn = value;
     }
@@ -512,7 +512,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getIsLockModeOn() {
         return isLockModeOn;
     }
@@ -525,7 +525,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIsLockModeOn(JAXBElement<Boolean> value) {
         this.isLockModeOn = value;
     }
@@ -538,7 +538,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getIsMultiIdentification() {
         return isMultiIdentification;
     }
@@ -551,7 +551,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIsMultiIdentification(JAXBElement<Boolean> value) {
         this.isMultiIdentification = value;
     }
@@ -564,7 +564,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getIsOpenForALongTimeModeOn() {
         return isOpenForALongTimeModeOn;
     }
@@ -577,7 +577,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIsOpenForALongTimeModeOn(JAXBElement<Boolean> value) {
         this.isOpenForALongTimeModeOn = value;
     }
@@ -607,7 +607,7 @@ public class DriverSettings {
      * @return
      *     The value of the mainIdentification property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<String> getMainIdentification() {
         if (mainIdentification == null) {
             mainIdentification = new ArrayList<String>();
@@ -623,7 +623,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link AcsMultiDaySchedule }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<AcsMultiDaySchedule> getMultiDaySchedule() {
         return multiDaySchedule;
     }
@@ -636,7 +636,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link AcsMultiDaySchedule }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMultiDaySchedule(JAXBElement<AcsMultiDaySchedule> value) {
         this.multiDaySchedule = value;
     }
@@ -649,7 +649,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link ArrayOfServerIdentificationType }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfServerIdentificationType> getOrderedServerIdentification() {
         return orderedServerIdentification;
     }
@@ -662,7 +662,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link ArrayOfServerIdentificationType }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setOrderedServerIdentification(JAXBElement<ArrayOfServerIdentificationType> value) {
         this.orderedServerIdentification = value;
     }
@@ -675,7 +675,7 @@ public class DriverSettings {
      *     {@link PassageByRuleOfTwoPersonsMode }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public PassageByRuleOfTwoPersonsMode getPassageByRuleOfTwoPersonsMode() {
         return passageByRuleOfTwoPersonsMode;
     }
@@ -688,7 +688,7 @@ public class DriverSettings {
      *     {@link PassageByRuleOfTwoPersonsMode }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setPassageByRuleOfTwoPersonsMode(PassageByRuleOfTwoPersonsMode value) {
         this.passageByRuleOfTwoPersonsMode = value;
     }
@@ -701,7 +701,7 @@ public class DriverSettings {
      *     {@link AcsScheduleType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public AcsScheduleType getScheduleType() {
         return scheduleType;
     }
@@ -714,7 +714,7 @@ public class DriverSettings {
      *     {@link AcsScheduleType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setScheduleType(AcsScheduleType value) {
         this.scheduleType = value;
     }
@@ -727,7 +727,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<String> getServerVehicleIdentification() {
         return serverVehicleIdentification;
     }
@@ -740,7 +740,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setServerVehicleIdentification(JAXBElement<String> value) {
         this.serverVehicleIdentification = value;
     }
@@ -753,7 +753,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<Boolean> getUseHolidaysAndTransfers() {
         return useHolidaysAndTransfers;
     }
@@ -766,7 +766,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setUseHolidaysAndTransfers(JAXBElement<Boolean> value) {
         this.useHolidaysAndTransfers = value;
     }
@@ -779,7 +779,7 @@ public class DriverSettings {
      *     {@link VehicleAssignmentCheckMode }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public VehicleAssignmentCheckMode getVehicleAssignmentCheckMode() {
         return vehicleAssignmentCheckMode;
     }
@@ -792,7 +792,7 @@ public class DriverSettings {
      *     {@link VehicleAssignmentCheckMode }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setVehicleAssignmentCheckMode(VehicleAssignmentCheckMode value) {
         this.vehicleAssignmentCheckMode = value;
     }
@@ -822,7 +822,7 @@ public class DriverSettings {
      * @return
      *     The value of the vehicleControllerIdentification property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<String> getVehicleControllerIdentification() {
         if (vehicleControllerIdentification == null) {
             vehicleControllerIdentification = new ArrayList<String>();
@@ -838,7 +838,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link AcsWeekScheduleFull }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<AcsWeekScheduleFull> getWeekSchedule() {
         return weekSchedule;
     }
@@ -851,7 +851,7 @@ public class DriverSettings {
      *     {@link JAXBElement }{@code <}{@link AcsWeekScheduleFull }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setWeekSchedule(JAXBElement<AcsWeekScheduleFull> value) {
         this.weekSchedule = value;
     }

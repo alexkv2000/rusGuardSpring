@@ -48,11 +48,11 @@ import org.w3c.dom.Element;
 @XmlSeeAlso({
     UserPassEditorData.class
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class UserPassEditorSaveData {
 
     @XmlElementRef(name = "Editor", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<UserPassEditorSaveData.Editor> editor;
 
     /**
@@ -63,7 +63,7 @@ public class UserPassEditorSaveData {
      *     {@link JAXBElement }{@code <}{@link UserPassEditorSaveData.Editor }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<UserPassEditorSaveData.Editor> getEditor() {
         return editor;
     }
@@ -76,7 +76,7 @@ public class UserPassEditorSaveData {
      *     {@link JAXBElement }{@code <}{@link UserPassEditorSaveData.Editor }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setEditor(JAXBElement<UserPassEditorSaveData.Editor> value) {
         this.editor = value;
     }
@@ -105,11 +105,11 @@ public class UserPassEditorSaveData {
     @XmlType(name = "", propOrder = {
         "any"
     })
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public static class Editor {
 
         @XmlAnyElement(lax = true)
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         protected Object any;
 
         /**
@@ -121,7 +121,7 @@ public class UserPassEditorSaveData {
          *     {@link Element }
          *     
          */
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         public Object getAny() {
             return any;
         }
@@ -135,7 +135,7 @@ public class UserPassEditorSaveData {
          *     {@link Element }
          *     
          */
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         public void setAny(Object value) {
             this.any = value;
         }

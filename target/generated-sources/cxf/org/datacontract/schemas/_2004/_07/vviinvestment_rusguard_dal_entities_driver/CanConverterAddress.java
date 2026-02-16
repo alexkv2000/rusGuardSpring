@@ -38,18 +38,18 @@ import javax.xml.bind.annotation.XmlType;
     "tag",
     "usbCanConverterAddress"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class CanConverterAddress {
 
     @XmlElementRef(name = "LanCanConverterAddress", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<LanCanConverterAddress> lanCanConverterAddress;
     @XmlElement(name = "Tag", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected CanConverterAddressTagEnum tag;
     @XmlElementRef(name = "UsbCanConverterAddress", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<UsbCanConverterAddress> usbCanConverterAddress;
 
     /**
@@ -60,7 +60,7 @@ public class CanConverterAddress {
      *     {@link JAXBElement }{@code <}{@link LanCanConverterAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<LanCanConverterAddress> getLanCanConverterAddress() {
         return lanCanConverterAddress;
     }
@@ -73,7 +73,7 @@ public class CanConverterAddress {
      *     {@link JAXBElement }{@code <}{@link LanCanConverterAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setLanCanConverterAddress(JAXBElement<LanCanConverterAddress> value) {
         this.lanCanConverterAddress = value;
     }
@@ -86,7 +86,7 @@ public class CanConverterAddress {
      *     {@link CanConverterAddressTagEnum }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public CanConverterAddressTagEnum getTag() {
         return tag;
     }
@@ -99,7 +99,7 @@ public class CanConverterAddress {
      *     {@link CanConverterAddressTagEnum }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setTag(CanConverterAddressTagEnum value) {
         this.tag = value;
     }
@@ -112,7 +112,7 @@ public class CanConverterAddress {
      *     {@link JAXBElement }{@code <}{@link UsbCanConverterAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<UsbCanConverterAddress> getUsbCanConverterAddress() {
         return usbCanConverterAddress;
     }
@@ -125,7 +125,7 @@ public class CanConverterAddress {
      *     {@link JAXBElement }{@code <}{@link UsbCanConverterAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setUsbCanConverterAddress(JAXBElement<UsbCanConverterAddress> value) {
         this.usbCanConverterAddress = value;
     }

@@ -35,14 +35,14 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ar
     "configuration",
     "netConfig"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetControllerConfigurationsResultConfig {
 
     @XmlElementRef(name = "Configuration", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLDriverFullInfo> configuration;
     @XmlElementRef(name = "NetConfig", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<CanDeviceNetConfig> netConfig;
 
     /**
@@ -53,7 +53,7 @@ public class GetControllerConfigurationsResultConfig {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverFullInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLDriverFullInfo> getConfiguration() {
         return configuration;
     }
@@ -66,7 +66,7 @@ public class GetControllerConfigurationsResultConfig {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverFullInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setConfiguration(JAXBElement<ArrayOfLDriverFullInfo> value) {
         this.configuration = value;
     }
@@ -79,7 +79,7 @@ public class GetControllerConfigurationsResultConfig {
      *     {@link JAXBElement }{@code <}{@link CanDeviceNetConfig }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<CanDeviceNetConfig> getNetConfig() {
         return netConfig;
     }
@@ -92,7 +92,7 @@ public class GetControllerConfigurationsResultConfig {
      *     {@link JAXBElement }{@code <}{@link CanDeviceNetConfig }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setNetConfig(JAXBElement<CanDeviceNetConfig> value) {
         this.netConfig = value;
     }

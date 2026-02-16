@@ -32,11 +32,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "NotificationInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Notifications", propOrder = {
     "employeePassageNotifications"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class NotificationInfo {
 
     @XmlElementRef(name = "EmployeePassageNotifications", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Notifications", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfEmployeePassageNotification> employeePassageNotifications;
 
     /**
@@ -47,7 +47,7 @@ public class NotificationInfo {
      *     {@link JAXBElement }{@code <}{@link ArrayOfEmployeePassageNotification }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfEmployeePassageNotification> getEmployeePassageNotifications() {
         return employeePassageNotifications;
     }
@@ -60,7 +60,7 @@ public class NotificationInfo {
      *     {@link JAXBElement }{@code <}{@link ArrayOfEmployeePassageNotification }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setEmployeePassageNotifications(JAXBElement<ArrayOfEmployeePassageNotification> value) {
         this.employeePassageNotifications = value;
     }

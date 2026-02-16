@@ -35,11 +35,11 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
     "getAcsEmployeeIDsByTableNumbersResult"
 })
 @XmlRootElement(name = "GetAcsEmployeeIDsByTableNumbersResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetAcsEmployeeIDsByTableNumbersResponse {
 
     @XmlElementRef(name = "GetAcsEmployeeIDsByTableNumbersResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfguid> getAcsEmployeeIDsByTableNumbersResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetAcsEmployeeIDsByTableNumbersResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfguid> getGetAcsEmployeeIDsByTableNumbersResult() {
         return getAcsEmployeeIDsByTableNumbersResult;
     }
@@ -63,7 +63,7 @@ public class GetAcsEmployeeIDsByTableNumbersResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetAcsEmployeeIDsByTableNumbersResult(JAXBElement<ArrayOfguid> value) {
         this.getAcsEmployeeIDsByTableNumbersResult = value;
     }

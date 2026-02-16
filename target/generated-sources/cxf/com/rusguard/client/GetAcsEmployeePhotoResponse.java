@@ -34,11 +34,11 @@ import javax.xml.bind.annotation.XmlType;
     "getAcsEmployeePhotoResult"
 })
 @XmlRootElement(name = "GetAcsEmployeePhotoResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetAcsEmployeePhotoResponse {
 
     @XmlElementRef(name = "GetAcsEmployeePhotoResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<byte[]> getAcsEmployeePhotoResult;
 
     /**
@@ -49,7 +49,7 @@ public class GetAcsEmployeePhotoResponse {
      *     {@link JAXBElement }{@code <}{@link byte[]}{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<byte[]> getGetAcsEmployeePhotoResult() {
         return getAcsEmployeePhotoResult;
     }
@@ -62,7 +62,7 @@ public class GetAcsEmployeePhotoResponse {
      *     {@link JAXBElement }{@code <}{@link byte[]}{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetAcsEmployeePhotoResult(JAXBElement<byte[]> value) {
         this.getAcsEmployeePhotoResult = value;
     }

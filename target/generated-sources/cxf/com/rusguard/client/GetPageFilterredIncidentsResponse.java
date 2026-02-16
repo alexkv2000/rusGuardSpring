@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "getPageFilterredIncidentsResult"
 })
 @XmlRootElement(name = "GetPageFilterredIncidentsResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetPageFilterredIncidentsResponse {
 
     @XmlElementRef(name = "GetPageFilterredIncidentsResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<IncidentsInfoData> getPageFilterredIncidentsResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetPageFilterredIncidentsResponse {
      *     {@link JAXBElement }{@code <}{@link IncidentsInfoData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<IncidentsInfoData> getGetPageFilterredIncidentsResult() {
         return getPageFilterredIncidentsResult;
     }
@@ -63,7 +63,7 @@ public class GetPageFilterredIncidentsResponse {
      *     {@link JAXBElement }{@code <}{@link IncidentsInfoData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetPageFilterredIncidentsResult(JAXBElement<IncidentsInfoData> value) {
         this.getPageFilterredIncidentsResult = value;
     }

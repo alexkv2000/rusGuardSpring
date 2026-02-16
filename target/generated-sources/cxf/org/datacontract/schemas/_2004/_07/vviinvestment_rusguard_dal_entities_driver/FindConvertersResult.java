@@ -35,14 +35,14 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
     "converters",
     "missingDrivers"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class FindConvertersResult {
 
     @XmlElementRef(name = "Converters", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfCanConverterAddress> converters;
     @XmlElementRef(name = "MissingDrivers", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfstring> missingDrivers;
 
     /**
@@ -53,7 +53,7 @@ public class FindConvertersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfCanConverterAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfCanConverterAddress> getConverters() {
         return converters;
     }
@@ -66,7 +66,7 @@ public class FindConvertersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfCanConverterAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setConverters(JAXBElement<ArrayOfCanConverterAddress> value) {
         this.converters = value;
     }
@@ -79,7 +79,7 @@ public class FindConvertersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfstring> getMissingDrivers() {
         return missingDrivers;
     }
@@ -92,7 +92,7 @@ public class FindConvertersResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMissingDrivers(JAXBElement<ArrayOfstring> value) {
         this.missingDrivers = value;
     }

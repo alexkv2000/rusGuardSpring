@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "getAcsBoxAccessElementsResult"
 })
 @XmlRootElement(name = "GetAcsBoxAccessElementsResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetAcsBoxAccessElementsResponse {
 
     @XmlElementRef(name = "GetAcsBoxAccessElementsResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> getAcsBoxAccessElementsResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetAcsBoxAccessElementsResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsBoxAccessLevelElementSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> getGetAcsBoxAccessElementsResult() {
         return getAcsBoxAccessElementsResult;
     }
@@ -63,7 +63,7 @@ public class GetAcsBoxAccessElementsResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsBoxAccessLevelElementSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetAcsBoxAccessElementsResult(JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> value) {
         this.getAcsBoxAccessElementsResult = value;
     }

@@ -34,14 +34,14 @@ import javax.xml.bind.annotation.XmlType;
     "additionalFieldInfo",
     "ownerValue"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class AdditionalFieldValue {
 
     @XmlElementRef(name = "AdditionalFieldInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<AdditionalFieldBase> additionalFieldInfo;
     @XmlElementRef(name = "OwnerValue", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.AdditionalFields", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<OwnerValueBase> ownerValue;
 
     /**
@@ -52,7 +52,7 @@ public class AdditionalFieldValue {
      *     {@link JAXBElement }{@code <}{@link AdditionalFieldBase }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<AdditionalFieldBase> getAdditionalFieldInfo() {
         return additionalFieldInfo;
     }
@@ -65,7 +65,7 @@ public class AdditionalFieldValue {
      *     {@link JAXBElement }{@code <}{@link AdditionalFieldBase }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setAdditionalFieldInfo(JAXBElement<AdditionalFieldBase> value) {
         this.additionalFieldInfo = value;
     }
@@ -78,7 +78,7 @@ public class AdditionalFieldValue {
      *     {@link JAXBElement }{@code <}{@link OwnerValueBase }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<OwnerValueBase> getOwnerValue() {
         return ownerValue;
     }
@@ -91,7 +91,7 @@ public class AdditionalFieldValue {
      *     {@link JAXBElement }{@code <}{@link OwnerValueBase }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setOwnerValue(JAXBElement<OwnerValueBase> value) {
         this.ownerValue = value;
     }

@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfAcsEmployeeGroupReactionInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", propOrder = {
     "acsEmployeeGroupReactionInfo"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfAcsEmployeeGroupReactionInfo {
 
     @XmlElement(name = "AcsEmployeeGroupReactionInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<AcsEmployeeGroupReactionInfo> acsEmployeeGroupReactionInfo;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfAcsEmployeeGroupReactionInfo {
      * @return
      *     The value of the acsEmployeeGroupReactionInfo property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<AcsEmployeeGroupReactionInfo> getAcsEmployeeGroupReactionInfo() {
         if (acsEmployeeGroupReactionInfo == null) {
             acsEmployeeGroupReactionInfo = new ArrayList<AcsEmployeeGroupReactionInfo>();

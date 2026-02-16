@@ -34,11 +34,11 @@ import javax.xml.bind.annotation.XmlType;
     "getIncidentArchiveReportResult"
 })
 @XmlRootElement(name = "GetIncidentArchiveReportResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetIncidentArchiveReportResponse {
 
     @XmlElementRef(name = "GetIncidentArchiveReportResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<byte[]> getIncidentArchiveReportResult;
 
     /**
@@ -49,7 +49,7 @@ public class GetIncidentArchiveReportResponse {
      *     {@link JAXBElement }{@code <}{@link byte[]}{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<byte[]> getGetIncidentArchiveReportResult() {
         return getIncidentArchiveReportResult;
     }
@@ -62,7 +62,7 @@ public class GetIncidentArchiveReportResponse {
      *     {@link JAXBElement }{@code <}{@link byte[]}{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGetIncidentArchiveReportResult(JAXBElement<byte[]> value) {
         this.getIncidentArchiveReportResult = value;
     }

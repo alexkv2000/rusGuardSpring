@@ -40,15 +40,15 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "extension"
 })
 @XmlRootElement(name = "GetIncidentStatisticReportByWeek", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GetIncidentStatisticReportByWeek {
 
     @XmlElementRef(name = "incidentStatisticData", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<IncidentStatisticData> incidentStatisticData;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected Extension extension;
 
     /**
@@ -59,7 +59,7 @@ public class GetIncidentStatisticReportByWeek {
      *     {@link JAXBElement }{@code <}{@link IncidentStatisticData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<IncidentStatisticData> getIncidentStatisticData() {
         return incidentStatisticData;
     }
@@ -72,7 +72,7 @@ public class GetIncidentStatisticReportByWeek {
      *     {@link JAXBElement }{@code <}{@link IncidentStatisticData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setIncidentStatisticData(JAXBElement<IncidentStatisticData> value) {
         this.incidentStatisticData = value;
     }
@@ -85,7 +85,7 @@ public class GetIncidentStatisticReportByWeek {
      *     {@link Extension }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public Extension getExtension() {
         return extension;
     }
@@ -98,7 +98,7 @@ public class GetIncidentStatisticReportByWeek {
      *     {@link Extension }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setExtension(Extension value) {
         this.extension = value;
     }

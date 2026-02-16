@@ -35,14 +35,14 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfstring;
     "addedEntities",
     "deletedEntities"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ChangePositionCodesResult {
 
     @XmlElementRef(name = "AddedEntities", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfstring> addedEntities;
     @XmlElementRef(name = "DeletedEntities", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AlcoGroup", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfstring> deletedEntities;
 
     /**
@@ -53,7 +53,7 @@ public class ChangePositionCodesResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfstring> getAddedEntities() {
         return addedEntities;
     }
@@ -66,7 +66,7 @@ public class ChangePositionCodesResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setAddedEntities(JAXBElement<ArrayOfstring> value) {
         this.addedEntities = value;
     }
@@ -79,7 +79,7 @@ public class ChangePositionCodesResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfstring> getDeletedEntities() {
         return deletedEntities;
     }
@@ -92,7 +92,7 @@ public class ChangePositionCodesResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDeletedEntities(JAXBElement<ArrayOfstring> value) {
         this.deletedEntities = value;
     }

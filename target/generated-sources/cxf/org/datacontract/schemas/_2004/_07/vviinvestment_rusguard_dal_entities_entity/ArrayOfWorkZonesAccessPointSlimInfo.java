@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfWorkZonesAccessPointSlimInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", propOrder = {
     "workZonesAccessPointSlimInfo"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfWorkZonesAccessPointSlimInfo {
 
     @XmlElement(name = "WorkZonesAccessPointSlimInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.TimeTracking", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<WorkZonesAccessPointSlimInfo> workZonesAccessPointSlimInfo;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfWorkZonesAccessPointSlimInfo {
      * @return
      *     The value of the workZonesAccessPointSlimInfo property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<WorkZonesAccessPointSlimInfo> getWorkZonesAccessPointSlimInfo() {
         if (workZonesAccessPointSlimInfo == null) {
             workZonesAccessPointSlimInfo = new ArrayList<WorkZonesAccessPointSlimInfo>();

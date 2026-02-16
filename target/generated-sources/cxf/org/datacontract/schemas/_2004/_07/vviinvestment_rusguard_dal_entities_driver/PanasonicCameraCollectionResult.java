@@ -33,11 +33,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ar
 @XmlType(name = "PanasonicCameraCollectionResult", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Panasonic", propOrder = {
     "driverFullInfo"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class PanasonicCameraCollectionResult {
 
     @XmlElementRef(name = "DriverFullInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.Panasonic", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfLDriverFullInfo> driverFullInfo;
 
     /**
@@ -48,7 +48,7 @@ public class PanasonicCameraCollectionResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverFullInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfLDriverFullInfo> getDriverFullInfo() {
         return driverFullInfo;
     }
@@ -61,7 +61,7 @@ public class PanasonicCameraCollectionResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverFullInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setDriverFullInfo(JAXBElement<ArrayOfLDriverFullInfo> value) {
         this.driverFullInfo = value;
     }

@@ -47,11 +47,11 @@ import javax.xml.bind.annotation.XmlType;
     "geEmployeesViewResult"
 })
 @XmlRootElement(name = "GeEmployeesViewResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class GeEmployeesViewResponse {
 
     @XmlElementRef(name = "GeEmployeesViewResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<GeEmployeesViewResponse.GeEmployeesViewResult> geEmployeesViewResult;
 
     /**
@@ -62,7 +62,7 @@ public class GeEmployeesViewResponse {
      *     {@link JAXBElement }{@code <}{@link GeEmployeesViewResponse.GeEmployeesViewResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<GeEmployeesViewResponse.GeEmployeesViewResult> getGeEmployeesViewResult() {
         return geEmployeesViewResult;
     }
@@ -75,7 +75,7 @@ public class GeEmployeesViewResponse {
      *     {@link JAXBElement }{@code <}{@link GeEmployeesViewResponse.GeEmployeesViewResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setGeEmployeesViewResult(JAXBElement<GeEmployeesViewResponse.GeEmployeesViewResult> value) {
         this.geEmployeesViewResult = value;
     }
@@ -106,14 +106,14 @@ public class GeEmployeesViewResponse {
         "schema",
         "any"
     })
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public static class GeEmployeesViewResult {
 
         @XmlElement(namespace = "http://www.rusguardsecurity.ru", required = true)
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         protected String schema;
         @XmlAnyElement(lax = true)
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         protected Object any;
 
         /**
@@ -124,7 +124,7 @@ public class GeEmployeesViewResponse {
          *     {@link String }
          *     
          */
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         public String getSchema() {
             return schema;
         }
@@ -137,7 +137,7 @@ public class GeEmployeesViewResponse {
          *     {@link String }
          *     
          */
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         public void setSchema(String value) {
             this.schema = value;
         }
@@ -150,7 +150,7 @@ public class GeEmployeesViewResponse {
          *     {@link Object }
          *     
          */
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         public Object getAny() {
             return any;
         }
@@ -163,7 +163,7 @@ public class GeEmployeesViewResponse {
          *     {@link Object }
          *     
          */
-        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+        @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
         public void setAny(Object value) {
             this.any = value;
         }

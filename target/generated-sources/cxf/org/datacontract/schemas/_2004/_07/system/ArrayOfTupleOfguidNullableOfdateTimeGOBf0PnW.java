@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfTupleOfguidNullableOfdateTimeGOBf0pnW", namespace = "http://schemas.datacontract.org/2004/07/System", propOrder = {
     "tupleOfguidNullableOfdateTimeGOBf0PnW"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW {
 
     @XmlElement(name = "TupleOfguidNullableOfdateTimeGOBf0pnW", namespace = "http://schemas.datacontract.org/2004/07/System", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected List<TupleOfguidNullableOfdateTimeGOBf0PnW> tupleOfguidNullableOfdateTimeGOBf0PnW;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW {
      * @return
      *     The value of the tupleOfguidNullableOfdateTimeGOBf0PnW property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public List<TupleOfguidNullableOfdateTimeGOBf0PnW> getTupleOfguidNullableOfdateTimeGOBf0PnW() {
         if (tupleOfguidNullableOfdateTimeGOBf0PnW == null) {
             tupleOfguidNullableOfdateTimeGOBf0PnW = new ArrayList<TupleOfguidNullableOfdateTimeGOBf0PnW>();

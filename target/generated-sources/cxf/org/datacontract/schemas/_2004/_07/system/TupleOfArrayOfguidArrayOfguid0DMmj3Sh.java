@@ -34,14 +34,14 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
     "mItem1",
     "mItem2"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class TupleOfArrayOfguidArrayOfguid0DMmj3Sh {
 
     @XmlElement(name = "m_Item1", namespace = "http://schemas.datacontract.org/2004/07/System", required = true, nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected ArrayOfguid mItem1;
     @XmlElement(name = "m_Item2", namespace = "http://schemas.datacontract.org/2004/07/System", required = true, nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected ArrayOfguid mItem2;
 
     /**
@@ -52,7 +52,7 @@ public class TupleOfArrayOfguidArrayOfguid0DMmj3Sh {
      *     {@link ArrayOfguid }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public ArrayOfguid getMItem1() {
         return mItem1;
     }
@@ -65,7 +65,7 @@ public class TupleOfArrayOfguidArrayOfguid0DMmj3Sh {
      *     {@link ArrayOfguid }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMItem1(ArrayOfguid value) {
         this.mItem1 = value;
     }
@@ -78,7 +78,7 @@ public class TupleOfArrayOfguidArrayOfguid0DMmj3Sh {
      *     {@link ArrayOfguid }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public ArrayOfguid getMItem2() {
         return mItem2;
     }
@@ -91,7 +91,7 @@ public class TupleOfArrayOfguidArrayOfguid0DMmj3Sh {
      *     {@link ArrayOfguid }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMItem2(ArrayOfguid value) {
         this.mItem2 = value;
     }

@@ -39,17 +39,17 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "photoContent",
     "workZones"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class RemoteTerminalInfo {
 
     @XmlElementRef(name = "PersonalData", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfPhotoidentificationPersonalData> personalData;
     @XmlElementRef(name = "PhotoContent", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<PhotoOrder> photoContent;
     @XmlElementRef(name = "WorkZones", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.Workplace.RemoteTerminal", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected JAXBElement<ArrayOfWorkZoneSlimInfo> workZones;
 
     /**
@@ -60,7 +60,7 @@ public class RemoteTerminalInfo {
      *     {@link JAXBElement }{@code <}{@link ArrayOfPhotoidentificationPersonalData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfPhotoidentificationPersonalData> getPersonalData() {
         return personalData;
     }
@@ -73,7 +73,7 @@ public class RemoteTerminalInfo {
      *     {@link JAXBElement }{@code <}{@link ArrayOfPhotoidentificationPersonalData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setPersonalData(JAXBElement<ArrayOfPhotoidentificationPersonalData> value) {
         this.personalData = value;
     }
@@ -86,7 +86,7 @@ public class RemoteTerminalInfo {
      *     {@link JAXBElement }{@code <}{@link PhotoOrder }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<PhotoOrder> getPhotoContent() {
         return photoContent;
     }
@@ -99,7 +99,7 @@ public class RemoteTerminalInfo {
      *     {@link JAXBElement }{@code <}{@link PhotoOrder }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setPhotoContent(JAXBElement<PhotoOrder> value) {
         this.photoContent = value;
     }
@@ -112,7 +112,7 @@ public class RemoteTerminalInfo {
      *     {@link JAXBElement }{@code <}{@link ArrayOfWorkZoneSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public JAXBElement<ArrayOfWorkZoneSlimInfo> getWorkZones() {
         return workZones;
     }
@@ -125,7 +125,7 @@ public class RemoteTerminalInfo {
      *     {@link JAXBElement }{@code <}{@link ArrayOfWorkZoneSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setWorkZones(JAXBElement<ArrayOfWorkZoneSlimInfo> value) {
         this.workZones = value;
     }

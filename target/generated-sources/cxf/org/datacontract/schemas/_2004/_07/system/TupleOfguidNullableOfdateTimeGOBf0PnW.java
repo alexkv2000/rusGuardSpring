@@ -35,15 +35,15 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "mItem1",
     "mItem2"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
 public class TupleOfguidNullableOfdateTimeGOBf0PnW {
 
     @XmlElement(name = "m_Item1", namespace = "http://schemas.datacontract.org/2004/07/System", required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected String mItem1;
     @XmlElement(name = "m_Item2", namespace = "http://schemas.datacontract.org/2004/07/System", required = true, nillable = true)
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     protected XMLGregorianCalendar mItem2;
 
     /**
@@ -54,7 +54,7 @@ public class TupleOfguidNullableOfdateTimeGOBf0PnW {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public String getMItem1() {
         return mItem1;
     }
@@ -67,7 +67,7 @@ public class TupleOfguidNullableOfdateTimeGOBf0PnW {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMItem1(String value) {
         this.mItem1 = value;
     }
@@ -80,7 +80,7 @@ public class TupleOfguidNullableOfdateTimeGOBf0PnW {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public XMLGregorianCalendar getMItem2() {
         return mItem2;
     }
@@ -93,7 +93,7 @@ public class TupleOfguidNullableOfdateTimeGOBf0PnW {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-13T22:07:03+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
     public void setMItem2(XMLGregorianCalendar value) {
         this.mItem2 = value;
     }
