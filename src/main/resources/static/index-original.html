@@ -1,0 +1,3340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СКУД RusGuard - Управление сотрудниками</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- jsTree для дерева групп -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.15/themes/default/style.min.css">
+    <!-- DataTables для таблиц -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <style>
+        :root {
+            --header-height: 80px;
+            --footer-height: 40px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f9fa;
+        }
+
+        #top-section {
+            flex-shrink: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 15px;
+        }
+
+        .main-row {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 15px;
+            min-height: 0; /* Важно для flex-контейнеров */
+        }
+
+        .section-column {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 0; /* Важно для flex-контейнеров */
+        }
+
+        .section-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .section-content {
+            flex: 1;
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 0; /* Критически важно для flexbox */
+        }
+
+        /* СТИЛИ ДЛЯ ЛЕВОЙ СЕКЦИИ (ДЕРЕВО) */
+        .tree-container {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            min-height: 0;
+            padding: 15px;
+        }
+
+        /* СТИЛИ ДЛЯ ЦЕНТРАЛЬНОЙ СЕКЦИИ (ТАБЛИЦА) */
+        .table-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            padding: 0;
+        }
+
+        /* Стили для DataTables wrapper */
+        .dataTables_wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            padding: 15px;
+        }
+
+        /* Убедимся, что все внутренние контейнеры DataTables растягиваются */
+        #employeesTable_wrapper {
+            flex: 1;
+            display: flex !important;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        #employeesTable_wrapper .dataTables_scroll {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        #employeesTable_wrapper .dataTables_scrollBody {
+            flex: 1;
+            min-height: 0;
+        }
+
+        /* Фиксируем высоту для скролла DataTables */
+        #employeesTable_wrapper .dataTables_scrollBody {
+            max-height: none !important;
+            height: auto !important;
+        }
+
+        /* СТИЛИ ДЛЯ ПРАВОЙ СЕКЦИИ (УРОВНИ ДОСТУПА) */
+        .access-levels-container {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            min-height: 0;
+            padding: 15px;
+        }
+
+        /* ОБЩИЕ СТИЛИ */
+        .employee-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .access-level-badge {
+            font-size: 0.8em;
+            margin: 2px;
+        }
+
+        .passage-event {
+            padding: 5px 10px;
+            margin: 3px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            flex-shrink: 0;
+        }
+
+        .entrance {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .exit {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .denied {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .refresh-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            flex-shrink: 0;
+        }
+
+        .refresh-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .action-btn {
+            margin: 2px;
+            padding: 4px 8px;
+            font-size: 0.85em;
+            flex-shrink: 0;
+        }
+
+        .jstree-default .jstree-clicked {
+            background-color: #e3f2fd !important;
+            color: #1565c0 !important;
+        }
+
+        .status-active {
+            color: #28a745;
+        }
+
+        .status-locked {
+            color: #dc3545;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #2c3e50;
+            color: white;
+            border-color: #2c3e50;
+        }
+
+        .section-footer {
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: auto;
+            flex-shrink: 0;
+        }
+
+        /* СТИЛИ ДЛЯ ПРОХОДОВ */
+        .passages-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+            max-height: 300px;
+            padding: 10px;
+        }
+
+        .passage-info {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border-left: 4px solid #3498db;
+            color: #2c3e50;
+        }
+
+        .passage-event {
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            transition: all 0.2s;
+            border-left: 4px solid transparent;
+        }
+
+        .passage-event:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .passage-event.entrance {
+            background-color: rgba(212, 237, 218, 0.9);
+            color: #155724;
+            border-left-color: #28a745;
+        }
+
+        .passage-event.exit {
+            background-color: rgba(248, 215, 218, 0.9);
+            color: #721c24;
+            border-left-color: #dc3545;
+        }
+
+        .passage-event.denied {
+            background-color: rgba(255, 243, 205, 0.9);
+            color: #856404;
+            border-left-color: #ffc107;
+        }
+
+        .passage-event .badge {
+            font-size: 0.75em;
+            padding: 4px 8px;
+        }
+
+        /* Стиль для пустого состояния */
+        .passages-container:empty::before {
+            content: "Нет данных о проходах";
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            font-style: italic;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .main-row {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .section-column {
+                height: 400px;
+                margin-bottom: 15px;
+            }
+        }
+
+        /* Стили для сообщений о загрузке и ошибках */
+        .loading-container, .error-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Дополнительные стили для правильного отображения DataTables */
+        .dataTables_scrollHead {
+            flex-shrink: 0;
+        }
+
+        .dataTables_scrollBody {
+            flex: 1;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+        }
+    </style>
+</head>
+<body>
+<!-- TOP SECTION - Меню + Поиск -->
+<div id="top-section" class="container-fluid py-3">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2 class="mb-0">
+                <i class="bi bi-shield-lock me-2"></i>
+                СКУД RusGuard - Управление сотрудниками
+            </h2>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-end">
+                <!-- Поиск по ФИО -->
+                <div class="input-group input-group-sm" style="width: 250px;">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="searchFIO" placeholder="ФИО (Фамилия Имя Отчество)" aria-label="Поиск по ФИО">
+                </div>
+
+                <!-- Поиск по табельному номеру -->
+                <div class="input-group input-group-sm" style="width: 180px;">
+                    <span class="input-group-text"><i class="bi bi-card-text"></i></span>
+                    <input type="number" class="form-control" id="searchTabel" placeholder="Таб. номер" aria-label="Поиск по табельному">
+                </div>
+
+                <!-- Кнопка поиска -->
+                <button class="btn btn-primary btn-sm" onclick="performSearch()">
+                    <i class="bi bi-search"></i> Поиск
+                </button>
+
+                <!-- Кнопка сброса -->
+                <button class="btn btn-secondary btn-sm" onclick="resetSearch()">
+                    <i class="bi bi-x-circle"></i> Сброс
+                </button>
+
+                <!-- Вкладки -->
+                <ul class="nav nav-tabs ms-3" id="topMenu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#work" data-bs-toggle="tab">
+                            <i class="bi bi-people-fill me-1"></i>Работа с RusGuard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reports" data-bs-toggle="tab">
+                            <i class="bi bi-file-earmark-bar-graph me-1"></i>Отчеты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="main-row row g-3">
+        <!-- LEFT SECTION - Дерево групп -->
+                <div class="col-md-3 section-column">
+                    <div class="section-header">
+                        <h5 class="mb-0"><i class="bi bi-diagram-3 me-2"></i>Группы сотрудников</h5>
+                        <button class="refresh-btn" onclick="refreshLeftSection()">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </button>
+                    </div>
+                    <div class="section-content">
+                        <div class="p-3">
+                            <div class="mb-3">
+                                <label for="groupSelector" class="form-label">Выберите группу верхнего уровня:</label>
+                                <select class="form-select" id="groupSelector" onchange="onGroupSelected()">
+                                    <option value="">Загрузка групп...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="tree-container" id="employeeGroupsTree"></div>
+                    </div>
+                </div>
+
+        <!-- CENTER SECTION - Список сотрудников -->
+        <div class="col-md-5 section-column">
+            <div class="section-header">
+                <h5 class="mb-0"><i class="bi bi-person-lines-fill me-2"></i>Сотрудники группы</h5>
+                <div>
+                    <button class="btn btn-success btn-sm me-1" onclick="showAddEmployeeModal()">
+                        <i class="bi bi-person-plus"></i> Добавить
+                    </button>
+                    <button class="refresh-btn" onclick="refreshCenterSection()">
+                        <i class="bi bi-arrow-clockwise"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="table-container">
+                    <div class="dataTables_wrapper">
+                        <table id="employeesTable" class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th style="min-width: 200px;">ФИО</th>
+                                <th style="min-width: 100px;">Табельный</th>
+                                <th style="min-width: 100px;">Статус</th>
+                                <th style="min-width: 120px;">Действия</th>
+                            </tr>
+                            </thead>
+                            <tbody id="employeesList">
+                            <!-- Данные будут загружены через JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SECTION - Уровни доступа -->
+        <div class="col-md-4 section-column">
+            <div class="section-header">
+                <h5 class="mb-0"><i class="bi bi-shield-check me-2"></i>Уровни доступа</h5>
+                <div>
+                    <button class="btn btn-primary btn-sm me-1" onclick="showAccessModal()">
+                        <i class="bi bi-key"></i> Доступ
+                    </button>
+                    <button class="refresh-btn" onclick="refreshRightSection()">
+                        <i class="bi bi-arrow-clockwise"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="access-levels-container" id="accessLevelsList">
+                    <!-- Данные будут загружены через JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM SECTION - Проходы -->
+    <div class="section-footer">
+        <div class="section-header" style="background-color: transparent; padding: 0;">
+            <h5 class="mb-0"><i class="bi bi-clock-history me-2"></i>Время проходов</h5>
+            <div class="d-flex align-items-center">
+                <input type="date" id="passageDate" class="form-control form-control-sm me-2"
+                       style="width: 150px;">
+                <button class="refresh-btn" onclick="loadPassages()">
+                    <i class="bi bi-arrow-clockwise"></i> Обновить
+                </button>
+            </div>
+        </div>
+        <div class="passages-container" id="passagesContainer">
+            <!-- Данные о проходах будут загружены здесь -->
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно добавления сотрудника -->
+<div class="modal fade" id="addEmployeeModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Добавить сотрудника</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addEmployeeForm">
+                    <!-- Скрытое поле для хранения ID выбранной группы -->
+                    <input type="hidden" name="positionGroup" id="addEmployeeGroupId">
+
+                    <!-- Информация о выбранной группе -->
+                    <div class="alert alert-info mb-3" id="selectedGroupInfo">
+                        <i class="bi bi-info-circle me-2"></i>
+                        <span id="groupNameDisplay">Группа не выбрана</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Фамилия *</label>
+                                <input type="text" class="form-control" name="lastname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Имя *</label>
+                                <input type="text" class="form-control" name="firstname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Отчество</label>
+                                <input type="text" class="form-control" name="secondname">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Табельный номер *</label>
+                                <input type="text" class="form-control" name="tabelNumber" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Должность</label>
+                                <input type="text" class="form-control" name="position">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" name="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Описание email</label>
+                                <input type="text" class="form-control" name="EmailDescription">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Комментарий</label>
+                        <textarea class="form-control" name="Comment" rows="2"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary" onclick="addEmployee()">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Модальное окно редактирования сотрудника -->
+<div class="modal fade" id="editEmployeeModal" tabindex="-1">
+    <div class="modal-dialog modal-xl"> <!-- Изменено на modal-xl для большего пространства -->
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h5 class="modal-title">Редактировать сотрудника</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Вкладки -->
+                <ul class="nav nav-tabs mb-3" id="editEmployeeTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="basic-info-tab" data-bs-toggle="tab"
+                                data-bs-target="#basic-info" type="button" role="tab">
+                            Основная информация
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="access-levels-tab" data-bs-toggle="tab"
+                                data-bs-target="#access-levels" type="button" role="tab">
+                            Уровни доступа
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Содержимое вкладок -->
+                <div class="tab-content" id="editEmployeeTabContent">
+                    <!-- Вкладка: Основная информация -->
+                    <div class="tab-pane fade show active" id="basic-info" role="tabpanel">
+                        <form id="editEmployeeForm">
+                            <input type="hidden" id="editEmployeeId">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Фамилия *</label>
+                                        <input type="text" class="form-control" id="editLastName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Имя *</label>
+                                        <input type="text" class="form-control" id="editFirstName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <label class="form-label">Отчество</label>
+                                        <input type="text" class="form-control" id="editSecondName">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Табельный номер *</label>
+                                        <input type="text" class="form-control" id="editTabelNumber" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Должность</label>
+                                        <select class="form-control" id="editPositionSelect">
+                                            <option value="">Загрузка должностей...</option>
+                                        </select>
+                                        <small class="text-muted">Или введите GUID вручную:</small>
+                                        <input type="text" class="form-control mt-1" id="editPosition" placeholder="GUID должности">
+                                    </div>
+                                </div>
+                            </div>
+
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-12">-->
+<!--                                    <div class="mb-3">-->
+<!--                                        <label class="form-label">Комментарий</label>-->
+<!--                                        <textarea class="form-control" id="editComment" rows="2"></textarea>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="row">-->
+<!--                                <div class="col-md-6">-->
+<!--                                    <div class="mb-3">-->
+<!--                                        <label class="form-label">Адрес регистрации</label>-->
+<!--                                        <input type="text" class="form-control" id="editRegistrationAddress">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-6">-->
+<!--                                    <div class="mb-3">-->
+<!--                                        <label class="form-label">Адрес проживания</label>-->
+<!--                                        <input type="text" class="form-control" id="editResidentialAddress">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Серия паспорта</label>
+                                        <input type="text" class="form-control" id="editPassportIISUE">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Номер паспорта</label>
+                                        <input type="text" class="form-control" id="editPassportNumber">
+                                    </div>
+                                </div>
+                            </div>
+
+<!--                            <div class="form-check mb-3">-->
+<!--                                <input class="form-check-input" type="checkbox" id="editIsChangeLocked">-->
+<!--                                <label class="form-check-label" for="editIsChangeLocked">-->
+<!--                                    Изменить статус блокировки-->
+<!--                                </label>-->
+<!--                            </div>-->
+
+<!--                            <div class="form-check mb-3">-->
+<!--                                <input class="form-check-input" type="checkbox" id="editIsChangePin">-->
+<!--                                <label class="form-check-label" for="editIsChangePin">-->
+<!--                                    Изменить PIN-код-->
+<!--                                </label>-->
+<!--                            </div>-->
+                        </form>
+                    </div>
+
+                    <!-- Вкладка: Уровни доступа -->
+                    <div class="tab-pane fade" id="access-levels" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h6>Таблица уровней доступа сотрудника</h6>
+                            <button class="btn btn-primary btn-sm" onclick="loadEmployeeAccessLevels()">
+                                <i class="bi bi-arrow-clockwise"></i> Обновить
+                            </button>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover table-sm" id="employeeAccessLevelsTable">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Название</th>
+                                    <th>Количество точек доступа</th>
+                                    <th>Описание</th>
+                                    <th>Дата окончания</th>
+                                </tr>
+                                </thead>
+                                <tbody id="employeeAccessLevelsBody">
+                                <!-- Данные будут загружены через JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-info mt-3">
+                            <i class="bi bi-info-circle me-2"></i>
+                            Всего уровней доступа: <span id="accessLevelsCount">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+<!--                <button type="button" class="btn btn-danger" onclick="deleteEmployee()">-->
+<!--                    <i class="bi bi-trash"></i> Удалить-->
+<!--                </button>-->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-warning" onclick="saveEditedEmployee()">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Модальное окно подробной информации о сотруднике -->
+<div class="modal fade" id="employeeDetailsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h5 class="modal-title">Подробная информация о сотруднике</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">ФИО:</label>
+                    <p id="detailEmployeeName" class="form-control-static"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Отдел:</label>
+                    <p id="detailEmployeeDepartment" class="form-control-static"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Отдел:</label>
+                    <p id="detailEmployeeNumber" class="form-control-static"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Должность:</label>
+                    <p id="detailEmployeePosition" class="form-control-static"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Email:</label>
+                    <p id="detailEmployeeEmail" class="form-control-static"></p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Комментарий:</label>
+                    <p id="detailEmployeeComment" class="form-control-static"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="accessModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Управление доступом</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="useParentAccess">
+                    <label class="form-check-label" for="useParentAccess">
+                        Использовать уровни доступа родительской группы
+                    </label>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Доступные уровни доступа</label>
+                    <div id="availableAccessLevels" style="max-height: 300px; overflow-y: auto;">
+                        <!-- Уровни доступа будут загружены динамически -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary" onclick="saveAccessLevels()">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript библиотеки -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.15/jstree.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    console.log = (function(originalConsoleLog) {
+        return function(...args) {
+            // Фильтруем слишком большие объекты
+            const filteredArgs = args.map(arg => {
+                if (typeof arg === 'object' && arg !== null) {
+                    try {
+                        // Ограничиваем вывод больших объектов
+                        const str = JSON.stringify(arg);
+                        if (str.length > 1000) {
+                            return str.substring(0, 1000) + '... [объект обрезан]';
+                        }
+                        return arg;
+                    } catch (e) {
+                        return '[Невозможно вывести объект]';
+                    }
+                }
+                return arg;
+            });
+
+            originalConsoleLog.apply(console, filteredArgs);
+        };
+    })(console.log);
+
+    // Конфигурация API
+    const API_BASE_URL = '/api/rusguard/Employee';
+    let selectedGroupId = null;
+    let selectedEmployeeId = null;
+    let employeesDataTable = null;
+    // Глобальные переменные для поиска
+    let searchMode = null; // 'fio' или 'tabel' или null
+    // Инициализация при загрузке страницы
+    $(document).ready(function () {
+        // Установка текущей даты в поле выбора даты
+        const today = new Date().toISOString().split('T')[0];
+        $('#passageDate').val(today);
+
+        loadEmployeeGroups();
+        setupEventListeners();
+        adjustLayout();
+
+        // Инициализация вкладок
+        $('#topMenu a').on('shown.bs.tab', function (e) {
+            if (e.target.getAttribute('href') === '#reports') {
+                loadReports();
+            }
+        });
+
+        // Автоматический размер при изменении окна
+        $(window).on('resize', function () {
+            adjustLayout();
+            // Пересчитываем размеры DataTable
+            if (employeesDataTable) {
+                setTimeout(() => {
+                    employeesDataTable.columns.adjust();
+                    if (employeesDataTable.fixedHeader) {
+                        employeesDataTable.fixedHeader.adjust();
+                    }
+                }, 100);
+            }
+        });
+
+        // Инициализируем DataTable после небольшой задержки для правильного расчета высоты
+        setTimeout(initEmployeesTable, 100);
+        
+        // Устанавливаем группу по умолчанию после загрузки страницы
+        // setTimeout(() => {
+        //     const defaultGroupId = "75c0f525-0851-4730-9edc-f16e955a32ca";
+        //     $('#groupSelector').val(defaultGroupId);
+        //     onGroupSelected(defaultGroupId);
+        // }, 500);
+    });
+
+    function checkSelectState() {
+        const $select = $('#editPositionSelect');
+        console.log('Состояние select:', {
+            length: $select.length,
+            optionsCount: $select.find('option').length,
+            html: $select.html()
+        });
+    }
+
+    // Функция для загрузки уровней доступа сотрудника в модальное окно
+    function loadEmployeeAccessLevels() {
+        const employeeId = $('#editEmployeeId').val();
+
+        if (!employeeId) {
+            showToast('ID сотрудника не найден', 'warning');
+            return;
+        }
+
+        // Показываем загрузку
+        $('#employeeAccessLevelsBody').html(`
+        <tr>
+            <td colspan="5" class="text-center py-3">
+                <div class="spinner-border spinner-border-sm" role="status">
+                    <span class="visually-hidden">Загрузка...</span>
+                </div>
+                Загрузка уровней доступа...
+            </td>
+        </tr>
+    `);
+
+        // Загружаем уровни доступа через API
+        fetch(`${API_BASE_URL}/getAccessLevelsEmployee?idEmployee=${employeeId}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ошибка загрузки уровней доступа');
+                }
+                return response.json();
+            })
+            .then(data => {
+                renderEmployeeAccessLevelsTable(data);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки уровней доступа:', error);
+                $('#employeeAccessLevelsBody').html(`
+                <tr>
+                    <td colspan="5" class="text-center py-3 text-danger">
+                        <i class="bi bi-exclamation-triangle me-2"></i>
+                        Не удалось загрузить уровни доступа
+                    </td>
+                </tr>
+            `);
+            });
+    }
+
+    // Функция для отображения таблицы уровней доступа
+    function renderEmployeeAccessLevelsTable(levels) {
+        const tbody = $('#employeeAccessLevelsBody');
+        const countSpan = $('#accessLevelsCount');
+
+        if (!levels || !Array.isArray(levels) || levels.length === 0) {
+            tbody.html(`
+            <tr>
+                <td colspan="5" class="text-center py-3 text-muted">
+                    Нет доступных уровней доступа
+                </td>
+            </tr>
+        `);
+            countSpan.text('0');
+            return;
+        }
+
+        let html = '';
+        levels.forEach(level => {
+            // Форматируем дату окончания
+            let endDate = 'Не ограничен';
+            if (level.EndDate && level.EndDate !== 'null') {
+                try {
+                    const date = new Date(level.EndDate);
+                    if (!isNaN(date.getTime())) {
+                        endDate = date.toLocaleDateString('ru-RU');
+                    }
+                } catch (e) {
+                    // Если ошибка форматирования, оставляем как есть
+                    endDate = level.EndDate;
+                }
+            }
+
+            html += `
+            <tr>
+                <td class="small text-muted">${escapeHtml(level.ID || '').substring(0, 8)}...</td>
+                <td><strong>${escapeHtml(level.Name || 'Без названия')}</strong></td>
+                <td>
+                    <span class="badge bg-primary">
+                        ${level.NumberOfAccessPoints || 0}
+                    </span>
+                </td>
+                <td>${escapeHtml(level.Description || '')}</td>
+                <td>${endDate}</td>
+            </tr>
+        `;
+        });
+
+        tbody.html(html);
+        countSpan.text(levels.length);
+    }
+
+    // Обновите функцию editEmployee для загрузки данных при открытии модального окна
+    function editEmployee(employeeId, event) {
+        event.stopPropagation();
+        console.log('Редактирование сотрудника:', employeeId);
+
+        // Сохраняем ID сотрудника для редактирования
+        window.currentEditEmployeeId = employeeId;
+
+        // Показываем загрузку
+        $('#editEmployeeForm').html(`
+        <div class="text-center py-5">
+            <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Загрузка...</span>
+            </div>
+            <p class="mt-2">Загрузка данных сотрудника...</p>
+        </div>
+    `);
+
+        // Сбрасываем таблицу уровней доступа
+        $('#employeeAccessLevelsBody').empty();
+        $('#accessLevelsCount').text('0');
+
+        // Показываем модальное окно
+        $('#editEmployeeModal').modal('show');
+
+        // Загружаем список должностей перед загрузкой данных сотрудника
+        loadPositionsForSelect();
+
+        // Загружаем данные сотрудника с сервера
+        loadEmployeeDataForEdit(employeeId);
+    }
+
+    // Обновите функцию loadEmployeeDataForEdit для загрузки уровней доступа
+    function loadEmployeeDataForEdit(employeeId) {
+        console.log('Загрузка данных сотрудника для редактирования, ID:', employeeId);
+
+        // Показываем спиннер загрузки
+        $('#editEmployeeForm').html(`
+        <div class="text-center py-5">
+            <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Загрузка...</span>
+            </div>
+            <p class="mt-2">Загрузка данных сотрудника...</p>
+        </div>
+    `);
+
+        fetch(`${API_BASE_URL}/getById?idEmployee=${employeeId}`)
+            .then(response => {
+                console.log('Статус ответа:', response.status, response.statusText);
+                if (!response.ok) {
+                    throw new Error(`Ошибка HTTP: ${response.status} ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Полученные данные:', JSON.stringify(data, null, 2));
+
+                // Восстанавливаем форму
+                restoreEditForm();
+
+                // Заполняем форму данными
+                populateEditForm(data);
+
+                // Загружаем уровни доступа сотрудника
+                loadEmployeeAccessLevels();
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки данных сотрудника:', error);
+
+                // Восстанавливаем форму даже при ошибке
+                restoreEditForm();
+
+                showToast('Не удалось загрузить данные сотрудника: ' + error.message, 'danger');
+
+                // Если данные не загрузились, можно попробовать заполнить частично из таблицы
+                setTimeout(() => {
+                    if (!$('#editFirstName').val()) {
+                        quickEditEmployee(employeeId, new Event('click'));
+                    }
+                }, 500);
+            });
+    }
+    // Функция для восстановления HTML формы
+    function restoreEditForm() {
+        // Восстанавливаем оригинальный HTML формы
+        $('#editEmployeeForm').html(`
+        <input type="hidden" id="editEmployeeId">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label class="form-label">Фамилия *</label>
+                    <input type="text" class="form-control" id="editLastName" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label class="form-label">Имя *</label>
+                    <input type="text" class="form-control" id="editFirstName" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label class="form-label">Отчество</label>
+                    <input type="text" class="form-control" id="editSecondName">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Табельный номер *</label>
+                    <input type="text" class="form-control" id="editTabelNumber" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Должность</label>
+                    <select class="form-control" id="editPositionSelect">
+                        <option value="">Загрузка должностей...</option>
+                    </select>
+                    <small class="text-muted">Или введите GUID вручную:</small>
+                    <input type="text" class="form-control mt-1" id="editPosition" placeholder="GUID должности">
+                </div>
+            </div>
+        </div>
+
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="mb-3">-->
+<!--                    <label class="form-label">Комментарий</label>-->
+<!--                    <textarea class="form-control" id="editComment" rows="2"></textarea>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="row">-->
+<!--            <div class="col-md-6">-->
+<!--                <div class="mb-3">-->
+<!--                    <label class="form-label">Адрес регистрации</label>-->
+<!--                    <input type="text" class="form-control" id="editRegistrationAddress">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-6">-->
+<!--                <div class="mb-3">-->
+<!--                    <label class="form-label">Адрес проживания</label>-->
+<!--                    <input type="text" class="form-control" id="editResidentialAddress">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Серия паспорта</label>
+                    <input type="text" class="form-control" id="editPassportIISUE">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Номер паспорта</label>
+                    <input type="text" class="form-control" id="editPassportNumber">
+                </div>
+            </div>
+        </div>
+
+<!--        <div class="form-check mb-3">-->
+<!--            <input class="form-check-input" type="checkbox" id="editIsChangeLocked">-->
+<!--            <label class="form-check-label" for="editIsChangeLocked">-->
+<!--                Изменить статус блокировки-->
+<!--            </label>-->
+<!--        </div>-->
+
+<!--        <div class="form-check mb-3">-->
+<!--            <input class="form-check-input" type="checkbox" id="editIsChangePin">-->
+<!--            <label class="form-check-label" for="editIsChangePin">-->
+<!--                Изменить PIN-код-->
+<!--            </label>-->
+<!--        </div>-->
+    `);
+    }
+
+    // Функция для отладки структуры данных
+    function debugDataStructure(data) {
+        console.log('=== ДЕБАГ СТРУКТУРЫ ДАННЫХ ===');
+        console.log('Тип данных:', typeof data);
+
+        if (Array.isArray(data)) {
+            console.log('Это массив, длина:', data.length);
+            if (data.length > 0) {
+                console.log('Первый элемент:', data[0]);
+                console.log('Ключи первого элемента:', Object.keys(data[0]));
+            }
+        } else if (typeof data === 'object') {
+            console.log('Это объект, ключи:', Object.keys(data));
+            // Показываем первые 2 уровня вложенности
+            for (const key in data) {
+                console.log(`${key}:`, data[key]);
+                if (typeof data[key] === 'object' && data[key] !== null) {
+                    if (Array.isArray(data[key])) {
+                        console.log(`  ${key} - массив, длина: ${data[key].length}`);
+                        if (data[key].length > 0) {
+                            console.log(`  Первый элемент ${key}:`, data[key][0]);
+                        }
+                    } else {
+                        console.log(`  ${key} - объект, ключи:`, Object.keys(data[key]));
+                    }
+                }
+            }
+        }
+        console.log('=== КОНЕЦ ДЕБАГА ===');
+    }
+
+
+    // Добавьте обработчик для переключения вкладок, чтобы обновлять данные при переключении
+    $(document).on('shown.bs.tab', '#editEmployeeTabs button[data-bs-toggle="tab"]', function (e) {
+        const target = $(e.target).data('bs-target');
+
+        // Если переключились на вкладку "Уровни доступа", загружаем данные
+        if (target === '#access-levels') {
+            const employeeId = $('#editEmployeeId').val();
+            if (employeeId) {
+                loadEmployeeAccessLevels();
+            }
+        }
+    });
+
+
+    // // Функция загрузки данных сотрудника для редактирования
+    // function loadEmployeeDataForEdit(employeeId) {
+    //     fetch(`${API_BASE_URL}/getEmployeeByID?id=${employeeId}`)
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log('Данные сотрудника для редактирования:', data);
+    //             populateEditForm(data);
+    //         })
+    //         .catch(error => {
+    //             console.error('Ошибка загрузки данных сотрудника:', error);
+    //             showToast('Не удалось загрузить данные сотрудника', 'danger');
+    //             $('#editEmployeeModal').modal('hide');
+    //         });
+    // }
+
+    // Функция заполнения формы редактирования
+    function populateEditForm(data) {
+        console.log('Данные для заполнения формы:', data);
+
+        if (!data) {
+            console.error('Данные не получены');
+            showToast('Данные сотрудника не получены', 'warning');
+            return;
+        }
+
+        // Извлекаем данные сотрудника
+        let employeeData = null;
+
+        if (data.data && Array.isArray(data.data) && data.data.length > 0) {
+            employeeData = data.data[0];
+        } else if (Array.isArray(data) && data.length > 0) {
+            employeeData = data[0];
+        } else if (typeof data === 'object') {
+            employeeData = data;
+        } else {
+            console.error('Неправильная структура данных:', data);
+            showToast('Неправильная структура данных сотрудника', 'warning');
+            return;
+        }
+
+        // Заполняем форму данными
+        $('#editEmployeeId').val(window.currentEditEmployeeId || employeeData.ID || employeeData.Id || employeeData.id);
+        $('#editLastName').val(employeeData.LastName || employeeData.lastName || '');
+        $('#editFirstName').val(employeeData.FirstName || employeeData.firstName || '');
+        $('#editSecondName').val(employeeData.SecondName || employeeData.secondName || '');
+
+        // Табельный номер
+        $('#editTabelNumber').val(employeeData.Number || employeeData.TabelNumber || employeeData.tabelNumber || '');
+
+        // Должность - получаем GUID и название
+        const positionID = employeeData.PositionID || employeeData.positionId || '';
+        const positionName = employeeData.Position || employeeData.position || '';
+
+        console.log('Должность сотрудника:', {
+            ID: positionID,
+            Name: positionName
+        });
+
+        // Заполняем текстовое поле GUID
+        $('#editPosition').val(positionID);
+
+        // Ожидаем загрузки выпадающего списка и устанавливаем значение
+        setTimeout(() => {
+            const $select = $('#editPositionSelect');
+
+            if (positionID) {
+                // Пытаемся установить по GUID
+                const optionExists = $select.find('option[value="' + positionID + '"]').length > 0;
+
+                if (optionExists) {
+                    $select.val(positionID);
+                    console.log('Должность установлена в select по GUID:', positionID);
+                } else {
+                    console.warn('Должность с GUID', positionID, 'не найдена в списке');
+
+                    // Если опции нет, проверяем кэш и добавляем опцию динамически
+                    if (window.positionsCache) {
+                        const positionInCache = window.positionsCache.find(p => p.ID === positionID);
+                        if (positionInCache) {
+                            // Опция должна была быть в списке, если нет - добавляем
+                            $select.append(`<option value="${positionID}">${positionInCache.Name} (текущая)</option>`);
+                            $select.val(positionID);
+                            console.log('Должность добавлена в select:', positionInCache.Name);
+                        } else if (positionName) {
+                            // Добавляем текущую должность как опцию
+                            $select.append(`<option value="${positionID}">${positionName} (текущая)</option>`);
+                            $select.val(positionID);
+                            console.log('Должность добавлена в select:', positionName);
+                        }
+                    }
+                }
+            } else if (positionName && window.positionsCache) {
+                // Если нет GUID, но есть название, ищем в кэше
+                const foundPosition = window.positionsCache.find(p =>
+                    p.Name && positionName &&
+                    p.Name.toLowerCase() === positionName.toLowerCase()
+                );
+
+                if (foundPosition) {
+                    $select.val(foundPosition.ID);
+                    console.log('Должность найдена по названию:', foundPosition.Name);
+                }
+            }
+        }, 500); // Увеличиваем задержку для гарантии загрузки select
+
+        // Комментарий
+        // $('#editComment').val(employeeData.Comment || employeeData.comment || '');
+        //
+        // // Адреса
+        // $('#editRegistrationAddress').val(employeeData.RegistrationAddress || employeeData.registrationAddress || '');
+        // $('#editResidentialAddress').val(employeeData.ResidentialAddress || employeeData.residentialAddress || '');
+
+        // Паспортные данные
+        $('#editPassportIISUE').val(employeeData.PassportIssue || employeeData.PassportIISUE || employeeData.passportIISUE || '');
+        $('#editPassportNumber').val(employeeData.PassportNumber || employeeData.passportNumber || '');
+
+        // Статус блокировки
+        // const isLocked = employeeData.IsLocked || employeeData.isLocked || false;
+        // $('#editIsChangeLocked').prop('checked', isLocked);
+        //
+        // // PIN-код - сбрасываем флажок
+        // $('#editIsChangePin').prop('checked', false);
+
+        console.log('Форма заполнена. Должность (GUID):', positionID, 'Название:', positionName);
+    }
+
+    function adjustLayout() {
+        // Подгоняем высоту контейнеров под доступное пространство
+        const windowHeight = $(window).height();
+        const topSectionHeight = $('#top-section').outerHeight();
+        const mainContentHeight = windowHeight - topSectionHeight - 30; // 30px для padding
+
+        $('.main-content').css('height', mainContentHeight + 'px');
+    }
+
+    // Функция сохранения изменений сотрудника
+    // Функция сохранения изменений сотрудника
+    function saveEditedEmployee() {
+        const employeeId = $('#editEmployeeId').val();
+
+        if (!employeeId) {
+            showToast('ID сотрудника не найден', 'danger');
+            return;
+        }
+
+        // Собираем данные из формы
+        const positionSelect = $('#editPositionSelect').val();
+        const positionManual = $('#editPosition').val().trim();
+
+        // Приоритет: ручной ввод GUID, затем выбранная должность из списка
+        const position = positionManual || positionSelect;
+        const positionToSend = position || '';
+
+        console.log('Сохраняем данные сотрудника. Position:', positionToSend);
+        console.log('Ручной ввод:', positionManual, 'Выбранное из списка:', positionSelect);
+
+        const employeeData = {
+            // Основные поля
+            id: employeeId,
+            firstName: $('#editFirstName').val().trim(),
+            lastName: $('#editLastName').val().trim(),
+            secondName: $('#editSecondName').val().trim(),
+            tabelNumber: parseInt($('#editTabelNumber').val()) || 0,
+
+            // Должность (GUID)
+            position: positionToSend,
+
+            // Комментарий
+            // comment: $('#editComment').val().trim(),
+
+            // Флаги изменений
+            // isChangeLocked: $('#editIsChangeLocked').is(':checked'),
+            // isChangePin: $('#editIsChangePin').is(':checked'),
+
+            // Дополнительные поля
+            // RegistrationAddress: $('#editRegistrationAddress').val().trim(),
+            // ResidentialAddress: $('#editResidentialAddress').val().trim(),
+            PassportIISUE: $('#editPassportIISUE').val().trim(),
+            PassportNumber: $('#editPassportNumber').val().trim(),
+        };
+
+        // Валидация обязательных полей
+        if (!employeeData.firstName || !employeeData.lastName) {
+            showToast('Фамилия и имя обязательны для заполнения', 'warning');
+            return;
+        }
+
+        if (!employeeData.tabelNumber || employeeData.tabelNumber <= 0) {
+            showToast('Табельный номер обязателен и должен быть положительным числом', 'warning');
+            return;
+        }
+
+        // Логирование для отладки
+        console.log('Отправляемые данные сотрудника:');
+        console.log('ID:', employeeData.id);
+        console.log('Имя:', employeeData.firstName);
+        console.log('Фамилия:', employeeData.lastName);
+        console.log('Отчество:', employeeData.secondName);
+        console.log('Табельный:', employeeData.tabelNumber);
+        console.log('Должность (GUID):', employeeData.position);
+        console.log('Комментарий:', employeeData.Comment);
+        console.log('Адрес регистрации:', employeeData.RegistrationAddress);
+        console.log('Адрес проживания:', employeeData.ResidentialAddress);
+        console.log('Серия паспорта:', employeeData.PassportIISUE);
+        console.log('Номер паспорта:', employeeData.PassportNumber);
+        console.log('Изменить блокировку:', employeeData.isChangeLocked);
+        console.log('Изменить PIN:', employeeData.isChangePin);
+
+        console.log('Сохранение сотрудника:', employeeData);
+
+        // Показываем индикатор загрузки
+        const saveButton = $('#editEmployeeModal .btn-warning');
+        const originalText = saveButton.html();
+        saveButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Сохранение...');
+        saveButton.prop('disabled', true);
+
+        // Отправляем данные на сервер
+        fetch(`${API_BASE_URL}/saveAcsEmployee?idEmployee=${employeeId}`, {
+            method: 'POST',
+            headers: {
+                'accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(employeeData)
+        })
+            .then(async response => {
+                console.log('Статус сохранения:', response.status);
+
+                const responseText = await response.text();
+                console.log('Текст ответа при сохранении:', responseText);
+
+                if (response.ok) {
+                    try {
+                        return responseText ? JSON.parse(responseText) : { status: 'success' };
+                    } catch (e) {
+                        return { status: 'success' };
+                    }
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}. ${responseText}`);
+                }
+            })
+            .then(data => {
+                console.log('Ответ от сервера при сохранении:', data);
+
+                if (data.status === 'success') {
+                    showToast('Данные сотрудника успешно обновлены', 'success');
+                    $('#editEmployeeModal').modal('hide');
+
+                    // Обновляем список сотрудников
+                    if (selectedGroupId) {
+                        loadEmployeesByGroup(selectedGroupId);
+                    }
+                } else {
+                    throw new Error(data.message || data.error || 'Ошибка при обновлении сотрудника');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка сохранения сотрудника:', error);
+                showToast(`Ошибка сохранения: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                saveButton.html(originalText);
+                saveButton.prop('disabled', false);
+            });
+    }
+
+    // Функция удаления сотрудника
+    function deleteEmployee() {
+        const employeeId = $('#editEmployeeId').val();
+
+        if (!employeeId) {
+            showToast('ID сотрудника не найден', 'danger');
+            return;
+        }
+
+        if (!confirm('Вы уверены, что хотите удалить этого сотрудника? Это действие нельзя отменить.')) {
+            return;
+        }
+
+        console.log('Удаление сотрудника, ID:', employeeId);
+
+        // Показываем индикатор загрузки
+        const deleteButton = $('#editEmployeeModal .btn-danger');
+        const originalText = deleteButton.html();
+        deleteButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Удаление...');
+        deleteButton.prop('disabled', true);
+
+        // Правильный endpoint для удаления (согласно контроллеру)
+        fetch(`${API_BASE_URL}/deleteEmployee?id=${employeeId}`, {
+            method: 'DELETE',
+            headers: {
+                'accept': 'application/json'
+            }
+        })
+            .then(response => {
+                console.log('Статус удаления:', response.status);
+
+                if (response.ok) {
+                    return response.text().then(text => {
+                        try {
+                            return text ? JSON.parse(text) : { status: 'success' };
+                        } catch (e) {
+                            return { status: 'success' };
+                        }
+                    });
+                } else if (response.status === 400) {
+                    return response.text().then(text => {
+                        throw new Error(text || 'Ошибка 400 при удалении');
+                    });
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+            })
+            .then(data => {
+                console.log('Ответ от сервера при удалении:', data);
+
+                if (data.status === 'success' || data === '') {
+                    showToast('Сотрудник успешно удален', 'success');
+                    $('#editEmployeeModal').modal('hide');
+
+                    // Обновляем список сотрудников
+                    if (selectedGroupId) {
+                        loadEmployeesByGroup(selectedGroupId);
+                    }
+
+                    // Сбрасываем выбранного сотрудника
+                    selectedEmployeeId = null;
+                    $('#accessLevelsList').empty();
+                    $('#passagesContainer').empty();
+                } else {
+                    throw new Error(data.message || data.error || 'Неизвестная ошибка при удалении');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка удаления сотрудника:', error);
+                showToast(`Ошибка удаления: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                deleteButton.html(originalText);
+                deleteButton.prop('disabled', false);
+            });
+    }
+
+    // Функция для быстрого просмотра данных сотрудника (если нет API для полных данных)
+    function quickEditEmployee(employeeId, event) {
+        event.stopPropagation();
+
+        // Находим строку в таблице
+        const row = $(`tr[data-employee-id="${employeeId}"]`);
+        if (row.length === 0) {
+            showToast('Сотрудник не найден', 'warning');
+            return;
+        }
+
+        // Извлекаем данные из таблицы
+        const fullName = row.find('td:eq(0) strong').text().trim();
+        const nameParts = fullName.split(' ');
+        const lastName = nameParts[0] || '';
+        const firstName = nameParts[1] || '';
+        const secondName = row.find('td:eq(0) small').text().trim() || '';
+        const tabelNumber = row.find('td:eq(1)').text().trim();
+
+        // Заполняем форму
+        $('#editEmployeeId').val(employeeId);
+        $('#editLastName').val(lastName);
+        $('#editFirstName').val(firstName);
+        $('#editSecondName').val(secondName);
+        $('#editTabelNumber').val(tabelNumber === 'Не указан' ? '' : tabelNumber);
+
+        // Сбрасываем остальные поля
+        $('#editPosition').val('');
+        // $('#editComment').val('');
+        // $('#editRegistrationAddress').val('');
+        // $('#editResidentialAddress').val('');
+        $('#editPassportIISUE').val('');
+        $('#editPassportNumber').val('');
+        // $('#editIsChangeLocked').prop('checked', false);
+        // $('#editIsChangePin').prop('checked', false);
+
+        // Показываем модальное окно
+        $('#editEmployeeModal').modal('show');
+    }
+
+    // Альтернативная функция, если API getEmployeeByID не работает
+    function editEmployeeSafe(employeeId, event) {
+        event.stopPropagation();
+
+        // Пробуем загрузить полные данные
+        loadEmployeeDataForEdit(employeeId);
+
+        // Если через 2 секунды данные не загрузились, используем быстрый метод
+        setTimeout(() => {
+            if ($('#editEmployeeModal').is(':visible') && !$('#editFirstName').val()) {
+                console.log('Используем быстрый метод редактирования');
+                quickEditEmployee(employeeId, event);
+            }
+        }, 2000);
+    }
+
+    function initEmployeesTable() {
+        if (employeesDataTable) {
+            employeesDataTable.destroy();
+        }
+
+        employeesDataTable = $('#employeesTable').DataTable({
+            "paging": true,
+            "pageLength": 25,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": false,
+            "scrollY": "100%", // Используем 100% высоты контейнера
+            "scrollCollapse": true,
+            "scrollX": false,
+            "deferRender": true,
+            "scroller": true,
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.13.6/i18n/ru.json"
+            },
+            "dom": '<"top"f>rt<"bottom"ilp><"clear">',
+            "order": [], // Пустой массив = нет сортировки при инициализации
+            "columnDefs": [
+                {"orderable": true, "targets": [0, 1, 2]},
+                {"orderable": false, "targets": [3]}
+            ],
+            "initComplete": function () {
+                // После инициализации корректируем размеры
+                this.api().columns.adjust();
+            }
+        });
+
+        // Настраиваем высоту контейнера для скролла
+        setTimeout(() => {
+            const $wrapper = $('#employeesTable_wrapper');
+            const $scrollBody = $wrapper.find('.dataTables_scrollBody');
+
+            if ($scrollBody.length) {
+                // Устанавливаем высоту для скролл-контейнера
+                const wrapperHeight = $wrapper.height();
+                const scrollHeadHeight = $wrapper.find('.dataTables_scrollHead').height() || 0;
+                const topHeight = $wrapper.find('.top').height() || 0;
+                const bottomHeight = $wrapper.find('.bottom').height() || 0;
+
+                // Вычисляем доступную высоту для тела таблицы
+                const availableHeight = wrapperHeight - scrollHeadHeight - topHeight - bottomHeight - 10;
+
+                if (availableHeight > 100) {
+                    $scrollBody.css('height', availableHeight + 'px');
+                }
+            }
+        }, 200);
+    }
+
+    function setupEventListeners() {
+        // Обработка выбора даты для проходов
+        $('#passageDate').on('change', function () {
+            if (selectedEmployeeId) {
+                loadPassages();
+            }
+        });
+        // При выборе должности из списка, заполняем поле GUID
+        $(document).on('change', '#editPositionSelect', function() {
+            const selectedValue = $(this).val();
+            if (selectedValue) {
+                $('#editPosition').val(selectedValue);
+            }
+        });
+    }
+
+    // LEFT SECTION - Дерево групп сотрудников
+    function loadEmployeeGroups() {
+        // showLoading('#employeeGroupsTree');
+        
+        // Сначала загружаем список корневых групп для выпадающего списка
+        // loadTopLevelGroups();
+        
+        // Затем загружаем дерево групп для выбранной группы (или по умолчанию)
+        // const selectedGroupId = $('#groupSelector').val() || "75c0f525-0851-4730-9edc-f16e955a32ca";
+        // if (selectedGroupId) {
+        //     fetch(`${API_BASE_URL}/getEmployeesGroups`)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             renderEmployeeGroupsTree(data);
+        //         })
+        //         .catch(error => {
+        //             console.error('Ошибка загрузки групп:', error);
+        //             showError('#employeeGroupsTree', 'Не удалось загрузить группы');
+        //         });
+        // } else {
+        //     // Если группа не выбрана, загружаем дерево для группы по умолчанию
+        //     fetch(`${API_BASE_URL}/getEmployeesGroups`)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             renderEmployeeGroupsTree(data);
+        //         })
+        //         .catch(error => {
+        //             console.error('Ошибка загрузки групп:', error);
+        //             showError('#employeeGroupsTree', 'Не удалось загрузить группы');
+        //         });
+        // }
+        showLoading('#employeeGroupsTree');
+        // Сначала загружаем список всех групп для выпадающего списка
+        fetch(`${API_BASE_URL}/getEmployeesGroups`)
+            .then(response => response.json())
+            .then(data => {
+                // Сохраняем все группы для использования при фильтрации
+                window.allGroupsData = data;
+
+                // Заполняем выпадающий список
+                renderTopLevelGroups(data);
+
+                // Устанавливаем группу по умолчанию
+                const defaultGroupId = "75c0f525-0851-4730-9edc-f16e955a32ca";
+
+                // Находим группу по умолчанию в данных
+                const defaultGroup = findGroupById(data, defaultGroupId);
+
+                if (defaultGroup) {
+                    // Устанавливаем в селекторе
+                    $('#groupSelector').val(defaultGroupId);
+
+                    // Отображаем дерево для группы по умолчанию
+                    filterAndDisplayGroupTree(defaultGroupId);
+
+                    // Загружаем сотрудников для группы по умолчанию
+                    selectedGroupId = defaultGroupId;
+                    loadEmployeesByGroup(defaultGroupId);
+                } else {
+                    // Если группа по умолчанию не найдена, показываем все группы
+                    renderEmployeeGroupsTree(data);
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки групп:', error);
+                showError('#employeeGroupsTree', 'Не удалось загрузить группы');
+            });
+    }
+    // Вспомогательная функция для поиска группы по ID
+    function findGroupById(groups, id) {
+        if (!groups || !id) return null;
+
+        // Если группы - массив
+        if (Array.isArray(groups)) {
+            for (const group of groups) {
+                if (group.id === id || group.ID === id) return group;
+                if (group.children) {
+                    const found = findGroupById(group.children, id);
+                    if (found) return found;
+                }
+            }
+        }
+        // Если группы - объект с полем groups
+        else if (groups.groups && Array.isArray(groups.groups)) {
+            return findGroupById(groups.groups, id);
+        }
+
+        return null;
+    }
+    // Функция для фильтрации и отображения дерева выбранной группы
+    function filterAndDisplayGroupTree(groupId) {
+        if (!window.allGroupsData) return;
+
+        // Находим выбранную группу
+        const selectedGroup = findGroupById(window.allGroupsData, groupId);
+
+        if (selectedGroup) {
+            // Отображаем только выбранную группу и её подгруппы
+            renderEmployeeGroupsTree([selectedGroup]);
+
+            // Выделяем выбранную группу в дереве
+            setTimeout(() => {
+                const $tree = $('#employeeGroupsTree');
+                const tree = $tree.jstree(true);
+                if (tree) {
+                    tree.select_node(groupId);
+                }
+            }, 300);
+        } else {
+            // Если группа не найдена, показываем все группы
+            renderEmployeeGroupsTree(window.allGroupsData);
+        }
+    }
+
+    // Загрузка корневых групп для выпадающего списка
+    function loadTopLevelGroups() {
+        fetch(`${API_BASE_URL}/getEmployeesGroups`)
+            .then(response => response.json())
+            .then(data => {
+                renderTopLevelGroups(data);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки корневых групп:', error);
+                // В случае ошибки оставляем заглушку
+                const select = $('#groupSelector');
+                select.empty();
+                select.append('<option value="">Ошибка загрузки групп</option>');
+            });
+    }
+    
+    // Отображение корневых групп в выпадающем списке
+    function renderTopLevelGroups(data) {
+        const select = $('#groupSelector');
+        select.empty();
+
+        // Если данные пришли в формате { "groups": [...] }
+        const groups = data.groups || data || [];
+
+        if (!Array.isArray(groups) || groups.length === 0) {
+            select.append('<option value="">Нет доступных групп</option>');
+            return;
+        }
+
+        // Добавляем опцию по умолчанию
+        select.append('<option value="">Выберите группу</option>');
+
+        // Сортируем группы по имени
+        const sortedGroups = [...groups].sort((a, b) => {
+            const nameA = (a.name || a.Name || '').toLowerCase();
+            const nameB = (b.name || b.Name || '').toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        // Добавляем группы в выпадающий список
+        sortedGroups.forEach(group => {
+            if (group.id) {
+                const text = group.name || group.Name || group.id;
+                select.append(`<option value="${group.id}">${text}</option>`);
+            }
+        });
+    }
+    
+    // Обработчик выбора группы из выпадающего списка
+    function onGroupSelected(selectedGroupId) {
+        const groupId = selectedGroupId || $('#groupSelector').val();
+        
+        if (!groupId) {
+            return;
+        }
+        // Очищаем выбранного сотрудника
+        selectedEmployeeId = null;
+        $('#accessLevelsList').empty();
+        $('#passagesContainer').empty();
+
+        // Если есть DataTable, сбрасываем её
+        if (employeesDataTable) {
+            employeesDataTable.clear().draw();
+        } else {
+            $('#employeesList').empty();
+        }
+
+        // Отображаем дерево для выбранной группы
+        filterAndDisplayGroupTree(groupId);
+
+        // Загружаем сотрудников выбранной группы
+        selectedGroupId = groupId;
+        // Загружаем дерево для выбранной группы
+        loadEmployeesByGroup(groupId);
+    }
+
+    function renderEmployeeGroupsTree(data) {
+        const $tree = $('#employeeGroupsTree');
+
+        // Уничтожаем предыдущее дерево
+        const existingTree = $.jstree.reference($tree);
+        if (existingTree) {
+            existingTree.destroy(true);
+        }
+
+        $tree.empty();
+
+        console.log('Строим дерево из данных:', data);
+
+        // Проверяем, есть ли данные для дерева
+        const treeData = transformGroupsToTree(data);
+        console.log('Данные для jsTree:', treeData);
+
+        // Инициализируем новое дерево с оптимизацией
+        $tree.jstree({
+            'core': {
+                'data': treeData,
+                'themes': {
+                    'responsive': true,
+                    'dots': true,
+                    'icons': true
+                },
+                'check_callback': true,
+                'multiple': false,
+                'animation': 0,
+                'expand_selected_onload': false // Не разворачиваем автоматически
+            },
+            'plugins': ['wholerow', 'types'],
+            'types': {
+                'default': {
+                    'icon': 'bi bi-folder'
+                }
+            }
+        }).on('ready.jstree', function() {
+            // После загрузки дерева показываем сообщение о завершении
+            console.log('Дерево групп загружено успешно');
+        });
+
+        // Подписываемся на события
+        $tree.off('select_node.jstree'); // Убираем старые обработчики
+        $tree.on('select_node.jstree', function(e, data) {
+            console.log('Выбран узел дерева:', data.node);
+            if (data && data.node) {
+                selectedGroupId = data.node.id;
+                const groupName = data.node.text;
+                console.log('Выбрана группа:', groupName, 'ID:', selectedGroupId);
+
+                // Обновляем информацию о группе в модальном окне (если оно открыто)
+                if ($('#addEmployeeModal').is(':visible')) {
+                    $('#addEmployeeGroupId').val(selectedGroupId);
+                    $('#groupNameDisplay').text(`Сотрудник будет добавлен в группу: ${groupName}`);
+                }
+
+                // Загружаем сотрудников выбранной группы
+                loadEmployeesByGroup(selectedGroupId);
+            }
+        });
+
+        // Не разворачиваем узлы автоматически - оставляем свернутыми для лучшей производительности
+        console.log('Дерево готово, узлы не разворачиваются автоматически');
+    }
+
+    function transformGroupsToTree(data) {
+        console.log('Преобразование данных для дерева:', data);
+
+        if (!data) {
+            console.warn('Нет данных для дерева');
+            return [];
+        }
+
+        // Если данные приходят в формате { "groups": [...] }
+        if (data.groups && Array.isArray(data.groups)) {
+            console.log('Используем data.groups, количество:', data.groups.length);
+            return transformGroupsArray(data.groups);
+        }
+
+        // Если данные приходят сразу как массив
+        if (Array.isArray(data)) {
+            console.log('Используем data как массив, количество:', data.length);
+            return transformGroupsArray(data);
+        }
+
+        console.warn('Неизвестный формат данных групп:', data);
+        return [];
+    }
+
+    function transformGroupsArray(groups) {
+        if (!groups || !Array.isArray(groups)) {
+            console.warn('Нет групп или не массив:', groups);
+            return [];
+        }
+
+        console.log('Преобразование массива групп, количество:', groups.length);
+
+        return groups.map(group => {
+            console.log('Обработка группы:', group);
+
+            const node = {
+                id: group.id || group.ID || '',
+                text: group.text || group.name || group.Name || 'Без названия',
+                icon: group.icon || "bi bi-folder",
+                children: []
+            };
+
+            // Если есть подгруппы
+            if (group.children && Array.isArray(group.children) && group.children.length > 0) {
+                console.log('У группы есть дети:', group.children.length);
+                node.children = transformGroupsArray(group.children);
+            } else if (group.children === false) {
+                node.children = false;
+            } else {
+                node.children = false;
+            }
+
+            return node;
+        });
+    }
+
+    // Обновляем функцию для отображения информации о группе при выборе в дереве
+    function handleTreeSelect(e, data) {
+        if (data && data.node) {
+            selectedGroupId = data.node.id;
+            const groupName = data.node.text;
+            console.log('Выбрана группа:', groupName, 'ID:', selectedGroupId);
+
+            // Обновляем информацию о группе в модальном окне (если оно открыто)
+            if ($('#addEmployeeModal').is(':visible')) {
+                $('#addEmployeeGroupId').val(selectedGroupId);
+                $('#groupNameDisplay').text(`Сотрудник будет добавлен в группу: ${groupName}`);
+            }
+
+            // Загружаем сотрудников выбранной группы
+            loadEmployeesByGroup(selectedGroupId);
+        }
+    }
+
+    // CENTER SECTION - Сотрудники группы
+    function loadEmployeesByGroup(groupId) {
+        if (!groupId) {
+            console.warn('ID группы не указан');
+            return;
+        }
+        
+        showLoading('#employeesList');
+
+        fetch(`${API_BASE_URL}/getByGroupID?idGroup=${groupId}`)
+            .then(response => response.text())
+            .then(text => {
+                console.log('Сырой ответ от API:', text.substring(0, 500));
+
+                try {
+                    const data = JSON.parse(text);
+                    console.log('Парсинг успешен, данные:', data);
+                    renderEmployeesList(data);
+                } catch (e) {
+                    console.error('Ошибка парсинга JSON:', e);
+                    showError('#employeesList', 'Ошибка формата данных от сервера');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки сотрудников:', error);
+                showError('#employeesList', 'Не удалось загрузить сотрудников');
+            });
+    }
+
+    function renderEmployeesList(data) {
+        if (!employeesDataTable) {
+            initEmployeesTable();
+            setTimeout(() => renderEmployeesList(data), 100);
+            return;
+        }
+
+        // Очищаем таблицу
+        employeesDataTable.clear();
+
+        if (!data) {
+            showNoDataMessage();
+            return;
+        }
+
+        // Извлекаем массив сотрудников из данных
+        let employeesArray = [];
+
+        if (Array.isArray(data)) {
+            employeesArray = data;
+        } else if (data.employees && Array.isArray(data.employees)) {
+            employeesArray = data.employees;
+        } else if (data.data && Array.isArray(data.data)) {
+            employeesArray = data.data;
+        } else if (data.result && Array.isArray(data.result)) {
+            employeesArray = data.result;
+        } else {
+            console.warn('Неизвестный формат данных сотрудников:', data);
+            showNoDataMessage();
+            return;
+        }
+
+        if (employeesArray.length === 0) {
+            showNoDataMessage();
+            return;
+        }
+
+        // Добавляем данные в таблицу
+        employeesArray.forEach(employee => {
+            const row = createEmployeeRow(employee);
+            employeesDataTable.row.add($(row));
+        });
+// ВАЖНО: Сбрасываем сортировку перед отрисовкой
+        employeesDataTable.order([]).draw();
+        // employeesDataTable.draw();
+
+        // Корректируем размеры после отрисовки
+        setTimeout(() => {
+            employeesDataTable.columns.adjust();
+
+            // Пересчитываем высоту скролл-контейнера
+            const $wrapper = $('#employeesTable_wrapper');
+            const $scrollBody = $wrapper.find('.dataTables_scrollBody');
+
+            if ($scrollBody.length) {
+                const wrapperHeight = $wrapper.height();
+                const scrollHeadHeight = $wrapper.find('.dataTables_scrollHead').height() || 0;
+                const topHeight = $wrapper.find('.top').height() || 0;
+                const bottomHeight = $wrapper.find('.bottom').height() || 0;
+
+                const availableHeight = wrapperHeight - scrollHeadHeight - topHeight - bottomHeight - 10;
+
+                if (availableHeight > 100) {
+                    $scrollBody.css('height', availableHeight + 'px');
+                }
+            }
+        }, 50);
+    }
+
+    // Функция загрузки списка должностей для выпадающего списка
+    function loadPositionsForSelect() {
+        console.log('Загрузка должностей...');
+
+        fetch(`${API_BASE_URL}/getPositions`)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Получены должности (объект):', data);
+
+                const select = $('#editPositionSelect');
+                select.empty();
+                select.append('<option value="">Выберите должность</option>');
+
+                // Проверяем тип данных - это объект, а не массив!
+                if (typeof data !== 'object' || data === null) {
+                    console.warn('Неверный формат данных должностей:', data);
+                    select.append('<option value="">Ошибка загрузки должностей</option>');
+                    return;
+                }
+
+                // Преобразуем объект в массив для удобства
+                const positionsArray = Object.entries(data).map(([id, name]) => ({
+                    ID: id,
+                    Name: name
+                }));
+
+                console.log('Преобразованный массив должностей:', positionsArray);
+
+                if (positionsArray.length === 0) {
+                    select.append('<option value="">Нет доступных должностей</option>');
+                    return;
+                }
+
+                // Сортируем по названию для удобства
+                positionsArray.sort((a, b) => a.Name.localeCompare(b.Name));
+
+                // Заполняем список
+                positionsArray.forEach(position => {
+                    const id = position.ID || '';
+                    const name = position.Name || 'Без названия';
+                    if (id && name) {
+                        select.append(`<option value="${escapeHtml(id)}">${escapeHtml(name)}</option>`);
+                    }
+                });
+
+                console.log('Должности загружены, количество:', positionsArray.length);
+
+                // Сохраняем список должностей для быстрого доступа
+                window.positionsCache = positionsArray;
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки должностей:', error);
+                $('#editPositionSelect').html(`
+                <option value="">Ошибка загрузки должностей</option>
+                <option value="">Проверьте подключение к API</option>
+            `);
+            });
+    }
+    //функция для поиска должности по названию
+    function findPositionByName(name) {
+        if (!window.positionsCache || !name) return null;
+
+        const found = window.positionsCache.find(pos => {
+            const posName = pos.Name || pos.name || pos.Title || '';
+            return posName.toLowerCase() === name.toLowerCase().trim();
+        });
+
+        return found ? found.ID || found.id || found.GUID : null;
+    }
+
+    function createEmployeeRow(employee) {
+        const employeeId = employee.ID || employee.id || employee.Id || `emp_${Date.now()}`;
+        const lastName = employee.LastName || employee.lastName || '';
+        const firstName = employee.FirstName || employee.firstName || '';
+        const secondName = employee.SecondName || employee.secondName || '';
+        const tabelNumber = employee.Number || employee.Number || '';
+        const isLocked = employee.IsLocked || employee.isLocked || false;
+
+        const statusClass = isLocked ? 'status-locked' : 'status-active';
+        const statusText = isLocked ? 'Заблокирован' : 'Активен';
+        const lockIcon = isLocked ? 'bi-lock-fill' : 'bi-unlock-fill';
+        const lockButtonClass = isLocked ? 'btn-success' : 'btn-danger';
+        const lockButtonIcon = isLocked ? 'bi-unlock' : 'bi-lock';
+        const actionButtons = `
+    <td>
+        <div class="btn-group btn-group-sm" role="group">
+            <button class="btn btn-warning btn-sm action-btn" onclick="editEmployee('${employeeId}', event)"
+                    title="Редактировать сотрудника">
+                <i class="bi bi-pencil"></i>
+            </button>
+            <button class="btn ${lockButtonClass} btn-sm action-btn"
+                    onclick="toggleEmployeeLock('${employeeId}', ${!isLocked}, event)"
+                    title="${isLocked ? 'Разблокировать' : 'Заблокировать'}">
+                <i class="bi ${lockButtonIcon}"></i>
+            </button>
+        </div>
+    </td>
+`;
+        return `
+            <tr data-employee-id="${employeeId}" onclick="selectEmployee('${employeeId}')"
+                class="${employeeId === selectedEmployeeId ? 'table-primary' : ''}">
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="employee-avatar">
+                            ${getInitials(lastName, firstName)}
+                        </div>
+                        <div>
+                            <strong>${escapeHtml(lastName)} ${escapeHtml(firstName)}</strong>
+                            ${secondName ? `<br><small>${escapeHtml(secondName)}</small>` : ''}
+                        </div>
+                    </div>
+                </td>
+                <td>${escapeHtml(tabelNumber) || 'Не указан'}</td>
+                <td><span class="${statusClass}"><i class="bi ${lockIcon}"></i> ${statusText}</span></td>
+                <td>
+                    <button class="btn btn-warning btn-sm action-btn" onclick="editEmployee('${employeeId}', event)">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                    <button class="btn ${lockButtonClass} btn-sm action-btn"
+                            onclick="toggleEmployeeLock('${employeeId}', ${!isLocked}, event)">
+                        <i class="bi ${lockButtonIcon}"></i>
+                    </button>
+                </td>
+            </tr>
+        `;
+    }
+
+    // Функция для просмотра подробной информации о сотруднике
+    function viewEmployeeDetails(employeeId, event) {
+        event.stopPropagation();
+        console.log('Просмотр подробностей сотрудника:', employeeId);
+
+        // Загрузить подробную информацию с сервера
+        fetch(`${API_BASE_URL}/getEmployeeByID?id=${employeeId}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Подробные данные сотрудника:', data);
+
+                // Заполнить модальное окно подробной информацией
+                if (data.fio) {
+                    $('#detailEmployeeName').text(data.fio);
+                }
+                if (data.department) {
+                    $('#detailEmployeeDepartment').text(data.department);
+                }
+                if (data.number) {
+                    $('#detailEmployeeNumber').text(data.number);
+                }
+                if (data.position) {
+                    $('#detailEmployeePosition').text(data.position);
+                }
+                if (data.email) {
+                    $('#detailEmployeeEmail').text(data.email);
+                }
+                if (data.comment) {
+                    $('#detailEmployeeComment').text(data.comment);
+                }
+
+                // Показать модальное окно
+                $('#employeeDetailsModal').modal('show');
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки подробностей:', error);
+                showToast('Не удалось загрузить подробную информацию', 'danger');
+            });
+    }
+
+    // // Функция для редактирования сотрудника
+    // function editEmployee(employeeId, event) {
+    //     event.stopPropagation();
+    //     console.log('Редактирование сотрудника:', employeeId);
+    //
+    //     // Найти сотрудника в текущих данных
+    //     const employeeRow = $(`tr[data-employee-id="${employeeId}"]`);
+    //     if (employeeRow.length === 0) {
+    //         showToast('Сотрудник не найден', 'warning');
+    //         return;
+    //     }
+    //
+    //     // Получить данные из таблицы
+    //     const lastName = employeeRow.find('td:eq(0) strong').text().split(' ')[0] || '';
+    //     const firstName = employeeRow.find('td:eq(0) strong').text().split(' ')[1] || '';
+    //     const secondName = employeeRow.find('td:eq(0) small').text() || '';
+    //     const tabelNumber = employeeRow.find('td:eq(1)').text() || '';
+    //
+    //     // Заполнить форму редактирования
+    //     $('#editEmployeeId').val(employeeId);
+    //     $('#editLastName').val(lastName);
+    //     $('#editFirstName').val(firstName);
+    //     $('#editSecondName').val(secondName);
+    //     $('#editTabelNumber').val(tabelNumber === 'Не указан' ? '' : tabelNumber);
+    //
+    //     // Показать модальное окно
+    //     $('#editEmployeeModal').modal('show');
+    // }
+
+    // Функция для сохранения изменений сотрудника
+    // function saveEditedEmployee() {
+    //     const employeeId = $('#editEmployeeId').val();
+    //
+    //     if (!employeeId) {
+    //         showToast('ID сотрудника не найден', 'danger');
+    //         return;
+    //     }
+    //
+    //     // Собираем данные из формы
+    //     const positionSelect = $('#editPositionSelect').val();
+    //     const positionManual = $('#editPosition').val().trim();
+    //
+    //     // Приоритет: ручной ввод GUID, затем выбранная должность из списка
+    //     const position = positionManual || positionSelect;
+    //     const positionToSend = position || '';
+    //
+    //     console.log('Сохраняем данные сотрудника. Position:', positionToSend);
+    //     console.log('Ручной ввод:', positionManual, 'Выбранное из списка:', positionSelect);
+    //
+    //     const employeeData = {
+    //         // Основные поля
+    //         id: employeeId,
+    //         firstName: $('#editFirstName').val().trim(),
+    //         lastName: $('#editLastName').val().trim(),
+    //         secondName: $('#editSecondName').val().trim(),
+    //         tabelNumber: parseInt($('#editTabelNumber').val()) || 0,
+    //
+    //         // Должность (GUID)
+    //         position: positionToSend,
+    //
+    //         // Адреса
+    //         registrationAddress: $('#editRegistrationAddress').val().trim(),
+    //         residentialAddress: $('#editResidentialAddress').val().trim(),
+    //
+    //         // Паспортные данные
+    //         passportIISUE: $('#editPassportIISUE').val().trim(),
+    //         passportNumber: $('#editPassportNumber').val().trim(),
+    //
+    //         // Комментарий
+    //         comment: $('#editComment').val().trim(),
+    //
+    //         // Флаги изменений
+    //         isChangeLocked: $('#editIsChangeLocked').is(':checked'),
+    //         isChangePin: $('#editIsChangePin').is(':checked'),
+    //
+    //         // Дополнительные поля для совместимости
+    //         Comment: $('#editComment').val().trim(), // Дублируем для сервера
+    //         RegistrationAddress: $('#editRegistrationAddress').val().trim(),
+    //         ResidentialAddress: $('#editResidentialAddress').val().trim(),
+    //         PassportIISUE: $('#editPassportIISUE').val().trim(),
+    //         PassportNumber: $('#editPassportNumber').val().trim()
+    //     };
+    //
+    //     // Валидация обязательных полей
+    //     if (!employeeData.firstName || !employeeData.lastName) {
+    //         showToast('Фамилия и имя обязательны для заполнения', 'warning');
+    //         return;
+    //     }
+    //
+    //     if (!employeeData.tabelNumber || employeeData.tabelNumber <= 0) {
+    //         showToast('Табельный номер обязателен и должен быть положительным числом', 'warning');
+    //         return;
+    //     }
+    //
+    //     console.log('Сохранение сотрудника:', employeeData);
+    //
+    //     // Показываем индикатор загрузки
+    //     const saveButton = $('#editEmployeeModal .btn-warning');
+    //     const originalText = saveButton.html();
+    //     saveButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Сохранение...');
+    //     saveButton.prop('disabled', true);
+    //
+    //     // Отправляем данные на сервер
+    //     fetch(`${API_BASE_URL}/saveAcsEmployee?idEmployee=${employeeId}`, {
+    //         method: 'POST',
+    //         headers: {
+    //             'accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(employeeData)
+    //     })
+    //         .then(async response => {
+    //             console.log('Статус сохранения:', response.status);
+    //
+    //             const responseText = await response.text();
+    //             console.log('Текст ответа при сохранении:', responseText);
+    //
+    //             if (response.ok) {
+    //                 try {
+    //                     return responseText ? JSON.parse(responseText) : { status: 'success' };
+    //                 } catch (e) {
+    //                     return { status: 'success' };
+    //                 }
+    //             } else {
+    //                 throw new Error(`HTTP error! status: ${response.status}. ${responseText}`);
+    //             }
+    //         })
+    //         .then(data => {
+    //             console.log('Ответ от сервера при сохранении:', data);
+    //
+    //             if (data.status === 'success') {
+    //                 showToast('Данные сотрудника успешно обновлены', 'success');
+    //                 $('#editEmployeeModal').modal('hide');
+    //
+    //                 // Обновляем список сотрудников
+    //                 if (selectedGroupId) {
+    //                     loadEmployeesByGroup(selectedGroupId);
+    //                 }
+    //             } else {
+    //                 throw new Error(data.message || data.error || 'Ошибка при обновлении сотрудника');
+    //             }
+    //         })
+    //         .catch(error => {
+    //             console.error('Ошибка сохранения сотрудника:', error);
+    //             showToast(`Ошибка сохранения: ${error.message}`, 'danger');
+    //         })
+    //         .finally(() => {
+    //             // Восстанавливаем кнопку
+    //             saveButton.html(originalText);
+    //             saveButton.prop('disabled', false);
+    //         });
+    // }
+
+    // Функция для удаления сотрудника
+    // function deleteEmployee(employeeId, event) {
+    //     event.stopPropagation();
+    //
+    //     if (!confirm('Вы уверены, что хотите удалить этого сотрудника?')) {
+    //         return;
+    //     }
+    //
+    //     console.log('Удаление сотрудника:', employeeId);
+    //
+    //     fetch(`${API_BASE_URL}/deleteEmployee?id=${employeeId}`, {
+    //         method: 'DELETE'
+    //     })
+    //         .then(response => {
+    //             if (response.ok) {
+    //                 showToast('Сотрудник успешно удален', 'success');
+    //
+    //                 // Обновляем таблицу сотрудников
+    //                 if (selectedGroupId) {
+    //                     loadEmployeesByGroup(selectedGroupId);
+    //                 }
+    //
+    //                 // Сбрасываем выбранного сотрудника
+    //                 selectedEmployeeId = null;
+    //                 $('#accessLevelsList').empty();
+    //                 $('#passagesContainer').empty();
+    //             } else {
+    //                 throw new Error('Ошибка при удалении сотрудника');
+    //             }
+    //         })
+    //         .catch(error => {
+    //             console.error('Ошибка:', error);
+    //             showToast('Ошибка при удалении сотрудника', 'danger');
+    //         });
+    // }
+
+    function showNoDataMessage() {
+        if (!employeesDataTable) {
+            initEmployeesTable();
+        }
+
+        employeesDataTable.clear();
+        employeesDataTable.row.add([
+            '<div class="text-center py-3" colspan="4">Нет сотрудников в выбранной группе</div>',
+            '',
+            '',
+            ''
+        ]).draw();
+    }
+
+    function selectEmployee(employeeId) {
+        selectedEmployeeId = employeeId;
+
+        // Убираем подсветку со всех строк
+        $('#employeesTable tbody tr').removeClass('table-primary');
+
+        // Подсвечиваем выбранную строку
+        $(`tr[data-employee-id="${employeeId}"]`).addClass('table-primary');
+
+        // Загрузка уровней доступа для выбранного сотрудника
+        loadAccessLevels(employeeId);
+        // Загрузка проходов для выбранного сотрудника
+        loadPassages();
+    }
+
+    // RIGHT SECTION - Уровни доступа
+    function loadAccessLevels(employeeId) {
+        showLoading('#accessLevelsList');
+
+        fetch(`${API_BASE_URL}/getAccessLevelsEmployee?idEmployee=${employeeId}`)
+            .then(response => response.json())
+            .then(data => {
+                renderAccessLevels(data);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки уровней доступа:', error);
+                showError('#accessLevelsList', 'Не удалось загрузить уровни доступа');
+            });
+    }
+
+    function renderAccessLevels(levels) {
+        const container = $('#accessLevelsList');
+
+        if (!levels || !Array.isArray(levels)) {
+            container.html('<div class="alert alert-info">Нет доступных уровней доступа</div>');
+            return;
+        }
+
+        let html = '';
+
+        if (levels.length === 0) {
+            html = '<div class="alert alert-info">Нет доступных уровней доступа</div>';
+        } else {
+            levels.forEach(level => {
+                const endDate = level.EndDate ? new Date(level.EndDate).toLocaleDateString() : 'Не ограничен';
+                html += `
+                    <div class="card mb-2">
+                        <div class="card-body p-3">
+                            <h6 class="card-title mb-1">${escapeHtml(level.Name || 'Без названия')}</h6>
+                            ${level.Description ? `<p class="card-text small text-muted mb-1">${escapeHtml(level.Description)}</p>` : ''}
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-secondary">Точек доступа: ${level.NumberOfAccessPoints || 0}</span>
+                                <span class="small">До: ${endDate}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        container.html(html);
+    }
+
+    // BOTTOM SECTION - Проходы
+    function loadPassages() {
+        if (!selectedEmployeeId) {
+            $('#passagesContainer').html('<div class="text-center py-3">Выберите сотрудника для просмотра проходов</div>');
+            return;
+        }
+
+        const date = $('#passageDate').val();
+        const formattedDate = formatDateForAPI(date);
+
+        showLoading('#passagesContainer');
+
+        console.log('Загружаем проходы для сотрудника:', selectedEmployeeId, 'дата:', formattedDate);
+
+        fetch(`${API_BASE_URL}/getPassagesByDate?idEmployee=${selectedEmployeeId}&dataPassages=${formattedDate}`)
+            .then(response => {
+                console.log('Ответ от API проходов:', response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.text().then(text => {
+                    console.log('Сырой ответ от API проходов:', text.substring(0, 500));
+                    try {
+                        return JSON.parse(text);
+                    } catch (e) {
+                        console.error('Ошибка парсинга JSON:', e);
+                        throw new Error('Невалидный JSON в ответе');
+                    }
+                });
+            })
+            .then(data => {
+                console.log('Данные проходов:', data);
+                renderPassages(data);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки проходов:', error);
+                showError('#passagesContainer', 'Не удалось загрузить данные о проходах');
+            });
+    }
+
+    function renderPassages(data) {
+        const container = $('#passagesContainer');
+
+        console.log('Рендерим проходы, данные:', data);
+
+        // Если данных нет или пустой массив
+        if (!data || !data.data || (Array.isArray(data.data) && data.data.length === 0)) {
+            container.html('<div class="text-center py-3">Нет данных о проходах за выбранную дату</div>');
+            return;
+        }
+
+        // Показываем информацию о сотруднике
+        let headerHtml = '';
+        if (data.fio) {
+            headerHtml += `
+            <div class="passage-info mb-3 p-2 bg-light rounded">
+                ${escapeHtml(data.fio)? `<div class="fw-bold">${escapeHtml(data.fio)}:   <small>${escapeHtml(data.department)}</small></div>` : ''}
+            </div>
+            `;
+        }
+
+        // Рендерим проходы
+        renderPassagesArray(data.data, headerHtml);
+    }
+
+    function renderPassagesArray(passages, headerHtml = '') {
+        const container = $('#passagesContainer');
+
+        if (!passages || passages.length === 0) {
+            container.html('<div class="text-center py-3">Нет данных о проходах за выбранную дату</div>');
+            return;
+        }
+
+        console.log('Рендерим массив проходов, количество:', passages.length);
+
+        let html = headerHtml || '';
+
+        // Сортируем проходы по времени
+        const sortedPassages = [...passages].sort((a, b) => {
+            if (a.DataTime && b.DataTime) {
+                try {
+                    // Преобразуем строку формата "2-2-2026 8:11:21" в дату
+                    const parseCustomDate = (dateStr) => {
+                        const [datePart, timePart] = dateStr.split(' ');
+                        const [day, month, year] = datePart.split('-').map(Number);
+                        const [hours, minutes, seconds] = timePart.split(':').map(Number);
+                        return new Date(year, month - 1, day, hours, minutes, seconds);
+                    };
+
+                    const dateA = parseCustomDate(a.DataTime);
+                    const dateB = parseCustomDate(b.DataTime);
+                    return dateA - dateB;
+                } catch (e) {
+                    return 0;
+                }
+            }
+            return 0;
+        });
+
+        sortedPassages.forEach((passage, index) => {
+            // Извлекаем время события
+            let time = '--:--';
+            let dateStr = '';
+            if (passage.DataTime) {
+                try {
+                    const [datePart, timePart] = passage.DataTime.split(' ');
+                    time = timePart || '--:--';
+                    dateStr = datePart || '';
+                } catch (e) {
+                    console.warn('Ошибка парсинга времени:', e);
+                }
+            }
+
+            // Определяем тип события
+            const eventType = passage.MESSAGE || passage.SUBTYPE || passage.TYPE || '';
+            const eventClass = getEventClass(eventType);
+            const eventText = getEventText(eventType);
+
+            // Формируем дополнительную информацию
+            const details = [];
+            if (passage.TYPE && passage.TYPE !== 'INFORMATION') {
+                details.push(`Тип: ${passage.TYPE}`);
+            }
+            if (passage.SUBTYPE) {
+                details.push(`Подтип: ${passage.SUBTYPE}`);
+            }
+
+            html += `
+                <div class="passage-event ${eventClass} d-flex align-items-center flex-nowrap gap-2">
+                <div class="flex-shrink-0 d-flex align-items-baseline gap-1">
+                    <span class="fw-bold">${time}</span>
+                    ${dateStr ? `<span class="text-muted small">${dateStr}</span>`: ''}
+                </div>
+                <div class="badge flex-shrink-0 ${eventClass === 'entrance' ? 'bg-success' : eventClass === 'exit' ? 'bg-danger' : 'bg-warning'}"></div>
+                    ${passage.MESSAGE ? `<div class="text-truncate flex-grow-1" style="min-width: 0;">${escapeHtml(passage.MESSAGE)}</div>` : '<div class="flex-grow-1"></div>'}
+                    ${details.length > 0 ? `<div class="small text-muted flex-shrink-0">${details.join(' • ')}</div>` : ''}
+                </div>
+        `;
+        });
+
+        // Добавляем информацию о количестве
+        html = `<div class="text-center small text-muted mb-2">Найдено проходов: ${passages.length}</div>` + html;
+
+        container.html(html);
+    }
+
+    // Функции управления
+    function refreshLeftSection() {
+        loadEmployeeGroups();
+        selectedGroupId = null;
+        selectedEmployeeId = null;
+        $('#employeesList').empty();
+        $('#accessLevelsList').empty();
+        $('#passagesContainer').empty();
+        if (employeesDataTable) {
+            employeesDataTable.clear().draw();
+        }
+    }
+
+    function refreshCenterSection() {
+        if (selectedGroupId) {
+            loadEmployeesByGroup(selectedGroupId);
+        }
+        if (selectedEmployeeId) {
+            loadAccessLevels(selectedEmployeeId);
+        }
+    }
+
+    function refreshRightSection() {
+        if (selectedEmployeeId) {
+            loadAccessLevels(selectedEmployeeId);
+        }
+    }
+
+    function showAddEmployeeModal() {
+        if (!selectedGroupId) {
+            alert('Пожалуйста, выберите группу для добавления сотрудника');
+            return;
+        }
+
+        // Получаем название выбранной группы из дерева
+        const $tree = $('#employeeGroupsTree');
+        const tree = $tree.jstree(true);
+        const node = tree.get_node(selectedGroupId);
+        const groupName = node ? node.text : 'Неизвестная группа';
+
+        // Заполняем информацию о группе
+        $('#addEmployeeGroupId').val(selectedGroupId);
+        $('#groupNameDisplay').text(`Сотрудник будет добавлен в группу: ${groupName}`);
+
+        // Сбрасываем форму
+        $('#addEmployeeForm')[0].reset();
+        $('#addEmployeeModal').modal('show');
+    }
+
+    // Обновленная функция добавления сотрудника
+    function addEmployee() {
+        // Проверяем, что группа выбрана
+        if (!selectedGroupId) {
+            showToast('Пожалуйста, выберите группу для добавления сотрудника', 'warning');
+            return;
+        }
+
+        const form = $('#addEmployeeForm')[0];
+
+        // Проверка обязательных полей
+        const lastName = form.lastname.value.trim();
+        const firstName = form.firstname.value.trim();
+        const tabelNumber = form.tabelNumber.value.trim();
+
+        if (!lastName || !firstName || !tabelNumber) {
+            showToast('Фамилия, имя и табельный номер обязательны для заполнения', 'warning');
+            return;
+        }
+
+        // Собираем все параметры в URLSearchParams
+        const params = new URLSearchParams();
+
+        // Обязательные параметры
+        params.append('lastname', lastName);
+        params.append('firstname', firstName);
+        params.append('tabelNumber', tabelNumber);
+        params.append('positionGroup', selectedGroupId);
+
+        // Опциональные параметры из формы
+        params.append('secondname', form.secondname.value.trim());
+        params.append('position', form.position.value.trim());
+        params.append('Email', form.Email.value.trim());
+        params.append('EmailDescription', form.EmailDescription.value.trim());
+        params.append('Comment', form.Comment.value.trim());
+
+        // Параметры, которых нет в форме (передаем пустые строки)
+        params.append('AdressReg', '');
+        params.append('PassportIISUE', '');
+        params.append('PassportNumber', '');
+
+        console.log('Отправляемые параметры:', Object.fromEntries(params));
+
+        // Показываем индикатор загрузки
+        const saveButton = $('#addEmployeeModal .btn-primary');
+        const originalText = saveButton.html();
+        saveButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Добавление...');
+        saveButton.prop('disabled', true);
+
+        // Отправляем данные на сервер
+        fetch(`${API_BASE_URL}/addEmployee`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: params.toString()
+        })
+            .then(response => {
+                console.log('Статус ответа:', response.status, response.statusText);
+
+                if (response.ok) {
+                    // Если ответ успешный (200 OK) без тела
+                    return null; // ResponseEntity.ok().build() возвращает только статус
+                } else if (response.status === 400) {
+                    // Если ошибка валидации
+                    throw new Error('Ошибка валидации данных');
+                } else {
+                    throw new Error(`Ошибка сервера: ${response.status}`);
+                }
+            })
+            .then(() => {
+                showToast('Сотрудник успешно добавлен', 'success');
+                $('#addEmployeeModal').modal('hide');
+
+                // Обновляем список сотрудников
+                if (selectedGroupId) {
+                    setTimeout(() => {
+                        loadEmployeesByGroup(selectedGroupId);
+                    }, 500);
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка добавления сотрудника:', error);
+                showToast(`Ошибка добавления: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                saveButton.html(originalText);
+                saveButton.prop('disabled', false);
+            });
+    }
+
+    function toggleEmployeeLock(employeeId, lockState, event) {
+        event.stopPropagation();
+
+        if (confirm(`Вы уверены, что хотите ${lockState ? 'заблокировать' : 'разблокировать'} сотрудника?`)) {
+            fetch(`${API_BASE_URL}/setLocked?idEmployee=${employeeId}&flag=${lockState}`, {
+                method: 'POST'
+            })
+                .then(response => {
+                    if (response.ok) {
+                        refreshCenterSection();
+                        showToast(`Сотрудник успешно ${lockState ? 'заблокирован' : 'разблокирован'}`, 'success');
+                    } else {
+                        throw new Error('Ошибка изменения статуса');
+                    }
+                })
+                .catch(error => {
+                    console.error('Ошибка:', error);
+                    showToast('Ошибка изменения статуса сотрудника', 'danger');
+                });
+        }
+    }
+
+    // Обновленная функция показа модального окна управления доступом
+    function showAccessModal() {
+        if (!selectedEmployeeId) {
+            alert('Выберите сотрудника для управления доступом');
+            return;
+        }
+
+        // Сбрасываем состояние чекбокса "Использовать уровни доступа родительской группы"
+        $('#useParentAccess').prop('checked', false);
+
+        // Загрузка доступных уровней доступа и текущих уровней сотрудника
+        Promise.all([
+            // Загрузка всех доступных уровней доступа
+            fetch(`${API_BASE_URL}/getAccessLevels`).then(r => r.json()),
+            // Загрузка текущих уровней доступа сотрудника
+            fetch(`${API_BASE_URL}/getAccessLevelsEmployee?idEmployee=${selectedEmployeeId}`).then(r => r.json())
+        ])
+            .then(([allLevels, employeeLevels]) => {
+                console.log('Все уровни доступа:', allLevels);
+                console.log('Текущие уровни доступа сотрудника:', employeeLevels);
+
+                // Рендерим уровни доступа с отметкой текущих уровней сотрудника
+                renderAvailableAccessLevels(allLevels, employeeLevels);
+
+                // Показываем модальное окно
+                $('#accessModal').modal('show');
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки уровней доступа:', error);
+                showToast('Не удалось загрузить уровни доступа', 'danger');
+            });
+    }
+
+    // Функция для отображения доступных уровней доступа
+    function renderAvailableAccessLevels(levels, currentEmployeeLevels = []) {
+        const container = $('#availableAccessLevels');
+        container.empty();
+
+        if (!levels || !Array.isArray(levels) || levels.length === 0) {
+            container.html('<div class="text-muted">Нет доступных уровней доступа</div>');
+            return;
+        }
+
+        // Создаем Set из ID текущих уровней доступа сотрудника для быстрой проверки
+        const currentLevelIds = new Set();
+        if (currentEmployeeLevels && Array.isArray(currentEmployeeLevels)) {
+            currentEmployeeLevels.forEach(level => {
+                if (level.ID) {
+                    currentLevelIds.add(level.ID);
+                }
+            });
+        }
+
+        let html = '';
+        levels.forEach(level => {
+            const isChecked = currentLevelIds.has(level.ID);
+            html += `
+            <div class="form-check">
+                <input class="form-check-input level-checkbox" type="checkbox"
+                       value="${level.ID}"
+                       id="level_${level.ID}"
+                       ${isChecked ? 'checked' : ''}>
+                <label class="form-check-label" for="level_${level.ID}">
+                    ${level.Name || 'Без названия'}
+                    ${level.Description ? `<br><small class="text-muted">${level.Description}</small>` : ''}
+                </label>
+            </div>
+            <hr class="my-2">
+        `;
+        });
+
+        container.html(html);
+
+        // Применяем состояние блокировки при рендеринге
+        updateLevelCheckboxesState();
+    }
+    // Функция обновления состояния чекбоксов уровней доступа
+    function updateLevelCheckboxesState() {
+        const useParentAccess = $('#useParentAccess').is(':checked');
+        $('.level-checkbox').prop('disabled', useParentAccess);
+
+        // Если выбрано использование родительских доступов, снимаем все галочки
+        if (useParentAccess) {
+            $('.level-checkbox').prop('checked', false);
+        }
+    }
+
+    // Обработчик изменения состояния чекбокса "Использовать уровни доступа родительской группы"
+    $(document).on('change', '#useParentAccess', function() {
+        updateLevelCheckboxesState();
+    });
+
+    // Функция сохранения уровней доступа
+    function saveAccessLevels() {
+        const useParentAccess = $('#useParentAccess').is(':checked');
+
+        // Собираем выбранные уровни доступа
+        const selectedLevels = [];
+
+        if (!useParentAccess) {
+            // Собираем только если не используем родительские доступы
+            $('.level-checkbox:checked').each(function() {
+                selectedLevels.push($(this).val());
+            });
+
+            // Проверяем, что выбран хотя бы один уровень доступа
+            if (selectedLevels.length === 0) {
+                showToast('Выберите хотя бы один уровень доступа', 'warning');
+                return;
+            }
+        } else {
+            // Если используем родительские доступы, отправляем фиктивное значение
+            // чтобы пройти валидацию @NotEmpty
+            selectedLevels.push("00000000-0000-0000-0000-000000000000"); //2489efd2-fea2-43aa-a713-54ea97fbab6c
+        }
+
+        // Создаем объект в правильном формате
+        const requestData = {
+            guid: selectedLevels
+        };
+
+        console.log('Отправляемые данные уровней доступа:', requestData);
+        console.log('employeeID:', selectedEmployeeId);
+        console.log('isUseParentAccessLevel:', useParentAccess);
+
+        // Показываем индикатор загрузки
+        const saveButton = $('#accessModal .btn-primary');
+        const originalText = saveButton.html();
+        saveButton.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Сохранение...');
+        saveButton.prop('disabled', true);
+
+        // Отправляем данные на сервер
+        fetch(`${API_BASE_URL}/setAccessLevelEmployee?employeeID=${selectedEmployeeId}&isUseParentAccessLevel=${useParentAccess}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(requestData)
+        })
+            .then(async response => {
+                console.log('Статус ответа (уровни доступа):', response.status, response.statusText);
+
+                const responseText = await response.text();
+                console.log('Текст ответа (уровни доступа):', responseText);
+
+                if (!response.ok) {
+                    // Пытаемся извлечь сообщение об ошибке из JSON
+                    try {
+                        const errorData = responseText ? JSON.parse(responseText) : {};
+                        throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+                    } catch (e) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                }
+
+                // Пытаемся распарсить JSON
+                try {
+                    return responseText ? JSON.parse(responseText) : {};
+                } catch (e) {
+                    console.error('Ошибка парсинга JSON (уровни доступа):', e);
+                    // Если ответ пустой или невалидный JSON, но статус 200
+                    if (response.ok) {
+                        return { status: 'success' };
+                    }
+                    throw e;
+                }
+            })
+            .then(data => {
+                console.log('Данные ответа (уровни доступа):', data);
+
+                // Проверяем успешность операции
+                if (data.status === 'success') {
+                    showToast('Уровни доступа успешно обновлены', 'success');
+                    $('#accessModal').modal('hide');
+
+                    // Обновляем список уровней доступа в правой секции
+                    if (selectedEmployeeId) {
+                        loadAccessLevels(selectedEmployeeId);
+                    }
+                } else {
+                    throw new Error(data.message || data.error || 'Неизвестная ошибка при обновлении уровней доступа');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка сохранения уровней доступа:', error);
+                showToast(`Ошибка сохранения уровней доступа: ${error.message}`, 'danger');
+            })
+            .finally(() => {
+                // Восстанавливаем кнопку
+                saveButton.html(originalText);
+                saveButton.prop('disabled', false);
+            });
+    }
+
+    // Вспомогательные функции
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function getInitials(lastName, firstName) {
+        if (!lastName && !firstName) return '??';
+        const first = (lastName && lastName.charAt(0)) || '';
+        const second = (firstName && firstName.charAt(0)) || '';
+        return (first + second).toUpperCase();
+    }
+
+    // Обновленные вспомогательные функции для определения типа события
+    function getEventClass(eventType) {
+        if (!eventType) return '';
+
+        const type = String(eventType).toLowerCase();
+
+        // Проверяем разные варианты для входа
+        if (type.includes('вход') ||
+            type.includes('entry') ||
+            type.includes('accesspointentry') ||
+            type === 'вход') {
+            return 'entrance';
+        }
+
+        // Проверяем разные варианты для выхода
+        if (type.includes('выход') ||
+            type.includes('exit') ||
+            type.includes('accesspointexit') ||
+            type === 'выход') {
+            return 'exit';
+        }
+
+        // Все остальное считаем отказом/ошибкой
+        return 'denied';
+    }
+
+    function getEventText(eventType) {
+        if (!eventType) return 'Событие';
+
+        const type = String(eventType).toLowerCase();
+
+        if (type.includes('вход') || type.includes('entry') || type.includes('accesspointentry')) {
+            return 'Вход';
+        } else if (type.includes('выход') || type.includes('exit') || type.includes('accesspointexit')) {
+            return 'Выход';
+        }
+
+        return 'Событие';
+    }
+
+    function formatDateForAPI(dateString) {
+        const date = new Date(dateString);
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}-${month}-${year}`;
+    }
+
+    function showLoading(selector) {
+        $(selector).html(`
+            <div class="loading-container">
+                <div class="text-center py-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Загрузка...</span>
+                    </div>
+                    <p class="mt-2">Загрузка данных...</p>
+                </div>
+            </div>
+        `);
+    }
+
+    function showError(selector, message) {
+        $(selector).html(`
+            <div class="error-container">
+                <div class="alert alert-danger" role="alert">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    ${escapeHtml(message)}
+                </div>
+            </div>
+        `);
+    }
+
+    function showToast(message, type = 'info') {
+        const toastId = 'toast-' + Date.now();
+        const toast = `
+            <div id="${toastId}" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050">
+                <div class="toast align-items-center text-white bg-${type} border-0" role="alert">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            ${escapeHtml(message)}
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        $('body').append(toast);
+        const toastElement = $(`#${toastId} .toast`);
+        const bsToast = new bootstrap.Toast(toastElement);
+        bsToast.show();
+
+        toastElement.on('hidden.bs.toast', function () {
+            $(`#${toastId}`).remove();
+        });
+    }
+
+    // Функции для вкладки "Отчеты"
+    function loadReports() {
+        console.log('Загрузка отчетов...');
+    }
+
+
+    // Выполняет поиск по введенным данным
+    function performSearch() {
+        const fio = $('#searchFIO').val().trim();
+        const tabel = $('#searchTabel').val().trim();
+
+        // Проверка: хотя бы одно поле заполнено
+        if (!fio && !tabel) {
+            showToast('Введите ФИО или табельный номер для поиска', 'warning');
+            return;
+        }
+
+        // Если введён табельный номер — ищем по нему
+        if (tabel) {
+            if (!/^\d+$/.test(tabel)) {
+                showToast('Табельный номер должен содержать только цифры', 'warning');
+                return;
+            }
+
+            searchMode = 'tabel';
+            showLoading('#employeesList');
+            searchByTabelNumber(tabel);
+            return;
+        }
+
+        // Если введено ФИО — ищем по ФИО
+        if (fio) {
+            searchMode = 'fio';
+            showLoading('#employeesList');
+            searchByFIO(fio);
+            return;
+        }
+    }
+
+    // Поиск по табельному номеру
+    function searchByTabelNumber(tabelNumber) {
+        fetch(`${API_BASE_URL}/getByTabelNumber?tabelNumber=${encodeURIComponent(tabelNumber)}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success' && data.data && Array.isArray(data.data) && data.data.length > 0) {
+                    // Убираем выделение группы
+                    selectedGroupId = null;
+                    $('#employeeGroupsTree').jstree('deselect_all');
+
+                    // Очищаем таблицу и добавляем найденного сотрудника
+                    if (!employeesDataTable) initEmployeesTable();
+                    employeesDataTable.clear();
+
+                    data.data.forEach(emp => {
+                        const row = createEmployeeRow(emp);
+                        employeesDataTable.row.add($(row));
+                    });
+
+                    employeesDataTable.draw();
+                    showToast(`Найден ${data.data.length} сотрудник(а) по табельному номеру`, 'success');
+                } else {
+                    showNoDataMessage();
+                    showToast('Сотрудник с таким табельным номером не найден', 'info');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка поиска по табельному:', error);
+                showError('#employeesList', 'Ошибка поиска по табельному номеру');
+            });
+    }
+
+    // Поиск по ФИО
+    function searchByFIO(fio) {
+        // Разбиваем ФИО на части (если нужно)
+        const parts = fio.trim().split(/\s+/);
+        const lastName = parts[0] || '';
+        const firstName = parts.length > 1 ? parts[1] : '';
+        const secondName = parts.length > 2 ? parts[2] : '';
+
+        showLoading('#employeesList');
+
+        // Формируем параметры запроса
+        const params = new URLSearchParams();
+        if (lastName) params.append('lastName', lastName);
+        if (firstName) params.append('firstName', firstName);
+        if (secondName) params.append('secondName', secondName);
+        params.append('isLock', 'false'); // Ищем только активных (можно сделать опционально)
+
+        fetch(`${API_BASE_URL}/getByFIO?${params.toString()}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success' && data.data && Array.isArray(data.data) && data.data.length > 0) {
+                    // Сбрасываем группу
+                    selectedGroupId = null;
+                    $('#employeeGroupsTree').jstree('deselect_all');
+
+                    // Очищаем таблицу и добавляем найденных
+                    if (!employeesDataTable) initEmployeesTable();
+                    employeesDataTable.clear();
+
+                    data.data.forEach(emp => {
+                        const row = createEmployeeRow(emp);
+                        employeesDataTable.row.add($(row));
+                    });
+
+                    employeesDataTable.draw();
+                    showToast(`Найдено ${data.data.length} сотрудников по ФИО`, 'success');
+                } else {
+                    showNoDataMessage();
+                    showToast('Сотрудники с таким ФИО не найдены', 'info');
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка поиска по ФИО:', error);
+                showError('#employeesList', 'Ошибка поиска по ФИО');
+            });
+    }
+
+    // Сбрасывает поиск и возвращает к текущей группе
+    function resetSearch() {
+        $('#searchFIO').val('');
+        $('#searchTabel').val('');
+        searchMode = null;
+
+        // Если есть выбранная группа — загружаем её
+        if (selectedGroupId) {
+            loadEmployeesByGroup(selectedGroupId);
+        } else {
+            // Иначе очищаем таблицу
+            if (employeesDataTable) {
+                employeesDataTable.clear().draw();
+                showNoDataMessage();
+            }
+        }
+
+        showToast('Поиск сброшен, возвращено к текущей группе', 'info');
+    }
+
+    // Добавим обработчик нажатия Enter в полях поиска
+    $(document).ready(function () {
+        // ... свой существующий код - если нужно ...
+
+        // Установка текущей даты в поле выбора даты
+        // const today = new Date().toISOString().split('T')[0];
+        // $('#passageDate').val(today);
+
+        // loadEmployeeGroups();
+        // setupEventListeners();
+        // adjustLayout();
+
+        // Загрузка должностей
+        // loadPositionsForSelect();
+
+        // Проверка состояния select через 1 секунду после загрузки
+        setTimeout(checkSelectState, 1000);
+
+        // Обработка Enter в полях поиска
+        $('#searchFIO, #searchTabel').on('keypress', function(e) {
+            if (e.which === 13) { // Enter
+                e.preventDefault();
+                performSearch();
+            }
+        });
+    });
+</script>
+</body>
+</html>
