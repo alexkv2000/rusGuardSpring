@@ -286,7 +286,7 @@ const RusGuardAPI = {
      * @returns {Promise<Array>} Массив записей об удалённой работе
      */
     async searchRemoteWork(params) {
-        const REMOTE_WORK_API_URL = 'http://DOC-APP8:4842/CDvService/86d8e4719c0cf1119f353a68ddb4ef9b/RemoteWork/SearchRemoteWorkInfo';
+        const REMOTE_WORK_API_URL = '/api/rusguard/RemoteWork/search';
 
         const requestBody = {
             SearchType: params.searchType,
@@ -298,14 +298,15 @@ const RusGuardAPI = {
         const response = await fetch(REMOTE_WORK_API_URL, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json; charset=utf-8',
+                'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
             body: JSON.stringify(requestBody)
         });
 
         if (!response.ok) {
-            throw new Error(`Ошибка поиска удалённой работы: ${response.status}`);
+            const errorText = await response.text();
+            throw new Error(`Ошибка поиска удалённой работы: ${response.status} ${errorText}`);
         }
 
         return response.json();
