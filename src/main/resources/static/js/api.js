@@ -274,6 +274,41 @@ const RusGuardAPI = {
         const response = await fetch(`${API_BASE_URL}/getByFIO?${params.toString()}`);
         if (!response.ok) throw new Error('Ошибка поиска');
         return response.json();
+    },
+
+    /**
+     * Поиск информации об удалённой работе
+     * @param {Object} params - Параметры поиска
+     * @param {number} params.searchType - Тип поиска: 1 - по логину, 2 - по табельному номеру
+     * @param {string} params.searchData - Логин или табельный номер
+     * @param {string} params.startDate - Дата начала (ISO формат)
+     * @param {string} params.endDate - Дата окончания (ISO формат)
+     * @returns {Promise<Array>} Массив записей об удалённой работе
+     */
+    async searchRemoteWork(params) {
+        const REMOTE_WORK_API_URL = 'http://DOC-APP8:4842/CDvService/86d8e4719c0cf1119f353a68ddb4ef9b/RemoteWork/SearchRemoteWorkInfo';
+
+        const requestBody = {
+            SearchType: params.searchType,
+            SearchData: params.searchData,
+            StartDate: params.startDate,
+            EndDate: params.endDate
+        };
+
+        const response = await fetch(REMOTE_WORK_API_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
+        });
+
+        if (!response.ok) {
+            throw new Error(`Ошибка поиска удалённой работы: ${response.status}`);
+        }
+
+        return response.json();
     }
 };
 

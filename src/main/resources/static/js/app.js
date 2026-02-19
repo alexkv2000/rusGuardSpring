@@ -13,6 +13,8 @@ const App = {
     state: {
         selectedGroupId: null,
         selectedEmployeeId: null,
+        selectedEmployeeData: null, // Данные выбранного сотрудника
+        employeesData: null, // Данные сотрудников текущей группы
         searchMode: null,
         positionsCache: null,
         allGroupsData: null
@@ -34,6 +36,9 @@ const App = {
         // Установка текущей даты
         const today = new Date().toISOString().split('T')[0];
         $('#passageDate').val(today);
+
+        // Инициализация дат для удалённой работы
+        this.initRemoteWorkDates();
 
         // Инициализация DataTable
         setTimeout(() => UIManager.initEmployeesTable(), 100);
@@ -211,8 +216,11 @@ const App = {
 
         // Очищаем выбранного сотрудника
         this.state.selectedEmployeeId = null;
+        this.state.selectedEmployeeData = null;
         $('#accessLevelsList').empty();
         $('#passagesContainer').empty();
+        $('#remoteWorkContainer').empty();
+        $('#remoteWorkEmployeeInfo').text('Выберите сотрудника для просмотра удалённой работы');
 
         if (UIManager.employeesDataTable) {
             UIManager.employeesDataTable.clear().draw();
@@ -351,6 +359,18 @@ const App = {
 
         try {
             const data = await RusGuardAPI.getEmployeesByGroup(groupId);
+
+            // Сохраняем данные сотрудников для последующего использования
+            if (data && Array.isArray(data)) {
+                this.state.employeesData = data;
+            } else if (data && data.data && Array.isArray(data.data)) {
+                this.state.employeesData = data.data;
+            } else if (data && data.employees && Array.isArray(data.employees)) {
+                this.state.employeesData = data.employees;
+            } else if (data && data.result && Array.isArray(data.result)) {
+                this.state.employeesData = data.result;
+            }
+
             UIManager.renderEmployeesList(data);
         } catch (error) {
             console.error('Ошибка загрузки сотрудников:', error);
@@ -365,11 +385,44 @@ const App = {
     selectEmployee(employeeId) {
         this.state.selectedEmployeeId = employeeId;
 
+        // Находим данные выбранного сотрудника
+        if (this.state.employeesData) {
+            const employee = this.state.employeesData.find(emp =>
+                (emp.ID || emp.id || emp.Id) === employeeId
+            );
+            this.state.selectedEmployeeData = employee || null;
+
+            // Обновляем информацию в секции удалённой работы
+            this.updateRemoteWorkEmployeeInfo();
+        }
+
         $('#employeesTable tbody tr').removeClass('table-primary');
         $(`tr[data-employee-id="${employeeId}"]`).addClass('table-primary');
 
         this.loadAccessLevels(employeeId);
         this.loadPassages();
+    },
+
+    /**
+     * Обновление информации о выбранном сотруднике в секции удалённой работы
+     */
+    updateRemoteWorkEmployeeInfo() {
+        const infoSpan = $('#remoteWorkEmployeeInfo');
+
+        if (!this.state.selectedEmployeeData) {
+            infoSpan.html('Выберите сотрудника для просмотра удалённой работы');
+            return;
+        }
+
+        const emp = this.state.selectedEmployeeData;
+        const lastName = emp.LastName || emp.lastName || '';
+        const firstName = emp.FirstName || emp.firstName || '';
+        const secondName = emp.SecondName || emp.secondName || '';
+        const tabelNumber = emp.Number || emp.TabelNumber || emp.tabelNumber || '';
+
+        const fio = [lastName, firstName, secondName].filter(Boolean).join(' ');
+
+        infoSpan.html(`<strong>${Utils.escapeHtml(fio)}</strong> (таб. № ${Utils.escapeHtml(tabelNumber)})`);
     },
 
     /**
@@ -951,9 +1004,13 @@ const App = {
         this.loadInitialData();
         this.state.selectedGroupId = null;
         this.state.selectedEmployeeId = null;
+        this.state.selectedEmployeeData = null;
+        this.state.employeesData = null;
         $('#employeesList').empty();
         $('#accessLevelsList').empty();
         $('#passagesContainer').empty();
+        $('#remoteWorkContainer').empty();
+        $('#remoteWorkEmployeeInfo').text('Выберите сотрудника для просмотра удалённой работы');
 
         if (UIManager.employeesDataTable) {
             UIManager.employeesDataTable.clear().draw();
@@ -986,6 +1043,91 @@ const App = {
      */
     loadReports() {
         console.log('Загрузка отчетов...');
+    },
+
+    // ============================================
+    // УДАЛЁННАЯ РАБОТА
+    // ============================================
+
+    /**
+     * Инициализация полей дат для удалённой работы
+     */
+    initRemoteWorkDates() {
+        const today = new Date().toISOString().split('T')[0];
+        $('#remoteStartDate').val(today);
+        $('#remoteEndDate').val(today);
+    },
+
+    /**
+     * Поиск информации об удалённой работе
+     */
+    async searchRemoteWork() {
+        // Проверяем, что выбран сотрудник
+        if (!this.state.selectedEmployeeData) {
+            Utils.showToast('Выберите сотрудника для поиска удалённой работы', 'warning');
+            return;
+        }
+
+        const startDate = $('#remoteStartDate').val();
+        const endDate = $('#remoteEndDate').val();
+
+        // Валидация
+        if (!startDate || !endDate) {
+            Utils.showToast('Укажите период поиска', 'warning');
+            return;
+        }
+
+        // Получаем табельный номер выбранного сотрудника
+        const tabelNumber = this.state.selectedEmployeeData.Number ||
+                           this.state.selectedEmployeeData.TabelNumber ||
+                           this.state.selectedEmployeeData.tabelNumber;
+
+        if (!tabelNumber) {
+            Utils.showToast('У выбранного сотрудника не указан табельный номер', 'warning');
+            return;
+        }
+
+        // Показываем загрузку
+        $('#remoteWorkContainer').html(`
+            <div class="text-center py-3 text-white-50">
+                <div class="spinner-border spinner-border-sm me-2" role="status">
+                    <span class="visually-hidden">Загрузка...</span>
+                </div>
+                Поиск данных...
+            </div>
+        `);
+
+        // Формируем даты в ISO формате (начало и конец дня)
+        const startDateISO = `${startDate}T00:00:00`;
+        const endDateISO = `${endDate}T23:59:59`;
+
+        try {
+            const data = await RusGuardAPI.searchRemoteWork({
+                searchType: 2, // По табельному номеру
+                searchData: String(tabelNumber),
+                startDate: startDateISO,
+                endDate: endDateISO
+            });
+
+            UIManager.renderRemoteWorkResults(data);
+
+            if (data && data.length > 0) {
+                Utils.showToast(`Найдено ${data.length} записей`, 'success');
+            } else {
+                Utils.showToast('Записей не найдено', 'info');
+            }
+        } catch (error) {
+            console.error('Ошибка поиска удалённой работы:', error);
+
+            $('#remoteWorkContainer').html(`
+                <div class="text-center py-3 text-warning">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    Ошибка поиска: ${Utils.escapeHtml(error.message)}
+                </div>
+            `);
+
+            Utils.showToast(`Ошибка поиска: ${error.message}`, 'danger');
+        }
     }
 };
 

@@ -401,6 +401,67 @@ const UIManager = {
     },
 
     /**
+     * Отображает результаты поиска удалённой работы
+     * @param {Array} data - Массив записей об удалённой работе
+     */
+    renderRemoteWorkResults(data) {
+        const container = $('#remoteWorkContainer');
+
+        if (!data || !Array.isArray(data) || data.length === 0) {
+            container.html(`
+                <div class="text-center py-3 text-white-50">
+                    <i class="bi bi-info-circle me-2"></i>
+                    Нет данных об удалённой работе за выбранный период
+                </div>
+            `);
+            return;
+        }
+
+        // Сортируем по дате (новые сверху)
+        const sortedData = [...data].sort((a, b) => {
+            const dateA = new Date(a.InfoDate);
+            const dateB = new Date(b.InfoDate);
+            return dateB - dateA;
+        });
+
+        let html = `<div class="text-white-50 small mb-2">Найдено записей: ${data.length}</div>`;
+
+        sortedData.forEach(record => {
+            // Парсим дату
+            let formattedDate = '';
+            let formattedTime = '';
+
+            if (record.InfoDate) {
+                try {
+                    const date = new Date(record.InfoDate);
+                    if (!isNaN(date.getTime())) {
+                        formattedDate = date.toLocaleDateString('ru-RU');
+                        formattedTime = date.toLocaleTimeString('ru-RU', {
+                            hour: '2-digit',
+                            minute: '2-digit'
+                        });
+                    }
+                } catch (e) {
+                    console.warn('Ошибка парсинга даты:', record.InfoDate);
+                }
+            }
+
+            html += `
+                <div class="remote-work-event">
+                    <div class="event-time">${formattedTime}</div>
+                    <div class="event-name">${Utils.escapeHtml(record.EventName || 'Событие')}</div>
+                    <div class="event-report">${Utils.escapeHtml(record.ReportText || '')}</div>
+                    <div class="event-login">
+                        <i class="bi bi-person-badge me-1"></i>${Utils.escapeHtml(record.UserLogin || '')}
+                    </div>
+                </div>
+            `;
+        });
+
+        container.html(html);
+    },
+
+    /**
      * Восстанавливает HTML формы редактирования
      */
     restoreEditForm() {

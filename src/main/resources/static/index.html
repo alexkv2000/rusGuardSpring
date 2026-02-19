@@ -153,19 +153,65 @@
         </div>
     </div>
 
-    <!-- BOTTOM SECTION - Проходы -->
+    <!-- BOTTOM SECTION - Проходы / Удалённая работа -->
     <div class="section-footer">
-        <div class="section-header" style="background-color: transparent; padding: 0;">
-            <h5 class="mb-0"><i class="bi bi-clock-history me-2"></i>Время проходов</h5>
-            <div class="d-flex align-items-center">
-                <input type="date" id="passageDate" class="form-control form-control-sm me-2" style="width: 150px;">
-                <button class="refresh-btn" onclick="App.loadPassages()">
-                    <i class="bi bi-arrow-clockwise"></i> Обновить
+        <!-- Вкладки нижней секции -->
+        <ul class="nav nav-tabs mb-2" id="bottomTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="passages-tab" data-bs-toggle="tab"
+                        data-bs-target="#passages-panel" type="button" role="tab">
+                    <i class="bi bi-clock-history me-1"></i>Проходы
                 </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="remote-work-tab" data-bs-toggle="tab"
+                        data-bs-target="#remote-work-panel" type="button" role="tab">
+                    <i class="bi bi-laptop me-1"></i>Удалённая работа
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="bottomTabContent">
+            <!-- Вкладка: Проходы -->
+            <div class="tab-pane fade show active" id="passages-panel" role="tabpanel">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h6 class="mb-0 text-white-50">Проходы через турникеты</h6>
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="date" id="passageDate" class="form-control form-control-sm" style="width: 150px;">
+                        <button class="refresh-btn btn-sm" onclick="App.loadPassages()">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="passages-container" id="passagesContainer">
+                    <!-- Данные о проходах будут загружены здесь -->
+                </div>
             </div>
-        </div>
-        <div class="passages-container" id="passagesContainer">
-            <!-- Данные о проходах будут загружены здесь -->
+
+            <!-- Вкладка: Удалённая работа -->
+            <div class="tab-pane fade" id="remote-work-panel" role="tabpanel">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h6 class="mb-0 text-white-50">
+                        <i class="bi bi-info-circle me-1"></i>
+                        <span id="remoteWorkEmployeeInfo">Выберите сотрудника для просмотра удалённой работы</span>
+                    </h6>
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="input-group input-group-sm" style="width: 320px;">
+                            <span class="input-group-text">С</span>
+                            <input type="date" class="form-control" id="remoteStartDate">
+                            <span class="input-group-text">По</span>
+                            <input type="date" class="form-control" id="remoteEndDate">
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="App.searchRemoteWork()">
+                            <i class="bi bi-search me-1"></i>Найти
+                        </button>
+                    </div>
+                </div>
+                <div class="remote-work-container" id="remoteWorkContainer"
+                     style="max-height: 250px; overflow-y: auto;">
+                    <!-- Данные об удалённой работе будут загружены здесь -->
+                </div>
+            </div>
         </div>
     </div>
 </div>

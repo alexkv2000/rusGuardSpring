@@ -290,6 +290,86 @@ body {
     font-style: italic;
 }
 
+/* --- Remote Work Container --- */
+.remote-work-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.remote-work-container:empty::before {
+    content: "Нет данных об удалённой работе";
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    font-style: italic;
+}
+
+/* --- Remote Work Event Card --- */
+.remote-work-event {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 6px;
+    border-left: 4px solid #17a2b8;
+    transition: all 0.2s;
+}
+
+.remote-work-event:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.remote-work-event .event-time {
+    font-weight: bold;
+    color: #2c3e50;
+    min-width: 70px;
+}
+
+.remote-work-event .event-name {
+    background-color: #17a2b8;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    white-space: nowrap;
+}
+
+.remote-work-event .event-report {
+    flex: 1;
+    color: #495057;
+    font-size: 0.9em;
+}
+
+.remote-work-event .event-login {
+    color: #6c757d;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+/* --- Bottom Tabs --- */
+#bottomTabs .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 6px 15px;
+}
+
+#bottomTabs .nav-link:hover {
+    color: white;
+    border: none;
+}
+
+#bottomTabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+}
+
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
     .main-row {
