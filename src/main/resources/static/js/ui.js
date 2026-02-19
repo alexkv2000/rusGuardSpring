@@ -83,7 +83,7 @@ const UIManager = {
         const lastName = employee.LastName || employee.lastName || '';
         const firstName = employee.FirstName || employee.firstName || '';
         const secondName = employee.SecondName || employee.secondName || '';
-        const tabelNumber = employee.Number || employee.Number || '';
+        const tabelNumber = employee.Number || employee.TabelNumber || employee.tabelNumber || employee.number || '';
         const isLocked = employee.IsLocked || employee.isLocked || false;
 
         const statusClass = isLocked ? 'status-locked' : 'status-active';

@@ -393,6 +393,9 @@ const App = {
             );
             this.state.selectedEmployeeData = employee || null;
 
+            // Отладочный вывод данных выбранного сотрудника
+            console.log('Выбранный сотрудник:', employee);
+
             // Обновляем информацию в секции удалённой работы
             this.updateRemoteWorkEmployeeInfo();
         }
@@ -419,7 +422,18 @@ const App = {
         const lastName = emp.LastName || emp.lastName || '';
         const firstName = emp.FirstName || emp.firstName || '';
         const secondName = emp.SecondName || emp.secondName || '';
-        const tabelNumber = emp.Number || emp.TabelNumber || emp.tabelNumber || '';
+
+        // Пытаемся получить табельный номер из разных полей
+        const tabelNumber = emp.Number || emp.TabelNumber || emp.tabelNumber || emp.number || '';
+
+        // Отладочный вывод полей табельного номера
+        console.log('Поля табельного номера:', {
+            'Number': emp.Number,
+            'TabelNumber': emp.TabelNumber,
+            'tabelNumber': emp.tabelNumber,
+            'number': emp.number,
+            'Итог': tabelNumber
+        });
 
         const fio = [lastName, firstName, secondName].filter(Boolean).join(' ');
 
@@ -916,6 +930,9 @@ const App = {
                     this.state.selectedGroupId = null;
                     $('#employeeGroupsTree').jstree('deselect_all');
 
+                    // Отладочный вывод структуры данных первого сотрудника
+                    console.log('Структура данных сотрудника при поиске по табельному:', data.data[0]);
+
                     if (!UIManager.employeesDataTable) UIManager.initEmployeesTable();
                     UIManager.employeesDataTable.clear();
 
@@ -957,6 +974,9 @@ const App = {
                     this.state.employeesData = data.data;
                     this.state.selectedGroupId = null;
                     $('#employeeGroupsTree').jstree('deselect_all');
+
+                    // Отладочный вывод структуры данных первого сотрудника
+                    console.log('Структура данных сотрудника при поиске по ФИО:', data.data[0]);
 
                     if (!UIManager.employeesDataTable) UIManager.initEmployeesTable();
                     UIManager.employeesDataTable.clear();
