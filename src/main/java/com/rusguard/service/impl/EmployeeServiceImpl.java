@@ -1002,7 +1002,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             empData.put("FirstName", AcsEmployee.getFirstName().getValue());
             empData.put("SecondName", AcsEmployee.getSecondName().getValue());
             empData.put("Position", AcsEmployee.getPosition().getValue().getName().getValue());
-            empData.put("TabNumber", AcsEmployee.getNumber().getValue());
+            empData.put("Number", AcsEmployee.getNumber().getValue());
             empData.put("PassportIssue", AcsEmployee.getPassportIssue().getValue());
             empData.put("PassportNumber", AcsEmployee.getPassportNumber().getValue());
             empData.put("IsLocked", AcsEmployee.isIsLocked());

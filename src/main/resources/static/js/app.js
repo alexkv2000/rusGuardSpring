@@ -931,7 +931,9 @@ const App = {
                     $('#employeeGroupsTree').jstree('deselect_all');
 
                     // Отладочный вывод структуры данных первого сотрудника
-                    console.log('Структура данных сотрудника при поиске по табельному:', data.data[0]);
+                    console.log('=== Поиск по табельному ===');
+                    console.log('Структура данных сотрудника:', JSON.stringify(data.data[0], null, 2));
+                    console.log('Все ключи первого сотрудника:', Object.keys(data.data[0]));
 
                     if (!UIManager.employeesDataTable) UIManager.initEmployeesTable();
                     UIManager.employeesDataTable.clear();
@@ -976,7 +978,9 @@ const App = {
                     $('#employeeGroupsTree').jstree('deselect_all');
 
                     // Отладочный вывод структуры данных первого сотрудника
-                    console.log('Структура данных сотрудника при поиске по ФИО:', data.data[0]);
+                    console.log('=== Поиск по ФИО ===');
+                    console.log('Структура данных сотрудника:', JSON.stringify(data.data[0], null, 2));
+                    console.log('Все ключи первого сотрудника:', Object.keys(data.data[0]));
 
                     if (!UIManager.employeesDataTable) UIManager.initEmployeesTable();
                     UIManager.employeesDataTable.clear();
@@ -1114,8 +1118,9 @@ const App = {
 
         // Получаем табельный номер выбранного сотрудника
         const tabelNumber = this.state.selectedEmployeeData.Number ||
-                           this.state.selectedEmployeeData.TabelNumber ||
-                           this.state.selectedEmployeeData.tabelNumber;
+                            this.state.selectedEmployeeData.TabelNumber ||
+                            this.state.selectedEmployeeData.number ||
+                            this.state.selectedEmployeeData.tabelNumber;
 
         if (!tabelNumber) {
             Utils.showToast('У выбранного сотрудника не указан табельный номер', 'warning');
@@ -1144,7 +1149,7 @@ const App = {
                 endDate: endDateISO
             });
 
-            UIManager.renderRemoteWorkResults(data);
+            UIManager.rendeку rRemoteWorkResults(data);
 
             if (data && data.length > 0) {
                 Utils.showToast(`Найдено ${data.length} записей`, 'success');

@@ -295,7 +295,7 @@ const RusGuardAPI = {
             EndDate: params.endDate
         };
 
-        const response = await fetch(REMOTE_WORK_API_URL, {
+        const response = await fetch(`${REMOTE_WORK_API_URL}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
