@@ -217,6 +217,7 @@ const App = {
         // Очищаем выбранного сотрудника
         this.state.selectedEmployeeId = null;
         this.state.selectedEmployeeData = null;
+        this.state.employeesData = null;
         $('#accessLevelsList').empty();
         $('#passagesContainer').empty();
         $('#remoteWorkContainer').empty();
@@ -910,6 +911,8 @@ const App = {
                 const data = await RusGuardAPI.searchByTabelNumber(tabel);
 
                 if (data.status === 'success' && data.data && Array.isArray(data.data) && data.data.length > 0) {
+                    // Сохраняем данные найденных сотрудников
+                    this.state.employeesData = data.data;
                     this.state.selectedGroupId = null;
                     $('#employeeGroupsTree').jstree('deselect_all');
 
@@ -924,6 +927,7 @@ const App = {
                     UIManager.employeesDataTable.draw();
                     Utils.showToast(`Найден ${data.data.length} сотрудник(а) по табельному номеру`, 'success');
                 } else {
+                    this.state.employeesData = null;
                     UIManager.showNoDataMessage();
                     Utils.showToast('Сотрудник с таким табельным номером не найден', 'info');
                 }
@@ -949,6 +953,8 @@ const App = {
                 });
 
                 if (data.status === 'success' && data.data && Array.isArray(data.data) && data.data.length > 0) {
+                    // Сохраняем данные найденных сотрудников
+                    this.state.employeesData = data.data;
                     this.state.selectedGroupId = null;
                     $('#employeeGroupsTree').jstree('deselect_all');
 
@@ -963,6 +969,7 @@ const App = {
                     UIManager.employeesDataTable.draw();
                     Utils.showToast(`Найдено ${data.data.length} сотрудников по ФИО`, 'success');
                 } else {
+                    this.state.employeesData = null;
                     UIManager.showNoDataMessage();
                     Utils.showToast('Сотрудники с таким ФИО не найдены', 'info');
                 }
@@ -980,6 +987,14 @@ const App = {
         $('#searchFIO').val('');
         $('#searchTabel').val('');
         this.state.searchMode = null;
+        this.state.selectedEmployeeId = null;
+        this.state.selectedEmployeeData = null;
+        this.state.employeesData = null;
+
+        $('#accessLevelsList').empty();
+        $('#passagesContainer').empty();
+        $('#remoteWorkContainer').empty();
+        $('#remoteWorkEmployeeInfo').text('Выберите сотрудника для просмотра удалённой работы');
 
         if (this.state.selectedGroupId) {
             this.loadEmployeesByGroup(this.state.selectedGroupId);

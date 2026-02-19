@@ -290,6 +290,50 @@ body {
     font-style: italic;
 }
 
+/* --- Remote Work Styles --- */
+.remote-work-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+}
+
+.remote-work-event {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #17a2b8;
+    padding: 10px 12px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.remote-work-event:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(2px);
+}
+
+.remote-work-event .event-time {
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2px;
+}
+
+.remote-work-event .event-name {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.remote-work-event .event-report {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 6px;
+}
+
+.remote-work-event .event-login {
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 /* --- Remote Work Container --- */
 .remote-work-container {
     display: flex;
