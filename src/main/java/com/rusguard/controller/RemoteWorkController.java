@@ -191,13 +191,13 @@ public class RemoteWorkController {
 
         @Schema(
                 description = "Дата начала периода (ISO формат)",
-                example = "2026-02-19T01:43:00"
+                example = "2026-02-19T01:00:00"
         )
         private String StartDate;
 
         @Schema(
                 description = "Дата окончания периода (ISO формат)",
-                example = "2026-02-20T06:44:00"
+                example = "2026-02-20T23:59:59"
         )
         private String EndDate;
 

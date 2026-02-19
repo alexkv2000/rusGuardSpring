@@ -117,7 +117,10 @@ const App = {
                 this.performSearch();
             }
         });
-
+        // Клик по кнопке поиска удаленной работы
+        $('#searchRemoteWork').on('click', () => {
+            this.searchRemoteWork();
+        });
         // Вкладки
         $('#topMenu a').on('shown.bs.tab', (e) => {
             if (e.target.getAttribute('href') === '#reports') {
@@ -1149,7 +1152,7 @@ const App = {
                 endDate: endDateISO
             });
 
-            UIManager.rendeку rRemoteWorkResults(data);
+            UIManager.renderRemoteWorkResults(data);
 
             if (data && data.length > 0) {
                 Utils.showToast(`Найдено ${data.length} записей`, 'success');
