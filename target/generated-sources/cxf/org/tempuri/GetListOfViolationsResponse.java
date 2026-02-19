@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.rusguard.ArrayOfViolator;
     "getListOfViolationsResult"
 })
 @XmlRootElement(name = "GetListOfViolationsResponse", namespace = "http://tempuri.org/")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetListOfViolationsResponse {
 
     @XmlElementRef(name = "GetListOfViolationsResult", namespace = "http://tempuri.org/", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfViolator> getListOfViolationsResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetListOfViolationsResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfViolator }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfViolator> getGetListOfViolationsResult() {
         return getListOfViolationsResult;
     }
@@ -63,7 +63,7 @@ public class GetListOfViolationsResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfViolator }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetListOfViolationsResult(JAXBElement<ArrayOfViolator> value) {
         this.getListOfViolationsResult = value;
     }

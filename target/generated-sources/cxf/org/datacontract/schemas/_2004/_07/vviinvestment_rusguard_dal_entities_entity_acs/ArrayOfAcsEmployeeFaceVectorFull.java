@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfAcsEmployeeFaceVectorFull", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", propOrder = {
     "acsEmployeeFaceVectorFull"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class ArrayOfAcsEmployeeFaceVectorFull {
 
     @XmlElement(name = "AcsEmployeeFaceVectorFull", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected List<AcsEmployeeFaceVectorFull> acsEmployeeFaceVectorFull;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfAcsEmployeeFaceVectorFull {
      * @return
      *     The value of the acsEmployeeFaceVectorFull property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public List<AcsEmployeeFaceVectorFull> getAcsEmployeeFaceVectorFull() {
         if (acsEmployeeFaceVectorFull == null) {
             acsEmployeeFaceVectorFull = new ArrayList<AcsEmployeeFaceVectorFull>();

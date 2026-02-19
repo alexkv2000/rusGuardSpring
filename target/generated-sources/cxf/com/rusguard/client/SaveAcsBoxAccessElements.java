@@ -44,20 +44,20 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "addedElements"
 })
 @XmlRootElement(name = "SaveAcsBoxAccessElements", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class SaveAcsBoxAccessElements {
 
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected String boxAccessLevelId;
     @XmlElementRef(name = "deletedElements", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfguid> deletedElements;
     @XmlElementRef(name = "editedElements", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> editedElements;
     @XmlElementRef(name = "addedElements", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAcsBoxAccessElementSaveInfo> addedElements;
 
     /**
@@ -68,7 +68,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public String getBoxAccessLevelId() {
         return boxAccessLevelId;
     }
@@ -81,7 +81,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setBoxAccessLevelId(String value) {
         this.boxAccessLevelId = value;
     }
@@ -94,7 +94,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfguid> getDeletedElements() {
         return deletedElements;
     }
@@ -107,7 +107,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setDeletedElements(JAXBElement<ArrayOfguid> value) {
         this.deletedElements = value;
     }
@@ -120,7 +120,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsBoxAccessLevelElementSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> getEditedElements() {
         return editedElements;
     }
@@ -133,7 +133,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsBoxAccessLevelElementSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setEditedElements(JAXBElement<ArrayOfAcsBoxAccessLevelElementSlimInfo> value) {
         this.editedElements = value;
     }
@@ -146,7 +146,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsBoxAccessElementSaveInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAcsBoxAccessElementSaveInfo> getAddedElements() {
         return addedElements;
     }
@@ -159,7 +159,7 @@ public class SaveAcsBoxAccessElements {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsBoxAccessElementSaveInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddedElements(JAXBElement<ArrayOfAcsBoxAccessElementSaveInfo> value) {
         this.addedElements = value;
     }

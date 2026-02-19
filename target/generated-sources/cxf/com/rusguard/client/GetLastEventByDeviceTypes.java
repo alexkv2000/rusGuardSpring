@@ -49,24 +49,24 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "subjectType"
 })
 @XmlRootElement(name = "GetLastEventByDeviceTypes", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetLastEventByDeviceTypes {
 
     @XmlElementRef(name = "msgTypes", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfLogMsgType> msgTypes;
     @XmlElementRef(name = "msgSubTypes", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfLogMsgSubType> msgSubTypes;
     @XmlElementRef(name = "deviceTypes", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfstring> deviceTypes;
     @XmlElementRef(name = "subjectIDs", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfguid> subjectIDs;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected LogSubjectType subjectType;
 
     /**
@@ -77,7 +77,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLogMsgType }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfLogMsgType> getMsgTypes() {
         return msgTypes;
     }
@@ -90,7 +90,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLogMsgType }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setMsgTypes(JAXBElement<ArrayOfLogMsgType> value) {
         this.msgTypes = value;
     }
@@ -103,7 +103,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLogMsgSubType }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfLogMsgSubType> getMsgSubTypes() {
         return msgSubTypes;
     }
@@ -116,7 +116,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLogMsgSubType }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setMsgSubTypes(JAXBElement<ArrayOfLogMsgSubType> value) {
         this.msgSubTypes = value;
     }
@@ -129,7 +129,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfstring> getDeviceTypes() {
         return deviceTypes;
     }
@@ -142,7 +142,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfstring }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setDeviceTypes(JAXBElement<ArrayOfstring> value) {
         this.deviceTypes = value;
     }
@@ -155,7 +155,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfguid> getSubjectIDs() {
         return subjectIDs;
     }
@@ -168,7 +168,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setSubjectIDs(JAXBElement<ArrayOfguid> value) {
         this.subjectIDs = value;
     }
@@ -181,7 +181,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link LogSubjectType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public LogSubjectType getSubjectType() {
         return subjectType;
     }
@@ -194,7 +194,7 @@ public class GetLastEventByDeviceTypes {
      *     {@link LogSubjectType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setSubjectType(LogSubjectType value) {
         this.subjectType = value;
     }

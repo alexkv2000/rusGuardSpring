@@ -32,13 +32,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "UserPassFullData", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", propOrder = {
     "userPassEditors"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class UserPassFullData
     extends UserPassFullSaveData
 {
 
     @XmlElementRef(name = "UserPassEditors", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.UserPass", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfUserPassEditorData> userPassEditors;
 
     /**
@@ -49,7 +49,7 @@ public class UserPassFullData
      *     {@link JAXBElement }{@code <}{@link ArrayOfUserPassEditorData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfUserPassEditorData> getUserPassEditors() {
         return userPassEditors;
     }
@@ -62,7 +62,7 @@ public class UserPassFullData
      *     {@link JAXBElement }{@code <}{@link ArrayOfUserPassEditorData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setUserPassEditors(JAXBElement<ArrayOfUserPassEditorData> value) {
         this.userPassEditors = value;
     }

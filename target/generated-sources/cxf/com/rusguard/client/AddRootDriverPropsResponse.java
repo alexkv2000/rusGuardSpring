@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
     "addRootDriverPropsResult"
 })
 @XmlRootElement(name = "AddRootDriverPropsResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class AddRootDriverPropsResponse {
 
     @XmlElement(name = "AddRootDriverPropsResult", namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected String addRootDriverPropsResult;
 
     /**
@@ -48,7 +48,7 @@ public class AddRootDriverPropsResponse {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public String getAddRootDriverPropsResult() {
         return addRootDriverPropsResult;
     }
@@ -61,7 +61,7 @@ public class AddRootDriverPropsResponse {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddRootDriverPropsResult(String value) {
         this.addRootDriverPropsResult = value;
     }

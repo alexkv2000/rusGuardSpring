@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.rusguard.ArrayOfDataForPeriodModel;
     "getDataForPeriodByDepartmentsDetailResult"
 })
 @XmlRootElement(name = "GetDataForPeriodByDepartmentsDetailResponse", namespace = "http://tempuri.org/")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetDataForPeriodByDepartmentsDetailResponse {
 
     @XmlElementRef(name = "GetDataForPeriodByDepartmentsDetailResult", namespace = "http://tempuri.org/", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfDataForPeriodModel> getDataForPeriodByDepartmentsDetailResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetDataForPeriodByDepartmentsDetailResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDataForPeriodModel }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfDataForPeriodModel> getGetDataForPeriodByDepartmentsDetailResult() {
         return getDataForPeriodByDepartmentsDetailResult;
     }
@@ -63,7 +63,7 @@ public class GetDataForPeriodByDepartmentsDetailResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDataForPeriodModel }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetDataForPeriodByDepartmentsDetailResult(JAXBElement<ArrayOfDataForPeriodModel> value) {
         this.getDataForPeriodByDepartmentsDetailResult = value;
     }

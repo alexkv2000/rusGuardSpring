@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.rusguard.ArrayOfDataForPeriodModel;
     "getDataForPeriodByDepartmentsResult"
 })
 @XmlRootElement(name = "GetDataForPeriodByDepartmentsResponse", namespace = "http://tempuri.org/")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetDataForPeriodByDepartmentsResponse {
 
     @XmlElementRef(name = "GetDataForPeriodByDepartmentsResult", namespace = "http://tempuri.org/", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfDataForPeriodModel> getDataForPeriodByDepartmentsResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetDataForPeriodByDepartmentsResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDataForPeriodModel }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfDataForPeriodModel> getGetDataForPeriodByDepartmentsResult() {
         return getDataForPeriodByDepartmentsResult;
     }
@@ -63,7 +63,7 @@ public class GetDataForPeriodByDepartmentsResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDataForPeriodModel }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetDataForPeriodByDepartmentsResult(JAXBElement<ArrayOfDataForPeriodModel> value) {
         this.getDataForPeriodByDepartmentsResult = value;
     }

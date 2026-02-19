@@ -32,13 +32,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "AcsMultiDaySchedule", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", propOrder = {
     "dayIntervals"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class AcsMultiDaySchedule
     extends AcsScheduleBase
 {
 
     @XmlElementRef(name = "DayIntervals", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfRGDayIntervals> dayIntervals;
 
     /**
@@ -49,7 +49,7 @@ public class AcsMultiDaySchedule
      *     {@link JAXBElement }{@code <}{@link ArrayOfRGDayIntervals }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfRGDayIntervals> getDayIntervals() {
         return dayIntervals;
     }
@@ -62,7 +62,7 @@ public class AcsMultiDaySchedule
      *     {@link JAXBElement }{@code <}{@link ArrayOfRGDayIntervals }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setDayIntervals(JAXBElement<ArrayOfRGDayIntervals> value) {
         this.dayIntervals = value;
     }

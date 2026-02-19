@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
     "saveSystematicViolationByLoginResult"
 })
 @XmlRootElement(name = "SaveSystematicViolationByLoginResponse", namespace = "http://tempuri.org/")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class SaveSystematicViolationByLoginResponse {
 
     @XmlElement(name = "SaveSystematicViolationByLoginResult", namespace = "http://tempuri.org/")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected Integer saveSystematicViolationByLoginResult;
 
     /**
@@ -48,7 +48,7 @@ public class SaveSystematicViolationByLoginResponse {
      *     {@link Integer }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public Integer getSaveSystematicViolationByLoginResult() {
         return saveSystematicViolationByLoginResult;
     }
@@ -61,7 +61,7 @@ public class SaveSystematicViolationByLoginResponse {
      *     {@link Integer }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setSaveSystematicViolationByLoginResult(Integer value) {
         this.saveSystematicViolationByLoginResult = value;
     }

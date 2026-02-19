@@ -43,18 +43,18 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ne
     "address"
 })
 @XmlRootElement(name = "SetNetworkConfigurationToDevice", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class SetNetworkConfigurationToDevice {
 
     @XmlElement(name = "MacAddress", namespace = "http://www.rusguardsecurity.ru")
     @XmlSchemaType(name = "unsignedLong")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected BigInteger macAddress;
     @XmlElementRef(name = "newConfiguration", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<NetConfiguration> newConfiguration;
     @XmlElementRef(name = "address", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<IPAddress> address;
 
     /**
@@ -65,7 +65,7 @@ public class SetNetworkConfigurationToDevice {
      *     {@link BigInteger }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public BigInteger getMacAddress() {
         return macAddress;
     }
@@ -78,7 +78,7 @@ public class SetNetworkConfigurationToDevice {
      *     {@link BigInteger }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setMacAddress(BigInteger value) {
         this.macAddress = value;
     }
@@ -91,7 +91,7 @@ public class SetNetworkConfigurationToDevice {
      *     {@link JAXBElement }{@code <}{@link NetConfiguration }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<NetConfiguration> getNewConfiguration() {
         return newConfiguration;
     }
@@ -104,7 +104,7 @@ public class SetNetworkConfigurationToDevice {
      *     {@link JAXBElement }{@code <}{@link NetConfiguration }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setNewConfiguration(JAXBElement<NetConfiguration> value) {
         this.newConfiguration = value;
     }
@@ -117,7 +117,7 @@ public class SetNetworkConfigurationToDevice {
      *     {@link JAXBElement }{@code <}{@link IPAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<IPAddress> getAddress() {
         return address;
     }
@@ -130,7 +130,7 @@ public class SetNetworkConfigurationToDevice {
      *     {@link JAXBElement }{@code <}{@link IPAddress }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddress(JAXBElement<IPAddress> value) {
         this.address = value;
     }

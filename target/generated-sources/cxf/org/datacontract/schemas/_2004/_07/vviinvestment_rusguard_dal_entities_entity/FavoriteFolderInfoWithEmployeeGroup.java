@@ -33,13 +33,13 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
 @XmlType(name = "FavoriteFolderInfoWithEmployeeGroup", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", propOrder = {
     "groups"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class FavoriteFolderInfoWithEmployeeGroup
     extends FavoriteFolderInfo
 {
 
     @XmlElementRef(name = "Groups", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAcsEmployeeGroup> groups;
 
     /**
@@ -50,7 +50,7 @@ public class FavoriteFolderInfoWithEmployeeGroup
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsEmployeeGroup }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAcsEmployeeGroup> getGroups() {
         return groups;
     }
@@ -63,7 +63,7 @@ public class FavoriteFolderInfoWithEmployeeGroup
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsEmployeeGroup }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGroups(JAXBElement<ArrayOfAcsEmployeeGroup> value) {
         this.groups = value;
     }

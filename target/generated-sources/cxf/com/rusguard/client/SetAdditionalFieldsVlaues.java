@@ -60,36 +60,36 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "savedFieldContext"
 })
 @XmlRootElement(name = "SetAdditionalFieldsVlaues", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class SetAdditionalFieldsVlaues {
 
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected String ownerId;
     @XmlElementRef(name = "addDateTimeInfos", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAddDateTimeInfo> addDateTimeInfos;
     @XmlElementRef(name = "addDoubleInfo", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAddDoubleInfo> addDoubleInfo;
     @XmlElementRef(name = "addIntInfos", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAddIntInfo> addIntInfos;
     @XmlElementRef(name = "addStringInfos", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAddStringInfo> addStringInfos;
     @XmlElementRef(name = "addColorInfo", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAddColorInfo> addColorInfo;
     @XmlElementRef(name = "addListInfo", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAddListInfo> addListInfo;
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected Boolean partOfCreateOperation;
     @XmlList
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected List<String> savedFieldContext;
 
     /**
@@ -100,7 +100,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public String getOwnerId() {
         return ownerId;
     }
@@ -113,7 +113,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setOwnerId(String value) {
         this.ownerId = value;
     }
@@ -126,7 +126,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddDateTimeInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAddDateTimeInfo> getAddDateTimeInfos() {
         return addDateTimeInfos;
     }
@@ -139,7 +139,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddDateTimeInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddDateTimeInfos(JAXBElement<ArrayOfAddDateTimeInfo> value) {
         this.addDateTimeInfos = value;
     }
@@ -152,7 +152,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddDoubleInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAddDoubleInfo> getAddDoubleInfo() {
         return addDoubleInfo;
     }
@@ -165,7 +165,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddDoubleInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddDoubleInfo(JAXBElement<ArrayOfAddDoubleInfo> value) {
         this.addDoubleInfo = value;
     }
@@ -178,7 +178,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddIntInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAddIntInfo> getAddIntInfos() {
         return addIntInfos;
     }
@@ -191,7 +191,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddIntInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddIntInfos(JAXBElement<ArrayOfAddIntInfo> value) {
         this.addIntInfos = value;
     }
@@ -204,7 +204,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddStringInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAddStringInfo> getAddStringInfos() {
         return addStringInfos;
     }
@@ -217,7 +217,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddStringInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddStringInfos(JAXBElement<ArrayOfAddStringInfo> value) {
         this.addStringInfos = value;
     }
@@ -230,7 +230,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddColorInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAddColorInfo> getAddColorInfo() {
         return addColorInfo;
     }
@@ -243,7 +243,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddColorInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddColorInfo(JAXBElement<ArrayOfAddColorInfo> value) {
         this.addColorInfo = value;
     }
@@ -256,7 +256,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddListInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAddListInfo> getAddListInfo() {
         return addListInfo;
     }
@@ -269,7 +269,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link JAXBElement }{@code <}{@link ArrayOfAddListInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddListInfo(JAXBElement<ArrayOfAddListInfo> value) {
         this.addListInfo = value;
     }
@@ -282,7 +282,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public Boolean isPartOfCreateOperation() {
         return partOfCreateOperation;
     }
@@ -295,7 +295,7 @@ public class SetAdditionalFieldsVlaues {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setPartOfCreateOperation(Boolean value) {
         this.partOfCreateOperation = value;
     }
@@ -325,7 +325,7 @@ public class SetAdditionalFieldsVlaues {
      * @return
      *     The value of the savedFieldContext property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public List<String> getSavedFieldContext() {
         if (savedFieldContext == null) {
             savedFieldContext = new ArrayList<String>();

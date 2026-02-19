@@ -35,11 +35,11 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfint;
     "ids"
 })
 @XmlRootElement(name = "RemoveISS_Drivers", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class RemoveISSDrivers {
 
     @XmlElementRef(name = "ids", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfint> ids;
 
     /**
@@ -50,7 +50,7 @@ public class RemoveISSDrivers {
      *     {@link JAXBElement }{@code <}{@link ArrayOfint }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfint> getIds() {
         return ids;
     }
@@ -63,7 +63,7 @@ public class RemoveISSDrivers {
      *     {@link JAXBElement }{@code <}{@link ArrayOfint }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setIds(JAXBElement<ArrayOfint> value) {
         this.ids = value;
     }

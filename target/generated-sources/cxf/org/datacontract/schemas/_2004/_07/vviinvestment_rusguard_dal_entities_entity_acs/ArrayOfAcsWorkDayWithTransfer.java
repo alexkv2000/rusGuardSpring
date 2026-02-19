@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfAcsWorkDayWithTransfer", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", propOrder = {
     "acsWorkDayWithTransfer"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class ArrayOfAcsWorkDayWithTransfer {
 
     @XmlElement(name = "AcsWorkDayWithTransfer", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Schedule", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected List<AcsWorkDayWithTransfer> acsWorkDayWithTransfer;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfAcsWorkDayWithTransfer {
      * @return
      *     The value of the acsWorkDayWithTransfer property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public List<AcsWorkDayWithTransfer> getAcsWorkDayWithTransfer() {
         if (acsWorkDayWithTransfer == null) {
             acsWorkDayWithTransfer = new ArrayList<AcsWorkDayWithTransfer>();

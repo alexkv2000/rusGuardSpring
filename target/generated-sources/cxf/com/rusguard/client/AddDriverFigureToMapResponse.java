@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "addDriverFigureToMapResult"
 })
 @XmlRootElement(name = "AddDriverFigureToMapResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class AddDriverFigureToMapResponse {
 
     @XmlElementRef(name = "AddDriverFigureToMapResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<DriverFigureInfo> addDriverFigureToMapResult;
 
     /**
@@ -50,7 +50,7 @@ public class AddDriverFigureToMapResponse {
      *     {@link JAXBElement }{@code <}{@link DriverFigureInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<DriverFigureInfo> getAddDriverFigureToMapResult() {
         return addDriverFigureToMapResult;
     }
@@ -63,7 +63,7 @@ public class AddDriverFigureToMapResponse {
      *     {@link JAXBElement }{@code <}{@link DriverFigureInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddDriverFigureToMapResult(JAXBElement<DriverFigureInfo> value) {
         this.addDriverFigureToMapResult = value;
     }

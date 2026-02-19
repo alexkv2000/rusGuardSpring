@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.rusguard.ArrayOfViolator;
     "getListOfViolationsByLoginResult"
 })
 @XmlRootElement(name = "GetListOfViolationsByLoginResponse", namespace = "http://tempuri.org/")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetListOfViolationsByLoginResponse {
 
     @XmlElementRef(name = "GetListOfViolationsByLoginResult", namespace = "http://tempuri.org/", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfViolator> getListOfViolationsByLoginResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetListOfViolationsByLoginResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfViolator }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfViolator> getGetListOfViolationsByLoginResult() {
         return getListOfViolationsByLoginResult;
     }
@@ -63,7 +63,7 @@ public class GetListOfViolationsByLoginResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfViolator }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetListOfViolationsByLoginResult(JAXBElement<ArrayOfViolator> value) {
         this.getListOfViolationsByLoginResult = value;
     }

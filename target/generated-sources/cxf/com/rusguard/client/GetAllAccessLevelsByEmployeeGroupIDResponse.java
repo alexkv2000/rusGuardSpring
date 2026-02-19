@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "getAllAccessLevelsByEmployeeGroupIDResult"
 })
 @XmlRootElement(name = "GetAllAccessLevelsByEmployeeGroupIDResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetAllAccessLevelsByEmployeeGroupIDResponse {
 
     @XmlElementRef(name = "GetAllAccessLevelsByEmployeeGroupIDResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<LAccessLevelsData> getAllAccessLevelsByEmployeeGroupIDResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetAllAccessLevelsByEmployeeGroupIDResponse {
      *     {@link JAXBElement }{@code <}{@link LAccessLevelsData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<LAccessLevelsData> getGetAllAccessLevelsByEmployeeGroupIDResult() {
         return getAllAccessLevelsByEmployeeGroupIDResult;
     }
@@ -63,7 +63,7 @@ public class GetAllAccessLevelsByEmployeeGroupIDResponse {
      *     {@link JAXBElement }{@code <}{@link LAccessLevelsData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetAllAccessLevelsByEmployeeGroupIDResult(JAXBElement<LAccessLevelsData> value) {
         this.getAllAccessLevelsByEmployeeGroupIDResult = value;
     }

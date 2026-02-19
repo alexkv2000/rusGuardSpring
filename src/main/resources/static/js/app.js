@@ -1141,7 +1141,7 @@ const App = {
         `);
 
         // Формируем даты в ISO формате (начало и конец дня)
-        const startDateISO = `${startDate}T00:00:00`;
+        const startDateISO = `${startDate}T01:00:00`;
         const endDateISO = `${endDate}T23:59:59`;
 
         try {

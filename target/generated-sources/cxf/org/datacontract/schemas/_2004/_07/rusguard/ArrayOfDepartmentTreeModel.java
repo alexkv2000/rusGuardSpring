@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfDepartmentTreeModel", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", propOrder = {
     "departmentTreeModel"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class ArrayOfDepartmentTreeModel {
 
     @XmlElement(name = "DepartmentTreeModel", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected List<DepartmentTreeModel> departmentTreeModel;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfDepartmentTreeModel {
      * @return
      *     The value of the departmentTreeModel property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public List<DepartmentTreeModel> getDepartmentTreeModel() {
         if (departmentTreeModel == null) {
             departmentTreeModel = new ArrayList<DepartmentTreeModel>();

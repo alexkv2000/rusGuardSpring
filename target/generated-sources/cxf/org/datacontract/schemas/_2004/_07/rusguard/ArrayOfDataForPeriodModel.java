@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfDataForPeriodModel", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", propOrder = {
     "dataForPeriodModel"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class ArrayOfDataForPeriodModel {
 
     @XmlElement(name = "DataForPeriodModel", namespace = "http://schemas.datacontract.org/2004/07/RusGuard.Models", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected List<DataForPeriodModel> dataForPeriodModel;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfDataForPeriodModel {
      * @return
      *     The value of the dataForPeriodModel property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public List<DataForPeriodModel> getDataForPeriodModel() {
         if (dataForPeriodModel == null) {
             dataForPeriodModel = new ArrayList<DataForPeriodModel>();

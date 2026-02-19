@@ -34,14 +34,14 @@ import javax.xml.bind.annotation.XmlType;
     "configurations",
     "failedDevices"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetControllerConfigurationsResult {
 
     @XmlElementRef(name = "Configurations", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfGetControllerConfigurationsResultConfig> configurations;
     @XmlElementRef(name = "FailedDevices", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.CanDriversViaUsbConverter", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfGetControllerConfigurationsResultFailedConfig> failedDevices;
 
     /**
@@ -52,7 +52,7 @@ public class GetControllerConfigurationsResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfGetControllerConfigurationsResultConfig }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfGetControllerConfigurationsResultConfig> getConfigurations() {
         return configurations;
     }
@@ -65,7 +65,7 @@ public class GetControllerConfigurationsResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfGetControllerConfigurationsResultConfig }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setConfigurations(JAXBElement<ArrayOfGetControllerConfigurationsResultConfig> value) {
         this.configurations = value;
     }
@@ -78,7 +78,7 @@ public class GetControllerConfigurationsResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfGetControllerConfigurationsResultFailedConfig }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfGetControllerConfigurationsResultFailedConfig> getFailedDevices() {
         return failedDevices;
     }
@@ -91,7 +91,7 @@ public class GetControllerConfigurationsResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfGetControllerConfigurationsResultFailedConfig }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setFailedDevices(JAXBElement<ArrayOfGetControllerConfigurationsResultFailedConfig> value) {
         this.failedDevices = value;
     }

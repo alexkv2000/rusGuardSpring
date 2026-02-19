@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Ar
     "getRootServerDriversResult"
 })
 @XmlRootElement(name = "GetRootServerDriversResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetRootServerDriversResponse {
 
     @XmlElementRef(name = "GetRootServerDriversResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfLDriverFullInfo> getRootServerDriversResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetRootServerDriversResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverFullInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfLDriverFullInfo> getGetRootServerDriversResult() {
         return getRootServerDriversResult;
     }
@@ -63,7 +63,7 @@ public class GetRootServerDriversResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfLDriverFullInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetRootServerDriversResult(JAXBElement<ArrayOfLDriverFullInfo> value) {
         this.getRootServerDriversResult = value;
     }

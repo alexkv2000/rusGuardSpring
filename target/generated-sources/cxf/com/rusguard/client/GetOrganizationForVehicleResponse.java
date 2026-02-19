@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "getOrganizationForVehicleResult"
 })
 @XmlRootElement(name = "GetOrganizationForVehicleResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetOrganizationForVehicleResponse {
 
     @XmlElementRef(name = "GetOrganizationForVehicleResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfDictionaryElementInfo> getOrganizationForVehicleResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetOrganizationForVehicleResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDictionaryElementInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfDictionaryElementInfo> getGetOrganizationForVehicleResult() {
         return getOrganizationForVehicleResult;
     }
@@ -63,7 +63,7 @@ public class GetOrganizationForVehicleResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDictionaryElementInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetOrganizationForVehicleResult(JAXBElement<ArrayOfDictionaryElementInfo> value) {
         this.getOrganizationForVehicleResult = value;
     }

@@ -38,14 +38,14 @@ import org.datacontract.schemas._2004._07.system.ArrayOfTupleOfguidNullableOfdat
     "accessLevelInfo"
 })
 @XmlRootElement(name = "AddAccessLevelsToEmployeeGroupWithPeriod", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class AddAccessLevelsToEmployeeGroupWithPeriod {
 
     @XmlElement(namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected String employeeGroupID;
     @XmlElementRef(name = "accessLevelInfo", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> accessLevelInfo;
 
     /**
@@ -56,7 +56,7 @@ public class AddAccessLevelsToEmployeeGroupWithPeriod {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public String getEmployeeGroupID() {
         return employeeGroupID;
     }
@@ -69,7 +69,7 @@ public class AddAccessLevelsToEmployeeGroupWithPeriod {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setEmployeeGroupID(String value) {
         this.employeeGroupID = value;
     }
@@ -82,7 +82,7 @@ public class AddAccessLevelsToEmployeeGroupWithPeriod {
      *     {@link JAXBElement }{@code <}{@link ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> getAccessLevelInfo() {
         return accessLevelInfo;
     }
@@ -95,7 +95,7 @@ public class AddAccessLevelsToEmployeeGroupWithPeriod {
      *     {@link JAXBElement }{@code <}{@link ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAccessLevelInfo(JAXBElement<ArrayOfTupleOfguidNullableOfdateTimeGOBf0PnW> value) {
         this.accessLevelInfo = value;
     }

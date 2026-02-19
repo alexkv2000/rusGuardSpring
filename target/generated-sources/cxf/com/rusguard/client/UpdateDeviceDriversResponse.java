@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_net_services.Ar
     "updateDeviceDriversResult"
 })
 @XmlRootElement(name = "UpdateDeviceDriversResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class UpdateDeviceDriversResponse {
 
     @XmlElementRef(name = "UpdateDeviceDriversResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfDeviceDriverInfo> updateDeviceDriversResult;
 
     /**
@@ -50,7 +50,7 @@ public class UpdateDeviceDriversResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDeviceDriverInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfDeviceDriverInfo> getUpdateDeviceDriversResult() {
         return updateDeviceDriversResult;
     }
@@ -63,7 +63,7 @@ public class UpdateDeviceDriversResponse {
      *     {@link JAXBElement }{@code <}{@link ArrayOfDeviceDriverInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setUpdateDeviceDriversResult(JAXBElement<ArrayOfDeviceDriverInfo> value) {
         this.updateDeviceDriversResult = value;
     }

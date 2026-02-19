@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_dr
     "findCanControllersViaCanConverterResult"
 })
 @XmlRootElement(name = "FindCanControllersViaCanConverterResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class FindCanControllersViaCanConverterResponse {
 
     @XmlElementRef(name = "FindCanControllersViaCanConverterResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<FindControllersResult> findCanControllersViaCanConverterResult;
 
     /**
@@ -50,7 +50,7 @@ public class FindCanControllersViaCanConverterResponse {
      *     {@link JAXBElement }{@code <}{@link FindControllersResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<FindControllersResult> getFindCanControllersViaCanConverterResult() {
         return findCanControllersViaCanConverterResult;
     }
@@ -63,7 +63,7 @@ public class FindCanControllersViaCanConverterResponse {
      *     {@link JAXBElement }{@code <}{@link FindControllersResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setFindCanControllersViaCanConverterResult(JAXBElement<FindControllersResult> value) {
         this.findCanControllersViaCanConverterResult = value;
     }

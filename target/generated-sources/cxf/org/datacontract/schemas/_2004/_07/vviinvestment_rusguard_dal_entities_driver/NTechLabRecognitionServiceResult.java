@@ -38,18 +38,18 @@ import javax.xml.bind.annotation.XmlType;
     "dossierLists",
     "syncState"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class NTechLabRecognitionServiceResult {
 
     @XmlElementRef(name = "Cameras", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfNTechLabCameraInfo> cameras;
     @XmlElementRef(name = "DossierLists", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfNTechLabDossierListInfo> dossierLists;
     @XmlElement(name = "SyncState", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.NTechLab")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected NTechLabConfigSyncState syncState;
 
     /**
@@ -60,7 +60,7 @@ public class NTechLabRecognitionServiceResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfNTechLabCameraInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfNTechLabCameraInfo> getCameras() {
         return cameras;
     }
@@ -73,7 +73,7 @@ public class NTechLabRecognitionServiceResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfNTechLabCameraInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setCameras(JAXBElement<ArrayOfNTechLabCameraInfo> value) {
         this.cameras = value;
     }
@@ -86,7 +86,7 @@ public class NTechLabRecognitionServiceResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfNTechLabDossierListInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfNTechLabDossierListInfo> getDossierLists() {
         return dossierLists;
     }
@@ -99,7 +99,7 @@ public class NTechLabRecognitionServiceResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfNTechLabDossierListInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setDossierLists(JAXBElement<ArrayOfNTechLabDossierListInfo> value) {
         this.dossierLists = value;
     }
@@ -112,7 +112,7 @@ public class NTechLabRecognitionServiceResult {
      *     {@link NTechLabConfigSyncState }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public NTechLabConfigSyncState getSyncState() {
         return syncState;
     }
@@ -125,7 +125,7 @@ public class NTechLabRecognitionServiceResult {
      *     {@link NTechLabConfigSyncState }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setSyncState(NTechLabConfigSyncState value) {
         this.syncState = value;
     }

@@ -36,17 +36,17 @@ import javax.xml.bind.annotation.XmlType;
     "keyKeeperCabinets",
     "keyKeeperPorts"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class KeyKeeperControllerResult {
 
     @XmlElementRef(name = "Configuration", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<KeyKeeperConfiguration> configuration;
     @XmlElementRef(name = "KeyKeeperCabinets", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfKeyKeeperCabinet> keyKeeperCabinets;
     @XmlElementRef(name = "KeyKeeperPorts", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Driver.KeyKeeper", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfKeyKeeperPort> keyKeeperPorts;
 
     /**
@@ -57,7 +57,7 @@ public class KeyKeeperControllerResult {
      *     {@link JAXBElement }{@code <}{@link KeyKeeperConfiguration }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<KeyKeeperConfiguration> getConfiguration() {
         return configuration;
     }
@@ -70,7 +70,7 @@ public class KeyKeeperControllerResult {
      *     {@link JAXBElement }{@code <}{@link KeyKeeperConfiguration }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setConfiguration(JAXBElement<KeyKeeperConfiguration> value) {
         this.configuration = value;
     }
@@ -83,7 +83,7 @@ public class KeyKeeperControllerResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfKeyKeeperCabinet }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfKeyKeeperCabinet> getKeyKeeperCabinets() {
         return keyKeeperCabinets;
     }
@@ -96,7 +96,7 @@ public class KeyKeeperControllerResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfKeyKeeperCabinet }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setKeyKeeperCabinets(JAXBElement<ArrayOfKeyKeeperCabinet> value) {
         this.keyKeeperCabinets = value;
     }
@@ -109,7 +109,7 @@ public class KeyKeeperControllerResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfKeyKeeperPort }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfKeyKeeperPort> getKeyKeeperPorts() {
         return keyKeeperPorts;
     }
@@ -122,7 +122,7 @@ public class KeyKeeperControllerResult {
      *     {@link JAXBElement }{@code <}{@link ArrayOfKeyKeeperPort }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setKeyKeeperPorts(JAXBElement<ArrayOfKeyKeeperPort> value) {
         this.keyKeeperPorts = value;
     }

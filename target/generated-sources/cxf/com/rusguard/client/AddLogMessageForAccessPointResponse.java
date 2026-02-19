@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
     "addLogMessageForAccessPointResult"
 })
 @XmlRootElement(name = "AddLogMessageForAccessPointResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class AddLogMessageForAccessPointResponse {
 
     @XmlElement(name = "AddLogMessageForAccessPointResult", namespace = "http://www.rusguardsecurity.ru")
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected Long addLogMessageForAccessPointResult;
 
     /**
@@ -48,7 +48,7 @@ public class AddLogMessageForAccessPointResponse {
      *     {@link Long }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public Long getAddLogMessageForAccessPointResult() {
         return addLogMessageForAccessPointResult;
     }
@@ -61,7 +61,7 @@ public class AddLogMessageForAccessPointResponse {
      *     {@link Long }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddLogMessageForAccessPointResult(Long value) {
         this.addLogMessageForAccessPointResult = value;
     }

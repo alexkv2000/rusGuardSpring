@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_dr
     "loadNTechLabRecognitionServiceConfigurationResult"
 })
 @XmlRootElement(name = "LoadNTechLabRecognitionServiceConfigurationResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class LoadNTechLabRecognitionServiceConfigurationResponse {
 
     @XmlElementRef(name = "LoadNTechLabRecognitionServiceConfigurationResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<NTechLabRecognitionServiceResult> loadNTechLabRecognitionServiceConfigurationResult;
 
     /**
@@ -50,7 +50,7 @@ public class LoadNTechLabRecognitionServiceConfigurationResponse {
      *     {@link JAXBElement }{@code <}{@link NTechLabRecognitionServiceResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<NTechLabRecognitionServiceResult> getLoadNTechLabRecognitionServiceConfigurationResult() {
         return loadNTechLabRecognitionServiceConfigurationResult;
     }
@@ -63,7 +63,7 @@ public class LoadNTechLabRecognitionServiceConfigurationResponse {
      *     {@link JAXBElement }{@code <}{@link NTechLabRecognitionServiceResult }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setLoadNTechLabRecognitionServiceConfigurationResult(JAXBElement<NTechLabRecognitionServiceResult> value) {
         this.loadNTechLabRecognitionServiceConfigurationResult = value;
     }

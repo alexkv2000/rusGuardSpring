@@ -289,20 +289,18 @@ const RusGuardAPI = {
         const REMOTE_WORK_API_URL = '/api/rusguard/RemoteWork/search';
 
         const requestBody = {
-            SearchType: params.searchType,
-            SearchData: params.searchData,
-            StartDate: params.startDate,
-            EndDate: params.endDate
+            searchType: params.searchType,
+            searchData: params.searchData,
+            startDate: params.startDate,
+            endDate: params.endDate
         };
 
-        const response = await fetch(`${REMOTE_WORK_API_URL}`, {
+        const response = await fetch(REMOTE_WORK_API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            mode: 'cors',
-            credentials: 'include',
             body: JSON.stringify(requestBody)
         });
 

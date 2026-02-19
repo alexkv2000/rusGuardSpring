@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities.Re
     "getReportingServicesUrlResult"
 })
 @XmlRootElement(name = "GetReportingServicesUrlResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class GetReportingServicesUrlResponse {
 
     @XmlElementRef(name = "GetReportingServicesUrlResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ReportingServicesData> getReportingServicesUrlResult;
 
     /**
@@ -50,7 +50,7 @@ public class GetReportingServicesUrlResponse {
      *     {@link JAXBElement }{@code <}{@link ReportingServicesData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ReportingServicesData> getGetReportingServicesUrlResult() {
         return getReportingServicesUrlResult;
     }
@@ -63,7 +63,7 @@ public class GetReportingServicesUrlResponse {
      *     {@link JAXBElement }{@code <}{@link ReportingServicesData }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setGetReportingServicesUrlResult(JAXBElement<ReportingServicesData> value) {
         this.getReportingServicesUrlResult = value;
     }

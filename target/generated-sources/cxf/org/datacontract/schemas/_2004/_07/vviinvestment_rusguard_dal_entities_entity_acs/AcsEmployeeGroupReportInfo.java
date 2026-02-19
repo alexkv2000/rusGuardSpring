@@ -37,19 +37,19 @@ import com.microsoft.schemas._2003._10.serialization.arrays.ArrayOfguid;
     "employeesFromGroupsGuids",
     "selectedEmployeesGuids"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class AcsEmployeeGroupReportInfo
     extends AcsEmployeeGroup
 {
 
     @XmlElementRef(name = "EmployeeGroups2", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> employeeGroups2;
     @XmlElementRef(name = "EmployeesFromGroupsGuids", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfguid> employeesFromGroupsGuids;
     @XmlElementRef(name = "SelectedEmployeesGuids", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.Employees", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfguid> selectedEmployeesGuids;
 
     /**
@@ -60,7 +60,7 @@ public class AcsEmployeeGroupReportInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsEmployeeGroupReportInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> getEmployeeGroups2() {
         return employeeGroups2;
     }
@@ -73,7 +73,7 @@ public class AcsEmployeeGroupReportInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfAcsEmployeeGroupReportInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setEmployeeGroups2(JAXBElement<ArrayOfAcsEmployeeGroupReportInfo> value) {
         this.employeeGroups2 = value;
     }
@@ -86,7 +86,7 @@ public class AcsEmployeeGroupReportInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfguid> getEmployeesFromGroupsGuids() {
         return employeesFromGroupsGuids;
     }
@@ -99,7 +99,7 @@ public class AcsEmployeeGroupReportInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setEmployeesFromGroupsGuids(JAXBElement<ArrayOfguid> value) {
         this.employeesFromGroupsGuids = value;
     }
@@ -112,7 +112,7 @@ public class AcsEmployeeGroupReportInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfguid> getSelectedEmployeesGuids() {
         return selectedEmployeesGuids;
     }
@@ -125,7 +125,7 @@ public class AcsEmployeeGroupReportInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfguid }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setSelectedEmployeesGuids(JAXBElement<ArrayOfguid> value) {
         this.selectedEmployeesGuids = value;
     }

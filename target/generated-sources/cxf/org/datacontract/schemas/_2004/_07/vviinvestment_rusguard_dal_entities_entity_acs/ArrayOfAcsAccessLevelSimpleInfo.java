@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfAcsAccessLevelSimpleInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", propOrder = {
     "acsAccessLevelSimpleInfo"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class ArrayOfAcsAccessLevelSimpleInfo {
 
     @XmlElement(name = "AcsAccessLevelSimpleInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ACS.AccessLevels", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected List<AcsAccessLevelSimpleInfo> acsAccessLevelSimpleInfo;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfAcsAccessLevelSimpleInfo {
      * @return
      *     The value of the acsAccessLevelSimpleInfo property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public List<AcsAccessLevelSimpleInfo> getAcsAccessLevelSimpleInfo() {
         if (acsAccessLevelSimpleInfo == null) {
             acsAccessLevelSimpleInfo = new ArrayList<AcsAccessLevelSimpleInfo>();

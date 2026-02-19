@@ -35,11 +35,11 @@ import org.datacontract.schemas._2004._07.vviinvestment_rusguard_dal_entities_en
     "addWorkZoneResult"
 })
 @XmlRootElement(name = "AddWorkZoneResponse", namespace = "http://www.rusguardsecurity.ru")
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class AddWorkZoneResponse {
 
     @XmlElementRef(name = "AddWorkZoneResult", namespace = "http://www.rusguardsecurity.ru", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<WorkZoneSlimInfo> addWorkZoneResult;
 
     /**
@@ -50,7 +50,7 @@ public class AddWorkZoneResponse {
      *     {@link JAXBElement }{@code <}{@link WorkZoneSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<WorkZoneSlimInfo> getAddWorkZoneResult() {
         return addWorkZoneResult;
     }
@@ -63,7 +63,7 @@ public class AddWorkZoneResponse {
      *     {@link JAXBElement }{@code <}{@link WorkZoneSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setAddWorkZoneResult(JAXBElement<WorkZoneSlimInfo> value) {
         this.addWorkZoneResult = value;
     }

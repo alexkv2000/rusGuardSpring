@@ -32,13 +32,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ISS_IntegrationPoint_SlimInfo", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", propOrder = {
     "rusGuardIntegrationPoints"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class ISSIntegrationPointSlimInfo
     extends ISSEntityBase
 {
 
     @XmlElementRef(name = "RusGuardIntegrationPoints", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.ISS", type = JAXBElement.class, required = false)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected JAXBElement<ArrayOfISSRusGuardSlimInfo> rusGuardIntegrationPoints;
 
     /**
@@ -49,7 +49,7 @@ public class ISSIntegrationPointSlimInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfISSRusGuardSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public JAXBElement<ArrayOfISSRusGuardSlimInfo> getRusGuardIntegrationPoints() {
         return rusGuardIntegrationPoints;
     }
@@ -62,7 +62,7 @@ public class ISSIntegrationPointSlimInfo
      *     {@link JAXBElement }{@code <}{@link ArrayOfISSRusGuardSlimInfo }{@code >}
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public void setRusGuardIntegrationPoints(JAXBElement<ArrayOfISSRusGuardSlimInfo> value) {
         this.rusGuardIntegrationPoints = value;
     }

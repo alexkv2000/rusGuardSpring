@@ -138,14 +138,15 @@ public class RemoteWorkController {
             HttpEntity<RemoteWorkSearchRequest> requestEntity = new HttpEntity<>(request, headers);
 
             // Отправка запроса к внешнему API
-            ResponseEntity<List> response = restTemplate.exchange(
+            ResponseEntity<String> response = restTemplate.exchange(
                     remoteWorkApiUrl,
                     HttpMethod.POST,
                     requestEntity,
-                    List.class
+                    String.class
             );
 
             if (response.getStatusCode().is2xxSuccessful() && response.getBody() != null) {
+                System.out.println(response.getBody());
                 return ResponseEntity.ok(response.getBody());
             } else {
                 return ResponseEntity.status(response.getStatusCode()).build();

@@ -33,11 +33,11 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfFavoriteFolderInfoWithEmployeeGroup", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", propOrder = {
     "favoriteFolderInfoWithEmployeeGroup"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
 public class ArrayOfFavoriteFolderInfoWithEmployeeGroup {
 
     @XmlElement(name = "FavoriteFolderInfoWithEmployeeGroup", namespace = "http://schemas.datacontract.org/2004/07/VVIInvestment.RusGuard.DAL.Entities.Entity.FavoriteFolder", nillable = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     protected List<FavoriteFolderInfoWithEmployeeGroup> favoriteFolderInfoWithEmployeeGroup;
 
     /**
@@ -65,7 +65,7 @@ public class ArrayOfFavoriteFolderInfoWithEmployeeGroup {
      * @return
      *     The value of the favoriteFolderInfoWithEmployeeGroup property.
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-16T13:19:08+03:00")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v2.3.9", date = "2026-02-19T20:03:23+03:00")
     public List<FavoriteFolderInfoWithEmployeeGroup> getFavoriteFolderInfoWithEmployeeGroup() {
         if (favoriteFolderInfoWithEmployeeGroup == null) {
             favoriteFolderInfoWithEmployeeGroup = new ArrayList<FavoriteFolderInfoWithEmployeeGroup>();
