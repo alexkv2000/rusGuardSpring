@@ -550,7 +550,7 @@ const App = {
         $('#editLastName').val(employeeData.LastName || employeeData.lastName || '');
         $('#editFirstName').val(employeeData.FirstName || employeeData.firstName || '');
         $('#editSecondName').val(employeeData.SecondName || employeeData.secondName || '');
-        $('#editTabelNumber').val(employeeData.Number || employeeData.TabelNumber || employeeData.tabelNumber || '');
+        $('#editTabelNumber').val(employeeData.Number || employeeData.number || employeeData.TabelNumber || employeeData.tabelNumber || '');
 
         const positionID = employeeData.PositionID || employeeData.positionId || '';
         const positionName = employeeData.Position || employeeData.position || '';

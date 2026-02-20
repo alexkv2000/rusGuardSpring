@@ -593,7 +593,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                             empData.put("PassportIssue", fullEmployee.getPassportIssue() != null ? fullEmployee.getPassportIssue().getValue() : "");
                             empData.put("PassportNumber", fullEmployee.getPassportNumber() != null ? fullEmployee.getPassportNumber().getValue() : "");
                             empData.put("IsLocked", fullEmployee.isIsLocked() != null ? fullEmployee.isIsLocked() : false);
-
+                            empData.put("Number", fullEmployee.getNumber() != null ? fullEmployee.getNumber().getValue() : null);
                             employeesList.add(empData);
                         }
                     }
@@ -659,7 +659,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                             empData.put("PassportIssue", fullEmployee.getPassportIssue() != null ? fullEmployee.getPassportIssue().getValue() : "");
                             empData.put("PassportNumber", fullEmployee.getPassportNumber() != null ? fullEmployee.getPassportNumber().getValue() : "");
                             empData.put("IsLocked", fullEmployee.isIsLocked() != null ? fullEmployee.isIsLocked() : false);
-
+                            empData.put("Number", fullEmployee.getNumber() != null ? fullEmployee.getNumber().getValue() : null);
                             employeesList.add(empData);
                         }
                     }

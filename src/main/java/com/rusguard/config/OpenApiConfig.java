@@ -25,18 +25,18 @@ import org.springframework.context.annotation.Description;
                 ),
                 license = @License(
                         name = "Лицензия компании",
-                        url = "/api/license" // "/api/license"
+                        url = "/api/license"
                 ),
                 termsOfService = "/api/terms"
         ),
         servers = {
                 @Server(
-                        url = "http://localhost:8007",
-                        description = "Локальный сервер разработки"
+                        url = "http://172.18.2.198:8007",
+                        description = "Продуктивный сервер DV"
                 ),
                 @Server(
-                        url = "http://172.18.2.198/:8007",
-                        description = "Продуктивный сервер DV"
+                        url = "http://localhost:8007",
+                        description = "Локальный сервер разработки"
                 )
         }
 )

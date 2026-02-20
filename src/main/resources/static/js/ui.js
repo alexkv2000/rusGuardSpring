@@ -448,7 +448,7 @@ const UIManager = {
 
             html += `
                 <div class="remote-work-event">
-                    <div class="event-time">${formattedTime}</div>
+                    <div class="event-time">${formattedDate + "  "+ formattedTime}</div>
                     <div class="event-name">${Utils.escapeHtml(record.EventName || 'Событие')}</div>
                     <div class="event-report">${Utils.escapeHtml(record.ReportText || '')}</div>
                     <div class="event-login">

@@ -111,7 +111,7 @@ const RusGuardAPI = {
         // Обязательные параметры
         params.append('lastname', employeeData.lastname);
         params.append('firstname', employeeData.firstname);
-        params.append('tabelNumber', employeeData.tabelNumber);
+        params.append('number', employeeData.tabelNumber);
         params.append('positionGroup', employeeData.positionGroup);
 
         // Опциональные параметры
